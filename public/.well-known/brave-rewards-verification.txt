@@ -1,4 +1,4 @@
 This is a Brave Rewards publisher verification file.
 
 Domain: sensio.network
-Token: 76f2a09636d0df6a56cb74db0db045d4c1c4bd4739ffbdd5a8fbb490010e5516
+Token: 0ed85b4620ffe02aced42601a08483b31c6da50b853ffcaa8be94adf213038ac
