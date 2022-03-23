@@ -1,10 +1,9 @@
 <script lang='ts'>
-import NavBar from "../components/navBar.svelte";
-import logo from '../assets/logo.png'
-import darkLogo from '../assets/logo-dark.png'
+    import NavBar from "../components/navBar.svelte";
 
-    let theme:String = 'dark'
-    function switchTheme () {
+    let theme:string = 'dark'
+    function switchTheme (e:Event) {
+        e.preventDefault
         const styles = document.documentElement.style
         const colors = theme === 'dark'? {
             '--main': '#D5DBDB',
@@ -26,24 +25,21 @@ import darkLogo from '../assets/logo-dark.png'
     }
 </script>
 
-<!-- <div class="flex w-full justify-around items-center fixed bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white py-5">
-    <div class="theme-switcher">
-        <button class="theme-switcher-button theme-switcher-light bg-gray-200 border-gray-200 border-2 dark:bg-black dark:border-black p-2 focus:outline-none" title="Light"><i class="fas fa-sun pointer-events-none"></i> Light</button><button class="theme-switcher-button theme-switcher-dark bg-gray-200 border-gray-200 border-2 dark:bg-black dark:border-black p-2 focus:outline-none" title="Dark"><i class="fas fa-moon pointer-events-none"></i> Dark</button><button class="theme-switcher-button theme-switcher-auto bg-gray-200 border-gray-200 dark:bg-black border-2 dark:border-black p-2 focus:outline-none" title="Auto"><i class="fas fa-adjust pointer-events-none"></i> Auto</button>
-    </div>
-</div>
-<div class="flex w-full h-screen justify-center items-center bg-white dark:bg-gray-800">
-    <h1 class="text-5xl text-gray-900 dark:text-white">Hello World!</h1>
-</div> -->
-<NavBar src={theme==='dark'? darkLogo : logo}/>
+<head>
+    <link rel="icon" href='%svelte%/src/assets/logo.png' />
+</head>
+
+<NavBar theme={theme} switchTheme={switchTheme}/>
 <main class='flex justify-center'>
-<div class="flex flex-col">
+<div class="flex flex-col items-center w-full">
     <h1 class="text-3xl font-bold underline p-5">
         Welcome!
     </h1>
 
-    <button class='is-primary px-2 py-1 m-2 rounded-full' on:click={switchTheme}>
+    <button class='bg-gray-400 text-gray-500 px-2 py-1 m-2 rounded-full' on:click={switchTheme} disabled>
         Switch theme
     </button>
+    <p class='text-xs w-2/4 text-center'>Now you can switch theme using the upper right button</p>
 </div>
 
 </main>
