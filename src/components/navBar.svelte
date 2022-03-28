@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	export let theme: string;
-	export let switchTheme: Function;
+	export let switchTheme: (event: Event) => void;
 
-	let toggleMenu: boolean = false;
-	function toggleSideBar(e: Event) {
+	let toggleMenu = false;
+	function toggleSideBar() {
 		toggleMenu = !toggleMenu;
 	}
 	let links: { caption: string; url: string }[] = [

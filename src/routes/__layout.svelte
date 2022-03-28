@@ -18,8 +18,12 @@
 
 	// export { theme as default };
 
-	let theme: string = 'dark';
-	function switchTheme(e: Event) {
+	let theme = 'dark';
+	/**
+	 * Switch the dark light theme based on the button click event, store the theme to the localStorage @TODO
+	 * @param e
+	 */
+	function switchTheme(e: Event): void {
 		e.preventDefault();
 		const styles = document.documentElement.style;
 		const colors =
