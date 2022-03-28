@@ -11,7 +11,7 @@
 		{ caption: 'Technology', url: '/technology' },
 		{ caption: 'How it works', url: '/how' },
 		{ caption: 'The team', url: '/team' },
-		{ caption: 'Community', url: '/community' }
+		{ caption: 'Community', url: '/community' },
 	];
 </script>
 

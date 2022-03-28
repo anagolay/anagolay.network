@@ -1,10 +1,7 @@
-<script lang='ts'>
-
+<script lang="ts">
 </script>
 
-<div>
-    The team page
-</div>
+<div>The team page</div>
 
 <style>
 </style>

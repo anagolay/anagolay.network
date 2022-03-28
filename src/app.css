@@ -2,31 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-    /* dark theme */
-    --main: #052233;
-    --secondary: #093954;
-    --terciary: #054F77;
-    --primary: #8CFF00;
-    --text : #F4FBFF;
-    color: var(--text)
+:root {
+	/* dark theme */
+	--main: #052233;
+	--secondary: #093954;
+	--terciary: #054f77;
+	--primary: #8cff00;
+	--text: #f4fbff;
+	color: var(--text);
 }
 
-.bg-main{
-    background: var(--main);
+.bg-main {
+	background: var(--main);
 }
-.bg-secondary{
-    background: var(--secondary);
+.bg-secondary {
+	background: var(--secondary);
 }
-.is-primary{
-    background-color: var(--primary);
-    color: var(--main)
+.is-primary {
+	background-color: var(--primary);
+	color: var(--main);
 }
-body{
-    height: 100vh;
-    background: linear-gradient(45deg, var(--main), var(--secondary), var(--terciary) );
+body {
+	height: 100vh;
+	background: linear-gradient(45deg, var(--main), var(--secondary), var(--terciary));
 }
-.btn-main{
-    background-color: var(--main);
-    color: var(--text)
+.btn-main {
+	background-color: var(--main);
+	color: var(--text);
 }

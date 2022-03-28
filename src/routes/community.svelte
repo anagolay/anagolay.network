@@ -1,10 +1,7 @@
-<script lang='ts'>
-
+<script lang="ts">
 </script>
 
-<div>
-    Technology page
-</div>
+<div>Technology page</div>
 
 <style>
 </style>
