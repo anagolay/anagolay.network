@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<div>Technology page</div>
+<div>Use Cases page</div>
 
 <style>
 </style>

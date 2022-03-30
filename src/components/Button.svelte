@@ -1,11 +1,22 @@
 <script lang="ts">
 	export let text: string;
-	export let extraClassNames: string[];
+	export let addClass: string;
+	export let onClick: () => void = () => {};
 </script>
 
 <button
-	class={` ${extraClassNames} px-6 my-2 p-2 w-2/4 mx-auto rounded-full flex items-center justify-center
-				md:my-1 md:py-1 md:w-24 md:mx-5 `}
+	class={`${addClass} flex items-center h-fit py-1 justify-center px-1 cbtn rounded-full`}
+	on:click={onClick}
 >
 	{text}
 </button>
+
+<style>
+	.cbtn {
+		box-shadow: 0px 4px 4px rgba(20, 31, 69, 0.5), inset 0px 2px 4px rgba(244, 251, 255, 0.5);
+	}
+	.cbtn:active {
+		box-shadow: 0px 4px 4px rgba(20, 31, 69, 0.5), inset 0px -3px 5px rgba(244, 251, 255, 0.2),
+			inset 4px 5px 10px #141f45;
+	}
+</style>
