@@ -1,9 +1,9 @@
 <script lang="ts">
-	export let diam: string = '2';
-	export let left: string = '20';
-	export let top: string = '10';
-	export let op: string = '1';
-	export let blur: boolean = false;
+	export let diam = '2';
+	export let left = '20';
+	export let top = '10';
+	export let op = '1';
+	export let blur = false;
 </script>
 
 <div
