@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	darkMode: 'class',
@@ -12,8 +14,15 @@ module.exports = {
 		fontFamily: {
 			sans: ['Graphik', 'sans-serif'],
 			serif: ['Merriweather', 'serif'],
+			nunito: ['nunito', 'sans-serif'],
+			montserrat: ['montserrat', 'serif'],
+			dmsans: ['DM Sans'], // Ensure fonts with spaces have " " surrounding it.
 		},
 		extend: {
+			backgroundImage: {
+				stars:
+					"url('https://upload.wikimedia.org/wikipedia/commons/3/3b/Night_sky_in_the_Alps_-_panoramio_%281%29.jpg')",
+			},
 			spacing: {
 				1: '8px',
 				2: '12px',
@@ -21,25 +30,39 @@ module.exports = {
 				4: '24px',
 				5: '32px',
 				6: '48px',
+				'1/3': '33%',
 				'1/10': '10%',
+				'3/4': '75%',
 			},
 			borderRadius: {
 				'4xl': '2rem',
 			},
 			colors: {
-				primary: '#054F77',
-				darkPrimary: '#093954',
-				darkestPrimary: '#052233',
-				secondary: '#8CFF00',
-				fontColor: '#F4FBFF',
+				blue: '#054F77',
+				darkblue: '#093954',
+				black: '#052233',
+				green: '#8CFF00',
+				white: '#F4FBFF',
 			},
 		},
 	},
-	plugins: [
-		require('daisyui'),
-		// require('@tailwindcss/typography'),
-		// require('@tailwindcss/forms'),
-		// require('@tailwindcss/line-clamp'),
-		// require('@tailwindcss/aspect-ratio'),
-	],
+	//daisyui override starts here:
+	plugins: [require('daisyui')],
+	daisyui: {
+		themes: [
+			{
+				anagolay: {
+					primary: '#054F77',
+					secondary: '#093954',
+					accent: '#052233',
+					neutral: '#052233',
+					'base-100': '#FFFFFF',
+					info: '#3ABFF8',
+					success: '#36D399',
+					warning: '#FBBD23',
+					error: '#F87272',
+				},
+			},
+		],
+	},
 };
