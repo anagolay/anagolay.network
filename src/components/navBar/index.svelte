@@ -24,7 +24,7 @@
 		<img class="object-contain h-8 md:h-10" src="horizontal_white1.svg" alt="Anagolay logo" />
 	</a>
 	<div
-		class={`z-10 flex flex-col absolute top-16 bottom-0 bg-black h-screen bg-opacity-95
+		class={`z-10 flex flex-col absolute top-16 bottom-0 bg-black md:bg-transparent h-screen bg-opacity-95
 			  ${toggleMenu ? 'w-full py-auto translate-x-full duration-300' : ''} py-0  text-center right-full mx-auto
             md:flex-row md:mx-0 md:relative md:top-auto md:h-full md:py-0 md:right-auto md:left-auto md:w-fit md:translate-x-0`}
 	>

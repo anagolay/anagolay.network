@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
 	export let text: string;
 	export let addClass: string;
 	export let onClick: () => void;
@@ -12,4 +12,4 @@
 </button>
 
 <style>
-</style>
+</style> -->

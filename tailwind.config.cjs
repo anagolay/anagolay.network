@@ -19,7 +19,7 @@ module.exports = {
 			dmsans: ['DM Sans'], // Ensure fonts with spaces have " " surrounding it.
 		},
 		extend: {
-			backgroundImage: {
+			background: {
 				stars:
 					"url('https://upload.wikimedia.org/wikipedia/commons/3/3b/Night_sky_in_the_Alps_-_panoramio_%281%29.jpg')",
 			},
@@ -32,6 +32,7 @@ module.exports = {
 				6: '48px',
 				'1/3': '33%',
 				'1/10': '10%',
+				'1/4': '25%',
 				'3/4': '75%',
 			},
 			borderRadius: {
