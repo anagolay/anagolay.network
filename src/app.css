@@ -24,14 +24,8 @@
 			inset 4px 5px 10px #141f45;
 	}
 
-	h1,
-	h2,
-	h3 {
-		@apply text-5xl font-bold leading-tight;
-	}
-
 	h1 {
-		@apply text-6xl;
+		@apply text-6xl font-bold leading-tight;
 	}
 
 	h2 {
@@ -40,5 +34,15 @@
 
 	.box {
 		box-shadow: 0px 4px 4px rgba(20, 31, 69, 0.5), inset 0px 2px 4px rgba(244, 251, 255, 0.5);
+	}
+
+	@media (max-width: 520px) {
+		h1 {
+			@apply text-xl;
+		}
+
+		h2 {
+			@apply text-2xl;
+		}
 	}
 }

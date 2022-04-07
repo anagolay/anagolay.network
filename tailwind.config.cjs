@@ -34,6 +34,8 @@ module.exports = {
 				'1/10': '10%',
 				'1/4': '25%',
 				'3/4': '75%',
+				150: '150%',
+				200: '200%',
 			},
 			borderRadius: {
 				'4xl': '2rem',
@@ -55,7 +57,7 @@ module.exports = {
 				anagolay: {
 					primary: '#054F77',
 					secondary: '#093954',
-					accent: '#052233',
+					accent: '#8CFF00',
 					neutral: '#052233',
 					'base-100': '#FFFFFF',
 					info: '#3ABFF8',

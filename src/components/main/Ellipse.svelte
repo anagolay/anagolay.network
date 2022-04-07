@@ -1,15 +1,16 @@
 <script lang="ts">
+	export let extraclass = '';
 	export let diam = '2';
-	export let left = '20';
-	export let top = '10';
+	export let left = '0';
+	export let top = '0';
 	export let op = '1';
-	export let blur = false;
+	export let blur = '5';
 </script>
 
 <div
-	class={`ellipse absolute rounded-full bg-gradient-to-t from-blue to-green`}
-	style={`height: ${diam}rem; width: ${diam}rem; left: ${left}%; top: ${top}%; opacity: ${op} ${
-		blur ? `; filter: blur(${Number(diam) * 0.1}rem)` : ''
+	class={`ellipse rounded-full bg-gradient-to-t from-blue to-green ${extraclass}`}
+	style={`height: ${diam}; width: ${diam}; top: ${top}%; left: ${left}%; opacity: ${op} ${
+		blur ? `; filter: blur(${blur}px)` : ''
 	}`}
 />
 

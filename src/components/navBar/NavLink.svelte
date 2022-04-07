@@ -7,7 +7,7 @@
 
 <a
 	href={url}
-	class={`p-2 min-w-fit hover:bg-black border-b border-solid border-green ${
+	class={`p-2 min-w-fit hover:bg-black border-b border-solid border-green font-montserrat ${
 		$page.url.pathname === url ? 'text-green' : ''
 	} md:hover:underline md:border-0 md:my-auto md:hover:bg-transparent`}
 	on:click={onClick}
