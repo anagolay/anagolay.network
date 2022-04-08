@@ -19,21 +19,16 @@
 		<div
 			class="absolute flex justify-end items-start overflow-hidden p -pr-12 w-200 md:w-full md:h-auto top-0 right-0"
 		>
-			<video
-				class="mix-blend-lighten  mt-8 w-2/3 -mr-3 md:mt-0 md:w-full md:mr-0"
-				playsinline
-				autoplay
-				muted
-				loop
-			>
-				<source src="animacion sin fondo_final.mp4" type="video/mp4" />
+			<video class="mt-8 w-2/3 -mr-3 md:mt-0 md:w-full md:mr-0" playsinline autoplay muted loop>
+				<!-- <source src="animacion sin fondo_final.mp4" type="video/mp4" /> -->
+				<source src="prueba animacion.webm" type="video/webm" />
 			</video>
 		</div>
 
 		<div class="relative text-med py-16 mt ml-3 md:ml-1/10 font-dmsans md:text-xl md:py-48">
 			<div class="absolute w-full h-5/6 md:h-3/4">
-				<Ellipse diam="1.5vw" left="10" top="90" op="0.5" blur="5" />
-				<Ellipse diam="4.5vw" left="25" top="75" op="0.5" blur="5" />
+				<Ellipse diam="1.5vw" left="10" top="90" op="0.5" blur="5" extraclass="absolute" />
+				<Ellipse diam="4.5vw" left="25" top="75" op="0.5" blur="5" extraclass="absolute" />
 			</div>
 			<div class="relative">
 				<h1 class="mb-5 tracking-wider w-3/4">
@@ -53,7 +48,7 @@
 	<How />
 	<Cases />
 	<Team />
-	<!-- <Roadmap /> -->
+	<Roadmap />
 </main>
 
 <style>

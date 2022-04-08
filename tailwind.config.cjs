@@ -23,6 +23,13 @@ module.exports = {
 				stars:
 					"url('https://upload.wikimedia.org/wikipedia/commons/3/3b/Night_sky_in_the_Alps_-_panoramio_%281%29.jpg')",
 			},
+			textShadow: {
+				sm: '0 1px 2px var(--tw-shadow-color)',
+				DEFAULT: '0 2px 4px var(--tw-shadow-color)',
+				lg: '0 8px 16px var(--tw-shadow-color)',
+				around:
+					'1px 0 3px var(--tw-shadow-color), -1px 0 3px var(--tw-shadow-color), 0 1px 3px var(--tw-shadow-color), 0 -1px 3px var(--tw-shadow-color);',
+			},
 			spacing: {
 				1: '8px',
 				2: '12px',
@@ -50,7 +57,19 @@ module.exports = {
 		},
 	},
 	//daisyui override starts here:
-	plugins: [require('daisyui')],
+	plugins: [
+		plugin(function ({ matchUtilities, theme }) {
+			matchUtilities(
+				{
+					'text-shadow': (value) => ({
+						textShadow: value,
+					}),
+				},
+				{ values: theme('textShadow') }
+			);
+		}),
+		require('daisyui'),
+	],
 	daisyui: {
 		themes: [
 			{
