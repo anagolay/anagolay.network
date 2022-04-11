@@ -21,7 +21,7 @@
 	class="flex flex-col md:flex-row items-center md:items-start justify-evenly text-base w-full font-montserrat pb-[5rem] border-t-2 border-white border-opacity-30 pt-[2rem]"
 >
 	<div class="flex-col ">
-		<img class="w-[8rem] mix-blend-lighten" src="square_bb_gl2.svg" alt="Anagolay logo" />
+		<img class="w-[8rem] mix-blend-lighten" src="square_bb_gl2.jpg" alt="Anagolay logo" />
 	</div>
 	<div class="flex flex-col-reverse text-center md:w-full md:flex-row px-3">
 		<div class="md:flex md:justify-evenly w-full">
