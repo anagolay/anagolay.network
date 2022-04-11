@@ -1,4 +1,6 @@
 <script lang="ts">
+	import SectionButton from '../SectionButton.svelte';
+
 	let cases: { id: number; src: string; alt: string; title: string; link: string; text: string }[] = [
 		{
 			id: 1,
@@ -34,31 +36,34 @@
 			Copyright and Ownership <i>Verifiable</i> Statements created and stored on Anagolay can be applied to solve
 			a number of issues including, but not limited to:
 		</p>
+		<section>
+			<div class="w-[17rem] carousel font-dmsans font-medium mx-auto md:w-fit">
+				{#each cases as item}
+					<div class="carousel-item mx-[.75rem] flex-col md:max-w-1/3 md:w[16rem]" id={`item${item.id}`}>
+						<div
+							class="relative w-5/12 h-[7rem] mx-auto py-auto flex items-center justify-center -mb-[4.2rem]"
+						>
+							<img src={item.src} alt={item.alt} />
+						</div>
+						<div class="box rounded-lg text-sm bg-blue w-[16rem]">
+							<p class="px-3 mx-auto text-green text-center pt-24 mb-12 h-32">
+								{item.title}
+							</p>
 
-		<div class="w-5/6 carousel font-dmsans font-medium mx-auto md:w-fit  md:columns-3">
-			{#each cases as item}
-				<div class="carousel-item w-full mx-2 flex-col md:max-w-1/3 md:w-fit" id={`item${item.id}`}>
-					<div class="relative w-5/12 h-40 mx-auto py-auto flex items-end justify-center -mb-14">
-						<img src={item.src} alt={item.alt} />
-					</div>
-					<div class="box rounded-lg text-sm bg-blue md:w-[25vw]">
-						<p class="px-3 mx-auto text-green text-center pt-24 mb-12 h-32">
-							{item.title}
-						</p>
-
-						<p class="w-5/6 h-20 my-4 mx-auto">{item.text}</p>
-						<div class="w-full mt-6 pb-3 text-right">
-							<a class="text-green mr-4 text-lg" href={item.link}>&#10230</a>
+							<p class="w-5/6 h-24 my-4 mx-auto">{item.text}</p>
+							<div class="w-full mt-6 pb-3 text-right">
+								<a class="text-green mr-4 text-lg" href={item.link}>&#10230</a>
+							</div>
 						</div>
 					</div>
-				</div>
-			{/each}
-		</div>
-		<div class="flex justify-center w-full py-2 gap-2 md:invisible">
-			{#each cases as item}
-				<a href={`#item${item.id}`}><button class="btn h-1 w-1 btn-outline btn-accent p-0" /></a>
-			{/each}
-		</div>
-		<button class="btn btn-primary min-w-fit w-[25vw] py-3 my-6 text-white">See more use cases</button>
+				{/each}
+			</div>
+			<div class="flex justify-center w-full py-2 gap-2 md:invisible">
+				{#each cases as item}
+					<a href={`#item${item.id}`}><button class="btn h-1 w-1 btn-outline btn-accent p-0" /></a>
+				{/each}
+			</div>
+		</section>
+		<SectionButton>See more use cases</SectionButton>
 	</div>
 </div>

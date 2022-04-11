@@ -1,6 +1,7 @@
 <script lang="ts">
 	import NavLink from './NavLink.svelte';
 	import NavButton from './NavButton.svelte';
+	import Menu from 'svelte-material-icons/Menu.svelte';
 
 	let toggleMenu = false;
 	function toggleSideBar() {
@@ -18,7 +19,7 @@
 	class="z-10 fixed flex items-center bg-opacity-95 justify-center bg-black w-screen text-sm py-3 pl-1 text-white h-15 md:px-1/10 md:justify-between"
 >
 	<button class={`absolute text-inherit p-1 text-lg left-1 md:hidden`} on:click={toggleSideBar}>
-		<i class={`fas fa-bars ${toggleMenu ? 'text-green' : ''}`} />
+		<Menu color={toggleMenu ? 'var(--accent)' : 'var(--white)'} />
 	</button>
 	<a href="/">
 		<img class="object-contain h-8 md:h-10" src="horizontal_white1.svg" alt="Anagolay logo" />

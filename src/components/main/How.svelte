@@ -1,4 +1,6 @@
 <script lang="ts">
+	import SectionButton from '../SectionButton.svelte';
+
 	let howItems: { src: string; alt: string; text: string; link: string }[] = [
 		{
 			src: 'WDIW (1).png',
@@ -23,22 +25,24 @@
 
 <div class="relative flex w-full justify-center items-center min-h-screen text-center">
 	<!-- <div class="flex flex-col items-center md:w-3/4"> -->
-	<div class="flex flex-col items-center">
-		<h2 class="py-2">How does it work?</h2>
+	<div class="flex flex-col items-center w-[90%] md:w-5/6">
+		<h2 class="py-2 mb-8">How does it work?</h2>
 		<div class="flex flex-col mx-auto">
 			<!-- <div class="flex flex-col mx-auto md:w-5/6"> -->
 			{#each howItems as item}
-				<div class="md:flex mb-3 text-sm md:text-base">
+				<div class="md:flex text-left mb-8 text-sm md:text-base">
 					<div class="justify-center mx-auto px-2 my-auto w-3/4 md:flex md:w-fit md:h-40" style="">
-						<img class="md:object-contain mx-auto" src={item.src} alt={item.alt} />
+						<img class="md:object-contain h-[8rem] md:h-[unset] mx-auto" src={item.src} alt={item.alt} />
 					</div>
-					<div class="flex flex-col justify-center md:w-2/3 h-full px-5 my-auto">
-						<p>{item.text}</p>
+					<div
+						class="flex flex-col justify-center items-center md:items-start md:w-2/3 px-0 md:px-5 h-full my-auto"
+					>
+						<p class="text-center md:text-left mb-3">{item.text}</p>
 						<a class="text-green" href={item.link}>learn more &#10230; </a>
 					</div>
 				</div>
 			{/each}
 		</div>
-		<button class="btn btn-primary min-w-fit w-[25vw] py-3 my-6 text-white">Learn more</button>
+		<SectionButton>Learn more</SectionButton>
 	</div>
 </div>

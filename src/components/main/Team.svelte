@@ -1,5 +1,7 @@
 <script lang="ts">
 	import Ellipse from '../../components/main/Ellipse.svelte';
+	import Linkedin from 'svelte-material-icons/Linkedin.svelte';
+	import Github from 'svelte-material-icons/Github.svelte';
 
 	let team = [
 		{
@@ -98,7 +100,8 @@
 					target="_blank"
 					rel="noreferrer"
 					class="btn text-sm p-4 w-fit mx-3 md:mt-5 bg-blue rounded-full"
-					><i class="fa-brands fa-linkedin-in text-white" /></a
+				>
+					<Linkedin color="var(--white)" size="1.2rem" /></a
 				>
 				{#if selected.github}
 					<a
@@ -106,7 +109,8 @@
 						target="_blank"
 						rel="noreferrer"
 						class="btn text-sm p-4 w-fit mx-3 md:mt-5 bg-blue rounded-full"
-						><i class="fa-brands fa-github text-white" /></a
+					>
+						<Github color="var(--white)" size="1.2rem" /></a
 					>
 				{/if}
 			</div>

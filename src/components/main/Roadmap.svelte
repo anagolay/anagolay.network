@@ -2,11 +2,14 @@
 	import { onMount } from 'svelte';
 
 	import Ellipse from './Ellipse.svelte';
+	import PanLeft from 'svelte-material-icons/PanLeft.svelte';
+	import PanRight from 'svelte-material-icons/PanRight.svelte';
+	import SectionButton from '../SectionButton.svelte';
 
 	enum status {
 		done = 'done',
 		doing = 'doing',
-		pendant = 'pendant',
+		pending = 'pending',
 	}
 
 	interface Step {
@@ -85,12 +88,12 @@
 					fact: 'PoE & Statement of Ownership and Copyright',
 					description:
 						'<p>Improve and re-design the workflows specific for Proofs-of-Exitance & Statement of Ownership and Copyright. Where blockchain is not the central technology, but a facilitator of transparency & freedom for the build architecture.</p>',
-					status: status.doing,
+					status: status.pending,
 				},
 				{ fact: ' Anagolay rebrand and new website', status: status.doing },
 				{
 					fact: 'Idiyanale Phase 2/2 (Web3 Foundation Grant)',
-					status: status.pendant,
+					status: status.doing,
 				},
 			],
 		},
@@ -100,19 +103,19 @@
 			facts: [
 				{
 					fact: 'Governance design and implementation',
-					status: status.pendant,
+					status: status.pending,
 				},
 				{
 					fact: 'Anagolay Explorer',
 					description:
 						'<p>Anagolay Explorer (focused on the Statements, Operation, Workflows and transfers of Ownerships and Copyrights).</p>',
-					status: status.pendant,
+					status: status.pending,
 				},
 				{
 					fact: 'Anagolay SDK',
 					description:
 						'<p>While building SDK we will focus on the features for our JS/TS SDK, because the Anagolay interaction will come mostly from the Web Browser, Smart phones and Desktop environments. Our goal is to design SDK as intuitive and developer-friendly as possible.</p>',
-					status: status.pendant,
+					status: status.pending,
 				},
 			],
 		},
@@ -120,11 +123,11 @@
 			title: 'Q4',
 			year: 2022,
 			facts: [
-				{ fact: 'Idiyanale Mainnet Ready', status: status.pendant },
-				{ fact: 'IDI Token Launch', status: status.pendant },
+				{ fact: 'Idiyanale Mainnet Ready', status: status.pending },
+				{ fact: 'IDI Token Launch', status: status.pending },
 				{
 					fact: 'Promote for Use Cases and Get Apps Running on Idiyanale',
-					status: status.pendant,
+					status: status.pending,
 				},
 			],
 		},
@@ -136,13 +139,13 @@
 					fact: 'Distributed-build system for Artefacts',
 					description:
 						"<p>Each Operation and Workflow produce the built artifacts for WASM and rust language targets. These artifacts must not be tampered with before they are stored on the chain and they must not be built on the developers' machines. If they were, then the developers can act as bad actors and try to inject the code in the middle of the process and try to fool any other user who will use that Operation or Workflow. This is going to be a new application and will come together with the incentive layer on-chain.</p>",
-					status: status.pendant,
+					status: status.pending,
 				},
 				{
 					fact: 'Innovation on the permanent storage for Anagolay purpose',
 					description:
 						'<p>this may include the on-chain incentive to have the IPFS nodes running (either cluster or not) and storing the off-chain Anagolay data; Operation, Workflow and any other artefacts that are needed to have the Statements working.</p>',
-					status: status.pendant,
+					status: status.pending,
 				},
 			],
 		},
@@ -154,9 +157,9 @@
 					fact: 'Extensive testing and code improvements to fit low-energy devices',
 					description:
 						'<p>Extensive testing and code improvements to fit low-energy devices like smartphones and Raspberry Pi (with an idea that the Anagolay can be run anywhere, even on Mars). Low energy devices are quite powerful and they can be used to be part of the Anagolay validator set, effectively validating the chain and its transactions. We develop our solution with a mindset, that every drop of energy matters.</p>',
-					status: status.pendant,
+					status: status.pending,
 				},
-				{ fact: 'Extended set of common Workflows and Operations ', status: status.pendant },
+				{ fact: 'Extended set of common Workflows and Operations ', status: status.pending },
 			],
 		},
 	];
@@ -167,11 +170,11 @@
 		let factStatus = event.facts.map((f) => f.status);
 		if (factStatus.includes(status.doing)) {
 			state = status.doing;
-			blur = 2;
+			blur = 5;
 			op = 0.98;
-		} else if (factStatus.includes(status.pendant)) {
-			state = status.pendant;
-			blur = 2;
+		} else if (factStatus.includes(status.pending)) {
+			state = status.pending;
+			blur = 10;
 			op = 0.9;
 		}
 		return { ...event, status: state, blur, op };
@@ -191,14 +194,14 @@
 <div class="w-5/6 mx-auto pb-10">
 	<div class="flex justify-between items-center w-full py-12 text-xs md:text-base">
 		<p
-			class="flex flex-col-reverse md:flex-row opacity-75 w-1/3 text-left cursor-pointer hover:opacity-100 hover:underline"
+			class="text-left w-1/3 opacity-75 cursor-pointer hover:opacity-100 hover:underline"
 			on:click={() => scrollTo(0)}
 		>
 			&#10229; Completed
 		</p>
-		<h2 class="w-1/3 text-center">Roadmap</h2>
+		<h2 class="w-1/3 text-base md:text-2xl text-center">Roadmap</h2>
 		<p
-			class="flex flex-col md:flex-row w-1/3 text-right opacity-75 cursor-pointer hover:opacity-100 hover:underline"
+			class="text-right w-1/3 opacity-75 cursor-pointer hover:opacity-100 hover:underline"
 			on:click={() => scrollTo(roadWidth)}
 		>
 			Coming next &#10230;
@@ -214,7 +217,7 @@
 				<div class="col min-w-[15rem] mx-auto font-dmsans font-medium">
 					<div
 						class={`text-7xl text- ${
-							event.status === status.pendant ? 'opacity-30' : 'opacity-70'
+							event.status === status.pending ? 'opacity-30' : 'opacity-70'
 						} blur-[2px] text-darkblue ${
 							event.status === status.doing ? 'shadow-green' : 'shadow-white'
 						}  text-shadow-around `}
@@ -223,7 +226,7 @@
 					</div>
 					<div
 						class={`flex justify-end blur-0 text-xl pr-[1rem] -mt-[4rem] mb-[4rem] w-1/2 ${
-							event.status === status.pendant ? 'opacity-50' : ''
+							event.status === status.pending ? 'opacity-50' : ''
 						}`}
 					>
 						{event.year}
@@ -250,7 +253,7 @@
 					{#each event.facts as fact}
 						<div
 							class={`factBox box h-fit bg-primary italic ${
-								fact.status === status.pendant ? 'opacity-50' : 'bg-opacity-50'
+								fact.status === status.pending ? 'opacity-50' : 'bg-opacity-50'
 							} p-2 mb-2 rounded-md mx-auto text-white text-sm`}
 							style={`${
 								fact.status === status.doing ? 'border: 1px solid green; box-shadow: 0 0 .5rem #8cff00' : ''
@@ -263,7 +266,13 @@
 			{/each}
 		</div>
 	</div>
-	<button class="btn btn-primary min-w-fit w-[25vw] mx-auto py-3 my-6 text-white">Learn more</button>
+	<div class="flex items-center justify-center text-white text-base opacity-50 italic py-5">
+		<PanLeft />Swipe to see<PanRight />
+	</div>
+	<div class="flex flex-col items-center">
+		<a href="/." class="text-green hover:underline  text-base">See the full roadmap</a>
+		<SectionButton clases="">CTA</SectionButton>
+	</div>
 </div>
 
 <style>
