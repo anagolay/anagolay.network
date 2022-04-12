@@ -27,7 +27,7 @@
 <div class="flex flex-col md:flex-row items-center md:items-start w-full text-center md:px-1/10 pb-[3rem]">
 	<img
 		class="w-[6rem] md:w-[8rem] mix-blend-lighten my-5 md:my-0 md:mx-5"
-		src="square_bb_gl2.jpg"
+		src="green_logo.png"
 		alt="Anagolay logo"
 	/>
 

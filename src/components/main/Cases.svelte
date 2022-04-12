@@ -4,7 +4,7 @@
 	let cases: { id: number; src: string; alt: string; title: string; link: string; text: string }[] = [
 		{
 			id: 1,
-			src: 'case A.png',
+			src: 'case1.png',
 			alt: 'source code',
 			title: 'Source code availability & trustworthiness',
 			link: '/',
@@ -12,7 +12,7 @@
 		},
 		{
 			id: 2,
-			src: 'case B.png',
+			src: 'case2.png',
 			alt: 'ip management',
 			title: 'IP Management in the Web3',
 			link: '/',
@@ -20,7 +20,7 @@
 		},
 		{
 			id: 3,
-			src: 'case C.png',
+			src: 'case3.png',
 			alt: 'digital art',
 			title: 'Digital Art P2P Licensing \n (a working alternative to NFTs Craze)',
 			link: '/',

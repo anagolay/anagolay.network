@@ -3,19 +3,19 @@
 
 	let howItems: { src: string; alt: string; text: string; link: string }[] = [
 		{
-			src: 'WDIW (1).png',
+			src: 'security.png',
 			alt: 'security',
 			text: 'The power of Anagolay is in creating the process (or workflow) that everyone can trust.',
 			link: '/',
 		},
 		{
-			src: 'WDIW (2).png',
+			src: 'world.png',
 			alt: 'world validation',
 			text: 'Anagolay workflow and its building blocks — operations can be run anywhere in any environment (even on Mars!) and always produce the same results (Proofs) for the same (or similar) sets of data.',
 			link: '/',
 		},
 		{
-			src: 'WDIW (3).png',
+			src: 'validation.png',
 			alt: 'proofs',
 			text: 'Anagolay Proofs, combined with cryptographic signatures, verify the rightfulness of a claim and generate Verifiable Statements.',
 			link: '/',

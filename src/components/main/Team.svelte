@@ -131,6 +131,6 @@
 		margin: -25% 0%;
 		height: fit-content;
 		padding: 30% 5%;
-		background: url('line 2.png') 100% 100% / 30vw no-repeat, url('line 1.png') 0% 0% / 30vw no-repeat;
+		background: url('line2.png') 100% 100% / 30vw no-repeat, url('line1.png') 0% 0% / 30vw no-repeat;
 	}
 </style>

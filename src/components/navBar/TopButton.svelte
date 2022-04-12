@@ -17,14 +17,6 @@
 		backdrop-filter: blur(14.9993px);
 		z-index: 2;
 	}
-	.topButton > p {
-		display: inline-block;
-		-webkit-transform: scale(2, 1);
-		-moz-transform: scale(2, 1);
-		-ms-transform: scale(2, 1);
-		-o-transform: scale(2, 1);
-		transform: scale(2, 1);
-	}
 	.topButton:active {
 		box-shadow: 0px 4px 4px rgba(20, 31, 69, 0.5), inset 0px -3px 5px rgba(244, 251, 255, 0.2),
 			inset 4px 5px 10px #141f45;
