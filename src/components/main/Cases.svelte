@@ -30,7 +30,7 @@
 </script>
 
 <div class={`flex flex-col w-full justify-center items-center h-fit min-h-screen text-center`}>
-	<div class="absolute h-[120%] w-full bg-[url('stars_background.png')] mix-blend-lighten" />
+	<div class="absolute h-[120%] w-full bg-[url('stars_background2.png')] mix-blend-lighten" />
 	<div class="relative mt-0 flex flex-col items-center h-3/4 w-full m-full mt ">
 		<h3 class="py-6 font-montserrat mb-3 px-1/10 md:w-5/6">
 			Copyright and Ownership <i>Verifiable</i> Statements created and stored on Anagolay can be applied to solve

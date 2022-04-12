@@ -36,7 +36,7 @@
 			link: 'https://www.linkedin.com/in/carla-pezzo/',
 		},
 		{
-			name: 'Leila',
+			name: 'Leila Iruzun',
 			title: 'Business Operations',
 			img: 'leila.png',
 			bio: 'Leila’s background is in management and finance. Before joining Kelp, she has worked as a business consultant for several projects. Her research subject is digital art, NFTs, and digital copyright. MSc Management and Business Economics. Massachusetts Institute of Technology: Digital Transformation Program. Leila flies kites, enjoys origami, and is currently learning Chinese.',

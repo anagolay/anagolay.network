@@ -72,9 +72,7 @@
 		background: linear-gradient(360deg, rgba(5, 79, 119, 0.25) 4.85%, #052233 86.68%);
 	}
 	.starry {
-		/* background: linear-gradient(180deg, #054e76 0%, rgba(5, 79, 119, 0) 29.13%), url('stars_background.png'); */
-		/* transform: rotate(180deg); */
-		background: linear-gradient(rgba(5, 79, 119, 0) 70.87%, #054e76 100%), url('stars_background.png');
+		background: linear-gradient(rgba(5, 79, 119, 0) 70.87%, #054e76 100%), url('stars_background2.png');
 		opacity: 0.6;
 		mix-blend-mode: lighten;
 		background-size: cover;
