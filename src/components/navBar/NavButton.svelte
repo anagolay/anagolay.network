@@ -9,7 +9,7 @@
 	<div
 		class={`p-2 w-full min-w-fit hover:bg-black border-b border-solid border-green ${
 			$page.url.pathname === url ? 'text-green' : ''
-		} md:navButton md:btn md:ml-2 md:btn-secondary md:text-white md:w-24 font-montserrat md:text-xs md:py-1.5 md:px-8 `}
+		} md:navButton md:btn md:ml-2 md:btn-secondary md:text-white md:w-24 font-montserrat md:text-[1rem] md:py-1.5 md:px-8 `}
 	>
 		{caption}
 	</div>

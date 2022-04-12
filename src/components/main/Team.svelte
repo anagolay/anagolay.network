@@ -73,7 +73,7 @@
 	<div
 		class="relative box w-full my-12 teamGrid rounded-3xl px-2 py-5 md:mx-auto md:w-5/6 md:py-6 md:px-[5%]"
 	>
-		<h2 class="font-medium">Meet the team</h2>
+		<h2 class="font-medium ">Meet the team</h2>
 		<div class="py-3 w-5/6 mx-auto grid grid-cols-3 md:w-full md:grid-cols-6 md:py-6">
 			{#each team as member}
 				<div class="text-center mx-1 py-2 md:mx-1 md:py-0">
@@ -89,9 +89,9 @@
 			{/each}
 		</div>
 		{#if selected}
-			<h2 class="font-light">{selected.title}</h2>
-			<p class="mt-2 text-green text-xl"><i>{selected.name}</i></p>
-			<p class="text-sm mx-auto min-h-48  py-5 md:text-base md:w-5/6" style="height: calc( 18rem - 10vw )">
+			<h3 class="font-light">{selected.title}</h3>
+			<p class="mt-2 text-green text-[1rem] md:text-[1.5rem]"><i>{selected.name}</i></p>
+			<p class="mx-auto min-h-48  py-5 md:w-5/6" style="height: calc( 18rem - 10vw )">
 				{selected.bio}
 			</p>
 			<div class="flex w-full justify-center">

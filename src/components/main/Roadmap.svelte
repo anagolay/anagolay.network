@@ -199,7 +199,7 @@
 		>
 			&#10229; Completed
 		</p>
-		<h2 class="w-1/3 text-base md:text-2xl text-center">Roadmap</h2>
+		<h2 class="w-1/3 text-base text-center">Roadmap</h2>
 		<p
 			class="text-right w-1/3 opacity-75 cursor-pointer hover:opacity-100 hover:underline"
 			on:click={() => scrollTo(roadWidth)}
@@ -249,12 +249,12 @@
 				</div>
 			{/each}
 			{#each steps as event}
-				<div class="col mt-5 min-w-[15rem] mx-auto  pb-10">
+				<div class="col mt-5 min-w-[15rem] mx-auto  pb-10 text-[1rem]">
 					{#each event.facts as fact}
 						<div
 							class={`factBox box h-fit bg-primary italic ${
 								fact.status === status.pending ? 'opacity-50' : 'bg-opacity-50'
-							} p-2 mb-2 rounded-md mx-auto text-white text-sm`}
+							} p-2 mb-2 rounded-md mx-auto text-white`}
 							style={`${
 								fact.status === status.doing ? 'border: 1px solid green; box-shadow: 0 0 .5rem #8cff00' : ''
 							}`}
@@ -266,11 +266,11 @@
 			{/each}
 		</div>
 	</div>
-	<div class="flex items-center justify-center text-white text-base opacity-50 italic py-5">
+	<div class="flex items-center justify-center text-white text-[1rem] opacity-50 italic py-5">
 		<PanLeft />Swipe to see<PanRight />
 	</div>
 	<div class="flex flex-col items-center">
-		<a href="/." class="text-green hover:underline  text-base">See the full roadmap</a>
+		<a href="/." class="text-green hover:underline  text-[1.125rem]">See the full roadmap</a>
 		<SectionButton clases="">CTA</SectionButton>
 	</div>
 </div>

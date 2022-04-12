@@ -11,7 +11,7 @@
 		{ caption: 'How it works', url: '/how' },
 		{ caption: 'Use cases', url: '/use' },
 		{ caption: 'The team', url: '/team' },
-		{ caption: 'Community', url: '/community' },
+		{ caption: 'FAQ', url: '/faq' },
 	];
 </script>
 
@@ -32,7 +32,7 @@
 		{#each links as link}
 			<NavLink caption={link.caption} url={link.url} onClick={toggleSideBar} />
 		{/each}
-		<NavButton caption="FAQ" url="faq" onClick={toggleSideBar} />
+		<NavButton caption="Whitepaper" url="faq" onClick={toggleSideBar} />
 	</div>
 </nav>
 

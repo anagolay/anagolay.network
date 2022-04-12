@@ -26,11 +26,11 @@
 <div class="relative flex w-full justify-center items-center min-h-screen text-center">
 	<!-- <div class="flex flex-col items-center md:w-3/4"> -->
 	<div class="flex flex-col items-center w-[90%] md:w-5/6">
-		<h2 class="py-2 mb-8">How does it work?</h2>
+		<h2 class="py-2 mb-3 md:mb-8">How does it work?</h2>
 		<div class="flex flex-col mx-auto">
 			<!-- <div class="flex flex-col mx-auto md:w-5/6"> -->
 			{#each howItems as item}
-				<div class="md:flex text-left mb-8 text-sm md:text-base">
+				<div class="md:flex text-left mb-8">
 					<div class="justify-center mx-auto px-2 my-auto w-3/4 md:flex md:w-fit md:h-40" style="">
 						<img class="md:object-contain h-[8rem] md:h-[unset] mx-auto" src={item.src} alt={item.alt} />
 					</div>

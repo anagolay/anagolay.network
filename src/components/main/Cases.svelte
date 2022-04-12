@@ -32,20 +32,20 @@
 <div class={`flex flex-col w-full justify-center items-center h-fit min-h-screen text-center`}>
 	<div class="absolute h-[120%] w-full bg-[url('stars_background.png')] mix-blend-lighten" />
 	<div class="relative mt-0 flex flex-col items-center h-3/4 w-full m-full mt ">
-		<p class="py-6 font-montserrat mb-3 px-1/10 text-sm md:text-base md:w-3/4">
+		<h3 class="py-6 font-montserrat mb-3 px-1/10 md:w-5/6">
 			Copyright and Ownership <i>Verifiable</i> Statements created and stored on Anagolay can be applied to solve
 			a number of issues including, but not limited to:
-		</p>
+		</h3>
 		<section>
 			<div class="w-[17rem] carousel font-dmsans font-medium mx-auto md:w-fit">
 				{#each cases as item}
 					<div class="carousel-item mx-[.75rem] flex-col md:max-w-1/3 md:w[16rem]" id={`item${item.id}`}>
 						<div
-							class="relative w-5/12 h-[7rem] mx-auto py-auto flex items-center justify-center -mb-[4.2rem]"
+							class="relative w-5/12 h-[7rem] mx-auto py-auto flex items-center justify-center -mb-[3.2rem]"
 						>
-							<img src={item.src} alt={item.alt} />
+							<img class="object-contain max-h-full" src={item.src} alt={item.alt} />
 						</div>
-						<div class="box rounded-lg text-sm bg-blue w-[16rem]">
+						<div class="box rounded-lg bg-blue w-[16rem] md:w-[20rem]">
 							<p class="px-3 mx-auto text-green text-center pt-24 mb-12 h-32">
 								{item.title}
 							</p>
