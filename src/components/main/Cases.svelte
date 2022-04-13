@@ -32,10 +32,10 @@
 <div class={`flex flex-col w-full justify-center items-center h-fit min-h-screen text-center`}>
 	<div class="absolute h-[120%] w-full bg-[url('stars_background2.png')] mix-blend-lighten" />
 	<div class="relative mt-0 flex flex-col items-center w-full m-full mt ">
-		<h3 class="py-6 font-montserrat mb-3 w-[90%]">
+		<h4 class="py-6 font-montserrat mb-3 w-3/4">
 			Copyright and Ownership <i>Verifiable</i> Statements created and stored on Anagolay can be applied to solve
 			a number of issues including, but not limited to:
-		</h3>
+		</h4>
 		<div class="w-[17rem] carousel font-dmsans font-medium mx-auto md:w-fit md:h-fit">
 			{#each cases as item}
 				<div class="carousel-item mx-[.75rem] flex-col md:max-w-1/3 md:w[16rem]" id={`item${item.id}`}>
