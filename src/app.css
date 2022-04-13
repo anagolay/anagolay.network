@@ -11,6 +11,7 @@
 	html,
 	body {
 		scroll-behavior: smooth;
+		font-size: calc(12px + 0.3vw);
 	}
 
 	.navButton {
@@ -61,6 +62,10 @@
 	}
 
 	@media (max-width: 520px) {
+		body {
+			font-size: 1rem;
+		}
+
 		h2 {
 			font-size: 1.125rem;
 		}

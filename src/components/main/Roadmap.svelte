@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
+	import Discord from 'svelte-material-icons/Discord.svelte';
 	import Ellipse from './Ellipse.svelte';
 	import PanLeft from 'svelte-material-icons/PanLeft.svelte';
 	import PanRight from 'svelte-material-icons/PanRight.svelte';
@@ -192,14 +193,14 @@
 </script>
 
 <div class="w-5/6 mx-auto pb-10">
-	<div class="flex justify-between items-center w-full py-12 text-xs md:text-base">
+	<div class="flex justify-between items-center w-full py-[4rem] text-xs md:text-base">
 		<p
 			class="text-left w-1/3 opacity-75 cursor-pointer hover:opacity-100 hover:underline"
 			on:click={() => scrollTo(0)}
 		>
 			&#10229; Completed
 		</p>
-		<h2 class="w-1/3 text-base text-center">Roadmap</h2>
+		<h2 class="w-1/3 text-center">Roadmap</h2>
 		<p
 			class="text-right w-1/3 opacity-75 cursor-pointer hover:opacity-100 hover:underline"
 			on:click={() => scrollTo(roadWidth)}
@@ -267,11 +268,18 @@
 		</div>
 	</div>
 	<div class="flex items-center justify-center text-white text-[1rem] opacity-50 italic py-5">
-		<PanLeft />Swipe to see<PanRight />
+		<PanLeft />
+		<p class="md:hidden">Swipe</p>
+		<p class="hidden md:block">Scroll</p>
+		<p class="ml-[.3rem]">to see</p>
+		<PanRight />
 	</div>
 	<div class="flex flex-col items-center">
 		<a href="/." class="text-green hover:underline  text-[1.125rem]">See the full roadmap</a>
-		<SectionButton clases="">CTA</SectionButton>
+		<SectionButton clases=""
+			><Discord size="1.2rem" />
+			<p class="ml-[.3rem]">Join the community</p></SectionButton
+		>
 	</div>
 </div>
 
@@ -279,8 +287,6 @@
 	.factBox {
 		width: 12rem;
 		background: linear-gradient(0deg, #054f7766, #054f7766);
-		/* opacity: 0.5; */
-		/* border: 1px solid #8cff00; */
 		box-sizing: border-box;
 	}
 </style>

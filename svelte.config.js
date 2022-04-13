@@ -7,6 +7,7 @@ const config = {
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
+			paths: { base: '/' },
 			fallback: null,
 			precompress: false,
 		}),

@@ -16,12 +16,12 @@
 	<div id="start">
 		<div class="absolute w-full layer82 h-[50rem]" />
 		<div class="absolute w-full starry h-[50rem]" />
-		<div class="absolute w-full radialHeader h-[50rem]" />
+		<div class="absolute w-full radialHeader md:min-h-[200vh] h-[80rem]" />
 
-		<div class="relative text-med py-[5rem] md:py-[10rem] px-3 md:ml-[10vw] font-dmsans">
-			<div class="absolute right-0 top-[2rem] md:top-0 overflow-hidden">
+		<div class="relative text-med py-[5rem] md:pt-[10rem] md:pb-[12rem] px-3 md:ml-[10vw] font-dmsans">
+			<div class="absolute right-0 top-[2rem] md:top-0 overflow-hidden max-h-screen">
 				<video
-					class=" w-screen min-w-[180vw] md:min-w-0 md:w-[inherit] md:mt-0"
+					class=" w-screen min-w-[180vw] md:min-w-0 md:w-100 md:mt-0  max-h-3/4"
 					playsinline
 					autoplay
 					muted
@@ -35,7 +35,7 @@
 				<Ellipse diam="1.5vw" left="10" top="90" op="0.5" blur="5" extraclass="absolute" />
 				<Ellipse diam="4.5vw" left="25" top="75" op="0.5" blur="5" extraclass="absolute" />
 			</div>
-			<div class="relative pt-[18.5rem] md:p-0 text-[1rem] md:text-[1.5rem]">
+			<div class="relative pt-[26rem] md:pt-0 md:p-0 text-[1rem] md:text-[1.5rem]">
 				<h1 class="mb-2 md:mb-5 tracking-wider text-center md:w-[40rem] md:text-left">
 					<p>Process-based Interplanetary P2P Framework</p>
 				</h1>
@@ -51,7 +51,6 @@
 			</div>
 		</div>
 	</div>
-
 	<How />
 	<Cases />
 	<Team />

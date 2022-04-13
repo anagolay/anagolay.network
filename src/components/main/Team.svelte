@@ -74,24 +74,22 @@
 		class="relative box w-full my-12 teamGrid rounded-3xl px-2 py-5 md:mx-auto md:w-5/6 md:py-6 md:px-[5%]"
 	>
 		<h2 class="font-medium ">Meet the team</h2>
-		<div class="py-3 w-5/6 mx-auto grid grid-cols-3 md:w-full md:grid-cols-6 md:py-6">
+		<div class="py-3 w-5/6 mx-auto grid gap-4 grid-cols-3 md:w-full md:grid-cols-6">
 			{#each team as member}
-				<div class="text-center mx-1 py-2 md:mx-1 md:py-0">
-					<div
-						class={`rounded-full aspect-square overflow-hidden duration-700 cursor-pointer ${
-							selected && selected.name === member.name ? 'opacity-100' : 'opacity-40'
-						} hover:opacity-100 `}
-						on:click={() => selectMember(member.name)}
-					>
-						<img class="-mt-1" src={member.img} alt={member.name} />
-					</div>
+				<div
+					class={`rounded-full aspect-square overflow-hidden duration-700 w-full cursor-pointer ${
+						selected && selected.name === member.name ? 'opacity-100' : 'opacity-40'
+					} hover:opacity-100 `}
+					on:click={() => selectMember(member.name)}
+				>
+					<img class="-mt-1 w-full" src={member.img} alt={member.name} />
 				</div>
 			{/each}
 		</div>
 		{#if selected}
 			<h3 class="font-light">{selected.title}</h3>
 			<p class="mt-2 text-green text-[1rem] md:text-[1.5rem]"><i>{selected.name}</i></p>
-			<p class="mx-auto min-h-48  py-5 md:w-5/6" style="height: calc( 18rem - 10vw )">
+			<p class="mx-auto h-[12rem]  py-5 md:w-5/6 md:h-[10rem]">
 				{selected.bio}
 			</p>
 			<div class="flex w-full justify-center">
@@ -99,18 +97,18 @@
 					href={selected.link}
 					target="_blank"
 					rel="noreferrer"
-					class="btn text-sm p-4 w-fit mx-3 md:mt-5 bg-blue rounded-full"
+					class="btn text-sm p-[1.5rem] w-fit mx-3 md:mt-5 bg-blue rounded-full"
 				>
-					<Linkedin color="var(--white)" size="1.2rem" /></a
+					<Linkedin color="var(--white)" size="1.8rem" /></a
 				>
 				{#if selected.github}
 					<a
 						href={selected.github}
 						target="_blank"
 						rel="noreferrer"
-						class="btn text-sm p-4 w-fit mx-3 md:mt-5 bg-blue rounded-full"
+						class="btn text-sm p-[1.5rem] w-fit mx-3 md:mt-5 bg-blue rounded-full"
 					>
-						<Github color="var(--white)" size="1.2rem" /></a
+						<Github color="var(--white)" size="1.8rem" /></a
 					>
 				{/if}
 			</div>
