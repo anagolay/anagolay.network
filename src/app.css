@@ -15,8 +15,9 @@
 	}
 
 	.bg-gray {
-		background: linear-gradient(166.26deg, rgba(9, 57, 84, 0.9) 14.88%, rgba(9, 57, 84, 0) 91%), rgba(255, 255, 255, 0.2);
-		border: 1px solid #8CFF00;
+		background: linear-gradient(166.26deg, rgba(9, 57, 84, 0.9) 14.88%, rgba(9, 57, 84, 0) 91%),
+			rgba(255, 255, 255, 0.2);
+		border: 1px solid #8cff00;
 		backdrop-filter: blur(9px);
 	}
 
