@@ -42,8 +42,12 @@
 	<div class="flex flex-col py-20 md:py-0 w-[15rem] md:ml-auto md:mr-1/10">
 		<div class="flex w-full justify-center">Join the community</div>
 		<div class="flex flex-grow py-[1rem] items-center justify-between">
-			<button class="btn rounded-full p-[1rem] text-white"><Discord size="1.2rem" /></button>
-			<button class="btn rounded-full p-[1rem] text-white"><Instagram size="1.2rem" /></button>
+			<button class="btn rounded-full p-[1rem] text-white">
+				<span class="material-icons">discord</span>
+			</button>
+			<button class="btn rounded-full p-[1rem] text-white">
+				<Instagram size="1.2rem" />
+			</button>
 			<button class="btn rounded-full p-[1rem] text-white"><Twitter size="1.2rem" /></button>
 		</div>
 	</div>

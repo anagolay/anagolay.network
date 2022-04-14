@@ -1,13 +1,17 @@
 <script lang="ts">
-	export let to = '#start';
 	import ChevronUp from 'svelte-material-icons/ChevronUp.svelte';
+
+	function scrollToTop(): void {
+		document.body.scrollTop = 0;
+	}
 </script>
 
-<a href={to}
-	><button class={`flex justify-center items-center topButton fixed bottom-5 right-5 h-12 w-12 rounded-full`}>
-		<ChevronUp color="var(--accent)" size="1.5rem" />
-	</button></a
+<button
+	class={`flex justify-center items-center topButton fixed bottom-5 right-5 h-12 w-12 rounded-full`}
+	on:click={scrollToTop}
 >
+	<ChevronUp color="var(--accent)" size="1.5rem" />
+</button>
 
 <style>
 	.topButton {

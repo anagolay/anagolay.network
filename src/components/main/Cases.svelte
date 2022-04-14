@@ -36,14 +36,14 @@
 			Copyright and Ownership <i>Verifiable</i> Statements created and stored on Anagolay can be applied to solve
 			a number of issues including, but not limited to:
 		</h4>
-		<div class="w-[17rem] carousel font-dmsans font-medium mx-auto md:w-fit md:h-fit">
+		<div class="w-[19rem] carousel font-dmsans font-medium mx-auto md:w-fit md:h-fit">
 			{#each cases as item}
 				<div class="carousel-item mx-[.75rem] flex-col md:max-w-1/3 md:w[16rem]" id={`item${item.id}`}>
 					<div class="relative w-5/12 h-[7rem] mx-auto py-auto flex items-center justify-center -mb-[3.2rem]">
 						<img class="object-contain max-h-full" src={item.src} alt={item.alt} />
 					</div>
 					<div
-						class="box flex flex-col rounded-lg bg-blue px-[1rem] pt-[6rem] pb-[1rem] w-[16rem] md:w-[20rem] h-[25rem]"
+						class="box flex flex-col rounded-lg bg-blue px-[1rem] pt-[6rem] pb-[1rem] w-[18rem] md:w-[20rem] h-[25rem]"
 					>
 						<p class="w-full text-green text-center mb-[2rem] h-[4rem]">
 							{item.title}

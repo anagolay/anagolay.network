@@ -1,6 +1,38 @@
 <script lang="ts">
 	import SectionButton from '../SectionButton.svelte';
 
+	let beastFeatures = [
+		{
+			feature: 'Each stored proof on the Anagolay chain can be verified',
+			icon: 'verified_user',
+		},
+		{
+			feature: 'Each Workflow executes 100% the same code on each run',
+			icon: 'code',
+		},
+		{
+			feature: 'Stored proofs are contextual and well structured',
+			icon: 'folder',
+		},
+		{ feature: 'Created Statements are legally valid', icon: 'copyright' },
+		{
+			feature: 'Developed with a mindset that every drop of energy matters',
+			icon: 'bolt',
+		},
+		{
+			feature: 'Can work on Mars (or any other isolated environment)',
+			icon: 'rocket_launch',
+		},
+		{ feature: 'Community verified source code', icon: 'handshake' },
+		{
+			feature: 'Privacy by default, users’ data is not stored on-chain',
+			icon: 'private_connectivity',
+		},
+		{
+			feature: 'Transaction ID and the block height do not affect content ID',
+		},
+	];
+
 	let howItems: { src: string; alt: string; text: string; link: string }[] = [
 		{
 			src: 'security.png',
@@ -26,6 +58,23 @@
 <div class="relative flex w-full justify-center items-center min-h-screen text-center">
 	<div class="flex flex-col items-center w-[90%] md:w-5/6">
 		<h2 class="py-2 mb-3 md:mb-8">How does it work?</h2>
+		<div class="grid grid-cols-3 gap-4 mb-[2rem]">
+			{#each beastFeatures as feat}
+				<!-- <HowCard Icon={feat.icon}>{feat.feature}</HowCard> -->
+				<div class="col">
+					<div class="box flex items-center rounded-lg bg-blue h-[11rem] w-[21rem] px-[2rem] mt-[2rem]">
+						<div
+							class="absolute bg-gray p-[1rem] w-fit ml-[6rem] text-green bg-blue border border-green rounded-full -mt-[10rem]"
+						>
+							{#if feat.icon}
+								<span class="material-icons text-[3rem]">{feat.icon}</span>
+							{/if}
+						</div>
+						<p class="my-auto">{feat.feature}</p>
+					</div>
+				</div>
+			{/each}
+		</div>
 		<div class="flex flex-col mx-auto xl:w-5/6 xl:mx-auto">
 			{#each howItems as item}
 				<div class="md:flex text-left mb-8">

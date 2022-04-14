@@ -16,7 +16,7 @@
 </script>
 
 <nav
-	class="z-10 fixed flex items-center bg-opacity-95 justify-center bg-black w-screen text-sm py-3 pl-1 text-white h-15 md:px-1/10 md:justify-between"
+	class="z-10 fixed flex items-center bg-opacity-95 justify-center bg-black w-screen text-sm py-[1rem] pl-1 text-white h-15 md:px-1/10 md:justify-between"
 >
 	<button class={`absolute text-inherit p-1 text-lg left-1 md:hidden`} on:click={toggleSideBar}>
 		<Menu color={toggleMenu ? 'var(--accent)' : 'var(--white)'} />
