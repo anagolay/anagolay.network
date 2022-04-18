@@ -1,6 +1,15 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import SectionButton from '../SectionButton.svelte';
-
+	import FeatureCard from './FeatureCard.svelte';
+	let windowHeight: number;
+	onMount(() => {
+		windowHeight = window.innerHeight;
+		window.onscroll = () => {
+			windowHeight = window.innerHeight + document.body.scrollTop;
+			console.log('windowHeight', windowHeight);
+		};
+	});
 	let beastFeatures = [
 		{
 			feature: 'Each stored proof on the Anagolay chain can be verified',
@@ -30,6 +39,7 @@
 		},
 		{
 			feature: 'Transaction ID and the block height do not affect content ID',
+			// icon: 'decentralized_network',
 		},
 	];
 
@@ -57,22 +67,9 @@
 
 <div class="relative flex w-full justify-center items-center min-h-screen text-center">
 	<div class="flex flex-col items-center w-[90%] md:w-5/6">
-		<h2 class="py-2 mb-3 md:mb-8">How does it work?</h2>
-		<div class="grid grid-cols-3 gap-4 mb-[2rem]">
-			{#each beastFeatures as feat}
-				<!-- <HowCard Icon={feat.icon}>{feat.feature}</HowCard> -->
-				<div class="col">
-					<div class="box flex items-center rounded-lg bg-blue h-[11rem] w-[21rem] px-[2rem] mt-[2rem]">
-						<div
-							class="absolute bg-gray p-[1rem] w-fit ml-[6rem] text-green bg-blue border border-green rounded-full -mt-[10rem]"
-						>
-							{#if feat.icon}
-								<span class="material-icons text-[3rem]">{feat.icon}</span>
-							{/if}
-						</div>
-						<p class="my-auto">{feat.feature}</p>
-					</div>
-				</div>
+		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-[2rem]">
+			{#each beastFeatures as feat, i}
+				<FeatureCard icon={feat.icon} feature={feat.feature} {windowHeight} {i} />
 			{/each}
 		</div>
 		<div class="flex flex-col mx-auto xl:w-5/6 xl:mx-auto">

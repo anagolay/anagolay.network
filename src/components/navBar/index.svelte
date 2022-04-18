@@ -21,7 +21,7 @@
 	<button class={`absolute text-inherit p-1 text-lg left-1 md:hidden`} on:click={toggleSideBar}>
 		<Menu color={toggleMenu ? 'var(--accent)' : 'var(--white)'} />
 	</button>
-	<a href="/">
+	<a href="/home">
 		<img class="object-contain h-8 md:h-10" src="horizontal_white1.svg" alt="Anagolay logo" />
 	</a>
 	<div

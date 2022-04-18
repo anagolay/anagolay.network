@@ -89,7 +89,7 @@
 		{#if selected}
 			<h3 class="font-light">{selected.title}</h3>
 			<p class="mt-2 text-green text-[1rem] md:text-[1.5rem]"><i>{selected.name}</i></p>
-			<p class="mx-auto h-[12rem]  py-5 md:w-5/6 md:h-[10rem]">
+			<p class="mx-auto h-[14rem]  py-3 md:py-5 md:w-5/6 md:h-[10rem]">
 				{selected.bio}
 			</p>
 			<div class="flex w-full justify-center">
