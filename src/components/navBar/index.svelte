@@ -8,7 +8,7 @@
 		toggleMenu = !toggleMenu;
 	}
 	let links: { caption: string; url: string }[] = [
-		{ caption: 'How it works', url: '/how' },
+		{ caption: 'How it works', url: '/howitworks' },
 		{ caption: 'Use cases', url: '/use' },
 		{ caption: 'The team', url: '/team' },
 		{ caption: 'FAQ', url: '/faq' },

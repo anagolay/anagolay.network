@@ -1,29 +1,20 @@
 <script lang="ts">
-	import TopButton from '../components/navBar/TopButton.svelte';
 	import Ellipse from '../components/main/Ellipse.svelte';
-	import NavBar from '../components/navBar/index.svelte';
 	import Team from '../components/main/Team.svelte';
 	import Cases from '../components/main/Cases.svelte';
 	import How from '../components/main/How.svelte';
 	import Roadmap from '../components/main/Roadmap.svelte';
 	import Footer from '../components/Footer/index.svelte';
-	let videoContainer: HTMLDivElement;
 </script>
 
-<main class="mainPage text-white text-[.9rem] md:text-[1.125rem]">
-	<NavBar />
-	<TopButton />
-
-	<div id="start">
+<main class="blueBg">
+	<div>
 		<div class="absolute w-full layer82 h-[50rem]" />
 		<div class="absolute w-full starry h-[50rem]" />
 		<div class="absolute w-full radialHeader md:min-h-[200vh] h-[80rem]" />
 
 		<div class="relative text-med py-[5rem] md:pt-[10rem] md:pb-[15rem] px-3 md:ml-[10vw] font-dmsans">
-			<div
-				class="absolute right-0 top-[2rem] md:top-0 overflow-hidden max-h-screen"
-				bind:this={videoContainer}
-			>
+			<div class="absolute right-0 top-[2rem] md:top-0 overflow-hidden max-h-screen">
 				<video
 					class=" w-screen min-w-[180vw] md:min-w-0 md:w-100 md:mt-0  max-h-3/4"
 					playsinline
@@ -63,9 +54,6 @@
 </main>
 
 <style>
-	.mainPage {
-		background: linear-gradient(168.89deg, #054f77 27.17%, #052233 94.76%), #ffffff;
-	}
 	.radialHeader {
 		background: radial-gradient(66.7vw 30vw at 75% 40%, #141f45 50.59%, rgba(20, 31, 69, 0) 100%);
 		mix-blend-mode: darken;

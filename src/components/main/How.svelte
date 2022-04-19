@@ -2,15 +2,8 @@
 	import { onMount } from 'svelte';
 	import SectionButton from '../SectionButton.svelte';
 	import FeatureCard from './FeatureCard.svelte';
-	let windowHeight: number;
-	onMount(() => {
-		windowHeight = window.innerHeight;
-		window.onscroll = () => {
-			windowHeight = window.innerHeight + document.body.scrollTop;
-			console.log('windowHeight', windowHeight);
-		};
-	});
-	let beastFeatures = [
+
+	let beastFeatures: { feature: string; icon?: string; subtitle?: string }[] = [
 		{
 			feature: 'Each stored proof on the Anagolay chain can be verified',
 			icon: 'verified_user',
@@ -38,8 +31,9 @@
 			icon: 'private_connectivity',
 		},
 		{
-			feature: 'Transaction ID and the block height do not affect content ID',
+			feature: 'All stored data structures are content addressable',
 			// icon: 'decentralized_network',
+			subtitle: 'can be synced even if the nodes go offline',
 		},
 	];
 
@@ -69,10 +63,10 @@
 	<div class="flex flex-col items-center w-[90%] md:w-5/6">
 		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-[2rem]">
 			{#each beastFeatures as feat, i}
-				<FeatureCard icon={feat.icon} feature={feat.feature} {windowHeight} {i} />
+				<FeatureCard {feat} {i} />
 			{/each}
 		</div>
-		<div class="flex flex-col mx-auto xl:w-5/6 xl:mx-auto">
+		<div class="flex mt-[3rem] flex-col mx-auto xl:w-5/6 xl:mx-auto">
 			{#each howItems as item}
 				<div class="md:flex text-left mb-8">
 					<div class="justify-center mx-auto px-2 my-auto w-3/4 md:flex md:w-fit md:h-40" style="">
