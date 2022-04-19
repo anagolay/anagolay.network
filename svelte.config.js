@@ -1,6 +1,6 @@
 import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
-
+import { resolve } from 'node:path';
 const config = {
 	preprocess: preprocess(),
 	kit: {
@@ -13,6 +13,13 @@ const config = {
 		}),
 		prerender: {
 			default: true,
+		},
+		vite: {
+			resolve: {
+				alias: {
+					$src: resolve('./src'),
+				},
+			},
 		},
 	},
 };
