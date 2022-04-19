@@ -269,9 +269,9 @@
 	</div>
 	<div class="flex items-center justify-center text-white text-[1rem] opacity-50 italic py-5">
 		<PanLeft />
-		<p class="md:hidden">Swipe</p>
-		<p class="hidden md:block">Scroll</p>
-		<p class="ml-[.3rem]">to see</p>
+		<p class="md:hidden">Swipe to see</p>
+		<p class="hidden md:block">Scroll to see</p>
+		<!-- <p class="ml-[.3rem]">to see</p> -->
 		<PanRight />
 	</div>
 	<div class="flex flex-col items-center">
