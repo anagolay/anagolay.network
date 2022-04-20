@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
-	import Ellipse from '../components/Ellipse.svelte';
-	import Footer from '../components/Footer/index.svelte';
-	import SectionButton from '../components/SectionButton.svelte';
-	import FeatureCard from '../components/FeatureCard.svelte';
+	import Ellipse from '$src/components/Ellipse.svelte';
+	import Footer from '$src/components/Footer/index.svelte';
+	import SectionButton from '$src/components/SectionButton.svelte';
+	import FeatureCard from '$src/components/FeatureCard.svelte';
 
 	//incons to get or create and remove:
 	import Linkedin from 'svelte-material-icons/Linkedin.svelte';

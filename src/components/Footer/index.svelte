@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Discord from 'svelte-material-icons/Discord.svelte';
 	import Instagram from 'svelte-material-icons/Instagram.svelte';
 	import Twitter from 'svelte-material-icons/Twitter.svelte';
+
 	let options: { title: string; options?: { caption: string; link: string }[] }[] = [
 		{
 			title: 'Discover',

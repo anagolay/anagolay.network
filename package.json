@@ -10,7 +10,7 @@
 		"test": "playwright test",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-		"lint": "pnpm lint:prettier",
+		"lint": "pnpm lint:eslint && pnpm lint:prettier",
 		"lint:eslint": "eslint --ignore-path .gitignore .",
 		"lint:prettier": "prettier --ignore-path .gitignore --check .",
 		"format": "prettier --ignore-path .gitignore --write ."
@@ -43,5 +43,10 @@
 		"svelte": "^3.46.4",
 		"svelte-inview": "^3.0.0",
 		"svelte-material-icons": "^2.0.2"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "pretty-quick --staged"
+		}
 	}
 }
