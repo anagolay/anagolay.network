@@ -4,9 +4,11 @@
 	let toggleMenu = false;
 	let menuIconColor = 'text-white';
 	let menuTransition = '';
+
 	//all links in sidebar have same styling
 	let sidebarLinkClasses = 'h-14 m-0 border-b border-solid border-green py-2 w-full';
 
+	//toggleSideBar will open sidebar if it is closed or close it if opened.
 	function toggleSideBar() {
 		if (toggleMenu) {
 			closeSideBar();
@@ -32,8 +34,8 @@
 		{ text: 'FAQ', url: '/faq', color: '' },
 	];
 
-	//whitepaper is
-	let whitePaper = { text: 'Whitepaper', url: '/whitepaper' };
+	//whitepaper is a different link.
+	let whitePaper = { text: 'Whitepaper', url: '/' };
 
 	//this function sets color for navlinks when current path changes.
 	function setColor(currentPath: string) {
@@ -48,7 +50,7 @@
 <nav
 	class="z-10 fixed left-0 top-0 flex items-center bg-opacity-95 justify-center bg-black w-screen text-sm py-[1rem] pl-1 text-white h-15 md:px-1/10 md:justify-between"
 >
-	<button class={`absolute text-inherit p-1 text-lg left-1 md:hidden`} on:click={toggleSideBar}>
+	<button class="absolute text-inherit p-1 text-lg left-1 md:hidden" on:click={toggleSideBar}>
 		<span class="material-icons {menuIconColor}"> menu </span>
 	</button>
 
@@ -58,7 +60,7 @@
 	</a>
 
 	<div
-		class="z-10 flex flex-col absolute top-16 bottom-0 bg-black md:bg-transparent h-screen bg-opacity-95
+		class="z-10 flex flex-col absolute top-16 bottom-0 bg-black md:bg-transparent h-screen bg-opacity-95 
 			  py-0  text-center right-full mx-auto font-montserrat
             md:flex-row md:mx-0 md:relative md:top-auto md:h-full md:py-0 md:right-auto md:left-auto md:w-fit md:translate-x-0 {menuTransition}"
 	>

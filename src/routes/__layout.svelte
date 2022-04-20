@@ -1,7 +1,8 @@
 <script lang="ts">
 	import '../app.css';
-	import NavBar from '../components/navBar/index.svelte';
-	import TopButton from '../components/navBar/TopButton.svelte';
+	import NavBar from '$src/components/NavBar.svelte';
+	import TopButton from '$src/components/TopButton.svelte';
+	import Footer from '$src/components/Footer.svelte';
 </script>
 
 <main>
@@ -10,4 +11,5 @@
 	<div>
 		<slot />
 	</div>
+	<Footer />
 </main>
