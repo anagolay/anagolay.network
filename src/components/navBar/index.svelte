@@ -28,7 +28,7 @@
 	let links: { text: string; url: string; color: string }[] = [
 		{ text: 'How it works', url: '/how-it-works', color: '' },
 		{ text: 'Use cases', url: '/use', color: '' },
-		{ text: 'The team', url: '/team', color: '' },
+		{ text: 'The team', url: '#team', color: '' },
 		{ text: 'FAQ', url: '/faq', color: '' },
 	];
 

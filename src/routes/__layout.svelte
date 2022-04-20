@@ -6,10 +6,8 @@
 </script>
 
 <main>
-	{#if $page.url.pathname !== '/'}
-		<NavBar />
-		<TopButton />
-	{/if}
+	<NavBar />
+	<TopButton />
 	<div>
 		<slot />
 	</div>
