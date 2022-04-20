@@ -1,5 +1,10 @@
 root = true
 
+# Matches the exact files either package.json or .gitlab.yml
+[{package.json,.gitlab.yml}]
+indent_style = space
+indent_size = 2
+
 [*]
 indent_style = tab
 indent_size = 2

@@ -43,10 +43,5 @@
 		"svelte": "^3.46.4",
 		"svelte-inview": "^3.0.0",
 		"svelte-material-icons": "^2.0.2"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "pretty-quick --staged"
-		}
 	}
 }
