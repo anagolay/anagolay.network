@@ -97,7 +97,7 @@
 					href={selected.link}
 					target="_blank"
 					rel="noreferrer"
-					class="btn text-sm p-[1.5rem] w-fit mx-3 md:mt-5 bg-blue rounded-full"
+					class="shadow-button active:shadow-pressed text-sm p-[1.5rem] w-fit mx-3 md:mt-5 bg-blue rounded-full"
 				>
 					<Linkedin color="var(--white)" size="1.8rem" /></a
 				>
@@ -106,7 +106,7 @@
 						href={selected.github}
 						target="_blank"
 						rel="noreferrer"
-						class="btn text-sm p-[1.5rem] w-fit mx-3 md:mt-5 bg-blue rounded-full"
+						class="shadow-button active:shadow-pressed text-sm p-[1.5rem] w-fit mx-3 md:mt-5 bg-blue rounded-full"
 					>
 						<Github color="var(--white)" size="1.8rem" /></a
 					>

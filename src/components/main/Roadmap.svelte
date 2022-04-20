@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
-	import Discord from 'svelte-material-icons/Discord.svelte';
 	import Ellipse from './Ellipse.svelte';
 	import PanLeft from 'svelte-material-icons/PanLeft.svelte';
 	import PanRight from 'svelte-material-icons/PanRight.svelte';
@@ -276,10 +275,10 @@
 	</div>
 	<div class="flex flex-col items-center">
 		<a href="/." class="text-green hover:underline  text-[1.125rem]">See the full roadmap</a>
-		<SectionButton clases=""
-			><Discord size="1.2rem" />
-			<p class="ml-[.3rem]">Join the community</p></SectionButton
-		>
+		<SectionButton clases="flex justify-center">
+			<span class="material-icons">discord</span>
+			<p class="ml-[.3rem]">Join the community</p>
+		</SectionButton>
 	</div>
 </div>
 

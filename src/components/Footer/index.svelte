@@ -42,13 +42,15 @@
 	<div class="flex flex-col py-20 md:py-0 w-[15rem] md:ml-auto md:mr-1/10">
 		<div class="flex w-full justify-center">Join the community</div>
 		<div class="flex flex-grow py-[1rem] items-center justify-between">
-			<button class="btn rounded-full p-[1rem] text-white">
+			<button class="shadow-button rounded-full p-[1rem] text-white active:shadow-pressed">
 				<span class="material-icons">discord</span>
 			</button>
-			<button class="btn rounded-full p-[1rem] text-white">
+			<button class="shadow-button rounded-full p-[1rem] text-white active:shadow-pressed">
 				<Instagram size="1.2rem" />
 			</button>
-			<button class="btn rounded-full p-[1rem] text-white"><Twitter size="1.2rem" /></button>
+			<button class="shadow-button rounded-full p-[1rem] text-white active:shadow-pressed"
+				><Twitter size="1.2rem" /></button
+			>
 		</div>
 	</div>
 </div>

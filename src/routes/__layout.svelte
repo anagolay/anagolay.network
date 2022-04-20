@@ -5,8 +5,12 @@
 	import TopButton from '../components/navBar/TopButton.svelte';
 </script>
 
-{#if $page.url.pathname !== '/'}
-	<NavBar />
-	<TopButton />
-{/if}
-<slot />
+<main>
+	{#if $page.url.pathname !== '/'}
+		<NavBar />
+		<TopButton />
+	{/if}
+	<div>
+		<slot />
+	</div>
+</main>
