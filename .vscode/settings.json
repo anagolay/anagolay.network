@@ -10,5 +10,9 @@
 	"[javascript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	"npm.packageManager": "pnpm"
+	"npm.packageManager": "pnpm",
+	"files.associations": {
+		"*.svelte": "svelte"
+	},
+	"eslint.validate": ["javascript", "javascriptreact", "svelte"]
 }
