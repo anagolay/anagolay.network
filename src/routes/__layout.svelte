@@ -5,7 +5,7 @@
 	import Footer from '$src/components/Footer.svelte';
 </script>
 
-<main>
+<main class="bg-gradient-to-b from-darkblue via-blue to-black text-white">
 	<NavBar />
 	<TopButton />
 	<div>
