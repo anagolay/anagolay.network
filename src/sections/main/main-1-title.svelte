@@ -4,9 +4,11 @@
 
 <div class="min-h-screen">
 	<!-- Animation is absolute in md screen to let the green line reach the right border -->
-	<div class="relative md:absolute overflow-x-hidden flex justify-end right-0 top-[2rem] md:top-0">
+	<div
+		class="relative md:absolute flex overflow-visible -mr-[8vw] md:mr-0 md:overflow-hidden justify-end right-0 top-[2rem] md:top-0 max-h-full"
+	>
 		<!-- Video width 180vw is to set the animation visible on sm screen -->
-		<video class="min-w-[180vw] md:min-w-0 md:w-100 md:mt-0" playsinline autoplay muted loop>
+		<video class="min-w-[180vw] h-[150%] md:min-w-0 md:w-100 md:mt-0" playsinline autoplay muted loop>
 			<source src="header_animation.webm" type="video/webm" />
 		</video>
 	</div>

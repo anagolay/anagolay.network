@@ -28,9 +28,9 @@
 				{/if}
 			</div>
 			<div class="my-auto">
-				<p class="w-[15rem] sm:w-fit mt-4 max-w-[15rem]">{feat.feature}</p>
+				<p class="w-[15rem] sm:w-fit mt-4">{feat.feature}</p>
 				{#if feat.subtitle}
-					<p class="text-[70%] leading-4 my-2">{feat.subtitle}</p>
+					<p class="text-[70%] my-2">{feat.subtitle}</p>
 				{/if}
 			</div>
 		</div>

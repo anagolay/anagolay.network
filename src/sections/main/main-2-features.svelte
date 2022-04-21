@@ -68,9 +68,9 @@
 <div class="relative mt-0 flex flex-col w-full justify-center items-center min-h-screen text-center pt-16">
 	<h2>Anagolay is a</h2>
 	<h2 class="text-green mb-8">‘different kind of beast’</h2>
-	<div class="flex flex-col items-center w-[90%] md:w-5/6">
+	<div class="flex flex-col items-center">
 		<div
-			class="flex w-[20rem] sm:w-5/6 mx-auto overflow-x-auto overflow-y-hidden h-60 sm:h-fit sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-8"
+			class="flex w-[20rem] sm:w-full mx-auto overflow-x-auto overflow-y-hidden h-60 sm:h-fit sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-8"
 			bind:this={carousel}
 		>
 			{#each beastFeatures as feat, i}
@@ -88,7 +88,7 @@
 				/>
 			{/each}
 		</div>
-		<div class="flex mt-12 flex-col mx-auto xl:w-5/6 xl:mx-auto">
+		<div class="flex mt-16 flex-col mx-auto xl:mx-auto">
 			{#each howItems as item}
 				<div class="md:flex text-left mb-12">
 					<div class=" justify-center mx-auto px-2 my-auto w-3/4 md:flex md:w-fit md:h-40">
@@ -97,7 +97,7 @@
 					<div
 						class="flex flex-col justify-center items-center md:items-start md:w-2/3 px-0 md:px-5 h-full my-auto"
 					>
-						<p class="text-center md:text-lg md:text-left mb-3">{item.text}</p>
+						<p class="text-center md:text-lg md:text-justify mb-3 pr-[12.5%]">{item.text}</p>
 						<a class="text-green" href={item.link}>learn more &#10230; </a>
 					</div>
 				</div>

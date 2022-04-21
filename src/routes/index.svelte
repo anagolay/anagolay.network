@@ -17,5 +17,5 @@
 
 <div>
 	<TitleSection />
-	<!-- <FeaturesSection /> -->
+	<FeaturesSection />
 </div>

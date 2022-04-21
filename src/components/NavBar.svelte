@@ -50,7 +50,7 @@
 <nav
 	class="z-10 fixed py-4 items-center bg-opacity-95 justify-center bg-anagolayBlack w-full text-sm p8 text-white h-15 md:justify-between"
 >
-	<div class="lg:container flex justify-between">
+	<div class="lg:container mx-auto w-5/6 flex justify-center md:justify-between">
 		<button class="absolute text-inherit p-1 text-lg left-1 md:hidden" on:click={toggleSideBar}>
 			<span class="material-icons {menuIconColor}"> menu </span>
 		</button>

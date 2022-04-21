@@ -7,7 +7,7 @@
 
 <div class="w-full bg-gradient-to-b from-anagolayBlack via-[#054F77] to-anagolayBlack">
 	<NavBar />
-	<main class="lg:container mx-auto">
+	<main class="lg:container mx-auto w-5/6">
 		<div class="flex flex-col text-anagolayWhite">
 			<slot />
 			<Footer />
