@@ -31,7 +31,7 @@
 		},
 		{
 			feature: 'All stored data structures are content addressable',
-			// icon: 'decentralized_network',
+			icon: '![descentralized network](decentralised_network.png)',
 			subtitle: 'can be synced even if the nodes go offline',
 		},
 	];
@@ -56,25 +56,48 @@
 			link: '/',
 		},
 	];
+	let selectedFeature = 0;
+	let carousel: HTMLDivElement;
+	function selectFeature(event: { currentTarget: EventTarget & HTMLButtonElement }) {
+		let index = Number(event.currentTarget.value);
+		selectedFeature = index;
+		carousel.scrollLeft = (carousel.scrollWidth / beastFeatures.length) * index;
+	}
 </script>
 
-<div class="relative flex w-full justify-center items-center min-h-screen text-center">
+<div class="relative mt-0 flex flex-col w-full justify-center items-center min-h-screen text-center pt-16">
+	<h2>Anagolay is a</h2>
+	<h2 class="text-green mb-8">‘different kind of beast’</h2>
 	<div class="flex flex-col items-center w-[90%] md:w-5/6">
-		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-[2rem]">
+		<div
+			class="flex w-[20rem] sm:w-5/6 mx-auto overflow-x-auto overflow-y-hidden h-60 sm:h-fit sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-8"
+			bind:this={carousel}
+		>
 			{#each beastFeatures as feat, i}
 				<FeatureCard {feat} {i} />
 			{/each}
 		</div>
-		<div class="flex mt-[3rem] flex-col mx-auto xl:w-5/6 xl:mx-auto">
+		<div class="sm:hidden flex w-2/4 justify-evenly my-4">
+			{#each beastFeatures as feat, i}
+				<button
+					class="h-2 w-2 rounded-full border border-green active:bg-green {i === selectedFeature
+						? 'bg-green'
+						: ''}"
+					value={i}
+					on:click={selectFeature}
+				/>
+			{/each}
+		</div>
+		<div class="flex mt-12 flex-col mx-auto xl:w-5/6 xl:mx-auto">
 			{#each howItems as item}
-				<div class="md:flex text-left mb-8">
-					<div class="justify-center mx-auto px-2 my-auto w-3/4 md:flex md:w-fit md:h-40" style="">
-						<img class="md:object-contain h-[8rem] md:h-[unset] mx-auto" src={item.src} alt={item.alt} />
+				<div class="md:flex text-left mb-12">
+					<div class=" justify-center mx-auto px-2 my-auto w-3/4 md:flex md:w-fit md:h-40">
+						<img class="md:object-contain h-32 md:h-[unset] mx-auto" src={item.src} alt={item.alt} />
 					</div>
 					<div
 						class="flex flex-col justify-center items-center md:items-start md:w-2/3 px-0 md:px-5 h-full my-auto"
 					>
-						<p class="text-center md:text-left mb-3">{item.text}</p>
+						<p class="text-center md:text-lg md:text-left mb-3">{item.text}</p>
 						<a class="text-green" href={item.link}>learn more &#10230; </a>
 					</div>
 				</div>

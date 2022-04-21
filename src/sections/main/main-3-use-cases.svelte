@@ -51,14 +51,12 @@
 			on:scroll={() => console.log(carousel.scrollLeft)}
 		>
 			{#each cases as item}
-				<div class="carousel-item mx-[.75rem] flex-col md:max-w-1/3 md:w[16rem]">
-					<div class="relative w-5/12 h-[7rem] mx-auto py-auto flex items-center justify-center -mb-[3.2rem]">
+				<div class="carousel-item mx-[.75rem] flex-col md:max-w-1/3 md:w-64">
+					<div class="relative w-5/12 h-42 mx-auto py-auto flex items-center justify-center -mb-13">
 						<img class="object-contain max-h-full" src={item.src} alt={item.alt} />
 					</div>
-					<div
-						class="box flex flex-col rounded-lg bg-blue px-[1rem] pt-[6rem] pb-[1rem] w-[18rem] md:w-[20rem] h-[25rem]"
-					>
-						<p class="w-full text-green text-center mb-[2rem] h-[4rem]">
+					<div class="box flex flex-col rounded-lg bg-blue px-3 pt-24 pb-3 w-72 md:w-80 h-[25rem]">
+						<p class="w-full text-green text-center mb-8 h-16">
 							{item.title}
 						</p>
 

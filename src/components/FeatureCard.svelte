@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { marked } from 'marked';
+
 	export let feat: { feature: string; icon?: string; subtitle?: string };
 	export let i: number;
 	import { fly } from 'svelte/transition';
@@ -18,17 +20,19 @@
 	{#if isInView}
 		<div
 			in:fly={{ y: element.clientHeight, duration: 1500, delay: (i % 3) * 150 }}
-			class="box flex flex-col items-center rounded-lg bg-blue h-[11rem] max-w-[21rem] px-[2rem] mt-[2rem]"
+			class="mx-4 sm:mx-0 shadow-button flex flex-col items-center rounded-lg bg-blue h-44 sm:h-60 lg:h-48 px-8 mt-8 text-base xl:text-xl"
 		>
-			<div class="bg-gray p-[1rem] w-fit mx-center text-green border border-green rounded-full -mt-[2rem]">
+			<div class="bg-gray p-4 w-fit mx-center text-green border border-green rounded-full -mt-8">
 				{#if feat.icon}
-					<span class="material-icons text-[3rem]">{feat.icon}</span>
+					<span class="material-icons text-5xl">{@html marked(feat.icon)}</span>
 				{/if}
 			</div>
-			<p class="my-auto">{feat.feature}</p>
-			{#if feat.subtitle}
-				<p class="text-[70%]" />
-			{/if}
+			<div class="my-auto">
+				<p class="w-[15rem] sm:w-fit mt-4 max-w-[15rem]">{feat.feature}</p>
+				{#if feat.subtitle}
+					<p class="text-[70%] leading-4 my-2">{feat.subtitle}</p>
+				{/if}
+			</div>
 		</div>
 	{/if}
 </div>

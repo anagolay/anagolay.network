@@ -11,7 +11,7 @@
 	html,
 	body {
 		scroll-behavior: smooth;
-		font-size: calc(12px + 0.3vw);
+		/* font-size: calc(10px + .3vw) */
 	}
 
 	.blueBg {
@@ -21,7 +21,6 @@
 
 	h1 {
 		font-size: 4rem;
-		font-weight: bold;
 	}
 
 	h2 {
@@ -50,7 +49,7 @@
 		}
 
 		h1 {
-			font-size: 1.25rem;
+			font-size: 1.875rem;
 		}
 	}
 
@@ -60,7 +59,7 @@
 		}
 
 		h2 {
-			font-size: 1.125rem;
+			font-size: 1.5rem;
 		}
 
 		h3 {
@@ -68,7 +67,7 @@
 		}
 
 		h4 {
-			font-size: 1rem;
+			font-size: 0.9rem;
 		}
 
 		h5 {

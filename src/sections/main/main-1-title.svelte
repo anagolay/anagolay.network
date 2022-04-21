@@ -2,50 +2,31 @@
 	import Ellipse from '$src/components/Ellipse.svelte';
 </script>
 
-<div class="w-full  h-[50rem]">
-	<!-- <div class="w-full radialHeader md:min-h-[200vh] h-[80rem]"> -->
-	<div class="text-med py-[5rem] md:pt-[10rem] md:pb-[15rem] px-3 md:ml-[10vw] font-dmsans">
-		<div class="absolute right-0 top-[2rem] md:top-0 overflow-hidden max-h-screen">
-			<video
-				class=" w-screen min-w-[180vw] md:min-w-0 md:w-100 md:mt-0  max-h-3/4"
-				playsinline
-				autoplay
-				muted
-				loop
-			>
-				<source src="header_animation.webm" type="video/webm" />
-			</video>
-		</div>
-
-		<Ellipse diam="1.5vw" left="10" top="90" op="0.5" blur="5" extraclass="absolute" />
-		<Ellipse diam="4.5vw" left="25" top="75" op="0.5" blur="5" extraclass="absolute" />
-		<div class={`relative pt-[95vw] md:pt-0 md:p-0 text-[1rem] md:text-[1.5rem]`}>
-			<h1 class="mb-2 md:mb-5 tracking-wider text-center md:w-[50vw] md:max-w-[40rem] md:text-left">
+<div class="w-full min-h-screen">
+	<!-- Animation is absolute in md screen to let the green line reach the right border -->
+	<div class="relative md:absolute overflow-x-hidden flex justify-end right-0 top-[2rem] md:top-0">
+		<!-- Video width 180vw is to set the animation visible on sm screen -->
+		<video class=" min-w-[180vw] md:min-w-0 md:w-100 md:mt-0" playsinline autoplay muted loop>
+			<source src="header_animation.webm" type="video/webm" />
+		</video>
+	</div>
+	<!-- Content marginTop and height are bound to screen width as also is animation -->
+	<div class="relative flex flex-col -mt-[60vw] md:h-[50vw] md:min-h-screen md:my-0 px-8">
+		<div class="md:my-auto">
+			<h1 class="md:mb-5 tracking-wider text-center font-bold md:w-3/5 md:text-left">
 				<p>Process-based Interplanetary P2P Framework</p>
 			</h1>
-			<p
-				class="text-green font-bold text-center md:text-left mb-2 md:mb-8  mx-auto md:mx-0 w-5/6  md:w-[50vw]"
+			<h4
+				class="text-green font-bold text-center md:text-left my-2 md:mb-8  mx-auto md:mx-0 w-5/6  md:w-[50vw]"
 			>
 				The transparent verifiable process with 100% source-code assurance
-			</p>
-			<p class="w-5/6 mx-auto text-center md:text-left md:mx-0 md:w-[55%]">
+			</h4>
+			<h4 class="w-5/6 mx-auto text-center md:text-left md:mx-0 md:w-[55%]">
 				No need for a central authority, or resource-heavy consensus mechanism to establish rules of the game
 				— trust the process
-			</p>
+			</h4>
+			<Ellipse class="absolute mt-[8vw] ml-[5%] opacity-50 blur-sm h-[1.5vw] border" />
+			<Ellipse class="absolute mt-0 ml-[25%] opacity-50 blur-sm h-[4.5vw]" />
 		</div>
 	</div>
 </div>
-
-<style>
-	.radialHeader {
-		background: radial-gradient(66.7vw 30vw at 75% 40%, #141f45 50.59%, rgba(20, 31, 69, 0) 100%);
-		mix-blend-mode: darken;
-		opacity: 0.7;
-	}
-	.starry {
-		background: linear-gradient(rgba(5, 79, 119, 0) 70.87%, #054e76 100%), url('stars_background2.png');
-		opacity: 0.6;
-		mix-blend-mode: lighten;
-		background-size: cover;
-	}
-</style>
