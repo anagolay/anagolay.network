@@ -66,8 +66,7 @@
 </script>
 
 <div class="relative mt-0 flex flex-col w-full justify-center items-center min-h-screen text-center pt-16">
-	<h2>Anagolay is a</h2>
-	<h2 class="text-green mb-8">‘different kind of beast’</h2>
+	<h2 class="mb-8">Anagolay is a <span class="text-green mb-8">different kind of beast</span></h2>
 	<div class="flex flex-col items-center">
 		<div
 			class="flex w-[20rem] sm:w-full mx-auto overflow-x-auto overflow-y-hidden h-60 sm:h-fit sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-8"
