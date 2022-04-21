@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Instagram from 'svelte-material-icons/Instagram.svelte';
 	import Twitter from 'svelte-material-icons/Twitter.svelte';
 
 	let options: { title: string; options?: { caption: string; link: string }[] }[] = [
@@ -38,14 +37,16 @@
 	<div class="flex flex-col py-20 md:py-0 w-60 md:ml-auto md:mr-1/10">
 		<div class="flex w-full justify-center">Join the community</div>
 		<div class="flex flex-grow py-4 items-center justify-between">
-			<button class="shadow-button rounded-full p-3 text-white active:shadow-pressed">
+			<button class="shadow-button h-12 w-12 rounded-full p-3 text-white active:shadow-pressed">
 				<span class="material-icons">discord</span>
 			</button>
-			<button class="shadow-button rounded-full p-3 text-white active:shadow-pressed">
-				<Instagram size="1.2rem" />
+			<button class="shadow-button h-12 w-12 rounded-full p-3 text-white active:shadow-pressed">
+				<!-- Search right Matrix icon and metod to insert -->
+				<span class="material-icons text-base">M</span>
 			</button>
-			<button class="shadow-button rounded-full p-3 text-white active:shadow-pressed"
-				><Twitter size="1.2rem" /></button
+			<button class="shadow-button h-12 w-12 rounded-full p-3 text-white active:shadow-pressed">
+				<!-- Search right icon and metod to insert -->
+				<Twitter size="1.2rem" /></button
 			>
 		</div>
 	</div>

@@ -1,8 +1,7 @@
 <script lang="ts">
-	import ChevronUp from 'svelte-material-icons/ChevronUp.svelte';
-
 	function scrollToTop(): void {
 		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
 	}
 </script>
 
@@ -10,7 +9,7 @@
 	class={`flex justify-center items-center topButton fixed bottom-5 right-5 h-12 w-12 rounded-full`}
 	on:click={scrollToTop}
 >
-	<ChevronUp color="var(--accent)" size="1.5rem" />
+	<span class="material-icons text-green"> keyboard_arrow_up </span>
 </button>
 
 <style>

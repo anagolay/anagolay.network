@@ -67,10 +67,8 @@
 	}
 </script>
 
-<div class="flex mt-20 px-3 py-auto text-center teamBg">
-	<div class="absolute right-0 left-0 h-full">
-		<Ellipse left="10" top="90" diam="7.5vw" op="0.5" blur="5" />
-	</div>
+<div class="flex mt-20 px-3 py-auto text-center">
+	<Ellipse class="absolute mt-[39rem] ml-[5rem] opacity-50 blur-sm h-[4.5vw]" />
 
 	<div
 		id="team"
@@ -102,7 +100,7 @@
 					rel="noreferrer"
 					class="shadow-button active:shadow-pressed text-sm p-[1.5rem] w-fit mx-3 md:mt-5 bg-blue rounded-full"
 				>
-					<Linkedin color="var(--white)" size="1.8rem" /></a
+					<Linkedin color="white" size="1.8rem" /></a
 				>
 				{#if selected.github}
 					<a
@@ -111,7 +109,7 @@
 						rel="noreferrer"
 						class="shadow-button active:shadow-pressed text-sm p-[1.5rem] w-fit mx-3 md:mt-5 bg-blue rounded-full"
 					>
-						<Github color="var(--white)" size="1.8rem" /></a
+						<Github color="white" size="1.8rem" /></a
 					>
 				{/if}
 			</div>

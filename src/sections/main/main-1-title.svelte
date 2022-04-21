@@ -15,15 +15,15 @@
 	<!-- Content marginTop and height are bound to screen width as also is animation -->
 	<div class="relative flex flex-col -mt-[60vw] md:h-[50vw] md:min-h-screen md:my-0">
 		<div class="md:my-auto">
-			<h1 class="md:mb-5 tracking-wider text-center font-bold md:w-3/5 md:text-left">
-				<p>Process-based Interplanetary P2P Framework</p>
+			<h1 class="md:mb-5 tracking-wider text-center font-bold md:w-3/5 text-xl md:text-7xl md:text-left">
+				Process-based Interplanetary P2P Framework
 			</h1>
 			<h4
-				class="text-green font-bold text-center md:text-left my-2 md:mb-8  mx-auto md:mx-0 w-5/6  md:w-[50vw]"
+				class="text-green font-bold text-center text-lg md:text-3xl md:text-justify my-2 md:mb-8 mx-auto md:mx-0 w-5/6 md:w-2/4"
 			>
 				The transparent verifiable process with 100% source-code assurance
 			</h4>
-			<h4 class="w-5/6 mx-auto text-center md:text-left md:mx-0 md:w-[55%]">
+			<h4 class="w-5/6 mx-auto text-center text-base md:text-3xl md:text-justify md:mx-0 md:w-2/4">
 				No need for a central authority, or resource-heavy consensus mechanism to establish rules of the game
 				— trust the process
 			</h4>

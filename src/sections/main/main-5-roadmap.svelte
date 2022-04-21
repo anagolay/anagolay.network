@@ -18,8 +18,8 @@
 		title: string;
 		year: number;
 		status?: string;
-		blur?: number;
-		op?: number;
+		blur?: string;
+		op?: string;
 		facts: { fact: string; description?: string; status: string }[];
 	}
 	let events: Step[] = [
@@ -165,19 +165,20 @@
 			],
 		},
 	];
+	// Steps are events that have global status, blur and opacity set for the timeline.
 	const steps = events.map((event: Step): Step => {
 		let state = status.done;
-		let blur = 0;
-		let op = 1;
+		let blur = '';
+		let op = '';
 		let factStatus = event.facts.map((f) => f.status);
 		if (factStatus.includes(status.doing)) {
 			state = status.doing;
-			blur = 5;
-			op = 0.98;
+			blur = 'blur-[2px]';
+			op = 'opacity-90';
 		} else if (factStatus.includes(status.pending)) {
 			state = status.pending;
-			blur = 10;
-			op = 0.9;
+			blur = 'blur-[5px]';
+			op = 'opacity-75';
 		}
 		return { ...event, status: state, blur, op };
 	});
@@ -195,19 +196,19 @@
 
 <div class="w-5/6 mx-auto pb-10">
 	<div class="flex justify-between items-center w-full py-[4rem] text-xs md:text-base">
-		<p
-			class="text-left w-1/3 opacity-75 cursor-pointer hover:opacity-100 hover:underline"
+		<button
+			class="flex items-center text-left w-1/3 opacity-75 cursor-pointer hover:opacity-100 hover:underline"
 			on:click={() => scrollTo(0)}
 		>
-			&#10229; Completed
-		</p>
+			<span class="material-icons mr-2">west</span>Completed
+		</button>
 		<h2 class="w-1/3 text-center">Roadmap</h2>
-		<p
-			class="text-right w-1/3 opacity-75 cursor-pointer hover:opacity-100 hover:underline"
+		<button
+			class="flex items-center justify-end w-1/3 opacity-75 cursor-pointer hover:opacity-100 hover:underline"
 			on:click={() => scrollTo(roadWidth)}
 		>
-			Coming next &#10230;
-		</p>
+			Coming next <span class="material-icons ml-2">east</span>
+		</button>
 	</div>
 	<div class="overflow-x-scroll scroll-smooth" bind:this={roadMap} bind:clientWidth={windowWidth}>
 		<div
@@ -239,14 +240,7 @@
 			{#each steps as event}
 				<div class="col w-[2.1rem] mx-auto -mt-[1.1rem] h-[2rem]">
 					<div class=" ">
-						<Ellipse
-							diam="2rem"
-							left="0"
-							top=""
-							blur={'' + event.blur}
-							op={'' + event.op}
-							extraclass="relative blur-[5px]"
-						/>
+						<Ellipse class="relative w-8 {event.blur} {event.op}" />
 					</div>
 				</div>
 			{/each}
@@ -269,11 +263,10 @@
 		</div>
 	</div>
 	<div class="flex items-center justify-center text-white text-[1rem] opacity-50 italic py-5">
-		<PanLeft />
+		<span class="material-icons mr-2">west</span>
 		<p class="md:hidden">Swipe to see</p>
 		<p class="hidden md:block">Scroll to see</p>
-		<!-- <p class="ml-[.3rem]">to see</p> -->
-		<PanRight />
+		<span class="material-icons ml-2">east</span>
 	</div>
 	<div class="flex flex-col items-center">
 		<a href="/." class="text-green hover:underline  text-[1.125rem]">See the full roadmap</a>
