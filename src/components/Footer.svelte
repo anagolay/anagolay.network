@@ -23,9 +23,9 @@
 	];
 </script>
 
-<hr class="mb-6 w-5/6 mx-auto opacity-50 color-white" />
-<div class="flex flex-col md:flex-row items-center md:items-start w-full text-center md:px-1/10 text-[90%]">
-	<img class="w-24 md:w-32 mix-blend-lighten my-5 md:my-0 md:mx-5" src="green_logo.png" alt="Anagolay logo" />
+<hr class="mb-6 w-full mx-auto opacity-50 color-white" />
+<div class="mx-[5%] flex flex-col md:flex-row items-center md:items-start text-center md:px-1/10 text-[90%]">
+	<img class="w-24 md:w-32 mix-blend-lighten my-5 md:my-0 md:mr-5" src="green_logo.png" alt="Anagolay logo" />
 
 	{#each options as item}
 		<div class="py-2 md:py-0 flex-col md:px-2 md:text-left">

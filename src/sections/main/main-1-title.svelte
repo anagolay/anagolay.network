@@ -2,16 +2,16 @@
 	import Ellipse from '$src/components/Ellipse.svelte';
 </script>
 
-<div class="w-full min-h-screen">
+<div class="min-h-screen">
 	<!-- Animation is absolute in md screen to let the green line reach the right border -->
 	<div class="relative md:absolute overflow-x-hidden flex justify-end right-0 top-[2rem] md:top-0">
 		<!-- Video width 180vw is to set the animation visible on sm screen -->
-		<video class=" min-w-[180vw] md:min-w-0 md:w-100 md:mt-0" playsinline autoplay muted loop>
+		<video class="min-w-[180vw] md:min-w-0 md:w-100 md:mt-0" playsinline autoplay muted loop>
 			<source src="header_animation.webm" type="video/webm" />
 		</video>
 	</div>
 	<!-- Content marginTop and height are bound to screen width as also is animation -->
-	<div class="relative flex flex-col -mt-[60vw] md:h-[50vw] md:min-h-screen md:my-0 px-8">
+	<div class="relative flex flex-col -mt-[60vw] md:h-[50vw] md:min-h-screen md:my-0">
 		<div class="md:my-auto">
 			<h1 class="md:mb-5 tracking-wider text-center font-bold md:w-3/5 md:text-left">
 				<p>Process-based Interplanetary P2P Framework</p>
