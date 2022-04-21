@@ -3,11 +3,6 @@
 	import SectionButton from '$src/components/SectionButton.svelte';
 	import Ellipse from '$src/components/Ellipse.svelte';
 
-	//incons to get or create and remove:
-
-	import PanLeft from 'svelte-material-icons/PanLeft.svelte';
-	import PanRight from 'svelte-material-icons/PanRight.svelte';
-
 	enum status {
 		done = 'done',
 		doing = 'doing',
@@ -57,7 +52,7 @@
 				{
 					fact: 'Self-hosted service for rehosting git repositories on IPFS',
 					description:
-						"<p>An important milestone for Anagolay, as building the provable process for proof generation must always execute the same code.\nDetails and results are <a href='https://dev.to/woss/part-1-rehosting-git-repositories-on-ipfs-23bf' >presented here</a></p>",
+						'An important milestone for Anagolay, as building the provable process for proof generation must always execute the same code.\nDetails and results are [presented here](https://dev.to/woss/part-1-rehosting-git-repositories-on-ipfs-23bf)',
 					status: status.done,
 				},
 				{
@@ -77,7 +72,7 @@
 				{
 					fact: 'Most common (generic) Operations & Workflows implemented',
 					description:
-						'<p>Most common (generic) Operations that will be used in almost any Workflow. This includes features from QRCode generation, Multimedia extraction, calculation of Cryptographic hashes, and a multitude of perceptual and Locally sensitive hashes.</p>',
+						'Most common (generic) Operations that will be used in almost any Workflow. This includes features from QRCode generation, Multimedia extraction, calculation of Cryptographic hashes, and a multitude of perceptual and Locally sensitive hashes.',
 					status: status.done,
 				},
 			],
@@ -89,7 +84,7 @@
 				{
 					fact: 'PoE & Statement of Ownership and Copyright',
 					description:
-						'<p>Improve and re-design the workflows specific for Proofs-of-Exitance & Statement of Ownership and Copyright. Where blockchain is not the central technology, but a facilitator of transparency & freedom for the build architecture.</p>',
+						'Improve and re-design the workflows specific for Proofs-of-Exitance & Statement of Ownership and Copyright. Where blockchain is not the central technology, but a facilitator of transparency & freedom for the build architecture.',
 					status: status.pending,
 				},
 				{ fact: ' Anagolay rebrand and new website', status: status.doing },
@@ -110,13 +105,13 @@
 				{
 					fact: 'Anagolay Explorer',
 					description:
-						'<p>Anagolay Explorer (focused on the Statements, Operation, Workflows and transfers of Ownerships and Copyrights).</p>',
+						'Anagolay Explorer (focused on the Statements, Operation, Workflows and transfers of Ownerships and Copyrights).',
 					status: status.pending,
 				},
 				{
 					fact: 'Anagolay SDK',
 					description:
-						'<p>While building SDK we will focus on the features for our JS/TS SDK, because the Anagolay interaction will come mostly from the Web Browser, Smart phones and Desktop environments. Our goal is to design SDK as intuitive and developer-friendly as possible.</p>',
+						'While building SDK we will focus on the features for our JS/TS SDK, because the Anagolay interaction will come mostly from the Web Browser, Smart phones and Desktop environments. Our goal is to design SDK as intuitive and developer-friendly as possible.',
 					status: status.pending,
 				},
 			],
@@ -140,13 +135,13 @@
 				{
 					fact: 'Distributed-build system for Artefacts',
 					description:
-						"<p>Each Operation and Workflow produce the built artifacts for WASM and rust language targets. These artifacts must not be tampered with before they are stored on the chain and they must not be built on the developers' machines. If they were, then the developers can act as bad actors and try to inject the code in the middle of the process and try to fool any other user who will use that Operation or Workflow. This is going to be a new application and will come together with the incentive layer on-chain.</p>",
+						"Each Operation and Workflow produce the built artifacts for WASM and rust language targets. These artifacts must not be tampered with before they are stored on the chain and they must not be built on the developers' machines. If they were, then the developers can act as bad actors and try to inject the code in the middle of the process and try to fool any other user who will use that Operation or Workflow. This is going to be a new application and will come together with the incentive layer on-chain.",
 					status: status.pending,
 				},
 				{
 					fact: 'Innovation on the permanent storage for Anagolay purpose',
 					description:
-						'<p>this may include the on-chain incentive to have the IPFS nodes running (either cluster or not) and storing the off-chain Anagolay data; Operation, Workflow and any other artefacts that are needed to have the Statements working.</p>',
+						'this may include the on-chain incentive to have the IPFS nodes running (either cluster or not) and storing the off-chain Anagolay data; Operation, Workflow and any other artefacts that are needed to have the Statements working.',
 					status: status.pending,
 				},
 			],
@@ -158,7 +153,7 @@
 				{
 					fact: 'Extensive testing and code improvements to fit low-energy devices',
 					description:
-						'<p>Extensive testing and code improvements to fit low-energy devices like smartphones and Raspberry Pi (with an idea that the Anagolay can be run anywhere, even on Mars). Low energy devices are quite powerful and they can be used to be part of the Anagolay validator set, effectively validating the chain and its transactions. We develop our solution with a mindset, that every drop of energy matters.</p>',
+						'Extensive testing and code improvements to fit low-energy devices like smartphones and Raspberry Pi (with an idea that the Anagolay can be run anywhere, even on Mars). Low energy devices are quite powerful and they can be used to be part of the Anagolay validator set, effectively validating the chain and its transactions. We develop our solution with a mindset, that every drop of energy matters.',
 					status: status.pending,
 				},
 				{ fact: 'Extended set of common Workflows and Operations ', status: status.pending },
@@ -269,7 +264,7 @@
 		<span class="material-icons ml-2">east</span>
 	</div>
 	<div class="flex flex-col items-center">
-		<a href="/." class="text-green hover:underline  text-[1.125rem]">See the full roadmap</a>
+		<a href="/" class="text-green hover:underline  text-[1.125rem]">See the full roadmap</a>
 		<SectionButton clases="flex justify-center">
 			<span class="material-icons">discord</span>
 			<p class="ml-[.3rem]">Join the community</p>
