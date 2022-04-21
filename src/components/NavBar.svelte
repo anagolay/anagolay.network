@@ -48,7 +48,7 @@
 </script>
 
 <nav
-	class="z-10 fixed left-0 top-0 flex items-center bg-opacity-95 justify-center bg-black w-screen text-sm py-[1rem] pl-1 text-white h-15 md:px-1/10 md:justify-between"
+	class="z-10 fixed p-4 flex items-center bg-opacity-95 justify-center bg-anagolayBlack w-full text-sm p8 text-white h-15 md:px-1/10 md:justify-between"
 >
 	<button class="absolute text-inherit p-1 text-lg left-1 md:hidden" on:click={toggleSideBar}>
 		<span class="material-icons {menuIconColor}"> menu </span>
@@ -60,7 +60,7 @@
 	</a>
 
 	<div
-		class="z-10 flex flex-col absolute top-16 bottom-0 bg-black md:bg-transparent h-screen bg-opacity-95 
+		class="z-10 flex flex-col absolute top-16 bottom-0 bg-black md:bg-transparent h-screen bg-opacity-95
 			  py-0  text-center right-full mx-auto font-montserrat
             md:flex-row md:mx-0 md:relative md:top-auto md:h-full md:py-0 md:right-auto md:left-auto md:w-fit md:translate-x-0 {menuTransition}"
 	>

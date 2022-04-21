@@ -2,7 +2,7 @@
 	import Ellipse from '$src/components/Ellipse.svelte';
 </script>
 
-<div class="w-full bg-gradient-to-b from-black to-blue/0 h-[50rem]">
+<div class="w-full  h-[50rem]">
 	<!-- <div class="w-full radialHeader md:min-h-[200vh] h-[80rem]"> -->
 	<div class="text-med py-[5rem] md:pt-[10rem] md:pb-[15rem] px-3 md:ml-[10vw] font-dmsans">
 		<div class="absolute right-0 top-[2rem] md:top-0 overflow-hidden max-h-screen">

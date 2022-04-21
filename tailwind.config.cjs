@@ -4,19 +4,15 @@ module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	darkMode: 'class',
 	theme: {
-		screens: {
-			xs: '320px',
-			sm: '480px',
-			md: '768px',
-			lg: '976px',
-			xl: '1440px',
+		container: {
+			center: true,
 		},
 		fontFamily: {
 			sans: ['Graphik', 'sans-serif'],
 			serif: ['Merriweather', 'serif'],
 			nunito: ['nunito', 'sans-serif'],
 			montserrat: ['montserrat', 'serif'],
-			dmsans: ['DM Sans'], // Ensure fonts with spaces have " " surrounding it.
+			dmsans: ['DM Sans'], // Ensure fonts with spaces have " "surrounding it.
 		},
 		extend: {
 			textShadow: {
@@ -31,29 +27,17 @@ module.exports = {
 				pressed:
 					'0px 4px 4px rgba(20, 31, 69, 0.5), inset 0px -3px 5px rgba(244, 251, 255, 0.2), inset 4px 5px 10px #141f45',
 			},
-			spacing: {
-				1: '8px',
-				2: '12px',
-				3: '16px',
-				4: '24px',
-				5: '32px',
-				6: '48px',
-				'1/3': '33%',
-				'1/10': '10%',
-				'1/4': '25%',
-				'3/4': '75%',
-				150: '150%',
-				200: '200%',
-			},
 			borderRadius: {
 				'4xl': '2rem',
 			},
 			colors: {
+				transparent: 'transparent',
+				current: 'currentColor',
 				blue: '#054F77',
 				darkblue: '#093954',
-				black: '#052233',
+				anagolayBlack: '#052233',
 				green: '#8CFF00',
-				white: '#F4FBFF',
+				anagolayWhite: '#F4FBFF',
 			},
 		},
 	},

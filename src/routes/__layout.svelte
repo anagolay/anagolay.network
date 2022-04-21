@@ -5,11 +5,11 @@
 	import Footer from '$src/components/Footer.svelte';
 </script>
 
-<main class="bg-gradient-to-b from-darkblue via-blue to-black text-white">
-	<NavBar />
-	<TopButton />
-	<div>
+<main class="lg:container mx-auto bg-gradient-to-b from-anagolayBlack via-[#054F77] to-anagolayBlack ">
+	<div class="flex flex-col text-anagolayWhite">
+		<NavBar />
 		<slot />
+		<Footer />
+		<TopButton />
 	</div>
-	<Footer />
 </main>

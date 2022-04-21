@@ -6,10 +6,15 @@
 	import Roadmap from '$src/sections/main/main-5-roadmap.svelte';
 </script>
 
+<!--
 <div class="w-full">
 	<TitleSection />
 	<FeaturesSection />
 	<UseCases />
 	<TeamSection />
 	<Roadmap />
+</div> -->
+
+<div>
+	<TitleSection />
 </div>
