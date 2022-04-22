@@ -3,7 +3,7 @@
 
 	export let feat: { feature: string; icon?: string; subtitle?: string };
 	export let i: number;
-	import { fly } from 'svelte/transition';
+	import { fly, fade } from 'svelte/transition';
 	import { inview } from 'svelte-inview';
 	let isInView: boolean;
 	let element: HTMLDivElement;
@@ -19,8 +19,8 @@
 >
 	{#if isInView}
 		<div
-			in:fly={{ y: element.clientHeight, duration: 1500, delay: (i % 3) * 150 }}
-			class="mx-4 sm:mx-0 shadow-button flex flex-col items-center rounded-3xl bg-blue h-44 lg:h-48 px-8 mt-8 mb-2 text-base xl:text-xl"
+			in:fade={{ duration: 700, delay: (i % 3) * 150 }}
+			class="mx-4 sm:mx-0 shadow-button flex flex-col items-center rounded-3xl bg-blue h-44 lg:h-48 px-8 mt-8 mb-8 text-base xl:text-xl"
 		>
 			<div
 				class="bg-gradient-to-br from-blue/90 to-white/20 backdrop-blur-[2px] p-5 mx-center text-green border aspect-square border-green rounded-full -mt-8"

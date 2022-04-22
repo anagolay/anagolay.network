@@ -1,4 +1,12 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+
+	onMount(
+		() =>
+			// document.body.style.scrollBehavior = 'smooth'
+			(document.documentElement.style.scrollBehavior = 'smooth')
+	);
+
 	function scrollToTop(): void {
 		document.body.scrollTop = 0;
 		document.documentElement.scrollTop = 0;

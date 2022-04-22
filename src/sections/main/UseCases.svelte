@@ -28,16 +28,16 @@
 		},
 	];
 
-	let carousel: HTMLDivElement;
-	let selectedItem = 0;
+	// let carousel: HTMLDivElement;
+	// let selectedItem = 0;
 
-	function scrollCarousel(e): void {
-		e.preventDefault();
-		const index = Number(e.target.id);
-		const width = carousel.clientWidth;
-		selectedItem = index;
-		carousel.scrollLeft = index * width;
-	}
+	// function scrollCarousel(e): void {
+	// 	e.preventDefault();
+	// 	const index = Number(e.target.id);
+	// 	const width = carousel.clientWidth;
+	// 	selectedItem = index;
+	// 	carousel.scrollLeft = index * width;
+	// }
 </script>
 
 <div class="relative flex flex-col w-full justify-center items-center h-fit min-h-screen text-center">
@@ -46,11 +46,12 @@
 			Copyright and Ownership <i>Verifiable</i> Statements created and stored on Anagolay can be applied to solve
 			a number of issues including, but not limited to:
 		</h4>
-		<div
+		<!-- <div
 			class="w-[19rem] carousel mx-auto md:w-full md:justify-evenly md:h-fit text-base lg:text-lg"
 			bind:this={carousel}
 			on:scroll={() => console.log(carousel.scrollLeft)}
-		>
+		> -->
+		<div class="flex w-full justify-evenly mb-8 flex-wrap text-base lg:text-lg">
 			{#each cases as item}
 				<div class="carousel-item flex-col mx-8 h-100 md:max-w-1/3 md:w-72 mt-20">
 					<div class="shadow-button flex flex-col rounded-lg bg-blue px-3 pb-3 w-72 md:w-80 h-[25rem]">
@@ -71,7 +72,7 @@
 				</div>
 			{/each}
 		</div>
-		<div class="flex justify-center w-full h-fit py-2 gap-6 md:invisible">
+		<!-- <div class="flex justify-center w-full h-fit py-2 gap-6 md:invisible">
 			{#each cases as item}
 				<button
 					class="h-3 w-3 btn-outline btn-accent p-0 border border-green rounded-full my-2 {selectedItem ===
@@ -82,7 +83,7 @@
 					on:click={scrollCarousel}
 				/>
 			{/each}
-		</div>
+		</div> -->
 		<SectionButton>See more use cases</SectionButton>
 	</div>
 </div>

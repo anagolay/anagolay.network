@@ -57,13 +57,6 @@
 			link: '/',
 		},
 	];
-	let selectedFeature = 0;
-	let carousel: HTMLDivElement;
-	function selectFeature(event: { currentTarget: EventTarget & HTMLButtonElement }) {
-		let index = Number(event.currentTarget.value);
-		selectedFeature = index;
-		carousel.scrollLeft = (carousel.scrollWidth / beastFeatures.length) * index;
-	}
 </script>
 
 <div class="relative mt-0 flex flex-col w-full justify-center items-center min-h-screen text-center pt-16">
@@ -72,24 +65,13 @@
 	</h2>
 	<div class="flex flex-col items-center">
 		<div
-			class="flex w-[22rem] sm:w-full mx-auto overflow-x-auto overflow-y-hidden h-60 sm:h-fit sm:grid lg:grid-cols-2 xl:grid-cols-3 sm:gap-8"
-			bind:this={carousel}
+			class="flex flex-col w-[22rem] sm:w-full mx-auto overflow-x-auto overflow-y-hidden sm:h-fit sm:grid lg:grid-cols-2 xl:grid-cols-3 sm:gap-8"
 		>
 			{#each beastFeatures as feat, i}
 				<FeatureCard {feat} {i} />
 			{/each}
 		</div>
-		<div class="sm:hidden flex w-2/4 justify-evenly my-4">
-			{#each beastFeatures as feat, i}
-				<button
-					class="h-2 w-2 rounded-full border border-green active:bg-green {i === selectedFeature
-						? 'bg-green'
-						: ''}"
-					value={i}
-					on:click={selectFeature}
-				/>
-			{/each}
-		</div>
+
 		<div class="flex mt-16 flex-col mx-auto xl:mx-auto">
 			{#each howItems as item}
 				<div class="md:flex text-left mb-12">

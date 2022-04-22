@@ -2,33 +2,32 @@
 	import Ellipse from '$src/components/Ellipse.svelte';
 </script>
 
-<div class="min-h-screen">
-	<!-- Animation is absolute in md screen to let the green line reach the right border -->
-	<div
-		class="relative md:absolute flex overflow-visible -mr-[8vw] md:mr-0 md:overflow-hidden justify-end right-0 top-[2rem] md:top-0 max-h-full"
-	>
-		<!-- Video width 180vw is to set the animation visible on sm screen -->
-		<video class="min-w-[180vw] h-[150%] md:min-w-0 md:w-100 md:mt-0" playsinline autoplay muted loop>
-			<source src="header_animation.webm" type="video/webm" />
-		</video>
-	</div>
-	<!-- Content marginTop and height are bound to screen width as also is animation -->
-	<div class="relative flex flex-col -mt-[60vw] md:h-[50vw] md:min-h-screen md:my-0">
-		<div class="md:my-auto">
-			<h1 class="md:mb-5 tracking-wider text-center font-bold md:w-3/5 text-xl md:text-7xl md:text-left">
-				Process-based Interplanetary P2P Framework
-			</h1>
-			<h4
-				class="text-green font-bold text-center text-lg md:text-3xl md:text-justify my-2 md:mb-8 mx-auto md:mx-0 w-5/6 md:w-2/4"
-			>
-				The transparent verifiable process with 100% source-code assurance
-			</h4>
-			<h4 class="w-5/6 mx-auto text-center text-base md:text-3xl md:text-justify md:mx-0 md:w-2/4">
-				No need for a central authority, or resource-heavy consensus mechanism to establish rules of the game
-				— trust the process
-			</h4>
-			<Ellipse class="absolute mt-[8vw] ml-[5%] opacity-50 blur-sm h-[1.5vw] border" />
-			<Ellipse class="absolute mt-0 ml-[25%] opacity-50 blur-sm h-[4.5vw]" />
+<div>
+	<div class="flex flex-col-reverse md:grid md:grid-cols-4 md:my-10">
+		<div class="md:col-span-2 md:-mr-20">
+			<div class="md:py-40">
+				<h1
+					class="mb-4 md:mb-8 tracking-wider text-center font-bold text-xl md:text-5xl xl:text-6xl md:text-left"
+				>
+					<p class="md:leading-[3rem] xl:leading-[5rem]">Process-based Interplanetary P2P Framework</p>
+				</h1>
+				<h4
+					class="w-full text-center text-base md:text-xl xl:text-2xl md:text-justify my-2 md:mb-8 mx-auto md:mx-0"
+				>
+					<p class="text-green my-4 font-bold md:my-8">
+						The transparent verifiable process with 100% source-code assurance
+					</p>
+					<p class="md:-mr-20 lg:mr-0">
+						No need for a central authority, or resource-heavy consensus mechanism to establish rules of the
+						game — trust the process
+					</p>
+				</h4>
+				<Ellipse class="absolute mt-[8vw] ml-[5%] opacity-50 blur-sm h-[1.5vw] border" />
+				<Ellipse class="absolute mt-0 ml-[25%] opacity-50 blur-sm h-[4.5vw]" />
+			</div>
+		</div>
+		<div class="aspect-square md:col-span-2 flex justify-center -mx-12 sm:mx-0 -mt-10 md:-mx-28">
+			<object class="w-full md:-mt-60" title="light animation" type="image/svg+xml" data="main_title.svg" />
 		</div>
 	</div>
 </div>
