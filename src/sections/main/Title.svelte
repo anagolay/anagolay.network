@@ -7,9 +7,11 @@
 		<div class="md:col-span-2 md:-mr-20">
 			<div class="md:py-40">
 				<h1
-					class="mb-4 md:mb-8 tracking-wider text-center font-bold text-xl md:text-5xl xl:text-6xl md:text-left"
+					class="mb-4 md:mb-8 tracking-wider text-center font-bold text-xl md:text-5xl xl:text-6xl 2xl:text-7xl md:text-left"
 				>
-					<p class="md:leading-[3rem] xl:leading-[5rem]">Process-based Interplanetary P2P Framework</p>
+					<p class="md:leading-[3rem] xl:leading-[5rem] 2xl:leading-[5.5rem]">
+						Process-based Interplanetary P2P Framework
+					</p>
 				</h1>
 				<h4
 					class="w-full text-center text-base md:text-xl xl:text-2xl md:text-justify my-2 md:mb-8 mx-auto md:mx-0"
