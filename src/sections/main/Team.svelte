@@ -67,14 +67,14 @@
 	}
 </script>
 
-<div class="flex mt-20 px-3 py-auto text-center">
+<div class="flex mt-20 py-auto text-center">
 	<Ellipse class="absolute mt-[39rem] ml-[5rem] opacity-50 blur-sm h-[4.5vw]" />
 
 	<div
 		id="team"
-		class="relative box w-full my-12 teamGrid rounded-3xl px-2 py-5 md:mx-auto md:w-5/6 md:py-6 md:px-[5%]"
+		class="relative shadow-button w-full my-12 teamGrid rounded-3xl py-5 md:mx-auto md:w-5/6 md:py-6 md:px-[5%]"
 	>
-		<h2 class="font-medium ">Meet the team</h2>
+		<h2 class="font-medium text-2xl md:text-4xl my-3">Meet the team</h2>
 		<div class="py-3 w-5/6 mx-auto grid gap-4 grid-cols-3 md:w-full md:grid-cols-6">
 			{#each team as member}
 				<div
@@ -88,9 +88,9 @@
 			{/each}
 		</div>
 		{#if selected}
-			<h3 class="font-light">{selected.title}</h3>
+			<h3 class="font-light text-lg md:text-2xl">{selected.title}</h3>
 			<p class="mt-2 text-green text-[1rem] md:text-[1.5rem]"><i>{selected.name}</i></p>
-			<p class="mx-auto h-[14rem]  py-3 md:py-5 md:w-5/6 md:h-[10rem]">
+			<p class="mx-auto h-[14rem] mb-4 px-3 py-3 md:py-5 md:w-5/6 md:h-[10rem] text-sm md:text-lg">
 				{selected.bio}
 			</p>
 			<div class="flex w-full justify-center">
@@ -98,7 +98,7 @@
 					href={selected.link}
 					target="_blank"
 					rel="noreferrer"
-					class="shadow-button active:shadow-pressed text-sm p-[1.5rem] w-fit mx-3 md:mt-5 bg-blue rounded-full"
+					class="shadow-button p-2 active:shadow-pressed text-sm md:p-[1.5rem] w-fit mx-3 md:mt-5 bg-blue rounded-full"
 				>
 					<Linkedin color="white" size="1.8rem" /></a
 				>
@@ -107,7 +107,7 @@
 						href={selected.github}
 						target="_blank"
 						rel="noreferrer"
-						class="shadow-button active:shadow-pressed text-sm p-[1.5rem] w-fit mx-3 md:mt-5 bg-blue rounded-full"
+						class="shadow-button p-2 active:shadow-pressed text-sm md:p-[1.5rem] w-fit mx-3 md:mt-5 bg-blue rounded-full"
 					>
 						<Github color="white" size="1.8rem" /></a
 					>

@@ -6,7 +6,7 @@
 	let menuTransition = '';
 
 	//all links in sidebar have same styling
-	let sidebarLinkClasses = 'h-14 m-0 border-b border-solid border-green py-2 w-full';
+	let sidebarLinkClasses = 'h-14 m-0 border-b border-solid border-green py-4 w-full';
 
 	//toggleSideBar will open sidebar if it is closed or close it if opened.
 	function toggleSideBar() {
@@ -48,26 +48,26 @@
 </script>
 
 <nav
-	class="z-10 fixed py-4 items-center bg-opacity-95 justify-center bg-anagolayBlack w-full text-sm p8 text-white h-15 md:justify-between"
+	class="z-10 fixed py-4 lg:py-6 items-center bg-opacity-95 justify-center bg-anagolayBlack w-full text-sm md:text-base p8 text-white h-15 md:justify-between"
 >
 	<div class="lg:container mx-auto w-5/6 flex justify-center md:justify-between">
-		<button class="absolute text-inherit p-1 text-lg left-1 md:hidden" on:click={toggleSideBar}>
-			<span class="material-icons {menuIconColor}"> menu </span>
+		<button class="absolute px-3 py-1 left-1 md:hidden" on:click={toggleSideBar}>
+			<span class="material-icons text-2xl {menuIconColor}"> menu </span>
 		</button>
 
 		<!-- The on:click in <a/> tag executes closeSidebar function -->
 		<a href="/" on:click={closeSideBar}>
-			<img class="object-contain h-8 md:h-10" src="horizontal_white1.svg" alt="Anagolay logo" />
+			<img class="object-contain h-10 lg:h-12" src="horizontal_white1.svg" alt="Anagolay logo" />
 		</a>
 
 		<div
-			class="z-10 flex flex-col absolute top-16 bottom-0 bg-black md:bg-transparent h-screen bg-opacity-95
+			class="z-10 flex flex-col absolute top-16 bottom-0 bg-anagolayBlack md:bg-transparent h-screen bg-opacity-95
 			  py-0  text-center right-full mx-auto font-montserrat
             md:flex-row md:mx-0 md:relative md:top-auto md:h-full md:py-0 md:right-auto md:left-auto md:w-fit md:translate-x-0 {menuTransition}"
 		>
 			{#each links as link}
 				<a
-					class="{sidebarLinkClasses} md:h-fit md:m-2 md:hover:underline md:border-0 md:my-auto md:hover:bg-transparent md:py-0 md:w-fit {link.color}"
+					class="{sidebarLinkClasses} md:h-fit md:mx-2 lg:mx-4 md:hover:underline md:border-0 md:my-auto md:hover:bg-transparent md:py-0 md:w-fit {link.color}"
 					href={link.url}
 					on:click={closeSideBar}
 				>
@@ -76,7 +76,7 @@
 			{/each}
 
 			<a
-				class="{sidebarLinkClasses} md:text-white md:w-fit md:h-fit md:ml-2 md:rounded-full md:bg-darkblue md:shadow-button md:btn-secondary md:text-base md:py-1.5 md:px-8 md:active:shadow-pressed"
+				class="{sidebarLinkClasses} md:text-white md:w-fit md:h-fit md:ml-2 md:rounded-full md:bg-darkblue md:shadow-button md:btn-secondary text-base lg:text-lg md:py-1.5 md:px-8 md:active:shadow-pressed"
 				href={whitePaper.url}
 				on:click={closeSideBar}
 			>

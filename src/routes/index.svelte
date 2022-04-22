@@ -1,9 +1,9 @@
 <script lang="ts">
-	import TitleSection from '$src/sections/main/main-1-title.svelte';
-	import FeaturesSection from '$src/sections/main/main-2-features.svelte';
-	// import UseCases from '$src/sections/main/main-3-use-cases.svelte';
-	// import TeamSection from '$src/sections/main/main-4-team.svelte';
-	// import Roadmap from '$src/sections/main/main-5-roadmap.svelte';
+	import TitleSection from '$src/sections/main/Title.svelte';
+	import FeaturesSection from '$src/sections/main/Features.svelte';
+	import UseCases from '$src/sections/main/UseCases.svelte';
+	import TeamSection from '$src/sections/main/Team.svelte';
+	import Roadmap from '$src/sections/main/Roadmap.svelte';
 	import SvelteSeo from 'svelte-seo';
 </script>
 
@@ -13,16 +13,10 @@
 	keywords="anagolay, blockchain, workflow, transparent, process"
 />
 
-<!--
-<div class="w-full">
+<div>
 	<TitleSection />
 	<FeaturesSection />
 	<UseCases />
 	<TeamSection />
 	<Roadmap />
-</div> -->
-
-<div>
-	<TitleSection />
-	<FeaturesSection />
 </div>

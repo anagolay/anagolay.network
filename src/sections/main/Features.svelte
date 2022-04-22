@@ -67,7 +67,9 @@
 </script>
 
 <div class="relative mt-0 flex flex-col w-full justify-center items-center min-h-screen text-center pt-16">
-	<h2 class="mb-16">Anagolay is a <span class="text-green mb-8">different kind of beast</span></h2>
+	<h2 class="mb-16 text-2xl md:text-4xl">
+		Anagolay is a <span class="text-green mb-8">different kind of beast</span>
+	</h2>
 	<div class="flex flex-col items-center">
 		<div
 			class="flex w-[22rem] sm:w-full mx-auto overflow-x-auto overflow-y-hidden h-60 sm:h-fit sm:grid lg:grid-cols-2 xl:grid-cols-3 sm:gap-8"
@@ -95,7 +97,7 @@
 						<img class="md:object-contain h-32 md:h-[unset] mx-auto" src={item.src} alt={item.alt} />
 					</div>
 					<div
-						class="flex flex-col justify-center text-lg md:text-xl items-center md:items-start md:w-2/3 px-0 md:px-5 h-full my-auto"
+						class="flex flex-col justify-center text-base lg:text-xl items-center md:items-start md:w-2/3 px-0 md:px-5 h-full my-auto"
 					>
 						<p class="text-center md:text-justify mb-3 md:pr-[12.5%]">{item.text}</p>
 						<a class="text-green" href={item.link}>learn more &#10230; </a>

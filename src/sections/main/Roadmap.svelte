@@ -189,93 +189,87 @@
 	onMount(() => (roadMap.scrollLeft = 0.545 * roadWidth - 0.5 * windowWidth));
 </script>
 
-<div class="w-5/6 mx-auto pb-10">
+<div class="mx-auto pb-10">
 	<div class="flex justify-between items-center w-full py-[4rem] text-xs md:text-base">
 		<button
-			class="flex items-center text-left w-1/3 opacity-75 cursor-pointer hover:opacity-100 hover:underline"
+			class="flex items-center text-left w-1/3 opacity-60 cursor-pointer hover:opacity-100 hover:underline"
 			on:click={() => scrollTo(0)}
 		>
-			<span class="material-icons mr-2">west</span>Completed
+			<span class="material-icons mr-2 text-sm  md:text-base">west</span>Completed
 		</button>
-		<h2 class="w-1/3 text-center">Roadmap</h2>
+		<h2 class="w-1/3 text-center text-xl md:text-3xl">Roadmap</h2>
 		<button
-			class="flex items-center justify-end w-1/3 opacity-75 cursor-pointer hover:opacity-100 hover:underline"
+			class="flex items-center justify-end w-1/3 opacity-60 cursor-pointer hover:opacity-100 hover:underline"
 			on:click={() => scrollTo(roadWidth)}
 		>
-			Coming next <span class="material-icons ml-2">east</span>
+			Coming next <span class="material-icons ml-2 text-sm md:text-base">east</span>
 		</button>
 	</div>
-	<div class="overflow-x-scroll scroll-smooth" bind:this={roadMap} bind:clientWidth={windowWidth}>
-		<div
-			style={`grid-template-columns: repeat(${events.length}, 20rem);`}
-			class={`grid min-w-fit text-center`}
-			bind:clientWidth={roadWidth}
-		>
-			{#each steps as event}
-				<div class="col min-w-[15rem] mx-auto font-dmsans font-medium">
-					<div
-						class={`text-7xl text- ${
-							event.status === status.pending ? 'opacity-30' : 'opacity-70'
-						} blur-[2px] text-darkblue ${
-							event.status === status.doing ? 'shadow-green' : 'shadow-white'
-						}  text-shadow-around `}
-					>
-						{event.title}
-					</div>
-					<div
-						class={`flex justify-end blur-0 text-xl pr-[1rem] -mt-[4rem] mb-[4rem] w-1/2 ${
-							event.status === status.pending ? 'opacity-50' : ''
-						}`}
-					>
-						{event.year}
-					</div>
-				</div>
-			{/each}
-			<div class="col col-span-full  h-[.2rem] mt-2 bg-gradient-to-r from-blue to-green " />
-			{#each steps as event}
-				<div class="col w-[2.1rem] mx-auto -mt-[1.1rem] h-[2rem]">
-					<div class=" ">
-						<Ellipse class="relative w-8 {event.blur} {event.op}" />
-					</div>
-				</div>
-			{/each}
-			{#each steps as event}
-				<div class="col mt-5 min-w-[15rem] mx-auto  pb-10 text-[1rem]">
-					{#each event.facts as fact}
+	<div class="text-sm md:text-base lg:text-lg">
+		<div class="overflow-x-scroll scroll-smooth" bind:this={roadMap} bind:clientWidth={windowWidth}>
+			<div
+				style={`grid-template-columns: repeat(${events.length}, 20rem);`}
+				class={`grid min-w-fit text-center`}
+				bind:clientWidth={roadWidth}
+			>
+				{#each steps as event}
+					<div class="col min-w-[15rem] mx-auto font-dmsans font-medium">
 						<div
-							class={`factBox box h-fit bg-primary italic ${
-								fact.status === status.pending ? 'opacity-50' : 'bg-opacity-50'
-							} p-2 mb-2 rounded-md mx-auto text-white`}
-							style={`${
-								fact.status === status.doing ? 'border: 1px solid green; box-shadow: 0 0 .5rem #8cff00' : ''
+							class={`text-7xl text- ${
+								event.status === status.pending ? 'opacity-30' : 'opacity-70'
+							} blur-[2px] text-darkblue ${
+								event.status === status.doing ? 'shadow-green' : 'shadow-white'
+							}  text-shadow-around `}
+						>
+							{event.title}
+						</div>
+						<div
+							class={`flex justify-end blur-0 text-xl pr-[1rem] -mt-[4rem] mb-[4rem] w-1/2 ${
+								event.status === status.pending ? 'opacity-50' : ''
 							}`}
 						>
-							{fact.fact}
+							{event.year}
 						</div>
-					{/each}
-				</div>
-			{/each}
+					</div>
+				{/each}
+				<div class="col col-span-full  h-[.2rem] mt-2 bg-gradient-to-r from-blue to-green " />
+				{#each steps as event}
+					<div class="col w-[2.1rem] mx-auto -mt-[1.1rem] h-[2rem]">
+						<div class=" ">
+							<Ellipse class="relative w-8 {event.blur} {event.op}" />
+						</div>
+					</div>
+				{/each}
+				{#each steps as event}
+					<div class="col mt-5 min-w-60 mx-auto pb-10">
+						{#each event.facts as fact}
+							<div
+								class="w-60 lg:w-64 shadow-button h-fit bg-primary/40 italic {fact.status === status.pending
+									? 'opacity-50'
+									: 'bg-opacity-50'} p-2 mb-2 rounded-md mx-auto text-white"
+								style={fact.status === status.doing
+									? 'border: 1px solid green; box-shadow: 0 0 .5rem #8cff00'
+									: ''}
+							>
+								{fact.fact}
+							</div>
+						{/each}
+					</div>
+				{/each}
+			</div>
+		</div>
+		<div class="flex items-center justify-center my-4 text-white opacity-50 italic py-5">
+			<span class="material-icons mr-2">west</span>
+			<p class="md:hidden">Swipe to see</p>
+			<p class="hidden md:block">Scroll to see</p>
+			<span class="material-icons ml-2">east</span>
+		</div>
+		<div class="flex flex-col items-center">
+			<a href="/" class="text-green pb-4 hover:underline">See the full roadmap</a>
+			<SectionButton clases="flex justify-center">
+				<span class="material-icons">discord</span>
+				<p class="ml-[.3rem]">Join the community</p>
+			</SectionButton>
 		</div>
 	</div>
-	<div class="flex items-center justify-center text-white text-[1rem] opacity-50 italic py-5">
-		<span class="material-icons mr-2">west</span>
-		<p class="md:hidden">Swipe to see</p>
-		<p class="hidden md:block">Scroll to see</p>
-		<span class="material-icons ml-2">east</span>
-	</div>
-	<div class="flex flex-col items-center">
-		<a href="/" class="text-green hover:underline  text-[1.125rem]">See the full roadmap</a>
-		<SectionButton clases="flex justify-center">
-			<span class="material-icons">discord</span>
-			<p class="ml-[.3rem]">Join the community</p>
-		</SectionButton>
-	</div>
 </div>
-
-<style>
-	.factBox {
-		width: 12rem;
-		background: linear-gradient(0deg, #054f7766, #054f7766);
-		box-sizing: border-box;
-	}
-</style>

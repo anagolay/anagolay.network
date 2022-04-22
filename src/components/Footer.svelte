@@ -23,18 +23,25 @@
 </script>
 
 <hr class="mb-6 w-full mx-auto opacity-50 color-white" />
-<div class="mx-[5%] flex flex-col md:flex-row items-center md:items-start text-center md:px-1/10 text-[90%]">
-	<img class="w-24 md:w-32 mix-blend-lighten my-5 md:my-0 md:mr-5" src="green_logo.png" alt="Anagolay logo" />
-
-	{#each options as item}
-		<div class="py-2 md:py-0 flex-col md:px-2 md:text-left">
-			<div>{item.title}</div>
-			{#each item.options as option}
-				<a href={option.link} class="hidden md:block opacity-30 text-[90%]">{option.caption}</a>
-			{/each}
-		</div>
-	{/each}
-	<div class="flex flex-col py-20 md:py-0 w-60 md:ml-auto md:mr-1/10">
+<div
+	class="mx-[5%] flex flex-col md:flex-row items-center md:items-start text-center md:px-1/10 text-base md:text-lg"
+>
+	<img
+		class="w-28 md:w-[unset] md:object-contain my-5 md:my-0 md:mr-5"
+		src="green_logo.png"
+		alt="Anagolay logo"
+	/>
+	<div class="flex w-full md:w-fit justify-evenly text-left">
+		{#each options as item}
+			<div class="flex py-2 md:py-0 flex-col md:px-2">
+				<div>{item.title}</div>
+				{#each item.options as option}
+					<a href={option.link} class="opacity-30 text-[90%]">{option.caption}</a>
+				{/each}
+			</div>
+		{/each}
+	</div>
+	<div class="flex flex-col py-12 md:py-0 w-60 md:ml-auto md:mr-1/10">
 		<div class="flex w-full justify-center">Join the community</div>
 		<div class="flex flex-grow py-4 items-center justify-between">
 			<button class="shadow-button h-12 w-12 rounded-full p-3 text-white active:shadow-pressed">

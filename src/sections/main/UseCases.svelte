@@ -42,12 +42,12 @@
 
 <div class="relative flex flex-col w-full justify-center items-center h-fit min-h-screen text-center">
 	<div class="relative mt-0 flex flex-col items-center w-full m-full mt ">
-		<h4 class="py-6 font-montserrat mb-3 w-3/4">
+		<h4 class="mt-8 font-montserrat text-base md:mb-12 w-full md:text-2xl">
 			Copyright and Ownership <i>Verifiable</i> Statements created and stored on Anagolay can be applied to solve
 			a number of issues including, but not limited to:
 		</h4>
 		<div
-			class="w-[19rem] carousel font-medium mx-auto md:w-full md:justify-evenly md:h-fit"
+			class="w-[19rem] carousel mx-auto md:w-full md:justify-evenly md:h-fit text-base lg:text-lg"
 			bind:this={carousel}
 			on:scroll={() => console.log(carousel.scrollLeft)}
 		>
@@ -63,7 +63,9 @@
 
 						<p class="w-5/6 mx-auto">{item.text}</p>
 						<div class="w-full mt-auto text-right">
-							<a class="text-green mr-4 text-lg" href={item.link}>&#10230</a>
+							<a class="text-green mr-4 text-lg" href={item.link}
+								><span class="material-icons ml-2">east</span></a
+							>
 						</div>
 					</div>
 				</div>
