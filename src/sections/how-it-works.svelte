@@ -8,7 +8,8 @@
 	});
 </script>
 
-<div class={`blueBg ${videoHeight}`}>
+<!-- This needs to be re built -->
+<div class={videoHeight}>
 	<div>
 		<div class="absolute w-full layer82 h-[50rem]" />
 		<div class="absolute w-full starry h-[50rem]" />
@@ -30,7 +31,7 @@
 				</video>
 			</div>
 
-			<div class={`relative pt-[95vw] md:pt-0 md:p-0 text-[1rem] md:text-[1.5rem]`}>
+			<div class="relative pt-[95vw] md:pt-0 md:p-0 text-[1rem] md:text-[1.5rem]">
 				<h1 class="mb-2 md:mb-5 tracking-wider text-center md:w-[50vw] md:max-w-[40rem] md:text-left">
 					How does it work?
 				</h1>

@@ -28,8 +28,13 @@
 				<Ellipse class="absolute mt-0 ml-[25%] opacity-50 blur-sm h-[4.5vw]" />
 			</div>
 		</div>
-		<div class="aspect-square md:col-span-2 flex justify-center -mx-12 sm:mx-0 -mt-10 md:-mx-28">
-			<object class="w-full md:-mt-60" title="light animation" type="image/svg+xml" data="main_title.svg" />
+		<div class="md:col-span-2 flex justify-center -mx-12 sm:mx-0 -mt-10 md:-mx-28">
+			<object
+				class="h-[450px] w-full md:-mt-60 md:h-[unset]"
+				title="light animation"
+				type="image/svg+xml"
+				data="main_title.svg"
+			/>
 		</div>
 	</div>
 </div>

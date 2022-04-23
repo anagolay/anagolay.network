@@ -72,15 +72,16 @@
 
 	<div
 		id="team"
-		class="relative shadow-button w-full my-12 teamGrid rounded-3xl py-5 md:mx-auto md:w-5/6 md:py-6 md:px-[5%]"
+		class="relative bg-gradient-to-b from-anagolayWhite/20 to-anagolayWhite/20 bg-blue/60 w-full my-12 teamGrid backdrop-blur-md rounded-3xl py-5 md:mx-auto md:w-5/6 md:py-6 md:px-[5%] shadow-around shadow-green"
 	>
 		<h2 class="font-medium text-2xl md:text-4xl my-3">Meet the team</h2>
 		<div class="py-3 w-5/6 mx-auto grid gap-4 grid-cols-3 md:w-full md:grid-cols-6">
 			{#each team as member}
 				<div
-					class={`rounded-full aspect-square overflow-hidden duration-700 w-full cursor-pointer ${
-						selected && selected.name === member.name ? 'opacity-100' : 'opacity-40'
-					} hover:opacity-100 `}
+					class="rounded-full aspect-square overflow-hidden duration-700 w-full cursor-pointer {selected &&
+					selected.name === member.name
+						? 'opacity-100'
+						: 'opacity-40'} hover:opacity-100"
 					on:click={() => selectMember(member.name)}
 				>
 					<img class="-mt-1 w-full" src={member.img} alt={member.name} />
@@ -119,17 +120,5 @@
 
 <style>
 	.teamGrid {
-		background: linear-gradient(0deg, rgba(244, 251, 255, 0.15), rgba(244, 251, 255, 0.15)),
-			rgba(5, 79, 119, 0.6);
-		box-shadow: 0px 1.05365px 1.05365px rgba(20, 31, 69, 0.5),
-			inset 0px 0.526825px 1.05365px rgba(244, 251, 255, 0.5);
-		backdrop-filter: blur(5.26825px);
-	}
-
-	.teamBg {
-		margin: -25% 0%;
-		height: fit-content;
-		padding: 30% 5%;
-		background: url('line2.png') 100% 100% / 30vw no-repeat, url('line1.png') 0% 0% / 30vw no-repeat;
 	}
 </style>

@@ -13,8 +13,8 @@
 		title: string;
 		year: number;
 		status?: string;
-		blur?: string;
-		op?: string;
+		pointBlur?: string;
+		pointOpacity?: string;
 		facts: { fact: string; description?: string; status: string }[];
 	}
 	let events: Step[] = [
@@ -163,20 +163,22 @@
 	// Steps are events that have global status, blur and opacity set for the timeline.
 	const steps = events.map((event: Step): Step => {
 		let state = status.done;
-		let blur = '';
-		let op = '';
+		let pointBlur = '';
+		let pointOpacity = '';
 		let factStatus = event.facts.map((f) => f.status);
 		if (factStatus.includes(status.doing)) {
 			state = status.doing;
-			blur = 'blur-[2px]';
-			op = 'opacity-90';
+			pointBlur = 'blur-[2px]';
+			pointOpacity = 'opacity-90';
 		} else if (factStatus.includes(status.pending)) {
 			state = status.pending;
-			blur = 'blur-[5px]';
-			op = 'opacity-75';
+			pointBlur = 'blur-[5px]';
+			pointOpacity = 'opacity-75';
 		}
-		return { ...event, status: state, blur, op };
+		return { ...event, status: state, pointBlur, pointOpacity };
 	});
+
+	let gridClass = `grid w-full text-center grid-flow-col gap-20 auto-cols-fit`;
 
 	let roadMap: HTMLDivElement;
 	let roadWidth: number;
@@ -187,6 +189,7 @@
 	//This functions always sets the fifth event in the middle of Roadmap, but it is not in function of the current event.
 	//Check the position function.
 	onMount(() => (roadMap.scrollLeft = 0.545 * roadWidth - 0.5 * windowWidth));
+	// onMount(() => (roadMap.scrollLeft = 0.6 * (roadWidth - windowWidth)));
 </script>
 
 <div class="mx-auto pb-10">
@@ -207,57 +210,60 @@
 	</div>
 	<div class="text-sm md:text-base lg:text-lg">
 		<div class="overflow-x-scroll scroll-smooth" bind:this={roadMap} bind:clientWidth={windowWidth}>
-			<div
-				style={`grid-template-columns: repeat(${events.length}, 20rem);`}
-				class={`grid min-w-fit text-center`}
-				bind:clientWidth={roadWidth}
-			>
-				{#each steps as event}
-					<div class="col min-w-[15rem] mx-auto font-dmsans font-medium">
-						<div
-							class={`text-7xl text- ${
-								event.status === status.pending ? 'opacity-30' : 'opacity-70'
-							} blur-[2px] text-darkblue ${
-								event.status === status.doing ? 'shadow-green' : 'shadow-white'
-							}  text-shadow-around `}
-						>
-							{event.title}
-						</div>
-						<div
-							class={`flex justify-end blur-0 text-xl pr-[1rem] -mt-[4rem] mb-[4rem] w-1/2 ${
-								event.status === status.pending ? 'opacity-50' : ''
-							}`}
-						>
-							{event.year}
-						</div>
-					</div>
-				{/each}
-				<div class="col col-span-full  h-[.2rem] mt-2 bg-gradient-to-r from-blue to-green " />
-				{#each steps as event}
-					<div class="col w-[2.1rem] mx-auto -mt-[1.1rem] h-[2rem]">
-						<div class=" ">
-							<Ellipse class="relative w-8 {event.blur} {event.op}" />
-						</div>
-					</div>
-				{/each}
-				{#each steps as event}
-					<div class="col mt-5 min-w-60 mx-auto pb-10">
-						{#each event.facts as fact}
-							<div
-								class="w-60 lg:w-64 shadow-button h-fit bg-primary/40 italic {fact.status === status.pending
-									? 'opacity-50'
-									: 'bg-opacity-50'} p-2 mb-2 rounded-md mx-auto text-white"
-								style={fact.status === status.doing
-									? 'border: 1px solid green; box-shadow: 0 0 .5rem #8cff00'
-									: ''}
-							>
-								{fact.fact}
+			<div class="w-fit">
+				<div>
+					<div class={gridClass} bind:clientWidth={roadWidth}>
+						{#each steps as event}
+							<div class="mx-auto">
+								<div
+									class="text-7xl {event.status === status.pending
+										? 'opacity-30'
+										: 'opacity-70'} blur-[2px] text-darkblue {event.status === status.doing
+										? 'shadow-green'
+										: 'shadow-white'}  text-shadow-around"
+								>
+									{event.title}
+								</div>
+								<div
+									class="flex justify-end blur-0 text-xl pr-[1rem] -mt-[4rem] mb-[4rem] w-1/2 {event.status ===
+									status.pending
+										? 'opacity-50'
+										: ''}"
+								>
+									{event.year}
+								</div>
 							</div>
 						{/each}
 					</div>
-				{/each}
+				</div>
+				<div class="w-fit">
+					<div class="w-full h-[.2rem] mt-2 bg-gradient-to-r from-blue to-green " />
+					<div class={gridClass}>
+						{#each steps as event}
+							<div class="flex flex-col items-center mx-auto -mt-[1.1rem]">
+								<div class="mb-4">
+									<Ellipse class="relative w-8 {event.pointBlur} {event.pointOpacity}" />
+								</div>
+								{#each event.facts as fact}
+									<div
+										class="w-60 lg:w-64 shadow-button h-fit bg-primary/40 italic {fact.status ===
+										status.pending
+											? 'opacity-50'
+											: 'bg-opacity-50'} p-2 mb-2 rounded-md mx-auto text-white"
+										style={fact.status === status.doing
+											? 'border: 1px solid green; box-shadow: 0 0 .5rem #8cff00'
+											: ''}
+									>
+										{fact.fact}
+									</div>
+								{/each}
+							</div>
+						{/each}
+					</div>
+				</div>
 			</div>
 		</div>
+
 		<div class="flex items-center justify-center my-4 text-white opacity-50 italic py-5">
 			<span class="material-icons mr-2">west</span>
 			<p class="md:hidden">Swipe to see</p>
