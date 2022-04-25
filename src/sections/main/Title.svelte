@@ -5,7 +5,7 @@
 
 <div>
 	<div class="flex flex-col-reverse md:flex-row md:mt-20">
-		<div class="w-[20rem] mx-auto relative md:w-3/5">
+		<div class="w-[20rem] mx-auto max-w-full relative md:w-3/5">
 			<div class="md:py-36">
 				<h1 class="mb-4 md:mb-0 tracking-wider text-center font-bold text-xl md:text-5xl  md:text-left">
 					<p class="md:leading-[4rem]">Process-based Interplanetary P2P Framework</p>
