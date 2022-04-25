@@ -34,7 +34,7 @@
 	</div>
 	{#each howItems as item}
 		<div class="md:flex text-left my-8 md:my-12">
-			<div class="justify-center aspect-square mx-auto px-2 my-auto md:w-1/4 md:flex">
+			<div class="justify-center md:aspect-square mx-auto px-2 my-auto md:w-1/4 md:flex">
 				<img class="h-44 md:h-[unset] md:object-contain mx-auto" src={item.src} alt={item.alt} />
 			</div>
 			<div

@@ -35,7 +35,7 @@
 	];
 </script>
 
-<div class="relative mt-0 flex flex-col w-full justify-center items-center min-h-screen text-center pt-16">
+<div class="w-[20rem] mx-auto mt-0 flex flex-col md:w-full justify-center items-center text-center pt-16">
 	<h2 class="mb-12 text-2xl md:text-4xl">
 		<p class="mb-4">Anagolay is a</p>
 		<p>'different kind of beast'</p>

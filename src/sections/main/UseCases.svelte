@@ -40,7 +40,7 @@
 	// }
 </script>
 
-<div class="relative flex flex-col w-full justify-center items-center h-fit min-h-screen text-center">
+<div class="relative flex flex-col w-full justify-center items-center h-fit text-center">
 	<div class="relative mt-0 flex flex-col items-center w-full m-full mt ">
 		<h4 class="mt-8 font-montserrat text-base md:mb-12 w-full md:text-2xl">
 			Copyright and Ownership <i>Verifiable</i> Statements created and stored on Anagolay can be applied to solve

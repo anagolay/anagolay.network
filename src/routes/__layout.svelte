@@ -7,7 +7,7 @@
 
 <div class="w-full bg-gradient-to-b from-anagolayBlack via-[#054F77] to-anagolayBlack overflow-x-hidden">
 	<NavBar />
-	<main class="lg:container mx-auto w-5/6">
+	<main class="lg:container mx-auto w-5/6 max-w-[1024px]">
 		<div class="flex flex-col text-anagolayWhite font-dmsans scroll-smooth">
 			<slot />
 			<Footer />

@@ -81,16 +81,16 @@
 			title: 'Q2',
 			year: 2022,
 			facts: [
+				{ fact: ' Anagolay rebrand and new website', status: status.doing },
+				{
+					fact: 'Idiyanale Phase 2/2 (Web3 Foundation Grant)',
+					status: status.doing,
+				},
 				{
 					fact: 'PoE & Statement of Ownership and Copyright',
 					description:
 						'Improve and re-design the workflows specific for Proofs-of-Exitance & Statement of Ownership and Copyright. Where blockchain is not the central technology, but a facilitator of transparency & freedom for the build architecture.',
 					status: status.pending,
-				},
-				{ fact: ' Anagolay rebrand and new website', status: status.doing },
-				{
-					fact: 'Idiyanale Phase 2/2 (Web3 Foundation Grant)',
-					status: status.doing,
 				},
 			],
 		},
@@ -272,7 +272,7 @@
 		</div>
 		<div class="flex flex-col items-center">
 			<a href="/" class="text-green pb-4 hover:underline">See the full roadmap</a>
-			<SectionButton clases="flex justify-center">
+			<SectionButton class="flex justify-center">
 				<span class="material-icons">discord</span>
 				<p class="ml-[.3rem]">Join the community</p>
 			</SectionButton>
