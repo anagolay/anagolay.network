@@ -16,7 +16,7 @@
 					Transparent verifiable processes for creation & validation of proofs and statement of rights. Built
 					with Substrate.
 				</h4>
-				<SectionButton class="mx-auto my-12 md:mx-0 flex justify-center w-3/4">
+				<SectionButton class="mx-auto my-12 md:mx-0 flex justify-center w-fit">
 					<span class="material-icons mr-2">discord</span>
 					<p>Join the community</p>
 				</SectionButton>
