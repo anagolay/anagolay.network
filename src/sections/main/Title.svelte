@@ -1,36 +1,32 @@
 <script lang="ts">
 	import Ellipse from '$src/components/Ellipse.svelte';
+	import SectionButton from '$src/components/SectionButton.svelte';
 </script>
 
 <div>
-	<div class="flex flex-col-reverse md:grid md:grid-cols-4 md:my-10">
-		<div class="md:col-span-2 md:-mr-20">
-			<div class="md:py-40">
-				<h1
-					class="mb-4 md:mb-8 tracking-wider text-center font-bold text-xl md:text-5xl xl:text-6xl 2xl:text-7xl md:text-left"
-				>
-					<p class="md:leading-[3rem] xl:leading-[5rem] 2xl:leading-[5.5rem]">
-						Process-based Interplanetary P2P Framework
-					</p>
+	<div class="flex flex-col-reverse md:flex-row md:mt-20">
+		<div class="relative md:w-3/5">
+			<div class="md:py-36">
+				<h1 class="mb-4 md:mb-0 tracking-wider text-center font-bold text-xl md:text-5xl  md:text-left">
+					<p class="md:leading-[4rem]">Process-based Interplanetary P2P Framework</p>
 				</h1>
 				<h4
-					class="w-full text-center text-base md:text-xl xl:text-2xl md:text-justify my-2 md:mb-8 mx-auto md:mx-0"
+					class="w-full text-center text-green my-4 font-bold text-base md:text-2xl md:text-justify mx-auto md:my-12"
 				>
-					<p class="text-green my-4 font-bold md:my-8">
-						The transparent verifiable process with 100% source-code assurance
-					</p>
-					<p class="md:-mr-20 lg:mr-0">
-						No need for a central authority, or resource-heavy consensus mechanism to establish rules of the
-						game — trust the process
-					</p>
+					Transparent verifiable processes for creation & validation of proofs and statement of rights. Built
+					with Substrate.
 				</h4>
-				<Ellipse class="absolute mt-[8vw] ml-[5%] opacity-50 blur-sm h-[1.5vw] border" />
-				<Ellipse class="absolute mt-0 ml-[25%] opacity-50 blur-sm h-[4.5vw]" />
+				<SectionButton class="mx-auto my-12 md:mx-0 flex justify-center w-3/4">
+					<span class="material-icons mr-2">discord</span>
+					<p>Join the community</p>
+				</SectionButton>
+				<Ellipse class="-mt-12 ml-[76%] opacity-50 blur-sm h-[4.5vw]" />
+				<Ellipse class="mt-12 ml-[20%] opacity-50 blur-sm h-[1.5vw] border" />
 			</div>
 		</div>
-		<div class="md:col-span-2 flex justify-center -mx-12 sm:mx-0 -mt-10 md:-mx-28">
+		<div class="flex flex-grow justify-center -mx-12 sm:mx-0 -mt-10 md:-ml-60 md:-mr-40">
 			<object
-				class="h-[450px] w-full md:-mt-60 md:h-[unset]"
+				class="h-[400px] w-full md:-mt-60 md:h-[unset]"
 				title="light animation"
 				type="image/svg+xml"
 				data="main_title.svg"

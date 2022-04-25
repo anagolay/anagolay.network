@@ -1,17 +1,13 @@
 <script lang="ts">
-	import { marked } from 'marked';
-
-	export let feat: { feature: string; icon?: string; subtitle?: string };
+	export let feat: { feature: string; icon?: string; img?: { src: string; alt: string } };
 	export let i: number;
-	import { fly, fade } from 'svelte/transition';
+	import { fade } from 'svelte/transition';
 	import { inview } from 'svelte-inview';
 	let isInView: boolean;
-	let element: HTMLDivElement;
 </script>
 
 <div
 	class="col wrapper"
-	bind:this={element}
 	use:inview={{ unobserveOnEnter: true, rootMargin: '5%' }}
 	on:change={({ detail }) => {
 		isInView = detail.inView;
@@ -20,20 +16,20 @@
 	{#if isInView}
 		<div
 			in:fade={{ duration: 700, delay: (i % 3) * 150 }}
-			class="mx-4 sm:mx-0 shadow-button flex flex-col items-center rounded-3xl bg-blue h-44 lg:h-48 px-8 mt-8 mb-8 text-base xl:text-xl"
+			class="mx-4 sm:mx-0 shadow-button flex flex-col items-center rounded-3xl bg-blue h-44 lg:h-48 px-12 mt-8 text-base xl:text-xl"
 		>
 			<div
-				class="bg-gradient-to-br from-blue/90 to-white/20 backdrop-blur-[2px] p-5 mx-center text-green border aspect-square border-green rounded-full -mt-8"
+				class="flex w-24 h-24 items-center justify-center bg-gradient-to-br from-blue/90 to-white/20 backdrop-blur-[3px] mx-center text-green border aspect-square border-green rounded-full -mt-6"
 			>
 				{#if feat.icon}
-					<span class="material-icons text-5xl">{@html marked(feat.icon)}</span>
+					<span class="material-icons text-5xl">{feat.icon}</span>
+				{/if}
+				{#if feat.img}
+					<img class="material-icons h-12" src={feat.img.src} alt={feat.img.alt} />
 				{/if}
 			</div>
-			<div class="w-64 sm:w-[unset] my-auto mt-4">
-				<p class="mt-4">{feat.feature}</p>
-				{#if feat.subtitle}
-					<p class="text-[70%] mb-2">{feat.subtitle}</p>
-				{/if}
+			<div class="w-60 sm:w-[unset] md:text-base mt-4 h-20 my-4">
+				<p class="py-4">{feat.feature}</p>
 			</div>
 		</div>
 	{/if}

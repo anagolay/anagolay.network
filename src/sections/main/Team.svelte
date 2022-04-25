@@ -91,7 +91,7 @@
 		{#if selected}
 			<h3 class="font-light text-lg md:text-2xl">{selected.title}</h3>
 			<p class="mt-2 text-green text-[1rem] md:text-[1.5rem]"><i>{selected.name}</i></p>
-			<p class="mx-auto h-[14rem] mb-4 px-3 py-3 md:py-5 md:w-5/6 md:h-[10rem] text-sm md:text-lg">
+			<p class="mx-auto h-[14rem] mb-4 px-3 py-3 md:py-5 md:w-5/6 md:h-[12rem] text-sm md:text-lg">
 				{selected.bio}
 			</p>
 			<div class="flex w-full justify-center">
