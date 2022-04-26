@@ -4,7 +4,7 @@
 	let cases: { id: number; src: string; alt: string; title: string; link: string; text: string }[] = [
 		{
 			id: 0,
-			src: 'case1.png',
+			src: 'case1.webp',
 			alt: 'source code',
 			title: 'Source code availability & trustworthiness',
 			link: '/',
@@ -12,7 +12,7 @@
 		},
 		{
 			id: 1,
-			src: 'case2.png',
+			src: 'case2.webp',
 			alt: 'ip management',
 			title: 'IP Management in the Web3',
 			link: '/',
@@ -20,7 +20,7 @@
 		},
 		{
 			id: 2,
-			src: 'case3.png',
+			src: 'case3.webp',
 			alt: 'digital art',
 			title: 'Digital Art P2P Licensing \n (a working alternative to NFTs Craze)',
 			link: '/',
@@ -31,10 +31,10 @@
 
 <div id="useCases" class="relative flex flex-col w-full justify-center items-center h-fit text-center">
 	<div class="relative mt-0 flex flex-col items-center w-full m-full mt ">
-		<h4 class="mt-8 font-montserrat text-base md:mb-12 w-full md:text-2xl">
+		<h2 class="mt-8 font-montserrat text-base md:mb-12 w-full md:text-2xl">
 			Copyright and Ownership <i>Verifiable</i> Statements created and stored on Anagolay can be applied to solve
 			a number of issues including, but not limited to:
-		</h4>
+		</h2>
 		<div class="flex w-full justify-evenly mb-8 flex-wrap text-base lg:text-lg">
 			{#each cases as item}
 				<div class="carousel-item flex-col mx-8 h-100 md:max-w-1/3 mt-20">

@@ -1,21 +1,21 @@
 <script lang="ts">
 	let howItems: { src: string; alt: string; text: string; linkText: string; link: string }[] = [
 		{
-			src: 'security.png',
+			src: 'security.webp',
 			alt: 'security',
 			text: 'The power of Anagolay is in creating the process (or workflow) that everyone can trust.',
 			linkText: 'Anagolay workflows',
 			link: '/',
 		},
 		{
-			src: 'world.png',
+			src: 'world.webp',
 			alt: 'world validation',
 			text: 'Anagolay workflow and its building blocks — operations can be run anywhere in any environment (even on Mars!) and always produce the same results (Proofs) for the same (or similar) sets of data.',
 			linkText: 'Anagolay proofs',
 			link: '/',
 		},
 		{
-			src: 'validation.png',
+			src: 'validation.webp',
 			alt: 'proofs',
 			text: 'Anagolay Proofs, combined with cryptographic signatures, verify the rightfulness of a claim and generate Verifiable Statements.',
 			linkText: 'Anagolay statements',

@@ -28,7 +28,7 @@
 >
 	<img
 		class="w-28 md:w-[unset] md:object-contain my-5 md:my-0 md:mr-5"
-		src="green_logo.png"
+		src="green_logo.webp"
 		alt="Anagolay logo"
 	/>
 	<div class="flex w-full md:w-fit justify-evenly text-left">
