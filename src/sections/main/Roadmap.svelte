@@ -195,17 +195,19 @@
 <div class="mx-auto pb-10">
 	<div class="flex justify-between items-center w-full py-[4rem] text-xs md:text-base">
 		<button
-			class="flex items-center text-left w-1/3 opacity-60 cursor-pointer hover:opacity-100 hover:underline"
+			class="flex items-center text-left w-1/3 opacity-60 cursor-pointer hover:opacity-100"
 			on:click={() => scrollTo(0)}
 		>
-			<span class="material-icons mr-2 text-sm  md:text-base">west</span>Completed
+			<span class="material-icons mr-2 text-sm  md:text-base">west</span>
+			<p class="hover:underline">Completed</p>
 		</button>
 		<h2 class="w-1/3 text-center text-xl md:text-3xl">Roadmap</h2>
 		<button
-			class="flex items-center justify-end w-1/3 opacity-60 cursor-pointer hover:opacity-100 hover:underline"
+			class="flex items-center justify-end w-1/3 opacity-60 cursor-pointer hover:opacity-100"
 			on:click={() => scrollTo(roadWidth)}
 		>
-			Coming next <span class="material-icons ml-2 text-sm md:text-base">east</span>
+			<p class="hover:underline">Coming next</p>
+			<span class="material-icons ml-2 text-sm md:text-base hover:no-underline">east</span>
 		</button>
 	</div>
 	<div class="text-sm md:text-base lg:text-lg">

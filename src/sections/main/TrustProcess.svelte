@@ -41,11 +41,11 @@
 				class="flex flex-col text-center justify-center text-base lg:text-xl items-center md:justify-evenly md:w-3/4 px-0 md:px-5 md:items-start md:text-justify"
 			>
 				<p class="py-3">{item.text}</p>
-				<a class="text-green hover:underline my-2 md:my-4" href={item.link}>
+				<!-- <a class="text-green hover:underline my-2 md:my-4" href={item.link}>
 					<div class="flex items-center">
 						{item.linkText} <span class="material-icons ml-2">east</span>
 					</div>
-				</a>
+				</a> -->
 			</div>
 		</div>
 	{/each}

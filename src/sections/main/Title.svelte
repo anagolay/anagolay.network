@@ -24,12 +24,11 @@
 				<Ellipse class="mt-12 ml-[20%] opacity-50 blur-sm h-[1.5vw] border" />
 			</div>
 		</div>
-		<div class="flex flex-grow justify-center -mx-12 sm:mx-0 -mt-10 md:-ml-60 md:-mr-40">
-			<object
-				class="h-[400px] w-full md:-mt-60 md:h-[unset]"
-				title="light animation"
-				type="image/svg+xml"
-				data="main_title.svg"
+		<div class="flex flex-grow justify-center -mx-12 sm:mx-0 -mt-10 md:-mx-40 max-w-[600px]">
+			<img
+				class="h-[400px] w-full object-contain md:-mt-60 md:h-[unset]"
+				src="main_illustration.png"
+				alt="light ilustration"
 			/>
 		</div>
 	</div>

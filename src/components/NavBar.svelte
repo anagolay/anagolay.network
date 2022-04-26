@@ -1,9 +1,37 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import NavDropdown from './NavDropdown.svelte';
 
 	let toggleMenu = false;
 	let menuIconColor = 'text-white';
 	let menuTransition = '';
+
+	let discover = {
+		title: 'Discover',
+		options: [
+			{ text: 'Use Cases', link: '#useCases', external: false },
+			{ text: 'Blog', link: 'https://blog.anagolay.network/', external: true },
+			{
+				text: 'FAQ',
+				link: 'https://www.notion.so/Anagolay-FAQ-530c3d1de6784e7eb0c842c7b9bedfa9',
+				external: true,
+			},
+			{ text: 'Team', link: '#team', external: false },
+		],
+	};
+
+	let community = {
+		title: 'Community',
+		options: [
+			{ text: 'Discord', link: 'https://discordapp.com/invite/WHe4EuY', external: true },
+			{ text: 'Twitter', link: 'https://twitter.com/AnagolayNet', external: true },
+			{
+				text: 'Matrix',
+				link: 'https://matrix.to/#/!FJvAuDoWRoMVuOFYwL:matrix.org?via=matrix.org',
+				external: true,
+			},
+		],
+	};
 
 	//all links in sidebar have same styling
 	let sidebarLinkClasses = 'h-14 m-0 border-b border-solid border-green py-4 w-full';
@@ -27,15 +55,7 @@
 	}
 
 	//navlinks
-	let links: { text: string; url: string; color: string }[] = [
-		{ text: 'How it works', url: '/how-it-works', color: '' },
-		{ text: 'Use cases', url: '/use-cases', color: '' },
-		{ text: 'The team', url: '#team', color: '' },
-		{ text: 'FAQ', url: '/faq', color: '' },
-	];
-
-	//whitepaper is a different link.
-	let whitePaper = { text: 'Whitepaper', url: '/' };
+	let links: { text: string; url: string; color: string }[] = [{ text: 'FAQ', url: '/faq', color: '' }];
 
 	//this function sets color for navlinks when current path changes.
 	function setColor(currentPath: string) {
@@ -55,7 +75,6 @@
 			<span class="material-icons text-2xl {menuIconColor}"> menu </span>
 		</button>
 
-		<!-- The on:click in <a/> tag executes closeSidebar function -->
 		<a href="/" on:click={closeSideBar}>
 			<img class="object-contain h-10 lg:h-12" src="horizontal_white1.svg" alt="Anagolay logo" />
 		</a>
@@ -63,25 +82,10 @@
 		<div
 			class="z-10 flex flex-col absolute top-16 bottom-0 bg-anagolayBlack md:bg-transparent h-screen bg-opacity-95
 			  py-0  text-center right-full mx-auto font-montserrat
-            md:flex-row md:mx-0 md:relative md:top-auto md:h-full md:py-0 md:right-auto md:left-auto md:w-fit md:translate-x-0 {menuTransition}"
+            md:flex-row md:mx-0 md:relative md:top-auto md:h-full md:py-2 md:right-auto md:left-auto md:w-fit md:translate-x-0 {menuTransition}"
 		>
-			{#each links as link}
-				<a
-					class="{sidebarLinkClasses} md:h-fit md:mx-2 lg:mx-4 md:hover:underline md:border-0 md:my-auto md:hover:bg-transparent md:py-0 md:w-fit {link.color}"
-					href={link.url}
-					on:click={closeSideBar}
-				>
-					{link.text}
-				</a>
-			{/each}
-
-			<a
-				class="{sidebarLinkClasses} md:text-white md:w-fit md:h-fit md:ml-2 md:rounded-full md:bg-darkblue md:shadow-button md:btn-secondary text-base lg:text-lg md:py-1.5 md:px-8 md:active:shadow-pressed"
-				href={whitePaper.url}
-				on:click={closeSideBar}
-			>
-				{whitePaper.text}
-			</a>
+			<NavDropdown id="community" data={community} />
+			<NavDropdown id="discover" data={discover} />
 		</div>
 	</div>
 </nav>

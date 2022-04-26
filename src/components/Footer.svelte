@@ -44,14 +44,23 @@
 	<div class="flex flex-col py-12 md:py-0 w-60 md:ml-auto md:mr-1/10">
 		<div class="flex w-full justify-center">Join the community</div>
 		<div class="flex flex-grow py-4 items-center justify-between">
-			<button class="shadow-button h-12 w-12 rounded-full p-3 text-white active:shadow-pressed">
+			<button
+				class="shadow-button h-12 w-12 rounded-full p-3 text-white active:shadow-pressed"
+				aria-label="social-media-discord"
+			>
 				<span class="material-icons">discord</span>
 			</button>
-			<button class="shadow-button h-12 w-12 rounded-full p-3 text-white active:shadow-pressed">
+			<button
+				class="shadow-button h-12 w-12 rounded-full p-3 text-white active:shadow-pressed"
+				aria-label="social-media-matrix"
+			>
 				<!-- Search right Matrix icon and metod to insert -->
 				<span class="material-icons text-base">M</span>
 			</button>
-			<button class="shadow-button h-12 w-12 rounded-full p-3 text-white active:shadow-pressed">
+			<button
+				class="shadow-button h-12 w-12 rounded-full p-3 text-white active:shadow-pressed"
+				aria-label="social-media-twitter"
+			>
 				<!-- Search right icon and metod to insert -->
 				<Twitter size="1.2rem" /></button
 			>
