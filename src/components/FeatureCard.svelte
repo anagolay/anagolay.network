@@ -16,7 +16,7 @@
 	{#if isInView}
 		<div
 			in:fade={{ duration: 700, delay: (i % 3) * 150 }}
-			class="mx-4 sm:mx-0 shadow-button flex flex-col items-center rounded-3xl bg-blue h-48 px-12 mt-8 text-base xl:text-xl"
+			class="w-[22rem] max-w-full sm:max-w-none sm:mx-4 my-8 mx-auto shadow-button flex flex-col items-center rounded-3xl bg-blue h-48 px-12 mt-8 text-base xl:text-xl"
 		>
 			<div
 				class="flex w-24 h-24 items-center justify-center bg-gradient-to-br from-blue/90 to-white/20 backdrop-blur-[3px] mx-center text-green border border-green rounded-full -mt-6"

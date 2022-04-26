@@ -22,6 +22,9 @@ module.exports = {
 			dmsans: ['DM Sans'], // Ensure fonts with spaces have " "surrounding it.
 		},
 		extend: {
+			screens: {
+				xs: '400px',
+			},
 			textShadow: {
 				sm: '0 1px 2px var(--tw-shadow-color)',
 				DEFAULT: '0 2px 4px var(--tw-shadow-color)',

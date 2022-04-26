@@ -273,8 +273,8 @@
 			<span class="material-icons ml-2">east</span>
 		</div>
 		<div class="flex flex-col items-center">
-			<a href="/" class="text-green pb-4 hover:underline">See the full roadmap</a>
-			<SectionButton class="flex justify-center">
+			<a href="/" class="text-green hover:underline">See the full roadmap</a>
+			<SectionButton class="flex justify-center my-12">
 				<span class="material-icons">discord</span>
 				<p class="ml-[.3rem]">Join the community</p>
 			</SectionButton>

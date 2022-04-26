@@ -72,7 +72,7 @@
 
 	<div
 		id="team"
-		class="relative bg-gradient-to-b from-anagolayWhite/20 to-anagolayWhite/20 bg-blue/60 w-full my-12 teamGrid backdrop-blur-md rounded-3xl py-5 md:mx-auto md:w-5/6 md:py-6 md:px-[5%] shadow-around shadow-green"
+		class="relative bg-gradient-to-b from-anagolayWhite/20 to-anagolayWhite/20 bg-blue/60 w-full my-12 teamGrid backdrop-blur-md rounded-3xl py-5 md:mx-auto md:py-6 md:px-[5%] shadow-around shadow-green"
 	>
 		<h2 class="font-medium text-2xl md:text-4xl my-3">Meet the team</h2>
 		<div class="py-3 w-5/6 mx-auto grid gap-4 grid-cols-3 md:w-full md:grid-cols-6">
@@ -90,37 +90,32 @@
 		</div>
 		{#if selected}
 			<h3 class="font-light text-lg md:text-2xl">{selected.title}</h3>
-			<p class="mt-2 text-green text-[1rem] md:text-[1.5rem]"><i>{selected.name}</i></p>
-			<p class="mx-auto h-[14rem] mb-4 px-3 py-3 md:py-5 md:w-5/6 md:h-[12rem] text-sm md:text-lg">
+			<p class="my-3 text-green text-[1rem] md:text-[1.5rem]"><i>{selected.name}</i></p>
+			<p class="mx-auto h-52 xs:h-44 sm:h-20 lg:h-12 px-3 sm:w-5/6 md:py-5 text-sm md:text-base 2xl:text-lg">
 				{selected.bio}
 			</p>
-			<div class="flex w-full justify-center">
+			<div class="flex w-full justify-center mt-8 lg:-mt-8">
 				<a
 					title="linkedIn"
 					href={selected.link}
 					target="_blank"
 					rel="noreferrer"
-					class="shadow-button p-2 active:shadow-pressed text-sm md:p-[1.5rem] w-fit mx-3 md:mt-5 bg-blue rounded-full"
+					class="flex justify-center items-center shadow-button w-12 h-12 md:w-20 md:h-20 active:shadow-pressed mx-3 md:mt-5 bg-blue rounded-full"
 				>
-					<Linkedin color="white" size="1.8rem" /></a
-				>
+					<img class="h-4 md:h-6" src="linkedin.png" alt="github" />
+				</a>
 				{#if selected.github}
 					<a
 						title="github"
 						href={selected.github}
 						target="_blank"
 						rel="noreferrer"
-						class="shadow-button p-2 active:shadow-pressed text-sm md:p-[1.5rem] w-fit mx-3 md:mt-5 bg-blue rounded-full"
+						class="flex justify-center items-center shadow-button w-12 h-12 md:w-20 md:h-20 active:shadow-pressed  mx-3 md:mt-5 bg-blue rounded-full"
 					>
-						<Github color="white" size="1.8rem" /></a
-					>
+						<img class="h-4 md:h-6 m-auto" src="github.png" alt="github" />
+					</a>
 				{/if}
 			</div>
 		{/if}
 	</div>
 </div>
-
-<style>
-	.teamGrid {
-	}
-</style>

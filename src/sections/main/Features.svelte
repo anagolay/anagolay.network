@@ -35,20 +35,14 @@
 	];
 </script>
 
-<div
-	class="w-[20rem] mx-auto max-w-full mt-0 flex flex-col md:w-full justify-center items-center text-center pt-16"
->
+<div class="w-[20rem] mx-auto max-w-full mt-0 flex flex-col sm:w-full items-center text-center">
 	<h2 class="mb-12 text-2xl md:text-4xl">
 		<p class="mb-4">Anagolay is a</p>
 		<p>'different kind of beast'</p>
 	</h2>
-	<div class="flex flex-col items-center">
-		<div
-			class="flex flex-col w-[22rem] sm:w-full mx-auto overflow-x-auto overflow-y-hidden sm:h-fit sm:py-4 sm:grid lg:grid-cols-2 xl:grid-cols-3 sm:gap-8"
-		>
-			{#each beastFeatures as feat, i}
-				<FeatureCard {feat} {i} />
-			{/each}
-		</div>
+	<div class="flex w-full flex-col mx-auto h-fit py-4 sm:flex-row sm:flex-wrap sm:justify-center">
+		{#each beastFeatures as feat, i}
+			<FeatureCard {feat} {i} />
+		{/each}
 	</div>
 </div>

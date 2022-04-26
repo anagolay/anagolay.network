@@ -3,14 +3,14 @@
 		{
 			src: 'security.webp',
 			alt: 'security',
-			text: 'The power of Anagolay is in creating the process (or workflow) that everyone can trust.',
+			text: 'The power of Anagolay is in creating application-agnostic processes (or Workflows) that everyone can trust.',
 			linkText: 'Anagolay workflows',
 			link: '/',
 		},
 		{
 			src: 'world.webp',
 			alt: 'world validation',
-			text: 'Anagolay workflow and its building blocks — operations can be run anywhere in any environment (even on Mars!) and always produce the same results (Proofs) for the same (or similar) sets of data.',
+			text: 'Anagolay Workflow and its building blocks — Operations can be run anywhere in any environment (even on Mars!) and always produce the same results (Proofs) for the same (or similar) sets of data.',
 			linkText: 'Anagolay proofs',
 			link: '/',
 		},
@@ -24,23 +24,24 @@
 	];
 </script>
 
-<div class="flex mt-16 flex-col mx-auto xl:mx-auto py-20">
-	<div class="text-center mb-12">
-		<h2 class="text-2xl md:text-4xl mb-8">Trust the process</h2>
-		<p class="text-base md:text-2xl">
+<div class="flex w-[20rem] max-w-full md:w-5/6 mt-16 flex-col mx-auto xl:mx-auto py-20">
+	<div class="text-center mb-12 md:mb-16">
+		<h2 class="text-2xl md:text-4xl mb-6 md:mb-8">Trust the process</h2>
+		<p class="text-base md:text-xl">
 			No need for a central authority, or resource-heavy consensus mechanism to establish the rules of the
 			game (trust)
 		</p>
 	</div>
 	{#each howItems as item}
-		<div class="md:flex text-left my-8 md:my-12">
-			<div class="justify-center md:aspect-square mx-auto px-2 my-auto md:w-1/4 md:flex">
-				<img class="h-44 md:h-[unset] md:object-contain mx-auto" src={item.src} alt={item.alt} />
+		<div class="w-full mx-auto md:flex mb-12 lg:mb-16 lg:w-5/6">
+			<div class="justify-center aspect-video md:w-1/3 max-h-40 lg:max-h-48 mx-auto">
+				<img class="max-h-full mx-auto" src={item.src} alt={item.alt} />
 			</div>
+
 			<div
-				class="flex flex-col text-center justify-center text-base lg:text-xl items-center md:justify-evenly md:w-3/4 px-0 md:px-5 md:items-start md:text-justify"
+				class="flex flex-col text-center md:text-justify justify-center items-center  md:w-2/3 md:px-4 lg:items-start text-sm md:text-base lg:text-xl"
 			>
-				<p class="py-3">{item.text}</p>
+				<p class="">{item.text}</p>
 				<!-- <a class="text-green hover:underline my-2 md:my-4" href={item.link}>
 					<div class="flex items-center">
 						{item.linkText} <span class="material-icons ml-2">east</span>
