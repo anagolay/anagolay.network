@@ -10,8 +10,8 @@
 
 <SvelteSeo
 	title="Anagolay Network - Process-based Interplanetary P2P Framework"
-	description="my awesome desc"
-	keywords="anagolay, blockchain, workflow, transparent, process"
+	description="P2P Network to verify authorship, protect and manage copyright & ownership. Statements of Rights (Copyright, Licenses, and Ownership), Restrictions,  and Proofs created with Anagolay Workflows empower users to store, claim, sell, and rent creative works as digital assets with the correct transfer of Rights and usage of Licenses."
+	keywords="anagolay, blockchain, workflow, transparent process, substrate, copyright statements, ownership statements, web3 rights management "
 />
 
 <div>
