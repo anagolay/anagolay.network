@@ -6,12 +6,12 @@
 <div>
 	<div class="mt-20 flex flex-col-reverse md:flex-row md:mt-20">
 		<div class="w-[20rem] mx-auto max-w-full relative md:w-3/5 md:max-w-[600px]">
-			<div class="py-20 md:py-36">
+			<div class="py-20 md:py-28">
 				<h1 class="mb-4 md:mb-0 tracking-wider text-center font-bold text-3xl md:text-5xl  md:text-left">
 					<p class="md:leading-[4rem]">Process-based Interplanetary P2P Framework</p>
 				</h1>
 				<h2
-					class="w-full text-center text-green mt-12 mb-20 md:font-bold text-base md:text-2xl md:text-justify mx-auto md:my-12"
+					class="w-full text-center text-green mt-12 mb-20 text-base md:text-lg lg:text-2xl md:text-justify mx-auto md:my-12"
 				>
 					Transparent verifiable processes for creation & validation of proofs and statement of rights. Built
 					with Substrate.

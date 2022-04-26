@@ -31,19 +31,17 @@
 	// );
 </script>
 
-<div class="w-full md:dropdown md:my-auto md:w-fit md:mr-6">
+<div class="dropdown w-full md:my-auto md:w-fit md:mr-6">
 	<button
 		on:click={showMenu}
-		class="w-full bg-darkblue text-center h-8 md:w-fit shadow-button md:shadow-none md:bg-transparent md:dropbtn"
+		class="dropbtn w-full flex justify-center font-bold items-center bg-darkblue text-center h-8 md:w-fit shadow-button md:shadow-none md:bg-transparent md:dropbtn"
 	>
-		<div class="flex w-full justify-center font-bold items-center">
-			<p>{data.title}</p>
-			<span class="material-icons hidden md:block">keyboard_arrow_down</span>
-		</div>
+		<p>{data.title}</p>
+		<span class="material-icons hidden md:block">keyboard_arrow_down</span>
 	</button>
 	<div
 		{id}
-		class="dropdown-content w-full md:w-[unset]  md:mb-0 md:mt-4 {show} flex flex-col bg-anagolayBlack mx-auto p-0 md:p-1"
+		class="dropdown-content {show} w-full md:w-[unset] md:mb-0 md:mt-4 flex flex-col bg-anagolayBlack mx-auto p-0 md:p-1"
 	>
 		{#each data.options as option}
 			<a
