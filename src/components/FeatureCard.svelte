@@ -23,8 +23,7 @@
 			>
 				{#if feat.icon}
 					<span class="material-icons text-5xl">{feat.icon}</span>
-				{/if}
-				{#if feat.img}
+				{:else if feat.img}
 					<img class="material-icons h-12" src={feat.img.src} alt={feat.img.alt} />
 				{/if}
 			</div>

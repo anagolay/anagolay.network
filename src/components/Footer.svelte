@@ -25,56 +25,65 @@
 	];
 	const media = [
 		{ name: 'discord', link: 'https://discordapp.com/invite/WHe4EuY', icon: 'discord' },
-		{ name: 'twitter', link: 'https://twitter.com/AnagolayNet', img: 'twitter.png' },
+		{ name: 'twitter', link: 'https://twitter.com/AnagolayNet', img: 'twitter.svg' },
 		{
 			name: 'matrix',
 			link: 'https://matrix.to/#/!FJvAuDoWRoMVuOFYwL:matrix.org?via=matrix.org',
-			img: 'matrix.png',
+			img: 'matrix.svg',
 		},
 	];
 </script>
 
-<hr class="mb-6 w-full mx-auto opacity-50 color-white" />
-<div
-	class="mx-[5%] flex flex-col md:flex-row items-center md:items-start text-center md:px-1/10 text-base md:text-lg"
->
-	<img
-		class="w-28 md:w-[unset] md:object-contain my-5 md:my-0 md:mr-5"
-		src="green_logo.webp"
-		alt="Anagolay logo"
-	/>
-	<div class="flex w-full md:w-fit justify-evenly text-left">
-		{#each options as item}
-			<div class="flex py-2 md:py-0 flex-col md:px-2">
-				<div>{item.title}</div>
-				{#each item.options as option}
-					<a href={option.link} class="opacity-30 text-[90%]" target="_blank" rel="noopener noreferrer">
-						{option.text}
-					</a>
-				{/each}
-			</div>
-		{/each}
-	</div>
-	<div class="flex flex-col py-12 md:py-0 w-60 md:ml-auto md:mr-1/10">
-		<div class="flex w-full justify-center">Join the community</div>
-		<div class="flex flex-grow py-4 items-center justify-between">
-			{#each media as item}
-				<button
-					class="flex justify-center items-center shadow-button h-12 w-12 rounded-full text-white active:shadow-pressed"
-					aria-label="social-media-{item.name}"
-				>
-					{#if item.icon}
-						<span class="material-icons">{item.icon}</span>
-					{:else if item.img}
-						<img class="h-5" src={item.img} alt="{item.name} logo" />
-					{/if}
-				</button>
+<div class="font-montserrat">
+	<hr class="mb-6 w-full mx-auto opacity-50 color-white" />
+	<div
+		class="mx-[5%] flex flex-col md:flex-row items-center md:items-start text-center md:px-1/10 text-base md:text-lg"
+	>
+		<div class="w-36 md:w-[unset] md:my-0 md:-mr-8">
+			<img
+				class="md:object-contain md:-translate-y-[20%] md:-translate-x-[20%]"
+				src="green_logo.svg"
+				alt="Anagolay logo"
+			/>
+		</div>
+		<div class="flex w-full ml-2 md:w-fit justify-evenly text-left">
+			{#each options as item}
+				<div class="flex mx-6 md:py-0 flex-col">
+					<div class="mb-4 md:mb-0">{item.title}</div>
+					{#each item.options as option}
+						<a
+							href={option.link}
+							class="opacity-30 text-[90%] mb-2 md:mb-0"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							{option.text}
+						</a>
+					{/each}
+				</div>
 			{/each}
 		</div>
+		<div class="flex flex-col py-12 md:py-0 w-60 md:ml-auto md:mr-1/10">
+			<div class="flex w-full justify-center mb-5">Join the community</div>
+			<div class="flex flex-grow items-center justify-between mb-4">
+				{#each media as item}
+					<button
+						class="flex justify-center items-center shadow-button h-12 w-12 rounded-full bg-darkblue text-white active:shadow-pressed"
+						aria-label="social-media-{item.name}"
+					>
+						{#if item.icon}
+							<span class="material-icons">{item.icon}</span>
+						{:else if item.img}
+							<img class="max-h-5 max-w-[20px]" src={item.img} alt="{item.name} logo" />
+						{/if}
+					</button>
+				{/each}
+			</div>
+		</div>
 	</div>
-</div>
 
-<div class="w-full text-xs text-center py-16 font-light opacity-50">
-	<p class="mb-1">Build by KELP DIGITAL OÜ</p>
-	<p>Copyright © 2021-present Kelp Digital – All Rights Reserved</p>
+	<div class="w-full text-xs text-center pb-16 font-light opacity-50 md:py-8">
+		<p class="mb-1">Product of KELP DIGITAL OÜ</p>
+		<p>Copyright © 2021-present Kelp Digital – All Rights Reserved</p>
+	</div>
 </div>

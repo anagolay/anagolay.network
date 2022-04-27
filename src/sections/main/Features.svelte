@@ -30,17 +30,19 @@
 		},
 		{
 			feature: 'All stored data structures are content addressable',
-			img: { src: 'decentralised_network.webp', alt: 'decentralised network' },
+			img: { src: 'decentralized.svg', alt: 'decentralised network' },
 		},
 	];
 </script>
 
-<div class="w-[20rem] mx-auto max-w-full mt-0 flex flex-col sm:w-full items-center text-center">
+<div
+	class="w-[20rem] mx-auto max-w-full mt-0 flex flex-col sm:w-full items-center text-center mb-20 md:mb-40"
+>
 	<h2 class="mb-12 text-2xl md:text-4xl">
 		<p class="mb-4">Anagolay is a</p>
-		<p>'different kind of beast'</p>
+		<p class="text-green">different kind of beast</p>
 	</h2>
-	<div class="flex w-full flex-col mx-auto h-fit py-4 sm:flex-row sm:flex-wrap sm:justify-center">
+	<div class="flex w-full flex-col mx-auto h-fit py-4 sm:flex-row sm:flex-wrap sm:justify-evenly">
 		{#each beastFeatures as feat, i}
 			<FeatureCard {feat} {i} />
 		{/each}

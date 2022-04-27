@@ -4,15 +4,15 @@
 	let cases: { id: number; src: string; alt: string; title: string; link: string; text: string }[] = [
 		{
 			id: 0,
-			src: 'case1.webp',
+			src: 'case_code.svg',
 			alt: 'source code',
-			title: 'Source code availability & trustworthiness ',
+			title: 'Source code availability & trustworthiness',
 			link: '/',
 			text: 'Highly available storage for source code built with the new ContentVersioning approach gives assurance and trustworthiness by design to developers and users alike.',
 		},
 		{
 			id: 1,
-			src: 'case2.webp',
+			src: 'case_ip.svg',
 			alt: 'ip management',
 			title: 'IP management in the Web3',
 			link: '/',
@@ -20,7 +20,7 @@
 		},
 		{
 			id: 2,
-			src: 'case3.webp',
+			src: 'case_p2p.svg',
 			alt: 'digital art',
 			title: 'Digital Art P2P Licensing',
 			link: '/',
@@ -29,20 +29,22 @@
 	];
 </script>
 
-<div id="useCases" class="relative flex flex-col w-full justify-center items-center h-fit text-center">
-	<div class="relative mt-0 flex flex-col items-center w-full m-full mt ">
-		<h2 class="mt-8 font-montserrat text-base md:mb-12 w-full md:text-2xl">
-			Copyright and Ownership <i>Verifiable Statements</i> created and stored on Anagolay can be applied to solve
+<div id="useCases" class="relative flex flex-col w-full justify-center items-center h-fit text-center mb-40">
+	<div class="relative mt-0 flex flex-col items-center md:w-11/12 mx-auto">
+		<h2 class="mt-8 text-lg md:mb-12 md:text-2xl">
+			Copyright and Ownership <i>Verifiable</i> Statements created and stored on Anagolay can be applied to solve
 			a number of issues including, but not limited to:
 		</h2>
 		<div class="flex w-full justify-evenly mb-8 flex-wrap text-base">
 			{#each cases as item}
 				<div class="carousel-item flex-col h-100 md:max-w-1/3 mt-20">
 					<div class="shadow-button flex flex-col rounded-lg bg-blue px-3 pb-3 w-72 md:w-80 h-[25rem]">
-						<div class="w-5/12 aspect-square mx-auto py-auto flex items-center justify-center -mt-[20%] mb-8">
+						<div
+							class="w-5/12 h-32 aspect-square mx-auto py-auto flex items-center justify-center -mt-[20%] mb-8"
+						>
 							<img class="object-contain max-h-full" src={item.src} alt={item.alt} />
 						</div>
-						<p class="w-full text-green text-center mb-8 h-16">
+						<p class="w-full text-green text-center h-16">
 							{item.title}
 						</p>
 
@@ -56,6 +58,6 @@
 				</div>
 			{/each}
 		</div>
-		<SectionButton class="my-12">See more use cases</SectionButton>
+		<SectionButton class="mt-8 md:mt-12">See more use cases</SectionButton>
 	</div>
 </div>

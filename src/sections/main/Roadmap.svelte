@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import SectionButton from '$src/components/SectionButton.svelte';
 	import Ellipse from '$src/components/Ellipse.svelte';
+	import SectionButton from '$src/components/SectionButton.svelte';
 
 	enum status {
 		done = 'done',
@@ -178,22 +178,23 @@
 		return { ...event, status: state, pointBlur, pointOpacity };
 	});
 
-	let gridClass = `grid w-full text-center grid-flow-col gap-20 auto-cols-fit`;
+	let gridClass = `grid w-full text-center grid-flow-col gap-36 auto-cols-fit`;
 
 	let roadMap: HTMLDivElement;
 	let roadWidth: number;
 	let windowWidth: number;
+
 	function scrollTo(left: number) {
 		roadMap.scrollLeft = left;
 	}
+
 	//This functions always sets the fifth event in the middle of Roadmap, but it is not in function of the current event.
 	//Check the position function.
 	onMount(() => (roadMap.scrollLeft = 0.545 * roadWidth - 0.5 * windowWidth));
-	// onMount(() => (roadMap.scrollLeft = 0.6 * (roadWidth - windowWidth)));
 </script>
 
-<div class="mx-auto pb-10">
-	<div class="flex justify-between items-center w-full py-[4rem] text-xs md:text-base">
+<div class="mx-auto pt-8 md:w-11/12">
+	<div class="flex justify-between items-center w-full text-xs md:text-base pb-16">
 		<button
 			class="flex items-center text-left w-1/3 opacity-60 cursor-pointer hover:opacity-100"
 			on:click={() => scrollTo(0)}
@@ -210,7 +211,7 @@
 			<span class="material-icons ml-2 text-sm md:text-base hover:no-underline">east</span>
 		</button>
 	</div>
-	<div class="text-sm md:text-base lg:text-lg">
+	<div class="text-sm md:text-base">
 		<div class="overflow-x-scroll scroll-smooth" bind:this={roadMap} bind:clientWidth={windowWidth}>
 			<div class="w-fit">
 				<div>
@@ -248,13 +249,12 @@
 								</div>
 								{#each event.facts as fact}
 									<div
-										class="w-60 lg:w-64 shadow-button h-fit bg-primary/40 italic {fact.status ===
-										status.pending
-											? 'opacity-50'
-											: 'bg-opacity-50'} p-2 mb-2 rounded-md mx-auto text-white"
-										style={fact.status === status.doing
-											? 'border: 1px solid green; box-shadow: 0 0 .5rem #8cff00'
-											: ''}
+										class="w-56 p-7 mb-4  h-fit bg-blue italic {fact.status === status.pending
+											? 'opacity-80'
+											: 'bg-opacity-80'} mb-2 rounded-xl mx-auto text-anagolayWhite font-light {fact.status ===
+										status.doing
+											? 'shadow-card shadow-green border border-green'
+											: 'shadow-button'}"
 									>
 										{fact.fact}
 									</div>
@@ -266,7 +266,7 @@
 			</div>
 		</div>
 
-		<div class="flex items-center justify-center my-4 text-white opacity-50 italic py-5">
+		<div class="flex items-center justify-center text-white opacity-50 italic mt-16 mb-12">
 			<span class="material-icons mr-2">west</span>
 			<p class="md:hidden">Swipe to see</p>
 			<p class="hidden md:block">Scroll to see</p>
@@ -274,7 +274,7 @@
 		</div>
 		<div class="flex flex-col items-center">
 			<a href="/" class="text-green hover:underline">See the full roadmap</a>
-			<SectionButton class="flex justify-center my-12">
+			<SectionButton class="flex justify-center my-32">
 				<span class="material-icons">discord</span>
 				<p class="ml-[.3rem]">Join the community</p>
 			</SectionButton>

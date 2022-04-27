@@ -1,81 +1,89 @@
 <script lang="ts">
-	import Ellipse from '$src/components/Ellipse.svelte';
+	let siteIcons = [
+		{ domain: 'github.com', icon: 'github.svg' },
+		{ domain: 'linkedin.com', icon: 'linkedin.svg' },
+	];
 
-	//incons to get or create and remove:
-	import Linkedin from 'svelte-material-icons/Linkedin.svelte';
-	import Github from 'svelte-material-icons/Github.svelte';
-
-	let team = [
+	let team: {
+		name: string;
+		title: string;
+		img: string;
+		bio: string;
+		links: string[];
+		linkIcons?: string[];
+	}[] = [
 		{
 			name: 'Daniel Maricic',
 			title: 'Founder & Chief-Architect',
 			img: 'daniel.webp',
 			bio: 'Daniel is the main brain behind Anagolay and a CTO of Kelp Digital OÜ, the company that develops Anagolay. A full-stack software engineer with over 13 years of experience in different business domains, from Fintech to real-time auctions and image management software. He is also a long-time photographer, passionate chief, and windsurfer.',
-			link: 'https://www.linkedin.com/in/danielmaricic/',
-			github: 'https://github.com/woss',
+			links: ['https://www.linkedin.com/in/danielmaricic/', 'https://github.com/woss'],
 		},
 		{
 			name: 'Adriano Dalpane',
 			title: 'Senior Engineer',
 			img: 'adriano.webp',
 			bio: 'Adriano Dalpane is a senior engineer with 11 years of experience and a vast portfolio ranging from Monte Carlo Tree Search AI for a game to a Bayesian classifier that performs match-making on a marketplace platform. For the last 2 years Adriano has been working with Rust and Substrate and now drives Anagolay implementation. On weekends he spends playing guitar, hiking, or cycling.',
-			link: 'https://www.linkedin.com/in/adriano-dalpane/',
-			github: 'https://github.com/digitalillusion',
+			links: ['https://www.linkedin.com/in/adriano-dalpane/', 'https://github.com/digitalillusion'],
 		},
 		{
 			name: 'Leonardo Monay',
 			title: 'Front-End Engineer',
 			img: 'leonardo.webp',
 			bio: 'Leonardo is a junior full-stack javascript developer specializing in decentralized solutions with 2+ years of experience. Before making a career switch, he dedicated 10 years to industrial engineering, data analysis and processing. A man of many talents, Leo also brews his own beer, dances salsa, enjoys a good gaming night and a moto ride.',
-			link: 'https://www.linkedin.com/in/leomonay/',
-			github: 'https://github.com/Leomonay',
+			links: ['https://www.linkedin.com/in/leomonay/', 'https://github.com/Leomonay'],
 		},
 		{
 			name: 'Carla Pezzo',
 			title: 'Art Director & UI/UX',
 			img: 'carla.webp',
 			bio: 'Carla is a graphic designer, illustrator, and UX designer from Buenos Aires. Before joining the team, she worked for several years as a freelancer while also tutoring UX/UI lessons. Carla is passionate about everything that has to do with creativity, design, arts, and technology. She loves cats, nature, and doing yoga.',
-			link: 'https://www.linkedin.com/in/carla-pezzo/',
+			links: ['https://www.linkedin.com/in/carla-pezzo/'],
 		},
 		{
 			name: 'Leila Iruzun',
 			title: 'Business Operations',
 			img: 'leila.webp',
 			bio: 'Leila’s background is in management and finance. Before joining Kelp, she has worked as a business consultant for several projects. Her research subject is digital art, NFTs, and digital copyright. MSc Management and Business Economics. Massachusetts Institute of Technology: Digital Transformation Program. Leila flies kites, enjoys origami, and is currently learning Chinese.',
-			link: 'https://www.linkedin.com/in/leilairuzun/',
+			links: ['https://www.linkedin.com/in/leilairuzun/'],
 		},
 		{
 			name: 'Elena Tairova',
 			title: 'Founder',
 			img: 'elena.webp',
 			bio: 'Elena is the CEO of Kelp Digital OÜ and Founder of Anagolay. With 9+ years of experience in digital strategy, media, & policy, since 2017 she has been working with DLT projects. MS Economics & Management. Global Media Industries, Data Regulation & Policy at LSE. EMBA at Quantic School of Business & Technology. To clear up her mind, Elena enjoys painting, windsurfing, and jogging.',
-			link: 'https://www.linkedin.com/in/elena-tairova/',
+			links: ['https://www.linkedin.com/in/elena-tairova/'],
 		},
 	];
 
-	let selected = team[0];
+	let teamIndex = 0;
+	let selected = team[teamIndex];
+	let icons = selected.links.map((link: string) => siteIcons.find((icon) => link.includes(icon.domain)).icon);
+
+	function buildSelected(index: number) {
+		selected = team[index];
+		icons = selected.links.map((link: string) => siteIcons.find((icon) => link.includes(icon.domain)).icon);
+	}
 
 	const interval = setInterval(() => {
-		let index = team.findIndex((e) => e.name === selected.name);
-		index++;
-		selected = team[index] || team[0];
+		teamIndex++;
+		if (!team[teamIndex]) teamIndex = 0;
+		buildSelected(teamIndex);
 	}, 3000);
 
 	function selectMember(name: string): void {
-		selected = team.find((member) => member.name === name);
+		buildSelected(team.findIndex((member) => member.name === name));
 		clearInterval(interval);
 	}
 </script>
 
-<div class="flex mt-20 py-auto text-center">
-	<Ellipse class="absolute mt-[39rem] ml-[5rem] opacity-50 blur-sm h-[4.5vw]" />
-
+<div class="flex mb-40 text-center">
 	<div
 		id="team"
-		class="relative bg-gradient-to-b from-anagolayWhite/20 to-anagolayWhite/20 bg-blue/60 w-full my-12 teamGrid backdrop-blur-md rounded-3xl py-5 md:mx-auto md:py-6 md:px-[5%] shadow-around shadow-green"
+		class="relative p-5 bg-gradient-to-b from-anagolayWhite/20 to-anagolayWhite/20 bg-blue/60 w-full xl:w-5/6 teamGrid backdrop-blur-md rounded-3xl md:mx-auto md:py-6 shadow-around shadow-green"
 	>
-		<h2 class="font-medium text-2xl md:text-4xl my-3">Meet the team</h2>
-		<div class="py-3 w-5/6 mx-auto grid gap-4 grid-cols-3 md:w-full md:grid-cols-6">
+		<h2 class="font-medium text-2xl md:text-4xl my-9 md:my-16">Meet the team</h2>
+		<div class="py-3 w-5/6 mx-auto grid gap-4 grid-cols-3 md:grid-cols-6">
 			{#each team as member}
 				<div
 					class="rounded-full aspect-square overflow-hidden duration-700 w-full cursor-pointer {selected &&
@@ -88,34 +96,25 @@
 				</div>
 			{/each}
 		</div>
-		{#if selected}
-			<h3 class="font-light text-lg md:text-2xl">{selected.title}</h3>
-			<p class="my-3 text-green text-[1rem] md:text-[1.5rem]"><i>{selected.name}</i></p>
-			<p class="mx-auto h-52 xs:h-44 sm:h-20 lg:h-12 px-3 sm:w-5/6 md:py-5 text-sm md:text-base 2xl:text-lg">
+		<h3 class="font-light text-base md:text-3xl mt-12 mb-1 md:mb-2">{selected.title}</h3>
+		<p class="text-green text-base md:text-2xl mb-6 md:mb-14"><i>{selected.name}</i></p>
+		<div class="sm:w-5/6 sm:mx-auto h-60 sm:h-36 md:h-48">
+			<p class="w-80 max-w-full flex sm:w-full mx-auto text-sm md:text-lg 2xl:text-lg">
 				{selected.bio}
 			</p>
-			<div class="flex w-full justify-center mt-8 lg:-mt-8">
+		</div>
+		<div class="flex items-center w-full justify-center mb-5">
+			{#each selected.links as link, i}
 				<a
-					title="linkedIn"
-					href={selected.link}
+					title="github"
+					href={link}
 					target="_blank"
 					rel="noreferrer"
-					class="flex justify-center items-center shadow-button w-12 h-12 md:w-20 md:h-20 active:shadow-pressed mx-3 md:mt-5 bg-blue rounded-full"
+					class="flex justify-center items-center shadow-button w-10 h-10 sm:w-16 sm:h-16 active:shadow-pressed mx-3 md:mt-5 bg-blue rounded-full"
 				>
-					<img class="h-4 md:h-6" src="linkedin.png" alt="github" />
+					<img class="h-3 sm:h-5 fill-white" src={icons[i]} alt={icons[i].split('.')[0]} />
 				</a>
-				{#if selected.github}
-					<a
-						title="github"
-						href={selected.github}
-						target="_blank"
-						rel="noreferrer"
-						class="flex justify-center items-center shadow-button w-12 h-12 md:w-20 md:h-20 active:shadow-pressed  mx-3 md:mt-5 bg-blue rounded-full"
-					>
-						<img class="h-4 md:h-6 m-auto" src="github.png" alt="github" />
-					</a>
-				{/if}
-			</div>
-		{/if}
+			{/each}
+		</div>
 	</div>
 </div>

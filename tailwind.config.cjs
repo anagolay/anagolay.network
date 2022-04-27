@@ -38,6 +38,7 @@ module.exports = {
 					'0px 4px 4px rgba(20, 31, 69, 0.5), inset 0px -3px 5px rgba(244, 251, 255, 0.2), inset 4px 5px 10px #141f45',
 				around:
 					'7px 0 7px var(--tw-shadow-color), -7px 0 7px var(--tw-shadow-color), 0 7px 7px var(--tw-shadow-color), 0 -7px 7px var(--tw-shadow-color);',
+				card: '0px 0px 4px var(--tw-shadow-color), inset 0px 0px 4px var(--tw-shadow-color)',
 			},
 			borderRadius: {
 				'4xl': '2rem',
