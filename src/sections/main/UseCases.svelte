@@ -4,7 +4,7 @@
 	let cases: { id: number; src: string; alt: string; title: string; link: string; text: string }[] = [
 		{
 			id: 0,
-			src: 'case_code.svg',
+			src: 'case_code.png',
 			alt: 'source code',
 			title: 'Source code availability & trustworthiness',
 			link: '/',
@@ -20,7 +20,7 @@
 		},
 		{
 			id: 2,
-			src: 'case_p2p.svg',
+			src: 'case_p2p.png',
 			alt: 'digital art',
 			title: 'Digital Art P2P Licensing',
 			link: '/',
@@ -58,6 +58,6 @@
 				</div>
 			{/each}
 		</div>
-		<SectionButton class="mt-8 md:mt-12">See more use cases</SectionButton>
+		<SectionButton url="https://kelp.digital/" class="mt-8 md:mt-12">Kelp Digital use case</SectionButton>
 	</div>
 </div>

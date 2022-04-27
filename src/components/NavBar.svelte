@@ -42,7 +42,6 @@
 		() =>
 			(window.onscroll = () => {
 				solid = document.body.scrollTop > 5 || document.documentElement.scrollTop > 5;
-				console.log('solid', solid);
 			})
 	);
 
@@ -101,13 +100,13 @@
 			  py-0  text-center right-full mx-auto font-montserrat
             md:flex-row md:mx-0 md:relative md:top-auto md:h-full md:py-2 md:right-auto md:left-auto md:w-fit md:translate-x-0 {menuTransition}"
 			>
-				<a class="w-full {linkClass}" href="https://anagolay.dev/" target="_blank" rel="noopener noreferrer"
-					>Wiki</a
-				>
 				<div class="flex w-full md:w-fit justify-evenly">
 					<NavDropdown id="discover" data={discover} {linkClass} />
 					<NavDropdown id="community" data={community} {linkClass} />
 				</div>
+				<a class="w-full {linkClass}" href="https://anagolay.dev/" target="_blank" rel="noopener noreferrer">
+					Wiki
+				</a>
 				<a
 					class="w-full {linkClass}"
 					href="https://www.notion.so/Kelp-Anagolay-Careers-c27cebdedf29461abda591bc23bad3f6"

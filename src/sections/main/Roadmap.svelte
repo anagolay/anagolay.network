@@ -274,7 +274,7 @@
 		</div>
 		<div class="flex flex-col items-center">
 			<a href="/" class="text-green hover:underline">See the full roadmap</a>
-			<SectionButton class="flex justify-center my-32">
+			<SectionButton url="https://discordapp.com/invite/WHe4EuY" class="flex justify-center my-32">
 				<span class="material-icons">discord</span>
 				<p class="ml-[.3rem]">Join the community</p>
 			</SectionButton>
