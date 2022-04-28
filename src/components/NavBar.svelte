@@ -115,7 +115,13 @@
 							<div class="font-extrabold py-2">{menu.title}</div>
 							<div class="flex font-light flex-col ">
 								{#each menu.options as option}
-									<a class={linkClass} href={option.link} on:click={closeSideBar}>{option.text}</a>
+									<a
+										class={linkClass}
+										href={option.link}
+										on:click={closeSideBar}
+										target="_blank"
+										rel="noopener noreferrer">{option.text}</a
+									>
 								{/each}
 							</div>
 						</div>
