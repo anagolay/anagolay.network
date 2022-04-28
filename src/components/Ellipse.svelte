@@ -3,10 +3,4 @@
 	export { extraclass as class };
 </script>
 
-<div class="ellipse rounded-full -rotate-[25deg] radial {extraclass} aspect-square" />
-
-<style>
-	.ellipse {
-		background: radial-gradient(60.62% 60.62% at 42.38% 19.2%, #8cff00, #054f77);
-	}
-</style>
+<div class="bg-sphere from-green to-blue rounded-full -rotate-[25deg] radial {extraclass}" />

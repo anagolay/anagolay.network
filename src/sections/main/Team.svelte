@@ -66,8 +66,10 @@
 	}
 
 	const interval = setInterval(() => {
+		// team[teamIndex].opacity = 'opacity-40';
 		teamIndex++;
 		if (!team[teamIndex]) teamIndex = 0;
+		// team[teamIndex].opacity = 'opacity-100';
 		buildSelected(teamIndex);
 	}, 3000);
 
@@ -86,13 +88,14 @@
 		<div class="py-3 w-5/6 mx-auto grid gap-4 grid-cols-3 md:grid-cols-6">
 			{#each team as member}
 				<div
-					class="rounded-full aspect-square overflow-hidden duration-700 w-full cursor-pointer {selected &&
-					selected.name === member.name
+					class="avatar {selected.name === member.name
 						? 'opacity-100'
-						: 'opacity-40'} hover:opacity-100"
+						: 'opacity-40'} duration-700 hover:opacity-100"
 					on:click={() => selectMember(member.name)}
 				>
-					<img class="-mt-1 w-full" src={member.img} alt={member.name} />
+					<div class="mask mask-circle mask-[10px] duration-700 w-full cursor-pointer">
+						<img src={member.img} alt={member.name} />
+					</div>
 				</div>
 			{/each}
 		</div>

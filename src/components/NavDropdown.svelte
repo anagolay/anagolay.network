@@ -1,19 +1,19 @@
 <script lang="ts">
-	// import { onMount } from 'svelte';
+	import NavLink from './NavLink.svelte';
 	export let id = '';
 	export let data = { title: '', options: [{ text: '', link: '', external: false }] };
 	export let linkClass = '';
 </script>
 
 <div class="dropdown">
-	<label tabindex="0" for={id} class="flex {linkClass}">
+	<label tabindex="0" for={id} class="flex font-extrabold {linkClass}">
 		{data.title}
 		<span class="material-icons hidden md:block">keyboard_arrow_down</span>
 	</label>
-	<ul {id} tabindex="0" class="dropdown-content menu mt-3 p-0 shadow bg-anagolayBlack rounded-box w-52">
+	<ul {id} tabindex="0" class="dropdown-content menu mt-1 p-0 shadow bg-anagolayBlack rounded-box w-52">
 		{#each data.options as option}
 			<li class="rounded-none">
-				<a class="w-full p-2 text-anagolayWhite hover:text-green" href={option.link}>{option.text}</a>
+				<NavLink {option} />
 			</li>
 		{/each}
 	</ul>

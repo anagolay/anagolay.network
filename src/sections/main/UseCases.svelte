@@ -39,21 +39,13 @@
 			{#each cases as item}
 				<div class="carousel-item flex-col h-100 md:max-w-1/3 mt-20">
 					<div class="shadow-button flex flex-col rounded-lg bg-blue px-3 pb-3 w-72 md:w-80 h-[25rem]">
-						<div
-							class="w-5/12 h-32 aspect-square mx-auto py-auto flex items-center justify-center -mt-[20%] mb-8"
-						>
+						<div class="h-28 mx-auto py-auto flex items-center justify-center -mt-12 mb-8">
 							<img class="object-contain max-h-full" src={item.src} alt={item.alt} />
 						</div>
 						<p class="w-full text-green text-center h-16">
 							{item.title}
 						</p>
-
 						<p class="w-5/6 mx-auto">{item.text}</p>
-						<!-- <div class="w-full mt-auto text-right">
-							<a class="text-green mr-4 text-lg" href={item.link}
-								><span class="material-icons ml-2">east</span></a
-							>
-						</div> -->
 					</div>
 				</div>
 			{/each}

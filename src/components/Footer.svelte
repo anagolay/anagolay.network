@@ -36,9 +36,7 @@
 
 <div class="font-montserrat">
 	<hr class="mb-6 w-full mx-auto opacity-50 color-white" />
-	<div
-		class="mx-[5%] flex flex-col md:flex-row items-center md:items-start text-center md:px-1/10 text-base md:text-lg"
-	>
+	<div class="mx-[5%] flex flex-col md:flex-row items-center md:items-start text-center md:px-1/10 text-base">
 		<div class="w-36 md:w-[unset] md:my-0 md:-mr-8">
 			<img
 				class="md:object-contain md:-translate-y-[20%] md:-translate-x-[20%]"
@@ -48,8 +46,8 @@
 		</div>
 		<div class="flex w-full ml-2 md:w-fit justify-evenly text-left">
 			{#each options as item}
-				<div class="flex mx-6 md:py-0 flex-col">
-					<div class="mb-4 md:mb-0">{item.title}</div>
+				<div class="flex mx-3 lg:mx-6 md:py-0 flex-col">
+					<div class="mb-4 md:mb-0 min-w-fit">{item.title}</div>
 					{#each item.options as option}
 						<a
 							href={option.link}
@@ -63,20 +61,25 @@
 				</div>
 			{/each}
 		</div>
-		<div class="flex flex-col py-12 md:py-0 w-60 md:ml-auto md:mr-1/10">
+		<div
+			class="w-60 md:w-[unset] md:max-w-[15rem] flex flex-col flex-grow py-12 md:py-0 md:ml-auto md:mr-1/10"
+		>
 			<div class="flex w-full justify-center mb-5">Join the community</div>
 			<div class="flex flex-grow items-center justify-between mb-4">
 				{#each media as item}
-					<button
+					<a
+						href={item.link}
 						class="flex justify-center items-center shadow-button h-12 w-12 rounded-full bg-darkblue text-white active:shadow-pressed"
 						aria-label="social-media-{item.name}"
+						target="_blank"
+						rel="noopener noreferrer"
 					>
 						{#if item.icon}
 							<span class="material-icons">{item.icon}</span>
 						{:else if item.img}
 							<img class="max-h-5 max-w-[20px]" src={item.img} alt="{item.name} logo" />
 						{/if}
-					</button>
+					</a>
 				{/each}
 			</div>
 		</div>

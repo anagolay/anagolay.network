@@ -35,19 +35,14 @@
 	<div class="w-80 max-w-full mx-auto md:w-full">
 		{#each howItems as item}
 			<div class="w-full mx-auto md:flex mb-16 lg:mb-16 xl:w-5/6">
-				<div class="justify-center aspect-video md:w-1/3 max-h-40 lg:max-h-48 mx-auto mb-4 md:mb-0">
-					<img class="max-h-full mx-auto" src={item.src} alt={item.alt} />
+				<div class="justify-center md:w-1/3 mx-auto mb-4 md:mb-0">
+					<img class="max-w-full max-h-40 lg:max-h-48 mx-auto" src={item.src} alt={item.alt} />
 				</div>
 
 				<div
 					class="flex flex-col text-center md:text-justify justify-center items-center  md:w-2/3 md:px-4 lg:items-start text-sm md:text-base xl:text-xl"
 				>
 					<p class="">{item.text}</p>
-					<!-- <a class="text-green hover:underline my-2 md:my-4" href={item.link}>
-					<div class="flex items-center">
-						{item.linkText} <span class="material-icons ml-2">east</span>
-					</div>
-				</a> -->
 				</div>
 			</div>
 		{/each}

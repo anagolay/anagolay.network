@@ -22,8 +22,9 @@ module.exports = {
 			dmsans: ['DM Sans'], // Ensure fonts with spaces have " "surrounding it.
 		},
 		extend: {
-			screens: {
-				xs: '400px',
+			backgroundImage: {
+				sphere:
+					'radial-gradient(60.62% 60.62% at 42.38% 19.2%, var(--tw-gradient-from), var(--tw-gradient-to));',
 			},
 			textShadow: {
 				sm: '0 1px 2px var(--tw-shadow-color)',

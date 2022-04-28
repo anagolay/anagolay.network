@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import Ellipse from '$src/components/Ellipse.svelte';
 	import SectionButton from '$src/components/SectionButton.svelte';
 
 	enum status {
@@ -244,9 +243,9 @@
 					<div class={gridClass}>
 						{#each steps as event}
 							<div class="flex flex-col items-center mx-auto -mt-[1.1rem]">
-								<div class="mb-4">
-									<Ellipse class="relative w-8 {event.pointBlur} {event.pointOpacity}" />
-								</div>
+								<div
+									class="mb-4 relative w-8 h-8 bg-sphere from-green to-blue rounded-full -rotate-[25deg] {event.pointBlur} {event.pointOpacity}"
+								/>
 								{#each event.facts as fact}
 									<div
 										class="w-56 p-7 mb-4  h-fit bg-blue italic {fact.status === status.pending
