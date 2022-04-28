@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { onMount } from 'svelte';
 	import NavDropdown from './NavDropdown.svelte';
 
 	let toggleMenu = false;
@@ -40,19 +39,6 @@
 		{ text: 'Careers', url: 'https://www.notion.so/Kelp-Anagolay-Careers-c27cebdedf29461abda591bc23bad3f6' },
 	];
 
-	let solid = false;
-
-	//this function turns navbar from transparent to solid when not at top of the website.
-	onMount(
-		() =>
-			(window.onscroll = () => {
-				solid = document.body.scrollTop > 5 || document.documentElement.scrollTop > 5;
-			})
-	);
-
-	//all links in sidebar have same styling
-	// let sidebarLinkClasses = 'h-14 m-0 border-b border-solid border-green py-4 w-full';
-
 	//toggleSideBar will open sidebar if it is closed or close it if opened.
 	function toggleSideBar() {
 		if (toggleMenu) {
@@ -85,7 +71,7 @@
 </script>
 
 <nav
-	class="z-10 fixed py-2 items-center bg-opacity-100 justify-center bg-anagolayBlack w-full text-sm md:text-base p8 text-white h-15 md:justify-between"
+	class="z-10 fixed py-2 items-center justify-center bg-anagolayBlack w-full text-sm md:text-base p8 text-white h-15 md:justify-between"
 >
 	<div class="lg:container mx-auto w-5/6">
 		<div class="flex justify-center md:justify-between xl:w-11/12 xl:mx-auto">
