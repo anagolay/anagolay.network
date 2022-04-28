@@ -1,6 +1,4 @@
 <script lang="ts">
-	import Twitter from 'svelte-material-icons/Twitter.svelte';
-
 	let options: { title: string; options?: { text: string; link: string }[] }[] = [
 		{
 			title: 'Discover',

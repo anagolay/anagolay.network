@@ -43,7 +43,6 @@
 		"marked": "^4.0.14",
 		"svelte": "^3.46.4",
 		"svelte-inview": "^3.0.0",
-		"svelte-material-icons": "^2.0.2",
 		"svelte-seo": "^1.4.0"
 	}
 }

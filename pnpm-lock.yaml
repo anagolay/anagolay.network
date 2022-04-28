@@ -21,7 +21,6 @@ specifiers:
   svelte: ^3.46.4
   svelte-check: ^2.2.6
   svelte-inview: ^3.0.0
-  svelte-material-icons: ^2.0.2
   svelte-preprocess: ^4.10.1
   svelte-seo: ^1.4.0
   tailwindcss: ^3.0.23
@@ -33,14 +32,13 @@ dependencies:
   marked: 4.0.14
   svelte: 3.47.0
   svelte-inview: 3.0.0_svelte@3.47.0
-  svelte-material-icons: 2.0.2_svelte@3.47.0
   svelte-seo: 1.4.0_typescript@4.6.3
 
 devDependencies:
   '@playwright/test': 1.21.1
-  '@sveltejs/adapter-auto': 1.0.0-next.35
+  '@sveltejs/adapter-auto': 1.0.0-next.40
   '@sveltejs/adapter-static': 1.0.0-next.29
-  '@sveltejs/kit': 1.0.0-next.317_svelte@3.47.0
+  '@sveltejs/kit': 1.0.0-next.323_svelte@3.47.0
   '@typescript-eslint/eslint-plugin': 5.20.0_4a38537b28d61fb150842b8115287657
   '@typescript-eslint/parser': 5.20.0_eslint@7.32.0+typescript@4.6.3
   autoprefixer: 10.4.4_postcss@8.4.12
@@ -881,31 +879,31 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@sveltejs/adapter-auto/1.0.0-next.35:
+  /@sveltejs/adapter-auto/1.0.0-next.40:
     resolution:
       {
-        integrity: sha512-x0FLfs1c22lckDuO3Lqq++MQXw8vlKpNCj+AeYtK8EmGfQH3qHTxjPqLWzp/qcTkEx9c+UZyoZsJsGXBwISdFw==,
+        integrity: sha512-TT6YJUF3asJ/2RbviEpcDJQ/TixPcvmH0L2266fGNT7+KfAf9wbbVdegPWRODk2E2hTN0X+h5YS9l+lap+BK9w==,
       }
     dependencies:
-      '@sveltejs/adapter-cloudflare': 1.0.0-next.18
-      '@sveltejs/adapter-netlify': 1.0.0-next.52
-      '@sveltejs/adapter-vercel': 1.0.0-next.48
+      '@sveltejs/adapter-cloudflare': 1.0.0-next.19
+      '@sveltejs/adapter-netlify': 1.0.0-next.56
+      '@sveltejs/adapter-vercel': 1.0.0-next.50
     dev: true
 
-  /@sveltejs/adapter-cloudflare/1.0.0-next.18:
+  /@sveltejs/adapter-cloudflare/1.0.0-next.19:
     resolution:
       {
-        integrity: sha512-iIb7ScN2hnnfVQPhRjw0FYpovYJrw4n22BFAQIg6QvOwmmGz1E3QkyBkm/tRmyY7emDfnljgXtvk4Hsoszp5Ug==,
+        integrity: sha512-LET3DUYpl+deoKhkWCzhHUT7iipYkgVkOcRIJX7qT4m23A+MAbzcAC3npgwEYSe9RokOSWMVBr3tVujeES5EeA==,
       }
     dependencies:
       esbuild: 0.14.36
-      worktop: 0.8.0-next.12
+      worktop: 0.8.0-next.13
     dev: true
 
-  /@sveltejs/adapter-netlify/1.0.0-next.52:
+  /@sveltejs/adapter-netlify/1.0.0-next.56:
     resolution:
       {
-        integrity: sha512-QvlPSaU09mPY6eNgvqWct/KnZqr1MdyydUM/CF3c6fgwwqTPrxLdxqjLADSLNhbzjk1BMwx1uydVM0pvkoBC7Q==,
+        integrity: sha512-fM3aBHsr7syCGfIJcuB1mEoZwynqyOxVijvmyrd9OWHi6MP3bXSP+GhKDMtDpQRwejJJiwuZNTx2PUbV3uirvA==,
       }
     dependencies:
       '@iarna/toml': 2.2.5
@@ -922,19 +920,19 @@ packages:
       tiny-glob: 0.2.9
     dev: true
 
-  /@sveltejs/adapter-vercel/1.0.0-next.48:
+  /@sveltejs/adapter-vercel/1.0.0-next.50:
     resolution:
       {
-        integrity: sha512-l1CXPI8J6guIqEavyTpDdNVzpf1Tmi2QxnvuPIl4uotaAwOTSKE2mMSoAe9zZ3pINjmhxtFX0Uhb+6Dm0O55vQ==,
+        integrity: sha512-yta0AkuWEr7qrm8LB34F4ZdCtMxj+cHD4huwrRYCgjv+PSJHLPwe7aH53+Mhrv6La0TgeyQ/f2lTyhBMXZXn9Q==,
       }
     dependencies:
       esbuild: 0.14.36
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.317_svelte@3.47.0:
+  /@sveltejs/kit/1.0.0-next.323_svelte@3.47.0:
     resolution:
       {
-        integrity: sha512-04WqvYXfz4THy3HghkXYWNrbG6bMLaQTaTfGNMoGpoSUaboJ1enikReeD+9bt4AzxqWkLav+C6Q3NgwJXwYAiw==,
+        integrity: sha512-5JVBfXZqVcWhsvtxdwtFPEzLNM8FmttNNyN0h5P25KLryF3BeOg5OicRK3t7qNBmWTTNovDgChb/gWmne5Oicg==,
       }
     engines: { node: '>=14.13' }
     hasBin: true
@@ -942,6 +940,7 @@ packages:
       svelte: ^3.44.0
     dependencies:
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.41_svelte@3.47.0+vite@2.9.5
+      chokidar: 3.5.3
       sade: 1.8.1
       svelte: 3.47.0
       vite: 2.9.5
@@ -4077,17 +4076,6 @@ packages:
       svelte: 3.47.0
     dev: false
 
-  /svelte-material-icons/2.0.2_svelte@3.47.0:
-    resolution:
-      {
-        integrity: sha512-+kzpt2pOzHXgDteQFzYksZ64PaF4rdx8UtORR0v8LlBN/ZRzvHRsqEkhlux3c6r8GzPQeRdTjAP7pWQQfNisnA==,
-      }
-    peerDependencies:
-      svelte: ^3.0.0
-    dependencies:
-      svelte: 3.47.0
-    dev: false
-
   /svelte-preprocess/4.10.6_41810887ae6c6d59323116f47e33fa38:
     resolution:
       {
@@ -4355,10 +4343,10 @@ packages:
     engines: { node: '>=0.10.0' }
     dev: true
 
-  /worktop/0.8.0-next.12:
+  /worktop/0.8.0-next.13:
     resolution:
       {
-        integrity: sha512-ZXdgI9XOf0uB4IegFoViLdQ0Bf7hish0XMHwuV3nopOXygfLJkwAC5+HyA+sihBMSM2sLLQ5uGnD5aknL8+NQg==,
+        integrity: sha512-aLPWSneFtPJr3RAf841orF9GNlVdVkQd2Wj/BbcGHp3whBZoXx6dcwwClA9fezm7muNan4SuT+ZTyMWdoJSCAg==,
       }
     engines: { node: '>=12' }
     dependencies:
