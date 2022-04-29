@@ -14,7 +14,9 @@
 		status?: string;
 		pointBlur?: string;
 		pointOpacity?: string;
-		facts: { fact: string; description?: string; status: string }[];
+		titleStyling?: string;
+		yearOpacity?: string;
+		facts: { fact: string; description?: string; status: string; cardStyling?: string }[];
 	}
 	let events: Step[] = [
 		{
@@ -164,17 +166,35 @@
 		let state = status.done;
 		let pointBlur = '';
 		let pointOpacity = '';
-		let factStatus = event.facts.map((f) => f.status);
+		let factStatus = event.facts.map((f) => {
+			let cardShadow =
+				f.status === status.doing ? 'shadow-card shadow-green border border-green' : 'shadow-button';
+			let cardOpacity = f.status === status.pending ? 'opacity-80' : 'bg-opacity-80';
+			f.cardStyling = `${cardShadow} ${cardOpacity}`;
+			return f.status;
+		});
+		let titleOpacity = 'opacity-70';
+		let titleShadow = 'shadow-white';
+
 		if (factStatus.includes(status.doing)) {
 			state = status.doing;
 			pointBlur = 'blur-[2px]';
 			pointOpacity = 'opacity-90';
+			titleShadow = 'shadow-green';
 		} else if (factStatus.includes(status.pending)) {
 			state = status.pending;
 			pointBlur = 'blur-[5px]';
 			pointOpacity = 'opacity-75';
+			titleOpacity = 'opacity-30';
 		}
-		return { ...event, status: state, pointBlur, pointOpacity };
+		return {
+			...event,
+			status: state,
+			pointBlur,
+			pointOpacity,
+			titleStyling: `${titleOpacity} ${titleShadow}`,
+			yearOpacity: state === status.pending ? 'opacity-50' : '',
+		};
 	});
 
 	let gridClass = `grid w-full text-center grid-flow-col gap-36 auto-cols-fit`;
@@ -217,20 +237,11 @@
 					<div class={gridClass} bind:clientWidth={roadWidth}>
 						{#each steps as event}
 							<div class="mx-auto">
-								<div
-									class="text-7xl {event.status === status.pending
-										? 'opacity-30'
-										: 'opacity-70'} blur-[2px] text-darkblue {event.status === status.doing
-										? 'shadow-green'
-										: 'shadow-white'}  text-shadow-around"
-								>
+								<div class="text-7xl {event.titleStyling} blur-[2px] text-darkblue text-shadow-around">
 									{event.title}
 								</div>
 								<div
-									class="flex justify-end blur-0 text-xl pr-[1rem] -mt-[4rem] mb-[4rem] w-1/2 {event.status ===
-									status.pending
-										? 'opacity-50'
-										: ''}"
+									class="flex justify-end blur-0 text-xl pr-[1rem] -mt-[4rem] mb-[4rem] w-1/2 {event.yearOpacity}"
 								>
 									{event.year}
 								</div>
@@ -248,12 +259,7 @@
 								/>
 								{#each event.facts as fact}
 									<div
-										class="w-56 p-7 mb-4  h-fit bg-blue italic {fact.status === status.pending
-											? 'opacity-80'
-											: 'bg-opacity-80'} mb-2 rounded-xl mx-auto text-anagolayWhite font-light {fact.status ===
-										status.doing
-											? 'shadow-card shadow-green border border-green'
-											: 'shadow-button'}"
+										class="w-56 p-7 mb-4  h-fit bg-blue italic {fact.cardStyling} mb-2 rounded-xl mx-auto text-anagolayWhite font-light"
 									>
 										{fact.fact}
 									</div>

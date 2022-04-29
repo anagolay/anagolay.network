@@ -11,6 +11,7 @@
 		bio: string;
 		links: string[];
 		linkIcons?: string[];
+		opacity: string;
 	}[] = [
 		{
 			name: 'Daniel Maricic',
@@ -18,6 +19,7 @@
 			img: 'daniel.png',
 			bio: 'Daniel is the main brain behind Anagolay and a CTO of Kelp Digital OÜ, the company that develops Anagolay. A full-stack software engineer with over 13 years of experience in different business domains, from Fintech to real-time auctions and image management software. He is also a long-time photographer, passionate chief, and windsurfer.',
 			links: ['https://www.linkedin.com/in/danielmaricic/', 'https://github.com/woss'],
+			opacity: 'opacity-100',
 		},
 		{
 			name: 'Adriano Dalpane',
@@ -25,6 +27,7 @@
 			img: 'adriano.png',
 			bio: 'Adriano Dalpane is a senior engineer with 11 years of experience and a vast portfolio ranging from Monte Carlo Tree Search AI for a game to a Bayesian classifier that performs match-making on a marketplace platform. For the last 2 years Adriano has been working with Rust and Substrate and now drives Anagolay implementation. On weekends he spends playing guitar, hiking, or cycling.',
 			links: ['https://www.linkedin.com/in/adriano-dalpane/', 'https://github.com/digitalillusion'],
+			opacity: 'opacity-40',
 		},
 		{
 			name: 'Leonardo Monay',
@@ -32,6 +35,7 @@
 			img: 'leonardo.png',
 			bio: 'Leonardo is a junior full-stack javascript developer specializing in decentralized solutions with 2+ years of experience. Before making a career switch, he dedicated 10 years to industrial engineering, data analysis and processing. A man of many talents, Leo also brews his own beer, dances salsa, enjoys a good gaming night and a moto ride.',
 			links: ['https://www.linkedin.com/in/leomonay/', 'https://github.com/Leomonay'],
+			opacity: 'opacity-40',
 		},
 		{
 			name: 'Carla Pezzo',
@@ -39,6 +43,7 @@
 			img: 'carla.png',
 			bio: 'Carla is a graphic designer, illustrator, and UX designer from Buenos Aires. Before joining the team, she worked for several years as a freelancer while also tutoring UX/UI lessons. Carla is passionate about everything that has to do with creativity, design, arts, and technology. She loves cats, nature, and doing yoga.',
 			links: ['https://www.linkedin.com/in/carla-pezzo/'],
+			opacity: 'opacity-40',
 		},
 		{
 			name: 'Leila Iruzun',
@@ -46,6 +51,7 @@
 			img: 'leila.png',
 			bio: 'Leila’s background is in management and finance. Before joining Kelp, she has worked as a business consultant for several projects. Her research subject is digital art, NFTs, and digital copyright. MSc Management and Business Economics. Massachusetts Institute of Technology: Digital Transformation Program. Leila flies kites, enjoys origami, and is currently learning Chinese.',
 			links: ['https://www.linkedin.com/in/leilairuzun/'],
+			opacity: 'opacity-40',
 		},
 		{
 			name: 'Elena Tairova',
@@ -53,6 +59,7 @@
 			img: 'elena.png',
 			bio: 'Elena is the CEO of Kelp Digital OÜ and Founder of Anagolay. With 9+ years of experience in digital strategy, media, & policy, since 2017 she has been working with DLT projects. MS Economics & Management. Global Media Industries, Data Regulation & Policy at LSE. EMBA at Quantic School of Business & Technology. To clear up her mind, Elena enjoys painting, windsurfing, and jogging.',
 			links: ['https://www.linkedin.com/in/elena-tairova/'],
+			opacity: 'opacity-40',
 		},
 	];
 
@@ -66,10 +73,10 @@
 	}
 
 	const interval = setInterval(() => {
-		// team[teamIndex].opacity = 'opacity-40';
+		team[teamIndex].opacity = 'opacity-40';
 		teamIndex++;
 		if (!team[teamIndex]) teamIndex = 0;
-		// team[teamIndex].opacity = 'opacity-100';
+		team[teamIndex].opacity = 'opacity-100';
 		buildSelected(teamIndex);
 	}, 3000);
 
@@ -88,9 +95,7 @@
 		<div class="py-3 w-5/6 mx-auto grid gap-4 grid-cols-3 md:grid-cols-6">
 			{#each team as member}
 				<div
-					class="avatar {selected.name === member.name
-						? 'opacity-100'
-						: 'opacity-40'} duration-700 hover:opacity-100"
+					class="avatar {member.opacity} duration-700 hover:opacity-100"
 					on:click={() => selectMember(member.name)}
 				>
 					<div class="mask mask-circle mask-[10px] duration-700 w-full cursor-pointer">
