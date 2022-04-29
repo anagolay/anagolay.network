@@ -42,7 +42,9 @@
 		<p class="mb-4">Anagolay is a</p>
 		<p class="text-green">different kind of beast</p>
 	</h2>
-	<div class="flex w-full flex-col mx-auto h-fit py-4 sm:flex-row sm:flex-wrap sm:justify-evenly">
+	<div
+		class="flex w-full flex-col mx-auto h-fit py-4 sm:flex-row sm:flex-wrap sm:justify-evenly 2xl:justify-between"
+	>
 		{#each beastFeatures as feat, i}
 			<FeatureCard {feat} {i} />
 		{/each}

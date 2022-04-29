@@ -74,7 +74,7 @@
 	class="z-10 fixed py-2 items-center justify-center bg-anagolayBlack w-full text-sm md:text-base p8 text-white h-15 md:justify-between"
 >
 	<div class="lg:container mx-auto w-5/6">
-		<div class="flex justify-center md:justify-between xl:w-11/12 xl:mx-auto">
+		<div class="flex justify-center md:justify-between">
 			<button class="absolute px-3 py-1 left-1 md:hidden" on:click={toggleSideBar}>
 				<span class="material-icons text-2xl {menuIconColor}"> menu </span>
 			</button>

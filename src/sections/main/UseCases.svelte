@@ -30,7 +30,7 @@
 </script>
 
 <div id="useCases" class="relative flex flex-col w-full justify-center items-center h-fit text-center mb-40">
-	<div class="relative mt-0 flex flex-col items-center md:w-11/12 mx-auto">
+	<div class="relative mt-0 flex flex-col items-center">
 		<h2 class="mt-8 text-lg md:mb-12 md:text-2xl">
 			Copyright and Ownership <i>Verifiable</i> Statements created and stored on Anagolay can be applied to solve
 			a number of issues including, but not limited to:

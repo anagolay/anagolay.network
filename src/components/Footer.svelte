@@ -33,8 +33,8 @@
 </script>
 
 <div class="font-montserrat">
-	<hr class="mb-6 w-full mx-auto opacity-50 color-white" />
-	<div class="mx-[5%] flex flex-col md:flex-row items-center md:items-start text-center md:px-1/10 text-base">
+	<hr class="mb-6 -mx-6 xl:-mx-12 opacity-50 color-white" />
+	<div class="flex flex-col md:flex-row items-center md:items-start text-center md:mx-auto text-base">
 		<div class="w-36 md:w-[unset] md:my-0 md:-mr-8">
 			<img
 				class="md:object-contain md:-translate-y-[20%] md:-translate-x-[20%]"

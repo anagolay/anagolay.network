@@ -5,7 +5,7 @@
 <div>
 	<div class="mt-40 md:mt-36 flex flex-col-reverse md:flex-row mb-40">
 		<div class="w-[20rem] mx-auto max-w-full relative md:w-3/5">
-			<div class="relative xl:w-5/6 mx-auto">
+			<div class="relative xl:w-11/12">
 				<h1 class="mb-4 md:mb-0 tracking-wider text-center font-extrabold text-3xl md:text-5xl  md:text-left">
 					<p class="md:leading-[4rem]">Process-based Interplanetary P2P Framework</p>
 				</h1>
@@ -25,7 +25,7 @@
 			</div>
 		</div>
 		<div class="hidden md:block w-2/5 h-fit">
-			<div class="-mx-32 2xl:-mx-32 -mt-40 2xl:-mt-48 -translate-x-30 xl:-translate-x-20 -mb-20">
+			<div class="-mx-32 2xl:-mx-40 -mt-40 2xl:-mt-48 -translate-x-30 xl:-translate-x-10 -mb-20">
 				<img class="w-full object-cover" src="main_illustration.png" alt="light ilustration" />
 			</div>
 		</div>

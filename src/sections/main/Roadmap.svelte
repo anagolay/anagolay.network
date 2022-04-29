@@ -209,10 +209,10 @@
 
 	//This functions always sets the fifth event in the middle of Roadmap, but it is not in function of the current event.
 	//Check the position function.
-	onMount(() => (roadMap.scrollLeft = 0.545 * roadWidth - 0.5 * windowWidth));
+	onMount(() => (roadMap.scrollLeft = 0.55 * roadWidth - 0.5 * windowWidth));
 </script>
 
-<div class="mx-auto pt-8 md:w-11/12">
+<div class="mx-auto pt-8">
 	<div class="flex justify-between items-center w-full text-xs md:text-base pb-16">
 		<button
 			class="flex items-center text-left w-1/3 opacity-60 cursor-pointer hover:opacity-100"
