@@ -68,15 +68,15 @@
 	let icons = selected.links.map((link: string) => siteIcons.find((icon) => link.includes(icon.domain)).icon);
 
 	function buildSelected(index: number) {
+		selected.opacity = 'opacity-40';
 		selected = team[index];
+		team[index].opacity = 'opacity-100';
 		icons = selected.links.map((link: string) => siteIcons.find((icon) => link.includes(icon.domain)).icon);
 	}
 
 	const interval = setInterval(() => {
-		team[teamIndex].opacity = 'opacity-40';
 		teamIndex++;
 		if (!team[teamIndex]) teamIndex = 0;
-		team[teamIndex].opacity = 'opacity-100';
 		buildSelected(teamIndex);
 	}, 3000);
 

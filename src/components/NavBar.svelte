@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import NavDropdown from './NavDropdown.svelte';
+	import NavLink from './NavLink.svelte';
 
 	let toggleMenu = false;
 	let menuIconColor = 'text-white';
@@ -101,13 +102,7 @@
 							<div class="font-extrabold py-2">{menu.title}</div>
 							<div class="flex font-light flex-col ">
 								{#each menu.options as option}
-									<a
-										class={linkClass}
-										href={option.link}
-										on:click={closeSideBar}
-										target="_blank"
-										rel="noopener noreferrer">{option.text}</a
-									>
+									<NavLink {option} onClick={closeSideBar} />
 								{/each}
 							</div>
 						</div>

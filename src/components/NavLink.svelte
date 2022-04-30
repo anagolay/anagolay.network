@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 
 	export let option: { text: string; link: string; external: boolean };
+	export let onClick: () => void = undefined;
 	let extraClass = '';
 	export { extraClass as class };
 
@@ -16,6 +17,10 @@
 	});
 </script>
 
-<a class="w-full p-2 text-anagolayWhite hover:text-green {extraClass}" href={option.link} {target} {rel}
-	>{option.text}</a
+<a
+	class="w-full p-2 text-anagolayWhite hover:text-green {extraClass}"
+	href={option.link}
+	{target}
+	{rel}
+	on:click={onClick}>{option.text}</a
 >
