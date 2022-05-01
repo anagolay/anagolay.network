@@ -1,9 +1,26 @@
+image: node:16-bullseye
+
+stages:
+  - check
+  - deploy
+
+is-it-pretty:
+  stage: check
+  before_script:
+    - curl https://ipfs.anagolay.network/ipfs/QmeCUX9cK4YKdTbNVq3jg5cJPvz8uQiQmb4AKKd7niy4kY > /usr/local/bin/pnpm
+    - chmod +x /usr/local/bin/pnpm
+  script:
+    - pnpm i
+    - pnpm lint
+
 pages:
   stage: deploy
   script:
-    - mkdir .public
-    - cp -r * .public
-    - mv .public public
+    - curl https://ipfs.anagolay.network/ipfs/QmeCUX9cK4YKdTbNVq3jg5cJPvz8uQiQmb4AKKd7niy4kY > /usr/local/bin/pnpm
+    - chmod +x /usr/local/bin/pnpm
+    - pnpm i
+    - pnpm build
+    - mv build public
   artifacts:
     paths:
       - public
