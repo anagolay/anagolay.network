@@ -1,11 +1,13 @@
 <script lang="ts">
 	import NavLink from './NavLink.svelte';
 	export let id = '';
-	export let data = { title: '', options: [{ text: '', link: '', external: false }] };
+	export let data = { title: '', options: [{ text: '', url: '', external: false }] };
 	export let linkClass = '';
+	let extraclass = '';
+	export { extraclass as class };
 </script>
 
-<div class="dropdown">
+<div class="dropdown {extraclass}">
 	<label tabindex="0" for={id} class="flex font-extrabold {linkClass}">
 		{data.title}
 		<span class="material-icons hidden md:block">keyboard_arrow_down</span>

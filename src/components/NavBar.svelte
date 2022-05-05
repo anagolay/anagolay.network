@@ -8,37 +8,26 @@
 	let menuTransition = '';
 	const linkClass = 'px-2 py-2 rounded-sm md:w-fit hover:text-green';
 
-	let menus = [
-		{
-			title: 'Discover',
-			options: [
-				{ text: 'Use Cases', link: '#useCases', external: false },
-				{ text: 'Blog', link: 'https://blog.anagolay.network/', external: true },
-				{
-					text: 'FAQ',
-					link: 'https://www.notion.so/Anagolay-FAQ-530c3d1de6784e7eb0c842c7b9bedfa9',
-					external: true,
-				},
-				{ text: 'Team', link: '#team', external: false },
-			],
-		},
-		{
-			title: 'Community',
-			options: [
-				{ text: 'Discord', link: 'https://discordapp.com/invite/WHe4EuY', external: true },
-				{ text: 'Twitter', link: 'https://twitter.com/AnagolayNet', external: true },
-				{
-					text: 'Matrix',
-					link: 'https://matrix.to/#/!FJvAuDoWRoMVuOFYwL:matrix.org?via=matrix.org',
-					external: true,
-				},
-			],
-		},
-	];
-	let noMenuLinks = [
-		{ text: 'Wiki', url: 'https://anagolay.dev/' },
-		{ text: 'Careers', url: 'https://www.notion.so/Kelp-Anagolay-Careers-c27cebdedf29461abda591bc23bad3f6' },
-	];
+	const technology = { text: 'Technology', url: '/how-it-works', external: false, color: '' };
+	const useCases = { text: 'Use cases', url: '/#useCases', external: false, color: '' };
+	const discover = {
+		title: 'Discover',
+		options: [
+			{
+				text: 'FAQ',
+				url: 'https://www.notion.so/Anagolay-FAQ-530c3d1de6784e7eb0c842c7b9bedfa9',
+				external: true,
+			},
+			{ text: 'Blog', url: 'https://blog.anagolay.network/', external: true },
+			// { text: 'Team', url: '/#team', external: false },
+			{
+				text: 'Careers',
+				url: 'https://www.notion.so/Kelp-Anagolay-Careers-c27cebdedf29461abda591bc23bad3f6',
+				external: true,
+			},
+		],
+	};
+	const wiki = { text: 'Wiki', url: 'https://anagolay.dev/', external: true, color: '' };
 
 	//toggleSideBar will open sidebar if it is closed or close it if opened.
 	function toggleSideBar() {
@@ -52,23 +41,15 @@
 	}
 
 	//closes sidebar after clicking an option
-	function closeSideBar() {
+	function closeSideBar(): void {
 		toggleMenu = false;
 		menuIconColor = 'text-white';
 		menuTransition = '';
 	}
 
-	//navlinks
-	let links: { text: string; url: string; color: string }[] = [{ text: 'FAQ', url: '/faq', color: '' }];
-
-	//this function sets color for navlinks when current path changes.
-	function setColor(currentPath: string) {
-		for (let link of links) {
-			link.color = link.url === currentPath ? 'text-green' : '';
-		}
-	}
-
-	$: setColor($page.url.pathname);
+	//this function renders "Use Cases" link only if current page is "/"
+	let renderUseCases = false;
+	$: renderUseCases = $page.url.pathname === '/';
 </script>
 
 <nav
@@ -90,36 +71,25 @@
 			  py-0  text-center right-full mx-auto font-montserrat
             md:flex-row md:mx-0 md:relative md:top-auto md:h-full md:py-2 md:right-auto md:left-auto md:w-fit md:translate-x-0 {menuTransition}"
 			>
-				<div class="hidden md:flex w-full md:w-fit justify-evenly">
-					{#each menus as menu}
-						<NavDropdown id={menu.title.toLowerCase()} data={menu} {linkClass} />
-					{/each}
-				</div>
-
-				<div class="md:hidden text-center justify-evenly">
-					{#each menus as menu}
-						<div class="pt-6 pb-2">
-							<div class="font-extrabold py-2">{menu.title}</div>
-							<div class="flex font-light flex-col ">
-								{#each menu.options as option}
-									<NavLink {option} onClick={closeSideBar} />
-								{/each}
-							</div>
-						</div>
-					{/each}
-				</div>
-				{#each noMenuLinks as link}
-					<div class="pt-6 pb-2 md:py-2">
-						<a
-							class="w-full font-extrabold {linkClass}"
-							href={link.url}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							{link.text}
-						</a>
+				<div class="flex flex-col md:flex-row w-full md:w-fit justify-evenly">
+					<NavLink class="font-bold my-3 md:my-0" option={technology} onClick={closeSideBar} />
+					{#if renderUseCases}
+						<NavLink class="font-bold my-3 md:my-0" option={useCases} onClick={closeSideBar} />
+					{/if}
+					<NavDropdown
+						class="hidden md:block"
+						id={discover.title.toLowerCase()}
+						data={discover}
+						{linkClass}
+					/>
+					<div class="flex flex-col md:hidden my-3">
+						<b>Discover</b>
+						{#each discover.options as link}
+							<NavLink option={link} onClick={closeSideBar} />
+						{/each}
 					</div>
-				{/each}
+					<NavLink class="font-bold my-3 md:my-0" option={wiki} onClick={closeSideBar} />
+				</div>
 			</div>
 		</div>
 	</div>
