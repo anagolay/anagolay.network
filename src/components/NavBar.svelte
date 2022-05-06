@@ -8,7 +8,7 @@
 	let menuTransition = '';
 	const linkClass = 'px-2 py-2 rounded-sm md:w-fit hover:text-green';
 
-	const technology = { text: 'Technology', url: '/how-it-works', external: false, color: '' };
+	const technology = { text: 'Technology', url: '/technology', external: false, color: '' };
 	const useCases = { text: 'Use cases', url: '/#useCases', external: false, color: '' };
 	const discover = {
 		title: 'Discover',
@@ -62,7 +62,14 @@
 			</button>
 			<div class="h-10 lg:h-12 my-auto">
 				<a href="/" on:click={closeSideBar}>
-					<img class="object-contain h-full" src="horizontal_white1.svg" alt="Anagolay logo" />
+					<img
+						loading="lazy"
+						class="object-contain h-full"
+						width="193"
+						height="48"
+						src="horizontal_white1.svg"
+						alt="Anagolay logo"
+					/>
 				</a>
 			</div>
 

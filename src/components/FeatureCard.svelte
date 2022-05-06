@@ -7,7 +7,7 @@
 </script>
 
 <div
-	class="col wrapper"
+	class="col wrapper h-64 w-[24rem] max-w-full"
 	use:inview={{ unobserveOnEnter: true, rootMargin: '5%' }}
 	on:change={({ detail }) => {
 		isInView = detail.inView;
@@ -24,7 +24,14 @@
 				{#if feat.icon}
 					<span class="material-icons text-5xl">{feat.icon}</span>
 				{:else if feat.img}
-					<img class="material-icons h-12" src={feat.img.src} alt={feat.img.alt} />
+					<img
+						loading="lazy"
+						class="material-icons h-12"
+						width="48"
+						height="48"
+						src={feat.img.src}
+						alt={feat.img.alt}
+					/>
 				{/if}
 			</div>
 			<div class="w-60 sm:w-[unset] md:text-base mt-4 h-20 my-4">
