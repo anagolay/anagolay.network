@@ -28,8 +28,7 @@ cache:
 is-it-pretty:
   stage: check
   before_script:
-    - curl https://ipfs.anagolay.network/ipfs/QmeCUX9cK4YKdTbNVq3jg5cJPvz8uQiQmb4AKKd7niy4kY > /usr/local/bin/pnpm
-    - chmod +x /usr/local/bin/pnpm
+    - *install-pnpm
   script:
     - pnpm install
     - pnpm lint
@@ -46,7 +45,7 @@ upload-to-ipfs:
     - echo 'Building ...'
     - pnpm build
 
-    - echo "Uploading IPFS ..."
+    - echo "Uploading to IPFS ..."
     - IPFS_PIN=false ipfsCli upload --onlyCid build > ANAGOLAY_WEBSITE_CID
     - echo "The Website is published with the CID:" && cat ANAGOLAY_WEBSITE_CID
     - echo "https://ipfs.anagolay.network/ipfs/$(cat ANAGOLAY_WEBSITE_CID)"
