@@ -11,7 +11,6 @@
 			],
 			image: {
 				class: '-ml-32 -mr-8 -mb-12 -mt-16',
-				// class: '-ml-12 md:-ml-8 -mt-40 -mb-4 -mr-40  md:-mt-32',
 				source: 'hiw_statements.png',
 				alt: 'statements',
 			},
@@ -57,9 +56,7 @@
 				'The challenge is to have Workflows & Operations Artifacts stored on IPFS permanently. ',
 			],
 			image: {
-				class: '-mx-32 -mt-36 -mb-8 md:-mr-48 md:-mt-60',
-
-				// class: '-mx-28 -mt-24 -mb-16 md:-m-28 md:-mt-36 -translate-y-[10%] md:-translate-y-0',
+				class: '-mx-32 -mt-36 -mb-8 md:-mr-48 md:-mt-60 md:-mb-24',
 				source: 'hiw_storage.png',
 				alt: 'storage',
 			},
@@ -68,8 +65,8 @@
 </script>
 
 {#each sectionData as data}
-	<div class="mb-12">
-		<div class="relative text-left md:w-1/2 mb-12 md:mb-12">
+	<div class="mb-20 md:mb-28">
+		<div class="relative md:w-1/2 mb-12 md:mb-12">
 			<h3 class="text-2xl md:text-4xl mb-6 md:mb-8 text-green">{data.title}</h3>
 			<p class="text-base md:text-xl xl:text-2xl">{data.subtitle}</p>
 		</div>
@@ -79,12 +76,12 @@
 					class="-mt-20 md:mt-0 flex flex-col justify-center items-center lg:items-start text-xs md:text-base xl:text-xl"
 				>
 					{#each data.contentLines as line}
-						<p class="my-2 md:my-4 md:text-left">{line}</p>
+						<p class="my-2 md:my-4">{line}</p>
 					{/each}
 				</div>
 				{#if data.finalLink}
 					<a
-						class="flex items-center md:justify-start mt-4 md:text-lg text-green text-base hover:underline"
+						class="flex items-center mt-4 md:text-lg text-green text-base hover:underline"
 						href={data.finalLink.url}
 					>
 						{data.finalLink.text} <span class="material-icons ">east</span>

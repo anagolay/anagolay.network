@@ -8,8 +8,8 @@
 	let menuTransition = '';
 	const linkClass = 'px-2 py-2 rounded-sm md:w-fit hover:text-green';
 
-	const technology = { text: 'Technology', url: '/technology', external: false, color: '' };
-	const useCases = { text: 'Use cases', url: '/#useCases', external: false, color: '' };
+	const technology = { text: 'Technology', url: 'technology', external: false };
+	const useCases = { text: 'Use cases', url: '/#useCases', external: false };
 	const discover = {
 		title: 'Discover',
 		options: [
@@ -19,7 +19,6 @@
 				external: true,
 			},
 			{ text: 'Blog', url: 'https://blog.anagolay.network/', external: true },
-			// { text: 'Team', url: '/#team', external: false },
 			{
 				text: 'Careers',
 				url: 'https://www.notion.so/Kelp-Anagolay-Careers-c27cebdedf29461abda591bc23bad3f6',
@@ -27,7 +26,7 @@
 			},
 		],
 	};
-	const wiki = { text: 'Wiki', url: 'https://anagolay.dev/', external: true, color: '' };
+	const wiki = { text: 'Wiki', url: 'https://anagolay.dev/', external: true };
 
 	//toggleSideBar will open sidebar if it is closed or close it if opened.
 	function toggleSideBar() {
@@ -46,10 +45,6 @@
 		menuIconColor = 'text-white';
 		menuTransition = '';
 	}
-
-	//this function renders "Use Cases" link only if current page is "/"
-	let renderUseCases = false;
-	$: renderUseCases = $page.url.pathname === '/';
 </script>
 
 <nav
@@ -80,9 +75,7 @@
 			>
 				<div class="flex flex-col md:flex-row w-full md:w-fit justify-evenly">
 					<NavLink class="font-bold my-3 md:my-0" option={technology} onClick={closeSideBar} />
-					{#if renderUseCases}
-						<NavLink class="font-bold my-3 md:my-0" option={useCases} onClick={closeSideBar} />
-					{/if}
+					<NavLink class="font-bold my-3 md:my-0" option={useCases} onClick={closeSideBar} />
 					<NavDropdown
 						class="hidden md:block"
 						id={discover.title.toLowerCase()}

@@ -28,16 +28,16 @@
 	];
 </script>
 
-<div class="mb-12">
+<div class="mb-20">
 	<div class="relative text-center mb-8 md:mb-16">
 		<h3 class="text-2xl md:text-4xl md:mb-8 text-green">Architecture</h3>
 	</div>
 
 	<div class={containerClass}>
 		<div
-			class="w-5/12 md:w-1/3 flex flex-col md:flex-row justify-center md:justify-start items-start md:items-center text-green"
+			class="w-5/12 md:w-1/3 flex flex-col md:flex-row justify-center md:justify-start items-center text-green"
 		>
-			<span class="material-icons text-xl md:text-4xl mr-4">web_asset</span>
+			<span class="material-icons text-xl md:text-4xl md:mr-4">web_asset</span>
 			<p class="text-xs md:text-lg font-bold "><i>Web Apps Layer</i></p>
 		</div>
 		<div class="w-7/12 md:w-2/3 pl-2 grid grid-cols-5 items-center">
@@ -55,15 +55,15 @@
 	{#each layers as item}
 		<div class={containerClass}>
 			<div
-				class="w-5/12 md:w-1/3 flex flex-col md:flex-row justify-center md:justify-start items-start md:items-center text-green"
+				class="w-5/12 md:w-1/3 flex flex-col md:flex-row justify-center md:justify-start items-center text-green"
 			>
 				<img
 					loading="lazy"
-					class="max-h-4 max-w-4 md:max-h-8 md:max-w-8 mr-4"
+					class="max-h-4 max-w-4 md:max-h-8 md:max-w-8 md:mr-4"
 					src={item.img.source}
 					alt={item.img.alt}
 				/>
-				<div>
+				<div class="flex flex-col items-center md:items-start">
 					<p class="text-xs md:text-lg font-bold "><i>{item.title}</i></p>
 					{#if item.subtitle}
 						<p class="text-[.6rem] md:text-base">{item.subtitle}</p>

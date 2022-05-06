@@ -1,7 +1,7 @@
 <script lang="ts">
-	import TitleSection from '$src/sections/howitworks/Title.svelte';
-	import SerialSections from '$src/sections/howitworks/SerialSections.svelte';
-	import Architecture from '$src/sections/howitworks/Architecture.svelte';
+	import TitleSection from '$src/sections/technology/Title.svelte';
+	import SerialSections from '$src/sections/technology/SerialSections.svelte';
+	import Architecture from '$src/sections/technology/Architecture.svelte';
 	import SvelteSeo from 'svelte-seo';
 </script>
 
