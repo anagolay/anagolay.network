@@ -21,6 +21,7 @@ const config = {
 		prerender: {
 			default: true,
 		},
+		trailingSlash: 'never',
 		vite: {
 			resolve: {
 				alias: {

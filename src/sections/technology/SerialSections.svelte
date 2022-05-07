@@ -65,15 +65,15 @@
 </script>
 
 {#each sectionData as data}
-	<div class="mb-20 md:mb-28">
+	<div class="mb-20 md:mb-32">
 		<div class="relative md:w-1/2 mb-12 md:mb-12">
-			<h3 class="text-2xl md:text-4xl mb-6 md:mb-8 text-green">{data.title}</h3>
-			<p class="text-base md:text-xl xl:text-2xl">{data.subtitle}</p>
+			<h3 class="text-2xl md:text-4xl md:-mr-20 lg:text-4xl mb-6 md:mb-8 text-green">{data.title}</h3>
+			<p class="text-lg md:text-xl xl:text-2xl">{data.subtitle}</p>
 		</div>
 		<div class="flex flex-col-reverse md:flex-row">
 			<div class="md:w-1/2 py-auto">
 				<div
-					class="-mt-20 md:mt-0 flex flex-col justify-center items-center lg:items-start text-xs md:text-base xl:text-xl"
+					class="-mt-20 md:mt-0 flex flex-col justify-center items-center lg:items-start text-sm md:text-base xl:text-xl"
 				>
 					{#each data.contentLines as line}
 						<p class="my-2 md:my-4">{line}</p>
@@ -90,7 +90,7 @@
 			</div>
 			<div class="md:w-1/2 md:-mt-36">
 				<div class={data.image.class}>
-					<img loading="lazy" class="w-full" src={data.image.source} alt={data.image.alt} />
+					<img class="w-full -mb-40" loading="lazy" src={data.image.source} alt={data.image.alt} />
 				</div>
 			</div>
 		</div>

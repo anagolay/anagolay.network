@@ -24,7 +24,7 @@
 	];
 </script>
 
-<div class="flex max-w-full lg:w-11/12 my-16 flex-col mx-auto xl:mx-auto">
+<div class="flex max-w-full lg:w-11/12 flex-col mx-auto xl:mx-auto">
 	<div class="text-center mb-12 md:mb-16">
 		<h2 class="text-2xl md:text-4xl mb-6 md:mb-8 text-green">Trust the process</h2>
 		<p class="text-base md:text-xl xl:text-2xl">

@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { page } from '$app/stores';
 	import NavDropdown from './NavDropdown.svelte';
 	import NavLink from './NavLink.svelte';
 
@@ -8,8 +7,8 @@
 	let menuTransition = '';
 	const linkClass = 'px-2 py-2 rounded-sm md:w-fit hover:text-green';
 
-	const technology = { text: 'Technology', url: 'technology', external: false };
-	const useCases = { text: 'Use cases', url: '/#useCases', external: false };
+	const technology = { text: 'Technology', url: './technology.html', external: false };
+	const useCases = { text: 'Use cases', url: './index.html#useCases', external: false };
 	const discover = {
 		title: 'Discover',
 		options: [
@@ -56,7 +55,7 @@
 				<span class="material-icons text-2xl {menuIconColor}"> menu </span>
 			</button>
 			<div class="h-10 lg:h-12 my-auto">
-				<a href="/" on:click={closeSideBar}>
+				<a href="./index.html" on:click={closeSideBar}>
 					<img
 						loading="lazy"
 						class="object-contain h-full"
