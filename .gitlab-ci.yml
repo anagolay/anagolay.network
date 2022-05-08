@@ -11,10 +11,11 @@ cache:
     - ANAGOLAY_WEBSITE_CID
 
 # include this where you need it. like in before_script
-.install-ipfs-and-setup: &install-ipfs-and-setup |-
-  echo "Downloading anagolay ipfs CLI which works with the ipfsAuthProxy."
-  curl https://ipfs.anagolay.network/ipfs/bafybeiebighwouxt3vkttuhfcwb3dgr7vzxpujlqfzvngt7omnrizjajfy > /usr/local/bin/ipfsCli
-  chmod +x /usr/local/bin/ipfsCli
+.install-ipfs-and-setup: &install-ipfs-and-setup
+  - |
+    echo "Downloading anagolay ipfs CLI which works with the ipfsAuthProxy."
+    curl https://ipfs.anagolay.network/ipfs/bafybeiebighwouxt3vkttuhfcwb3dgr7vzxpujlqfzvngt7omnrizjajfy > /usr/local/bin/ipfsCli
+    chmod +x /usr/local/bin/ipfsCli
 
 # https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html#yaml-anchors-for-scripts
 .install-pnpm: &install-pnpm
