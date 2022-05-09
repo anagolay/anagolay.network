@@ -1,6 +1,6 @@
 export const home = { text: 'Home', url: '/', external: false, color: '', inNavBar: false };
 export const technology = { text: 'Technology', url: '/technology/', external: false, color: '' };
-export const useCases = { text: 'Use cases', url: 'index.html#useCases', external: false, color: '' };
+export const useCases = { text: 'Use cases', url: '/index.html#useCases', external: false, color: '' };
 export const discover = {
 	title: 'Discover',
 	options: [
