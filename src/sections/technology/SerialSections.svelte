@@ -1,8 +1,8 @@
 <script lang="ts">
-	export let serialSection: any;
+	export let technologySectionItems: any;
 </script>
 
-{#each serialSection as item}
+{#each technologySectionItems as item}
 	<div class="mb-20 md:mb-32">
 		<div class="relative md:w-1/2 mb-12 md:mb-12">
 			<h3 class="text-2xl md:text-4xl md:-mr-20 lg:text-4xl mb-6 md:mb-8 text-green">{item.title}</h3>

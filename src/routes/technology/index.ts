@@ -1,6 +1,6 @@
 import type { RequestHandler, RequestHandlerOutput } from '@sveltejs/kit';
 
-export interface SerialSectonItem {
+export interface technologySectionItem {
 	title: string;
 	subtitle: string;
 	contentLines: string[];
@@ -15,8 +15,18 @@ export interface SerialSectonItem {
 	};
 }
 
+interface architectureItem {
+	title: string;
+	subtitle?: string;
+	description: string;
+	img: {
+		source: string;
+		alt: string;
+	};
+}
+
 export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
-	const sectionData: SerialSectonItem[] = [
+	const technologySectionItems: technologySectionItem[] = [
 		{
 			title: 'Statements & Claims',
 			subtitle:
@@ -79,9 +89,38 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 			},
 		},
 	];
+
+	const architectureItems: architectureItem[] = [
+		{
+			img: { source: '/hiw_arch_sdk.svg', alt: 'sdk icon' },
+			title: 'SDK Layer',
+			description: 'Typescript - Rust - Operations - Workflows - WASM - Workflow execution',
+		},
+		{
+			img: { source: '/hiw_arch_storage.svg', alt: 'sdk icon' },
+			title: 'Storage Layer',
+			description: 'Operations - Build Artifacts - Workflows - WASM - Source code',
+		},
+		{
+			img: { source: '/hiw_arch_blockchain.svg', alt: 'sdk icon' },
+			title: 'Blockchain Layer',
+			subtitle: 'Substrate with our pallets',
+			description: 'Operations - Workflows - PoE - Statements - Artifacts',
+		},
+	];
+
+	const webLayerIcons: { title: string; source: string }[] = [
+		{ title: 'Typescript', source: '/hiw_typescript.svg' },
+		{ title: 'Svelte', source: '/hiw_svelte.svg' },
+		{ title: 'Polka', source: '/hiw_polka.svg' },
+		{ title: 'WASM', source: '/hiw_wasm.svg' },
+		{ title: 'Tailwind css', source: '/hiw_tailwind.svg' },
+	];
+
 	const body = {
-		serialSection: sectionData,
-		architectureSection: [],
+		technologySectionItems,
+		architectureItems,
+		webLayerIcons,
 	} as any;
 
 	return {

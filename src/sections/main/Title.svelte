@@ -26,7 +26,7 @@
 		</div>
 		<div class="hidden md:block w-2/5 h-fit">
 			<div class="-mx-32 2xl:-mx-40 -mt-40 2xl:-mt-48 -translate-x-30 xl:-translate-x-10 -mb-20">
-				<img class="w-full object-cover" src="main_illustration.png" alt="light ilustration" />
+				<img class="w-full object-cover" src="/main_illustration.png" alt="light ilustration" />
 			</div>
 		</div>
 	</div>

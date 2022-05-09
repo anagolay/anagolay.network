@@ -30,7 +30,7 @@
 		},
 		{
 			feature: 'All stored data structures are content addressable',
-			img: { src: 'decentralized.svg', alt: 'decentralised network' },
+			img: { src: '/decentralized.svg', alt: 'decentralised network' },
 		},
 	];
 </script>

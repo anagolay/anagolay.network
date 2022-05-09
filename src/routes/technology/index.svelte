@@ -4,18 +4,20 @@
 	import Architecture from '$src/sections/technology/Architecture.svelte';
 	import SvelteSeo from 'svelte-seo';
 
-	export let serialSection: any;
+	export let technologySectionItems: any;
+	export let webLayerIcons: any;
+	export let architectureItems: any;
 </script>
 
 <SvelteSeo
-	title="How it works? - Anagolay Network"
-	description="P2P Network to verify authorship, protect and manage copyright & ownership. Statements of Rights (Copyright, Licenses, and Ownership), Restrictions,  and Proofs created with Anagolay Workflows empower users to store, claim, sell, and rent creative works as digital assets with the correct transfer of Rights and usage of Licenses."
-	keywords="anagolay, blockchain, workflow, transparent process, substrate, copyright statements, ownership statements, web3 rights management"
+	title="Anagolay Network - How does it work?"
+	description="P2P Network to verify authorship & ownership, store & deliver proofs."
+	keywords="anagolay, blockchain, workflow, transparent, process, substrate, web3"
 	twitter={{
 		site: '@AnagolayNet',
-		title: 'How it works? - Anagolay Network',
-		description:
-			'P2P Network to verify authorship, protect and manage copyright & ownership. Statements of Rights (Copyright, Licenses, and Ownership), Restrictions,  and Proofs created with Anagolay Workflows empower users to store, claim, sell, and rent creative works as digital assets with the correct transfer of Rights and usage of Licenses',
+		title: 'Anagolay Network - How does it work?',
+		description: 'P2P Network to verify authorship & ownership, store & deliver proofs.',
+		//image must be uploaded yet
 		image:
 			'https://ipfs.anagolay.network/ipfs/QmX18cJBJ5vFKUYaxQsikFMBYrWtyqnznq9eY2ShdV7evZ?filename=twitter%20card.png',
 		imageAlt: 'Blue background with Anagolay brand logo',
@@ -24,6 +26,6 @@
 
 <div class="w-80 md:w-fit max-w-full mx-auto">
 	<TitleSection />
-	<SerialSections {serialSection} />
-	<Architecture />
+	<SerialSections {technologySectionItems} />
+	<Architecture {webLayerIcons} {architectureItems} />
 </div>

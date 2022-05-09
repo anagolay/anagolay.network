@@ -1,5 +1,13 @@
 <script lang="ts">
-	let options: { title: string; options?: { text: string; link: string }[] }[] = [
+	interface menuOption {
+		title: string;
+		options?: {
+			text: string;
+			link: string;
+		}[];
+	}
+
+	let menuOptions: menuOption[] = [
 		{
 			title: 'Discover',
 			options: [
@@ -21,8 +29,9 @@
 			],
 		},
 	];
+
 	const media = [
-		{ name: 'discord', link: 'https://discordapp.com/invite/WHe4EuY', icon: 'discord' },
+		{ name: 'discord', link: 'https://discordapp.com/invite/WHe4EuY', img: '/discord.svg' },
 		{ name: 'twitter', link: 'https://twitter.com/AnagolayNet', img: '/twitter.svg' },
 		{
 			name: 'matrix',
@@ -43,7 +52,7 @@
 			/>
 		</div>
 		<div class="flex w-full ml-2 md:w-fit justify-evenly text-left">
-			{#each options as item}
+			{#each menuOptions as item}
 				<div class="flex mx-3 lg:mx-6 md:py-0 flex-col">
 					<div class="mb-4 md:mb-0 min-w-fit">{item.title}</div>
 					{#each item.options as option}
@@ -72,11 +81,7 @@
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						{#if item.icon}
-							<span class="material-icons">{item.icon}</span>
-						{:else if item.img}
-							<img class="max-h-5 max-w-[20px]" src={item.img} alt="{item.name} logo" />
-						{/if}
+						<img class="max-h-5 max-w-[20px]" src={item.img} alt="{item.name} logo" />
 					</a>
 				{/each}
 			</div>

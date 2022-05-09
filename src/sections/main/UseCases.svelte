@@ -1,29 +1,26 @@
 <script lang="ts">
 	import SectionButton from '$src/components/SectionButton.svelte';
 
-	let cases: { id: number; src: string; alt: string; title: string; link: string; text: string }[] = [
+	let cases: { id: number; src: string; alt: string; title: string; text: string }[] = [
 		{
 			id: 0,
-			src: 'case_code.png',
+			src: '/case_code.png',
 			alt: 'source code',
 			title: 'Source code availability & trustworthiness',
-			link: '/',
 			text: 'Highly available storage for source code built with the new ContentVersioning approach gives assurance and trustworthiness by design to developers and users alike.',
 		},
 		{
 			id: 1,
-			src: 'case_ip.svg',
+			src: '/case_ip.svg',
 			alt: 'ip management',
 			title: 'IP management in the Web3',
-			link: '/',
 			text: 'While creating & storing records of Rights, Restrictions, and Proofs Anagolay allows asset creators to establish how digital assets are used and owned.',
 		},
 		{
 			id: 2,
-			src: 'case_p2p.png',
+			src: '/case_p2p.png',
 			alt: 'digital art',
 			title: 'Digital Art P2P Licensing',
-			link: '/',
 			text: 'A meaningful and straightforward way to monetize & buy digital art. From verified creators, with customized licensing options. Not just ‘as a collectible’.',
 		},
 	];
