@@ -7,19 +7,17 @@ import { resolve } from 'node:path';
 const config = {
 	preprocess: preprocess(),
 	kit: {
-		adapter: adapter({
-			precompress: true,
-			// fallback: 'index.html',
-		}),
-		// adapter: adapterIpfs({
-		// 	removeBuiltInServiceWorkerRegistration: true,
-		// 	injectPagesInServiceWorker: true,
-		// 	// injectDebugConsole: true,
+		// adapter: adapter({
 		// 	precompress: true,
-		// 	fallback: 'index.html',
+		// 	// fallback: 'index.html',
 		// }),
+		adapter: adapterIpfs({
+			removeBuiltInServiceWorkerRegistration: true,
+			injectPagesInServiceWorker: true,
+			// injectDebugConsole: true,
+			precompress: true,
+		}),
 		prerender: {
-			// default: false,
 			default: true,
 			concurrency: 4,
 		},
