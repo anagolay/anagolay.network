@@ -1,4 +1,4 @@
-<div class="flex flex-col md:block pt-60 md:pt-40 pb-48 md:pb-0">
+<div class="flex flex-col md:block pt-60 md:pt-40 pb-28 md:pb-0">
 	<div
 		class="-mt-20 w-12 h-12 bg-sphere from-green to-blue rounded-full -rotate-[25deg] opacity-80 blur-sm"
 	/>

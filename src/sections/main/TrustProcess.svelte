@@ -5,21 +5,21 @@
 			alt: 'security',
 			text: 'The power of Anagolay is in creating application-agnostic processes (or Workflows) that everyone can trust.',
 			linkText: 'Anagolay workflows',
-			link: '/',
+			link: '/technology#workflow',
 		},
 		{
 			src: '/trust_world.svg',
 			alt: 'world validation',
 			text: 'Anagolay Workflow and its building blocks — Operations can be run anywhere in any environment (even on Mars!) and always produce the same results (Proofs) for the same (or similar) sets of data.',
 			linkText: 'Anagolay proofs',
-			link: '/',
+			link: '/technology#proofs',
 		},
 		{
 			src: '/trust_print.svg',
 			alt: 'proofs',
 			text: 'Anagolay Proofs, combined with cryptographic signatures, verify the rightfulness of a claim and generate Verifiable Statements.',
 			linkText: 'Anagolay statements',
-			link: '/',
+			link: '/technology#statements',
 		},
 	];
 </script>
@@ -40,9 +40,15 @@
 				</div>
 
 				<div
-					class="flex flex-col text-center md:text-justify justify-center items-center  md:w-2/3 md:px-4 lg:items-start text-sm md:text-base xl:text-xl"
+					class="flex flex-col text-center md:text-justify justify-center md:justify-center items-center md:items-start md:w-2/3 md:px-4 lg:items-start text-sm md:text-base xl:text-xl"
 				>
 					<p>{item.text}</p>
+					<div class="pt-2">
+						<a class="flex text-green" href={item.link}>
+							<p class="hover:underline">{item.linkText}</p>
+							<span class="material-icons ml-2 no-underline text-sm md:text-base xl:text-xl">east</span>
+						</a>
+					</div>
 				</div>
 			</div>
 		{/each}

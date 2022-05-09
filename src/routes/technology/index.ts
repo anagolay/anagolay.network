@@ -1,6 +1,7 @@
 import type { RequestHandler, RequestHandlerOutput } from '@sveltejs/kit';
 
 export interface technologySectionItem {
+	id?: string;
 	title: string;
 	subtitle: string;
 	contentLines: string[];
@@ -8,10 +9,6 @@ export interface technologySectionItem {
 		class: string;
 		source: string;
 		alt: string;
-	};
-	finalLink?: {
-		url: string;
-		text: string;
 	};
 }
 
@@ -28,6 +25,7 @@ interface architectureItem {
 export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 	const technologySectionItems: technologySectionItem[] = [
 		{
+			id: 'statements',
 			title: 'Statements & Claims',
 			subtitle:
 				'Statements guarantee the rightfulness of a claim: Copyright, Ownership or any other data that can be presented as a semantic triple',
@@ -41,12 +39,9 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				source: '/hiw_statements.png',
 				alt: 'statements',
 			},
-			finalLink: {
-				url: '/',
-				text: 'See technical info',
-			},
 		},
 		{
+			id: 'proofs',
 			title: 'Proofs',
 			subtitle: 'The proof is sufficient evidence or a sufficient argument for the truth of a proposition.',
 			contentLines: [
@@ -61,6 +56,7 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 			},
 		},
 		{
+			id: 'workflow',
 			title: 'Workflow & Operations',
 			subtitle:
 				'Operation is a basic building block of a transparent and verifiable proof generation process. Stored Operations must be permanent.',

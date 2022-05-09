@@ -10,7 +10,6 @@ export const discover = {
 			external: true,
 		},
 		{ text: 'Blog', url: 'https://blog.anagolay.network/', external: true },
-		// { text: 'Team', url: '/#team', external: false },
 		{
 			text: 'Careers',
 			url: 'https://www.notion.so/Kelp-Anagolay-Careers-c27cebdedf29461abda591bc23bad3f6',

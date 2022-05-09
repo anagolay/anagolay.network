@@ -11,7 +11,10 @@
 		{
 			title: 'Discover',
 			options: [
-				{ text: 'About', link: '/' },
+				{
+					text: 'About',
+					link: '/https://www.notion.so/kelp/Kelp-PitchDeck-b421d596ffca4d188d2144fe977e6c0d',
+				},
 				{ text: 'Blog', link: 'https://blog.anagolay.network' },
 				{ text: 'FAQ', link: 'https://www.notion.so/Anagolay-FAQ-530c3d1de6784e7eb0c842c7b9bedfa9' },
 				{
