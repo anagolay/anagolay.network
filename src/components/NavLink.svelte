@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
-	import { base } from '$app/paths';
 
 	export let option: { text: string; url: string; external: boolean };
 	export let onClick: () => void = undefined;
+
 	let extraClass = '';
 	export { extraClass as class };
 

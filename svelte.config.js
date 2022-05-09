@@ -1,5 +1,5 @@
 import adapter from '@sveltejs/adapter-static';
-import adapterIpfs from 'sveltejs-adapter-ipfs';
+// import adapterIpfs from 'sveltejs-adapter-ipfs';
 import preprocess from 'svelte-preprocess';
 import { resolve } from 'node:path';
 
@@ -7,16 +7,17 @@ import { resolve } from 'node:path';
 const config = {
 	preprocess: preprocess(),
 	kit: {
-		// adapter: adapter({
-		// 	precompress: true,
-		// 	// fallback: 'index.html',
-		// }),
-		adapter: adapterIpfs({
-			removeBuiltInServiceWorkerRegistration: true,
-			injectPagesInServiceWorker: true,
-			// injectDebugConsole: true,
+		adapter: adapter({
 			precompress: true,
+			// fallback: 'index.html',
 		}),
+		// adapter: adapterIpfs({
+		// 	removeBuiltInServiceWorkerRegistration: true,
+		// 	injectPagesInServiceWorker: true,
+		// 	// injectDebugConsole: true,
+		// 	precompress: true,
+		// 	fallback: 'index.html',
+		// }),
 		prerender: {
 			default: true,
 			concurrency: 4,
@@ -30,9 +31,6 @@ const config = {
 			},
 		},
 		trailingSlash: 'always',
-		serviceWorker: {
-			register: false,
-		},
 	},
 };
 
