@@ -11,7 +11,8 @@
 			],
 			image: {
 				class: '-ml-32 -mr-8 -mb-12 -mt-16',
-				source: 'hiw_statements.png',
+				// class: '-ml-12 md:-ml-8 -mt-40 -mb-4 -mr-40  md:-mt-32',
+				source: '/hiw_statements.png',
 				alt: 'statements',
 			},
 			finalLink: {
@@ -29,7 +30,7 @@
 			],
 			image: {
 				class: '-ml-12 md:-ml-8 -mt-40 -mb-4 -mr-40  md:-mt-32',
-				source: 'hiw_proofs.png',
+				source: '/hiw_proofs.png',
 				alt: 'proofs',
 			},
 		},
@@ -43,7 +44,7 @@
 			],
 			image: {
 				class: '-ml-36 -mr-16 -mb-8 -mt-32',
-				source: 'hiw_workflow.png',
+				source: '/hiw_workflow.png',
 				alt: 'workflow',
 			},
 		},
@@ -56,8 +57,10 @@
 				'The challenge is to have Workflows & Operations Artifacts stored on IPFS permanently. ',
 			],
 			image: {
-				class: '-mx-32 -mt-36 -mb-8 md:-mr-48 md:-mt-60 md:-mb-24',
-				source: 'hiw_storage.png',
+				class: '-mx-32 -mt-36 -mb-8 md:-mr-48 md:-mt-60',
+
+				// class: '-mx-28 -mt-24 -mb-16 md:-m-28 md:-mt-36 -translate-y-[10%] md:-translate-y-0',
+				source: '/hiw_storage.png',
 				alt: 'storage',
 			},
 		},

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { discover, home, technology, useCases, wiki } from '$src/routes';
 	import NavDropdown from './NavDropdown.svelte';
 	import NavLink from './NavLink.svelte';
 
@@ -6,26 +7,6 @@
 	let menuIconColor = 'text-white';
 	let menuTransition = '';
 	const linkClass = 'px-2 py-2 rounded-sm md:w-fit hover:text-green';
-
-	const technology = { text: 'Technology', url: './technology.html', external: false };
-	const useCases = { text: 'Use cases', url: './index.html#useCases', external: false };
-	const discover = {
-		title: 'Discover',
-		options: [
-			{
-				text: 'FAQ',
-				url: 'https://www.notion.so/Anagolay-FAQ-530c3d1de6784e7eb0c842c7b9bedfa9',
-				external: true,
-			},
-			{ text: 'Blog', url: 'https://blog.anagolay.network/', external: true },
-			{
-				text: 'Careers',
-				url: 'https://www.notion.so/Kelp-Anagolay-Careers-c27cebdedf29461abda591bc23bad3f6',
-				external: true,
-			},
-		],
-	};
-	const wiki = { text: 'Wiki', url: 'https://anagolay.dev/', external: true };
 
 	//toggleSideBar will open sidebar if it is closed or close it if opened.
 	function toggleSideBar() {
@@ -55,13 +36,13 @@
 				<span class="material-icons text-2xl {menuIconColor}"> menu </span>
 			</button>
 			<div class="h-10 lg:h-12 my-auto">
-				<a href="./index.html" on:click={closeSideBar}>
+				<a href={home.url} on:click={closeSideBar}>
 					<img
 						loading="lazy"
 						class="object-contain h-full"
 						width="193"
 						height="48"
-						src="horizontal_white1.svg"
+						src="/horizontal_white1.svg"
 						alt="Anagolay logo"
 					/>
 				</a>

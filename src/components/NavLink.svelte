@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
 
 	export let option: { text: string; url: string; external: boolean };
 	export let onClick: () => void = undefined;
@@ -24,9 +25,12 @@
 </script>
 
 <a
+	sveltekit:prefetch
 	class="w-full {color} min-w-fit p-2 hover:text-green {extraClass}"
 	href={option.url}
 	{target}
 	{rel}
-	on:click={onClick}>{option.text}</a
+	on:click={onClick}
 >
+	{option.text}
+</a>

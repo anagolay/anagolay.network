@@ -2,25 +2,25 @@
 	const containerClass =
 		'flex shadow-button p-3 md:py-10 md:px-8 xl:px-16 rounded-3xl h-20 md:h-[unset] bg-blue mb-4 md:mb-8';
 	const webLayers = [
-		{ title: 'Typescript', source: 'hiw_typescript.svg' },
-		{ title: 'Svelte', source: 'hiw_svelte.svg' },
-		{ title: 'Polka', source: 'hiw_polka.svg' },
-		{ title: 'WASM', source: 'hiw_wasm.svg' },
-		{ title: 'Tailwind css', source: 'hiw_tailwind.svg' },
+		{ title: 'Typescript', source: '/hiw_typescript.svg' },
+		{ title: 'Svelte', source: '/hiw_svelte.svg' },
+		{ title: 'Polka', source: '/hiw_polka.svg' },
+		{ title: 'WASM', source: '/hiw_wasm.svg' },
+		{ title: 'Tailwind css', source: '/hiw_tailwind.svg' },
 	];
 	const layers = [
 		{
-			img: { source: 'hiw_arch_sdk.svg', alt: 'sdk icon' },
+			img: { source: '/hiw_arch_sdk.svg', alt: 'sdk icon' },
 			title: 'SDK Layer',
 			description: 'Typescript - Rust - Operations - Workflows - WASM - Workflow execution',
 		},
 		{
-			img: { source: 'hiw_arch_storage.svg', alt: 'sdk icon' },
+			img: { source: '/hiw_arch_storage.svg', alt: 'sdk icon' },
 			title: 'Storage Layer',
 			description: 'Operations - Build Artifacts - Workflows - WASM - Source code',
 		},
 		{
-			img: { source: 'hiw_arch_blockchain.svg', alt: 'sdk icon' },
+			img: { source: '/hiw_arch_blockchain.svg', alt: 'sdk icon' },
 			title: 'Blockchain Layer',
 			subtitle: 'Substrate with our pallets',
 			description: 'Operations - Workflows - PoE - Statements - Artifacts',

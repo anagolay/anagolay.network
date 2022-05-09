@@ -23,11 +23,11 @@
 	];
 	const media = [
 		{ name: 'discord', link: 'https://discordapp.com/invite/WHe4EuY', icon: 'discord' },
-		{ name: 'twitter', link: 'https://twitter.com/AnagolayNet', img: 'twitter.svg' },
+		{ name: 'twitter', link: 'https://twitter.com/AnagolayNet', img: '/twitter.svg' },
 		{
 			name: 'matrix',
 			link: 'https://matrix.to/#/!FJvAuDoWRoMVuOFYwL:matrix.org?via=matrix.org',
-			img: 'matrix.svg',
+			img: '/matrix.svg',
 		},
 	];
 </script>
@@ -38,7 +38,7 @@
 		<div class="w-36 md:w-[unset] md:my-0 md:-mr-8">
 			<img
 				class="md:object-contain md:-translate-y-[20%] md:-translate-x-[20%]"
-				src="green_logo.svg"
+				src="/green_logo.svg"
 				alt="Anagolay logo"
 			/>
 		</div>
