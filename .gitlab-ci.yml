@@ -67,6 +67,5 @@ pages:
   artifacts:
     paths:
       - public
-  when: manual
-  # only:
-  #   - main
+  only:
+    - main
