@@ -22,7 +22,6 @@ const config = {
 			default: true,
 			concurrency: 4,
 		},
-		trailingSlash: 'never',
 		vite: {
 			resolve: {
 				alias: {
