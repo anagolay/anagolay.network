@@ -1,6 +1,6 @@
 {
-	"name": "website",
-	"version": "0.0.1",
+	"name": "@anagolay/website",
+	"version": "0.3.0",
 	"type": "module",
 	"scripts": {
 		"dev": "svelte-kit -p 7776 dev",

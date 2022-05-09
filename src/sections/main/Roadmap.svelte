@@ -8,7 +8,14 @@
 		pending = 'pending',
 	}
 
-	interface Step {
+	interface Facts {
+		fact: string;
+		description?: string;
+		status: string;
+		cardStyling?: string;
+	}
+
+	interface RoadmapItem {
 		title: string;
 		year: number;
 		status?: string;
@@ -16,9 +23,10 @@
 		pointOpacity?: string;
 		titleStyling?: string;
 		yearOpacity?: string;
-		facts: { fact: string; description?: string; status: string; cardStyling?: string }[];
+		facts: Facts[];
 	}
-	let events: Step[] = [
+
+	let roadMapItems: RoadmapItem[] = [
 		{
 			title: 'Q1',
 			year: 2021,
@@ -161,12 +169,13 @@
 			],
 		},
 	];
-	// Steps are events that have global status, blur and opacity set for the timeline.
-	const steps = events.map((event: Step): Step => {
+
+	// Steps are roadMapItems that have global status, blur and opacity set for the timeline.
+	const items = roadMapItems.map((item: RoadmapItem): RoadmapItem => {
 		let state = status.done;
 		let pointBlur = '';
 		let pointOpacity = '';
-		let factStatus = event.facts.map((f) => {
+		let factStatus = item.facts.map((f) => {
 			let cardShadow =
 				f.status === status.doing ? 'shadow-card shadow-green border border-green' : 'shadow-button';
 			let cardOpacity = f.status === status.pending ? 'opacity-80' : 'bg-opacity-80';
@@ -188,7 +197,7 @@
 			titleOpacity = 'opacity-30';
 		}
 		return {
-			...event,
+			...item,
 			status: state,
 			pointBlur,
 			pointOpacity,
@@ -235,15 +244,15 @@
 			<div class="w-fit">
 				<div>
 					<div class={gridClass} bind:clientWidth={roadWidth}>
-						{#each steps as event}
+						{#each items as roadMapItem}
 							<div class="mx-auto">
-								<div class="text-7xl {event.titleStyling} blur-[2px] text-darkblue text-shadow-around">
-									{event.title}
+								<div class="text-7xl {roadMapItem.titleStyling} blur-[2px] text-darkblue text-shadow-around">
+									{roadMapItem.title}
 								</div>
 								<div
-									class="flex justify-end blur-0 text-xl pr-[1rem] -mt-[4rem] mb-[4rem] w-1/2 {event.yearOpacity}"
+									class="flex justify-end blur-0 text-xl pr-[1rem] -mt-[4rem] mb-[4rem] w-1/2 {roadMapItem.yearOpacity}"
 								>
-									{event.year}
+									{roadMapItem.year}
 								</div>
 							</div>
 						{/each}
@@ -252,12 +261,12 @@
 				<div class="w-fit">
 					<div class="w-full h-[.2rem] mt-2 bg-gradient-to-r from-blue to-green " />
 					<div class={gridClass}>
-						{#each steps as event}
+						{#each items as roadMapItem}
 							<div class="flex flex-col items-center mx-auto -mt-[1.1rem]">
 								<div
-									class="mb-4 relative w-8 h-8 bg-sphere from-green to-blue rounded-full -rotate-[25deg] {event.pointBlur} {event.pointOpacity}"
+									class="mb-4 relative w-8 h-8 bg-sphere from-green to-blue rounded-full -rotate-[25deg] {roadMapItem.pointBlur} {roadMapItem.pointOpacity}"
 								/>
-								{#each event.facts as fact}
+								{#each roadMapItem.facts as fact}
 									<div
 										class="w-56 p-7 mb-4  h-fit bg-blue italic {fact.cardStyling} mb-2 rounded-xl mx-auto text-anagolayWhite font-light"
 									>

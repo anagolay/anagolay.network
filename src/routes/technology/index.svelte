@@ -3,15 +3,17 @@
 	import SerialSections from '$src/sections/technology/SerialSections.svelte';
 	import Architecture from '$src/sections/technology/Architecture.svelte';
 	import SvelteSeo from 'svelte-seo';
+
+	export let serialSection: any;
 </script>
 
 <SvelteSeo
-	title="Anagolay Network - How it works"
+	title="How it works? - Anagolay Network"
 	description="P2P Network to verify authorship, protect and manage copyright & ownership. Statements of Rights (Copyright, Licenses, and Ownership), Restrictions,  and Proofs created with Anagolay Workflows empower users to store, claim, sell, and rent creative works as digital assets with the correct transfer of Rights and usage of Licenses."
-	keywords="anagolay, blockchain, workflow, transparent process, substrate, copyright statements, ownership statements, web3 rights management "
+	keywords="anagolay, blockchain, workflow, transparent process, substrate, copyright statements, ownership statements, web3 rights management"
 	twitter={{
 		site: '@AnagolayNet',
-		title: 'Anagolay Network - How it works',
+		title: 'How it works? - Anagolay Network',
 		description:
 			'P2P Network to verify authorship, protect and manage copyright & ownership. Statements of Rights (Copyright, Licenses, and Ownership), Restrictions,  and Proofs created with Anagolay Workflows empower users to store, claim, sell, and rent creative works as digital assets with the correct transfer of Rights and usage of Licenses',
 		image:
@@ -22,6 +24,6 @@
 
 <div class="w-80 md:w-fit max-w-full mx-auto">
 	<TitleSection />
-	<SerialSections />
+	<SerialSections {serialSection} />
 	<Architecture />
 </div>
