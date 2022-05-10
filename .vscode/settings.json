@@ -15,5 +15,9 @@
 		"*.svelte": "svelte",
 		"package.json": "json"
 	},
-	"eslint.validate": ["javascript", "javascriptreact", "svelte"]
+	"eslint.validate": ["javascript", "javascriptreact", "svelte"],
+	"[yml,yaml]": {
+		"editor.insertSpaces": true,
+		"editor.useTabStops": false
+	}
 }

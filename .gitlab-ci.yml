@@ -2,6 +2,7 @@ image: node:17-bullseye
 
 stages:
   - check
+  - test
   - deploy
 
 cache:
@@ -33,6 +34,15 @@ is-it-pretty:
   script:
     - pnpm install
     - pnpm lint
+
+build-code:
+  stage: test
+  needs: ['is-it-pretty']
+  before_script:
+    - *install-pnpm
+  script:
+    - pnpm install
+    - pnpm build
 
 upload-to-ipfs:
   needs: ['is-it-pretty']
