@@ -26,6 +26,6 @@
 	<div class="ml-10 mt-10 w-4 h-4 bg-sphere from-green to-blue rounded-full -rotate-[25deg] opacity-90" />
 
 	<div class="hidden lg:block -mt-[24rem] lg:-mt-[28rem] xl:-mt-[30rem] 2xl:-mt-[33rem] -mx-8">
-		<img width="1280" height="1203" src="/hiw_main.png" alt="workflow process" />
+		<img width="1280" height="1203" src="/workflow_main.png" alt="workflow process" />
 	</div>
 </div>

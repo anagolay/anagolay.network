@@ -1,7 +1,14 @@
-export const home = { text: 'Home', url: '/', external: false, color: '', inNavBar: false };
-export const technology = { text: 'How it works', url: '/how-it-works/', external: false, color: '' };
-export const useCases = { text: 'Use cases', url: '/index.html#useCases', external: false, color: '' };
-export const discover = {
+import type { MenuOption, MediaIcon, LinkData } from '$src/types';
+
+export const home: LinkData = {
+	text: 'Home',
+	url: '/',
+	external: false,
+	//  inNavBar: false
+};
+export const technology: LinkData = { text: 'How it works', url: '/how-it-works/', external: false };
+export const useCases: LinkData = { text: 'Use cases', url: '/index.html#useCases', external: false };
+export const discover: MenuOption = {
 	title: 'Discover',
 	options: [
 		{
@@ -19,8 +26,7 @@ export const discover = {
 };
 export const wiki = { text: 'Wiki', url: 'https://anagolay.dev/', external: true, color: '' };
 
-/***** Footer Routes *****/
-import type { MenuOption, MediaIcon } from '$src/types';
+// The following are routes for the footer
 export const menuOptions: MenuOption[] = [
 	{
 		title: 'Discover',

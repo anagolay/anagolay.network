@@ -1,6 +1,6 @@
 <script lang="ts">
-	import type { HowItWorksItem } from '$src/types';
-	export let howItWorksItems: HowItWorksItem[];
+	import type { TrustProcessItem } from '$src/types';
+	export let TrustProcessItems: TrustProcessItem[];
 </script>
 
 <div class="flex max-w-full lg:w-11/12 flex-col mx-auto xl:mx-auto">
@@ -12,7 +12,7 @@
 		</p>
 	</div>
 	<div class="w-80 max-w-full mx-auto md:w-full">
-		{#each howItWorksItems as item}
+		{#each TrustProcessItems as item}
 			<div class="w-full mx-auto md:flex mb-16 lg:mb-16 xl:w-5/6">
 				<div class="justify-center md:w-1/3 mx-auto mb-4 md:mb-0">
 					<img class="max-w-full max-h-40 lg:max-h-48 mx-auto" src={item.src} alt={item.alt} />

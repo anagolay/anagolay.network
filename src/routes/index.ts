@@ -1,6 +1,6 @@
 import type { RequestHandler, RequestHandlerOutput } from '@sveltejs/kit';
 
-import type { FeatureData, HowItWorksItem, UseCase, TeamMember, RoadmapItem } from '$src/types';
+import type { FeatureData, TrustProcessItem, UseCase, TeamMember, RoadmapItem } from '$src/types';
 
 export enum status {
 	done = 'done',
@@ -42,7 +42,7 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 		},
 	];
 
-	const howItWorksItems: HowItWorksItem[] = [
+	const TrustProcessItems: TrustProcessItem[] = [
 		{
 			src: '/trust_security.svg',
 			alt: 'Secure process',
@@ -284,7 +284,7 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 
 	const body = {
 		beastFeatures,
-		howItWorksItems,
+		TrustProcessItems,
 		useCases,
 		teamMembers,
 		roadMapItems,

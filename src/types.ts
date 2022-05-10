@@ -1,3 +1,19 @@
+/*
+ *
+ * Interfaces used in the website.
+ *
+ * This file is created with the purpose of importing them in any case that they are required.
+ * For example:
+ * - when data is created (as done index.ts files).
+ * - when components that require that data are created.
+ * - when data is imported and assigned to components (as done in index.svelte files).
+ *
+ * ImageData and LinkData are reused in other interfaces to ensure that, with a few exceptions, they always have the required attributes.
+ *
+ * These interfaces can and surely will be improved.
+ *
+ */
+
 interface ImageData {
 	class?: string;
 	source: string;
@@ -10,11 +26,7 @@ export interface LinkData {
 	external?: boolean;
 }
 
-export interface NavDropdownLink {
-	title: string;
-	options: LinkData[];
-}
-
+// interfaces added for navBar and Footer
 export interface MenuOption {
 	title: string;
 	options: LinkData[];
@@ -26,6 +38,7 @@ export interface MediaIcon {
 	image: string;
 }
 
+// interface added for 'Features' section data in main page
 export interface FeatureData {
 	feature: string;
 	icon?: string;
@@ -35,7 +48,8 @@ export interface FeatureData {
 	};
 }
 
-export interface HowItWorksItem {
+// interface added for 'Trust the Process' section data in main page
+export interface TrustProcessItem {
 	src: string;
 	alt: string;
 	text: string;
@@ -43,6 +57,7 @@ export interface HowItWorksItem {
 	link: string;
 }
 
+// interface added for 'Use Cases' section data in main page
 export interface UseCase {
 	src: string;
 	alt: string;
@@ -50,6 +65,7 @@ export interface UseCase {
 	text: string;
 }
 
+// interface added for 'Team' section data in main page
 export interface TeamMember {
 	name: string;
 	title: string;
@@ -60,6 +76,7 @@ export interface TeamMember {
 	opacity: string;
 }
 
+// interfaces added for 'Roadmap' section data in main page
 interface Phase {
 	goal: string;
 	description?: string;
@@ -78,6 +95,7 @@ export interface RoadmapItem {
 	instances: Phase[];
 }
 
+// interface added for technology description sections data in 'How-it-works' page
 export interface TechnologyItem {
 	id?: string;
 	title: string;
@@ -86,14 +104,15 @@ export interface TechnologyItem {
 	image: ImageData;
 }
 
+// interfaces added for Architecture section data in 'How-it-works' page
+export interface WebLayerIcon {
+	title: string;
+	source: string;
+}
+
 export interface ArchitectureItem {
 	title: string;
 	subtitle?: string;
 	description: string;
 	image: ImageData;
-}
-
-export interface WebLayerIcon {
-	title: string;
-	source: string;
 }

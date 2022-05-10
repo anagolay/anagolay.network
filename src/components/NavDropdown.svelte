@@ -1,10 +1,10 @@
 <script lang="ts">
 	import NavLink from './NavLink.svelte';
-	import type { NavDropdownLink } from '$src/types';
+	import type { MenuOption } from '$src/types';
 
 	let extraclass = '';
 	export { extraclass as class };
-	export let data: NavDropdownLink;
+	export let data: MenuOption;
 	export let id = '';
 	export let linkClass = '';
 </script>

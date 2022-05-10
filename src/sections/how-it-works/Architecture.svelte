@@ -8,7 +8,7 @@
 		'flex shadow-button p-3 md:py-10 md:px-8 xl:px-16 rounded-3xl h-20 md:h-[unset] bg-blue mb-4 md:mb-8';
 </script>
 
-<div class="pt-20 mb-20">
+<div class="mt-32 mb-40">
 	<div class="relative text-center mb-8 md:mb-16">
 		<h3 class="text-2xl md:text-4xl md:mb-8">Architecture</h3>
 	</div>

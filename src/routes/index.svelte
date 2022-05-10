@@ -7,11 +7,11 @@
 	import Roadmap from '$src/sections/main/Roadmap.svelte';
 	import SvelteSeo from 'svelte-seo';
 
-	import type { FeatureData, HowItWorksItem, UseCase, TeamMember, RoadmapItem } from '$src/types';
+	import type { FeatureData, TrustProcessItem, UseCase, TeamMember, RoadmapItem } from '$src/types';
 
 	export let beastFeatures: FeatureData[];
 	export let useCases: UseCase[];
-	export let howItWorksItems: HowItWorksItem[];
+	export let TrustProcessItems: TrustProcessItem[];
 	export let teamMembers: TeamMember[];
 	export let roadMapItems: RoadmapItem[];
 </script>
@@ -34,7 +34,7 @@
 <div>
 	<TitleSection />
 	<FeaturesSection {beastFeatures} />
-	<TrustProcess {howItWorksItems} />
+	<TrustProcess {TrustProcessItems} />
 	<UseCases {useCases} />
 	<TeamSection {teamMembers} />
 	<Roadmap {roadMapItems} />

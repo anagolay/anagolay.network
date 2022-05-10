@@ -15,8 +15,8 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'More will be added when we see the need for it and a practical use case.',
 			],
 			image: {
-				class: '-ml-20 -mr-8 -mb-12 -mt-16 md:mx-0 md:-mt-12 md:-mb-12 2xl:-mt-20',
-				source: '/hiw_statements.png',
+				class: '-mb-4 -mt-[15%] -ml-[10%] md:ml-0 md:-mb-[40%] 2xl:w-11/12',
+				source: '/technology_statements.svg',
 				altText: 'Statements',
 			},
 		},
@@ -30,8 +30,8 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'The execution consists of a number of tasks, called Operations. When connected together, they make up a Workflow.',
 			],
 			image: {
-				class: '-ml-12 -mt-40 -mb-4 -mr-40 md:mx-0 md:-mt-12 md:-mb-12',
-				source: '/hiw_proofs.png',
+				class: 'mb-12 -mt-24 md:-mt-[10%] md:mx-0 md:-mb-[40%] lg:-mt-[20%]',
+				source: '/technology_proofs.png',
 				altText: 'Process proofs',
 			},
 		},
@@ -45,8 +45,8 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'Connected together, like lego pieces, Operations form a Workflow - a graph that has a single Operation entry-point. Once executed, a Workflow produces the list of strings that act as the input data identifiers - Proofs.',
 			],
 			image: {
-				class: '-ml-36 -mr-16 -mb-8 -mt-32 md:-mx-12 md:-mt-12 md:-mb-12',
-				source: '/hiw_workflow.png',
+				class: '-ml-[10%] -mt-[20%] md:scale-125 md:-mt-[5%] lg:-mt-[15%] 2xl:-mt-[20%] md:ml-0 md:-mb-[30%]',
+				source: '/technology_workflow.png',
 				altText: 'Process workflow',
 			},
 		},
@@ -59,8 +59,8 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'The challenge is to have Workflows & Operations Artifacts stored on IPFS permanently. ',
 			],
 			image: {
-				class: '-mx-32 -mt-36 -mb-8 md:-mx-12 md:-mx-12 md:-mt-12 md:-mb-12 xl:-mt-40',
-				source: '/hiw_storage.png',
+				class: '-mt-[30%] md:-mt-[15%] lg:-mt-[25%] md:-ml-[5%] md:-mb-[20%]',
+				source: '/technology_storage.png',
 				altText: 'Storage',
 			},
 		},
