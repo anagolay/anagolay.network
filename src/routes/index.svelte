@@ -7,13 +7,13 @@
 	import Roadmap from '$src/sections/main/Roadmap.svelte';
 	import SvelteSeo from 'svelte-seo';
 
-	import type { feat, howItWorksItem, useCase, teamMember, roadmapItem } from '$src/types';
+	import type { FeatureData, HowItWorksItem, UseCase, TeamMember, RoadmapItem } from '$src/types';
 
-	export let beastFeatures: feat[];
-	export let useCases: useCase[];
-	export let howItWorksItems: howItWorksItem[];
-	export let teamMembers: teamMember[];
-	export let roadMapItems: roadmapItem[];
+	export let beastFeatures: FeatureData[];
+	export let useCases: UseCase[];
+	export let howItWorksItems: HowItWorksItem[];
+	export let teamMembers: TeamMember[];
+	export let roadMapItems: RoadmapItem[];
 </script>
 
 <SvelteSeo

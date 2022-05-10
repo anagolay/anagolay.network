@@ -1,6 +1,6 @@
 <script lang="ts">
-	import type { howItWorksItem } from '$src/types';
-	export let howItWorksItems: howItWorksItem[];
+	import type { HowItWorksItem } from '$src/types';
+	export let howItWorksItems: HowItWorksItem[];
 </script>
 
 <div class="flex max-w-full lg:w-11/12 flex-col mx-auto xl:mx-auto">

@@ -1,12 +1,12 @@
 <script lang="ts">
-	import TitleSection from '$src/sections/technology/Title.svelte';
-	import TechnologyValues from '$src/sections/technology/TechnologyValues.svelte';
-	import Architecture from '$src/sections/technology/Architecture.svelte';
+	import TitleSection from '$src/sections/how-it-works/Title.svelte';
+	import TechnologyItems from '$src/sections/how-it-works/TechnologyItems.svelte';
+	import Architecture from '$src/sections/how-it-works/Architecture.svelte';
 	import SvelteSeo from 'svelte-seo';
 
-	import type { TechnologyValue, ArchitectureItem, WebLayerIcon } from '$src/types';
+	import type { TechnologyItem, ArchitectureItem, WebLayerIcon } from '$src/types';
 
-	export let technologyValues: TechnologyValue[];
+	export let technologyItems: TechnologyItem[];
 	export let webLayerIcons: WebLayerIcon[];
 	export let architectureItems: ArchitectureItem[];
 </script>
@@ -28,6 +28,6 @@
 
 <div class="w-80 md:w-fit max-w-full mx-auto">
 	<TitleSection />
-	<TechnologyValues {technologyValues} />
+	<TechnologyItems {technologyItems} />
 	<Architecture {webLayerIcons} {architectureItems} />
 </div>

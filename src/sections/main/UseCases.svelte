@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type { useCase } from 'src/types';
+	import type { UseCase } from 'src/types';
 	import SectionButton from '$src/components/SectionButton.svelte';
-	export let useCases: useCase[];
+	export let useCases: UseCase[];
 </script>
 
 <a name="useCases">

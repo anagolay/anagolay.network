@@ -1,9 +1,9 @@
 import type { RequestHandler, RequestHandlerOutput } from '@sveltejs/kit';
 
-import type { TechnologyValue, ArchitectureItem, WebLayerIcon } from '$src/types';
+import type { TechnologyItem, ArchitectureItem, WebLayerIcon } from '$src/types';
 
 export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
-	const technologySectionItems: TechnologyValue[] = [
+	const technologyItems: TechnologyItem[] = [
 		{
 			id: 'statements',
 			title: 'Statements & Claims',
@@ -15,7 +15,7 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'More will be added when we see the need for it and a practical use case.',
 			],
 			image: {
-				class: '-ml-32 -mr-8 -mb-12 -mt-16',
+				class: '-ml-20 -mr-8 -mb-12 -mt-16 md:mx-0 md:-mt-12 md:-mb-12 2xl:-mt-20',
 				source: '/hiw_statements.png',
 				altText: 'Statements',
 			},
@@ -30,7 +30,7 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'The execution consists of a number of tasks, called Operations. When connected together, they make up a Workflow.',
 			],
 			image: {
-				class: '-ml-12 md:-ml-8 -mt-40 -mb-4 -mr-40  md:-mt-32',
+				class: '-ml-12 -mt-40 -mb-4 -mr-40 md:mx-0 md:-mt-12 md:-mb-12',
 				source: '/hiw_proofs.png',
 				altText: 'Process proofs',
 			},
@@ -42,10 +42,10 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'Operation is a basic building block of a transparent and verifiable proof generation process. Stored Operations must be permanent.',
 			contentLines: [
 				'Operation is a well-structured library with standardized input and output signatures, written in Rust and compiled to WASM. All Operations must be versatile, easy to integrate, and can be used in almost any environment.',
-				'Connected together, like lego pieces, Operations form a Workflow - a graph that has a single Operation entry-point. Once executed, a Workflow produces the list of strings that act as the input data identifiers - Proofs.',
+				'Connected together, like lego pieces, Operations form a Workflow - a graph that has a single Operation entry-point. Once executed, a Workflow produces the list of strings that act as the input data identifiers - Proofs.',
 			],
 			image: {
-				class: '-ml-36 -mr-16 -mb-8 -mt-32',
+				class: '-ml-36 -mr-16 -mb-8 -mt-32 md:-mx-12 md:-mt-12 md:-mb-12',
 				source: '/hiw_workflow.png',
 				altText: 'Process workflow',
 			},
@@ -59,7 +59,7 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'The challenge is to have Workflows & Operations Artifacts stored on IPFS permanently. ',
 			],
 			image: {
-				class: '-mx-32 -mt-36 -mb-8 md:-mr-48 md:-mt-60',
+				class: '-mx-32 -mt-36 -mb-8 md:-mx-12 md:-mx-12 md:-mt-12 md:-mb-12 xl:-mt-40',
 				source: '/hiw_storage.png',
 				altText: 'Storage',
 			},
@@ -94,7 +94,7 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 	];
 
 	const body = {
-		technologySectionItems,
+		technologyItems,
 		webLayerIcons,
 		architectureItems,
 	} as any;

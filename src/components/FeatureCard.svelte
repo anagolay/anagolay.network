@@ -1,9 +1,9 @@
 <script lang="ts">
-	import type { feat } from '$src/types';
+	import type { FeatureData } from '$src/types';
 	import { fade } from 'svelte/transition';
 	import { inview } from 'svelte-inview';
 
-	export let feature: feat;
+	export let feature: FeatureData;
 	export let i: number;
 
 	let isInView: boolean;

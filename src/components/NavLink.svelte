@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import type { link } from '$src/types';
+	import type { LinkData } from '$src/types';
 
-	export let option: link;
+	export let option: LinkData;
 	export let onClick: () => void = undefined;
 
 	let extraClass = '';

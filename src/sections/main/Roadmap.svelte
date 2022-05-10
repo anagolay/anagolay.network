@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import type { roadmapItem } from '$src/types';
+	import type { RoadmapItem } from '$src/types';
 	import SectionButton from '$src/components/SectionButton.svelte';
 	import { status } from '$src/routes/index';
 
-	export let roadMapItems: roadmapItem[];
+	export let roadMapItems: RoadmapItem[];
 
 	// Steps are roadMapItems that have global status, blur and opacity set for the timeline.
-	const items = roadMapItems.map((item: roadmapItem): roadmapItem => {
+	const items = roadMapItems.map((item: RoadmapItem): RoadmapItem => {
 		let state = status.done;
 		let pointBlur = '';
 		let pointOpacity = '';

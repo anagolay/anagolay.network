@@ -10,7 +10,7 @@
 
 <div class="pt-20 mb-20">
 	<div class="relative text-center mb-8 md:mb-16">
-		<h3 class="text-2xl md:text-4xl md:mb-8 text-green">Architecture</h3>
+		<h3 class="text-2xl md:text-4xl md:mb-8">Architecture</h3>
 	</div>
 
 	<div class={containerClass}>

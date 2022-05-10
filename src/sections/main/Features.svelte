@@ -1,8 +1,8 @@
 <script lang="ts">
 	import FeatureCard from '$src/components/FeatureCard.svelte';
-	import type { feat } from '$src/types';
+	import type { FeatureData } from '$src/types';
 
-	export let beastFeatures: feat[];
+	export let beastFeatures: FeatureData[];
 </script>
 
 <div

@@ -1,12 +1,12 @@
 <script lang="ts">
-	import type { teamMember } from '$src/types';
+	import type { TeamMember } from '$src/types';
 
 	let siteIcons = [
 		{ domain: 'linkedin', src: '/linkedin.svg' },
 		{ domain: 'github', src: '/github.svg' },
 	];
 
-	export let teamMembers: teamMember[];
+	export let teamMembers: TeamMember[];
 
 	let teamIndex = 0;
 	let selected = teamMembers[teamIndex];

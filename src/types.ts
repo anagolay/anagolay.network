@@ -78,7 +78,7 @@ export interface RoadmapItem {
 	instances: Phase[];
 }
 
-export interface TechnologyValue {
+export interface TechnologyItem {
 	id?: string;
 	title: string;
 	subtitle: string;
