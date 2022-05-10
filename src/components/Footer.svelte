@@ -1,47 +1,5 @@
 <script lang="ts">
-	interface menuOption {
-		title: string;
-		options?: {
-			text: string;
-			link: string;
-		}[];
-	}
-
-	let menuOptions: menuOption[] = [
-		{
-			title: 'Discover',
-			options: [
-				{
-					text: 'About',
-					link: '/https://www.notion.so/kelp/Kelp-PitchDeck-b421d596ffca4d188d2144fe977e6c0d',
-				},
-				{ text: 'Blog', link: 'https://blog.anagolay.network' },
-				{ text: 'FAQ', link: 'https://www.notion.so/Anagolay-FAQ-530c3d1de6784e7eb0c842c7b9bedfa9' },
-				{
-					text: 'Careers',
-					link: 'https://www.notion.so/Kelp-Anagolay-Careers-c27cebdedf29461abda591bc23bad3f6',
-				},
-			],
-		},
-		{
-			title: 'For developers',
-			options: [
-				{ text: 'Wiki', link: 'https://anagolay.dev' },
-				{ text: 'Github', link: 'https://github.com/anagolay' },
-				{ text: 'Gitlab', link: 'https://gitlab.com/anagolay' },
-			],
-		},
-	];
-
-	const media = [
-		{ name: 'discord', link: 'https://discordapp.com/invite/WHe4EuY', img: '/discord.svg' },
-		{ name: 'twitter', link: 'https://twitter.com/AnagolayNet', img: '/twitter.svg' },
-		{
-			name: 'matrix',
-			link: 'https://matrix.to/#/!FJvAuDoWRoMVuOFYwL:matrix.org?via=matrix.org',
-			img: '/matrix.svg',
-		},
-	];
+	import { menuOptions, media } from '$src/routes';
 </script>
 
 <div class="font-montserrat">
@@ -60,7 +18,7 @@
 					<div class="mb-4 md:mb-0 min-w-fit">{item.title}</div>
 					{#each item.options as option}
 						<a
-							href={option.link}
+							href={option.url}
 							class="opacity-30 text-[90%] mb-2 md:mb-0"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -78,13 +36,13 @@
 			<div class="flex flex-grow items-center justify-between mb-4">
 				{#each media as item}
 					<a
-						href={item.link}
+						href={item.url}
 						class="flex justify-center items-center shadow-button h-12 w-12 rounded-full bg-darkblue text-white active:shadow-pressed"
 						aria-label="social-media-{item.name}"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<img class="max-h-5 max-w-[20px]" src={item.img} alt="{item.name} logo" />
+						<img class="max-h-5 max-w-[20px]" src={item.image} alt="{item.name} logo" />
 					</a>
 				{/each}
 			</div>

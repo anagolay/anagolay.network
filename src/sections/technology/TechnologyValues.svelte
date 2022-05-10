@@ -1,9 +1,10 @@
 <script lang="ts">
-	export let technologySectionItems: any;
+	import type { TechnologyValue } from '$src/types';
+	export let technologyValues: TechnologyValue[];
 </script>
 
-{#each technologySectionItems as item}
-	<div id={technologySectionItems.id} class="pt-20">
+{#each technologyValues as item}
+	<div id={item.id} class="pt-20">
 		<div class="relative md:w-1/2 mb-12 md:mb-12">
 			<h3 class="text-2xl md:text-4xl md:-mr-20 lg:text-4xl mb-6 md:mb-8 text-green">{item.title}</h3>
 			<p class="text-lg md:text-xl xl:text-2xl">{item.subtitle}</p>
@@ -20,7 +21,7 @@
 			</div>
 			<div class="md:w-1/2 md:-mt-36">
 				<div class={item.image.class}>
-					<img class="w-full" loading="lazy" src={item.image.source} alt={item.image.alt} />
+					<img class="w-full" loading="lazy" src={item.image.source} alt={item.image.altText} />
 				</div>
 			</div>
 		</div>

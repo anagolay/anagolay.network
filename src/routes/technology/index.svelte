@@ -1,12 +1,14 @@
 <script lang="ts">
 	import TitleSection from '$src/sections/technology/Title.svelte';
-	import SerialSections from '$src/sections/technology/SerialSections.svelte';
+	import TechnologyValues from '$src/sections/technology/TechnologyValues.svelte';
 	import Architecture from '$src/sections/technology/Architecture.svelte';
 	import SvelteSeo from 'svelte-seo';
 
-	export let technologySectionItems: any;
-	export let webLayerIcons: any;
-	export let architectureItems: any;
+	import type { TechnologyValue, ArchitectureItem, WebLayerIcon } from '$src/types';
+
+	export let technologyValues: TechnologyValue[];
+	export let webLayerIcons: WebLayerIcon[];
+	export let architectureItems: ArchitectureItem[];
 </script>
 
 <SvelteSeo
@@ -26,6 +28,6 @@
 
 <div class="w-80 md:w-fit max-w-full mx-auto">
 	<TitleSection />
-	<SerialSections {technologySectionItems} />
+	<TechnologyValues {technologyValues} />
 	<Architecture {webLayerIcons} {architectureItems} />
 </div>

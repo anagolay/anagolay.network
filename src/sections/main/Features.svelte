@@ -1,38 +1,8 @@
 <script lang="ts">
 	import FeatureCard from '$src/components/FeatureCard.svelte';
+	import type { feat } from '$src/types';
 
-	let beastFeatures: { feature: string; icon?: string; img?: { src: string; alt: string } }[] = [
-		{
-			feature: 'Each stored proof on the Anagolay chain can be verified',
-			icon: 'verified_user',
-		},
-		{
-			feature: 'Each Workflow executes 100% the same code on each run',
-			icon: 'code',
-		},
-		{
-			feature: 'Stored proofs are contextual and well structured',
-			icon: 'folder',
-		},
-		{ feature: 'Created Statements are legally valid', icon: 'copyright' },
-		{
-			feature: 'Developed with a mindset that every drop of energy matters',
-			icon: 'bolt',
-		},
-		{
-			feature: 'Can work on Mars or any other isolated environment',
-			icon: 'rocket_launch',
-		},
-		{ feature: 'Community verified source code', icon: 'handshake' },
-		{
-			feature: 'Privacy by default, users’ data is not stored on-chain',
-			icon: 'private_connectivity',
-		},
-		{
-			feature: 'All stored data structures are content addressable',
-			img: { src: '/decentralized.svg', alt: 'decentralised network' },
-		},
-	];
+	export let beastFeatures: feat[];
 </script>
 
 <div
@@ -45,8 +15,8 @@
 	<div
 		class="flex w-full flex-col mx-auto h-fit py-4 sm:flex-row sm:flex-wrap sm:justify-evenly 2xl:justify-between"
 	>
-		{#each beastFeatures as feat, i}
-			<FeatureCard {feat} {i} />
+		{#each beastFeatures as feature, i}
+			<FeatureCard {feature} {i} />
 		{/each}
 	</div>
 </div>

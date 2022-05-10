@@ -1,181 +1,17 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import type { roadmapItem } from '$src/types';
 	import SectionButton from '$src/components/SectionButton.svelte';
+	import { status } from '$src/routes/index';
 
-	enum status {
-		done = 'done',
-		doing = 'doing',
-		pending = 'pending',
-	}
-
-	interface Facts {
-		fact: string;
-		description?: string;
-		status: string;
-		cardStyling?: string;
-	}
-
-	interface RoadmapItem {
-		title: string;
-		year: number;
-		status?: string;
-		pointBlur?: string;
-		pointOpacity?: string;
-		titleStyling?: string;
-		yearOpacity?: string;
-		facts: Facts[];
-	}
-
-	let roadMapItems: RoadmapItem[] = [
-		{
-			title: 'Q1',
-			year: 2021,
-			facts: [
-				{ fact: 'Concept Design ready', status: status.done },
-				{ fact: 'Key Technologies Validation', status: status.done },
-			],
-		},
-		{
-			title: 'Q2',
-			year: 2021,
-			facts: [
-				{ fact: 'Protocol Design', status: status.done },
-				{ fact: 'Anagolay Chain Prototype', status: status.done },
-			],
-		},
-		{
-			title: 'Q3',
-			year: 2021,
-			facts: [
-				{
-					fact: 'Initial Version of Anagolay Chain Implementation',
-					status: status.done,
-				},
-				{ fact: 'Initial Documentation Version', status: status.done },
-			],
-		},
-		{
-			title: 'Q4',
-			year: 2021,
-			facts: [
-				{
-					fact: 'Self-hosted service for rehosting git repositories on IPFS',
-					description:
-						'An important milestone for Anagolay, as building the provable process for proof generation must always execute the same code.\nDetails and results are [presented here](https://dev.to/woss/part-1-rehosting-git-repositories-on-ipfs-23bf)',
-					status: status.done,
-				},
-				{
-					fact: 'Anagolay Publishing Service (1st iteration)',
-					status: status.done,
-				},
-			],
-		},
-		{
-			title: 'Q1',
-			year: 2022,
-			facts: [
-				{
-					fact: 'Idiyanale Phase 1/2 (Web3 Foundation Grant)',
-					status: status.done,
-				},
-				{
-					fact: 'Most common (generic) Operations & Workflows implemented',
-					description:
-						'Most common (generic) Operations that will be used in almost any Workflow. This includes features from QRCode generation, Multimedia extraction, calculation of Cryptographic hashes, and a multitude of perceptual and Locally sensitive hashes.',
-					status: status.done,
-				},
-			],
-		},
-		{
-			title: 'Q2',
-			year: 2022,
-			facts: [
-				{ fact: ' Anagolay rebrand and new website', status: status.doing },
-				{
-					fact: 'Idiyanale Phase 2/2 (Web3 Foundation Grant)',
-					status: status.doing,
-				},
-				{
-					fact: 'PoE & Statement of Ownership and Copyright',
-					description:
-						'Improve and re-design the workflows specific for Proofs-of-Exitance & Statement of Ownership and Copyright. Where blockchain is not the central technology, but a facilitator of transparency & freedom for the build architecture.',
-					status: status.pending,
-				},
-			],
-		},
-		{
-			title: 'Q3',
-			year: 2022,
-			facts: [
-				{
-					fact: 'Governance design and implementation',
-					status: status.pending,
-				},
-				{
-					fact: 'Anagolay Explorer',
-					description:
-						'Anagolay Explorer (focused on the Statements, Operation, Workflows and transfers of Ownerships and Copyrights).',
-					status: status.pending,
-				},
-				{
-					fact: 'Anagolay SDK',
-					description:
-						'While building SDK we will focus on the features for our JS/TS SDK, because the Anagolay interaction will come mostly from the Web Browser, Smart phones and Desktop environments. Our goal is to design SDK as intuitive and developer-friendly as possible.',
-					status: status.pending,
-				},
-			],
-		},
-		{
-			title: 'Q4',
-			year: 2022,
-			facts: [
-				{ fact: 'Idiyanale Mainnet Ready', status: status.pending },
-				{ fact: 'IDI Token Launch', status: status.pending },
-				{
-					fact: 'Promote for Use Cases and Get Apps Running on Idiyanale',
-					status: status.pending,
-				},
-			],
-		},
-		{
-			title: 'Q1',
-			year: 2023,
-			facts: [
-				{
-					fact: 'Distributed-build system for Artefacts',
-					description:
-						"Each Operation and Workflow produce the built artifacts for WASM and rust language targets. These artifacts must not be tampered with before they are stored on the chain and they must not be built on the developers' machines. If they were, then the developers can act as bad actors and try to inject the code in the middle of the process and try to fool any other user who will use that Operation or Workflow. This is going to be a new application and will come together with the incentive layer on-chain.",
-					status: status.pending,
-				},
-				{
-					fact: 'Innovation on the permanent storage for Anagolay purpose',
-					description:
-						'this may include the on-chain incentive to have the IPFS nodes running (either cluster or not) and storing the off-chain Anagolay data; Operation, Workflow and any other artefacts that are needed to have the Statements working.',
-					status: status.pending,
-				},
-			],
-		},
-		{
-			title: 'Q2',
-			year: 2023,
-			facts: [
-				{
-					fact: 'Extensive testing and code improvements to fit low-energy devices',
-					description:
-						'Extensive testing and code improvements to fit low-energy devices like smartphones and Raspberry Pi (with an idea that the Anagolay can be run anywhere, even on Mars). Low energy devices are quite powerful and they can be used to be part of the Anagolay validator set, effectively validating the chain and its transactions. We develop our solution with a mindset, that every drop of energy matters.',
-					status: status.pending,
-				},
-				{ fact: 'Extended set of common Workflows and Operations ', status: status.pending },
-			],
-		},
-	];
+	export let roadMapItems: roadmapItem[];
 
 	// Steps are roadMapItems that have global status, blur and opacity set for the timeline.
-	const items = roadMapItems.map((item: RoadmapItem): RoadmapItem => {
+	const items = roadMapItems.map((item: roadmapItem): roadmapItem => {
 		let state = status.done;
 		let pointBlur = '';
 		let pointOpacity = '';
-		let factStatus = item.facts.map((f) => {
+		let factStatus = item.instances.map((f) => {
 			let cardShadow =
 				f.status === status.doing ? 'shadow-card shadow-green border border-green' : 'shadow-button';
 			let cardOpacity = f.status === status.pending ? 'opacity-80' : 'bg-opacity-80';
@@ -221,7 +57,7 @@
 	onMount(() => (roadMap.scrollLeft = 0.55 * roadWidth - 0.5 * windowWidth));
 </script>
 
-<div class="mx-auto pt-8">
+<div class="mx-auto pt-40">
 	<div class="flex justify-between items-center w-full text-xs md:text-base pb-16">
 		<button
 			class="flex items-center text-left w-1/3 opacity-60 cursor-pointer hover:opacity-100"
@@ -266,11 +102,11 @@
 								<div
 									class="mb-4 relative w-8 h-8 bg-sphere from-green to-blue rounded-full -rotate-[25deg] {roadMapItem.pointBlur} {roadMapItem.pointOpacity}"
 								/>
-								{#each roadMapItem.facts as fact}
+								{#each roadMapItem.instances as instance}
 									<div
-										class="w-56 p-7 mb-4  h-fit bg-blue italic {fact.cardStyling} mb-2 rounded-xl mx-auto text-anagolayWhite font-light"
+										class="w-56 p-7 mb-4  h-fit bg-blue italic {instance.cardStyling} mb-2 rounded-xl mx-auto text-anagolayWhite font-light"
 									>
-										{fact.fact}
+										{instance.goal}
 									</div>
 								{/each}
 							</div>

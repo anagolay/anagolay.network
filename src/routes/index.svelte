@@ -6,6 +6,14 @@
 	import TeamSection from '$src/sections/main/Team.svelte';
 	import Roadmap from '$src/sections/main/Roadmap.svelte';
 	import SvelteSeo from 'svelte-seo';
+
+	import type { feat, howItWorksItem, useCase, teamMember, roadmapItem } from '$src/types';
+
+	export let beastFeatures: feat[];
+	export let useCases: useCase[];
+	export let howItWorksItems: howItWorksItem[];
+	export let teamMembers: teamMember[];
+	export let roadMapItems: roadmapItem[];
 </script>
 
 <SvelteSeo
@@ -25,9 +33,9 @@
 
 <div>
 	<TitleSection />
-	<FeaturesSection />
-	<TrustProcess />
-	<UseCases />
-	<TeamSection />
-	<Roadmap />
+	<FeaturesSection {beastFeatures} />
+	<TrustProcess {howItWorksItems} />
+	<UseCases {useCases} />
+	<TeamSection {teamMembers} />
+	<Roadmap {roadMapItems} />
 </div>

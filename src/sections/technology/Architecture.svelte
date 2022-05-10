@@ -1,6 +1,9 @@
 <script lang="ts">
-	export let webLayerIcons: any;
-	export let architectureItems: any;
+	import type { ArchitectureItem, WebLayerIcon } from '$src/types';
+
+	export let webLayerIcons: WebLayerIcon[];
+	export let architectureItems: ArchitectureItem[];
+
 	const containerClass =
 		'flex shadow-button p-3 md:py-10 md:px-8 xl:px-16 rounded-3xl h-20 md:h-[unset] bg-blue mb-4 md:mb-8';
 </script>
@@ -37,8 +40,8 @@
 				<img
 					loading="lazy"
 					class="max-h-4 max-w-4 md:max-h-8 md:max-w-8 md:mr-4"
-					src={item.img.source}
-					alt={item.img.alt}
+					src={item.image.source}
+					alt={item.image.altText}
 				/>
 				<div class="flex flex-col items-center md:items-start">
 					<p class="text-xs md:text-lg font-bold "><i>{item.title}</i></p>

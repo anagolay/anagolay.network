@@ -1,29 +1,9 @@
 import type { RequestHandler, RequestHandlerOutput } from '@sveltejs/kit';
 
-export interface technologySectionItem {
-	id?: string;
-	title: string;
-	subtitle: string;
-	contentLines: string[];
-	image: {
-		class: string;
-		source: string;
-		alt: string;
-	};
-}
-
-interface architectureItem {
-	title: string;
-	subtitle?: string;
-	description: string;
-	img: {
-		source: string;
-		alt: string;
-	};
-}
+import type { TechnologyValue, ArchitectureItem, WebLayerIcon } from '$src/types';
 
 export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
-	const technologySectionItems: technologySectionItem[] = [
+	const technologySectionItems: TechnologyValue[] = [
 		{
 			id: 'statements',
 			title: 'Statements & Claims',
@@ -37,7 +17,7 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 			image: {
 				class: '-ml-32 -mr-8 -mb-12 -mt-16',
 				source: '/hiw_statements.png',
-				alt: 'statements',
+				altText: 'Statements',
 			},
 		},
 		{
@@ -52,7 +32,7 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 			image: {
 				class: '-ml-12 md:-ml-8 -mt-40 -mb-4 -mr-40  md:-mt-32',
 				source: '/hiw_proofs.png',
-				alt: 'proofs',
+				altText: 'Process proofs',
 			},
 		},
 		{
@@ -67,7 +47,7 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 			image: {
 				class: '-ml-36 -mr-16 -mb-8 -mt-32',
 				source: '/hiw_workflow.png',
-				alt: 'workflow',
+				altText: 'Process workflow',
 			},
 		},
 		{
@@ -81,42 +61,42 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 			image: {
 				class: '-mx-32 -mt-36 -mb-8 md:-mr-48 md:-mt-60',
 				source: '/hiw_storage.png',
-				alt: 'storage',
+				altText: 'Storage',
 			},
 		},
 	];
 
-	const architectureItems: architectureItem[] = [
+	const webLayerIcons: WebLayerIcon[] = [
+		{ title: 'Typescript', source: '/icon_typescript.svg' },
+		{ title: 'Svelte', source: '/icon_svelte.svg' },
+		{ title: 'Polka', source: '/icon_polka.svg' },
+		{ title: 'WASM', source: '/icon_wasm.svg' },
+		{ title: 'Tailwind css', source: '/icon_tailwind.svg' },
+	];
+
+	const architectureItems: ArchitectureItem[] = [
 		{
-			img: { source: '/hiw_arch_sdk.svg', alt: 'sdk icon' },
+			image: { source: '/technology_architecture_sdk.svg', altText: 'SDK icon' },
 			title: 'SDK Layer',
 			description: 'Typescript - Rust - Operations - Workflows - WASM - Workflow execution',
 		},
 		{
-			img: { source: '/hiw_arch_storage.svg', alt: 'sdk icon' },
+			image: { source: '/technology_architecture_storage.svg', altText: 'IPFS icon' },
 			title: 'Storage Layer',
 			description: 'Operations - Build Artifacts - Workflows - WASM - Source code',
 		},
 		{
-			img: { source: '/hiw_arch_blockchain.svg', alt: 'sdk icon' },
+			image: { source: '/technology_architecture_blockchain.svg', altText: 'blockchain icon' },
 			title: 'Blockchain Layer',
 			subtitle: 'Substrate with our pallets',
 			description: 'Operations - Workflows - PoE - Statements - Artifacts',
 		},
 	];
 
-	const webLayerIcons: { title: string; source: string }[] = [
-		{ title: 'Typescript', source: '/hiw_typescript.svg' },
-		{ title: 'Svelte', source: '/hiw_svelte.svg' },
-		{ title: 'Polka', source: '/hiw_polka.svg' },
-		{ title: 'WASM', source: '/hiw_wasm.svg' },
-		{ title: 'Tailwind css', source: '/hiw_tailwind.svg' },
-	];
-
 	const body = {
 		technologySectionItems,
-		architectureItems,
 		webLayerIcons,
+		architectureItems,
 	} as any;
 
 	return {
