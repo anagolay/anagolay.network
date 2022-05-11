@@ -16,7 +16,7 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 			],
 			image: {
 				class: '-my-[10%] md:-my-[15%] scale-110 md:scale-100 md:ml-0 md:-mb-[40%] 2xl:w-11/12',
-				source: '/how_it_works_statements.svg',
+				source: '/how_it_works_statements.png',
 				altText: 'Statements',
 			},
 		},
