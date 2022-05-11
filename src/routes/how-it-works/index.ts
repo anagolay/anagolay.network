@@ -15,8 +15,8 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'More will be added when we see the need for it and a practical use case.',
 			],
 			image: {
-				class: '-mb-4 -mt-[15%] -ml-[10%] md:ml-0 md:-mb-[40%] 2xl:w-11/12',
-				source: '/technology_statements.svg',
+				class: '-my-[10%] md:-my-[15%] scale-110 md:scale-100 md:ml-0 md:-mb-[40%] 2xl:w-11/12',
+				source: '/how_it_works_statements.svg',
 				altText: 'Statements',
 			},
 		},
@@ -30,8 +30,8 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'The execution consists of a number of tasks, called Operations. When connected together, they make up a Workflow.',
 			],
 			image: {
-				class: 'mb-12 -mt-24 md:-mt-[10%] md:mx-0 md:-mb-[40%] lg:-mt-[20%]',
-				source: '/technology_proofs.png',
+				class: '-my-4 scale-110 ml-[5%] 2xl:ml-[10%] md:-mt-[10%] md:mx-0 md:-mb-[40%] lg:-mt-[15%]',
+				source: '/how_it_works_proofs.png',
 				altText: 'Process proofs',
 			},
 		},
@@ -45,8 +45,9 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'Connected together, like lego pieces, Operations form a Workflow - a graph that has a single Operation entry-point. Once executed, a Workflow produces the list of strings that act as the input data identifiers - Proofs.',
 			],
 			image: {
-				class: '-ml-[10%] -mt-[20%] md:scale-125 md:-mt-[5%] lg:-mt-[15%] 2xl:-mt-[20%] md:ml-0 md:-mb-[30%]',
-				source: '/technology_workflow.png',
+				class:
+					'-ml-[10%] -my-[5%] md:-mt-[20%] scale-125 md:-mt-[5%] lg:-mt-[15%] 2xl:-mt-[20%] md:ml-0 md:-mb-[30%]',
+				source: '/how_it_works_workflow.png',
 				altText: 'Process workflow',
 			},
 		},
@@ -59,8 +60,8 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'The challenge is to have Workflows & Operations Artifacts stored on IPFS permanently. ',
 			],
 			image: {
-				class: '-mt-[30%] md:-mt-[15%] lg:-mt-[25%] md:-ml-[5%] md:-mb-[20%]',
-				source: '/technology_storage.png',
+				class: '-my-[15%] md:-mt-[10%] md:-mt-[20%] lg:-mt-[25%] md:-mb-[20%]',
+				source: '/how_it_works_storage.png',
 				altText: 'Storage',
 			},
 		},
@@ -76,17 +77,17 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 
 	const architectureItems: ArchitectureItem[] = [
 		{
-			image: { source: '/technology_architecture_sdk.svg', altText: 'SDK icon' },
+			image: { source: '/icon_sdk.svg', altText: 'SDK icon' },
 			title: 'SDK Layer',
 			description: 'Typescript - Rust - Operations - Workflows - WASM - Workflow execution',
 		},
 		{
-			image: { source: '/technology_architecture_storage.svg', altText: 'IPFS icon' },
+			image: { source: '/icon_ipfs.svg', altText: 'IPFS icon' },
 			title: 'Storage Layer',
 			description: 'Operations - Build Artifacts - Workflows - WASM - Source code',
 		},
 		{
-			image: { source: '/technology_architecture_blockchain.svg', altText: 'blockchain icon' },
+			image: { source: '/icon_blockchain.svg', altText: 'blockchain icon' },
 			title: 'Blockchain Layer',
 			subtitle: 'Substrate with our pallets',
 			description: 'Operations - Workflows - PoE - Statements - Artifacts',

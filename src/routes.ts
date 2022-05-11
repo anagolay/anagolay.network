@@ -6,7 +6,7 @@ export const home: LinkData = {
 	external: false,
 	//  inNavBar: false
 };
-export const technology: LinkData = { text: 'How it works', url: '/how-it-works/', external: false };
+export const howItWorks: LinkData = { text: 'How it works', url: '/how-it-works/', external: false };
 export const useCases: LinkData = { text: 'Use cases', url: '/index.html#useCases', external: false };
 export const discover: MenuOption = {
 	title: 'Discover',

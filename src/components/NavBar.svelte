@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { discover, home, technology, useCases, wiki } from '$src/routes';
+	import { discover, home, howItWorks, useCases, wiki } from '$src/routes';
 	import NavDropdown from './NavDropdown.svelte';
 	import NavLink from './NavLink.svelte';
 
@@ -38,7 +38,6 @@
 			<div class="h-10 lg:h-12 my-auto">
 				<a href={home.url} on:click={closeSideBar}>
 					<img
-						loading="lazy"
 						class="object-contain h-full"
 						width="193"
 						height="48"
@@ -54,7 +53,7 @@
             md:flex-row md:mx-0 md:relative md:top-auto md:h-full md:py-2 md:right-auto md:left-auto md:w-fit md:translate-x-0 {menuTransition}"
 			>
 				<div class="flex flex-col md:flex-row w-full md:w-fit justify-evenly">
-					<NavLink class="font-bold my-3 md:my-0" option={technology} onClick={closeSideBar} />
+					<NavLink class="font-bold my-3 md:my-0" option={howItWorks} onClick={closeSideBar} />
 					<NavLink class="font-bold my-3 md:my-0" option={useCases} onClick={closeSideBar} />
 					<NavDropdown
 						class="hidden md:block"
