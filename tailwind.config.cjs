@@ -24,6 +24,7 @@ module.exports = {
 			backgroundImage: {
 				sphere:
 					'radial-gradient(60.62% 60.62% at 42.38% 19.2%, var(--tw-gradient-from), var(--tw-gradient-to));',
+				light: 'radial-gradient(50% 50% at 50% 50%, var(--tw-gradient-from), var(--tw-gradient-to));',
 			},
 			textShadow: {
 				sm: '0 1px 2px var(--tw-shadow-color)',

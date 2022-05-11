@@ -1,7 +1,7 @@
 <script lang="ts">
 	let extraClasses = '';
-	export let url = '';
 	export { extraClasses as class };
+	export let url: string;
 </script>
 
 <a

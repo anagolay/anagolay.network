@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import { discover, home, howItWorks, useCases, wiki } from '$src/routes';
 	import NavDropdown from './NavDropdown.svelte';
 	import NavLink from './NavLink.svelte';
 
@@ -8,40 +8,8 @@
 	let menuTransition = '';
 	const linkClass = 'px-2 py-2 rounded-sm md:w-fit hover:text-green';
 
-	let menus = [
-		{
-			title: 'Discover',
-			options: [
-				{ text: 'Use Cases', link: '#useCases', external: false },
-				{ text: 'Blog', link: 'https://blog.anagolay.network/', external: true },
-				{
-					text: 'FAQ',
-					link: 'https://www.notion.so/Anagolay-FAQ-530c3d1de6784e7eb0c842c7b9bedfa9',
-					external: true,
-				},
-				{ text: 'Team', link: '#team', external: false },
-			],
-		},
-		{
-			title: 'Community',
-			options: [
-				{ text: 'Discord', link: 'https://discordapp.com/invite/WHe4EuY', external: true },
-				{ text: 'Twitter', link: 'https://twitter.com/AnagolayNet', external: true },
-				{
-					text: 'Matrix',
-					link: 'https://matrix.to/#/!FJvAuDoWRoMVuOFYwL:matrix.org?via=matrix.org',
-					external: true,
-				},
-			],
-		},
-	];
-	let noMenuLinks = [
-		{ text: 'Wiki', url: 'https://anagolay.dev/' },
-		{ text: 'Careers', url: 'https://www.notion.so/Kelp-Anagolay-Careers-c27cebdedf29461abda591bc23bad3f6' },
-	];
-
 	//toggleSideBar will open sidebar if it is closed or close it if opened.
-	function toggleSideBar() {
+	function toggleSideBar(): void {
 		if (toggleMenu) {
 			closeSideBar();
 		} else {
@@ -52,27 +20,15 @@
 	}
 
 	//closes sidebar after clicking an option
-	function closeSideBar() {
+	function closeSideBar(): void {
 		toggleMenu = false;
 		menuIconColor = 'text-white';
 		menuTransition = '';
 	}
-
-	//navlinks
-	let links: { text: string; url: string; color: string }[] = [{ text: 'FAQ', url: '/faq', color: '' }];
-
-	//this function sets color for navlinks when current path changes.
-	function setColor(currentPath: string) {
-		for (let link of links) {
-			link.color = link.url === currentPath ? 'text-green' : '';
-		}
-	}
-
-	$: setColor($page.url.pathname);
 </script>
 
 <nav
-	class="z-10 fixed py-2 items-center justify-center bg-anagolayBlack w-full text-sm md:text-base p8 text-white h-15 md:justify-between"
+	class="z-10 sticky top-0 py-2 items-center justify-center bg-anagolayBlack w-full text-sm md:text-base p8 text-white h-15 md:justify-between"
 >
 	<div class="lg:container mx-auto w-5/6">
 		<div class="flex justify-center md:justify-between">
@@ -80,8 +36,14 @@
 				<span class="material-icons text-2xl {menuIconColor}"> menu </span>
 			</button>
 			<div class="h-10 lg:h-12 my-auto">
-				<a href="/" on:click={closeSideBar}>
-					<img class="object-contain h-full" src="horizontal_white1.svg" alt="Anagolay logo" />
+				<a href={home.url} on:click={closeSideBar}>
+					<img
+						class="object-contain h-full"
+						width="193"
+						height="48"
+						src="/horizontal_white1.svg"
+						alt="Anagolay logo"
+					/>
 				</a>
 			</div>
 
@@ -90,36 +52,23 @@
 			  py-0  text-center right-full mx-auto font-montserrat
             md:flex-row md:mx-0 md:relative md:top-auto md:h-full md:py-2 md:right-auto md:left-auto md:w-fit md:translate-x-0 {menuTransition}"
 			>
-				<div class="hidden md:flex w-full md:w-fit justify-evenly">
-					{#each menus as menu}
-						<NavDropdown id={menu.title.toLowerCase()} data={menu} {linkClass} />
-					{/each}
-				</div>
-
-				<div class="md:hidden text-center justify-evenly">
-					{#each menus as menu}
-						<div class="pt-6 pb-2">
-							<div class="font-extrabold py-2">{menu.title}</div>
-							<div class="flex font-light flex-col ">
-								{#each menu.options as option}
-									<NavLink {option} onClick={closeSideBar} />
-								{/each}
-							</div>
-						</div>
-					{/each}
-				</div>
-				{#each noMenuLinks as link}
-					<div class="pt-6 pb-2 md:py-2">
-						<a
-							class="w-full font-extrabold {linkClass}"
-							href={link.url}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							{link.text}
-						</a>
+				<div class="flex flex-col md:flex-row w-full md:w-fit justify-evenly">
+					<NavLink class="font-bold my-3 md:my-0" option={howItWorks} onClick={closeSideBar} />
+					<NavLink class="font-bold my-3 md:my-0" option={useCases} onClick={closeSideBar} />
+					<NavDropdown
+						class="hidden md:block"
+						id={discover.title.toLowerCase()}
+						data={discover}
+						{linkClass}
+					/>
+					<div class="flex flex-col md:hidden my-3">
+						<b>Discover</b>
+						{#each discover.options as link}
+							<NavLink option={link} onClick={closeSideBar} />
+						{/each}
 					</div>
-				{/each}
+					<NavLink class="font-bold my-3 md:my-0" option={wiki} onClick={closeSideBar} />
+				</div>
 			</div>
 		</div>
 	</div>
