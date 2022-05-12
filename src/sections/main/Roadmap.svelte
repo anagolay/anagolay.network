@@ -123,7 +123,10 @@
 			<span class="material-icons ml-2">east</span>
 		</div>
 		<div class="flex flex-col items-center">
-			<a href="/" class="text-green hover:underline">See the full roadmap</a>
+			<a
+				href="https://kelp.notion.site/060679a84bb34e949b0c23acea4e2700?v=e92d208977204ca6bcb80f5d63f22ff9"
+				class="text-green hover:underline">See the full roadmap</a
+			>
 			<SectionButton url="https://discordapp.com/invite/WHe4EuY" class="flex justify-center my-32">
 				<span class="material-icons">discord</span>
 				<p class="ml-[.3rem]">Join the community</p>

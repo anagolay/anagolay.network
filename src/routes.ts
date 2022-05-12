@@ -7,7 +7,7 @@ export const home: LinkData = {
 	//  inNavBar: false
 };
 export const howItWorks: LinkData = { text: 'How it works', url: '/how-it-works/', external: false };
-export const useCases: LinkData = { text: 'Use cases', url: '/index.html#useCases', external: false };
+export const useCases: LinkData = { text: 'Use cases', url: '/#useCases', external: false };
 export const discover: MenuOption = {
 	title: 'Discover',
 	options: [
@@ -33,7 +33,7 @@ export const menuOptions: MenuOption[] = [
 		options: [
 			{
 				text: 'About',
-				url: 'https://www.notion.so/kelp/Kelp-PitchDeck-b421d596ffca4d188d2144fe977e6c0d',
+				url: 'https://bit.ly/Anagolay_Deck_v1',
 			},
 			{ text: 'Blog', url: 'https://blog.anagolay.network' },
 			{ text: 'FAQ', url: 'https://www.notion.so/Anagolay-FAQ-530c3d1de6784e7eb0c842c7b9bedfa9' },

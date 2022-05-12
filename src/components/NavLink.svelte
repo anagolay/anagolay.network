@@ -16,7 +16,6 @@
 </script>
 
 <a
-	sveltekit:prefetch
 	class="w-full {color} min-w-fit p-2 hover:text-green {extraClass}"
 	href={option.url}
 	{target}
