@@ -60,7 +60,7 @@ upload-to-ipfs:
     - IPFS_PIN=false ipfsCli upload --onlyCid build > ANAGOLAY_WEBSITE_CID
     - echo "The Website is published with the CID:" && cat ANAGOLAY_WEBSITE_CID
     - echo "https://$(cat ANAGOLAY_WEBSITE_CID).ipfs.anagolay.network/"
-  when: manual
+  # when: manual
   # rules:
   #   - if: $CI_COMMIT_MESSAGE =~ /^.*\[build all\].*$/s
   #   - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
