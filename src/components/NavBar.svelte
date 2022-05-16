@@ -36,13 +36,15 @@
 				<span class="material-icons text-2xl {menuIconColor}"> menu </span>
 			</button>
 			<div class="h-10 lg:h-12 my-auto">
-				<img
-					class="object-contain h-full"
-					width="193"
-					height="48"
-					src="/nav_logo_white.svg"
-					alt="Anagolay logo"
-				/>
+				<a href="/">
+					<img
+						class="object-contain h-full"
+						width="193"
+						height="48"
+						src="/nav_logo_white.svg"
+						alt="Anagolay logo"
+					/>
+				</a>
 			</div>
 
 			<div
