@@ -36,12 +36,12 @@
 				<span class="material-icons text-2xl {menuIconColor}"> menu </span>
 			</button>
 			<div class="h-10 lg:h-12 my-auto">
-				<a href={home.url} on:click={closeSideBar}>
+				<a href="/">
 					<img
 						class="object-contain h-full"
 						width="193"
 						height="48"
-						src="/horizontal_white1.svg"
+						src="/nav_logo_white.svg"
 						alt="Anagolay logo"
 					/>
 				</a>
@@ -53,6 +53,7 @@
             md:flex-row md:mx-0 md:relative md:top-auto md:h-full md:py-2 md:right-auto md:left-auto md:w-fit md:translate-x-0 {menuTransition}"
 			>
 				<div class="flex flex-col md:flex-row w-full md:w-fit justify-evenly">
+					<NavLink class="font-bold my-3 md:my-0" option={home} onClick={closeSideBar} />
 					<NavLink class="font-bold my-3 md:my-0" option={howItWorks} onClick={closeSideBar} />
 					<NavLink class="font-bold my-3 md:my-0" option={useCases} onClick={closeSideBar} />
 					<NavDropdown
