@@ -15,8 +15,8 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'More will be added when we see the need for it and a practical use case.',
 			],
 			image: {
-				class: '-my-[10%] md:-my-[15%] scale-110 md:scale-100 md:ml-0 md:-mb-[40%] 2xl:w-11/12',
-				source: '/how_it_works_statements.png',
+				class: '-my-[10%] md:-my-[20%] md:-mb-[75%] md:-mx-[5%]',
+				source: '/how_it_works_statements.svg',
 				altText: 'Statements',
 			},
 		},
@@ -30,8 +30,8 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'The execution consists of a number of tasks, called Operations. When connected together, they make up a Workflow.',
 			],
 			image: {
-				class: '-my-4 scale-110 ml-[5%] 2xl:ml-[10%] md:-mt-[10%] md:mx-0 md:-mb-[40%] lg:-mt-[15%]',
-				source: '/how_it_works_proofs.png',
+				class: '-ml-5 -mr-10 -my-10  md:-m-[15%] lg:-my-[30%] md:-mb-[50%] ',
+				source: '/how_it_works_proofs.svg',
 				altText: 'Process proofs',
 			},
 		},
@@ -45,9 +45,8 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'Connected together, like lego pieces, Operations form a Workflow - a graph that has a single Operation entry-point. Once executed, a Workflow produces the list of strings that act as the input data identifiers - Proofs.',
 			],
 			image: {
-				class:
-					'-ml-[10%] -my-[5%] md:-mt-[20%] scale-125 md:-mt-[5%] lg:-mt-[15%] 2xl:-mt-[20%] md:ml-0 md:-mb-[30%]',
-				source: '/how_it_works_workflow.png',
+				class: '-ml-10 -mr-15 -my-[5%] md:-ml-[35%] md:-mr-[15%] md:-mt-[35%] md:-mb-[50%]',
+				source: '/how_it_works_workflow.svg',
 				altText: 'Process workflow',
 			},
 		},
@@ -60,8 +59,8 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'The challenge is to have Workflows & Operations Artifacts stored on IPFS permanently. ',
 			],
 			image: {
-				class: '-my-[15%] md:-mt-[10%] md:-mt-[20%] lg:-mt-[25%] md:-mb-[20%]',
-				source: '/how_it_works_storage.png',
+				class: '-my-[15%] md:-mt-[30%] md:-mx-[10%] md:-mb-[30%]',
+				source: '/how_it_works_storage.svg',
 				altText: 'Storage',
 			},
 		},

@@ -19,7 +19,6 @@
 		site: '@AnagolayNet',
 		title: 'Anagolay Network - How does it work?',
 		description: 'P2P Network to verify authorship & ownership, store & deliver proofs.',
-		//image must be uploaded yet
 		image:
 			'https://ipfs.anagolay.network/ipfs/QmX18cJBJ5vFKUYaxQsikFMBYrWtyqnznq9eY2ShdV7evZ?filename=twitter%20card.png',
 		imageAlt: 'Blue background with Anagolay brand logo',
@@ -29,5 +28,9 @@
 <div class="w-80 md:w-fit max-w-full mx-auto">
 	<TitleSection />
 	<TechnologyItems {technologyItems} />
-	<Architecture {webLayerIcons} {architectureItems} />
+	<div class="flex justify-center -mx-[100%] bg-gradient-to-b from-anagolayBlack to-transparent">
+		<div class="w-1/3 md:container">
+			<Architecture {webLayerIcons} {architectureItems} />
+		</div>
+	</div>
 </div>

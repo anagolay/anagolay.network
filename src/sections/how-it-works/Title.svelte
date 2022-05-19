@@ -1,4 +1,4 @@
-<div class="flex flex-col md:grid md:grid-cols-2 mt-40 md:mt-32 mb-20 md:mb-16">
+<div class="flex flex-col md:grid md:grid-cols-2 mt-40 md:mt-28 mb-20 md:mb-60">
 	<div class="md:-mr-[100%]">
 		<div
 			class="-mt-20 w-12 h-12 bg-sphere from-green to-blue rounded-full -rotate-[25deg] opacity-80 blur-sm"
@@ -11,7 +11,9 @@
 				<p class="md:leading-[4rem] min-w-fit">How does it work?</p>
 			</h1>
 
-			<h2 class="w-full md:w-7/12 text-center mt-8 text-lg md:text-lg lg:text-2xl md:text-left">
+			<h2
+				class="w-full md:w-3/5 lg:w-3/5 2xl:w-1/2 text-center mt-8 text-lg md:text-lg 2xl:text-2xl md:text-left"
+			>
 				<p class="">
 					Anagolay is a peer-to-peer network that stores records of Rights, Restrictions, and Proofs of any
 					digital content. It empowers the users to store, claim, sell, and rent their work with the correct
@@ -26,7 +28,7 @@
 		<div class="ml-10 mt-10 w-4 h-4 bg-sphere from-green to-blue rounded-full -rotate-[25deg] opacity-90" />
 	</div>
 
-	<div class="hidden md:flex justify-center mt-12 lg:mt-0 xl:-mt-[15%] -ml-[100%]">
-		<img class="" width="1280" height="1203" src="/how_it_works_main_workflow.png" alt="workflow process" />
+	<div class="hidden md:block -ml-[60%] -mr-8 mt-14 lg:-mt-[15%]">
+		<img class="w-full" src="/how_it_works_main_workflow.svg" alt="workflow process" />
 	</div>
 </div>

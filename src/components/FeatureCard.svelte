@@ -10,7 +10,7 @@
 </script>
 
 <div
-	class="col wrapper h-64 w-[24rem] max-w-full"
+	class="wrapper h-64 w-[24rem] max-w-full"
 	use:inview={{ unobserveOnEnter: true, rootMargin: '5%' }}
 	on:change={({ detail }) => {
 		isInView = detail.inView;
@@ -19,10 +19,10 @@
 	{#if isInView}
 		<div
 			in:fade={{ duration: 700, delay: (i % 3) * 150 }}
-			class="w-[22rem] max-w-full sm:max-w-none sm:mx-4 my-8 mx-auto shadow-button flex flex-col items-center rounded-3xl bg-blue h-48 px-12 mt-8 text-base xl:text-xl"
+			class="w-[22rem] max-w-full sm:max-w-none sm:mx-2 my-8 mx-auto shadow-button flex flex-col items-center rounded-3xl bg-blue h-48 px-12 mt-8 text-base xl:text-xl"
 		>
 			<div
-				class="flex w-24 h-24 items-center justify-center bg-gradient-to-br from-blue/90 to-white/20 backdrop-blur-[3px] mx-center text-green border border-green rounded-full -mt-6"
+				class="flex w-24 h-24 items-center justify-center bg-blue/80 bg-gradient-to-br from-darkblue/90 to-anagolayWhite/20 mx-center text-green border border-green rounded-full -mt-6"
 			>
 				{#if feature.icon}
 					<span class="material-icons text-5xl">{feature.icon}</span>
