@@ -29,6 +29,9 @@ const config = {
 				},
 			},
 		},
+		serviceWorker: {
+			register: false,
+		},
 		trailingSlash: 'always',
 	},
 };
