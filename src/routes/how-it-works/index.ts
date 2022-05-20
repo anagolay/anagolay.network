@@ -15,8 +15,8 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'More will be added when we see the need for it and a practical use case.',
 			],
 			image: {
-				class: '-my-[10%] md:-my-[20%] md:-mb-[75%] md:-mx-[5%]',
-				source: '/how_it_works_statements.svg',
+				class: '-my-[10%] md:-my-[30%] md:-mb-[75%] md:-mx-[10%]',
+				source: '/how_it_works_statements.png',
 				altText: 'Statements',
 			},
 		},
@@ -30,8 +30,8 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'The execution consists of a number of tasks, called Operations. When connected together, they make up a Workflow.',
 			],
 			image: {
-				class: '-ml-5 -mr-10 -my-10  md:-m-[15%] lg:-my-[30%] md:-mb-[50%] ',
-				source: '/how_it_works_proofs.svg',
+				class: '-ml-5 -mr-10 -my-10  md:-my-[15%] md:ml-0 -mr-[20%] lg:-my-[30%] md:-mb-[50%] ',
+				source: '/how_it_works_proofs.png',
 				altText: 'Process proofs',
 			},
 		},
@@ -45,8 +45,8 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'Connected together, like lego pieces, Operations form a Workflow - a graph that has a single Operation entry-point. Once executed, a Workflow produces the list of strings that act as the input data identifiers - Proofs.',
 			],
 			image: {
-				class: '-ml-10 -mr-15 -my-[5%] md:-ml-[35%] md:-mr-[15%] md:-mt-[35%] md:-mb-[50%]',
-				source: '/how_it_works_workflow.svg',
+				class: '-ml-10 -mr-15 -my-[10%] md:-ml-[35%] md:-mr-[15%] md:-mt-[35%] md:-mb-[50%]',
+				source: '/how_it_works_workflow.png',
 				altText: 'Process workflow',
 			},
 		},
@@ -59,8 +59,8 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'The challenge is to have Workflows & Operations Artifacts stored on IPFS permanently. ',
 			],
 			image: {
-				class: '-my-[15%] md:-mt-[30%] md:-mx-[10%] md:-mb-[30%]',
-				source: '/how_it_works_storage.svg',
+				class: '-my-[15%] -mx-[10%] md:-mt-[35%] md:-mx-[10%] md:-mb-[30%]',
+				source: '/how_it_works_storage.png',
 				altText: 'Storage',
 			},
 		},

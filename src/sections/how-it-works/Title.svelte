@@ -29,6 +29,6 @@
 	</div>
 
 	<div class="hidden md:block -ml-[60%] -mr-8 mt-14 lg:-mt-[15%]">
-		<img class="w-full" src="/how_it_works_main_workflow.svg" alt="workflow process" />
+		<img class="w-full" src="/how_it_works_main_workflow.png" alt="workflow process" />
 	</div>
 </div>
