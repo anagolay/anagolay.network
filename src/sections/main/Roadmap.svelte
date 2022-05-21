@@ -57,7 +57,7 @@
 	onMount(() => (roadMap.scrollLeft = 0.55 * roadWidth - 0.5 * windowWidth));
 </script>
 
-<div class="mx-auto pt-40">
+<section class="mx-auto pt-40">
 	<div class="flex justify-between items-center w-full text-xs md:text-base pb-16">
 		<button
 			class="flex items-center text-left w-1/3 opacity-60 cursor-pointer hover:opacity-100"
@@ -133,4 +133,4 @@
 			</SectionButton>
 		</div>
 	</div>
-</div>
+</section>

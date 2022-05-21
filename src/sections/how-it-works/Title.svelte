@@ -1,4 +1,4 @@
-<div class="flex flex-col md:grid md:grid-cols-2 mt-40 md:mt-28 mb-20 md:mb-60">
+<section class="flex flex-col md:grid md:grid-cols-2 mt-40 md:mt-28 mb-20 md:mb-40">
 	<div class="md:-mr-[100%]">
 		<div
 			class="-mt-20 w-12 h-12 bg-sphere from-green to-blue rounded-full -rotate-[25deg] opacity-80 blur-sm"
@@ -28,7 +28,7 @@
 		<div class="ml-10 mt-10 w-4 h-4 bg-sphere from-green to-blue rounded-full -rotate-[25deg] opacity-90" />
 	</div>
 
-	<div class="hidden md:block -ml-[60%] -mr-8 mt-14 lg:-mt-[15%]">
+	<div class="hidden md:block -ml-[60%] -mr-8 mt-14 lg:-mt-[15%] 3xl:-mt-[10%] 3xl:-ml-[75%]">
 		<img class="w-full" src="/how_it_works_main_workflow.png" alt="workflow process" />
 	</div>
-</div>
+</section>

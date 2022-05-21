@@ -3,6 +3,12 @@
 	import NavBar from '$src/components/NavBar.svelte';
 	import TopButton from '$src/components/TopButton.svelte';
 	import Footer from '$src/components/Footer.svelte';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		document.body.style.scrollSnapType = 'y mandatory';
+		document.documentElement.style.scrollSnapType = 'y mandatory';
+	});
 </script>
 
 <NavBar />

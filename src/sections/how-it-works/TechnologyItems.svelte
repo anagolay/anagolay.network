@@ -10,8 +10,8 @@
 
 <div class="">
 	{#each technologyItems as item, i}
-		<div id={item.id} class="mb-40 md:mb-60">
-			<div class="relative text-center mb-4 md:mb-16 xl:mb-20">
+		<section id={item.id} class="pt-24 mb-16 md:mb-28">
+			<div class="relative text-center mb-4 md:mb-16 xl:mb-32">
 				<h3 class="text-2xl md:text-4xl lg:text-4xl mb-6 md:mb-8">{item.title}</h3>
 				<p class="text-green text-base md:text-xl 2xl:text-2xl md:w-3/4 md:mx-auto">{item.subtitle}</p>
 			</div>
@@ -24,11 +24,13 @@
 				<div
 					class="md:w-1/2 md:mt-0 flex flex-col items-center lg:items-start text-sm md:text-base 2xl:text-xl"
 				>
-					{#each item.contentLines as line}
-						<p class="mb-4 md:mb-8">{line}</p>
-					{/each}
+					<div class="lg:w-5/6 mx-auto">
+						{#each item.contentLines as line}
+							<p class="mb-4 md:mb-8">{line}</p>
+						{/each}
+					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	{/each}
 </div>

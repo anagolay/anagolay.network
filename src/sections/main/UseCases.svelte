@@ -7,7 +7,7 @@
 </script>
 
 <a name="useCases">
-	<div class="flex flex-col w-full justify-center items-center h-fit text-center pt-24">
+	<section class="flex flex-col w-full justify-center items-center h-fit text-center pt-24">
 		<div class="relative mt-0 flex flex-col items-center">
 			<h2 class="mt-8 text-lg md:mb-12 md:text-2xl">
 				Copyright and Ownership <i>Verifiable</i> Statements created and stored on Anagolay can be applied to solve
@@ -20,5 +20,5 @@
 			</div>
 			<SectionButton url="https://kelp.digital/" class="mt-8 md:mt-12">Kelp Digital use case</SectionButton>
 		</div>
-	</div>
+	</section>
 </a>

@@ -28,9 +28,9 @@
 <div class="w-80 md:w-fit max-w-full mx-auto">
 	<TitleSection />
 	<TechnologyItems {technologyItems} />
-	<div class="flex justify-center -mx-[100%] bg-gradient-to-b from-anagolayBlack to-transparent">
+	<section class="flex justify-center -mx-[100%] bg-gradient-to-b from-anagolayBlack to-transparent">
 		<div class="w-1/3 md:container">
 			<Architecture {webLayerIcons} {architectureItems} />
 		</div>
-	</div>
+	</section>
 </div>

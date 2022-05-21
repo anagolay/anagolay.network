@@ -2,7 +2,7 @@
 	import SectionButton from '$src/components/SectionButton.svelte';
 </script>
 
-<div class="mt-32 md:mt-20 flex flex-col-reverse md:flex-row mb-40">
+<section class="mt-32 md:mt-20 flex flex-col-reverse md:flex-row mb-40">
 	<div class="w-[20rem] mx-auto max-w-full md:w-3/5">
 		<div class="xl:w-11/12">
 			<h1 class="mb-4 md:mb-0 tracking-wider text-center font-extrabold text-3xl md:text-5xl  md:text-left">
@@ -28,4 +28,4 @@
 			<img class="w-full object-cover" src="/main_illustration.png" alt="light ilustration" />
 		</div>
 	</div>
-</div>
+</section>

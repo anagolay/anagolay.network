@@ -21,6 +21,9 @@ module.exports = {
 			dmsans: ['DM Sans'], // Ensure fonts with spaces have " "surrounding it.
 		},
 		extend: {
+			screens: {
+				'3xl': '1700px',
+			},
 			backgroundImage: {
 				sphere:
 					'radial-gradient(60.62% 60.62% at 42.38% 19.2%, var(--tw-gradient-from), var(--tw-gradient-to));',
@@ -49,6 +52,7 @@ module.exports = {
 				current: 'currentColor',
 				blue: '#054F77',
 				'blue-400': '#23ACF6',
+				'blue-600': '#0772AB',
 				darkblue: '#093954',
 				anagolayBlack: '#052233',
 				green: '#8CFF00',

@@ -45,7 +45,7 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'Connected together, like lego pieces, Operations form a Workflow - a graph that has a single Operation entry-point. Once executed, a Workflow produces the list of strings that act as the input data identifiers - Proofs.',
 			],
 			image: {
-				class: '-ml-10 -mr-15 -my-[10%] md:-ml-[35%] md:-mr-[15%] md:-mt-[35%] md:-mb-[50%]',
+				class: '-ml-10 -mr-15 -my-[10%] md:-ml-[20%] md:-mr-[15%] md:-mt-[35%] md:-mb-[50%]',
 				source: '/how_it_works_workflow.png',
 				altText: 'Process workflow',
 			},
