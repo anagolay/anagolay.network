@@ -31,9 +31,11 @@
 	}}
 />
 
-<TitleSection />
-<FeaturesSection {beastFeatures} />
-<TrustProcess {TrustProcessItems} />
-<UseCases {useCases} />
-<TeamSection {teamMembers} />
-<Roadmap {roadMapItems} />
+<div>
+	<TitleSection />
+	<FeaturesSection {beastFeatures} />
+	<TrustProcess {TrustProcessItems} />
+	<UseCases {useCases} />
+	<TeamSection {teamMembers} />
+	<Roadmap {roadMapItems} />
+</div>

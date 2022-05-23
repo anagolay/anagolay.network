@@ -1,4 +1,4 @@
-<section class="flex flex-col md:grid md:grid-cols-2 mt-40 md:mt-28 mb-20 md:mb-40">
+<section class="flex flex-col md:grid md:grid-cols-2 mt-40 md:mt-28 mb-20 md:mb-24">
 	<div class="md:-mr-[100%]">
 		<div
 			class="-mt-20 w-12 h-12 bg-sphere from-green to-blue rounded-full -rotate-[25deg] opacity-80 blur-sm"
