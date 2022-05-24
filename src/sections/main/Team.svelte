@@ -31,7 +31,7 @@
 	}
 </script>
 
-<section class="flex pt-40 text-center">
+<section class="flex pt-40 text-center snap-start">
 	<div
 		id="team"
 		class="relative p-5 bg-gradient-to-b from-anagolayWhite/20 to-anagolayWhite/20 bg-blue/60 w-full xl:w-11/12 teamGrid backdrop-blur-md rounded-3xl md:mx-auto md:py-6 shadow-around shadow-green"

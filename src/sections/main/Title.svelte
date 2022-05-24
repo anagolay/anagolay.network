@@ -1,8 +1,9 @@
 <script lang="ts">
 	import SectionButton from '$src/components/SectionButton.svelte';
+	//bg-stars bg-repeat bg-[length:200px_200px] -mx-[100%] px-[100%]
 </script>
 
-<section class="mt-32 md:mt-20 flex flex-col-reverse md:flex-row mb-40">
+<section class="pt-32 md:pt-20 flex flex-col-reverse md:flex-row pb-40 ">
 	<div class="w-[20rem] mx-auto max-w-full md:w-3/5">
 		<div class="xl:w-11/12">
 			<h1 class="mb-4 md:mb-0 tracking-wider text-center font-extrabold text-3xl md:text-5xl  md:text-left">
@@ -23,7 +24,7 @@
 			</SectionButton>
 		</div>
 	</div>
-	<div class="hidden md:block w-2/5 h-fit">
+	<div class="hidden md:block relative w-2/5 h-fit">
 		<div class="-mx-32 2xl:-mx-40 -mt-40 2xl:-mt-48 -translate-x-30 xl:-translate-x-10 -mb-20">
 			<img class="w-full object-cover" src="/main_illustration.png" alt="light ilustration" />
 		</div>

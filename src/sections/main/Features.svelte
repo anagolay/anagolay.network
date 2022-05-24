@@ -6,7 +6,7 @@
 </script>
 
 <section
-	class="w-[20rem] mx-auto max-w-full mt-0 flex flex-col sm:w-full items-center text-center mb-20 md:mb-40"
+	class="w-[20rem] mx-auto max-w-full mt-0 flex flex-col sm:w-full items-center text-center mb-20 md:mb-40 snap-start"
 >
 	<h2 class="mb-12 text-2xl md:text-4xl">
 		<p class="mb-4">Anagolay is a</p>

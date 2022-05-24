@@ -7,7 +7,10 @@
 
 	onMount(() => {
 		document.body.style.scrollSnapType = 'y mandatory';
+		document.body.style.scrollSnapStop = 'always';
+
 		document.documentElement.style.scrollSnapType = 'y mandatory';
+		document.documentElement.style.scrollSnapStop = 'always';
 	});
 </script>
 

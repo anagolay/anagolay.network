@@ -28,7 +28,7 @@
 </script>
 
 <nav
-	class="z-10 sticky top-0 py-2 items-center justify-center bg-anagolayBlack w-full text-sm md:text-base p8 text-white h-15 md:justify-between"
+	class="z-20 sticky top-0 py-2 items-center justify-center bg-anagolayBlack w-full text-sm md:text-base p8 text-white h-15 md:justify-between"
 >
 	<div class="lg:container mx-auto w-5/6">
 		<div class="flex justify-center md:justify-between">
