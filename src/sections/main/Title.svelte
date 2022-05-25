@@ -1,32 +1,44 @@
 <script lang="ts">
 	import SectionButton from '$src/components/SectionButton.svelte';
-	//bg-stars bg-repeat bg-[length:200px_200px] -mx-[100%] px-[100%]
 </script>
 
-<section class="pt-32 md:pt-20 flex flex-col-reverse md:flex-row pb-40 ">
-	<div class="w-[20rem] mx-auto max-w-full md:w-3/5">
-		<div class="xl:w-11/12">
-			<h1 class="mb-4 md:mb-0 tracking-wider text-center font-extrabold text-3xl md:text-5xl  md:text-left">
-				<p class="md:leading-[4rem]">Process-based Interplanetary P2P Framework</p>
-			</h1>
-			<h2
-				class="w-full text-center text-green mt-12 mb-28 md:mb-20 text-base md:text-lg lg:text-2xl md:text-justify mx-auto md:my-12"
-			>
-				Transparent verifiable processes for creation & validation of proofs and stating of rights. Built with
-				Substrate.
-			</h2>
-			<SectionButton
-				url="https://discordapp.com/invite/WHe4EuY"
-				class="mx-auto mt-6 md:mt-12 md:mx-0 flex justify-center w-fit"
-			>
-				<span class="material-icons mr-2">discord</span>
-				<p>Join the community</p>
-			</SectionButton>
-		</div>
-	</div>
-	<div class="hidden md:block relative w-2/5 h-fit">
-		<div class="-mx-32 2xl:-mx-40 -mt-40 2xl:-mt-48 -translate-x-30 xl:-translate-x-10 -mb-20">
-			<img class="w-full object-cover" src="/main_illustration.png" alt="light ilustration" />
+<section class="md:container snap-start">
+	<div class="bg-stars bg-repeat bg-[length:200px_200px] -mx-[100%] px-[100%]">
+		<div class="pt-8 md:pt-20 3xl:pt-40 flex flex-col md:flex-row pb-10 md:pb-20">
+			<div class="w-[20rem] mx-auto max-w-full md:w-3/5">
+				<div class="xl:w-11/12">
+					<h1 class="md:mb-0 text-center font-extrabold text-3xl md:text-5xl md:text-left">
+						<p class="md:leading-[4rem]">Process-based Interplanetary P2P Framework</p>
+					</h1>
+					<h2
+						class="w-full text-center md:text-left md:w-4/5 my-6 md:mb-20 text-base md:text-lg lg:text-2xl md:my-12"
+					>
+						Transparent verifiable processes for creation & validation of proofs and stating of rights. Built
+						with Substrate.
+					</h2>
+					<SectionButton
+						url="https://discordapp.com/invite/WHe4EuY"
+						class="mx-auto mt-6 md:mt-12 md:mx-0 flex justify-center w-fit"
+					>
+						<span class="material-icons mr-2">discord</span>
+						<p>Join the community</p>
+					</SectionButton>
+				</div>
+			</div>
+			<div class="w-80 mx-auto md:mx-0 md:w-2/5 2xl:w-1/3 h-fit">
+				<div class="md:-mx-[20%] md:-my-20">
+					<object title="main animation" type="image/svg+xml" data="main_animation.svg" />
+				</div>
+				<div
+					class="bg-anagolayBlack bg-light from-teal-300/50 to-transparent h-28 md:h-64 -mt-20 md:-mt-48 -mx-[10%] md:-mx-[50%]"
+				/>
+			</div>
 		</div>
 	</div>
 </section>
+<div class="text-lg font-bold md:text-4xl mb-20 md:mb-40 text-center pt-10 md:pt-20">
+	<p class="text-green line-through">
+		<span class="text-anagolayWhite">Central authority <br />Resource heavy consensus mechanism</span>
+	</p>
+	<p>Trust the process</p>
+</div>

@@ -14,7 +14,7 @@
 		{data.title}
 		<span class="material-icons hidden md:block">keyboard_arrow_down</span>
 	</label>
-	<ul {id} tabindex="0" class="dropdown-content menu mt-1 p-0 shadow bg-anagolayBlack rounded-box w-52">
+	<ul {id} tabindex="0" class="dropdown-content menu mt-1 p-0 shadow bg-anagolayBlack rounded-box w-36">
 		{#each data.options as option}
 			<li class="rounded-none">
 				<NavLink {option} />

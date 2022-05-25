@@ -28,14 +28,14 @@
 </script>
 
 <nav
-	class="z-20 sticky top-0 py-2 items-center justify-center bg-anagolayBlack w-full text-sm md:text-base p8 text-white h-15 md:justify-between"
+	class="z-20 py-2 items-center justify-center bg-anagolayBlack text-sm md:text-base text-white h-20 md:justify-between border-b border-anagolayWhite/50"
 >
-	<div class="lg:container mx-auto w-5/6">
+	<div class="container ">
 		<div class="flex justify-center md:justify-between">
 			<button class="absolute px-3 py-1 left-1 md:hidden" on:click={toggleSideBar}>
 				<span class="material-icons text-2xl {menuIconColor}"> menu </span>
 			</button>
-			<div class="h-10 lg:h-12 my-auto">
+			<div class="h-12">
 				<a href="/">
 					<img
 						class="object-contain h-full"

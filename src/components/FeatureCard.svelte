@@ -19,10 +19,10 @@
 	{#if isInView}
 		<div
 			in:fade={{ duration: 700, delay: (i % 3) * 150 }}
-			class="w-[22rem] max-w-full sm:max-w-none sm:mx-2 my-8 mx-auto shadow-button flex flex-col items-center rounded-3xl bg-blue h-48 px-12 mt-8 text-base xl:text-xl"
+			class="w-[22rem] bg-gradient-to-b from-anagolayWhite/5 to-transparent featureCard border border-darkblue max-w-full sm:max-w-none sm:mx-2 my-8 mx-auto flex flex-col items-center rounded-3xl h-48 px-12 mt-8 text-base xl:text-xl"
 		>
 			<div
-				class="flex w-24 h-24 items-center justify-center bg-blue/80 bg-gradient-to-br from-darkblue/90 to-anagolayWhite/20 mx-center text-green border border-green rounded-full -mt-6"
+				class="flex w-24 h-24 items-center justify-center bg-anagolayBlack bg-gradient-to-br from-darkblue/90 to-anagolayWhite/20 mx-center text-green border border-green rounded-full -mt-6"
 			>
 				{#if feature.icon}
 					<span class="material-icons text-5xl">{feature.icon}</span>
@@ -45,4 +45,8 @@
 </div>
 
 <style>
+	.featureCard {
+		background: linear-gradient(#ffffff11, #ffffff00),
+			radial-gradient(22% 35% at 50% 15%, #8cff00 0%, rgba(5, 34, 51, 0) 100%);
+	}
 </style>

@@ -42,7 +42,7 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 		},
 	];
 
-	const TrustProcessItems: TrustProcessItem[] = [
+	const trustProcessItems: TrustProcessItem[] = [
 		{
 			src: '/trust_security.svg',
 			alt: 'Secure process',
@@ -284,7 +284,7 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 
 	const body = {
 		beastFeatures,
-		TrustProcessItems,
+		trustProcessItems,
 		useCases,
 		teamMembers,
 		roadMapItems,

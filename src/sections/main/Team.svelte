@@ -31,10 +31,10 @@
 	}
 </script>
 
-<section class="flex pt-40 text-center snap-start">
+<section class="md:container flex pt-20 text-center snap-start">
 	<div
 		id="team"
-		class="relative p-5 bg-gradient-to-b from-anagolayWhite/20 to-anagolayWhite/20 bg-blue/60 w-full xl:w-11/12 teamGrid backdrop-blur-md rounded-3xl md:mx-auto md:py-6 shadow-around shadow-green"
+		class="relative p-5 bg-gradient-to-b from-anagolayWhite/10 to-transparent w-full xl:w-11/12 teamGrid backdrop-blur-md rounded-lg md:rounded-3xl md:mx-auto md:py-6 shadow-button shadow-teal-300"
 	>
 		<h2 class="font-medium text-2xl md:text-4xl my-9 md:my-16">Meet the team</h2>
 		<div class="py-3 w-5/6 mx-auto grid gap-4 grid-cols-3 md:grid-cols-6">

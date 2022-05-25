@@ -55,6 +55,7 @@ export interface TrustProcessItem {
 	text: string;
 	linkText: string;
 	link: string;
+	extraClass?: string;
 }
 
 // interface added for 'Use Cases' section data in main page

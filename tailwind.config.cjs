@@ -29,7 +29,10 @@ module.exports = {
 				sphere:
 					'radial-gradient(60.62% 60.62% at 42.38% 19.2%, var(--tw-gradient-from), var(--tw-gradient-to));',
 				light: 'radial-gradient(50% 50% at 50% 50%, var(--tw-gradient-from), var(--tw-gradient-to));',
-				//stars: 'radial-gradient(2px 2px at 20px 30px, #eeeeee, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 40px 70px, #ffffff, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 50px 160px, #dddddd, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 90px 40px, #ffffff, rgba(0, 0, 0, 0)),radial-gradient(1px 1px at 130px 80px, #ffffff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 160px 120px, #dddddd, rgba(0, 0, 0, 0));'
+				upperRadial:
+					'linear-gradient(var(--tw-gradient-from), var(--tw-gradient-to)), radial-gradient(5rem 1.5rem at 50% 0, var(--tw-shadow-color) 0%, rgba(5, 34, 51, 0) 100%);',
+				stars:
+					'radial-gradient(2px 2px at 20px 30px, #eeeeee, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 40px 70px, #ffffff, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 50px 160px, #dddddd, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 90px 40px, #ffffff, rgba(0, 0, 0, 0)),radial-gradient(1px 1px at 130px 80px, #ffffff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 160px 120px, #dddddd, rgba(0, 0, 0, 0));',
 			},
 			textShadow: {
 				sm: '0 1px 2px var(--tw-shadow-color)',
@@ -39,7 +42,8 @@ module.exports = {
 					'1px 0 3px var(--tw-shadow-color), -1px 0 3px var(--tw-shadow-color), 0 1px 3px var(--tw-shadow-color), 0 -1px 3px var(--tw-shadow-color);',
 			},
 			boxShadow: {
-				button: '0px 4px 4px rgba(20, 31, 69, 0.5), inset 0px 2px 4px rgba(244, 251, 255, 0.5)',
+				//button: '0px 4px 4px rgba(20, 31, 69, 0.5), inset 0px 2px 4px rgba(244, 251, 255, 0.5)',
+				button: 'inset 0px 7px 12px -7px (--tw-shadow-color);',
 				pressed:
 					'0px 4px 4px rgba(20, 31, 69, 0.5), inset 0px -3px 5px rgba(244, 251, 255, 0.2), inset 4px 5px 10px #141f45',
 				around:

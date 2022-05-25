@@ -2,7 +2,7 @@
 	import { menuOptions, media } from '$src/routes';
 </script>
 
-<div class="font-montserrat">
+<div class="md:container font-montserrat">
 	<hr class="mb-6 -mx-6 xl:-mx-12 opacity-50 color-white" />
 	<div class="flex flex-col md:flex-row items-center md:items-start text-center md:mx-auto text-base">
 		<div class="w-36 md:w-[unset] md:my-0 md:-mr-8">
