@@ -57,7 +57,7 @@ upload-to-ipfs:
     - pnpm build
 
     - echo "Uploading to IPFS ..."
-    - IPFS_PIN=false ipfsCli upload --onlyCid build > ANAGOLAY_WEBSITE_CID
+    - IPFS_PIN=false ipfsCli add --onlyCid build > ANAGOLAY_WEBSITE_CID
     - echo "The Website is published with the CID:" && cat ANAGOLAY_WEBSITE_CID
     - echo "https://$(cat ANAGOLAY_WEBSITE_CID).ipfs.anagolay.network/"
   # when: manual
