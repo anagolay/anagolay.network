@@ -3,6 +3,7 @@
 	import type { RoadmapItem } from '$src/types';
 	import SectionButton from '$src/components/SectionButton.svelte';
 	import { status } from '$src/routes/index';
+	import Section from '$src/components/Section.svelte';
 
 	export let roadMapItems: RoadmapItem[];
 
@@ -15,7 +16,7 @@
 			let cardShadow =
 				f.status === status.doing
 					? 'shadow-green/50 border border-green/60'
-					: 'shadow-button shadow-transparent';
+					: 'shadow-card shadow-transparent';
 			let cardOpacity = f.status === status.pending ? 'opacity-50' : 'bg-opacity-80';
 			f.cardStyling = `${cardShadow} ${cardOpacity}`;
 			return f.status;
@@ -59,7 +60,7 @@
 	onMount(() => (roadMap.scrollLeft = 0.55 * roadWidth - 0.5 * windowWidth));
 </script>
 
-<section class="md:container">
+<Section>
 	<div class="mx-auto pt-40 snap-start">
 		<div class="flex justify-between items-center w-full text-xs md:text-base pb-16">
 			<button
@@ -139,4 +140,4 @@
 			</div>
 		</div>
 	</div>
-</section>
+</Section>

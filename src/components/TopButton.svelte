@@ -1,9 +1,7 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-
 	import { fade } from 'svelte/transition';
-
 	export let scrollContainer: HTMLElement;
+	export let scrollTop = 0;
 	export let showOnPx = 200;
 	let visible = false;
 
@@ -11,14 +9,7 @@
 		scrollContainer.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 	}
 
-	onMount(() => {
-		if (!scrollContainer) scrollContainer = document.documentElement || document.body;
-		scrollContainer.onscroll = () => handleOnScroll();
-	});
-
-	function handleOnScroll() {
-		visible = scrollContainer.scrollTop > showOnPx;
-	}
+	$: visible = scrollTop > showOnPx;
 </script>
 
 {#if visible}

@@ -35,7 +35,7 @@
 		</div>
 		<div class="-ml-[100%] flex justify-center">
 			<div
-				class="relative md:w-full bg-anagolayWhite/20 text-center shadow-button rounded-3xl px-3 md:px-16 xl:px-24 py-5 z-10"
+				class="relative md:w-full bg-anagolayWhite/20 text-center shadow-card rounded-3xl px-3 md:px-16 xl:px-24 py-5 z-10"
 			>
 				<p class="text-2xl sm:text-3xl text-green blur-[2px] my-10 font-mono">4 0 4</p>
 				<h1 class="text-3xl sm:text-4xl md:text-6xl 2xl:text-7xl md:leading-[6rem] min-w-fit font-bold">

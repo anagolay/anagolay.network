@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Section from '$src/components/Section.svelte';
+
 	import type { TrustProcessItem } from '$src/types';
 	export let trustProcessItems: TrustProcessItem[];
 	trustProcessItems.map((item: TrustProcessItem, index) => {
@@ -6,7 +8,7 @@
 	});
 </script>
 
-<section class="md:container flex max-w-full flex-col mx-auto xl:mx-auto snap-start">
+<Section class="w-80 md:w-full flex max-w-full flex-col mx-auto xl:mx-auto">
 	<div class="text-center mb-12 md:mb-16">
 		<h2 class="text-2xl md:text-4xl mb-6 md:mb-8 text-green">Trust the process</h2>
 		<p class="md:w-4/5 md:mx-auto text-base md:text-xl xl:text-2xl">
@@ -35,4 +37,4 @@
 			</div>
 		{/each}
 	</div>
-</section>
+</Section>
