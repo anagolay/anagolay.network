@@ -58,7 +58,7 @@ export const media: MediaIcon[] = [
 	{ name: 'Twitter', url: 'https://twitter.com/AnagolayNet', image: '/twitter.svg' },
 	{
 		name: 'Matrix',
-		url: 'https://matrix.to/#/!FJvAuDoWRoMVuOFYwL:matrix.org?via=matrix.org',
+		url: 'https://matrix.to/#/#anagolay-general:matrix.org',
 		image: '/matrix.svg',
 	},
 ];
