@@ -8,7 +8,7 @@
 <Section>
 	<StarrySky position="top">
 		<div class="pt-8 md:pt-20 3xl:pt-40 flex flex-col md:flex-row pb-10 md:pb-20">
-			<div class="w-[20rem] mx-auto max-w-full md:w-3/5">
+			<div class="w-[20rem] max-w-full md:w-3/5">
 				<div class="relative lg:w-4/5">
 					<h1 class="md:mb-0 text-center font-extrabold text-3xl md:text-5xl 3xl:text-6xl md:text-left">
 						<p class="md:leading-[4rem]">Process-based Interplanetary P2P Framework</p>

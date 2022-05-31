@@ -16,7 +16,7 @@
 			let cardShadow =
 				f.status === status.doing
 					? 'shadow-green/50 border border-green/60'
-					: 'shadow-card shadow-transparent';
+					: 'shadow-card border border-anagolayWhite/20 shadow-transparent';
 			let cardOpacity = f.status === status.pending ? 'opacity-50' : 'bg-opacity-80';
 			f.cardStyling = `${cardShadow} ${cardOpacity}`;
 			return f.status;
@@ -70,7 +70,7 @@
 				<span class="material-icons mr-2 text-sm  md:text-base">west</span>
 				<p class="hover:underline">Completed</p>
 			</button>
-			<h2 class="w-1/3 text-center text-xl md:text-3xl">Roadmap</h2>
+			<h2 class="w-1/3 text-center text-xl md:text-3xl pb-8 sm:pb-0">Roadmap</h2>
 			<button
 				class="flex items-center justify-end w-1/3 opacity-60 cursor-pointer hover:opacity-100"
 				on:click={() => scrollTo(roadWidth)}

@@ -19,7 +19,7 @@
 	{#if isInView}
 		<div
 			in:fade={{ duration: 700, delay: (i % 3) * 150 }}
-			class="w-[22rem] bg-gradient-to-b from-anagolayWhite/5 to-transparent featureCard border border-darkblue max-w-full md:max-w-none my-8 mx-auto flex flex-col items-center rounded-3xl h-48 px-12 mt-8 text-base xl:text-xl"
+			class="w-[22rem] 2xl:lg:w-[26rem] bg-gradient-to-b from-anagolayWhite/5 to-transparent featureCard border border-darkblue max-w-full md:max-w-none my-8 mx-auto flex flex-col items-center rounded-3xl h-48 px-12 mt-8 text-base xl:text-xl"
 		>
 			<div
 				class="flex w-24 h-24 items-center justify-center bg-anagolayBlack bg-gradient-to-br from-darkblue/90 to-anagolayWhite/20 mx-center text-green border border-green rounded-full -mt-6"

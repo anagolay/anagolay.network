@@ -19,12 +19,12 @@
 	<div class="w-80 max-w-full mx-auto md:w-11/12">
 		{#each trustProcessItems as item}
 			<div class="w-full mx-auto md:flex {item.extraClass} mb-16 md:mb-16">
-				<div class="justify-center h-40 md:h-[unset] md:w-1/2 mb-4 md:mb-0">
+				<div class="justify-center h-40 md:h-[unset] md:w-1/2 mb-4 md:mb-0 md:px-5">
 					<img class="max-h-full max-w-full mx-auto" src={item.src} alt={item.alt} />
 				</div>
 
 				<div
-					class="flex flex-col text-center md:text-justify justify-center md:justify-center items-center md:items-start md:w-1/2 lg:items-start text-sm md:text-base xl:text-xl"
+					class="flex flex-col text-center md:text-justify justify-center md:justify-center items-center md:items-start md:w-1/2 lg:items-start text-sm md:text-base xl:text-xl 2xl:w-5/12 2xl:mx-auto"
 				>
 					<p class="mb-4">{item.text}</p>
 					<div class="pt-2">

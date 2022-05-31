@@ -35,7 +35,7 @@
 			<button class="absolute px-3 py-1 left-1 md:hidden" on:click={toggleSideBar}>
 				<span class="material-icons text-2xl {menuIconColor}"> menu </span>
 			</button>
-			<div class="h-12">
+			<div class="h-8 my-1 md:h-12">
 				<a href="/">
 					<img
 						class="object-contain h-full"
