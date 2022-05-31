@@ -11,7 +11,7 @@
 <div class="bg-anagolayBlack flex flex-col  h-screen">
 	<NavBar />
 	<main
-		class="px-1/12 flex-grow-1 overflow-x-hidden overflow-y-auto scroll-smooth flex flex-col text-anagolayWhite font-dmsans snap-y snap-proximity snap-always"
+		class="px-1/12 flex-grow-1 overflow-y-auto scroll-smooth flex flex-col text-anagolayWhite font-dmsans snap-y snap-proximity snap-always"
 		bind:this={scrollContainer}
 		on:scroll={() => {
 			scrollTop = scrollContainer.scrollTop;

@@ -5,9 +5,9 @@
 	import StarrySky from '$src/components/StarrySky.svelte';
 </script>
 
-<Section>
+<Section class="overflow-x-hidden">
 	<StarrySky position="top">
-		<div class="pt-8 md:pt-20 3xl:pt-40 flex flex-col md:flex-row pb-10 md:pb-20">
+		<div class="md:container pt-8 md:pt-20 3xl:pt-40 flex flex-col items-center md:flex-row pb-10 md:pb-20">
 			<div class="w-[20rem] max-w-full md:w-3/5">
 				<div class="relative lg:w-4/5">
 					<h1 class="md:mb-0 text-center font-extrabold text-3xl md:text-5xl 3xl:text-6xl md:text-left">

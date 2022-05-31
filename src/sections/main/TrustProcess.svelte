@@ -8,7 +8,7 @@
 	});
 </script>
 
-<Section class="w-80 md:w-full flex max-w-full flex-col mx-auto xl:mx-auto">
+<Section class="md:container w-80 md:w-full flex max-w-full flex-col mx-auto xl:mx-auto">
 	<div class="text-center mb-12 md:mb-16">
 		<h2 class="text-2xl md:text-4xl mb-6 md:mb-8 text-green">Trust the process</h2>
 		<p class="md:w-4/5 md:mx-auto text-base md:text-xl xl:text-2xl">

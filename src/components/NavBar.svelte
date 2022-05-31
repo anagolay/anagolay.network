@@ -30,7 +30,7 @@
 <nav
 	class="z-20 py-2 items-center justify-center bg-anagolayBlack text-sm md:text-base text-white h-20 md:justify-between border-b border-anagolayWhite/50"
 >
-	<div class="container ">
+	<div class="md:container ">
 		<div class="flex justify-center md:justify-between">
 			<button class="absolute px-3 py-1 left-1 md:hidden" on:click={toggleSideBar}>
 				<span class="material-icons text-2xl {menuIconColor}"> menu </span>

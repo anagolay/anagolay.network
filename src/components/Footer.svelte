@@ -3,8 +3,8 @@
 	import Section from './Section.svelte';
 </script>
 
-<Section class="font-montserrat">
-	<hr class="mb-6 -mx-6 xl:-mx-12 opacity-50 color-white" />
+<Section snap="snap-center" class="md:container font-montserrat snap-end">
+	<hr class="mb-6 opacity-50 md:-mx-4 color-white" />
 	<div class="flex flex-col md:flex-row items-center md:items-start text-center md:mx-auto text-base">
 		<div class="w-36 md:w-[unset] md:my-0 md:-mr-8">
 			<img
@@ -50,7 +50,7 @@
 		</div>
 	</div>
 
-	<div class="w-full text-xs text-center pb-16 font-light opacity-50 md:py-8">
+	<div class="w-full text-xs text-center pb-20 font-light opacity-50 md:pb-12">
 		<p class="mb-1">Product of KELP DIGITAL OÜ</p>
 		<p>Copyright © 2021-present Kelp Digital – All Rights Reserved</p>
 	</div>

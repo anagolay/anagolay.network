@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Section from '$src/components/Section.svelte';
+
 	import type { ArchitectureItem, WebLayerIcon } from '$src/types';
 
 	export let webLayerIcons: WebLayerIcon[];
@@ -8,7 +10,7 @@
 		'w-full flex shadow-button p-3 md:py-10 md:px-8 xl:px-16 rounded-md md:rounded-3xl h-20 md:h-[unset] bg-blue mb-4 md:mb-8';
 </script>
 
-<section class="mt-32 mb-32 md:mb-40">
+<Section class="md:container mt-32 mb-32 md:mb-40">
 	<div class="relative text-center mb-8 md:mb-16">
 		<h3 class="text-2xl md:text-4xl md:mb-8">Architecture</h3>
 	</div>
@@ -57,4 +59,4 @@
 			</div>
 		</div>
 	{/each}
-</section>
+</Section>
