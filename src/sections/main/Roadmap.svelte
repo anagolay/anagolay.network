@@ -61,7 +61,7 @@
 </script>
 
 <Section>
-	<div class="md:container mx-auto pt-40 snap-start">
+	<div class="w-80 sm:w-5/6 md:container mx-auto pt-40">
 		<div class="flex justify-between items-center w-full text-xs md:text-base pb-16">
 			<button
 				class="flex items-center text-left w-1/3 opacity-60 cursor-pointer hover:opacity-100"

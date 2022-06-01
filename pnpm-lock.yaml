@@ -8,7 +8,6 @@ specifiers:
   '@typescript-eslint/eslint-plugin': 5.22.1-alpha.10
   '@typescript-eslint/parser': 5.22.1-alpha.10
   autoprefixer: 10.4.7
-  daisyui: 2.14.3
   eslint: 8.15.0
   eslint-config-prettier: 8.5.0
   eslint-plugin-svelte3: 4.0.0
@@ -36,7 +35,6 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 5.22.1-alpha.10_2618ceee955db3d1a0b8cab1e9024dc7
   '@typescript-eslint/parser': 5.22.1-alpha.10_eslint@8.15.0+typescript@4.6.4
   autoprefixer: 10.4.7_postcss@8.4.13
-  daisyui: 2.14.3_1479244b7b1ab8346eed707106c1912f
   eslint: 8.15.0
   eslint-config-prettier: 8.5.0_eslint@8.15.0
   eslint-plugin-svelte3: 4.0.0_eslint@8.15.0+svelte@3.48.0
@@ -1571,27 +1569,6 @@ packages:
       }
     dev: true
 
-  /color-string/1.9.0:
-    resolution:
-      {
-        integrity: sha512-9Mrz2AQLefkH1UvASKj6v6hj/7eWgjnT/cVsR8CumieLoT+g900exWeNogqtweI8dxloXN9BDQTYro1oWu/5CQ==,
-      }
-    dependencies:
-      color-name: 1.1.4
-      simple-swizzle: 0.2.2
-    dev: true
-
-  /color/4.2.3:
-    resolution:
-      {
-        integrity: sha512-1rXeuUUiGGrykh+CeBdu5Ie7OJwinCgQY0bc7GCRxy5xVHy+moaqkpL/jqQq0MtQOeYcrqEz4abc5f0KtU7W4A==,
-      }
-    engines: { node: '>=12.5.0' }
-    dependencies:
-      color-convert: 2.0.1
-      color-string: 1.9.0
-    dev: true
-
   /colors/1.4.0:
     resolution:
       {
@@ -1633,16 +1610,6 @@ packages:
       which: 2.0.2
     dev: true
 
-  /css-selector-tokenizer/0.8.0:
-    resolution:
-      {
-        integrity: sha512-Jd6Ig3/pe62/qe5SBPTN8h8LeUg/pT4lLgtavPf7updwwHpvFzxvOQBHYj2LZDMjUnBzgvIUSjRcf6oT5HzHFg==,
-      }
-    dependencies:
-      cssesc: 3.0.0
-      fastparse: 1.1.2
-    dev: true
-
   /cssesc/3.0.0:
     resolution:
       {
@@ -1650,25 +1617,6 @@ packages:
       }
     engines: { node: '>=4' }
     hasBin: true
-    dev: true
-
-  /daisyui/2.14.3_1479244b7b1ab8346eed707106c1912f:
-    resolution:
-      {
-        integrity: sha512-EH6cLLaieInq81ACE8FxHsWLsH08sZ62zLxctIHTnLhn0eHvtHdLYZ6yngsy7yd43ZFOstzbyYY4q5xByZdaQQ==,
-      }
-    peerDependencies:
-      autoprefixer: ^10.0.2
-      postcss: ^8.1.6
-    dependencies:
-      autoprefixer: 10.4.7_postcss@8.4.13
-      color: 4.2.3
-      css-selector-tokenizer: 0.8.0
-      postcss: 8.4.13
-      postcss-js: 4.0.0_postcss@8.4.13
-      tailwindcss: 3.0.24
-    transitivePeerDependencies:
-      - ts-node
     dev: true
 
   /debug/4.3.3:
@@ -2382,13 +2330,6 @@ packages:
     resolution: { integrity: sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc= }
     dev: true
 
-  /fastparse/1.1.2:
-    resolution:
-      {
-        integrity: sha512-483XLLxTVIwWK3QTrMGRqUfUpoOs/0hbQrl2oz4J0pAcm3A3bu84wxTFqGqkJzewCLdME38xJLJAxBABfQT8sQ==,
-      }
-    dev: true
-
   /fastq/1.13.0:
     resolution:
       {
@@ -2725,13 +2666,6 @@ packages:
 
   /ip/1.1.5:
     resolution: { integrity: sha1-vd7XARQpCCjAoDnnLvJfWq7ENUo= }
-    dev: true
-
-  /is-arrayish/0.3.2:
-    resolution:
-      {
-        integrity: sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==,
-      }
     dev: true
 
   /is-binary-path/2.1.0:
@@ -3798,12 +3732,6 @@ packages:
       {
         integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==,
       }
-    dev: true
-
-  /simple-swizzle/0.2.2:
-    resolution: { integrity: sha1-pNprY1/8zMoz9w0Xy5JZLeleVXo= }
-    dependencies:
-      is-arrayish: 0.3.2
     dev: true
 
   /slash/3.0.0:

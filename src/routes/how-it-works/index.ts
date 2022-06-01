@@ -1,6 +1,7 @@
 import type { RequestHandler, RequestHandlerOutput } from '@sveltejs/kit';
 
 import type { TechnologyItem, ArchitectureItem, WebLayerIcon } from '$src/types';
+let lineSize = '[2px]';
 
 export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 	const technologyItems: TechnologyItem[] = [
@@ -19,6 +20,8 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				source: '/how_it_works_statements.png',
 				altText: 'Statements',
 			},
+			line2: `w-1/2 mx-auto h-1/4 xl:h-1/6 mt-auto flex justify-end items-start bg-gradient-to-bl from-green to-blue rounded-r-3xl rounded-t-none`,
+			inner2: `rounded-r-3xl rounded-t-none -translate-x-${lineSize} -translate-y-${lineSize}`,
 		},
 		{
 			id: 'proofs',
@@ -30,10 +33,14 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'The execution consists of a number of tasks, called Operations. When connected together, they make up a Workflow.',
 			],
 			image: {
-				class: '-ml-5 -mr-10 -my-10  md:-my-[15%] md:ml-0 -mr-[20%] lg:-my-[30%] md:-mb-[50%] ',
+				class: '-ml-10  -my-10 md:-my-[15%] md:-mx-[10%] lg:-my-[30%] md:-mb-[50%] ',
 				source: '/how_it_works_proofs.png',
 				altText: 'Process proofs',
 			},
+			line1: `w-1/4 h-[40%] lg:h-1/4 flex justify-start items-start bg-gradient-to-b from-blue to-green rounded-l-3xl rounded-b-none -mt-${lineSize}`,
+			inner1: `rounded-l-3xl rounded-b-none translate-x-${lineSize} translate-y-${lineSize}`,
+			line2: `w-2/5 mx-[40%] md:h-1/4 xl:h-[10%] mt-auto flex justify-end items-start bg-gradient-to-br from-blue to-green rounded-b-3xl rounded-r-none`,
+			inner2: `rounded-b-3xl rounded-r-none translate-x-${lineSize} -translate-y-${lineSize}`,
 		},
 		{
 			id: 'workflow',
@@ -49,6 +56,10 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				source: '/how_it_works_workflow.png',
 				altText: 'Process workflow',
 			},
+			line1: `w-1/5 ml-[80%] h-[30%] flex justify-start items-start bg-gradient-to-b from-green to-blue rounded-r-3xl rounded-b-none -mt-${lineSize}`,
+			inner1: `rounded-r-3xl rounded-b-none -translate-x-${lineSize} translate-y-${lineSize}`,
+			line2: `w-2/5 mx-[40%] md:h-[20%] xl:h-[10%] mt-auto flex justify-end items-start bg-gradient-to-bl from-blue to-green rounded-b-3xl rounded-l-none`,
+			inner2: `rounded-b-3xl rounded-l-none -translate-x-${lineSize} -translate-y-${lineSize}`,
 		},
 		{
 			title: 'Decentralized Storage',
@@ -63,6 +74,8 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				source: '/how_it_works_storage.png',
 				altText: 'Storage',
 			},
+			line1: `w-2/5 h-[40%] flex justify-start items-start bg-gradient-to-bl from-green to-blue rounded-l-3xl rounded-b-none -mt-${lineSize}`,
+			inner1: `rounded-l-3xl rounded-b-none translate-x-${lineSize} translate-y-${lineSize}`,
 		},
 	];
 
@@ -76,20 +89,16 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 
 	const architectureItems: ArchitectureItem[] = [
 		{
-			image: { source: '/icon_sdk.svg', altText: 'SDK icon' },
-			title: 'SDK Layer',
-			description: 'Typescript - Rust - Operations - Workflows - WASM - Workflow execution',
-		},
-		{
 			image: { source: '/icon_ipfs.svg', altText: 'IPFS icon' },
 			title: 'Storage Layer',
-			description: 'Operations - Build Artifacts - Workflows - WASM - Source code',
+			subtitle: 'IPFS',
+			description: ['Git repositories', 'Documentation', 'WASM artifacts', 'Source code'],
 		},
 		{
 			image: { source: '/icon_blockchain.svg', altText: 'blockchain icon' },
 			title: 'Blockchain Layer',
 			subtitle: 'Substrate with our pallets',
-			description: 'Operations - Workflows - PoE - Statements - Artifacts',
+			description: ['Operations', 'Workflows', 'PoE', 'Artifacts'],
 		},
 	];
 
