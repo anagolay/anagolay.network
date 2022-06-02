@@ -25,11 +25,11 @@
 		</div>
 
 		<div class={containerClass}>
-			<div class="w-1/3 md:w-1/3 flex justify-end text-right items-center text-green">
+			<div class="w-1/3 md:w-48  lg:w-56 flex justify-end text-right items-center text-green">
 				<p class="text-[.56rem] md:text-base font-bold "><i>Web Apps Layer</i></p>
 				<span class="material-icons text-xl md:text-4xl ml-2 sm:ml-4">web_asset</span>
 			</div>
-			<div class="w-2/3 md:w-2/3 px-4 lg:px-12 flex justify-between items-center">
+			<div class="w-2/3 md:w-2/3 mx-2 md:mx-auto lg:px-12 flex justify-between items-center">
 				{#each webLayerIcons as icon}
 					<img
 						class="max-h-5 md:max-h-12 max-w-5 md:max-w-12"
@@ -43,7 +43,7 @@
 
 		{#each architectureItems as item}
 			<div class={containerClass}>
-				<div class="w-1/3 md:w-1/3 flex justify-end items-center text-green">
+				<div class="w-1/3 md:w-48 lg:w-56 flex justify-end items-center text-green">
 					<div class="flex flex-col items-end text-right">
 						<p class="text-[.56rem] md:text-base font-bold "><i>{item.title}</i></p>
 						{#if item.subtitle}
@@ -58,7 +58,7 @@
 					/>
 				</div>
 				<div
-					class="w-2/3 md:w-2/3 h-fit my-auto flex flex-wrap sm:flex-nowrap justify-evenly sm:justify-between px-4 lg:px-12 md:text-left items-center text-[.56rem] md:text-base"
+					class="w-2/3 mx-2 md:mx-auto h-fit my-auto flex flex-wrap sm:flex-nowrap justify-evenly sm:justify-between lg:px-12 md:text-left items-center text-[.56rem] md:text-base"
 				>
 					{#each item.description as word, i}
 						<div class="flex h-8 md:h-16 text-center md:text-left  {item.wordContainer[i]}">

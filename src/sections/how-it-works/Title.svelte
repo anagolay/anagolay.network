@@ -2,14 +2,14 @@
 	import Section from '$src/components/Section.svelte';
 </script>
 
-<Section class="pt-40 md:pt-28">
+<Section class="pt-20 md:pt-28 overflow-hidden">
 	<div class="md:container flex">
-		<div class="w-5/6 md:w-full">
+		<div class="w-5/6 mx-auto md:w-full">
 			<div
 				class="-mt-20 w-12 h-12 bg-sphere from-green to-blue rounded-full -rotate-[25deg] opacity-80 blur-sm"
 			/>
 			<div
-				class="h-[25rem] w-[25rem] bg-light -mt-32 from-green/40 md:from-green/30 to-transparent -mb-56 ml-32 md:ml-[40%]"
+				class="h-[25rem] w-[25rem] md:h-40 md:w-40 md:absolute bg-light -mt-32 md:-mt-10 from-green/40 md:from-green/30 to-transparent -mb-56 ml-32  md:ml-[40%]"
 			/>
 			<div class="">
 				<h1 class="tracking-wider text-center font-extrabold text-3xl md:text-5xl md:text-left min-w-fit">
@@ -17,7 +17,7 @@
 				</h1>
 
 				<h2
-					class="w-full md:w-3/5 lg:w-3/5 2xl:w-1/2 text-center mt-8 text-lg md:text-lg 2xl:text-2xl md:text-left"
+					class="w-full md:w-3/5 lg:w-3/5 2xl:w-1/2 text-center md:text-left mt-8 text-base md:text-lg lg:text-xl 3xl:text-2xl"
 				>
 					<p class="">
 						Anagolay is a peer-to-peer network that stores records of Rights, Restrictions, and Proofs of any
