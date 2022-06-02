@@ -1,7 +1,7 @@
 import type { RequestHandler, RequestHandlerOutput } from '@sveltejs/kit';
 
 import type { TechnologyItem, ArchitectureItem, WebLayerIcon } from '$src/types';
-let lineSize = '[2px]';
+const lineSize = '[2px]';
 
 export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 	const technologyItems: TechnologyItem[] = [
