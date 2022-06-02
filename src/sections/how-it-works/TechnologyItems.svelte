@@ -12,8 +12,8 @@
 
 <div class="w-full mb-20">
 	{#each technologyItems as item, i}
-		<Section class="w-80 max-w-full sm:w-5/6 mx-auto md:container">
-			<div class="flex">
+		<Section class="w-80 max-w-full mx-auto">
+			<div class="md:container flex">
 				<div class="hidden md:flex flex-col w-[80%] ml-[10%]">
 					<div class="{item.line1} opacity-50">
 						<div class="{item.inner1} bg-anagolayBlack h-full w-full" />

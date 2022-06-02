@@ -2,8 +2,8 @@
 	import Section from '$src/components/Section.svelte';
 </script>
 
-<Section class="md:container mt-40 md:mt-28">
-	<div class="flex">
+<Section class="pt-40 md:pt-28">
+	<div class="md:container flex">
 		<div class="w-5/6 md:w-full">
 			<div
 				class="-mt-20 w-12 h-12 bg-sphere from-green to-blue rounded-full -rotate-[25deg] opacity-80 blur-sm"
