@@ -1,16 +1,22 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
-	export let scrollContainer: HTMLElement;
+	// export let scrollContainer: HTMLElement;
 	export let scrollTop = 0;
 	export let showOnPx = 200;
 	let visible = false;
 
 	function scrollToTop(): void {
-		scrollContainer.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+		window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+	}
+
+	function setVisibility() {
+		visible = window.scrollY > showOnPx;
 	}
 
 	$: visible = scrollTop > showOnPx;
 </script>
+
+<svelte:window on:scroll={setVisibility} />
 
 {#if visible}
 	<button

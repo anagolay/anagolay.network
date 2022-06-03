@@ -13,7 +13,7 @@
 <div class="w-full mb-20">
 	{#each technologyItems as item, i}
 		<Section class="w-80 max-w-full mx-auto">
-			<div class="md:container flex">
+			<div class="md:container sm:w-5/6 mx-auto md:w-full flex">
 				<div class="hidden md:flex flex-col w-[80%] ml-[10%]">
 					<div class="{item.line1} opacity-50">
 						<div class="{item.inner1} bg-anagolayBlack h-full w-full" />
@@ -22,10 +22,10 @@
 						<div class="{item.inner2} bg-anagolayBlack h-full w-full" />
 					</div>
 				</div>
-				<div class="w-full md:-ml-[90%] pb-16 md:pb-28 relative">
+				<div class="w-full md:-ml-[90%] md:pb-28 relative">
 					<div id={item.id} class="relative text-center  pt-24  mb-4 md:mb-16 xl:mb-32">
-						<h3 class="text-2xl md:text-4xl lg:text-4xl mb-6 md:mb-8">{item.title}</h3>
-						<p class="text-green text-base md:text-xl 2xl:text-2xl md:w-3/4 md:mx-auto">
+						<h3 class="text-2xl md:text-4xl lg:text-4xl text-green mb-6 md:mb-8">{item.title}</h3>
+						<p class="text-base md:text-xl 2xl:text-2xl md:w-3/4 md:mx-auto">
 							{item.subtitle}
 						</p>
 					</div>

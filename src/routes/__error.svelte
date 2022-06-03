@@ -3,8 +3,8 @@
 	import SectionButton from '$src/components/SectionButton.svelte';
 </script>
 
-<div class="h-screen 3xl:-mb-60">
-	<div class="mt-10 md:mt-20 3xl:mt-40 mb-auto w-full md:w-[35rem] lg:w-2/3 md:mx-auto grid grid-cols-2">
+<div class="h-screen">
+	<div class="mt-10 md:mt-20 mb-auto w-full md:w-[35rem] lg:w-2/3 md:mx-auto grid grid-cols-2">
 		<div class="-mr-[100%]">
 			<div class="flex">
 				<div class="w-1/2">

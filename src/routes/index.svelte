@@ -9,6 +9,22 @@
 
 	import type { FeatureData, TrustProcessItem, UseCase, TeamMember, RoadmapItem } from '$src/types';
 
+	import { page } from '$app/stores';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		const hash = $page.url.hash;
+
+		if (hash) {
+			const target = document.getElementsByName(hash.substring(1))[0];
+			// target.scrollIntoView({ behavior: 'smooth' });
+			window.scrollTo({ top: target.offsetTop, behavior: 'smooth' });
+		} else {
+			window.scrollTo({ top: 0, behavior: 'smooth' });
+			//this smooth does not work
+		}
+	});
+
 	export let beastFeatures: FeatureData[];
 	export let useCases: UseCase[];
 	export let trustProcessItems: TrustProcessItem[];

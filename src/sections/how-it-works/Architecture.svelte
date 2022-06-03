@@ -10,63 +10,73 @@
 		item.wordContainer = [];
 		for (let i = 0; i < item.description.length; i++) {
 			item.wordContainer[i] = `${i % 2 === 0 ? 'items-start' : 'items-end'} ${
-				i > 1 && i < item.description.length - 1 ? 'px-1 -mx-4' : ''
+				i > 1 && i < item.description.length - 1 ? 'w-fit sm:px-1 mx-1 sm:-mx-4' : ''
 			}`;
 		}
 	}
 	const containerClass =
-		'w-[25rem] max-w-full md:w-full flex bg-gradient-to-b from-anagolayWhite/10 to-transparent md:py-6 lg:py-8 rounded-md md:rounded-3xl h-20 md:h-[unset] mx-auto border border-blue-600/20 mb-4 md:mb-8';
+		'w-[25rem] px-2 max-w-full md:w-full flex bg-gradient-to-b from-anagolayWhite/10 to-transparent md:py-6 lg:py-8 rounded-md md:rounded-3xl h-20 md:h-[unset] mx-auto border border-blue-600/20 mb-4 md:mb-8';
 </script>
 
-<Section class="bg-gradient-to-b from-anagolayWhite/10 to-transparent shadow-card shadow-teal-300 pb-40">
-	<div class="md:container lg:w-5/6 mx-auto">
-		<div class="relative text-center py-8 md:py-16">
-			<h3 class="text-2xl md:text-4xl">Architecture</h3>
-		</div>
-
-		<div class={containerClass}>
-			<div class="w-1/3 md:w-48  lg:w-56 flex justify-end text-right items-center text-green">
-				<p class="text-[.56rem] md:text-base font-bold "><i>Web Apps Layer</i></p>
-				<span class="material-icons text-xl md:text-4xl ml-2 sm:ml-4">web_asset</span>
+<Section class="overflow-x-hidden">
+	<div
+		class="bg-gradient-to-b from-anagolayWhite/10 to-transparent shadow-card shadow-teal-300 pb-40 -mx-4 px-4"
+	>
+		<div class="md:container lg:w-5/6 mx-auto">
+			<div class="relative text-center py-8 md:py-16">
+				<h3 class="text-2xl md:text-4xl text-green">Architecture</h3>
 			</div>
-			<div class="w-2/3 md:w-2/3 mx-2 md:mx-auto lg:px-12 flex justify-between items-center">
-				{#each webLayerIcons as icon}
-					<img
-						class="max-h-5 md:max-h-12 max-w-5 md:max-w-12"
-						src={icon.source}
-						alt="{icon.title} icon"
-						title={icon.title}
-					/>
-				{/each}
-			</div>
-		</div>
 
-		{#each architectureItems as item}
 			<div class={containerClass}>
-				<div class="w-1/3 md:w-48 lg:w-56 flex justify-end items-center text-green">
-					<div class="flex flex-col items-end text-right">
-						<p class="text-[.56rem] md:text-base font-bold "><i>{item.title}</i></p>
-						{#if item.subtitle}
-							<p class="text-[.43rem] md:text-xs">{item.subtitle}</p>
-						{/if}
-					</div>
-					<img
-						loading="lazy"
-						class="max-h-4 max-w-4 md:max-h-8 md:max-w-8 ml-2 sm:ml-4"
-						src={item.image.source}
-						alt={item.image.altText}
-					/>
+				<div
+					class="w-28 min-w-[7rem] md:w-48 sm:min-w-[unset] lg:w-56 flex justify-end text-right items-center text-green"
+				>
+					<p class="text-[.56rem] md:text-base font-bold "><i>Web Apps Layer</i></p>
+					<span class="material-icons text-xl md:text-4xl ml-2 sm:ml-4">web_asset</span>
 				</div>
 				<div
-					class="w-2/3 mx-2 md:mx-auto h-fit my-auto flex flex-wrap sm:flex-nowrap justify-evenly sm:justify-between lg:px-12 md:text-left items-center text-[.56rem] md:text-base"
+					class="flex-grow px-2 md:px-[2%] md:w-2/3 md:mx-auto md:flex-grow-0 flex justify-between items-center"
 				>
-					{#each item.description as word, i}
-						<div class="flex h-8 md:h-16 text-center md:text-left  {item.wordContainer[i]}">
-							{word}
-						</div>
+					{#each webLayerIcons as icon}
+						<img
+							class="max-h-5 md:max-h-12 max-w-5 md:max-w-12"
+							src={icon.source}
+							alt="{icon.title} icon"
+							title={icon.title}
+						/>
 					{/each}
 				</div>
 			</div>
-		{/each}
+
+			{#each architectureItems as item}
+				<div class={containerClass}>
+					<div
+						class="w-28 min-w-[7rem] md:w-48 sm:min-w-[unset] lg:w-56 flex justify-end items-center text-green"
+					>
+						<div class="flex flex-col items-end text-right">
+							<p class="text-[.56rem] md:text-base font-bold "><i>{item.title}</i></p>
+							{#if item.subtitle}
+								<p class="text-[.43rem] md:text-xs">{item.subtitle}</p>
+							{/if}
+						</div>
+						<img
+							loading="lazy"
+							class="max-h-4 max-w-4 md:max-h-8 md:max-w-8 ml-2 sm:ml-4"
+							src={item.image.source}
+							alt={item.image.altText}
+						/>
+					</div>
+					<div
+						class="flex-grow px-2 md:px-[2%] md:w-2/3 md:mx-auto md:flex-grow-0 h-fit my-auto flex flex-wrap sm:flex-nowrap justify-evenly sm:justify-between lg:px-12 md:text-left items-center text-[.56rem] md:text-base"
+					>
+						{#each item.description as word, i}
+							<div class="flex h-8 md:h-16 text-center md:text-left {item.wordContainer[i]}">
+								{word}
+							</div>
+						{/each}
+					</div>
+				</div>
+			{/each}
+		</div>
 	</div>
 </Section>

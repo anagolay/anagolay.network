@@ -24,7 +24,7 @@
 				</div>
 
 				<div
-					class="flex flex-col text-center md:text-justify justify-center md:justify-center items-center md:items-start md:w-1/2 lg:items-start text-sm md:text-base xl:text-xl 2xl:w-5/12 2xl:mx-auto"
+					class="flex flex-col text-center md:text-justify justify-center md:justify-center items-center md:items-start md:w-1/2 px-5 lg:items-start text-sm md:text-base xl:text-xl"
 				>
 					<p class="mb-4">{item.text}</p>
 					<div class="pt-2">
