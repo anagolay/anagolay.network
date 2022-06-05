@@ -24,7 +24,7 @@
 			</button>
 			<ul
 				{id}
-				class="dropdown-menu  bg-anagolayBlack text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none"
+				class="dropdown-menu  bg-spaceBlue-900 text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none"
 				aria-labelledby="dropdownMenuButton2"
 			>
 				{#each data.options as option}

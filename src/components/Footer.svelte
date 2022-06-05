@@ -3,8 +3,8 @@
 	import Section from './Section.svelte';
 </script>
 
-<Section class="font-montserrat">
-	<div class="md:container">
+<Section>
+	<div class="font-montserrat">
 		<hr class="mb-6 opacity-50 md:-mx-4 color-white" />
 		<div class="flex flex-col md:flex-row items-center md:items-start text-center md:mx-auto text-base">
 			<div class="w-36 md:w-[unset] md:my-0 md:-mr-8">
@@ -39,7 +39,7 @@
 					{#each media as item}
 						<a
 							href={item.url}
-							class="flex justify-center items-center shadow-button h-12 w-12 rounded-full bg-darkblue text-white active:shadow-pressed"
+							class="flex justify-center items-center shadow-button h-12 w-12 rounded-full bg-spaceBlue-800 text-white active:shadow-pressed"
 							aria-label="social-media-{item.name}"
 							target="_blank"
 							rel="noopener noreferrer"

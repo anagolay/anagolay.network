@@ -5,6 +5,7 @@
 	import Footer from '$src/components/Footer.svelte';
 	import { onMount } from 'svelte';
 	// snap-y snap-proximity snap-always
+
 	onMount(() => {
 		const bgColor = 'rgb(5, 34, 51)';
 		document.body.style.backgroundColor = bgColor;
@@ -14,7 +15,7 @@
 
 <NavBar />
 
-<main class="px-1/12 bg-anagolayBlack flex flex-col text-anagolayWhite font-dmsans">
+<main class="bg-spaceBlue-900 flex flex-col text-spaceBlue-50 font-dmsans">
 	<slot />
 	<Footer />
 	<TopButton />

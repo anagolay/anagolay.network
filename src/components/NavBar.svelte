@@ -6,7 +6,7 @@
 	let toggleMenu = false;
 	let menuIconColor = 'text-white';
 	let menuTransition = '';
-	const linkClass = 'px-2 py-2 rounded-sm md:w-fit hover:text-green';
+	const linkClass = 'px-2 py-2 rounded-sm md:w-fit hover:text-neonGreen-400';
 
 	//toggleSideBar will open sidebar if it is closed or close it if opened.
 	function toggleSideBar(): void {
@@ -14,7 +14,7 @@
 			closeSideBar();
 		} else {
 			toggleMenu = true;
-			menuIconColor = 'text-green';
+			menuIconColor = 'text-neonGreen-400';
 			menuTransition = 'w-full py-auto translate-x-full duration-300';
 		}
 	}
@@ -28,15 +28,15 @@
 </script>
 
 <nav
-	class="sticky top-0 z-20 py-2 items-center justify-center bg-anagolayBlack text-sm md:text-base text-white h-20 md:justify-between border-b border-anagolayWhite/50"
+	class="sticky top-0 z-20 py-2 items-center justify-center bg-spaceBlue-900 text-sm md:text-base text-white h-20 md:justify-between border-b border-spaceBlue-50/50"
 >
-	<div class="md:container ">
+	<div class="md:container">
 		<div class="flex justify-center md:justify-between">
 			<button class="absolute px-3 py-1 left-1 md:hidden" on:click={toggleSideBar}>
 				<span class="material-icons text-2xl {menuIconColor}"> menu </span>
 			</button>
 			<div class="h-8 my-1 md:h-12">
-				<a href="/">
+				<a href="/" on:click={closeSideBar}>
 					<img
 						class="object-contain h-full"
 						width="193"
@@ -48,7 +48,7 @@
 			</div>
 
 			<div
-				class="z-10 flex flex-col absolute top-14 bottom-0 bg-anagolayBlack md:bg-transparent h-screen bg-opacity-100
+				class="z-10 flex flex-col absolute top-14 bottom-0 bg-spaceBlue-900 md:bg-transparent h-screen bg-opacity-100
 			  py-0  text-center right-full mx-auto font-montserrat
             md:flex-row md:mx-0 md:relative md:top-auto md:h-full md:py-2 md:right-auto md:left-auto md:w-fit md:translate-x-0 {menuTransition}"
 			>

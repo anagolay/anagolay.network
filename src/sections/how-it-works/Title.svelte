@@ -2,14 +2,16 @@
 	import Section from '$src/components/Section.svelte';
 </script>
 
-<Section class="pt-20 md:pt-28 overflow-hidden">
-	<div class="md:container flex">
+<Section
+	backgroundClass="bg-ligtTopRight md:bg-none from-neonGreen-400/40 md:from-neonGreen-400/30 to-transparent"
+>
+	<div class="flex pt-28">
 		<div class="w-5/6 mx-auto md:w-full">
 			<div
-				class="-mt-20 w-12 h-12 bg-sphere from-green to-blue rounded-full -rotate-[25deg] opacity-80 blur-sm"
+				class="-mt-20 w-12 h-12 bg-sphere from-neonGreen-400 to-spaceBlue-700 rounded-full -rotate-[25deg] opacity-80 blur-sm"
 			/>
 			<div
-				class="h-[25rem] w-[25rem] md:h-40 md:w-40 bg-light -mt-32 md:-mt-10 from-green/40 md:from-green/30 to-transparent -mb-56 md:-mb-20 ml-[50%]  md:ml-[40%]"
+				class="hidden md:block h-40 w-40 bg-light -mt-10 from-neonGreen-400/30 to-transparent -mb-20 ml-[40%]"
 			/>
 			<div class="">
 				<h1 class="tracking-wider text-center font-extrabold text-3xl md:text-5xl md:text-left min-w-fit">
@@ -28,15 +30,21 @@
 			</div>
 
 			<div
-				class="ml-48 mt-10 md:mt-12 w-8 h-8 bg-sphere from-green to-blue rounded-full -rotate-[25deg] opacity-80 blur-sm"
+				class="ml-48 mt-10 md:mt-12 w-8 h-8 bg-sphere from-neonGreen-400 to-spaceBlue-700 rounded-full -rotate-[25deg] opacity-80 blur-sm"
 			/>
 			<div
-				class="ml-10 mt-4 md:mt-10 w-4 h-4 bg-sphere from-green to-blue rounded-full -rotate-[25deg] opacity-90"
+				class="ml-10 mt-4 md:mt-10 w-4 h-4 bg-sphere from-neonGreen-400 to-spaceBlue-700 rounded-full -rotate-[25deg] opacity-90"
 			/>
 		</div>
 
 		<div class="hidden md:block -ml-[100%] w-full -mr-8 mt-[10%] lg:-mt-[5%]">
-			<img class="mx-auto" src="/how_it_works_main_workflow.png" alt="workflow process" />
+			<img
+				class="relative mx-auto"
+				src="/how_it_works_main_workflow.png"
+				width="1205"
+				height="815"
+				alt="workflow process"
+			/>
 		</div>
 	</div>
 </Section>

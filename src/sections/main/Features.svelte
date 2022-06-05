@@ -7,8 +7,8 @@
 </script>
 
 <Section>
-	<div class="md:container mt-0 flex flex-col items-center text-center mb-20 md:mb-40">
-		<h2 class="mb-12 text-green text-2xl md:text-4xl ">
+	<div class="mt-0 text-center mb-20 md:mb-40">
+		<h2 class="mb-12 text-neonGreen-400 text-2xl md:text-4xl ">
 			<p class="md:mb-4">Anagolay is a</p>
 			<p>different kind of beast</p>
 		</h2>

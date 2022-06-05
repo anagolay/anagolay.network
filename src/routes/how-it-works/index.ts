@@ -16,11 +16,11 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'More will be added when we see the need for it and a practical use case.',
 			],
 			image: {
-				class: '-my-[10%] md:-my-[30%] md:-mb-[75%] md:-mx-[10%]',
+				class: '-my-[10%] md:-my-[30%] md:-mb-[75%] md:-ml-[10%] md:-mr-[5%]',
 				source: '/how_it_works_statements.png',
 				altText: 'Statements',
 			},
-			line2: `w-1/2 mx-auto h-1/4 xl:h-1/6 mt-auto flex justify-end items-start bg-gradient-to-bl from-green to-blue rounded-r-3xl rounded-t-none`,
+			line2: `w-1/2 mx-auto h-1/4 xl:h-1/6 mt-auto flex justify-end items-start bg-gradient-to-bl from-neonGreen-400 to-spaceBlue-700 rounded-r-3xl rounded-t-none`,
 			inner2: `rounded-r-3xl rounded-t-none -translate-x-${lineSize} -translate-y-${lineSize}`,
 		},
 		{
@@ -33,13 +33,13 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'The execution consists of a number of tasks, called Operations. When connected together, they make up a Workflow.',
 			],
 			image: {
-				class: '-ml-10  -my-10 md:-my-[15%] md:-mx-[10%] lg:-my-[30%] md:-mb-[50%] ',
+				class: '-ml-5 -my-10 md:-my-[15%] md:-mx-[10%] lg:-my-[30%] md:-mb-[50%] ',
 				source: '/how_it_works_proofs.png',
 				altText: 'Process proofs',
 			},
-			line1: `w-1/4 h-[40%] lg:h-1/4 flex justify-start items-start bg-gradient-to-b from-blue to-green rounded-l-3xl rounded-b-none -mt-${lineSize}`,
+			line1: `w-1/4 h-[40%] lg:h-1/4 flex justify-start items-start bg-gradient-to-b from-spaceBlue-700 to-neonGreen-400 rounded-l-3xl rounded-b-none -mt-${lineSize}`,
 			inner1: `rounded-l-3xl rounded-b-none translate-x-${lineSize} translate-y-${lineSize}`,
-			line2: `w-2/5 mx-[40%] md:h-1/4 xl:h-[10%] mt-auto flex justify-end items-start bg-gradient-to-br from-blue to-green rounded-b-3xl rounded-r-none`,
+			line2: `w-2/5 mx-[40%] md:h-1/4 xl:h-[10%] mt-auto flex justify-end items-start bg-gradient-to-br from-spaceBlue-700 to-neonGreen-400 rounded-b-3xl rounded-r-none`,
 			inner2: `rounded-b-3xl rounded-r-none translate-x-${lineSize} -translate-y-${lineSize}`,
 		},
 		{
@@ -52,13 +52,13 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'Connected together, like lego pieces, Operations form a Workflow - a graph that has a single Operation entry-point. Once executed, a Workflow produces the list of strings that act as the input data identifiers - Proofs.',
 			],
 			image: {
-				class: '-ml-10 -mr-15 -my-[10%] md:-ml-[20%] md:-mr-[15%] md:-mt-[35%] md:-mb-[50%]',
+				class: '-ml-5 -mr-5 -my-[10%] md:-ml-[25%] md:-mr-[5%] md:-mt-[35%] md:-mb-[50%]',
 				source: '/how_it_works_workflow.png',
 				altText: 'Process workflow',
 			},
-			line1: `w-1/5 ml-[80%] h-[30%] flex justify-start items-start bg-gradient-to-b from-green to-blue rounded-r-3xl rounded-b-none -mt-${lineSize}`,
+			line1: `w-1/5 ml-[80%] h-[30%] flex justify-start items-start bg-gradient-to-b from-neonGreen-400 to-spaceBlue-700 rounded-r-3xl rounded-b-none -mt-${lineSize}`,
 			inner1: `rounded-r-3xl rounded-b-none -translate-x-${lineSize} translate-y-${lineSize}`,
-			line2: `w-2/5 mx-[40%] md:h-[20%] xl:h-[10%] mt-auto flex justify-end items-start bg-gradient-to-bl from-blue to-green rounded-b-3xl rounded-l-none`,
+			line2: `w-2/5 mx-[40%] md:h-[20%] xl:h-[10%] mt-auto flex justify-end items-start bg-gradient-to-bl from-spaceBlue-700 to-neonGreen-400 rounded-b-3xl rounded-l-none`,
 			inner2: `rounded-b-3xl rounded-l-none -translate-x-${lineSize} -translate-y-${lineSize}`,
 		},
 		{
@@ -70,11 +70,11 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'The challenge is to have Workflows & Operations Artifacts stored on IPFS permanently. ',
 			],
 			image: {
-				class: '-my-[15%] -mx-[10%] md:-mt-[35%] md:-mx-[10%] md:-mb-[30%]',
+				class: '-my-[15%] -mx-5 md:-mt-[35%] md:-mx-[10%] md:-mb-[30%]',
 				source: '/how_it_works_storage.png',
 				altText: 'Storage',
 			},
-			line1: `w-2/5 h-[40%] flex justify-start items-start bg-gradient-to-bl from-green to-blue rounded-l-3xl rounded-b-none -mt-${lineSize}`,
+			line1: `w-2/5 h-[40%] flex justify-start items-start bg-gradient-to-bl from-neonGreen-400 to-spaceBlue-700 rounded-l-3xl rounded-b-none -mt-${lineSize}`,
 			inner1: `rounded-l-3xl rounded-b-none translate-x-${lineSize} translate-y-${lineSize}`,
 		},
 	];
