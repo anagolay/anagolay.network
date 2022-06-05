@@ -8,7 +8,7 @@ export enum status {
 	pending = 'pending',
 }
 
-export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
+export async function get(): Promise<RequestHandlerOutput> {
 	const beastFeatures: FeatureData[] = [
 		{
 			feature: 'Each stored proof on the Anagolay chain can be verified',
@@ -294,4 +294,4 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 		status: 200,
 		body,
 	};
-};
+}

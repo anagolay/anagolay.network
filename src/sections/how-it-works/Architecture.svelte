@@ -39,6 +39,8 @@
 				{#each webLayerIcons as icon}
 					<img
 						class="max-h-5 md:max-h-12 max-w-5 md:max-w-12"
+						width="50"
+						height="48"
 						src={icon.source}
 						alt="{icon.title} icon"
 						title={icon.title}
@@ -60,6 +62,8 @@
 					</div>
 					<img
 						loading="lazy"
+						width="32"
+						height="32"
 						class="max-h-4 max-w-4 md:max-h-8 md:max-w-8 ml-2 sm:ml-4"
 						src={item.image.source}
 						alt={item.image.altText}

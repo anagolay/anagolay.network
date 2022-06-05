@@ -33,6 +33,8 @@
 						<div class="md:w-1/2 flex flex-col md:mb-16">
 							<div class={item.image.class}>
 								<img
+									width={item.image.width}
+									height={item.image.height}
 									class="w-full bg-light from-spaceBlue-900 to-transparent"
 									loading="lazy"
 									src={item.image.source}

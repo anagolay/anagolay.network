@@ -1,9 +1,10 @@
-import type { RequestHandler, RequestHandlerOutput } from '@sveltejs/kit';
+import type { RequestHandlerOutput } from '@sveltejs/kit';
 
 import type { TechnologyItem, ArchitectureItem, WebLayerIcon } from '$src/types';
 const lineSize = '[2px]';
 
-export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
+// export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
+export async function get(): Promise<RequestHandlerOutput> {
 	const technologyItems: TechnologyItem[] = [
 		{
 			id: 'statements',
@@ -16,6 +17,8 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'More will be added when we see the need for it and a practical use case.',
 			],
 			image: {
+				width: 773,
+				height: 770,
 				class: '-my-[10%] md:-my-[30%] md:-mb-[75%] md:-ml-[10%] md:-mr-[5%]',
 				source: '/how_it_works_statements.png',
 				altText: 'Statements',
@@ -33,6 +36,8 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'The execution consists of a number of tasks, called Operations. When connected together, they make up a Workflow.',
 			],
 			image: {
+				width: 806,
+				height: 750,
 				class: '-ml-5 -my-10 md:-my-[15%] md:-mx-[10%] lg:-my-[30%] md:-mb-[50%] ',
 				source: '/how_it_works_proofs.png',
 				altText: 'Process proofs',
@@ -52,6 +57,8 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'Connected together, like lego pieces, Operations form a Workflow - a graph that has a single Operation entry-point. Once executed, a Workflow produces the list of strings that act as the input data identifiers - Proofs.',
 			],
 			image: {
+				width: 874,
+				height: 787,
 				class: '-ml-5 -mr-5 -my-[10%] md:-ml-[25%] md:-mr-[5%] md:-mt-[35%] md:-mb-[50%]',
 				source: '/how_it_works_workflow.png',
 				altText: 'Process workflow',
@@ -70,6 +77,8 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'The challenge is to have Workflows & Operations Artifacts stored on IPFS permanently. ',
 			],
 			image: {
+				width: 806,
+				height: 726,
 				class: '-my-[15%] -mx-5 md:-mt-[35%] md:-mx-[10%] md:-mb-[30%]',
 				source: '/how_it_works_storage.png',
 				altText: 'Storage',
@@ -112,4 +121,4 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 		status: 200,
 		body,
 	};
-};
+}

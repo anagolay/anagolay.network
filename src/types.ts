@@ -16,6 +16,8 @@
 
 interface ImageData {
 	class?: string;
+	width?: number;
+	height?: number;
 	source: string;
 	altText: string;
 }

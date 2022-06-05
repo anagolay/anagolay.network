@@ -20,7 +20,7 @@
 		{#each trustProcessItems as item}
 			<div class="w-full mx-auto md:flex {item.extraClass} mb-16">
 				<div class="justify-center h-40 md:h-[unset] md:w-1/2 mb-4 md:mb-0 md:px-5">
-					<img class="max-h-full max-w-full mx-auto" src={item.src} alt={item.alt} />
+					<img class="max-h-full max-w-full mx-auto" width="353" height="288" src={item.src} alt={item.alt} />
 				</div>
 
 				<div

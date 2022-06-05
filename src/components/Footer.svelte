@@ -9,6 +9,8 @@
 		<div class="flex flex-col md:flex-row items-center md:items-start text-center md:mx-auto text-base">
 			<div class="w-36 md:w-[unset] md:my-0 md:-mr-8">
 				<img
+					width="152"
+					height="152"
 					class="md:object-contain md:-translate-y-[20%] md:-translate-x-[20%]"
 					src="/green_logo.svg"
 					alt="Anagolay logo"
@@ -44,7 +46,13 @@
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<img class="max-h-5 max-w-[20px]" src={item.image} alt="{item.name} logo" />
+							<img
+								class="max-h-5 max-w-[20px]"
+								width="20"
+								height="16"
+								src={item.image}
+								alt="{item.name} logo"
+							/>
 						</a>
 					{/each}
 				</div>
