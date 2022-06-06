@@ -9,9 +9,9 @@
 	for (let item of architectureItems) {
 		item.wordContainer = [];
 		for (let i = 0; i < item.description.length; i++) {
-			item.wordContainer[i] = `${i % 2 === 0 ? 'items-start' : 'items-end'} ${
-				i > 1 && i < item.description.length - 1 ? 'w-fit sm:px-1 mx-1 sm:-mx-4' : ''
-			}`;
+			item.wordContainer[i] = `${i % 2 === 0 ? '' : 'xl:mt-10'} ${
+				i > 0 && i < item.description.length - 1 ? '' : ''
+			} ${i >= item.description.length / 2 ? 'ml-auto xl:ml-0' : ''}`;
 		}
 	}
 	const containerClass =
@@ -28,13 +28,13 @@
 
 		<div class={containerClass}>
 			<div
-				class="w-28 min-w-[7rem] md:w-48 sm:min-w-[unset] lg:w-56 flex justify-end text-right items-center text-neonGreen-400"
+				class="w-28 min-w-[7rem] md:w-48 lg:w-56 flex justify-end text-right items-center text-neonGreen-400"
 			>
 				<p class="text-[.56rem] md:text-base font-bold "><i>Web Apps Layer</i></p>
-				<span class="material-icons text-xl md:text-4xl ml-2 sm:ml-4">web_asset</span>
+				<span class="material-icons text-xl md:text-4xl ml-2 md:ml-4">web_asset</span>
 			</div>
 			<div
-				class="flex-grow px-2 md:px-[2%] md:w-2/3 md:mx-auto md:flex-grow-0 flex justify-between items-center"
+				class="flex flex-grow px-2 md:mx-auto md:flex-grow-0 my-auto md:w-5/6 md:justify-between md:px-16 justify-evenly md:text-left items-center text-[.56rem] md:text-base"
 			>
 				{#each webLayerIcons as icon}
 					<img
@@ -51,9 +51,7 @@
 
 		{#each architectureItems as item}
 			<div class={containerClass}>
-				<div
-					class="w-28 min-w-[7rem] md:w-48 sm:min-w-[unset] lg:w-56 flex justify-end items-center text-neonGreen-400"
-				>
+				<div class="w-28 min-w-[7rem] md:w-48 lg:w-56 flex justify-end items-center text-neonGreen-400">
 					<div class="flex flex-col items-end text-right">
 						<p class="text-[.56rem] md:text-base font-bold "><i>{item.title}</i></p>
 						{#if item.subtitle}
@@ -62,18 +60,22 @@
 					</div>
 					<img
 						loading="lazy"
-						width="32"
 						height="32"
-						class="max-h-4 max-w-4 md:max-h-8 md:max-w-8 ml-2 sm:ml-4"
+						class="max-h-4 max-w-4 md:max-h-8 md:max-w-8 ml-2 md:ml-4"
 						src={item.image.source}
 						alt={item.image.altText}
 					/>
 				</div>
 				<div
-					class="flex-grow px-2 md:px-[2%] md:w-2/3 md:mx-auto md:flex-grow-0 h-fit my-auto flex flex-wrap sm:flex-nowrap justify-evenly sm:justify-between lg:px-12 md:text-left items-center text-[.56rem] md:text-base"
+					class="grid grid-cols-2 w-full xl:flex xl:flex-grow px-2 md:px-8 lg:px-16 md:mx-auto md:flex-grow-0 my-auto md:w-5/6 md:justify-between  text-[.5rem] md:text-base"
 				>
 					{#each item.description as word, i}
-						<div class="flex h-8 md:h-16 text-center md:text-left {item.wordContainer[i]}">
+						<div
+							class="w-fit min-w-[50%] xl:min-w-[8rem] h-fit sm:py-1 md:py-2 my-1 px-2 md:px-4 text-center {item
+								.wordContainer[
+								i
+							]} bg-gradient-to-b from-spaceBlue-50/20 to-transparent hover:bg-light hover:from-neonGreen-400/20 rounded-full border border-spaceBlue-50/30 hover:border-neonGreen-400/50"
+						>
 							{word}
 						</div>
 					{/each}

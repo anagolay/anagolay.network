@@ -28,8 +28,8 @@
 				aria-labelledby="dropdownMenuButton2"
 			>
 				{#each data.options as option}
-					<li class="w-32 py-1">
-						<NavLink class="dropdown-item w-32 active:bg-transparent" {option} />
+					<li class="w-32 hover:bg-blue-800/50 m-1 rounded-sm">
+						<NavLink class="dropdown-item active:bg-transparent" {option} />
 					</li>
 				{/each}
 			</ul>

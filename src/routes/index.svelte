@@ -20,8 +20,8 @@
 			// target.scrollIntoView({ behavior: 'smooth' });
 			window.scrollTo({ top: target.offsetTop, behavior: 'smooth' });
 		} else {
-			window.scrollTo({ top: 0, behavior: 'smooth' });
 			//this smooth does not work
+			window.scrollTo({ top: 0, behavior: 'smooth' });
 		}
 	});
 

@@ -23,7 +23,7 @@
 						{#each item.options as option}
 							<a
 								href={option.url}
-								class="opacity-30 text-[90%] mb-2 md:mb-0"
+								class="opacity-90 text-[90%] mb-2 md:mb-0 w-fit"
 								target="_blank"
 								rel="noopener noreferrer"
 							>

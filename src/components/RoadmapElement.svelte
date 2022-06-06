@@ -15,7 +15,7 @@
 		//this function sets classes for each instance card.
 		i.cardStyling = `${
 			i.status === status.doing
-				? 'shadow-neonGreen-400/50 border border-neonGreen-400/60'
+				? 'bg-neonGreen-400/10 bg-gradient-to-r from-spaceBlue-900 via-transparent to-spaceBlue-900 border border-neonGreen-400/60 shadow-sm shadow-neonGreen-400/60'
 				: 'shadow-card border border-spaceBlue-50/20 shadow-transparent'
 		} ${i.status === status.pending ? 'opacity-50' : 'bg-opacity-80'}`;
 		return i.status;
@@ -46,7 +46,7 @@
 	/>
 	{#each roadMapItem.instances as instance}
 		<div
-			class="w-56 p-7 mb-4 h-fit bg-upperRadial from-spaceBlue-50/5 to-transparent italic {instance.cardStyling} mb-2 rounded-xl mx-auto text-spaceBlue-50 font-light"
+			class="w-56 p-7 mb-6 h-fit bg-gradient-to-b from-spaceBlue-50/5 italic {instance.cardStyling} mb-2 rounded-xl mx-auto text-spaceBlue-50 font-light"
 		>
 			{instance.goal}
 		</div>

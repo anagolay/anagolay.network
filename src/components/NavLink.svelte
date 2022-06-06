@@ -16,11 +16,13 @@
 </script>
 
 <a
-	class="w-full {color} min-w-fit p-2 hover:text-neonGreen-400 {extraClass}"
+	class="w-full {color} min-w-fit hover:text-neonGreen-400 {extraClass}"
 	href={option.url}
 	{target}
 	{rel}
 	on:click={onClick}
 >
-	{option.text}
+	<p class="p-2">
+		{option.text}
+	</p>
 </a>
