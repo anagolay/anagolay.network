@@ -1,9 +1,9 @@
 <script lang="ts">
-	let extraClass: string = '';
+	let extraClass = '';
 	export { extraClass as class };
-	export let backgroundClass: string = '';
-	export let overlayClass: string = '';
-	export let id: string = '';
+	export let backgroundClass = '';
+	export let overlayClass = '';
+	export let id = '';
 
 	let containerClass = 'md:container w-11/12 sm:w-5/6 mx-auto';
 </script>
