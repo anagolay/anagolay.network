@@ -35,9 +35,9 @@
 			/>
 		</div>
 
-		<div class="hidden md:block -ml-[100%] w-full -mr-8 xl:-mt-20">
+		<div class="hidden md:block -ml-[100%] w-full -mr-8 xl:-mt-28">
 			<img
-				class="relative w-full lg:w-4/5 mx-auto"
+				class="relative w-full lg:w-3/4 mx-auto"
 				src="/how_it_works_main_workflow.png"
 				width="1205"
 				height="815"
