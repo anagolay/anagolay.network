@@ -19,7 +19,7 @@
 			<div class="flex w-full ml-2 md:w-fit justify-evenly text-left">
 				{#each menuOptions as item}
 					<div class="flex mx-3 lg:mx-6 md:py-0 flex-col">
-						<div class="mb-4 md:mb-0 min-w-fit">{item.title}</div>
+						<div class="mb-4 md:mb-0 min-w-fit font-bold">{item.title}</div>
 						{#each item.options as option}
 							<a
 								href={option.url}

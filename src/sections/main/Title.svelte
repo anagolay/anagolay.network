@@ -4,6 +4,7 @@
 </script>
 
 <Section
+	class="overflow-x-clip"
 	backgroundClass="bg-stars bg-repeat bg-[length:200px_200px]"
 	overlayClass="bg-gradient-to-b from-transparent to-spaceBlue-900"
 >
@@ -41,9 +42,9 @@
 		</div>
 	</div></Section
 >
-<div class="text-lg font-bold md:text-4xl mb-20 md:mb-40 text-center pt-10 md:pt-20">
-	<p class="text-neonGreen-400 line-through">
-		<span class="text-spaceBlue-50">Central authority <br />Resource heavy consensus mechanism</span>
+<div class="text-lg md:text-4xl mb-20 md:mb-40 text-center pt-10 md:pt-20">
+	<p class="text-neonGreen-400 line-through font-medium">
+		<span class="text-spaceBlue-50/50">Central authority <br />Resource heavy consensus mechanism</span>
 	</p>
-	<p>Trust the process</p>
+	<p class="font-bold">Trust the process</p>
 </div>
