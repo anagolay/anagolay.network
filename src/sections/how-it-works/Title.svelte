@@ -46,7 +46,7 @@
 		</div>
 	</div>
 </Section>
-<div class="w-5/6 sm:w-[33rem] text-lg md:text-4xl text-center mx-auto max-w-full pt-8 md:pt-40 md:pb-20">
+<div class="w-5/6 sm:w-[33rem] text-lg md:text-4xl text-center mx-auto max-w-full pt-8 md:pt-28 md:pb-20">
 	<p class="md:leading-[3.25rem]">
 		Anagolay allows asset creators to establish how digital assets are used and owned.
 	</p>
