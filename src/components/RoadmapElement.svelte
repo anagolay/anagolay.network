@@ -34,11 +34,11 @@
 	}
 </script>
 
-<div class="flex flex-col items-center mx-auto snap-start snap-always ">
+<div class="flex flex-col items-center mx-auto snap-center snap-always ">
 	<div class="text-7xl {titleOpacity} {titleShadow} blur-[2px] text-spaceBlue-800 text-shadow-around">
 		{roadMapItem.title}
 	</div>
-	<div class="flex justify-end blur-0 text-xl pr-[1rem] -mt-[4rem] mb-[4rem] w-1/2 {yearOpacity}">
+	<div class="flex justify-start blur-0 text-xl -ml-4 -mt-[4rem] mb-[4rem] w-1/2 {yearOpacity}">
 		{roadMapItem.year}
 	</div>
 	<div

@@ -5,15 +5,15 @@
 <Section
 	backgroundClass="bg-ligtTopRight md:bg-none from-neonGreen-400/40 md:from-neonGreen-400/30 to-transparent"
 >
-	<div class="flex pt-28">
+	<div class="flex pt-16">
 		<div class="w-5/6 mx-auto md:w-full">
 			<div
-				class="-mt-20 w-12 h-12 bg-sphere from-neonGreen-400 to-spaceBlue-700 rounded-full -rotate-[25deg] opacity-80 blur-sm"
+				class="-mt-12 w-12 h-12 bg-sphere from-neonGreen-400 to-spaceBlue-700 rounded-full -rotate-[25deg] opacity-80 blur-sm"
 			/>
 			<div
-				class="hidden md:block h-40 w-40 bg-light -mt-10 from-neonGreen-400/30 to-transparent -mb-20 ml-[40%]"
+				class="hidden md:block h-40 w-40 bg-light -mt-10 from-neonGreen-400/30 to-transparent -mb-28 ml-[40%]"
 			/>
-			<div class="">
+			<div>
 				<h1 class="tracking-wider text-center font-extrabold text-3xl md:text-5xl md:text-left min-w-fit">
 					<p class="md:leading-[4rem] min-w-fit">How does it work?</p>
 				</h1>
@@ -37,9 +37,9 @@
 			/>
 		</div>
 
-		<div class="hidden md:block -ml-[100%] w-full -mr-8 mt-[10%] lg:-mt-[5%]">
+		<div class="hidden md:block -ml-[100%] w-full -mr-8 mt-[10%] lg:mt-[5%] xl:-mt-[5%]">
 			<img
-				class="relative mx-auto"
+				class="relative w-full lg:w-4/5 mx-auto"
 				src="/how_it_works_main_workflow.png"
 				width="1205"
 				height="815"
