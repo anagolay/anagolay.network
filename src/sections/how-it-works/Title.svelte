@@ -31,10 +31,10 @@
 
 		<div class="hidden md:flex -ml-[100%] w-full mt-40 lg:mt-20 xl:-mt-4">
 			<img
-				class="relative w-full mx-auto xl:w-11/12"
+				class="relative w-full mx-auto xl:w-5/6"
 				src="/how_it_works_main_workflow.png"
-				width="1205"
-				height="815"
+				width="1120"
+				height="679"
 				alt="workflow process"
 			/>
 			<div class="w-full -ml-[100%]">
@@ -45,7 +45,7 @@
 		</div>
 	</div>
 </Section>
-<div class="w-5/6 sm:w-[33rem] text-lg md:text-4xl text-center mx-auto max-w-full pt-8 md:pt-12 md:pb-20">
+<div class="w-5/6 sm:w-[33rem] text-lg md:text-4xl text-center mx-auto max-w-full pt-8 md:py-32">
 	<p class="md:leading-[3.25rem]">
 		Anagolay allows asset creators to establish how digital assets are used and owned.
 	</p>

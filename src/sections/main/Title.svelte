@@ -40,9 +40,10 @@
 				class="rounded-[100%] bg-anagolayBlack bg-light from-aquaTeal-300/50 to-transparent h-28 md:h-64 -mt-20 md:-mt-48 -mx-[10%] md:-mx-[50%]"
 			/>
 		</div>
-	</div></Section
->
-<div class="text-lg md:text-4xl pb-32 md:pb-40 text-center pt-20">
+	</div>
+</Section>
+
+<div class="text-lg md:text-4xl pb-32 md:pb-40 text-center pt-24">
 	<p class="text-neonGreen-400 line-through font-medium">
 		<span class="text-spaceBlue-50/50">Central authority <br />Resource heavy consensus mechanism</span>
 	</p>
