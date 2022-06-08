@@ -3,14 +3,8 @@
 </script>
 
 <Section backgroundClass="bg-ligtTopRight md:bg-none from-aquaTeal-300/50 to-transparent">
-	<div class="flex pt-28">
-		<div class="w-5/6 mx-auto md:w-full">
-			<div
-				class="-mt-20 w-8 h-8 md:w-12 md:h-12 bg-sphere from-neonGreen-400 to-spaceBlue-700 rounded-full -rotate-[25deg] opacity-80 blur-sm"
-			/>
-			<div
-				class="hidden md:block h-40 w-40 bg-light -mt-10 from-aquaTeal-300/50 to-transparent -mb-20 ml-[40%]"
-			/>
+	<div class="flex">
+		<div class="w-5/6 mx-auto md:w-full pt-28">
 			<div>
 				<h1 class="tracking-wider text-center font-extrabold text-3xl md:text-5xl md:text-left min-w-fit">
 					<p class="md:leading-[4rem] min-w-fit">How does it work?</p>
@@ -35,18 +29,23 @@
 			/>
 		</div>
 
-		<div class="hidden md:block -ml-[100%] w-full -mr-8 xl:-mt-28">
+		<div class="hidden md:flex -ml-[100%] w-full mt-40 lg:mt-20 xl:-mt-4">
 			<img
-				class="relative w-full lg:w-3/4 mx-auto"
+				class="relative w-full mx-auto xl:w-11/12"
 				src="/how_it_works_main_workflow.png"
 				width="1205"
 				height="815"
 				alt="workflow process"
 			/>
+			<div class="w-full -ml-[100%]">
+				<div
+					class="hidden md:block h-1/2 mt-[20%] ml-[35%] w-1/4 bg-light from-aquaTeal-300/50 to-transparent"
+				/>
+			</div>
 		</div>
 	</div>
 </Section>
-<div class="w-5/6 sm:w-[33rem] text-lg md:text-4xl text-center mx-auto max-w-full pt-8 md:pt-28 md:pb-20">
+<div class="w-5/6 sm:w-[33rem] text-lg md:text-4xl text-center mx-auto max-w-full pt-8 md:pt-12 md:pb-20">
 	<p class="md:leading-[3.25rem]">
 		Anagolay allows asset creators to establish how digital assets are used and owned.
 	</p>
