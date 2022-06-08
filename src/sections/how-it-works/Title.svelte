@@ -29,7 +29,7 @@
 			/>
 		</div>
 
-		<div class="hidden md:flex -ml-[100%] w-full mt-44 lg:mt-24 2xl:mt-4">
+		<div class="hidden md:block -ml-[100%] w-full mt-44 lg:mt-24 2xl:mt-4">
 			<img
 				class="relative w-full mx-auto xl:w-5/6"
 				src="/how_it_works_main_workflow.png"
@@ -37,11 +37,6 @@
 				height="679"
 				alt="workflow process"
 			/>
-			<div class="w-full -ml-[100%]">
-				<div
-					class="hidden md:block h-1/2 mt-[20%] ml-[35%] w-1/4 bg-light from-aquaTeal-300/50 to-transparent"
-				/>
-			</div>
 		</div>
 	</div>
 </Section>
