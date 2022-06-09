@@ -23,7 +23,7 @@ export async function get(): Promise<RequestHandlerOutput> {
 				source: '/how_it_works_statements.png',
 				altText: 'Statements',
 			},
-			line2: `w-1/2 mx-auto h-1/4 xl:h-1/6 mt-auto flex justify-end items-start bg-gradient-to-bl from-neonGreen-400 to-spaceBlue-700 rounded-r-3xl rounded-t-none`,
+			line2: `w-1/2 mx-auto h-1/4 xl:h-1/6 mt-auto flex justify-end items-start bg-gradient-to-bl from-green-400 to-blue-700 rounded-r-3xl rounded-t-none`,
 			inner2: `rounded-r-3xl rounded-t-none -translate-x-${lineSize} -translate-y-${lineSize}`,
 		},
 		{
@@ -42,9 +42,9 @@ export async function get(): Promise<RequestHandlerOutput> {
 				source: '/how_it_works_proofs.png',
 				altText: 'Process proofs',
 			},
-			line1: `w-1/4 h-[40%] lg:h-1/4 flex justify-start items-start bg-gradient-to-b from-spaceBlue-700 to-neonGreen-400 rounded-l-3xl rounded-b-none -mt-${lineSize}`,
+			line1: `w-1/4 h-[40%] lg:h-1/4 flex justify-start items-start bg-gradient-to-b from-blue-700 to-green-400 rounded-l-3xl rounded-b-none -mt-${lineSize}`,
 			inner1: `rounded-l-3xl rounded-b-none translate-x-${lineSize} translate-y-${lineSize}`,
-			line2: `w-2/5 mx-[40%] md:h-1/4 xl:h-[10%] mt-auto flex justify-end items-start bg-gradient-to-br from-spaceBlue-700 to-neonGreen-400 rounded-b-3xl rounded-r-none`,
+			line2: `w-2/5 mx-[40%] md:h-1/4 xl:h-[10%] mt-auto flex justify-end items-start bg-gradient-to-br from-blue-700 to-green-400 rounded-b-3xl rounded-r-none`,
 			inner2: `rounded-b-3xl rounded-r-none translate-x-${lineSize} -translate-y-${lineSize}`,
 		},
 		{
@@ -63,9 +63,9 @@ export async function get(): Promise<RequestHandlerOutput> {
 				source: '/how_it_works_workflow.png',
 				altText: 'Process workflow',
 			},
-			line1: `w-1/5 ml-[80%] h-[30%] flex justify-start items-start bg-gradient-to-b from-neonGreen-400 to-spaceBlue-700 rounded-r-3xl rounded-b-none -mt-${lineSize}`,
+			line1: `w-1/5 ml-[80%] h-[30%] flex justify-start items-start bg-gradient-to-b from-green-400 to-blue-700 rounded-r-3xl rounded-b-none -mt-${lineSize}`,
 			inner1: `rounded-r-3xl rounded-b-none -translate-x-${lineSize} translate-y-${lineSize}`,
-			line2: `w-2/5 mx-[40%] md:h-[20%] xl:h-[10%] mt-auto flex justify-end items-start bg-gradient-to-bl from-spaceBlue-700 to-neonGreen-400 rounded-b-3xl rounded-l-none`,
+			line2: `w-2/5 mx-[40%] md:h-[20%] xl:h-[10%] mt-auto flex justify-end items-start bg-gradient-to-bl from-blue-700 to-green-400 rounded-b-3xl rounded-l-none`,
 			inner2: `rounded-b-3xl rounded-l-none -translate-x-${lineSize} -translate-y-${lineSize}`,
 		},
 		{
@@ -83,7 +83,7 @@ export async function get(): Promise<RequestHandlerOutput> {
 				source: '/how_it_works_storage.png',
 				altText: 'Storage',
 			},
-			line1: `w-2/5 h-[40%] flex justify-start items-start bg-gradient-to-bl from-neonGreen-400 to-spaceBlue-700 rounded-l-3xl rounded-b-none -mt-${lineSize}`,
+			line1: `w-2/5 h-[40%] flex justify-start items-start bg-gradient-to-bl from-green-400 to-blue-700 rounded-l-3xl rounded-b-none -mt-${lineSize}`,
 			inner1: `rounded-l-3xl rounded-b-none translate-x-${lineSize} translate-y-${lineSize}`,
 		},
 	];

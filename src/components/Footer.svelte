@@ -41,7 +41,7 @@
 					{#each media as item}
 						<a
 							href={item.url}
-							class="flex justify-center items-center shadow-button h-12 w-12 rounded-full bg-spaceBlue-800 text-white active:shadow-pressed"
+							class="flex justify-center items-center shadow-button h-12 w-12 rounded-full bg-blue-800 text-white active:shadow-pressed"
 							aria-label="social-media-{item.name}"
 							target="_blank"
 							rel="noopener noreferrer"

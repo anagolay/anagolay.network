@@ -15,21 +15,19 @@
 		}
 	}
 	const containerClass =
-		'w-[25rem] px-2 max-w-full md:w-full flex bg-gradient-to-b from-spaceBlue-50/10 to-transparent md:py-6 lg:py-8 rounded-md md:rounded-3xl h-20 md:h-[unset] mx-auto border border-spaceBlue-600/20 mb-4 md:mb-8';
+		'w-[25rem] px-2 max-w-full md:w-full flex bg-gradient-to-b from-blue-50/10 to-transparent md:py-6 lg:py-8 rounded-md md:rounded-3xl h-20 md:h-[unset] mx-auto border border-blue-600/20 mb-4 md:mb-8';
 </script>
 
 <Section
-	backgroundClass="bg-gradient-to-b from-spaceBlue-50/10 to-transparent shadow-cardTop shadow-aquaTeal-300 pb-40"
+	backgroundClass="bg-gradient-to-b from-blue-50/10 to-transparent shadow-cardTop shadow-teal-300 pb-40"
 >
 	<div class="lg:w-5/6 mx-auto">
 		<div class="relative text-center py-8 md:py-16">
-			<h3 class="text-2xl md:text-4xl text-neonGreen-400">Architecture</h3>
+			<h3 class="text-2xl md:text-4xl text-green-400">Architecture</h3>
 		</div>
 
 		<div class={containerClass}>
-			<div
-				class="w-28 min-w-[7rem] md:w-48 lg:w-56 flex justify-end text-right items-center text-neonGreen-400"
-			>
+			<div class="w-28 min-w-[7rem] md:w-48 lg:w-56 flex justify-end text-right items-center text-green-400">
 				<p class="text-[.56rem] md:text-base font-bold "><i>Web Apps Layer</i></p>
 				<span class="material-icons text-xl md:text-4xl ml-2 md:ml-4">web_asset</span>
 			</div>
@@ -51,7 +49,7 @@
 
 		{#each architectureItems as item}
 			<div class={containerClass}>
-				<div class="w-28 min-w-[7rem] md:w-48 lg:w-56 flex justify-end items-center text-neonGreen-400">
+				<div class="w-28 min-w-[7rem] md:w-48 lg:w-56 flex justify-end items-center text-green-400">
 					<div class="flex flex-col items-end text-right">
 						<p class="text-[.56rem] md:text-base font-bold "><i>{item.title}</i></p>
 						{#if item.subtitle}
@@ -74,7 +72,7 @@
 							class="w-fit min-w-[50%] xl:min-w-[8rem] h-fit sm:py-1 md:py-2 my-1 px-2 md:px-4 text-center {item
 								.wordContainer[
 								i
-							]} bg-gradient-to-b from-spaceBlue-50/20 to-transparent hover:bg-light hover:from-neonGreen-400/20 rounded-full border border-spaceBlue-50/30 hover:border-neonGreen-400/50"
+							]} bg-gradient-to-b from-blue-50/20 to-transparent hover:bg-light hover:from-green-400/20 rounded-full border border-blue-50/30 hover:border-green-400/50"
 						>
 							{word}
 						</div>

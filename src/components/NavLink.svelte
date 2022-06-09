@@ -10,13 +10,13 @@
 
 	let target = option.external ? '_blank' : undefined;
 	let rel = option.external ? 'noopener noreferrer' : undefined;
-	let color = 'text-spaceBlue-50';
+	let color = 'text-blue-50';
 
-	$: color = option.url === $page.url.pathname ? 'text-neonGreen-400' : 'text-spaceBlue-50';
+	$: color = option.url === $page.url.pathname ? 'text-green-400' : 'text-blue-50';
 </script>
 
 <a
-	class="w-full {color} min-w-fit hover:text-neonGreen-400 {extraClass}"
+	class="w-full {color} min-w-fit hover:text-green-400 {extraClass}"
 	href={option.url}
 	{target}
 	{rel}

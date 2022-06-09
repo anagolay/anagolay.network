@@ -19,15 +19,15 @@
 	{#if isInView}
 		<div
 			in:fade={{ duration: 700, delay: (i % 3) * 150 }}
-			class="rounded-3xl h-full bg-gradient-to-b from-spaceBlue-50/5 to-transparent border border-spaceBlue-800"
+			class="rounded-3xl h-full bg-gradient-to-b from-blue-50/5 to-transparent border border-blue-800"
 		>
-			<div class="bg-upperLight from-neonGreen-400/50 to-transparent">
+			<div class="bg-upperLight from-green-400/50 to-transparent">
 				<div class="flex justify-center">
 					<div
-						class="w-24 h-24 flex items-center justify-center -translate-y-6 bg-spaceBlue-900 bg-gradient-to-br from-spaceBlue-800/90 to-spaceBlue-50/20 border border-neonGreen-400 rounded-[100%]"
+						class="w-24 h-24 flex items-center justify-center -translate-y-6 bg-blue-900 bg-gradient-to-br from-blue-800/90 to-blue-50/20 border border-green-400 rounded-[100%]"
 					>
 						{#if feature.icon}
-							<span class="material-icons text-5xl text-neonGreen-400">{feature.icon}</span>
+							<span class="material-icons text-5xl text-green-400">{feature.icon}</span>
 						{:else if feature.img}
 							<img
 								loading="lazy"

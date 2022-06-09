@@ -6,7 +6,7 @@
 <Section
 	class="overflow-x-clip"
 	backgroundClass="bg-stars bg-repeat bg-[length:200px_200px]"
-	overlayClass="bg-gradient-to-b from-transparent to-spaceBlue-900"
+	overlayClass="bg-gradient-to-b from-transparent to-blue-900"
 >
 	<div class="pt-8 pb-10 md:py-32 flex flex-col items-center md:items-start md:flex-row">
 		<div class="w-80 max-w-full md:w-3/5">
@@ -37,15 +37,15 @@
 				/>
 			</div>
 			<div
-				class="rounded-[100%] bg-anagolayBlack bg-light from-aquaTeal-300/50 to-transparent h-28 md:h-64 -mt-20 md:-mt-48 -mx-[10%] md:-mx-[50%]"
+				class="rounded-[100%] bg-anagolayBlack bg-light from-teal-300/50 to-transparent h-28 md:h-64 -mt-20 md:-mt-48 -mx-[10%] md:-mx-[50%]"
 			/>
 		</div>
 	</div>
 </Section>
 
 <div class="text-lg md:text-4xl pb-32 md:pb-40 text-center pt-16">
-	<p class="text-neonGreen-400 line-through font-medium mb-2">
-		<span class="text-spaceBlue-50/50">Central authority <br />Resource heavy consensus mechanism</span>
+	<p class="text-green-400 line-through font-medium mb-2">
+		<span class="text-blue-50/50">Central authority <br />Resource heavy consensus mechanism</span>
 	</p>
 	<p class="font-bold">Trust the process</p>
 </div>

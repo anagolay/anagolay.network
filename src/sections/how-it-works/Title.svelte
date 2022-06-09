@@ -2,7 +2,7 @@
 	import Section from '$src/components/Section.svelte';
 </script>
 
-<Section backgroundClass="bg-ligtTopRight md:bg-none from-aquaTeal-300/50 to-transparent">
+<Section backgroundClass="bg-ligtTopRight md:bg-none from-teal-300/50 to-transparent">
 	<div class="flex">
 		<div class="w-5/6 mx-auto md:w-full pt-20 pb-8">
 			<div>
@@ -22,10 +22,10 @@
 			</div>
 
 			<div
-				class="ml-48 mt-10 md:mt-12 w-8 h-8 bg-sphere from-neonGreen-400 to-spaceBlue-700 rounded-full -rotate-[25deg] opacity-80 blur-sm"
+				class="ml-48 mt-10 md:mt-12 w-8 h-8 bg-sphere from-green-400 to-blue-700 rounded-full -rotate-[25deg] opacity-80 blur-sm"
 			/>
 			<div
-				class="ml-10 mt-4 md:mt-10 w-4 h-4 bg-sphere from-neonGreen-400 to-spaceBlue-700 rounded-full -rotate-[25deg] opacity-90"
+				class="ml-10 mt-4 md:mt-10 w-4 h-4 bg-sphere from-green-400 to-blue-700 rounded-full -rotate-[25deg] opacity-90"
 			/>
 		</div>
 

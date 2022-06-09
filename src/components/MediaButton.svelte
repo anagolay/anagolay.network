@@ -11,7 +11,7 @@
 	href={url}
 	target="_blank"
 	rel="noreferrer"
-	class="{extraClass} flex justify-center items-center shadow-button active:shadow-pressed mx-3 bg-spaceBlue-800 hover:bg-spaceBlue-700/70 active:bg-spaceBlue-800/50 rounded-full"
+	class="{extraClass} flex justify-center items-center shadow-button active:shadow-pressed mx-3 bg-blue-800 hover:bg-blue-700/70 active:bg-blue-800/50 rounded-full"
 >
 	<img class="h-3 sm:h-5" {src} alt={title} />
 </a>

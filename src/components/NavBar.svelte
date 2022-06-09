@@ -6,7 +6,7 @@
 	let toggleMenu = false;
 	let menuIconColor = 'text-white';
 	let menuTransition = '';
-	const linkClass = 'px-2 py-2 rounded-sm md:w-fit hover:text-neonGreen-400';
+	const linkClass = 'px-2 py-2 rounded-sm md:w-fit hover:text-green-400';
 
 	//toggleSideBar will open sidebar if it is closed or close it if opened.
 	function toggleSideBar(): void {
@@ -14,7 +14,7 @@
 			closeSideBar();
 		} else {
 			toggleMenu = true;
-			menuIconColor = 'text-neonGreen-400';
+			menuIconColor = 'text-green-400';
 			menuTransition = 'w-full py-auto translate-x-full duration-300';
 		}
 	}
@@ -28,7 +28,7 @@
 </script>
 
 <nav
-	class="sticky top-0 z-20 py-2 items-center justify-center bg-spaceBlue-900 text-sm md:text-base text-white h-20 md:justify-between border-b border-spaceBlue-50/50"
+	class="sticky top-0 z-20 py-2 items-center justify-center bg-blue-900 text-sm md:text-base text-white h-20 md:justify-between border-b border-blue-50/50"
 >
 	<div class="md:container">
 		<div class="flex justify-center md:justify-between">
@@ -48,7 +48,7 @@
 			</div>
 
 			<div
-				class="z-10 flex flex-col absolute top-14 bottom-0 bg-spaceBlue-900 md:bg-transparent h-screen bg-opacity-100
+				class="z-10 flex flex-col absolute top-14 bottom-0 bg-blue-900 md:bg-transparent h-screen bg-opacity-100
 			  py-0  text-center right-full mx-auto font-montserrat
             md:flex-row md:mx-0 md:relative md:top-auto md:h-full md:py-2 md:right-auto md:left-auto md:w-fit md:translate-x-0 {menuTransition}"
 			>

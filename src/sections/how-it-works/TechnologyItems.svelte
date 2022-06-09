@@ -16,15 +16,15 @@
 			<div class="w-11/12 sm:w-5/6 mx-auto md:w-full flex">
 				<div class="hidden md:flex flex-col w-[80%] ml-[10%]">
 					<div class="{item.line1} opacity-50">
-						<div class="{item.inner1} bg-spaceBlue-900 h-full w-full" />
+						<div class="{item.inner1} bg-blue-900 h-full w-full" />
 					</div>
 					<div class="{item.line2} opacity-50">
-						<div class="{item.inner2} bg-spaceBlue-900 h-full w-full" />
+						<div class="{item.inner2} bg-blue-900 h-full w-full" />
 					</div>
 				</div>
 				<div class="w-full md:-ml-[90%] md:pb-28 relative">
 					<div id={item.id} class="relative text-center  pt-24  mb-4 md:mb-16 xl:mb-32">
-						<h3 class="text-2xl md:text-4xl lg:text-4xl text-neonGreen-400 mb-6 md:mb-8">{item.title}</h3>
+						<h3 class="text-2xl md:text-4xl lg:text-4xl text-green-400 mb-6 md:mb-8">{item.title}</h3>
 						<p class="text-base md:text-xl 2xl:text-2xl md:w-3/4 md:mx-auto">
 							{item.subtitle}
 						</p>
@@ -35,7 +35,7 @@
 								<img
 									width={item.image.width}
 									height={item.image.height}
-									class="w-full bg-light from-spaceBlue-900 to-transparent"
+									class="w-full bg-light from-blue-900 to-transparent"
 									loading="lazy"
 									src={item.image.source}
 									alt={item.image.altText}

@@ -48,7 +48,7 @@
 				bind:clientWidth={windowWidth}
 			>
 				<div class="w-fit">
-					<div class="w-full h-[.2rem] bg-gradient-to-r from-spaceBlue-700 to-neonGreen-400 mt-28 -mb-28" />
+					<div class="w-full h-[.2rem] bg-gradient-to-r from-blue-700 to-green-400 mt-28 -mb-28" />
 					<div class="w-fit" bind:clientWidth={roadWidth}>
 						<div class={gridClass}>
 							{#each roadMapItems as roadMapItem}
@@ -68,7 +68,7 @@
 			<div class="flex flex-col items-center">
 				<a
 					href="https://kelp.notion.site/060679a84bb34e949b0c23acea4e2700?v=e92d208977204ca6bcb80f5d63f22ff9"
-					class="text-neonGreen-400 hover:underline">See the full roadmap</a
+					class="text-green-400 hover:underline">See the full roadmap</a
 				>
 				<SectionButton url="https://discordapp.com/invite/WHe4EuY" class="flex justify-center my-32">
 					<span class="material-icons">discord</span>

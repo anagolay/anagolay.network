@@ -37,7 +37,7 @@
 <Section>
 	<div
 		id="team"
-		class="w-full lg:w-5/6 lg:mx-auto h-min-[20rem] text-center p-5 bg-gradient-to-b from-spaceBlue-50/10 to-transparent rounded-lg md:rounded-3xl md:mx-auto md:py-6 shadow-card shadow-aquaTeal-300"
+		class="w-full lg:w-5/6 lg:mx-auto h-min-[20rem] text-center p-5 bg-gradient-to-b from-blue-50/10 to-transparent rounded-lg md:rounded-3xl md:mx-auto md:py-6 shadow-card shadow-teal-300"
 	>
 		<div class="w-80 max-w-full mx-auto sm:w-full md:w-fit flex flex-col items-center">
 			<h2 class="font-medium text-2xl md:text-4xl my-9 md:my-8">Meet the team</h2>
@@ -54,7 +54,7 @@
 				{/each}
 			</div>
 			<h3 class="font-light text-base md:text-3xl mt-8 mb-1 md:mb-2">{selected.title}</h3>
-			<p class="text-neonGreen-400 text-base md:text-2xl mb-4 md:mb-6"><i>{selected.name}</i></p>
+			<p class="text-green-400 text-base md:text-2xl mb-4 md:mb-6"><i>{selected.name}</i></p>
 			<div class="sm:w-5/6 sm:mx-auto h-64 sm:h-48 md:h-36 lg:h-28 text-sm md:text-base 2xl:text-lg">
 				{selected.bio}
 			</div>

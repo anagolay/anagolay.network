@@ -6,7 +6,7 @@
 
 	// default classes
 	let titleOpacity = 'opacity-70';
-	let titleShadow = 'shadow-spaceBlue-50';
+	let titleShadow = 'shadow-blue-50';
 	let yearOpacity = '';
 	let pointBlur = '';
 	let pointOpacity = '';
@@ -15,8 +15,8 @@
 		//this function sets classes for each instance card.
 		i.cardStyling = `${
 			i.status === status.doing
-				? 'bg-neonGreen-400/10 bg-gradient-to-r from-spaceBlue-900 via-transparent to-spaceBlue-900 border border-neonGreen-400/60 shadow-sm shadow-neonGreen-400/60'
-				: 'shadow-card border border-spaceBlue-50/20 shadow-transparent'
+				? 'bg-green-400/10 bg-gradient-to-r from-blue-900 via-transparent to-blue-900 border border-green-400/60 shadow-sm shadow-green-400/60'
+				: 'shadow-card border border-blue-50/20 shadow-transparent'
 		} ${i.status === status.pending ? 'opacity-50' : 'bg-opacity-80'}`;
 		return i.status;
 	});
@@ -25,7 +25,7 @@
 	if (instanceStatuses.includes(status.doing)) {
 		pointBlur = 'blur-[2px]';
 		pointOpacity = 'opacity-90';
-		titleShadow = 'shadow-neonGreen-400';
+		titleShadow = 'shadow-green-400';
 	} else if (instanceStatuses.includes(status.pending)) {
 		pointBlur = 'blur-[5px]';
 		pointOpacity = 'opacity-75';
@@ -35,18 +35,18 @@
 </script>
 
 <div class="flex flex-col items-center mx-auto snap-center snap-always ">
-	<div class="text-7xl {titleOpacity} {titleShadow} blur-[2px] text-spaceBlue-800 text-shadow-around">
+	<div class="text-7xl {titleOpacity} {titleShadow} blur-[2px] text-blue-800 text-shadow-around">
 		{roadMapItem.title}
 	</div>
 	<div class="flex justify-start blur-0 text-xl -ml-4 -mt-[4rem] mb-[4rem] w-1/2 {yearOpacity}">
 		{roadMapItem.year}
 	</div>
 	<div
-		class="mb-4 -mt-1 relative w-8 h-8 bg-sphere from-neonGreen-400 to-spaceBlue-700 rounded-full -rotate-[25deg] {pointBlur} {pointOpacity}"
+		class="mb-4 -mt-1 relative w-8 h-8 bg-sphere from-green-400 to-blue-700 rounded-full -rotate-[25deg] {pointBlur} {pointOpacity}"
 	/>
 	{#each roadMapItem.instances as instance}
 		<div
-			class="w-56 p-7 mb-6 h-fit bg-gradient-to-b from-spaceBlue-50/5 italic {instance.cardStyling} mb-2 rounded-xl mx-auto text-spaceBlue-50 font-light"
+			class="w-56 p-7 mb-6 h-fit bg-gradient-to-b from-blue-50/5 italic {instance.cardStyling} mb-2 rounded-xl mx-auto text-blue-50 font-light"
 		>
 			{instance.goal}
 		</div>

@@ -15,7 +15,7 @@
 
 <NavBar />
 
-<main class="bg-spaceBlue-900 flex flex-col text-spaceBlue-50 font-dmsans">
+<main class="bg-blue-900 flex flex-col text-blue-50 font-dmsans">
 	<slot />
 	<Footer />
 	<TopButton />

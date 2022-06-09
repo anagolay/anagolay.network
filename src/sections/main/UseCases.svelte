@@ -10,7 +10,7 @@
 <a name="useCases">
 	<Section
 		backgroundClass="bg-stars bg-repeat bg-[length:200px_200px]"
-		overlayClass="bg-gradient-to-b from-spaceBlue-900 via-transparent to-spaceBlue-900"
+		overlayClass="bg-gradient-to-b from-blue-900 via-transparent to-blue-900"
 	>
 		<div class="md:container w-80 max-w-full mx-auto md:w-full py-24">
 			<div class="mt-0 flex flex-col items-center">
