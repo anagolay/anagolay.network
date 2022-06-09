@@ -5,13 +5,13 @@
 	import SvelteSeo from 'svelte-seo';
 
 	import type { TechnologyItem, ArchitectureItem, WebLayerIcon } from '$src/types';
-	import { onMount } from 'svelte';
+	// import { onMount } from 'svelte';
 
 	export let technologyItems: TechnologyItem[];
 	export let webLayerIcons: WebLayerIcon[];
 	export let architectureItems: ArchitectureItem[];
 
-	onMount(() => window.scrollTo({ top: 0, behavior: 'smooth' }));
+	// onMount(() => window.scrollTo({ top: 0, behavior: 'smooth' }));
 </script>
 
 <SvelteSeo
