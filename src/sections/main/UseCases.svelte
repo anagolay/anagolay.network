@@ -9,6 +9,7 @@
 
 <a name="useCases">
 	<Section
+		id={'useCases'}
 		backgroundClass="bg-stars bg-repeat bg-[length:200px_200px]"
 		overlayClass="bg-gradient-to-b from-spaceBlue-900 via-transparent to-spaceBlue-900"
 	>

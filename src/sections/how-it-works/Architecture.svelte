@@ -19,6 +19,7 @@
 </script>
 
 <Section
+	id="architecture"
 	backgroundClass="bg-gradient-to-b from-spaceBlue-50/10 to-transparent shadow-cardTop shadow-aquaTeal-300 pb-40"
 >
 	<div class="lg:w-5/6 mx-auto">
@@ -74,7 +75,7 @@
 							class="w-fit min-w-[50%] xl:min-w-[8rem] h-fit sm:py-1 md:py-2 my-1 px-2 md:px-4 text-center {item
 								.wordContainer[
 								i
-							]} bg-gradient-to-b from-spaceBlue-50/20 to-transparent hover:bg-light hover:from-neonGreen-400/20 rounded-full border border-spaceBlue-50/30 hover:border-neonGreen-400/50"
+							]} bg-gradient-to-b from-spaceBlue-50/20 to-transparent hover:cursor-default hover:bg-light hover:from-neonGreen-400/20 rounded-full border border-spaceBlue-50/30 hover:border-neonGreen-400/50"
 						>
 							{word}
 						</div>

@@ -6,7 +6,7 @@
 <Section
 	class="overflow-x-clip"
 	backgroundClass="bg-stars bg-repeat bg-[length:200px_200px]"
-	overlayClass="bg-gradient-to-b from-transparent to-spaceBlue-900"
+	overlayClass="bg-gradient-to-t from-spaceBlue-900 to-transparent"
 >
 	<div class="pt-8 pb-10 md:py-32 flex flex-col items-center md:items-start md:flex-row">
 		<div class="w-80 max-w-full md:w-3/5">
