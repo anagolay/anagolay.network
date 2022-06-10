@@ -34,7 +34,7 @@
 	}
 </script>
 
-<Section>
+<Section class="pt-12">
 	<div
 		id="team"
 		class="w-full lg:w-5/6 lg:mx-auto h-min-[20rem] text-center p-5 bg-gradient-to-b from-spaceBlue-50/10 to-transparent rounded-lg md:rounded-3xl md:mx-auto md:py-6 shadow-card shadow-aquaTeal-300"

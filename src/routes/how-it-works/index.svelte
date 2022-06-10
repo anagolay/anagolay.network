@@ -4,8 +4,9 @@
 	import Architecture from '$src/sections/how-it-works/Architecture.svelte';
 	import SvelteSeo from 'svelte-seo';
 
-	import type { TechnologyItem, ArchitectureItem, WebLayerIcon } from '$src/types';
+	import type { TrustItem, TechnologyItem, ArchitectureItem, WebLayerIcon } from '$src/types';
 
+	export let trustItems: TrustItem[];
 	export let technologyItems: TechnologyItem[];
 	export let webLayerIcons: WebLayerIcon[];
 	export let architectureItems: ArchitectureItem[];
@@ -26,7 +27,7 @@
 />
 
 <div>
-	<TitleSection />
+	<TitleSection {trustItems} />
 	<TechnologyItems {technologyItems} />
 	<Architecture {webLayerIcons} {architectureItems} />
 </div>

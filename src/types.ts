@@ -98,6 +98,17 @@ export interface RoadmapItem {
 	instances: Phase[];
 }
 
+// interface added for Trust Items cards in in 'How-it-works' page
+export interface TrustItem {
+	icon?: string;
+	img?: {
+		src: string;
+		alt: string;
+	};
+	text: string;
+	anchor: string;
+}
+
 // interface added for technology description sections data in 'How-it-works' page
 export interface TechnologyItem {
 	id?: string;

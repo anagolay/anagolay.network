@@ -19,6 +19,7 @@
 </script>
 
 <Section
+	class="pt-20"
 	id="architecture"
 	backgroundClass="bg-gradient-to-b from-spaceBlue-50/10 to-transparent shadow-cardTop shadow-aquaTeal-300 pb-40"
 >

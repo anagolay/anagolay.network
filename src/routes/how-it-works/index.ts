@@ -1,10 +1,24 @@
 import type { RequestHandlerOutput } from '@sveltejs/kit';
 
-import type { TechnologyItem, ArchitectureItem, WebLayerIcon } from '$src/types';
+import type { TrustItem, TechnologyItem, ArchitectureItem, WebLayerIcon } from '$src/types';
 const lineSize = '[2px]';
 
 // export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 export async function get(): Promise<RequestHandlerOutput> {
+	const trustItems: TrustItem[] = [
+		{ icon: 'copyright', text: 'Statements & Claims', anchor: '#statements' },
+		{ img: { src: '/icon_proof.svg', alt: 'proof' }, text: 'Proofs', anchor: '#proofs' },
+		{
+			img: { src: '/icon_workflow.svg', alt: 'decentralized network' },
+			text: 'Workflow & Operations',
+			anchor: '#workflow',
+		},
+		{
+			img: { src: '/icon_decentralized.svg', alt: 'decentralized network' },
+			text: 'Decentralized Storage',
+			anchor: '#storage',
+		},
+	];
 	const technologyItems: TechnologyItem[] = [
 		{
 			id: 'statements',
@@ -69,6 +83,7 @@ export async function get(): Promise<RequestHandlerOutput> {
 			inner2: `rounded-b-3xl rounded-l-none -translate-x-${lineSize} -translate-y-${lineSize}`,
 		},
 		{
+			id: 'storage',
 			title: 'Decentralized Storage',
 			subtitle:
 				'Anagolay requirements for decentralized storage are:  IPFS based (content addressability), permanency, high durability',
@@ -112,6 +127,7 @@ export async function get(): Promise<RequestHandlerOutput> {
 	];
 
 	const body = {
+		trustItems,
 		technologyItems,
 		webLayerIcons,
 		architectureItems,

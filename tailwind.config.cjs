@@ -26,8 +26,8 @@ module.exports = {
 				sphere:
 					'radial-gradient(60.62% 60.62% at 42.38% 19.2%, var(--tw-gradient-from), var(--tw-gradient-to));',
 				light: 'radial-gradient(50% 50% at 50% 50%, var(--tw-gradient-from), var(--tw-gradient-to));',
-				upperRadial:
-					'linear-gradient(var(--tw-gradient-from), var(--tw-gradient-to)), radial-gradient(5rem 1.5rem at 50% 0, var(--tw-shadow-color) 0%, rgba(5, 34, 51, 0) 100%);',
+				upperLightIcon:
+					'radial-gradient(4rem 3.5rem at 50% 10%, var(--tw-gradient-from), var(--tw-gradient-to));',
 				upperLight:
 					'radial-gradient(5rem 4.5rem at 50% 20%, var(--tw-gradient-from), var(--tw-gradient-to));',
 				ligtTopRight:

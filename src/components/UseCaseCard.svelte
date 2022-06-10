@@ -1,23 +1,15 @@
 <script lang="ts">
 	import type { UseCase } from '$src/types';
-	import { fade } from 'svelte/transition';
-	import { inview } from 'svelte-inview';
+	import FadeinCard from './FadeinCard.svelte';
 
 	export let data: UseCase;
 	export let i: number;
-
-	let isInView: boolean;
+	let delay = `delay-[${150 * i}ms]`;
 </script>
 
-<div
-	class="wrapper h-[30rem] w-full md:w-fit"
-	use:inview={{ unobserveOnEnter: true, rootMargin: '15%' }}
-	on:change={({ detail }) => {
-		isInView = detail.inView;
-	}}
->
-	{#if isInView}
-		<div in:fade={{ duration: 500, delay: (i % 3) * 300 }} class="flex-col h-100 mt-20">
+<div class="wrapper w-full md:w-fit">
+	<FadeinCard class="transition-opacity {delay} duration-700">
+		<div class="flex-col h-100 mt-20">
 			<div
 				class="shadow-card shadow-aquaTeal-300 flex flex-col bg-spaceBlue-900 bg-gradient-to-b from-spaceBlue-50/5 to-transparent rounded-lg pb-3 px-3 2xl:px-6 text-center md:mx-2 md:w-72 2xl:w-80 h-[25rem]"
 			>
@@ -30,5 +22,5 @@
 				<p class="w-5/6 mx-auto">{data.text}</p>
 			</div>
 		</div>
-	{/if}
+	</FadeinCard>
 </div>

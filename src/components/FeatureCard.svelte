@@ -1,25 +1,13 @@
 <script lang="ts">
 	import type { FeatureData } from '$src/types';
-	import { fade } from 'svelte/transition';
-	import { inview } from 'svelte-inview';
-
+	import FadeinCard from './FadeinCard.svelte';
 	export let feature: FeatureData;
-	export let i: number;
-
-	let isInView: boolean;
 </script>
 
-<div
-	class="basis-4/5 sm:basis-[45%] lg:basis-[30%] pt-6"
-	use:inview={{ unobserveOnEnter: true, rootMargin: '5%' }}
-	on:change={({ detail }) => {
-		isInView = detail.inView;
-	}}
->
-	{#if isInView}
+<div class="flex basis-4/5 sm:basis-[45%] lg:basis-[30%] pt-6">
+	<FadeinCard class="w-full transition-opacity delay-100 duration-700">
 		<div
-			in:fade={{ duration: 700, delay: (i % 3) * 150 }}
-			class="rounded-3xl h-full bg-gradient-to-b from-spaceBlue-50/5 to-transparent border border-spaceBlue-800"
+			class="w-full rounded-3xl h-full bg-gradient-to-b from-spaceBlue-50/5 to-transparent border border-spaceBlue-800"
 		>
 			<div class="bg-upperLight from-neonGreen-400/50 to-transparent">
 				<div class="flex justify-center">
@@ -47,5 +35,5 @@
 				</div>
 			</div>
 		</div>
-	{/if}
+	</FadeinCard>
 </div>

@@ -13,8 +13,8 @@
 			<p>different kind of beast</p>
 		</h2>
 		<div class="flex flex-wrap gap-4 justify-evenly">
-			{#each beastFeatures as feature, i}
-				<FeatureCard {feature} {i} />
+			{#each beastFeatures as feature}
+				<FeatureCard {feature} />
 			{/each}
 		</div>
 	</div>
