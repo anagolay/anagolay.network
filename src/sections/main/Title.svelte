@@ -43,7 +43,7 @@
 	</div>
 </Section>
 
-<div class="text-lg md:text-4xl pb-32 md:pb-40 text-center pt-16">
+<div class="text-lg md:text-4xl pb-32 md:pb-48 text-center pt-16 md:pt-28">
 	<p class="text-neonGreen-400 line-through font-medium mb-2">
 		<span class="text-spaceBlue-50/50">Central authority <br />Resource heavy consensus mechanism</span>
 	</p>

@@ -51,8 +51,8 @@
 					<div class="w-full h-[.2rem] bg-gradient-to-r from-spaceBlue-700 to-neonGreen-400 mt-28 -mb-28" />
 					<div class="w-fit pb-6" bind:clientWidth={roadWidth}>
 						<div class={gridClass}>
-							{#each roadMapItems as roadMapItem}
-								<RoadmapElement {roadMapItem} />
+							{#each roadMapItems as roadMapItem, i}
+								<RoadmapElement {roadMapItem} {i} />
 							{/each}
 						</div>
 					</div>

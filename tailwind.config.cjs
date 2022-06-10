@@ -26,12 +26,9 @@ module.exports = {
 				sphere:
 					'radial-gradient(60.62% 60.62% at 42.38% 19.2%, var(--tw-gradient-from), var(--tw-gradient-to));',
 				light: 'radial-gradient(50% 50% at 50% 50%, var(--tw-gradient-from), var(--tw-gradient-to));',
-				upperLightIcon:
-					'radial-gradient(4rem 3.5rem at 50% 10%, var(--tw-gradient-from), var(--tw-gradient-to));',
+				radial66: 'radial-gradient(50% 55% at 50% 20%, var(--tw-gradient-from), var(--tw-gradient-to));',
 				upperLight:
 					'radial-gradient(5rem 4.5rem at 50% 20%, var(--tw-gradient-from), var(--tw-gradient-to));',
-				ligtTopRight:
-					'radial-gradient(10rem 10rem at 80% 3rem, var(--tw-gradient-from), var(--tw-gradient-to));',
 				stars:
 					'radial-gradient(2px 2px at 20px 30px, #eeeeee, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 40px 70px, #ffffff, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 50px 160px, #dddddd, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 90px 40px, #ffffff, rgba(0, 0, 0, 0)),radial-gradient(1px 1px at 130px 80px, #ffffff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 160px 120px, #dddddd, rgba(0, 0, 0, 0)),  radial-gradient(3px 3px at 100px 130px, #eeeeee, rgba(0, 0, 0, 0));',
 			},

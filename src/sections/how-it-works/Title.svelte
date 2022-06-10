@@ -41,7 +41,7 @@
 		</div>
 	</div>
 
-	<div class="flex flex-wrap md:gap-8 justify-evenly pt-28 xl:pt-36 md:pb-20">
+	<div class="flex flex-wrap gap-4 justify-evenly pt-12 xl:pt-44 md:pb-20">
 		{#each trustItems as trustItem}
 			<TrustCard {trustItem} />
 		{/each}
