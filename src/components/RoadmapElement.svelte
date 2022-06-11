@@ -3,7 +3,6 @@
 	import { status } from '$src/routes/index';
 
 	export let roadMapItem: RoadmapItem;
-	export let i: number;
 
 	// default classes
 	let titleOpacity = 'opacity-70';
@@ -11,7 +10,6 @@
 	let yearOpacity = '';
 	let pointBlur = '';
 	let pointOpacity = '';
-	let snap = i === 0 ? 'snap-start' : 'snap:center';
 
 	const instanceStatuses = roadMapItem.instances.map((i) => {
 		//this function sets classes for each instance card.
@@ -36,7 +34,7 @@
 	}
 </script>
 
-<div class="flex flex-col items-center mx-auto {snap} snap-always ">
+<div class="flex flex-col items-center snap-center snap-always mx-16">
 	<div class="text-7xl {titleOpacity} {titleShadow} blur-[2px] text-spaceBlue-800 text-shadow-around">
 		{roadMapItem.title}
 	</div>

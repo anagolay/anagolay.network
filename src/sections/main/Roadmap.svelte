@@ -8,7 +8,6 @@
 	import RoadmapElement from '$src/components/RoadmapElement.svelte';
 	export let roadMapItems: RoadmapItem[];
 
-	let gridClass = `grid w-full text-center grid-flow-col gap-36 auto-cols-fit`;
 	let roadMap: HTMLDivElement;
 	let roadWidth: number;
 	let windowWidth: number;
@@ -50,9 +49,9 @@
 				<div class="w-fit">
 					<div class="w-full h-[.2rem] bg-gradient-to-r from-spaceBlue-700 to-neonGreen-400 mt-28 -mb-28" />
 					<div class="w-fit pb-6" bind:clientWidth={roadWidth}>
-						<div class={gridClass}>
-							{#each roadMapItems as roadMapItem, i}
-								<RoadmapElement {roadMapItem} {i} />
+						<div class="grid w-full text-center grid-flow-col auto-cols-fit">
+							{#each roadMapItems as roadMapItem}
+								<RoadmapElement {roadMapItem} />
 							{/each}
 						</div>
 					</div>
@@ -78,12 +77,3 @@
 		</div>
 	</div>
 </Section>
-
-<style>
-	/*This class is here because Tailwind does not have a standard class for text-shadow.
-	This class uses the tailwind shadow color variable*/
-	.text-shadow-around {
-		text-shadow: 1px 0 3px var(--tw-shadow-color), -1px 0 3px var(--tw-shadow-color),
-			0 1px 3px var(--tw-shadow-color), 0 -1px 3px var(--tw-shadow-color);
-	}
-</style>
