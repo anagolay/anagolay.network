@@ -1,4 +1,4 @@
-image: node:17-bullseye
+image: node:18-bullseye
 
 stages:
   - check
