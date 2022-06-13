@@ -1,8 +1,24 @@
-import type { RequestHandler, RequestHandlerOutput } from '@sveltejs/kit';
+import type { RequestHandlerOutput } from '@sveltejs/kit';
 
-import type { TechnologyItem, ArchitectureItem, WebLayerIcon } from '$src/types';
+import type { TrustItem, TechnologyItem, ArchitectureItem, WebLayerIcon } from '$src/types';
+const lineSize = '[2px]';
 
-export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
+// export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
+export async function get(): Promise<RequestHandlerOutput> {
+	const trustItems: TrustItem[] = [
+		{ icon: 'copyright', text: 'Statements & Claims', anchor: '#statements' },
+		{ img: { src: '/icon_proof.svg', alt: 'proof' }, text: 'Proofs', anchor: '#proofs' },
+		{
+			img: { src: '/icon_workflow.svg', alt: 'decentralized network' },
+			text: 'Workflow & Operations',
+			anchor: '#workflow',
+		},
+		{
+			img: { src: '/icon_decentralized.svg', alt: 'decentralized network' },
+			text: 'Decentralized Storage',
+			anchor: '#storage',
+		},
+	];
 	const technologyItems: TechnologyItem[] = [
 		{
 			id: 'statements',
@@ -15,10 +31,14 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'More will be added when we see the need for it and a practical use case.',
 			],
 			image: {
-				class: '-my-[10%] md:-my-[15%] scale-110 md:scale-100 md:ml-0 md:-mb-[40%] 2xl:w-11/12',
+				width: 773,
+				height: 770,
+				class: '-my-[10%] md:-my-[30%] md:-mb-[75%] md:-ml-[10%] md:-mr-[5%]',
 				source: '/how_it_works_statements.png',
 				altText: 'Statements',
 			},
+			line2: `w-1/2 mx-auto h-1/4 xl:h-1/6 mt-auto flex justify-end items-start bg-gradient-to-bl from-neonGreen-400 to-spaceBlue-700 rounded-r-3xl rounded-t-none`,
+			inner2: `rounded-r-3xl rounded-t-none -translate-x-${lineSize} -translate-y-${lineSize}`,
 		},
 		{
 			id: 'proofs',
@@ -30,10 +50,16 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'The execution consists of a number of tasks, called Operations. When connected together, they make up a Workflow.',
 			],
 			image: {
-				class: '-my-4 scale-110 ml-[5%] 2xl:ml-[10%] md:-mt-[10%] md:mx-0 md:-mb-[40%] lg:-mt-[15%]',
+				width: 806,
+				height: 750,
+				class: '-ml-5 -my-10 md:-my-[15%] md:-mx-[10%] lg:-my-[30%] md:-mb-[50%] ',
 				source: '/how_it_works_proofs.png',
 				altText: 'Process proofs',
 			},
+			line1: `w-1/4 h-[40%] lg:h-1/4 flex justify-start items-start bg-gradient-to-b from-spaceBlue-700 to-neonGreen-400 rounded-l-3xl rounded-b-none -mt-${lineSize}`,
+			inner1: `rounded-l-3xl rounded-b-none translate-x-${lineSize} translate-y-${lineSize}`,
+			line2: `w-2/5 mx-[40%] md:h-1/4 xl:h-[10%] mt-auto flex justify-end items-start bg-gradient-to-br from-spaceBlue-700 to-neonGreen-400 rounded-b-3xl rounded-r-none`,
+			inner2: `rounded-b-3xl rounded-r-none translate-x-${lineSize} -translate-y-${lineSize}`,
 		},
 		{
 			id: 'workflow',
@@ -45,13 +71,19 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'Connected together, like lego pieces, Operations form a Workflow - a graph that has a single Operation entry-point. Once executed, a Workflow produces the list of strings that act as the input data identifiers - Proofs.',
 			],
 			image: {
-				class:
-					'-ml-[10%] -my-[5%] md:-mt-[20%] scale-125 md:-mt-[5%] lg:-mt-[15%] 2xl:-mt-[20%] md:ml-0 md:-mb-[30%]',
+				width: 874,
+				height: 787,
+				class: '-ml-5 -mr-5 -my-[10%] md:-ml-[25%] md:-mr-[5%] md:-mt-[35%] md:-mb-[50%]',
 				source: '/how_it_works_workflow.png',
 				altText: 'Process workflow',
 			},
+			line1: `w-1/5 ml-[80%] h-[30%] flex justify-start items-start bg-gradient-to-b from-neonGreen-400 to-spaceBlue-700 rounded-r-3xl rounded-b-none -mt-${lineSize}`,
+			inner1: `rounded-r-3xl rounded-b-none -translate-x-${lineSize} translate-y-${lineSize}`,
+			line2: `w-2/5 mx-[40%] md:h-[20%] xl:h-[10%] mt-auto flex justify-end items-start bg-gradient-to-bl from-spaceBlue-700 to-neonGreen-400 rounded-b-3xl rounded-l-none`,
+			inner2: `rounded-b-3xl rounded-l-none -translate-x-${lineSize} -translate-y-${lineSize}`,
 		},
 		{
+			id: 'storage',
 			title: 'Decentralized Storage',
 			subtitle:
 				'Anagolay requirements for decentralized storage are:  IPFS based (content addressability), permanency, high durability',
@@ -60,10 +92,14 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 				'The challenge is to have Workflows & Operations Artifacts stored on IPFS permanently. ',
 			],
 			image: {
-				class: '-my-[15%] md:-mt-[10%] md:-mt-[20%] lg:-mt-[25%] md:-mb-[20%]',
+				width: 806,
+				height: 726,
+				class: '-my-[15%] -mx-5 md:-mt-[35%] md:-mx-[10%] md:-mb-[30%]',
 				source: '/how_it_works_storage.png',
 				altText: 'Storage',
 			},
+			line1: `w-2/5 h-[40%] flex justify-start items-start bg-gradient-to-bl from-neonGreen-400 to-spaceBlue-700 rounded-l-3xl rounded-b-none -mt-${lineSize}`,
+			inner1: `rounded-l-3xl rounded-b-none translate-x-${lineSize} translate-y-${lineSize}`,
 		},
 	];
 
@@ -77,24 +113,21 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 
 	const architectureItems: ArchitectureItem[] = [
 		{
-			image: { source: '/icon_sdk.svg', altText: 'SDK icon' },
-			title: 'SDK Layer',
-			description: 'Typescript - Rust - Operations - Workflows - WASM - Workflow execution',
-		},
-		{
 			image: { source: '/icon_ipfs.svg', altText: 'IPFS icon' },
 			title: 'Storage Layer',
-			description: 'Operations - Build Artifacts - Workflows - WASM - Source code',
+			subtitle: 'IPFS',
+			description: ['Git repositories', 'Documentation', 'WASM artifacts', 'Source code'],
 		},
 		{
 			image: { source: '/icon_blockchain.svg', altText: 'blockchain icon' },
 			title: 'Blockchain Layer',
 			subtitle: 'Substrate with our pallets',
-			description: 'Operations - Workflows - PoE - Statements - Artifacts',
+			description: ['Operations', 'Workflows', 'PoE', 'Artifacts'],
 		},
 	];
 
 	const body = {
+		trustItems,
 		technologyItems,
 		webLayerIcons,
 		architectureItems,
@@ -104,4 +137,4 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 		status: 200,
 		body,
 	};
-};
+}

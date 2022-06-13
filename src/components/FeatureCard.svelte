@@ -1,48 +1,39 @@
 <script lang="ts">
 	import type { FeatureData } from '$src/types';
-	import { fade } from 'svelte/transition';
-	import { inview } from 'svelte-inview';
-
+	import FadeinCard from './FadeinCard.svelte';
 	export let feature: FeatureData;
-	export let i: number;
-
-	let isInView: boolean;
 </script>
 
-<div
-	class="col wrapper h-64 w-[24rem] max-w-full"
-	use:inview={{ unobserveOnEnter: true, rootMargin: '5%' }}
-	on:change={({ detail }) => {
-		isInView = detail.inView;
-	}}
->
-	{#if isInView}
+<div class="flex basis-4/5 sm:basis-[45%] lg:basis-[30%] pt-6">
+	<FadeinCard class="w-full transition-opacity delay-100 duration-700">
 		<div
-			in:fade={{ duration: 700, delay: (i % 3) * 150 }}
-			class="w-[22rem] max-w-full sm:max-w-none sm:mx-4 my-8 mx-auto shadow-button flex flex-col items-center rounded-3xl bg-blue h-48 px-12 mt-8 text-base xl:text-xl"
+			class="w-full rounded-3xl h-full bg-gradient-to-b from-spaceBlue-50/5 to-transparent border border-spaceBlue-800"
 		>
-			<div
-				class="flex w-24 h-24 items-center justify-center bg-gradient-to-br from-blue/90 to-white/20 backdrop-blur-[3px] mx-center text-green border border-green rounded-full -mt-6"
-			>
-				{#if feature.icon}
-					<span class="material-icons text-5xl">{feature.icon}</span>
-				{:else if feature.img}
-					<img
-						loading="lazy"
-						class="material-icons h-12"
-						width="48"
-						height="48"
-						src={feature.img.src}
-						alt={feature.img.alt}
-					/>
-				{/if}
-			</div>
-			<div class="w-60 sm:w-[unset] md:text-base mt-4 h-20 my-4">
-				<p class="py-4">{feature.feature}</p>
+			<div class="bg-upperLight from-neonGreen-400/50 to-transparent">
+				<div class="flex justify-center">
+					<div
+						class="w-24 h-24 flex items-center justify-center -translate-y-6 bg-spaceBlue-900 bg-gradient-to-br from-spaceBlue-800/90 to-spaceBlue-50/20 border border-neonGreen-400 rounded-[100%]"
+					>
+						{#if feature.icon}
+							<span class="material-icons text-5xl text-neonGreen-400">{feature.icon}</span>
+						{:else if feature.img}
+							<img
+								loading="lazy"
+								class="material-icons"
+								width="48"
+								height="48"
+								src={feature.img.src}
+								alt={feature.img.alt}
+							/>
+						{/if}
+					</div>
+				</div>
+				<div class="flex justify-center pb-6">
+					<div class="basis-4/5 2xl:text-lg">
+						<p>{feature.feature}</p>
+					</div>
+				</div>
 			</div>
 		</div>
-	{/if}
+	</FadeinCard>
 </div>
-
-<style>
-</style>

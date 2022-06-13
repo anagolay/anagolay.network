@@ -3,9 +3,14 @@
 @tailwind utilities;
 
 @layer components {
+	body {
+		background-color: #052233;
+	}
+
 	/* all scroll bars styling */
 	*::-webkit-scrollbar {
 		-webkit-appearance: none;
+		background: rgba(255, 255, 255, 0.1);
 	}
 
 	*::-webkit-scrollbar-thumb {

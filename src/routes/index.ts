@@ -8,7 +8,7 @@ export enum status {
 	pending = 'pending',
 }
 
-export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
+export async function get(): Promise<RequestHandlerOutput> {
 	const beastFeatures: FeatureData[] = [
 		{
 			feature: 'Each stored proof on the Anagolay chain can be verified',
@@ -38,11 +38,11 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 		},
 		{
 			feature: 'All stored data structures are content addressable',
-			img: { src: '/decentralized.svg', alt: 'decentralized network' },
+			img: { src: '/icon_decentralized.svg', alt: 'decentralized network' },
 		},
 	];
 
-	const TrustProcessItems: TrustProcessItem[] = [
+	const trustProcessItems: TrustProcessItem[] = [
 		{
 			src: '/trust_security.svg',
 			alt: 'Secure process',
@@ -202,16 +202,16 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 			title: 'Q2',
 			year: 2022,
 			instances: [
-				{ goal: ' Anagolay rebrand and new website', status: status.doing },
+				{ goal: ' Anagolay rebrand and new website', status: status.done },
 				{
 					goal: 'Idiyanale Phase 2/2 (Web3 Foundation Grant)',
-					status: status.doing,
+					status: status.done,
 				},
 				{
 					goal: 'PoE & Statement of Ownership and Copyright',
 					description:
 						'Improve and re-design the workflows specific for Proofs-of-Exitance & Statement of Ownership and Copyright. Where blockchain is not the central technology, but a facilitator of transparency & freedom for the build architecture.',
-					status: status.pending,
+					status: status.doing,
 				},
 			],
 		},
@@ -284,7 +284,7 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 
 	const body = {
 		beastFeatures,
-		TrustProcessItems,
+		trustProcessItems,
 		useCases,
 		teamMembers,
 		roadMapItems,
@@ -294,4 +294,4 @@ export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 		status: 200,
 		body,
 	};
-};
+}
