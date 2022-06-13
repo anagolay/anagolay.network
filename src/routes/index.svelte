@@ -11,7 +11,7 @@
 
 	export let beastFeatures: FeatureData[];
 	export let useCases: UseCase[];
-	export let TrustProcessItems: TrustProcessItem[];
+	export let trustProcessItems: TrustProcessItem[];
 	export let teamMembers: TeamMember[];
 	export let roadMapItems: RoadmapItem[];
 </script>
@@ -34,7 +34,7 @@
 <div>
 	<TitleSection />
 	<FeaturesSection {beastFeatures} />
-	<TrustProcess {TrustProcessItems} />
+	<TrustProcess {trustProcessItems} />
 	<UseCases {useCases} />
 	<TeamSection {teamMembers} />
 	<Roadmap {roadMapItems} />

@@ -3,8 +3,8 @@
 	import SectionButton from '$src/components/SectionButton.svelte';
 </script>
 
-<div class="h-screen 3xl:-mb-60">
-	<div class="mt-10 md:mt-20 3xl:mt-40 mb-auto w-full md:w-[35rem] lg:w-2/3 md:mx-auto grid grid-cols-2">
+<div class="h-screen">
+	<div class="mt-10 md:mt-20 mb-auto w-full md:w-[35rem] lg:w-2/3 md:mx-auto grid grid-cols-2">
 		<div class="-mr-[100%]">
 			<div class="flex">
 				<div class="w-1/2">
@@ -35,9 +35,9 @@
 		</div>
 		<div class="-ml-[100%] flex justify-center">
 			<div
-				class="relative md:w-full bg-anagolayWhite/20 text-center shadow-button rounded-3xl px-3 md:px-16 xl:px-24 py-5 z-10"
+				class="relative md:w-full bg-spaceBlue-50/20 text-center shadow-card rounded-3xl px-3 md:px-16 xl:px-24 py-5 z-10"
 			>
-				<p class="text-2xl sm:text-3xl text-green blur-[2px] my-10 font-mono">4 0 4</p>
+				<p class="text-2xl sm:text-3xl text-neonGreen-400 blur-[2px] my-10 font-mono">4 0 4</p>
 				<h1 class="text-3xl sm:text-4xl md:text-6xl 2xl:text-7xl md:leading-[6rem] min-w-fit font-bold">
 					Lost in space?
 				</h1>

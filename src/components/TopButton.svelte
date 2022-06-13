@@ -1,32 +1,24 @@
 <script lang="ts">
-	import { fade } from 'svelte/transition';
+	import { onMount } from 'svelte';
 	export let showOnPx = 200;
-	let visible = false;
+
+	let visible = 'opacity-0 cursor-default';
 
 	function scrollToTop(): void {
-		window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+		window.scrollTo({ top: 0, behavior: 'smooth' });
 	}
 
-	function scrollContainer() {
-		return document.documentElement || document.body;
+	function setVisibility() {
+		visible = window.scrollY > showOnPx ? 'opacity-100' : 'opacity-0 cursor-default';
 	}
-
-	function handleOnScroll() {
-		if (!scrollContainer()) {
-			return;
-		}
-		visible = scrollContainer().scrollTop > showOnPx;
-	}
+	onMount(() => setVisibility());
 </script>
 
-<svelte:window on:scroll={handleOnScroll} />
+<svelte:window on:scroll={setVisibility} />
 
-{#if visible}
-	<button
-		class="flex justify-center items-center fixed bottom-5 right-5 h-12 w-12 rounded-full bg-white/25 bg-gradient-to-br from-darkblue/70 to-transparent shadow-md shadow-black/25 active:shadow-pressed backdrop-blur-md z-50"
-		transition:fade={{ duration: 300 }}
-		on:click={scrollToTop}
-	>
-		<span class="material-icons text-green"> keyboard_arrow_up </span>
-	</button>
-{/if}
+<button
+	class="{visible} transition-opacity duration-500 flex justify-center items-center fixed bottom-5 right-8 h-12 w-12 rounded-full bg-white/25 bg-gradient-to-br from-spaceBlue-800/70 to-transparent shadow-md shadow-black/25 active:shadow-pressed backdrop-blur-md z-50"
+	on:click={scrollToTop}
+>
+	<span class="material-icons text-neonGreen-400"> keyboard_arrow_up </span>
+</button>

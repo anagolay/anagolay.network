@@ -4,8 +4,9 @@
 	import Architecture from '$src/sections/how-it-works/Architecture.svelte';
 	import SvelteSeo from 'svelte-seo';
 
-	import type { TechnologyItem, ArchitectureItem, WebLayerIcon } from '$src/types';
+	import type { TrustItem, TechnologyItem, ArchitectureItem, WebLayerIcon } from '$src/types';
 
+	export let trustItems: TrustItem[];
 	export let technologyItems: TechnologyItem[];
 	export let webLayerIcons: WebLayerIcon[];
 	export let architectureItems: ArchitectureItem[];
@@ -25,12 +26,8 @@
 	}}
 />
 
-<div class="w-80 md:w-fit max-w-full mx-auto">
-	<TitleSection />
+<div>
+	<TitleSection {trustItems} />
 	<TechnologyItems {technologyItems} />
-	<section class="flex justify-center -mx-[100%] bg-gradient-to-b from-anagolayBlack to-transparent">
-		<div class="w-1/3 md:container">
-			<Architecture {webLayerIcons} {architectureItems} />
-		</div>
-	</section>
+	<Architecture {webLayerIcons} {architectureItems} />
 </div>

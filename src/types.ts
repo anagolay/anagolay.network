@@ -16,6 +16,8 @@
 
 interface ImageData {
 	class?: string;
+	width?: number;
+	height?: number;
 	source: string;
 	altText: string;
 }
@@ -55,6 +57,7 @@ export interface TrustProcessItem {
 	text: string;
 	linkText: string;
 	link: string;
+	extraClass?: string;
 }
 
 // interface added for 'Use Cases' section data in main page
@@ -95,6 +98,17 @@ export interface RoadmapItem {
 	instances: Phase[];
 }
 
+// interface added for Trust Items cards in in 'How-it-works' page
+export interface TrustItem {
+	icon?: string;
+	img?: {
+		src: string;
+		alt: string;
+	};
+	text: string;
+	anchor: string;
+}
+
 // interface added for technology description sections data in 'How-it-works' page
 export interface TechnologyItem {
 	id?: string;
@@ -102,6 +116,10 @@ export interface TechnologyItem {
 	subtitle: string;
 	contentLines: string[];
 	image: ImageData;
+	line1?: string;
+	inner1?: string;
+	line2?: string;
+	inner2?: string;
 }
 
 // interfaces added for Architecture section data in 'How-it-works' page
@@ -113,6 +131,7 @@ export interface WebLayerIcon {
 export interface ArchitectureItem {
 	title: string;
 	subtitle?: string;
-	description: string;
+	description: string[];
+	wordContainer?: string[];
 	image: ImageData;
 }
