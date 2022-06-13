@@ -15,7 +15,8 @@
 		"lint": "pnpm lint:eslint && pnpm lint:prettier",
 		"lint:eslint": "eslint --ignore-path .gitignore .",
 		"lint:prettier": "prettier --ignore-path .gitignore --check .",
-		"format": "pretty-quick --staged"
+		"pretty-quick": "pretty-quick --staged",
+		"format": "prettier --ignore-path .gitignore --write ."
 	},
 	"devDependencies": {
 		"@playwright/test": "1.21.1",
