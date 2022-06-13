@@ -8,19 +8,36 @@
 	let extraClass = '';
 	export { extraClass as class };
 
-	let target = option.external ? '_blank' : undefined;
-	let rel = option.external ? 'noopener noreferrer' : undefined;
-	let color = 'text-anagolayWhite';
+	let anchor: HTMLAnchorElement;
 
-	$: color = option.url === $page.url.pathname ? 'text-green' : 'text-anagolayWhite';
+	let color = 'text-spaceBlue-50';
+
+	function handleClick() {
+		const currentUrl = $page.url.href.split('#')[0];
+		const destinationUrl = anchor.href.split('#')[0];
+		const locator = anchor.href.split('#')[1];
+
+		if (destinationUrl === currentUrl) {
+			const target = document.getElementById(locator);
+			window.scrollTo({ top: target ? target.offsetTop : 0, behavior: 'smooth' });
+		} else if (destinationUrl.includes(window.location.origin)) {
+			window.open(anchor.href, '_self');
+		} else {
+			window.open(anchor.href, '_blank', 'noopener').focus();
+		}
+		onClick();
+	}
+
+	$: color = option.url === $page.url.pathname ? 'text-neonGreen-400' : 'text-spaceBlue-50';
 </script>
 
 <a
-	class="w-full {color} min-w-fit p-2 hover:text-green {extraClass}"
+	class="w-full {color} min-w-fit hover:text-neonGreen-400 {extraClass}"
 	href={option.url}
-	{target}
-	{rel}
-	on:click={onClick}
+	on:click|preventDefault={handleClick}
+	bind:this={anchor}
 >
-	{option.text}
+	<p class="p-2">
+		{option.text}
+	</p>
 </a>

@@ -28,6 +28,17 @@ const config = {
 					$src: resolve('./src'),
 				},
 			},
+			server: {
+				// configure vite for HMR with Gitpod
+				hmr: process.env.GITPOD_WORKSPACE_URL
+					? {
+							// removes the protocol and replaces it with the port we're connecting to
+							host: process.env.GITPOD_WORKSPACE_URL.replace('https://', '7776-'),
+							protocol: 'wss',
+							clientPort: 443,
+					  }
+					: true,
+			},
 		},
 		serviceWorker: {
 			register: false,
