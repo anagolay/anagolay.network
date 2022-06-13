@@ -6,14 +6,9 @@
 </script>
 
 <NavBar />
-<div
-	class="w-full bg-anagolayBlack bg-gradient-to-b from-anagolayBlack via-blue to-anagolayBlack overflow-x-hidden"
->
-	<main class="lg:container mx-auto w-5/6">
-		<div class="flex flex-col text-anagolayWhite font-dmsans scroll-smooth">
-			<slot />
-			<Footer />
-			<TopButton />
-		</div>
-	</main>
-</div>
+
+<main class="bg-spaceBlue-900 flex flex-col text-spaceBlue-50 font-dmsans">
+	<slot />
+	<Footer />
+	<TopButton />
+</main>

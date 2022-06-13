@@ -1,32 +1,49 @@
-<div class="flex flex-col md:grid md:grid-cols-2 mt-40 md:mt-32 mb-20 md:mb-16">
-	<div class="md:-mr-[100%]">
-		<div
-			class="-mt-20 w-12 h-12 bg-sphere from-green to-blue rounded-full -rotate-[25deg] opacity-80 blur-sm"
-		/>
-		<div
-			class="h-[25rem] w-[25rem] bg-light -mt-32 from-green/40 md:from-green/30 to-transparent -mb-56 ml-32 md:ml-[80%]"
-		/>
-		<div>
-			<h1 class="tracking-wider text-center font-extrabold text-3xl md:text-5xl md:text-left min-w-fit">
-				<p class="md:leading-[4rem] min-w-fit">How does it work?</p>
-			</h1>
+<script lang="ts">
+	import Ellipse from '$src/components/Ellipse.svelte';
 
-			<h2 class="w-full md:w-7/12 text-center mt-8 text-lg md:text-lg lg:text-2xl md:text-left">
-				<p class="">
+	import Section from '$src/components/Section.svelte';
+	import SectionButton from '$src/components/SectionButton.svelte';
+	import TrustCard from '$src/components/TrustCard.svelte';
+
+	import type { TrustItem } from '$src/types';
+	export let trustItems: TrustItem[];
+</script>
+
+<Section class="overflow-x-clip ">
+	<div
+		class="w-80 max-w-full mx-auto md:w-full pt-8 md:pt-20 2xl:py-20  flex flex-col md:flex-row items-start lg:items-stretch"
+	>
+		<div class="md:basis-1/2">
+			<div class="relative lg:w-4/5">
+				<h1 class="md:mb-0 text-center font-extrabold text-3xl md:text-5xl md:text-left">
+					<p class="md:leading-[4rem]">How does it work?</p>
+				</h1>
+				<h2 class="w-full text-center md:text-left my-6 md:mb-20 text-base md:text-lg lg:text-xl md:my-12">
 					Anagolay is a peer-to-peer network that stores records of Rights, Restrictions, and Proofs of any
 					digital content. It empowers the users to store, claim, sell, and rent their work with the correct
 					transfer of Rights and usage of Licenses.
-				</p>
-			</h2>
+				</h2>
+				<SectionButton class="mx-auto md:m-0" url="#architecture">See architecture</SectionButton>
+			</div>
 		</div>
-
-		<div
-			class="ml-48 mt-12 w-8 h-8 bg-sphere from-green to-blue rounded-full -rotate-[25deg] opacity-80 blur-sm"
-		/>
-		<div class="ml-10 mt-10 w-4 h-4 bg-sphere from-green to-blue rounded-full -rotate-[25deg] opacity-90" />
+		<div class="w-full md:w-1/2 mx-auto md:mx-0">
+			<div class=" lg:-mx-[10%]  lg:-mt-[20%] 2xl:-my-[20%] md:-mt-10">
+				<object
+					class="object-contain"
+					title="main animation"
+					type="image/svg+xml"
+					data="/how_it_works_main_workflow.svg"
+				/>
+				<div
+					class="rounded-[100%] bg-anagolayBlack bg-light from-aquaTeal-300/50 to-transparent h-28 md:h-64 -mt-20 md:-mt-48 -mx-[10%]"
+				/>
+			</div>
+		</div>
 	</div>
 
-	<div class="hidden md:flex justify-center mt-12 lg:mt-0 xl:-mt-[15%] -ml-[100%]">
-		<img class="" width="1280" height="1203" src="/how_it_works_main_workflow.png" alt="workflow process" />
+	<div class="flex flex-wrap gap-4 justify-evenly pt-12 xl:pt-44 md:pb-20">
+		{#each trustItems as trustItem}
+			<TrustCard {trustItem} />
+		{/each}
 	</div>
-</div>
+</Section>
