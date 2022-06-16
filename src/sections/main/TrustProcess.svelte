@@ -12,7 +12,7 @@
 	<div class="text-center mb-12 md:mb-16 mx-auto">
 		<h2 class="text-2xl md:text-4xl mb-6 md:mb-8 text-neonGreen-400">Trust the process</h2>
 		<p class="md:px-0 md:mx-auto text-base md:text-xl xl:text-2xl">
-			Instead of relaying on a central authority, or resource-heavy consensus mechanism to establish the rules
+			Instead of relying on a central authority, or resource-heavy consensus mechanism to establish the rules
 			of the game (trust)
 		</p>
 	</div>
