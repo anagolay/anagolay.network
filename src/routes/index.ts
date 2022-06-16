@@ -1,4 +1,4 @@
-import type { RequestHandler, RequestHandlerOutput } from '@sveltejs/kit';
+import type { RequestHandlerOutput } from '@sveltejs/kit';
 
 import type { FeatureData, TrustProcessItem, UseCase, TeamMember, RoadmapItem } from '$src/types';
 
