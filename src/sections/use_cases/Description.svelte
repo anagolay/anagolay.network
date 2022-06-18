@@ -29,7 +29,7 @@
 						{/if}
 					</div>
 				</div>
-				<p class="w-5/6 text-center text-base lg:text-xl">
+				<p class="w-5/6 text-center text-base lg:text-lg">
 					{item.feature}
 				</p>
 			</div>
