@@ -1,6 +1,4 @@
 <script lang="ts">
-	import Ellipse from '$src/components/Ellipse.svelte';
-
 	import Section from '$src/components/Section.svelte';
 	import SectionButton from '$src/components/SectionButton.svelte';
 	import TrustCard from '$src/components/TrustCard.svelte';
