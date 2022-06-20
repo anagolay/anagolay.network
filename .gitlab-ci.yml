@@ -11,7 +11,6 @@ cache:
     - node_modules
     - ANAGOLAY_WEBSITE_CID
     - .pnpm-store
-    - pnpm
 
 # include this where you need it. like in before_script
 .install-ipfs-and-setup: &install-ipfs-and-setup
