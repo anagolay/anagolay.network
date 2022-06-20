@@ -3,12 +3,15 @@
 # and commit this file to your remote git repository to share the goodness with others.
 
 tasks:
-  - name: install the remote-signer
+  - name: install deps
     init: |
       sudo sh -c 'curl https://ipfs.anagolay.network/ipfs/bafybeiarhwobvpvz76iy6clqaf3ub7yc4rvvkydmimh652r2svdaznubrq > /usr/local/bin/remote-signer && chmod +x /usr/local/bin/remote-signer' \
       && git config --global gpg.program "remote-signer" \
       && git config --global commit.gpgsign true
-  - init: pnpm i
+      curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm@7
+      pnpm config set store-dir ../.pnpm-store
+      pnpm install
+  - name: start dev
     command: pnpm dev
 
 ports:
