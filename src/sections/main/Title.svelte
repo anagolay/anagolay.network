@@ -4,12 +4,16 @@
 </script>
 
 <Section
-	class="overflow-x-clip"
-	backgroundClass="bg-stars bg-repeat bg-[length:200px_200px]"
-	overlayClass="bg-gradient-to-t from-spaceBlue-900 to-transparent"
+	class="overflow-clip"
+	backgroundClasses={[
+		// 'w-[1px] h-[1px] bg-transparent animate-fastUp after:absolute after:content-[" "] after:w-[1px] after:h-[1px] after:bg-transparent after:top-[2000px] after:animate-fastUp',
+		'stars',
+		'stars2',
+		'stars3',
+	]}
 >
-	<div class="pt-8 pb-10 md:py-32 flex flex-col items-center md:items-start md:flex-row">
-		<div class="w-80 max-w-full md:w-3/5">
+	<div class="relative pt-8 pb-10 md:py-32 flex flex-col items-center md:items-start md:flex-row animate-">
+		<div class="w-80 max-w-full md:w-3/5 ">
 			<div class="relative lg:w-4/5">
 				<h1 class="md:mb-0 text-center font-extrabold text-3xl md:text-5xl md:text-left">
 					<p class="md:leading-[4rem]">Process-based Interplanetary P2P Framework</p>

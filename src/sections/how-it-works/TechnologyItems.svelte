@@ -23,7 +23,7 @@
 			</div>
 			<div class="w-full md:-ml-[90%] md:pb-28 relative">
 				<div class="relative text-center  pt-24  mb-4 md:mb-16 xl:mb-32">
-					<h3 class="text-2xl md:text-4xl lg:text-4xl text-neonGreen-400 mb-6 md:mb-8">{item.title}</h3>
+					<h3 class="text-2xl md:text-3xl lg:text-4xl text-neonGreen-400 mb-6 md:mb-8">{item.title}</h3>
 					<p class="text-base md:text-xl 2xl:text-2xl md:w-3/4 md:mx-auto">
 						{item.subtitle}
 					</p>
