@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Bottom from '$src/sections/use_cases/Bottom.svelte';
+	import Bottom from '$src/sections/use_cases/PilotCase.svelte';
 
 	import Case from '$src/sections/use_cases/Case.svelte';
 	import Description from '$src/sections/use_cases/Description.svelte';

@@ -7,7 +7,7 @@
 	export let trustItems: TrustItem[];
 </script>
 
-<Section class="overflow-clip pb-10" backgroundClasses={['stars', 'stars2', 'stars3']}>
+<Section class="overflow-hidden pb-20" backgroundClasses={['stars', 'stars2', 'stars3']}>
 	<div
 		class="relative w-80 max-w-full mx-auto md:w-full pt-8 md:pt-20 2xl:py-20  flex flex-col md:flex-row items-start lg:items-stretch"
 	>
@@ -40,7 +40,7 @@
 	</div>
 </Section>
 <Section>
-	<div class="relative flex flex-wrap gap-4 justify-evenly pt-10 xl:pt-16 md:pb-20">
+	<div class="relative flex flex-wrap gap-4 justify-evenly pt-12 md:pb-20">
 		{#each trustItems as trustItem}
 			<TrustCard {trustItem} />
 		{/each}

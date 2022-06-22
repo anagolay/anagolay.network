@@ -6,7 +6,7 @@
 	export let beastFeatures: FeatureData[];
 </script>
 
-<Section id="main_features">
+<Section id="main_features" class="relative bg-spaceBlue-900">
 	<div class="text-center mb-40">
 		<h2 class="mb-12 text-neonGreen-400 text-2xl md:text-4xl ">
 			<p class="md:mb-4">Anagolay is a</p>

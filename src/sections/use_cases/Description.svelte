@@ -6,7 +6,7 @@
 </script>
 
 <Section>
-	<div class="flex flex-col md:flex-row w-full py-20 justify-between">
+	<div class="flex flex-col md:flex-row w-full py-12 justify-between">
 		{#each descriptionItems as item}
 			<div
 				class="md:basis-[30%] flex flex-col items-center border border-spaceBlue-800 rounded-3xl bg-gradient-to-b from-spaceBlue-50/5 to-transparent pb-4 mb-8"

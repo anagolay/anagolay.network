@@ -3,15 +3,7 @@
 	import SectionButton from '$src/components/SectionButton.svelte';
 </script>
 
-<Section
-	class="overflow-clip"
-	backgroundClasses={[
-		// 'w-[1px] h-[1px] bg-transparent animate-fastUp after:absolute after:content-[" "] after:w-[1px] after:h-[1px] after:bg-transparent after:top-[2000px] after:animate-fastUp',
-		'stars',
-		'stars2',
-		'stars3',
-	]}
->
+<Section class="overflow-hidden" backgroundClasses={['stars', 'stars2', 'stars3']}>
 	<div class="relative pt-8 pb-10 md:py-32 flex flex-col items-center md:items-start md:flex-row animate-">
 		<div class="w-80 max-w-full md:w-3/5 ">
 			<div class="relative lg:w-4/5">
@@ -47,7 +39,7 @@
 	</div>
 </Section>
 
-<Section>
+<Section class="relative bg-spaceBlue-900">
 	<div class="text-lg md:text-4xl pb-32 md:pb-48 text-center pt-16 md:pt-28 px-4">
 		<p class="text-neonGreen-400 line-through font-medium mb-2">
 			<span class="text-spaceBlue-50/50">Central authority <br />Resource heavy consensus mechanism</span>
