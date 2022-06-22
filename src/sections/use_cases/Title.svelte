@@ -3,13 +3,13 @@
 	import SectionButton from '$src/components/SectionButton.svelte';
 </script>
 
-<Section class="overflow-clip" backgroundClasses={['stars', 'stars2', 'stars3']}>
+<Section class="overflow-hidden" backgroundClasses={['stars', 'stars2', 'stars3']}>
 	<div class="relative w-full max-w-full flex flex-col text-center md:text-left md:flex-row pt-8 md:pt-20">
 		<div class="basis-1/2 flex flex-col items-center md:items-start justify-center">
-			<h1 class="text-3xl md:text-5xl">
-				<p class="leading-normal">Use Cases & applications</p>
+			<h1 class="text-3xl md:text-5xl font-extrabold">
+				<p class="leading-normal">Use Cases & Applications</p>
 			</h1>
-			<h2 class="text-base md:text-lg lg:text-xl py-8 md:py-12 lg:w-5/6">
+			<h2 class="text-base md:text-lg lg:text-xl py-8 xl:py-12 lg:w-5/6">
 				A framework for the creation of deterministic, tamper-proof, impartial, and transparent processes that
 				can be applied to verify the rightfulness of a claim for any relation or right.
 			</h2>
@@ -29,13 +29,12 @@
 			/>
 		</div>
 	</div>
-	<!-- <div
-		class="h-40 md:h-80 w-full -mt-60 md:-mt-80 xl:-mt-60 md:ml-[20%] bg-anagolayBlack bg-light from-aquaTeal-300/30 to-transparent"
-	/> -->
 </Section>
 <Section>
 	<div class="flex w-full justify-center">
-		<div class="basis-5/6 flex justify-center text-center text-xl md:text-4xl max-w-3xl py-8">
+		<div
+			class="basis-5/6 flex justify-center text-center text-xl md:text-2xl xl:text-4xl max-w-3xl py-8 md:py-16 xl:py-8"
+		>
 			We build the essential infrastructure for the emerging ownership economy to work
 		</div>
 	</div>

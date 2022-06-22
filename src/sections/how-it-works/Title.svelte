@@ -7,11 +7,11 @@
 	export let trustItems: TrustItem[];
 </script>
 
-<Section class="overflow-hidden pb-20" backgroundClasses={['stars', 'stars2', 'stars3']}>
+<Section class="overflow-hidden py-20" backgroundClasses={['stars', 'stars2', 'stars3']}>
 	<div
 		class="relative w-80 max-w-full mx-auto md:w-full pt-8 md:pt-20 2xl:py-20  flex flex-col md:flex-row items-start lg:items-stretch"
 	>
-		<div class="md:basis-1/2">
+		<div class="md:basis-1/2 flex flex-col justify-center">
 			<div class="relative lg:w-4/5">
 				<h1 class="md:mb-0 text-center font-extrabold text-3xl md:text-5xl md:text-left">
 					<p class="md:leading-[4rem]">How does it work?</p>

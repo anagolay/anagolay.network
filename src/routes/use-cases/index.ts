@@ -26,7 +26,7 @@ export async function get(): Promise<RequestHandlerOutput> {
 		// : TechnologyItem[]
 		[
 			{
-				title: 'Protect & share creative works online',
+				title: 'Protect & Share Creative Works Online',
 				contentLines: [
 					'While creating & storing records of Rights, Restrictions, and Proofs Anagolay allows content creators to establish how their digital assets are used and owned.',
 					'A Dapp built on Anagolay empowers users to store, claim, sell, and rent their works with the correct transfer of Rights and usage of Licenses.',
@@ -45,7 +45,7 @@ export async function get(): Promise<RequestHandlerOutput> {
 				],
 			},
 			{
-				title: 'P2P licensing & intellectual property management',
+				title: 'P2P Licensing & Intellectual Property Management',
 				contentLines: [
 					'Before someone can buy or rent (digital) goods, it has to be clear who has the right to sell them. Then we need to be able to transfer the ownership / certain rights from the seller(s) to the buyer(s).',
 					'NFT solutions claimed to (partially) solve this problem by giving parties something they can agree represents ownership - a single value obtained through the minting process. However, this approach has multiple issues, which limits its applications.',
@@ -64,7 +64,7 @@ export async function get(): Promise<RequestHandlerOutput> {
 				],
 			},
 			{
-				title: 'Monetization of community support for Creators (of any kind)',
+				title: 'Monetization of Community Support for Creators (of any kind)',
 				contentLines: [
 					'The Creator economy is on the rise, but creators still have to rely on a central entity (platforms) and abide by their rules. Anagolay enables community support for creators, decentralized.',
 					'A browser extension connected to Anagolay allows tipping functionality for verified domain/account owners. The proofs of domain or account variations are stored and verified on Anagolay. Verified creators can do any of the following:',
@@ -82,7 +82,7 @@ export async function get(): Promise<RequestHandlerOutput> {
 				],
 			},
 			{
-				title: 'Rights management for real-world objects',
+				title: 'Rights Management for Real-World Objects',
 				contentLines: [
 					'The challenge of connecting real-live objects (from real estate to photography gear) with the digital self-sovereign identities of the owners (and other subjects of associated rights) remains unresolved.',
 					'Anagolay workflows can help with establishing that connection. A transparent deterministic process is used to create and verify an ownership claim. Once proofs behind the claim are validated, the owner and the issuer sign the Ownership Statement with their GPG keys or substrate-based addresses.',
