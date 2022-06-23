@@ -1,24 +1,33 @@
 <script lang="ts">
 	let extraClass = '';
 	export { extraClass as class };
-	export let closed = true;
+	export let open = false;
 
-	const iconClass = 'w-ful h-0.5 transition-all duration-300';
+	let iconClass = 'w-full h-0.5';
+	let delay1 = '';
+	let delay2 = '';
 
-	let condClass1 = 'bg-spaceBlue-50 -translate-y-[6px]';
-	let condClass3 = 'bg-spaceBlue-50 translate-y-[6px]';
-
-	$: condClass1 = closed
-		? 'bg-spaceBlue-50 -translate-y-[6px]'
-		: 'rotate-45 bg-neonGreen-400 translate-y-[2px]';
-	$: condClass3 = closed
-		? 'bg-spaceBlue-50 translate-y-[6px]'
-		: '-rotate-45 bg-neonGreen-400 -translate-y-[2px]';
+	$: if (open) {
+		delay1 = 'delay-100';
+		delay2 = 'delay-200';
+		if (!iconClass.includes('transition')) iconClass += ' transition-all duration-300';
+	}
 </script>
 
-<div class="{extraClass} hamburger-icon h-4 pt-2 pb-3 w-6">
-	<div class="icon-1 {iconClass} delay-100 {condClass1}" />
-	<div class="icon-2 bg-spaceBlue-50 {iconClass}" class:opacity-0={!closed} id="b" />
-	<div class="icon-3 {iconClass} delay-[200ms] {condClass3}" />
-	<div class="clear" />
+<div class="{extraClass} hamburger-icon h-4 w-6">
+	<div
+		class="icon-1 {iconClass} {delay1}"
+		class:rotate-45={open}
+		class:translate-y-2={open}
+		class:bg-spaceBlue-50={!open}
+		class:bg-neonGreen-400={open}
+	/>
+	<div class="icon-2 my-[6px] bg-spaceBlue-50 {iconClass}" class:opacity-0={open} id="b" />
+	<div
+		class="icon-3 {iconClass} {delay2}"
+		class:-rotate-45={open}
+		class:-translate-y-2={open}
+		class:bg-spaceBlue-50={!open}
+		class:bg-neonGreen-400={open}
+	/>
 </div>
