@@ -5,7 +5,7 @@
 </script>
 
 <Section
-	class="mt-20 bg-gradient-to-b from-spaceBlue-50/10 to-transparent shadow-cardTop shadow-aquaTeal-300 py-48"
+	class="mt-20 bg-gradient-to-b from-spaceBlue-50/10 to-transparent shadow-cardTop shadow-aquaTeal-300 pt-20 pb-40 md:py-48"
 >
 	<Ellipse class="h-12 w-12 ml-[85%] blur-sm rotate-[225deg] -mt-12 -mb-4" />
 	<Ellipse class="h-6 w-6 rotate-[225deg] mb-8" />

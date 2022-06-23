@@ -13,7 +13,9 @@
 				A framework for the creation of deterministic, tamper-proof, impartial, and transparent processes that
 				can be applied to verify the rightfulness of a claim for any relation or right.
 			</h2>
-			<SectionButton url="https://kelp.digital/" class="cursor-pointer">Kelp Digital use case</SectionButton>
+			<SectionButton url="https://kelp.digital/" class="cursor-pointer mb-4"
+				>Kelp Digital use case</SectionButton
+			>
 		</div>
 		<div class="basis-1/2">
 			<div class="relative w-3/4 mx-auto md:mr-0 md:w-11/12 lg:-my-24">

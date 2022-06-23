@@ -1,12 +1,11 @@
 <script lang="ts">
 	import { discover, home, howItWorks, useCases, wiki } from '$src/routes';
+	import Hamburguer from './Hamburguer.svelte';
 	import NavDropdown from './NavDropdown.svelte';
 	import NavLink from './NavLink.svelte';
 
 	let toggleMenu = false;
-	let menuIconColor = 'text-white';
 	let menuTransition = '';
-	let icon = 'menu';
 	let accordionOpen = false;
 	const linkClass = 'px-2 py-2 rounded-sm md:w-fit hover:text-neonGreen-400';
 
@@ -15,19 +14,15 @@
 		if (toggleMenu) {
 			closeSideBar();
 		} else {
-			icon = 'close';
 			toggleMenu = true;
-			menuIconColor = 'text-neonGreen-400 rotate-[360deg]';
-			menuTransition = 'w-full py-auto translate-x-full';
+			menuTransition = 'translate-x-full duration-300';
 		}
 	}
 
 	//closes sidebar after clicking an option
 	function closeSideBar(): void {
 		toggleMenu = false;
-		menuIconColor = 'text-white rotate-0';
 		menuTransition = '';
-		icon = 'menu';
 	}
 </script>
 
@@ -36,10 +31,8 @@
 >
 	<div class="md:container">
 		<div class="flex justify-center md:justify-between">
-			<button class="absolute px-3 py-1 left-1 md:hidden" on:click={toggleSideBar}>
-				<span class="material-icons text-2xl {menuIconColor} transition-all duration-300 ">
-					{icon}
-				</span>
+			<button class="absolute top-3 p-2 left-3 md:hidden cursor-pointer" on:click={toggleSideBar}>
+				<Hamburguer closed={!toggleMenu} />
 			</button>
 			<div class="h-8 my-1 md:h-12">
 				<a href="/" on:click={closeSideBar}>
@@ -55,8 +48,9 @@
 
 			<div
 				class="z-10 flex flex-col absolute top-14 bottom-0 bg-spaceBlue-900 md:bg-transparent h-screen bg-opacity-100
-			  py-0  text-center right-full mx-auto font-montserrat
-            md:flex-row md:mx-0 md:relative md:top-auto md:h-full md:py-2 md:right-auto md:left-auto md:w-fit md:translate-x-0 {menuTransition}"
+			  text-center right-full font-montserrat duration-300 w-full {menuTransition}
+
+            md:flex-row md:mx-0 md:relative md:top-auto md:h-full md:py-2 md:right-auto md:left-auto md:w-fit md:translate-x-0 "
 			>
 				<div class="flex flex-col md:flex-row w-full md:w-fit justify-evenly">
 					<NavLink class="font-bold my-3 md:my-0" option={home} onClick={closeSideBar} />
@@ -73,14 +67,14 @@
 						class:h-6={!accordionOpen}
 						class:h-36={accordionOpen}
 					>
-						<div class="flex justify-center">
-							<p class="font-bold mb-2" on:click={() => (accordionOpen = !accordionOpen)}>Discover</p>
+						<button class="flex justify-center" on:click={() => (accordionOpen = !accordionOpen)}>
+							<p class="font-bold mb-2">Discover</p>
 							{#if accordionOpen}
 								<span class="material-icons"> expand_less </span>
 							{:else}
 								<span class="material-icons"> expand_more </span>
 							{/if}
-						</div>
+						</button>
 						<div class="bg-spaceBlue-900">
 							{#each discover.options as link}
 								<NavLink class="py-1" option={link} onClick={closeSideBar} />
