@@ -4,12 +4,12 @@
 </script>
 
 <Section class="overflow-hidden" backgroundClasses={['stars', 'stars2', 'stars3']}>
-	<div class="relative w-full max-w-full flex flex-col text-center md:text-left md:flex-row pt-8 md:pt-20">
-		<div class="basis-1/2 flex flex-col items-center md:items-start justify-center">
+	<div class="relative w-full max-w-full flex flex-col text-center md:text-left md:flex-row pt-8 md:pt-24">
+		<div class="basis-1/2 flex flex-col items-center md:items-start lg:pt-12">
 			<h1 class="text-3xl md:text-5xl font-extrabold">
 				<p class="leading-normal">Use Cases & Applications</p>
 			</h1>
-			<h2 class="text-base md:text-lg lg:text-xl py-8 xl:py-12 lg:w-5/6">
+			<h2 class="text-base md:text-lg lg:text-xl py-8 xl:py-16 lg:w-5/6">
 				A framework for the creation of deterministic, tamper-proof, impartial, and transparent processes that
 				can be applied to verify the rightfulness of a claim for any relation or right.
 			</h2>

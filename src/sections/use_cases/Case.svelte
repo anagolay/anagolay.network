@@ -5,7 +5,7 @@
 	export let i: number;
 </script>
 
-<Section class="py-20">
+<Section class="py-12 md:py-20">
 	<div class="flex flex-col lg:flex-row md:pb-12" class:lg:flex-row-reverse={i % 2 === 1}>
 		<div
 			class="basis-2/3 lg:basis-1/2 flex flex-col justify-center"

@@ -8,12 +8,12 @@
 </script>
 
 <Section class="overflow-hidden pb-20" backgroundClasses={['stars', 'stars2', 'stars3']}>
-	<div class="relative w-full max-w-full flex flex-col text-center md:text-left md:flex-row pt-8 md:pt-20">
-		<div class="basis-1/2 flex flex-col items-center md:items-start justify-center">
+	<div class="relative w-full max-w-full flex flex-col text-center md:text-left md:flex-row pt-8 md:pt-16">
+		<div class="basis-1/2 flex flex-col items-center md:items-start lg:pt-20">
 			<h1 class="text-3xl md:text-5xl font-extrabold">
 				<p class="leading-normal">How does it work?</p>
 			</h1>
-			<h2 class="text-base md:text-lg lg:text-xl py-8 xl:py-12 lg:w-5/6">
+			<h2 class="text-base md:text-lg lg:text-xl py-8 xl:py-16 lg:w-5/6">
 				Anagolay is a peer-to-peer network that stores records of Rights, Restrictions, and Proofs of any
 				digital content. It empowers the users to store, claim, sell, and rent their work with the correct
 				transfer of Rights and usage of Licenses.
