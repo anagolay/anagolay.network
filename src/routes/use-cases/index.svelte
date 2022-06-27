@@ -6,7 +6,7 @@
 	import Title from '$src/sections/use_cases/Title.svelte';
 
 	import type { FeatureData, TechnologyItem } from '$src/types';
-	import SvelteSeo from 'svelte-seo/types/SvelteSeo';
+	import SvelteSeo from 'svelte-seo';
 
 	export let descriptionItems: FeatureData[];
 	export let cases: TechnologyItem[];
