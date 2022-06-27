@@ -6,10 +6,25 @@
 	import Title from '$src/sections/use_cases/Title.svelte';
 
 	import type { FeatureData, TechnologyItem } from '$src/types';
+	import SvelteSeo from 'svelte-seo/types/SvelteSeo';
 
 	export let descriptionItems: FeatureData[];
 	export let cases: TechnologyItem[];
 </script>
+
+<SvelteSeo
+	title="Anagolay Network - Use Cases"
+	description="Essential infrastructure for the emerging ownership economy to work."
+	keywords="anagolay, workflow, transparent, process, ownership economy, rights management, copyright, content creators"
+	twitter={{
+		site: '@AnagolayNet',
+		title: 'Anagolay Network - Use Cases',
+		description: 'Essential infrastructure for the emerging ownership economy to work.',
+		image:
+			'https://ipfs.anagolay.network/ipfs/QmUj35FFkSH8rrQCmZAEG9W2D4TVJrqi4T7xSc7DgXckiv?filename=twitter_card_use_cases.png',
+		imageAlt: 'Blue background with Anagolay brand logo',
+	}}
+/>
 
 <Title />
 <Description {descriptionItems} />
