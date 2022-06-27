@@ -7,7 +7,7 @@ export const home: LinkData = {
 	//  inNavBar: false
 };
 export const howItWorks: LinkData = { text: 'How it works', url: '/how-it-works/', external: false };
-export const useCases: LinkData = { text: 'Use cases', url: '/#useCases', external: false };
+export const useCases: LinkData = { text: 'Use cases', url: '/use-cases/', external: false };
 export const discover: MenuOption = {
 	title: 'Discover',
 	options: [

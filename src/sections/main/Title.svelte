@@ -3,13 +3,9 @@
 	import SectionButton from '$src/components/SectionButton.svelte';
 </script>
 
-<Section
-	class="overflow-x-clip"
-	backgroundClass="bg-stars bg-repeat bg-[length:200px_200px]"
-	overlayClass="bg-gradient-to-t from-spaceBlue-900 to-transparent"
->
-	<div class="pt-8 pb-10 md:py-32 flex flex-col items-center md:items-start md:flex-row">
-		<div class="w-80 max-w-full md:w-3/5">
+<Section class="overflow-hidden" backgroundClasses={['stars', 'stars2', 'stars3']}>
+	<div class="relative pt-8 pb-10 md:py-32 flex flex-col items-center md:items-start md:flex-row animate-">
+		<div class="w-80 max-w-full md:w-3/5 ">
 			<div class="relative lg:w-4/5">
 				<h1 class="md:mb-0 text-center font-extrabold text-3xl md:text-5xl md:text-left">
 					<p class="md:leading-[4rem]">Process-based Interplanetary P2P Framework</p>
@@ -43,7 +39,7 @@
 	</div>
 </Section>
 
-<Section>
+<Section class="relative bg-spaceBlue-900">
 	<div class="text-lg md:text-4xl pb-32 md:pb-48 text-center pt-16 md:pt-28 px-4">
 		<p class="text-neonGreen-400 line-through font-medium mb-2">
 			<span class="text-spaceBlue-50/50">Central authority <br />Resource heavy consensus mechanism</span>

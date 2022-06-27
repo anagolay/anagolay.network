@@ -10,22 +10,22 @@ cache:
   paths:
     - node_modules
     - ANAGOLAY_WEBSITE_CID
+    - .pnpm-store
 
 # include this where you need it. like in before_script
 .install-ipfs-and-setup: &install-ipfs-and-setup
-  - |
-    echo "Downloading anagolay ipfs CLI which works with the ipfsAuthProxy."
-    curl https://ipfs.anagolay.network/ipfs/bafybeigiuuavnlqy7czvxlvxdrqzcsvm7ezfkbbq4jwksl77lk5f7tlhia > /usr/local/bin/ipfsCli
-    chmod +x /usr/local/bin/ipfsCli
+  - echo "Downloading anagolay ipfs CLI which works with the ipfsAuthProxy."
+  - curl https://ipfs.anagolay.network/ipfs/bafybeigiuuavnlqy7czvxlvxdrqzcsvm7ezfkbbq4jwksl77lk5f7tlhia > /usr/local/bin/ipfsCli
+  - chmod +x /usr/local/bin/ipfsCli
 
 # https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html#yaml-anchors-for-scripts
 .install-pnpm: &install-pnpm
-  - |
-    curl https://ipfs.anagolay.network/ipfs/QmeCUX9cK4YKdTbNVq3jg5cJPvz8uQiQmb4AKKd7niy4kY > /usr/local/bin/pnpm
-    chmod +x /usr/local/bin/pnpm
-    node --version
-    pnpm --version
-    git --version
+  - curl https://ipfs.anagolay.network/ipfs/bafybeigpvp624p2ly2c44twyvalrwdzb5sehntwk3zzrvb4ht6qh56atha > /usr/local/bin/pnpm
+  - chmod +x /usr/local/bin/pnpm
+  - pnpm config set store-dir .pnpm-store
+  - node --version
+  - pnpm --version
+  - git --version
 
 is-it-pretty:
   stage: check
