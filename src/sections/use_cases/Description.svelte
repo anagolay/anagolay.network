@@ -19,8 +19,8 @@
 							<span class="material-icons sm:text-2xl lg:text-4xl text-neonGreen-400">{item.icon}</span>
 						{:else if item.img}
 							<img
-								loading="lazy"
 								class="material-icons w-2/5"
+								loading="lazy"
 								width="30"
 								height="30"
 								src={item.img.src}

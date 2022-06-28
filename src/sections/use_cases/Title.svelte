@@ -22,8 +22,8 @@
 				<object
 					class="object-contain"
 					title="main animation"
-					type="image/svg+xml"
 					data="/use_cases_main.svg"
+					type="image/svg+xml"
 				/>
 			</div>
 			<div

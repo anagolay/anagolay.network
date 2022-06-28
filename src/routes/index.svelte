@@ -26,8 +26,8 @@
 		description:
 			'P2P Network to verify authorship, protect and manage copyright & ownership. Statements of Rights (Copyright, Licenses, and Ownership), Restrictions,  and Proofs created with Anagolay Workflows empower users to store, claim, sell, and rent creative works as digital assets with the correct transfer of Rights and usage of Licenses',
 		image:
-			'https://ipfs.anagolay.network/ipfs/QmX18cJBJ5vFKUYaxQsikFMBYrWtyqnznq9eY2ShdV7evZ?filename=twitter%20card.png',
-		imageAlt: 'Blue background with Anagolay brand logo',
+			'https://ipfs.anagolay.network/ipfs/QmZTpn19dZ5GJijKVn3aGg4HtwWTe9hx4sxqxdRXUjTrzt?filename=twitter_card_home.png',
+		imageAlt: 'White background with Anagolay brand logo',
 	}}
 />
 
