@@ -21,7 +21,7 @@
 		title: 'Anagolay Network - How does it work?',
 		description: 'P2P Network to verify authorship & ownership, store & deliver proofs.',
 		image:
-			'https://ipfs.anagolay.network/ipfs/QmX18cJBJ5vFKUYaxQsikFMBYrWtyqnznq9eY2ShdV7evZ?filename=twitter%20card.png',
+			'https://ipfs.anagolay.network/ipfs/QmTEVPpvQLbvLFB1tu1KyCz22osvt5YGQUGZLJtUiotaPY?filename=twitter_card_how_it_works.png',
 		imageAlt: 'Blue background with Anagolay brand logo',
 	}}
 />

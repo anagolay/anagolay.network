@@ -24,9 +24,9 @@
 		<div class="basis-1/3 lg:basis-1/2 md:flex md:items-center">
 			<img
 				class="-my-[10%] md:scale-100 mx-auto"
-				height={caseItem.image.height}
 				src={caseItem.image.source}
 				alt={caseItem.image.altText}
+				height={caseItem.image.height}
 			/>
 		</div>
 	</div>
