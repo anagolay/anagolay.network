@@ -54,12 +54,12 @@ module.exports = {
 				// 	'100%': { transform: 'transform: translateY(-2000px)' },
 				// }
 				glowing: {
-					'0%': { opacity: '0.9' },
-					'100%': { opacity: '1' },
+					'0%': { opacity: '1' },
+					'100%': { opacity: '0.85', transform: 'scale(.95)' },
 				},
 			},
 			animation: {
-				glow: 'glowing 1s infinite alternate',
+				glow: 'glowing ease-in-out 2s infinite alternate',
 			},
 			borderRadius: {
 				'4xl': '2rem',

@@ -24,14 +24,16 @@
 			{/each}
 		</div>
 		<div class="basis-1/3 lg:basis-1/2 md:flex md:items-center">
-			<GlowingLight class=" h-full from-neonGreen-400/40">
-				<img
-					class="object-contain relative mx-auto {caseItem.image.class}"
-					src={caseItem.image.source}
-					alt={caseItem.image.altText}
-					height={caseItem.image.height}
-				/>
-			</GlowingLight>
+			<div class="sm:w-3/4 lg:w-full mx-auto">
+				<GlowingLight class=" from-neonGreen-400/40">
+					<img
+						class="object-contain relative mx-auto {caseItem.image.class}"
+						src={caseItem.image.source}
+						alt={caseItem.image.altText}
+						height={caseItem.image.height}
+					/>
+				</GlowingLight>
+			</div>
 		</div>
 	</div>
 	<div class="md:grid md:grid-cols-2 md:gap-x-8">

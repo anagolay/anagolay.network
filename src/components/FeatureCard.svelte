@@ -5,7 +5,7 @@
 </script>
 
 <div class="flex basis-4/5 sm:basis-[45%] lg:basis-[30%] pt-6">
-	<FadeinCard class="w-full transition-opacity delay-100 duration-700">
+	<FadeinCard class="w-full transition-opacity delay-200 duration-700">
 		<div
 			class="relative w-full rounded-3xl h-full bg-spaceBlue-900 bg-gradient-to-b from-spaceBlue-50/5 to-transparent border border-spaceBlue-800"
 		>

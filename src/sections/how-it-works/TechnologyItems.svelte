@@ -31,28 +31,17 @@
 					</p>
 				</div>
 				<div class="flex flex-col {flexClassArray[i]}">
-					<!-- <div class="flex basis-1/2">
-						<GlowingLight class="basis-full from-neonGreen-400/30 -mr-[50%]" />
-						<div class=" mt-[10%] xl:mt-0 flex items-start justify-center relative -ml-[50%] basis-full">
-							<img
-								width={item.image.width}
-								height={item.image.height}
-								class={item.image.class}
-								loading="lazy"
-								src={item.image.source}
-								alt={item.image.altText}
-							/>
-						</div>
-					</div> -->
 					<div class="w-5/6 mx-auto md:w-1/2 md:-mb-[50%]">
-						<GlowingLight class=" from-neonGreen-400/40">
-							<img
-								class="object-contain relative mx-auto {item.image.class}"
-								src={item.image.source}
-								alt={item.image.altText}
-								height={item.image.height}
-							/>
-						</GlowingLight>
+						<div class="lg:w-5/6 lg:mx-auto">
+							<GlowingLight class=" from-neonGreen-400/40">
+								<img
+									class="object-contain relative mx-auto {item.image.class}"
+									src={item.image.source}
+									alt={item.image.altText}
+									height={item.image.height}
+								/>
+							</GlowingLight>
+						</div>
 					</div>
 					<div
 						class="md:w-1/2 md:mt-0 pt-4 md:pt-16 xl:pt-32 flex flex-col items-center lg:items-start text-sm md:text-base 2xl:text-xl"

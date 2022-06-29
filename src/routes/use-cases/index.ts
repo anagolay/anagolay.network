@@ -33,7 +33,7 @@ export async function get(): Promise<RequestHandlerOutput> {
 					'Anagolay provides a meaningful and straightforward way to monetize & buy digital art. From verified creators, with customized licensing options. Not just ‘as a collectible’.',
 				],
 				image: {
-					class: '',
+					class: 'w-1/2',
 					source: '/use_case_share.svg',
 					altText: 'sharing protected work',
 				},
@@ -52,7 +52,7 @@ export async function get(): Promise<RequestHandlerOutput> {
 					'Unlike NFT platforms, Anagolay Statements rely on multiple identifiers (Proofs) of the content. The third parties (inc. current NFT marketplaces) can use Anagolay to verify if these Proofs match any records with claimed Copyrights or Ownerships on their network.',
 				],
 				image: {
-					class: '',
+					class: 'w-1/2 lg:w-2/5',
 					source: '/use_case_property.svg',
 					altText: 'licensed intelectual property work',
 				},
@@ -70,7 +70,7 @@ export async function get(): Promise<RequestHandlerOutput> {
 					'A browser extension connected to Anagolay allows tipping functionality for verified domain/account owners. The proofs of domain or account variations are stored and verified on Anagolay. Verified creators can do any of the following:',
 				],
 				image: {
-					class: 'm-10',
+					class: 'w-3/4 lg:w-2/3',
 					source: '/use_case_monetization.svg',
 					altText: 'community monetization',
 				},
@@ -88,7 +88,7 @@ export async function get(): Promise<RequestHandlerOutput> {
 					'Anagolay workflows can help with establishing that connection. A transparent deterministic process is used to create and verify an ownership claim. Once proofs behind the claim are validated, the owner and the issuer sign the Ownership Statement with their GPG keys or substrate-based addresses.',
 				],
 				image: {
-					class: 'py-8 -mt-4',
+					class: 'w-3/4 lg:w-2/3',
 					source: '/use_case_management.svg',
 					altText: 'management around the world',
 				},
