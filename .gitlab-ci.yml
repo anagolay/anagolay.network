@@ -9,13 +9,12 @@ cache:
   key: $CI_COMMIT_REF_SLUG
   paths:
     - node_modules
-    - ANAGOLAY_WEBSITE_CID
     - .pnpm-store
 
 # include this where you need it. like in before_script
 .install-ipfs-and-setup: &install-ipfs-and-setup
   - echo "Downloading anagolay ipfs CLI which works with the ipfsAuthProxy."
-  - curl https://ipfs.anagolay.network/ipfs/bafybeigiuuavnlqy7czvxlvxdrqzcsvm7ezfkbbq4jwksl77lk5f7tlhia > /usr/local/bin/ipfsCli
+  - curl https://ipfs.anagolay.network/ipfs/bafybeid64varycpeude34swoutu3igj5py7hko2fesolqqgwk5yerd2g5m > /usr/local/bin/ipfsCli
   - chmod +x /usr/local/bin/ipfsCli
 
 # https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html#yaml-anchors-for-scripts
@@ -60,9 +59,6 @@ upload-to-ipfs:
     - pnpm build
 
     - echo "Uploading to IPFS ..."
-    - IPFS_PIN=true ipfsCli add --pin --onlyCid build > ANAGOLAY_WEBSITE_CID
-    - echo "The Website is published with the CID:" && cat ANAGOLAY_WEBSITE_CID
-    - echo "https://$(cat ANAGOLAY_WEBSITE_CID).ipfs.anagolay.network/"
   # when: manual
   # rules:
   #   - if: $CI_COMMIT_MESSAGE =~ /^.*\[build all\].*$/s
