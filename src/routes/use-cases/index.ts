@@ -88,7 +88,7 @@ export async function get(): Promise<RequestHandlerOutput> {
 					'Anagolay workflows can help with establishing that connection. A transparent deterministic process is used to create and verify an ownership claim. Once proofs behind the claim are validated, the owner and the issuer sign the Ownership Statement with their GPG keys or substrate-based addresses.',
 				],
 				image: {
-					class: 'px-16 pb-16 -mt-4',
+					class: 'py-8 -mt-4',
 					source: '/use_case_management.svg',
 					altText: 'management around the world',
 				},
