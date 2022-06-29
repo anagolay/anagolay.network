@@ -47,11 +47,14 @@ build-code:
 upload-to-ipfs:
   needs: ['is-it-pretty']
   stage: deploy
+  cache: {}
   before_script:
     - *install-ipfs-and-setup
     - *install-pnpm
   script:
     - set -e
+
+    - pnpm install
 
     - echo 'Building ...'
     - pnpm build
