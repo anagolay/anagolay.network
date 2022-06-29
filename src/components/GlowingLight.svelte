@@ -3,22 +3,24 @@
 	let container: HTMLDivElement;
 	let extraClass = '';
 	export { extraClass as class };
-	let bgSize = 'bg-[length:0_0]';
+	let wHclass = '0';
 	function setSize(): void {
 		let size = Math.min(container.clientWidth, container.clientHeight);
-		bgSize = 'bg-[length:' + size + 'px_' + size + 'px]';
+		wHclass = 'w-[' + size + 'px] h-[' + size + 'px]';
+		console.log(wHclass);
 	}
 	onMount(() => setSize());
 </script>
 
 <svelte:window on:resize={setSize} />
-<div class="glowing {bgSize} bg-no-repeat -my-[10%] bg-center {extraClass} blur-lg" bind:this={container}>
-	<slot />
-</div>
 
-<style>
-	.glowing {
-		background-color: radial-gradient(rgb(244 251 255 / 0.05), transparent);
-		background-image: radial-gradient(45% 45% at 50% 50%, var(--tw-gradient-from), transparent);
-	}
-</style>
+<div class="flex w-full" bind:this={container}>
+	<div class="w-full -mr-[50%] flex justify-center">
+		<div
+			class="{wHclass} animationCSS rounded-[100%] animate-glow bg-no-repeat bg-light to-transparent {extraClass} blur-lg"
+		/>
+	</div>
+	<div class="w-full -ml-[50%] py-10">
+		<slot />
+	</div>
+</div>
