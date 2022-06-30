@@ -11,27 +11,24 @@
 	let offsetTop: number;
 	let changingClass = preClass;
 
-	let cumulativeOffset = function(element) {
-			var top = 0, left = 0;
-			do {
-				top += element.offsetTop  || 0;
-				left += element.offsetLeft || 0;
-				element = element.offsetParent;
-			} while(element);
+	let cumulativeOffset = function (element) {
+		var top = 0;
+		do {
+			top += element.offsetTop || 0;
+			element = element.offsetParent;
+		} while (element);
 
-			return {
-				top: top,
-				left: left
-			};
-		};
+		return top;
+	};
 
 	function switchClass() {
-		offsetTop = cumulativeOffset(card).top;
 		scrollTop = window.scrollY + window.innerHeight;
 		changingClass = scrollTop > offsetTop ? postClass : preClass;
-		console.log(scrollTop, offsetTop, scrollTop > offsetTop, changingClass)
 	}
-	onMount(() => switchClass());
+	onMount(() => {
+		offsetTop = cumulativeOffset(card);
+		switchClass();
+	});
 </script>
 
 <svelte:window on:scroll={switchClass} />
