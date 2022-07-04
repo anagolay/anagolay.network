@@ -48,7 +48,7 @@
 
 			<div
 				class="z-10 flex flex-col absolute top-14 bottom-0 bg-spaceBlue-900 md:bg-transparent h-screen bg-opacity-100
-			  text-center right-full font-montserrat duration-300 w-full {menuTransition}
+			  text-center right-full font-montserrat transition-transform duration-300 w-full {menuTransition}
 
             md:flex-row md:mx-0 md:relative md:top-auto md:h-full md:py-2 md:right-auto md:left-auto md:w-fit md:translate-x-0 "
 			>

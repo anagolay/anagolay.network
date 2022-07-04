@@ -48,12 +48,19 @@ module.exports = {
 				around:
 					'7px 0 7px var(--tw-shadow-color), -7px 0 7px var(--tw-shadow-color), 0 7px 7px var(--tw-shadow-color), 0 -7px 7px var(--tw-shadow-color);',
 			},
-			// keyframes:{
-			// 	animStar: {
-			// 		'0%': { transform: 'translateY(0px)' },
-			// 		'100%': { transform: 'transform: translateY(-2000px)' },
-			// 	}
-			// },
+			keyframes: {
+				// animStar: {
+				// 	'0%': { transform: 'translateY(0px)' },
+				// 	'100%': { transform: 'transform: translateY(-2000px)' },
+				// }
+				glowing: {
+					'0%': { opacity: '1' },
+					'100%': { opacity: '0.85', transform: 'scale(.95)' },
+				},
+			},
+			animation: {
+				glow: 'glowing ease-in-out 2s infinite alternate',
+			},
 			borderRadius: {
 				'4xl': '2rem',
 			},
