@@ -221,7 +221,7 @@ export async function get(): Promise<RequestHandlerOutput> {
 						goal: 'PoE & Statement of Ownership and Copyright',
 						description:
 							'Improve and re-design the workflows specific for Proofs-of-Exitance & Statement of Ownership and Copyright. Where blockchain is not the central technology, but a facilitator of transparency & freedom for the build architecture.',
-						status: status.doing,
+						status: status.done,
 					},
 				],
 			},
@@ -230,20 +230,18 @@ export async function get(): Promise<RequestHandlerOutput> {
 				year: 2022,
 				instances: [
 					{
-						goal: 'Governance design and implementation',
-						status: status.pending,
+						goal: 'IDI Pre-sale, Governance design',
+						status: status.doing,
 					},
 					{
-						goal: 'Anagolay Explorer',
-						description:
-							'Anagolay Explorer (focused on the Statements, Operation, Workflows and transfers of Ownerships and Copyrights).',
-						status: status.pending,
+						goal: 'Anagolay Workflow Builder',
+						status: status.doing,
 					},
 					{
 						goal: 'Anagolay SDK',
 						description:
 							'While building SDK we will focus on the features for our JS/TS SDK, because the Anagolay interaction will come mostly from the Web Browser, Smart phones and Desktop environments. Our goal is to design SDK as intuitive and developer-friendly as possible.',
-						status: status.pending,
+						status: status.doing,
 					},
 				],
 			},
