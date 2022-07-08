@@ -18,7 +18,7 @@
 
 	//This functions always sets the fifth event in the middle of Roadmap, but it is not in function of the current event.
 	//Check the position function.
-	onMount(() => (roadMap.scrollLeft = 0.55 * roadWidth - 0.5 * windowWidth));
+	onMount(() => (roadMap.scrollLeft = 0.65 * roadWidth - 0.6 * windowWidth));
 </script>
 
 <Section>
