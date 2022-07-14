@@ -24,7 +24,7 @@ export const discover: MenuOption = {
 		},
 	],
 };
-export const wiki = { text: 'Wiki', url: 'https://anagolay.dev/', external: true, color: '' };
+export const deck = { text: 'Deck', url: 'https://bit.ly/Anagolay_Deck_Q3', external: true, color: '' };
 
 // The following are routes for the footer
 export const menuOptions: MenuOption[] = [
@@ -32,8 +32,8 @@ export const menuOptions: MenuOption[] = [
 		title: 'Discover',
 		options: [
 			{
-				text: 'About',
-				url: 'https://bit.ly/Anagolay_Deck_Q3',
+				text: 'Wiki',
+				url: 'https://anagolay.dev/',
 			},
 			{ text: 'Blog', url: 'https://blog.anagolay.network' },
 			{ text: 'FAQ', url: 'https://www.notion.so/Anagolay-FAQ-530c3d1de6784e7eb0c842c7b9bedfa9' },
