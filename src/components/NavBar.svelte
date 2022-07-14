@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { discover, home, howItWorks, useCases, wiki } from '$src/routes';
+	import { discover, home, howItWorks, useCases, deck } from '$src/routes';
 	import Hamburguer from './Hamburguer.svelte';
 	import NavDropdown from './NavDropdown.svelte';
 	import NavLink from './NavLink.svelte';
@@ -81,7 +81,7 @@
 							{/each}
 						</div>
 					</div>
-					<NavLink class="font-bold my-3 md:my-0" option={wiki} onClick={closeSideBar} />
+					<NavLink class="font-bold my-3 md:my-0" option={deck} onClick={closeSideBar} />
 				</div>
 			</div>
 		</div>
