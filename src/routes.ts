@@ -33,7 +33,7 @@ export const menuOptions: MenuOption[] = [
 		options: [
 			{
 				text: 'About',
-				url: 'https://drive.google.com/file/d/1DWZqAgkN1rYYhx3cY36YDveJvR-iG0d8/view?usp=sharing',
+				url: 'https://bit.ly/Anagolay_Deck_Q3',
 			},
 			{ text: 'Blog', url: 'https://blog.anagolay.network' },
 			{ text: 'FAQ', url: 'https://www.notion.so/Anagolay-FAQ-530c3d1de6784e7eb0c842c7b9bedfa9' },
