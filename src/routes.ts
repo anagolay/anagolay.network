@@ -1,11 +1,6 @@
 import type { MenuOption, MediaIcon, LinkData } from '$src/types';
 
-export const home: LinkData = {
-	text: 'Home',
-	url: '/',
-	external: false,
-	//  inNavBar: false
-};
+export const idiyanale: LinkData = { text: 'Idiyanale', url: '/idiyanale/', external: false };
 export const howItWorks: LinkData = { text: 'How it works', url: '/how-it-works/', external: false };
 export const useCases: LinkData = { text: 'Use cases', url: '/use-cases/', external: false };
 export const discover: MenuOption = {

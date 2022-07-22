@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { discover, home, howItWorks, useCases, deck } from '$src/routes';
+	import { discover, idiyanale, howItWorks, useCases, deck } from '$src/routes';
 	import Hamburguer from './Hamburguer.svelte';
 	import NavDropdown from './NavDropdown.svelte';
 	import NavLink from './NavLink.svelte';
@@ -53,7 +53,7 @@
             md:flex-row md:mx-0 md:relative md:top-auto md:h-full md:py-2 md:right-auto md:left-auto md:w-fit md:translate-x-0 "
 			>
 				<div class="flex flex-col md:flex-row w-full md:w-fit justify-evenly">
-					<NavLink class="font-bold my-3 md:my-0" option={home} onClick={closeSideBar} />
+					<NavLink class="font-bold my-3 md:my-0" option={idiyanale} onClick={closeSideBar} />
 					<NavLink class="font-bold my-3 md:my-0" option={howItWorks} onClick={closeSideBar} />
 					<NavLink class="font-bold my-3 md:my-0" option={useCases} onClick={closeSideBar} />
 					<NavDropdown
