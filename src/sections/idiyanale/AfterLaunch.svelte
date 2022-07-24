@@ -6,7 +6,7 @@
 	export let boxItems: string[];
 </script>
 
-<Section class="pt-20 pb-60">
+<Section class="pt-12 md:pt-20 pb-40 md:pb-60">
 	<div class="flex flex-col items-center text-center">
 		<div class="py-12">
 			<h3 class="text-2xl md:text-3xl lg:text-4xl text-neonGreen-400 mb-6 md:mb-8">After Anagolay Launch</h3>

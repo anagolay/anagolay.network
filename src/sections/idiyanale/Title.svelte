@@ -28,7 +28,7 @@
 		</div>
 	</div>
 </Section>
-<Section class="py-20">
+<Section class="py-12 md:py-20">
 	<div class="flex w-full justify-center">
 		<div
 			class="flex flex-col sm:flex-row items-center justify-center sm:gap-4 text-xl md:text-2xl xl:text-4xl max-w-3xl py-8 md:py-16 xl:py-8"
