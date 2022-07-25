@@ -5,6 +5,7 @@
 	import AfterLaunch from '$src/sections/idiyanale/AfterLaunch.svelte';
 	import Description from '$src/sections/idiyanale/Description.svelte';
 	import Process from '$src/sections/idiyanale/Process.svelte';
+
 	export let boxItems: string[];
 	export let cardsContent: FeatureData[];
 </script>

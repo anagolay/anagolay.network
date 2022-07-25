@@ -27,6 +27,7 @@ const config = {
 				alias: {
 					$src: resolve('./src'),
 				},
+				optimizeDeps: { include: ['lottie-web'] },
 			},
 			server: {
 				// configure vite for HMR with Gitpod

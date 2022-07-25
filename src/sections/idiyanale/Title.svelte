@@ -1,9 +1,12 @@
 <script lang="ts">
 	import Section from '$src/components/Section.svelte';
+	import LottiePlayer from '$src/components/LottiePlayer.svelte';
 </script>
 
 <Section class="overflow-hidden" backgroundClasses={['stars', 'stars2', 'stars3']}>
-	<div class="relative w-full max-w-full flex flex-col text-center md:text-left md:flex-row pt-8 md:pt-24">
+	<div
+		class="relative w-full max-w-full flex flex-col text-center md:text-left md:flex-row py-8 md:pt-24 pb-20"
+	>
 		<div class="basis-1/2 flex flex-col items-center md:items-start lg:pt-12">
 			<h1 class="text-3xl md:text-5xl font-extrabold">
 				<p class="leading-normal">Pioneer MainNet for Anagolay Framework</p>
@@ -13,20 +16,31 @@
 				framework in an unrefined, unpredictable but realistic on-chain environment.
 			</h2>
 		</div>
-		<div class="basis-1/2">
-			<div class="relative w-3/4 mx-auto md:mr-0 md:w-11/12 lg:-my-24">
-				<object
-					class="object-contain opacity-0"
-					title="main animation"
-					data="/use_cases_main.svg"
-					type="image/svg+xml"
-				/>
+		<div class="relative md:basis-1/2 flex flex-col md:flex-row justify-center items-center">
+			<div class="w-1/3 md:w-1/2 2xl:-mt-10">
+				<LottiePlayer class="-m-10" src="https://assets7.lottiefiles.com/packages/lf20_du0bqay7.json" />
 			</div>
-			<div
-				class="h-40 md:h-80 -mt-32 md:-mt-60 md:-mx-[40%] bg-anagolayBlack bg-light from-aquaTeal-300/30 to-transparent"
-			/>
+			<div class="md:absolute md:top-[70%] lg:top-[70%] xl:top-[80%] w-full flex justify-center">
+				<div class="w-3/4 md:w-full">
+					<div class="h-40 bg-anagolayBlack -mx-[20%] bg-light from-aquaTeal-300/30 to-transparent" />
+				</div>
+			</div>
 		</div>
 	</div>
+
+	<!--<div class="md:basis-1/2 flex items-end md:items-center 2xl:h-5/6 xl:items-end">
+			<div class="w-full -mr-[50%] flex justify-center">
+				<div class="w-1/2 -mt-12 mb-12">
+					<LottiePlayer class="-m-10" src="https://assets6.lottiefiles.com/packages/lf20_qvb0cgyf.json" />
+				</div>
+			</div>
+			<div class="w-full -ml-[50%] flex justify-center">
+				<div class="w-3/4 md:w-full">
+					<div class="h-40 bg-anagolayBlack bg-light from-aquaTeal-300/30 to-transparent" />
+				</div>
+			</div>
+		</div>
+	</div> -->
 </Section>
 <Section class="py-12 md:py-20">
 	<div class="flex w-full justify-center">

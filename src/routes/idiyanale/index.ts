@@ -39,17 +39,17 @@ export async function get(): Promise<RequestHandlerOutput> {
 		{
 			feature:
 				'It’s a novel approach, yet it has tremendous potential as it brings the best of both: the web3 technologies and content-addressable approach.',
-			icon: 'copyright',
+			icon: 'lightbulb',
 		},
 		{
 			feature:
 				'Once the core features of the framework are well-tested and approved by the community, Anagolay Inherits the role of the main net from Idiyanale.',
-			icon: 'copyright',
+			icon: 'check_circle_outline',
 		},
 		{
 			feature:
 				' Idiyanale gives all the relevant data & value to Anagolay as a kick-start capital, it will be in Anagolay genesis block.',
-			icon: 'copyright',
+			icon: 'rocket_launch',
 		},
 	];
 
