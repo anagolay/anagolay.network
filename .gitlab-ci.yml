@@ -14,12 +14,12 @@ cache:
 # include this where you need it. like in before_script
 .install-ipfs-and-setup: &install-ipfs-and-setup
   - echo "Downloading anagolay ipfs CLI which works with the ipfsAuthProxy."
-  - wget -q https://ipfs.anagolay.io/ipfs/bafybeig634knkl57gqgkmh3fti6zxisfcd47swetf5lastcx2waboa4a4a -O  /usr/local/bin/ipfsCli
+  - curl https://ipfs.anagolay.io/ipfs/bafybeig634knkl57gqgkmh3fti6zxisfcd47swetf5lastcx2waboa4a4a  > /usr/local/bin/ipfsCli
   - chmod +x /usr/local/bin/ipfsCli
 
 # https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html#yaml-anchors-for-scripts
 .install-pnpm: &install-pnpm
-  - wget -q https://ipfs.anagolay.io/ipfs/bafybeigpvp624p2ly2c44twyvalrwdzb5sehntwk3zzrvb4ht6qh56atha -O > /usr/local/bin/pnpm
+  - curl https://ipfs.anagolay.io/ipfs/bafybeigpvp624p2ly2c44twyvalrwdzb5sehntwk3zzrvb4ht6qh56atha > /usr/local/bin/pnpm
   - chmod +x /usr/local/bin/pnpm
   - pnpm config set store-dir .pnpm-store
   - node --version

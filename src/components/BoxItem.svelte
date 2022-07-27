@@ -1,9 +1,11 @@
 <script lang="ts">
 	export let boxItem: string;
+	let extraClass = '';
+	export { extraClass as class };
 </script>
 
 <div
-	class="shadow-cardTop shadow-aquaTeal-300 rounded-2xl bg-gradient-to-b from-spaceBlue-50/10 to-transparent my-6 md:my-4"
+	class="{extraClass} shadow-cardTop shadow-aquaTeal-300 rounded-2xl bg-gradient-to-b from-spaceBlue-50/10 to-transparent my-6 md:my-4"
 >
 	<div
 		class="flex flex-col items-center bg-gradient-to-t from-spaceBlue-800/10 to-transparent p-2 md:p-4 rounded-2xl"
