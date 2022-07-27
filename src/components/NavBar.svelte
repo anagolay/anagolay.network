@@ -65,7 +65,7 @@
 					<div
 						class="flex px-4 flex-col md:hidden my-3 transition-all duration-500 rounded-lg overflow-hidden"
 						class:h-6={!accordionOpen}
-						class:h-36={accordionOpen}
+						class:h-44={accordionOpen}
 					>
 						<button class="flex justify-center" on:click={() => (accordionOpen = !accordionOpen)}>
 							<p class="font-bold mb-2">Discover</p>

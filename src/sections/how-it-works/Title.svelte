@@ -18,7 +18,9 @@
 				digital content. It empowers the users to store, claim, sell, and rent their work with the correct
 				transfer of Rights and usage of Licenses.
 			</h2>
-			<SectionButton url="https://kelp.digital/" class="cursor-pointer">Kelp Digital use case</SectionButton>
+			<SectionButton url="https://bit.ly/Anagolay_LightPaper" class="cursor-pointer"
+				>Read the Light Paper</SectionButton
+			>
 		</div>
 		<div class="basis-1/2">
 			<div class="w-5/6 mx-auto md:w-[unset] lg:-mx-[10%] lg:-mt-[20%] 2xl:-my-[20%] md:-mt-10">
