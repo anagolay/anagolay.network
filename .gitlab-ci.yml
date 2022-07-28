@@ -14,12 +14,12 @@ cache:
 # include this where you need it. like in before_script
 .install-ipfs-and-setup: &install-ipfs-and-setup
   - echo "Downloading anagolay ipfs CLI which works with the ipfsAuthProxy."
-  - curl https://ipfs.anagolay.io/ipfs/bafybeig634knkl57gqgkmh3fti6zxisfcd47swetf5lastcx2waboa4a4a  > /usr/local/bin/ipfsCli
+  - curl https://ipfs.anagolay.network/ipfs/bafybeig634knkl57gqgkmh3fti6zxisfcd47swetf5lastcx2waboa4a4a  > /usr/local/bin/ipfsCli
   - chmod +x /usr/local/bin/ipfsCli
 
 # https://docs.gitlab.com/ee/ci/yaml/yaml_optimization.html#yaml-anchors-for-scripts
 .install-pnpm: &install-pnpm
-  - curl https://ipfs.anagolay.io/ipfs/bafybeigpvp624p2ly2c44twyvalrwdzb5sehntwk3zzrvb4ht6qh56atha > /usr/local/bin/pnpm
+  - curl https://ipfs.anagolay.network/ipfs/bafybeigpvp624p2ly2c44twyvalrwdzb5sehntwk3zzrvb4ht6qh56atha > /usr/local/bin/pnpm
   - chmod +x /usr/local/bin/pnpm
   - pnpm config set store-dir .pnpm-store
   - node --version
@@ -61,7 +61,7 @@ upload-to-ipfs:
     - echo "Uploading to IPFS ..."
     - IPFS_PIN=true ipfsCli add --pin --onlyCid build > ANAGOLAY_WEBSITE_CID
     - echo "The Website is published with the CID:" && cat ANAGOLAY_WEBSITE_CID
-    - echo "https://$(cat ANAGOLAY_WEBSITE_CID).ipfs.anagolay.io/"
+    - echo "https://$(cat ANAGOLAY_WEBSITE_CID).ipfs.anagolay.network/"
   # when: manual
   # rules:
   #   - if: $CI_COMMIT_MESSAGE =~ /^.*\[build all\].*$/s
