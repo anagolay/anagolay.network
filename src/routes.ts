@@ -1,16 +1,16 @@
 import type { MenuOption, MediaIcon, LinkData } from '$src/types';
 
-export const home: LinkData = {
-	text: 'Home',
-	url: '/',
-	external: false,
-	//  inNavBar: false
-};
+export const idiyanale: LinkData = { text: 'Idiyanale', url: '/idiyanale/', external: false };
 export const howItWorks: LinkData = { text: 'How it works', url: '/how-it-works/', external: false };
 export const useCases: LinkData = { text: 'Use cases', url: '/use-cases/', external: false };
 export const discover: MenuOption = {
 	title: 'Discover',
 	options: [
+		{
+			text: 'Light Paper',
+			url: 'https://bit.ly/Anagolay_LightPaper',
+			external: true,
+		},
 		{
 			text: 'FAQ',
 			url: 'https://www.notion.so/Anagolay-FAQ-530c3d1de6784e7eb0c842c7b9bedfa9',
@@ -32,9 +32,13 @@ export const menuOptions: MenuOption[] = [
 		title: 'Discover',
 		options: [
 			{
-				text: 'Wiki',
-				url: 'https://anagolay.dev/',
+				text: 'Light Paper',
+				url: 'https://bit.ly/Anagolay_LightPaper',
 			},
+			// {
+			// 	text: 'Wiki',
+			// 	url: 'https://anagolay.dev/',
+			// },
 			{ text: 'Blog', url: 'https://blog.anagolay.network' },
 			{ text: 'FAQ', url: 'https://www.notion.so/Anagolay-FAQ-530c3d1de6784e7eb0c842c7b9bedfa9' },
 			{
