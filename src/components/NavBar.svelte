@@ -31,7 +31,11 @@
 >
 	<div class="md:container">
 		<div class="flex justify-center md:justify-between">
-			<button class="absolute top-3 p-2 left-3 md:hidden cursor-pointer" on:click={toggleSideBar}>
+			<button
+				class="absolute top-3 p-2 left-3 md:hidden cursor-pointer"
+				on:click={toggleSideBar}
+				aria-label="menu"
+			>
 				<Hamburguer open={toggleMenu} />
 			</button>
 			<div class="h-8 my-1 md:h-12">
