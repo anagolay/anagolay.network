@@ -1,5 +1,7 @@
 import type { MenuOption, MediaIcon, LinkData } from '$src/types';
 
+export const whitePaperUrl = 'https://bit.ly/Anagolay_WhitePaper_wip';
+
 export const idiyanale: LinkData = { text: 'Idiyanale', url: '/idiyanale/', external: false };
 export const howItWorks: LinkData = { text: 'How it works', url: '/how-it-works/', external: false };
 export const useCases: LinkData = { text: 'Use cases', url: '/use-cases/', external: false };
@@ -7,8 +9,8 @@ export const discover: MenuOption = {
 	title: 'Discover',
 	options: [
 		{
-			text: 'Light Paper',
-			url: 'https://bit.ly/Anagolay_LightPaper',
+			text: 'White Paper',
+			url: whitePaperUrl,
 			external: true,
 		},
 		{
@@ -32,8 +34,8 @@ export const menuOptions: MenuOption[] = [
 		title: 'Discover',
 		options: [
 			{
-				text: 'Light Paper',
-				url: 'https://bit.ly/Anagolay_LightPaper',
+				text: 'White Paper',
+				url: whitePaperUrl,
 			},
 			// {
 			// 	text: 'Wiki',
