@@ -26,7 +26,7 @@ export const discover: MenuOption = {
 		},
 	],
 };
-export const deck = { text: 'Deck', url: 'https://bit.ly/Anagolay_Deck_Q3', external: true, color: '' };
+export const deck = { text: 'Deck', url: 'https://bit.ly/Anagolay_Deck_202209', external: true, color: '' };
 
 // The following are routes for the footer
 export const menuOptions: MenuOption[] = [
