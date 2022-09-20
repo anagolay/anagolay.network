@@ -5,6 +5,7 @@
 	import UseCases from '$src/sections/main/UseCases.svelte';
 	import TeamSection from '$src/sections/main/Team.svelte';
 	import Roadmap from '$src/sections/main/Roadmap.svelte';
+	import Support from '$src/sections/main/Support.svelte';
 	import SvelteSeo from 'svelte-seo';
 
 	import type { FeatureData, TrustProcessItem, UseCase, TeamMember, RoadmapItem } from '$src/types';
@@ -37,5 +38,6 @@
 	<TrustProcess {trustProcessItems} />
 	<UseCases {useCases} />
 	<TeamSection {teamMembers} />
+	<Support />
 	<Roadmap {roadMapItems} />
 </div>

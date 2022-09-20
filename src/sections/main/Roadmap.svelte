@@ -22,7 +22,7 @@
 </script>
 
 <Section>
-	<div class="w-80 max-w-full sm:w-full mx-auto pt-40">
+	<div class="w-80 max-w-full sm:w-full mx-auto pt-28 md:pt-40">
 		<div class="flex justify-between items-center w-full text-xs md:text-base pb-16">
 			<button
 				class="flex items-center text-left w-1/3 opacity-60 cursor-pointer hover:opacity-100"
@@ -31,7 +31,7 @@
 				<span class="material-icons mr-2 text-sm  md:text-base">west</span>
 				<p class="hover:underline">Completed</p>
 			</button>
-			<h2 class="w-1/3 text-center text-xl md:text-3xl pb-8 sm:pb-0">Roadmap</h2>
+			<h2 class="w-1/3 text-center text-xl md:text-3xl pb-8 sm:pb-0 text-neonGreen-400">Roadmap</h2>
 			<button
 				class="flex items-center justify-end w-1/3 opacity-60 cursor-pointer hover:opacity-100"
 				on:click={() => scrollTo(roadWidth)}
