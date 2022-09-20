@@ -7,11 +7,11 @@
 	let delay = `delay-[${150 * i}ms]`;
 </script>
 
-<div class="wrapper w-full md:w-fit">
+<div class="wrapper w-72 lg:w-[30%]">
 	<FadeinCard class="transition-opacity {delay} duration-700">
 		<div class="flex-col h-100 mt-20">
 			<div
-				class="shadow-card shadow-aquaTeal-300 flex flex-col bg-spaceBlue-900 bg-gradient-to-b from-spaceBlue-50/5 to-transparent rounded-lg pb-3 px-3 2xl:px-6 text-center md:mx-2 md:w-72 2xl:w-80 h-[25rem]"
+				class="shadow-card shadow-aquaTeal-300 flex flex-col bg-spaceBlue-900 bg-gradient-to-b from-spaceBlue-50/5 to-transparent rounded-lg pb-3 px-3 2xl:px-6 text-center h-[25rem]"
 			>
 				<div class="h-28 mx-auto py-auto flex items-center justify-center -mt-12 mb-8">
 					<img class="object-contain max-h-full" width="121" height="112" src={data.src} alt={data.alt} />
