@@ -230,18 +230,18 @@ export async function get(): Promise<RequestHandlerOutput> {
 				year: 2022,
 				instances: [
 					{
-						goal: 'IDI Pre-sale, Governance design',
-						status: status.doing,
+						goal: 'Domain Verification & Macula  PoC',
+						status: status.done,
 					},
 					{
 						goal: 'Anagolay Workflow Builder',
-						status: status.doing,
+						status: status.done,
 					},
 					{
 						goal: 'Anagolay SDK',
 						description:
 							'While building SDK we will focus on the features for our JS/TS SDK, because the Anagolay interaction will come mostly from the Web Browser, Smart phones and Desktop environments. Our goal is to design SDK as intuitive and developer-friendly as possible.',
-						status: status.doing,
+						status: status.done,
 					},
 				],
 			},
@@ -249,11 +249,11 @@ export async function get(): Promise<RequestHandlerOutput> {
 				title: 'Q4',
 				year: 2022,
 				instances: [
-					{ goal: 'Idiyanale Mainnet Ready', status: status.pending },
-					{ goal: 'IDI Token Launch', status: status.pending },
+					{ goal: 'Idiyanale Mainnet Ready', status: status.doing },
+					{ goal: 'IDI Token Launch', status: status.doing },
 					{
 						goal: 'Promote for Use Cases and Get Apps Running on Idiyanale',
-						status: status.pending,
+						status: status.doing,
 					},
 				],
 			},
