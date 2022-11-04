@@ -32,6 +32,15 @@
 		top: 2000px;
 	}
 
+	/* styles not supported by tailwind classes*/
+	.textGradient {
+		/* background: -webkit-linear-gradient(180deg, #8CFF00 0%, #F4FBFF 88.93%); */
+		background: -webkit-linear-gradient(180deg, #8cff00 -19.8%, #f4fbff 100%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
 	/* Here starts the stars effect part, that could not be done using tailwind classes. It looks very good, but surely code may be improved*/
 	.stars,
 	.stars:after {

@@ -3,7 +3,7 @@
 	export { extraClass as class };
 </script>
 
-<div class="w-full flex ">
+<div class="w-full flex border-2">
 	<div class="w-full -mr-[50%]">
 		<div class="w-5/6 mx-auto">
 			<div
