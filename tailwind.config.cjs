@@ -63,8 +63,8 @@ module.exports = {
 				},
 			},
 			animation: {
-				marquee: 'marquee 4s linear infinite',
-				marqueeRight: '4s linear infinite reverse marquee',
+				marquee: 'marquee 2s linear infinite',
+				marqueeRight: '2s linear infinite reverse marquee',
 				glow: 'glowing ease-in-out 2s infinite alternate',
 				pulse: 'pulsating 1s linear infinite alternate',
 			},

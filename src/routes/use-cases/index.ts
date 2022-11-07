@@ -80,6 +80,10 @@ export async function get(): Promise<RequestHandlerOutput> {
 					'Have P2P encrypted communication between the user and the owner of the domain',
 					'Set up specific goals/causes to get community support',
 				],
+				button: {
+					url: '/tipping/',
+					text: 'Get Started',
+				},
 			},
 			{
 				title: 'Rights Management for Real-World Objects',

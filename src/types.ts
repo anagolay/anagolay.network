@@ -121,6 +121,7 @@ export interface TechnologyItem {
 	line2?: string;
 	inner2?: string;
 	boxItems?: string[];
+	button?: LinkData;
 }
 
 // interfaces added for Architecture section data in 'How-it-works' page
