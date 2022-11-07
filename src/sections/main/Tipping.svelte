@@ -6,35 +6,50 @@
 
 <div>
 	<Marquee length={130}>
-		<div class="p-1 flex gap-2 text-lg" slot="text">
+		<div class="py-0 px-1 md:p-1 flex gap-1 md:gap-2 text-base md:text-lg" slot="text">
 			<div>NEW</div>
 			<div>·</div>
 		</div>
 	</Marquee>
-	<Section>
-		<div class="flex flex-col md:flex-row">
-			<div class="w-2/5 flex flex-col justify-center text-2xl">
-				<div class="text-4xl font-medium flex gap-2">
+	<Section
+		class="relative flex flex-col items-center bg-gradient-to-b from-black/50 via-transparent to-black/50"
+	>
+		<div class="flex flex-col items-center md:flex-row relative">
+			<div
+				class="w-full md:w-1/2 py-8 flex flex-col items-center md:items-start text-center md:text-left justify-center text-lg md:text-2xl"
+			>
+				<div
+					class="text-2xl md:text-4xl font-medium flex flex-wrap gap-2 justify-center md:justify-start md:pt-4"
+				>
 					<p>Introducing now:</p>
 					<p class="textGradient">Tipping</p>
 				</div>
-				<div class="py-6">
+
+				<!-- image for small screens -->
+				<div class="flex md:hidden w-1/2 items-center justify-center relative">
+					<div
+						class="absolute w-4/5 pt-[80%] bg-light from-neonGreen-400/40 to-transparent rounded-[100%] animate-pulse"
+					/>
+					<img class="w-40 py-4" width="330" src="/main_coincase.svg" alt="coin case" />
+				</div>
+
+				<div class="py-4 md:py-6">
 					A decentralized solution to monetize the support from your community as an open-source developer or
 					content creator!
 				</div>
-				<div class="py-4">Verify your identity and start earning tips!</div>
-				<SectionButton>Learn more</SectionButton>
+				<div class="pb-8 pt-2 md:py-4">Verify your identity and start earning tips!</div>
+				<SectionButton class="md:w-80">Learn more</SectionButton>
 			</div>
-			<div class="flex w-3/5 items-center justify-center relative">
+			<div class="hidden md:flex w-1/2 items-center justify-center relative">
 				<div
 					class="absolute w-4/5 pt-[80%] bg-light from-neonGreen-400/40 to-transparent rounded-[100%] animate-pulse"
 				/>
-				<img class="w-1/2 py-20" src="/main_coincase.svg" alt="coin case" />
+				<img class="py-12 max-w-[60%]" width="330" src="/main_coincase.svg" alt="coin case" />
 			</div>
-		</div></Section
-	>
+		</div>
+	</Section>
 	<Marquee direction="right" length={130}>
-		<div class="p-1 flex gap-2 text-lg" slot="text">
+		<div class="py-0 px-1 md:p-1 flex gap-1 md:gap-2 text-base md:text-lg" slot="text">
 			<div>NEW</div>
 			<div>·</div>
 		</div>
