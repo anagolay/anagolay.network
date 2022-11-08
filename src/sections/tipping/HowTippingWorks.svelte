@@ -45,9 +45,7 @@
 </script>
 
 <Section>
-	<div class="text-center mb-12 md:mb-16 mx-auto">
-		<h2 class="text-2xl md:text-4xl mb-6 md:mb-8 text-neonGreen-400">How it works</h2>
-	</div>
+	<h2 class="text-2xl md:text-4xl pb-18 md:py-20 text-neonGreen-400 text-center">How it works</h2>
 	{#each steps as step, i}
 		<div class="flex flex-col lg:flex-row md:pb-12" class:lg:flex-row-reverse={i % 2 === 1}>
 			<div

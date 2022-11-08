@@ -7,7 +7,6 @@
 
 	import type { FeatureData, TechnologyItem } from '$src/types';
 	import SvelteSeo from 'svelte-seo';
-	import SectionButton from '$src/components/SectionButton.svelte';
 
 	export let descriptionItems: FeatureData[];
 	export let cases: TechnologyItem[];

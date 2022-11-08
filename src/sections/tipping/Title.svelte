@@ -15,8 +15,8 @@
 			</h2>
 			<SectionButton url="https://kelp.digital/" class="cursor-pointer mb-4">Join the waitlist</SectionButton>
 		</div>
-		<div class="basis-1/2">
-			<div class="relative w-3/4 mx-auto md:mr-0 md:w-11/12">
+		<div class="basis-1/2 pt-12 md:pt-0 md:flex flex-col justify-center">
+			<div class="relative w-3/4 mx-auto md:mr-0 md:w-[120%]">
 				<object
 					class="object-contain"
 					title="main animation"
