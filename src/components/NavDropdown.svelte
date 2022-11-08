@@ -3,30 +3,25 @@
 	import NavLink from './NavLink.svelte';
 	import type { MenuOption } from '$src/types';
 
-	let extraclass = '';
-	export { extraclass as class };
-	export let data: MenuOption;
-	export let id = '';
-	export let linkClass = '';
+	let show = false;
+	let height = 'h-6';
 
-	$: console.log(
-		'options',
-		data.options.map((option) => option.url.replaceAll('/', '')),
-		'page',
-		$page.routeId,
-		data.options.map((option) => option.url.replaceAll('/', '')).includes($page.routeId)
-	);
+	export let data: MenuOption;
+	export let id = data.title.toLowerCase();
+	export let accordionHeightClass = '';
+	export let onSelect: () => void = undefined;
 	$: color = data.options.map((option) => option.url.replaceAll('/', '')).includes($page.routeId)
 		? 'text-neonGreen-400'
 		: 'text-spaceBlue-50';
-	// $: color = option.url === $page.url.pathname ? 'text-neonGreen-400' : 'text-spaceBlue-50';
+
+	$: height = show ? accordionHeightClass : 'h-6';
 </script>
 
-<div class="flex justify-center {extraclass}">
+<div class="hidden md:flex justify-center">
 	<div>
 		<div class="dropdown relative">
 			<button
-				class="dropdown-toggle flex font-semibold whitespace-nowrap {color} {linkClass}"
+				class="dropdown-toggle flex whitespace-nowrap {color} px-2 py-2 rounded-sm md:w-fit hover:text-neonGreen-400"
 				type="button"
 				id="dropdownMenuButton2"
 				data-bs-toggle="dropdown"
@@ -47,5 +42,23 @@
 				{/each}
 			</ul>
 		</div>
+	</div>
+</div>
+
+<div
+	class="flex px-4 flex-col md:hidden my-4 transition-all duration-500 rounded-lg overflow-hidden {height}"
+>
+	<button class="flex justify-center {color}" on:click={() => (show = !show)}>
+		<p class="mb-2">{data.title}</p>
+		{#if show}
+			<span class="material-icons"> expand_less </span>
+		{:else}
+			<span class="material-icons"> expand_more </span>
+		{/if}
+	</button>
+	<div class="bg-spaceBlue-900">
+		{#each data.options as link}
+			<NavLink class="py-1" option={link} onClick={onSelect} />
+		{/each}
 	</div>
 </div>
