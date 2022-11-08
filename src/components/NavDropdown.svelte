@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import NavLink from './NavLink.svelte';
 	import type { MenuOption } from '$src/types';
 
@@ -7,13 +8,25 @@
 	export let data: MenuOption;
 	export let id = '';
 	export let linkClass = '';
+
+	$: console.log(
+		'options',
+		data.options.map((option) => option.url.replaceAll('/', '')),
+		'page',
+		$page.routeId,
+		data.options.map((option) => option.url.replaceAll('/', '')).includes($page.routeId)
+	);
+	$: color = data.options.map((option) => option.url.replaceAll('/', '')).includes($page.routeId)
+		? 'text-neonGreen-400'
+		: 'text-spaceBlue-50';
+	// $: color = option.url === $page.url.pathname ? 'text-neonGreen-400' : 'text-spaceBlue-50';
 </script>
 
 <div class="flex justify-center {extraclass}">
 	<div>
 		<div class="dropdown relative">
 			<button
-				class="dropdown-toggle flex font-extrabold {linkClass}"
+				class="dropdown-toggle flex font-semibold whitespace-nowrap {color} {linkClass}"
 				type="button"
 				id="dropdownMenuButton2"
 				data-bs-toggle="dropdown"

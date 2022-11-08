@@ -124,6 +124,18 @@ export interface TechnologyItem {
 	button?: LinkData;
 }
 
+export interface TippingStep {
+	number: number;
+	title: string;
+	description: string;
+	img: {
+		src: string;
+		alt: string;
+		height: number;
+		glow: boolean;
+	};
+}
+
 // interfaces added for Architecture section data in 'How-it-works' page
 export interface WebLayerIcon {
 	title: string;

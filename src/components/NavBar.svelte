@@ -57,9 +57,15 @@
             md:flex-row md:mx-0 md:relative md:top-auto md:h-full md:py-2 md:right-auto md:left-auto md:w-fit md:translate-x-0 "
 			>
 				<div class="flex flex-col md:flex-row w-full md:w-fit justify-evenly">
-					<NavLink class="font-bold my-3 md:my-0" option={idiyanale} onClick={closeSideBar} />
-					<NavLink class="font-bold my-3 md:my-0" option={howItWorks} onClick={closeSideBar} />
-					<NavLink class="font-bold my-3 md:my-0" option={useCases} onClick={closeSideBar} />
+					<NavLink class="my-3 md:my-0" option={idiyanale} onClick={closeSideBar} />
+					<NavLink class="my-3 md:my-0" option={howItWorks} onClick={closeSideBar} />
+					<!-- <NavLink class="my-3 md:my-0" option={useCases} onClick={closeSideBar} /> -->
+					<NavDropdown
+						class="hidden md:block"
+						id={useCases.title.toLowerCase()}
+						data={useCases}
+						{linkClass}
+					/>
 					<NavDropdown
 						class="hidden md:block"
 						id={discover.title.toLowerCase()}
@@ -72,7 +78,7 @@
 						class:h-44={accordionOpen}
 					>
 						<button class="flex justify-center" on:click={() => (accordionOpen = !accordionOpen)}>
-							<p class="font-bold mb-2">Discover</p>
+							<p class="mb-2">Discover</p>
 							{#if accordionOpen}
 								<span class="material-icons"> expand_less </span>
 							{:else}
@@ -85,7 +91,7 @@
 							{/each}
 						</div>
 					</div>
-					<NavLink class="font-bold my-3 md:my-0" option={deck} onClick={closeSideBar} />
+					<NavLink class="my-3 md:my-0" option={deck} onClick={closeSideBar} />
 				</div>
 			</div>
 		</div>

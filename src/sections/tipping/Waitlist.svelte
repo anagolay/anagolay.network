@@ -3,7 +3,7 @@
 </script>
 
 <Section>
-	<div class="w-full pt-12 pb-24 md:pt-20 md:pb-40 flex flex-col items-center">
+	<div class="w-full pb-24 md:pb-40 flex flex-col items-center">
 		<h2 class="text-2xl md:text-4xl pb-18 md:py-20 text-neonGreen-400 text-center max-w-2xl">
 			In a decentralized environment, you are in charge of what you own!
 		</h2>

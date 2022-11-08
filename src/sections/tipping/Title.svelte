@@ -10,8 +10,9 @@
 				<p class="leading-normal">Your audience is yours</p>
 			</h1>
 			<h2 class="text-base md:text-lg lg:text-xl py-8 xl:py-16 lg:w-5/6">
-				The process that by verifying internet identities will enable content creators and open-source
-				developers to monetize the support from their communities without relying on a centralized solution.
+				The transparent and trusted process for verifying internet identities that will enable content
+				creators and open-source developers to monetize the support from their communities without relying on
+				a centralized solution.
 			</h2>
 			<SectionButton url="https://kelp.digital/" class="cursor-pointer mb-4">Join the waitlist</SectionButton>
 		</div>
