@@ -11,7 +11,7 @@
 		<div
 			class="basis-5/6 flex justify-center text-center text-xl md:text-2xl xl:text-4xl max-w-3xl py-8 md:py-16 xl:py-8"
 		>
-			Verified Creators, get direct support from their communitiy
+			Revolutionizing community support for Digital Creators & Open Source
 		</div>
 	</div>
 	<div class="flex flex-col md:flex-row gap-8 w-full py-12 justify-between text-center">

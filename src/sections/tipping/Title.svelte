@@ -7,14 +7,14 @@
 	<div class="relative w-full max-w-full flex flex-col text-center md:text-left md:flex-row pt-8 md:pt-24">
 		<div class="basis-1/2 flex flex-col items-center md:items-start lg:pt-12">
 			<h1 class="text-3xl md:text-5xl font-extrabold">
-				<p class="leading-normal">Your audience is yours</p>
+				<p class="leading-normal">Your audience stays yours</p>
 			</h1>
 			<h2 class="text-base md:text-lg lg:text-xl py-8 xl:py-16 lg:w-5/6">
 				The transparent and trusted process for verifying internet identities that will enable content
 				creators and open-source developers to monetize the support from their communities without relying on
 				a centralized solution.
 			</h2>
-			<SectionButton url="/#waitlist" class="cursor-pointer mb-4">Join the waitlist</SectionButton>
+			<SectionButton url="#waitlist" class="cursor-pointer mb-4">Join the waitlist</SectionButton>
 		</div>
 		<div class="basis-1/2 pt-12 md:pt-0 md:flex flex-col justify-center">
 			<div class="relative w-5/6 mx-auto md:mr-0 md:w-[120%]">

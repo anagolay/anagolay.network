@@ -3,20 +3,20 @@ import type { RequestHandlerOutput } from '@sveltejs/kit';
 // export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 export async function get(): Promise<RequestHandlerOutput> {
 	const features = [
-		{ feature: 'Transparency', img: { src: '/icon_transparency.svg', alt: 'transparency' } },
+		{ feature: 'Verified Creators Only', icon: 'check_circle_outline' },
+		{ feature: 'Across plattforms', img: { src: '/icon_interconnectivity.svg', alt: 'interconnectivity' } },
 		{
-			feature: 'Decentralization',
+			feature: 'Decentralized',
 			img: { src: '/icon_decentralization.svg', alt: 'decentralization' },
 		},
-		{ feature: 'Interconnectivity', img: { src: '/icon_interconnectivity.svg', alt: 'interconnectivity' } },
 		{ feature: 'No Custodial Wallet', img: { src: '/icon_wallet.svg', alt: 'wallet' } },
 	];
 	const steps = [
 		{
 			number: 1,
-			title: 'Verify & connect your sources: domains & digital identities.',
+			title: 'Verify & connect your channels: domains and online identities.',
 			description:
-				'With a PolkadotJS account, you can use the Anagolay App to claim your domains ownership or, you can just verify your digital identities such as Twitter or Github.',
+				'With Anagolay App & a PolkadotJS you can verify ownership of your website domains and connect your accounts on Twitter or Github by proving you are who you claim to be.',
 			img: {
 				src: '/tipping_sources.svg',
 				alt: 'list of possible sources',
@@ -28,7 +28,7 @@ export async function get(): Promise<RequestHandlerOutput> {
 			number: 2,
 			title: 'Start receiving tips for your work in IDI, DOT, or KSM.',
 			description:
-				'Once verified, start receiving tips from your supporters. Until now, you can choose to receive IDI, DOT or KSM; ERC20 will be integrated next.',
+				'Once verified, start receiving tips from your supporters. From the get-go, tips are enabled in IDI, DOT, or KSM; ERC20 will be integrated next.',
 			img: {
 				src: '/tipping_tips.svg',
 				alt: 'tips, tokens and like icons',
@@ -38,9 +38,9 @@ export async function get(): Promise<RequestHandlerOutput> {
 		},
 		{
 			number: 3,
-			title: 'Get ready to license your creative works. Directly from your sources, on your terms.',
+			title: 'Get ready to license your creative works. Directly from your verified channels, on your terms.',
 			description:
-				'Sell or license the creative content directly from the verified sources and choose from predefined Licenses or create your own!',
+				'Receiving tips is just the first step! Coming next - enabling your audience to license your works directly, just in a few clicks. You’ll be able to choose a predefined License or create your own.',
 			img: {
 				src: '/tipping_license.svg',
 				alt: 'license with a lock and copyright icon',
