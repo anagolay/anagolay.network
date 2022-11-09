@@ -5,11 +5,21 @@
 </script>
 
 <div
-	class="flex w-full overflow-hidden bg-gradient-to-b from-neonGreen-400/30 via-transparent to-neonGreen-400/30 border-t border-b border-neonGreen-400"
+	class="w-full overflow-hidden bg-gradient-to-b from-neonGreen-400/30 via-transparent to-neonGreen-400/30 border-t border-b border-neonGreen-400"
 >
-	{#each array as i}
-		<div class:animate-marquee={direction === 'left'} class:animate-marqueeRight={direction === 'right'}>
-			<slot name="text" />
-		</div>
-	{/each}
+	<div
+		class="flex w-fit"
+		class:animate-marqueeOne={direction === 'left'}
+		class:animate-marqueeRight={direction === 'right'}
+	>
+		{#each array as i}
+			<div
+				class="whitespace-nowrap"
+				class:animate-marqueeOne={direction === 'left'}
+				class:animate-marqueeRight={direction === 'right'}
+			>
+				<slot name="text" />
+			</div>
+		{/each}
+	</div>
 </div>

@@ -36,8 +36,8 @@
 				aria-labelledby="dropdownMenuButton2"
 			>
 				{#each data.options as option}
-					<li class="w-32 hover:bg-blue-800/50 m-1 rounded-sm">
-						<NavLink class="dropdown-item active:bg-transparent" {option} />
+					<li class="hover:bg-blue-800/50 m-1 rounded-sm">
+						<NavLink class="dropdown-item whitespace-nowrap active:bg-transparent" {option} />
 					</li>
 				{/each}
 			</ul>

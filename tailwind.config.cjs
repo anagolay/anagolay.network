@@ -51,7 +51,7 @@ module.exports = {
 			keyframes: {
 				marquee: {
 					'0%': { transform: 'translateX(0%)' },
-					'100%': { transform: 'translateX(-100%)' },
+					'100%': { transform: 'translateX(-1%)' },
 				},
 				glowing: {
 					'0%': { opacity: '1' },
@@ -64,6 +64,7 @@ module.exports = {
 			},
 			animation: {
 				marquee: 'marquee 2s linear infinite',
+				marqueeOne: 'marquee 2s linear infinite',
 				marqueeRight: '2s linear infinite reverse marquee',
 				glow: 'glowing ease-in-out 2s infinite alternate',
 				pulse: 'pulsating 1s linear infinite alternate',

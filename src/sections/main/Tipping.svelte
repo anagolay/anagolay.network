@@ -5,7 +5,7 @@
 </script>
 
 <div class="pt-12 md:pt-20">
-	<Marquee length={130}>
+	<Marquee length={100}>
 		<div class="py-0 px-1 md:p-1 flex gap-1 md:gap-2 text-base md:text-lg" slot="text">
 			<div>NEW</div>
 			<div>·</div>
@@ -48,7 +48,7 @@
 			</div>
 		</div>
 	</Section>
-	<Marquee direction="right" length={130}>
+	<Marquee length={100} direction="right">
 		<div class="py-0 px-1 md:p-1 flex gap-1 md:gap-2 text-base md:text-lg" slot="text">
 			<div>NEW</div>
 			<div>·</div>

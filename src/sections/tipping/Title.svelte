@@ -10,9 +10,9 @@
 				<p class="leading-normal">Your audience stays yours</p>
 			</h1>
 			<h2 class="text-base md:text-lg lg:text-xl py-8 xl:py-16 lg:w-5/6">
-				The transparent and trusted process for verifying internet identities that will enable content
-				creators and open-source developers to monetize the support from their communities without relying on
-				a centralized solution.
+				Community of supporters is hard enough to build. Why entrust it to a centralized platform? Now you can
+				as your creator business grows and the number of patrons increases - so does the monthly fee. When you
+				want to switch it’s already too late.
 			</h2>
 			<SectionButton url="#waitlist" class="cursor-pointer mb-4">Join the waitlist</SectionButton>
 		</div>

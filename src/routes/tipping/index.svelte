@@ -4,10 +4,26 @@
 	import Title from '$src/sections/tipping/Title.svelte';
 	import Waitlist from '$src/sections/tipping/Waitlist.svelte';
 	import type { FeatureData, TippingStep } from '$src/types';
+	import { onMount } from 'svelte';
 	import SvelteSeo from 'svelte-seo';
 
 	export let features: FeatureData[];
 	export let steps: TippingStep[];
+
+	onMount(() => {
+		function checkAdBlocker() {
+			let test = new Request('https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js', {
+				method: 'HEAD',
+				mode: 'no-cors',
+			});
+
+			fetch(test).catch(() => {
+				alert('please disable the Ad blocker to see the waitlist form');
+				window.removeEventListener('load', checkAdBlocker);
+			});
+		}
+		window.addEventListener('load', checkAdBlocker);
+	});
 </script>
 
 <SvelteSeo
