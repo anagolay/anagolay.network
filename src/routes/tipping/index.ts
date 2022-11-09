@@ -3,7 +3,7 @@ import type { RequestHandlerOutput } from '@sveltejs/kit';
 // export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
 export async function get(): Promise<RequestHandlerOutput> {
 	const features = [
-		{ feature: 'Verified Creators Only', icon: 'check_circle_outline' },
+		{ feature: 'Verified Creators Only', img: { src: '/icon_proof.svg', alt: 'verified' } },
 		{ feature: 'Across plattforms', img: { src: '/icon_interconnectivity.svg', alt: 'interconnectivity' } },
 		{
 			feature: 'Decentralized',

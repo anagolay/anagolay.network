@@ -71,6 +71,7 @@ export const menuOptions: MenuOption[] = [
 			{ text: 'Wiki', url: 'https://anagolay.dev' },
 			{ text: 'Github', url: 'https://github.com/anagolay' },
 			{ text: 'Gitlab', url: 'https://gitlab.com/anagolay' },
+			{ text: 'Tracked Services', url: 'https://status.kelp.digital/status/all-services' },
 		],
 	},
 ];

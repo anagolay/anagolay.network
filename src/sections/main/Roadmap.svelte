@@ -17,8 +17,13 @@
 	}
 
 	//This functions always sets the fifth event in the middle of Roadmap, but it is not in function of the current event.
-	//Check the position function.
-	onMount(() => (roadMap.scrollLeft = 0.75 * roadWidth - 0.6 * windowWidth));
+	onMount(() => {
+		const activeItem = roadMapItems.findIndex((item) =>
+			item.instances.find((instance) => instance.status === 'doing')
+		);
+		const position = (activeItem + 1) / roadMapItems.length;
+		roadMap.scrollLeft = position * roadWidth - (roadWidth / roadMapItems.length + windowWidth) / 2;
+	});
 </script>
 
 <Section>
@@ -41,11 +46,7 @@
 			</button>
 		</div>
 		<div class="text-sm md:text-base">
-			<div
-				class="overflow-x-scroll scroll-smooth snap-x snap-mandatory"
-				bind:this={roadMap}
-				bind:clientWidth={windowWidth}
-			>
+			<div class="overflow-x-scroll scroll-smooth" bind:this={roadMap} bind:clientWidth={windowWidth}>
 				<div class="w-fit">
 					<div class="w-full h-[.2rem] bg-gradient-to-r from-spaceBlue-700 to-neonGreen-400 mt-28 -mb-28" />
 					<div class="w-fit pb-6" bind:clientWidth={roadWidth}>

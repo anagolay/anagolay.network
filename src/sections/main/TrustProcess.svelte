@@ -28,7 +28,7 @@
 				>
 					<p class="mb-4">{item.text}</p>
 					<div class="pt-2">
-						<a class="flex text-neonGreen-400" href={item.link}>
+						<a class="flex text-neonGreen-400" sveltekit:prefetch href={item.link}>
 							<p class="hover:underline">{item.linkText}</p>
 							<span class="material-icons ml-2 no-underline text-sm md:text-base xl:text-xl">east</span>
 						</a>

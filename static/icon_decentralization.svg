@@ -1,15 +1,14 @@
 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-<line x1="3.35111" y1="5.44967" x2="18.3165" y2="20.415" stroke="#8CFF00" stroke-width="0.610539"/>
-<line x1="10.9227" y1="2.23096" x2="10.9227" y2="19.1514" stroke="#8CFF00" stroke-width="0.610539"/>
-<line x1="18.9084" y1="12.3593" x2="3.3366" y2="12.3593" stroke="#8CFF00" stroke-width="0.601325"/>
-<line x1="2.9194" y1="20.4155" x2="16.0706" y2="7.26425" stroke="#8CFF00" stroke-width="0.610539"/>
-<circle cx="10.9143" cy="1.71899" r="1.46264" fill="#8CFF00"/>
-<circle cx="18.1002" cy="20.281" r="1.46264" fill="#8CFF00"/>
-<circle cx="10.9146" cy="12.0584" r="2.55543" fill="#8CFF00"/>
-<circle cx="3.13568" cy="5.25335" r="1.12933" fill="#8CFF00"/>
-<circle cx="2.77044" cy="20.2807" r="1.12933" fill="#8CFF00"/>
-<circle cx="19.2295" cy="12.3359" r="1.12933" fill="#8CFF00"/>
-<circle cx="16.0371" cy="7.19503" r="0.812704" fill="#8CFF00"/>
-<circle cx="3.33639" cy="12.3357" r="0.812704" fill="#8CFF00"/>
-<circle cx="10.9138" cy="19.8186" r="0.812704" fill="#8CFF00"/>
+<line x1="3.37579" y1="5.13471" x2="18.3412" y2="20.1001" stroke="#8CFF00" stroke-width="1.5"/>
+<line x1="11.0776" y1="2.23096" x2="11.0776" y2="19.1514" stroke="#8CFF00" stroke-width="1.5"/>
+<line x1="18.6187" y1="12.8086" x2="3.0468" y2="12.8086" stroke="#8CFF00" stroke-width="1.5"/>
+<line x1="4.15522" y1="18.9877" x2="17.3065" y2="5.83649" stroke="#8CFF00" stroke-width="1.5"/>
+<circle cx="11.0481" cy="2.07495" r="1.71899" fill="#8CFF00"/>
+<circle cx="10.8345" cy="12.0587" r="2.91127" fill="#8CFF00"/>
+<circle cx="19.0932" cy="12.7514" r="1.30411" fill="#8CFF00"/>
+<circle cx="3.80801" cy="19.3266" r="1.30411" fill="#8CFF00"/>
+<circle cx="3.27176" cy="5.04288" r="1.30411" fill="#8CFF00"/>
+<circle cx="17.6278" cy="5.56582" r="1.01357" fill="#8CFF00"/>
+<circle cx="2.50381" cy="12.7689" r="1.01357" fill="#8CFF00"/>
+<circle cx="11.0729" cy="19.4823" r="1.01357" fill="#8CFF00"/>
 </svg>

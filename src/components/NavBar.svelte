@@ -37,7 +37,7 @@
 				<Hamburguer open={toggleMenu} />
 			</button>
 			<div class="h-8 my-1 md:h-12">
-				<a href="/" on:click={closeSideBar}>
+				<a href="/" sveltekit:prefetch on:click={closeSideBar}>
 					<img
 						class="object-contain h-full"
 						width="193"

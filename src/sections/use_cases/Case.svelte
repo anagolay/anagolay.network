@@ -45,7 +45,7 @@
 	</div>
 	<div class="w-full flex justify-center pt-4 md:pt-12">
 		{#if caseItem.button}
-			<SectionButton tab="_self" class="w-80" url={caseItem.button.url}>{caseItem.button.text}</SectionButton>
+			<SectionButton class="w-80" url={caseItem.button.url}>{caseItem.button.text}</SectionButton>
 		{/if}
 	</div>
 </Section>
