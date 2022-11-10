@@ -21,7 +21,10 @@
 
 <div class="hidden md:flex justify-center">
 	<div class="dropdown relative">
-		<button {id} class="relative flex items-center whitespace-nowrap {color} px-2 py-2 rounded-sm">
+		<button
+			{id}
+			class="relative flex items-center whitespace-nowrap {color} px-2 py-2 rounded-sm hover:text-neonGreen-400"
+		>
 			{data.title}
 			<span class="material-icons">keyboard_arrow_down</span>
 		</button>
