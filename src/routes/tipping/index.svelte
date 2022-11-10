@@ -8,7 +8,6 @@
 
 	export let features: FeatureData[];
 	export let steps: TippingStep[];
-
 </script>
 
 <SvelteSeo
@@ -21,7 +20,7 @@
 		title: 'Anagolay Network - Tips for Verified Creators',
 		description: 'verify your channels and start accepting support from the community in crypto.',
 		image:
-			'https://ipfs.io/ipfs/QmQKFRhaZd2Ac3ZW1PCz2qfCQoeNq4XTcoRAfbiWoG9USG?filename=twitter_card_tipping.png',
+			'https://ipfs.anagolay.network/ipfs/QmQKFRhaZd2Ac3ZW1PCz2qfCQoeNq4XTcoRAfbiWoG9USG?filename=twitter_card_tipping.png',
 		imageAlt: 'Blue starry background with Anagolay brand logo and tokens in a green coincase',
 	}}
 />
