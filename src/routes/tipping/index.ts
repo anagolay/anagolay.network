@@ -20,7 +20,8 @@ export async function get(): Promise<RequestHandlerOutput> {
 			img: {
 				src: '/tipping_sources.svg',
 				alt: 'list of possible sources',
-				height: 342,
+				height: 389,
+				width: 672,
 				glow: false,
 			},
 		},
@@ -32,7 +33,8 @@ export async function get(): Promise<RequestHandlerOutput> {
 			img: {
 				src: '/tipping_tips.svg',
 				alt: 'tips, tokens and like icons',
-				height: 342,
+				height: 320,
+				width: 371,
 				glow: true,
 			},
 		},
@@ -44,7 +46,8 @@ export async function get(): Promise<RequestHandlerOutput> {
 			img: {
 				src: '/tipping_license.svg',
 				alt: 'license with a lock and copyright icon',
-				height: 342,
+				height: 336,
+				width: 443,
 				glow: true,
 			},
 		},

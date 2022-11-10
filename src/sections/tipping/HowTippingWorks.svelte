@@ -38,6 +38,7 @@
 						src={step.img.src}
 						alt={step.img.alt}
 						height={step.img.height}
+						width={step.img.width}
 					/>
 				</div>
 			</div>
