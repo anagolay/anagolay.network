@@ -35,9 +35,9 @@
 
 				<div class="py-4 md:py-6">
 					A decentralized solution to monetize the support from your community as an open-source developer or
-					content creator!
+					content creator.
 				</div>
-				<div class="pb-8 pt-2 md:pt-4 md:pb-12">Verify your identity and start earning tips!</div>
+				<div class="pb-8 pt-2 md:pt-4 md:pb-12">Verify your channels and start receiving tips!</div>
 				<SectionButton url="/tipping/" class="md:w-80">Learn more</SectionButton>
 			</div>
 			<div class="hidden md:flex w-1/2 items-center justify-center relative">
