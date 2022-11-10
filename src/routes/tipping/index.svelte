@@ -17,10 +17,12 @@
 				mode: 'no-cors',
 			});
 
-			fetch(test).catch(() => {
-				alert('please disable the Ad blocker to see the waitlist form');
-				window.removeEventListener('load', checkAdBlocker);
-			});
+			fetch(test)
+				.then(() => undefined)
+				.catch(() => {
+					alert('please disable the Ad blocker to see the waitlist form');
+					window.removeEventListener('load', checkAdBlocker);
+				});
 		}
 		window.addEventListener('load', checkAdBlocker);
 	});

@@ -10,9 +10,9 @@
 				<p class="leading-normal">Your audience stays yours</p>
 			</h1>
 			<h2 class="text-base md:text-lg lg:text-xl py-8 xl:py-16 lg:w-5/6">
-				Community of supporters is hard enough to build. Why entrust it to a centralized platform? Now you can
-				as your creator business grows and the number of patrons increases - so does the monthly fee. When you
-				want to switch it’s already too late.
+				A community of supporters is hard enough to build. Why entrust it to a centralized platform? Verify
+				your public identities and receive tips from audiences across your established channels. No need for
+				sign-ups & registrations.
 			</h2>
 			<SectionButton url="#waitlist" class="cursor-pointer mb-4">Join the waitlist</SectionButton>
 		</div>

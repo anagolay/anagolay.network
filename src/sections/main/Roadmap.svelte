@@ -17,6 +17,13 @@
 	}
 
 	//This functions always sets the fifth event in the middle of Roadmap, but it is not in function of the current event.
+	// function setScrollPosition() {
+	// 	const activeItem = roadMapItems.findIndex((item) =>
+	// 		item.instances.find((instance) => instance.status === 'doing')
+	// 	);
+	// 	const position = (activeItem + 1) / roadMapItems.length;
+	// 	roadMap.scrollLeft = position * roadWidth - (roadWidth / roadMapItems.length + windowWidth) / 2;
+	// }
 	onMount(() => {
 		const activeItem = roadMapItems.findIndex((item) =>
 			item.instances.find((instance) => instance.status === 'doing')

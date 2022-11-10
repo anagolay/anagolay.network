@@ -3,45 +3,38 @@
 	import NavLink from './NavLink.svelte';
 	import type { MenuOption } from '$src/types';
 
-	let show = false;
-	let height = 'h-6';
-
 	export let data: MenuOption;
-	export let id = data.title.toLowerCase();
 	export let accordionHeightClass = '';
 	export let onSelect: () => void = undefined;
+	const id = 'dropdown-' + data.title.toLowerCase();
+
+	let show = false;
+	let height = 'h-6';
+	let visible = 'hidden';
+	let menuContent: HTMLUListElement;
+
 	$: color = data.options.map((option) => option.url.replaceAll('/', '')).includes($page.routeId)
 		? 'text-neonGreen-400'
 		: 'text-spaceBlue-50';
-
 	$: height = show ? accordionHeightClass : 'h-6';
 </script>
 
 <div class="hidden md:flex justify-center">
-	<div>
-		<div class="dropdown relative">
-			<button
-				class="dropdown-toggle flex whitespace-nowrap {color} px-2 py-2 rounded-sm md:w-fit hover:text-neonGreen-400"
-				type="button"
-				id="dropdownMenuButton2"
-				data-bs-toggle="dropdown"
-				aria-expanded="false"
-			>
-				{data.title}
-				<span class="material-icons hidden md:block">keyboard_arrow_down</span>
-			</button>
-			<ul
-				{id}
-				class="dropdown-menu  bg-spaceBlue-900 text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none"
-				aria-labelledby="dropdownMenuButton2"
-			>
-				{#each data.options as option}
-					<li class="hover:bg-blue-800/50 m-1 rounded-sm">
-						<NavLink class="dropdown-item whitespace-nowrap active:bg-transparent" {option} />
-					</li>
-				{/each}
-			</ul>
-		</div>
+	<div class="dropdown relative">
+		<button {id} class="relative flex items-center whitespace-nowrap {color} px-2 py-2 rounded-sm">
+			{data.title}
+			<span class="material-icons">keyboard_arrow_down</span>
+		</button>
+		<ul
+			class="absolute dropdown-content {visible} bg-spaceBlue-900 text-base z-50 py-2 list-none text-left rounded-lg shadow-lg pt-1 m-0 bg-clip-padding border-none"
+			bind:this={menuContent}
+		>
+			{#each data.options as option}
+				<li class="hover:bg-blue-800/50 m-1 rounded-sm">
+					<NavLink class="whitespace-nowrap active:bg-transparent" {option} />
+				</li>
+			{/each}
+		</ul>
 	</div>
 </div>
 
@@ -62,3 +55,9 @@
 		{/each}
 	</div>
 </div>
+
+<style>
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+</style>
