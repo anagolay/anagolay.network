@@ -12,7 +12,7 @@ export async function get(): Promise<RequestHandlerOutput> {
 		{
 			feature:
 				'Once the core features of the framework are well-tested and approved by the community, Anagolay Inherits the role of the main net from Idiyanale.',
-			icon: 'check_circle_outline',
+			img: { src: '/icon_proof.svg', alt: 'verified' },
 		},
 		{
 			feature:

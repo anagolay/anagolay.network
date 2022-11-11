@@ -6,8 +6,6 @@
 
 	let toggleMenu = false;
 	let menuTransition = '';
-	let accordionOpen = false;
-	const linkClass = 'px-2 py-2 rounded-sm md:w-fit hover:text-neonGreen-400';
 
 	//toggleSideBar will open sidebar if it is closed or close it if opened.
 	function toggleSideBar(): void {
@@ -39,7 +37,7 @@
 				<Hamburguer open={toggleMenu} />
 			</button>
 			<div class="h-8 my-1 md:h-12">
-				<a href="/" on:click={closeSideBar}>
+				<a href="/" sveltekit:prefetch on:click={closeSideBar}>
 					<img
 						class="object-contain h-full"
 						width="193"
@@ -57,35 +55,13 @@
             md:flex-row md:mx-0 md:relative md:top-auto md:h-full md:py-2 md:right-auto md:left-auto md:w-fit md:translate-x-0 "
 			>
 				<div class="flex flex-col md:flex-row w-full md:w-fit justify-evenly">
-					<NavLink class="font-bold my-3 md:my-0" option={idiyanale} onClick={closeSideBar} />
-					<NavLink class="font-bold my-3 md:my-0" option={howItWorks} onClick={closeSideBar} />
-					<NavLink class="font-bold my-3 md:my-0" option={useCases} onClick={closeSideBar} />
-					<NavDropdown
-						class="hidden md:block"
-						id={discover.title.toLowerCase()}
-						data={discover}
-						{linkClass}
-					/>
-					<div
-						class="flex px-4 flex-col md:hidden my-3 transition-all duration-500 rounded-lg overflow-hidden"
-						class:h-6={!accordionOpen}
-						class:h-44={accordionOpen}
-					>
-						<button class="flex justify-center" on:click={() => (accordionOpen = !accordionOpen)}>
-							<p class="font-bold mb-2">Discover</p>
-							{#if accordionOpen}
-								<span class="material-icons"> expand_less </span>
-							{:else}
-								<span class="material-icons"> expand_more </span>
-							{/if}
-						</button>
-						<div class="bg-spaceBlue-900">
-							{#each discover.options as link}
-								<NavLink class="py-1" option={link} onClick={closeSideBar} />
-							{/each}
-						</div>
-					</div>
-					<NavLink class="font-bold my-3 md:my-0" option={deck} onClick={closeSideBar} />
+					<NavLink class="my-3 md:my-0" option={idiyanale} onClick={closeSideBar} />
+					<NavLink class="my-3 md:my-0" option={howItWorks} onClick={closeSideBar} />
+
+					<NavDropdown data={useCases} accordionHeightClass="h-28" onSelect={closeSideBar} />
+					<NavDropdown data={discover} accordionHeightClass="h-44" onSelect={closeSideBar} />
+
+					<NavLink class="my-3 md:my-0" option={deck} onClick={closeSideBar} />
 				</div>
 			</div>
 		</div>

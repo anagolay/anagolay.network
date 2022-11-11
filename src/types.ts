@@ -121,6 +121,20 @@ export interface TechnologyItem {
 	line2?: string;
 	inner2?: string;
 	boxItems?: string[];
+	button?: LinkData;
+}
+
+export interface TippingStep {
+	number: number;
+	title: string;
+	description: string;
+	img: {
+		src: string;
+		alt: string;
+		height: number;
+		width: number;
+		glow: boolean;
+	};
 }
 
 // interfaces added for Architecture section data in 'How-it-works' page

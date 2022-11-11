@@ -40,7 +40,7 @@
 </Section>
 
 <Section class="relative bg-spaceBlue-900">
-	<div class="text-lg md:text-4xl pb-32 md:pb-48 text-center pt-16 md:pt-28 px-4">
+	<div class="text-lg md:text-4xl pb-32 md:pb-52 text-center pt-16 md:pt-32 px-4">
 		<p class="text-neonGreen-400 line-through font-medium mb-2">
 			<span class="text-spaceBlue-50/50">Central authority <br />Resource heavy consensus mechanism</span>
 		</p>

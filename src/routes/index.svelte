@@ -6,6 +6,7 @@
 	import TeamSection from '$src/sections/main/Team.svelte';
 	import Roadmap from '$src/sections/main/Roadmap.svelte';
 	import Support from '$src/sections/main/Support.svelte';
+	import Tipping from '$src/sections/main/Tipping.svelte';
 	import SvelteSeo from 'svelte-seo';
 
 	import type { FeatureData, TrustProcessItem, UseCase, TeamMember, RoadmapItem } from '$src/types';
@@ -36,6 +37,7 @@
 	<TitleSection />
 	<FeaturesSection {beastFeatures} />
 	<TrustProcess {trustProcessItems} />
+	<Tipping />
 	<UseCases {useCases} />
 	<TeamSection {teamMembers} />
 	<Support />

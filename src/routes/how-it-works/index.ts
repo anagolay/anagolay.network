@@ -9,7 +9,7 @@ export async function get(): Promise<RequestHandlerOutput> {
 		{ icon: 'copyright', text: 'Statements & Claims', anchor: '#statements' },
 		{ img: { src: '/icon_proof.svg', alt: 'proof' }, text: 'Proofs', anchor: '#proofs' },
 		{
-			img: { src: '/icon_workflow.svg', alt: 'decentralized network' },
+			img: { src: '/icon_workflow.svg', alt: 'workflow' },
 			text: 'Workflow & Operations',
 			anchor: '#workflow',
 		},

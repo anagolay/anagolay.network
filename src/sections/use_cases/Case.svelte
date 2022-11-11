@@ -3,6 +3,7 @@
 	import GlowingLight from '$src/components/GlowingLight.svelte';
 
 	import Section from '$src/components/Section.svelte';
+	import SectionButton from '$src/components/SectionButton.svelte';
 	import type { TechnologyItem } from '$src/types';
 	export let caseItem: TechnologyItem;
 	export let i: number;
@@ -41,5 +42,10 @@
 		{#each caseItem.boxItems as boxItem}
 			<BoxItem {boxItem} />
 		{/each}
+	</div>
+	<div class="w-full flex justify-center pt-4 md:pt-12">
+		{#if caseItem.button}
+			<SectionButton class="w-80" url={caseItem.button.url}>{caseItem.button.text}</SectionButton>
+		{/if}
 	</div>
 </Section>

@@ -11,11 +11,11 @@
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"npm.packageManager": "pnpm",
+	"eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "svelte"],
 	"files.associations": {
 		"*.svelte": "svelte",
 		"package.json": "json"
 	},
-	"eslint.validate": ["javascript", "javascriptreact", "svelte"],
 	"[yml,yaml]": {
 		"editor.insertSpaces": true,
 		"editor.useTabStops": false

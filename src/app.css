@@ -22,6 +22,15 @@
 		border-radius: 0.5rem;
 	}
 
+	/* styles not supported by tailwind classes*/
+	.textGradient {
+		/* background: -webkit-linear-gradient(180deg, #8CFF00 0%, #F4FBFF 88.93%); */
+		background: -webkit-linear-gradient(180deg, #8cff00 -19.8%, #f4fbff 100%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
 	.stars {
 		animation: animStar 50s linear infinite;
 	}

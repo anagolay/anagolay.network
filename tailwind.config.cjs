@@ -49,17 +49,25 @@ module.exports = {
 					'7px 0 7px var(--tw-shadow-color), -7px 0 7px var(--tw-shadow-color), 0 7px 7px var(--tw-shadow-color), 0 -7px 7px var(--tw-shadow-color);',
 			},
 			keyframes: {
-				// animStar: {
-				// 	'0%': { transform: 'translateY(0px)' },
-				// 	'100%': { transform: 'transform: translateY(-2000px)' },
-				// }
+				marquee: {
+					'0%': { transform: 'translateX(0%)' },
+					'100%': { transform: 'translateX(-1%)' },
+				},
 				glowing: {
 					'0%': { opacity: '1' },
 					'100%': { opacity: '0.85', transform: 'scale(.95)' },
 				},
+				pulsating: {
+					'0%': { opacity: '0.8', transform: 'scale(1)' },
+					'100%': { opacity: '0.3', transform: 'scale(.7)' },
+				},
 			},
 			animation: {
+				marquee: 'marquee 2s linear infinite',
+				marqueeOne: 'marquee 2s linear infinite',
+				marqueeRight: '2s linear infinite reverse marquee',
 				glow: 'glowing ease-in-out 2s infinite alternate',
+				pulse: 'pulsating 1s linear infinite alternate',
 			},
 			borderRadius: {
 				'4xl': '2rem',

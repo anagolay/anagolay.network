@@ -9,7 +9,7 @@
 	export let roadMapItems: RoadmapItem[];
 
 	let roadMap: HTMLDivElement;
-	let roadWidth: number;
+	let roadmapWidth: number;
 	let windowWidth: number;
 
 	function scrollTo(left: number) {
@@ -17,8 +17,17 @@
 	}
 
 	//This functions always sets the fifth event in the middle of Roadmap, but it is not in function of the current event.
-	//Check the position function.
-	onMount(() => (roadMap.scrollLeft = 0.75 * roadWidth - 0.6 * windowWidth));
+	onMount(() => {
+		// first find the higlighted item
+		const activeItem = roadMapItems.findIndex((item) =>
+			item.instances.find((instance) => instance.status === 'doing')
+		);
+		// then, set the amount of items and the percentage position of the higlighted item
+		const size = roadMapItems.length;
+		const percentagePosition = (activeItem + 1) / size;
+		// finally multiply percentage position and the roadmap width and substract the average between the element width and the window width
+		roadMap.scrollLeft = percentagePosition * roadmapWidth - (roadmapWidth / size + windowWidth) / 2;
+	});
 </script>
 
 <Section>
@@ -34,21 +43,17 @@
 			<h2 class="w-1/3 text-center text-xl md:text-3xl pb-8 sm:pb-0 text-neonGreen-400">Roadmap</h2>
 			<button
 				class="flex items-center justify-end w-1/3 opacity-60 cursor-pointer hover:opacity-100"
-				on:click={() => scrollTo(roadWidth)}
+				on:click={() => scrollTo(roadmapWidth)}
 			>
 				<p class="hover:underline">Coming next</p>
 				<span class="material-icons ml-2 text-sm md:text-base hover:no-underline">east</span>
 			</button>
 		</div>
 		<div class="text-sm md:text-base">
-			<div
-				class="overflow-x-scroll scroll-smooth snap-x snap-mandatory"
-				bind:this={roadMap}
-				bind:clientWidth={windowWidth}
-			>
+			<div class="overflow-x-scroll scroll-smooth" bind:this={roadMap} bind:clientWidth={windowWidth}>
 				<div class="w-fit">
 					<div class="w-full h-[.2rem] bg-gradient-to-r from-spaceBlue-700 to-neonGreen-400 mt-28 -mb-28" />
-					<div class="w-fit pb-6" bind:clientWidth={roadWidth}>
+					<div class="w-fit pb-6" bind:clientWidth={roadmapWidth}>
 						<div class="grid w-full text-center grid-flow-col auto-cols-fit">
 							{#each roadMapItems as roadMapItem}
 								<RoadmapElement {roadMapItem} />

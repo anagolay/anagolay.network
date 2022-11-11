@@ -4,7 +4,23 @@ export const whitePaperUrl = 'https://bit.ly/Anagolay_WhitePaper_wip';
 
 export const idiyanale: LinkData = { text: 'Idiyanale', url: '/idiyanale/', external: false };
 export const howItWorks: LinkData = { text: 'How it works', url: '/how-it-works/', external: false };
-export const useCases: LinkData = { text: 'Use cases', url: '/use-cases/', external: false };
+// export const useCases: LinkData = { text: 'Use cases', url: '/use-cases/', external: false };
+export const useCases: MenuOption = {
+	title: 'Use Cases',
+	options: [
+		{
+			text: 'Use Cases & Applications',
+			url: '/use-cases/',
+			external: false,
+		},
+		{
+			text: 'Tipping',
+			url: '/tipping/',
+			external: false,
+		},
+	],
+};
+
 export const discover: MenuOption = {
 	title: 'Discover',
 	options: [
@@ -55,6 +71,7 @@ export const menuOptions: MenuOption[] = [
 			{ text: 'Wiki', url: 'https://anagolay.dev' },
 			{ text: 'Github', url: 'https://github.com/anagolay' },
 			{ text: 'Gitlab', url: 'https://gitlab.com/anagolay' },
+			{ text: 'Status', url: 'https://status.kelp.digital/status/main-services' },
 		],
 	},
 ];
