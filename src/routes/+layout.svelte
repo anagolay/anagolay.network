@@ -1,8 +1,9 @@
-<script lang="ts">
+<script>
 	import '$src/app.css';
+
+	import Footer from '$src/components/Footer.svelte';
 	import NavBar from '$src/components/NavBar.svelte';
 	import TopButton from '$src/components/TopButton.svelte';
-	import Footer from '$src/components/Footer.svelte';
 </script>
 
 <NavBar />

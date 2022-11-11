@@ -1,4 +1,4 @@
-<script lang="ts">
+<script lang="ts" type="module">
 	import lottie from 'lottie-web';
 	import { onMount } from 'svelte';
 	export let src: string;

@@ -1,9 +1,7 @@
-import type { RequestHandlerOutput } from '@sveltejs/kit';
+import type { FeatureData } from '$src/types';
 
-// import type { FeatureData, TechnologyItem } from '$src/types';
-
-export async function get(): Promise<RequestHandlerOutput> {
-	const cardsContent = [
+export function load() {
+	const cardsContent: FeatureData[] = [
 		{
 			feature:
 				'It’s a novel approach, yet it has tremendous potential as it brings the best of both: the web3 tech stack and content-addressability.',
@@ -21,20 +19,14 @@ export async function get(): Promise<RequestHandlerOutput> {
 		},
 	];
 
-	const processCards = [
+	const processCards: string[] = [
 		'IDI Token Holders will be entitled to receive a number of AGY tokens,  respective to their IDI share. The % of IDI tokens holders included in the Anagolay genesis block.',
 		'After the launch of Anagolay, Idiyanale will either become a testnet for the upcoming features, or take a different path voted by the community.',
 		'IDI stakers can directly become nominated validators on Anagolay Network while keeping their role and stake on Idiyanale.',
 	];
 
-	const body = {
+	return {
 		processCards,
 		cardsContent,
-	};
-	//  as any;
-
-	return {
-		status: 200,
-		body,
 	};
 }

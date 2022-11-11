@@ -1,15 +1,15 @@
 <script lang="ts">
 	import Bottom from '$src/sections/use_cases/PilotCase.svelte';
-
 	import Case from '$src/sections/use_cases/Case.svelte';
 	import Description from '$src/sections/use_cases/Description.svelte';
 	import Title from '$src/sections/use_cases/Title.svelte';
-
-	import type { FeatureData, TechnologyItem } from '$src/types';
 	import SvelteSeo from 'svelte-seo';
 
-	export let descriptionItems: FeatureData[];
-	export let cases: TechnologyItem[];
+	import type { PageData } from './$types';
+
+	export let data: PageData;
+
+	const { descriptionItems, cases } = data;
 </script>
 
 <SvelteSeo

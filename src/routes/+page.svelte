@@ -9,13 +9,11 @@
 	import Tipping from '$src/sections/main/Tipping.svelte';
 	import SvelteSeo from 'svelte-seo';
 
-	import type { FeatureData, TrustProcessItem, UseCase, TeamMember, RoadmapItem } from '$src/types';
+	import type { PageData } from './$types';
 
-	export let beastFeatures: FeatureData[];
-	export let useCases: UseCase[];
-	export let trustProcessItems: TrustProcessItem[];
-	export let teamMembers: TeamMember[];
-	export let roadMapItems: RoadmapItem[];
+	export let data: PageData;
+
+	const { beastFeatures, useCases, trustProcessItems, teamMembers, roadMapItems } = data;
 </script>
 
 <SvelteSeo
