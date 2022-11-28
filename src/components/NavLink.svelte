@@ -33,7 +33,6 @@
 
 <a
 	class="w-full {color} min-w-fit hover:text-neonGreen-400 {extraClass}"
-	sveltekit:prefetch
 	href={option.url}
 	on:click|preventDefault={handleClick}
 	bind:this={anchor}
