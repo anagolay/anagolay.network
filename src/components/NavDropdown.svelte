@@ -13,7 +13,7 @@
 	let visible = 'hidden';
 	let menuContent: HTMLUListElement;
 
-	$: color = data.options.map((option) => option.url.replaceAll('/', '')).includes($page.routeId)
+	$: color = data.options.map((option) => option.url.replaceAll('/', '')).includes($page.route.id)
 		? 'text-neonGreen-400'
 		: 'text-spaceBlue-50';
 	$: height = show ? accordionHeightClass : 'h-6';
