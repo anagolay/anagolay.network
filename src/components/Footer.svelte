@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { menuOptions, media } from '$src/routes';
+	import { menuOptions, media } from '$src/routesFile';
 	import Section from './Section.svelte';
 </script>
 

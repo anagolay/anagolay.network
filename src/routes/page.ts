@@ -8,7 +8,7 @@ export enum status {
 	pending = 'pending',
 }
 
-export async function get(): Promise<RequestHandlerOutput> {
+export async function load(): Promise<RequestHandlerOutput> {
 	const beastFeatures =
 		// : FeatureData[]
 		[

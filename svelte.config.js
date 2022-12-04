@@ -19,32 +19,12 @@ const config = {
 		// 	fallback: 'index.html',
 		// }),
 		prerender: {
-			default: true,
 			concurrency: 4,
 		},
-		vite: {
-			resolve: {
-				alias: {
-					$src: resolve('./src'),
-				},
-				optimizeDeps: { include: ['lottie-web'] },
-			},
-			server: {
-				// configure vite for HMR with Gitpod
-				hmr: process.env.GITPOD_WORKSPACE_URL
-					? {
-							// removes the protocol and replaces it with the port we're connecting to
-							host: process.env.GITPOD_WORKSPACE_URL.replace('https://', '7776-'),
-							protocol: 'wss',
-							clientPort: 443,
-					  }
-					: true,
-			},
-		},
+
 		serviceWorker: {
 			register: false,
 		},
-		trailingSlash: 'always',
 	},
 };
 
