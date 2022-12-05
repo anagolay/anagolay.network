@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { discover, idiyanale, howItWorks, useCases, deck } from '$src/routes';
+	import { discover, idiyanale, howItWorks, useCases, deck } from '$src/routesFile';
 	import Hamburguer from './Hamburguer.svelte';
 	import NavDropdown from './NavDropdown.svelte';
 	import NavLink from './NavLink.svelte';

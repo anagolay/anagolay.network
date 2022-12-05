@@ -113,7 +113,7 @@ export interface TrustItem {
 export interface TechnologyItem {
 	id?: string;
 	title: string;
-	subtitle?: string;
+	subtitle: string;
 	contentLines: string[];
 	image: ImageData;
 	line1?: string;
