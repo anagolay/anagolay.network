@@ -8,7 +8,7 @@
 	});
 </script>
 
-<Section id="trust_the_process">
+<Section id="home_trust_the_process">
 	<div class="text-center mb-12 md:mb-16 mx-auto">
 		<h2 class="text-2xl md:text-4xl mb-6 md:mb-8 text-neonGreen-400">Trust the process</h2>
 		<p class="md:px-0 md:mx-auto text-base md:text-xl xl:text-2xl">

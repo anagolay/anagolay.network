@@ -5,7 +5,7 @@
 	export let cardsContent: FeatureData[];
 </script>
 
-<Section class="py-6 md:pb-20" id="succession_principle">
+<Section class="py-6 md:pb-20" id="idiyanale_succession_principle">
 	<div class="flex flex-col items-center text-center">
 		<h3 class="text-2xl md:text-3xl lg:text-4xl text-neonGreen-400 py-4">Succession principle</h3>
 		<p class="text-base md:text-xl 2xl:text-2xl md:w-3/4 md:mx-auto py-4">

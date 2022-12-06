@@ -25,7 +25,7 @@
 	</script>
 </svelte:head>
 
-<Section id="waitlist">
+<Section id="tipping_waitlist">
 	<div class="w-full pb-24 md:pb-40 flex flex-col items-center">
 		<h2 class="text-2xl md:text-4xl pt-20 pb-16 md:py-20 text-neonGreen-400 text-center max-w-2xl">
 			Stay in charge of what you create.

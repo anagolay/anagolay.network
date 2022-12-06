@@ -19,7 +19,7 @@
 </script>
 
 <Section
-	id="architecture"
+	id="how_it_works_architecture"
 	class="mt-20 pt-20 bg-gradient-to-b from-spaceBlue-50/10 to-transparent shadow-cardTop shadow-aquaTeal-300 pb-40"
 >
 	<div class="lg:w-5/6 mx-auto">

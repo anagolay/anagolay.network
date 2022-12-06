@@ -19,7 +19,7 @@ export function load() {
 	];
 	const technologyItems: TechnologyItem[] = [
 		{
-			id: 'statements',
+			id: 'how_it_works_statements',
 			title: 'Statements & Claims',
 			subtitle:
 				'Statements guarantee the rightfulness of a claim: Copyright, Ownership or any other data that can be presented as a semantic triple',
@@ -39,7 +39,7 @@ export function load() {
 			inner2: `rounded-r-3xl rounded-t-none -translate-x-${lineSize} -translate-y-${lineSize}`,
 		},
 		{
-			id: 'proofs',
+			id: 'how_it_works_proofs',
 			title: 'Proofs',
 			subtitle: 'The proof is sufficient evidence or a sufficient argument for the truth of a proposition.',
 			contentLines: [
@@ -60,7 +60,7 @@ export function load() {
 			inner2: `rounded-b-3xl rounded-r-none translate-x-${lineSize} -translate-y-${lineSize}`,
 		},
 		{
-			id: 'workflow',
+			id: 'how_it_works_workflow',
 			title: 'Workflow & Operations',
 			subtitle:
 				'Operation is a basic building block of a transparent and verifiable proof generation process. Stored Operations must be permanent.',
@@ -81,7 +81,7 @@ export function load() {
 			inner2: `rounded-b-3xl rounded-l-none -translate-x-${lineSize} -translate-y-${lineSize}`,
 		},
 		{
-			id: 'storage',
+			id: 'how_it_works_storage',
 			title: 'Decentralized Storage',
 			subtitle:
 				'Anagolay requirements for decentralized storage are:  IPFS based (content addressability), permanency, high durability',

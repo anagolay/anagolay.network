@@ -30,7 +30,7 @@
 	});
 </script>
 
-<Section id="roadmap">
+<Section id="home_roadmap">
 	<div class="w-80 max-w-full sm:w-full mx-auto pt-20 md:pt-28">
 		<div class="flex justify-between items-center w-full text-xs md:text-base pb-16">
 			<button
