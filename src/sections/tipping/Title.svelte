@@ -3,7 +3,7 @@
 	import SectionButton from '$src/components/SectionButton.svelte';
 </script>
 
-<Section class="overflow-hidden" backgroundClasses={['stars', 'stars2', 'stars3']}>
+<Section id="header" class="overflow-hidden" backgroundClasses={['stars', 'stars2', 'stars3']}>
 	<div class="relative w-full max-w-full flex flex-col text-center md:text-left md:flex-row pt-8 md:pt-24">
 		<div class="basis-1/2 flex flex-col items-center md:items-start lg:pt-12">
 			<h1 class="text-3xl md:text-5xl font-extrabold">

@@ -21,6 +21,7 @@ export function load() {
 	];
 	const cases: TechnologyItem[] = [
 		{
+			id: 'protect&share',
 			title: 'Protect & Share Creative Works Online',
 			contentLines: [
 				'While creating & storing records of Rights, Restrictions, and Proofs Anagolay allows content creators to establish how their digital assets are used and owned.',
@@ -40,6 +41,7 @@ export function load() {
 			],
 		},
 		{
+			id: 'p2p_licensing',
 			title: 'P2P Licensing & Intellectual Property Management',
 			contentLines: [
 				'Before someone can buy or rent (digital) goods, it has to be clear who has the right to sell them. Then we need to be able to transfer the ownership / certain rights from the seller(s) to the buyer(s).',
@@ -59,6 +61,7 @@ export function load() {
 			],
 		},
 		{
+			id: 'monetization',
 			title: 'Monetization of Community Support for Creators (of any kind)',
 			contentLines: [
 				'The Creator economy is on the rise, but creators still have to rely on a central entity (platforms) and abide by their rules. Anagolay enables community support for creators, decentralized.',
@@ -81,6 +84,7 @@ export function load() {
 			},
 		},
 		{
+			id: 'rights_management',
 			title: 'Rights Management for Real-World Objects',
 			contentLines: [
 				'The challenge of connecting real-live objects (from real estate to photography gear) with the digital self-sovereign identities of the owners (and other subjects of associated rights) remains unresolved.',

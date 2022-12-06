@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Section from '$src/components/Section.svelte';
-
 </script>
 
 <svelte:head>
@@ -23,12 +22,11 @@
 		})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
 
 		var ml_account = ml('accounts', '3570149', 'u6q2w6g8i7', 'load');
-
 	</script>
 </svelte:head>
 
-<Section>
-	<div id="waitlist" class="w-full pb-24 md:pb-40 flex flex-col items-center">
+<Section id="waitlist">
+	<div class="w-full pb-24 md:pb-40 flex flex-col items-center">
 		<h2 class="text-2xl md:text-4xl pt-20 pb-16 md:py-20 text-neonGreen-400 text-center max-w-2xl">
 			Stay in charge of what you create.
 			<br />

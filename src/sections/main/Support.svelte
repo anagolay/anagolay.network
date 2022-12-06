@@ -2,7 +2,7 @@
 	import Section from '$src/components/Section.svelte';
 </script>
 
-<Section class="pt-20 md:pt-40">
+<Section class="pt-20 md:pt-40" id="support">
 	<h2 class="text-center text-xl md:text-3xl pb-8 text-neonGreen-400">Supported by</h2>
 
 	<div

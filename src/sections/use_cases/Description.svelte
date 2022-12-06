@@ -6,7 +6,7 @@
 	export let descriptionItems: FeatureData[];
 </script>
 
-<Section>
+<Section id="features">
 	<div class="flex flex-col md:flex-row w-full py-12 justify-between">
 		{#each descriptionItems as item}
 			<DescriptionCard {item} />

@@ -5,7 +5,7 @@
 	export let processCards: string[];
 </script>
 
-<Section class="py-12 md:pt-20 md:pb-40">
+<Section class="py-12 md:pt-20 md:pb-40" id="process">
 	<div class="flex w-full justify-center">
 		<div class="flex items-center gap-2 md:gap-4 text-xl md:text-2xl xl:text-4xl max-w-3xl py-8 md:py-16">
 			<FadeinCard class="transition-opacity duration-500">

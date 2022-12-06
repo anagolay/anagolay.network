@@ -3,7 +3,7 @@
 	import Section from './Section.svelte';
 </script>
 
-<Section>
+<Section id="footer">
 	<div class="font-montserrat">
 		<hr class="mb-6 opacity-50 md:-mx-4 color-white" />
 		<div class="flex flex-col md:flex-row items-center md:items-start text-center md:mx-auto text-base">
