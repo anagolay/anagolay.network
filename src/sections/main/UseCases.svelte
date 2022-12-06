@@ -7,7 +7,7 @@
 	export let useCases: UseCase[];
 </script>
 
-<Section class="home_overflow-hidden" id="use_cases" backgroundClasses={['stars', 'stars2', 'stars3']}>
+<Section class="overflow-hidden" id="home_use_cases" backgroundClasses={['stars', 'stars2', 'stars3']}>
 	<div class="relative w-80 max-w-full mx-auto md:w-full py-24">
 		<div class="mt-0 w-full flex flex-col items-center">
 			<h2 class="w-5/6 mt-8 text-lg md:mb-12 md:text-2xl text-center">

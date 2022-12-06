@@ -14,7 +14,7 @@
 				your public identities and receive tips from audiences across your established channels. No need for
 				sign-ups & registrations.
 			</h2>
-			<SectionButton url="#waitlist" class="cursor-pointer mb-4">Join the waitlist</SectionButton>
+			<SectionButton url="#tipping_waitlist" class="cursor-pointer mb-4">Join the waitlist</SectionButton>
 		</div>
 		<div class="basis-1/2 pt-12 md:pt-0 md:flex flex-col justify-center">
 			<div class="relative w-5/6 mx-auto md:mr-0 md:w-[120%]">

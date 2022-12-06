@@ -40,7 +40,7 @@
 		</div>
 	</div>
 </Section>
-<Section id="features">
+<Section id="how_it_works_trust_items">
 	<div class="relative flex flex-wrap gap-4 justify-evenly pt-24 md:pb-20">
 		{#each trustItems as trustItem}
 			<TrustCard {trustItem} />

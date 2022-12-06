@@ -4,17 +4,17 @@ const lineSize = '[2px]';
 
 export function load() {
 	const trustItems: TrustItem[] = [
-		{ icon: 'copyright', text: 'Statements & Claims', anchor: '#statements' },
-		{ img: { src: '/icon_proof.svg', alt: 'proof' }, text: 'Proofs', anchor: '#proofs' },
+		{ icon: 'copyright', text: 'Statements & Claims', anchor: '#how_it_works_statements' },
+		{ img: { src: '/icon_proof.svg', alt: 'proof' }, text: 'Proofs', anchor: '#how_it_works_proofs' },
 		{
 			img: { src: '/icon_workflow.svg', alt: 'workflow' },
 			text: 'Workflow & Operations',
-			anchor: '#workflow',
+			anchor: '#how_it_works_workflow',
 		},
 		{
 			img: { src: '/icon_decentralized.svg', alt: 'decentralized network' },
 			text: 'Decentralized Storage',
-			anchor: '#storage',
+			anchor: '#how_it_works_storage',
 		},
 	];
 	const technologyItems: TechnologyItem[] = [

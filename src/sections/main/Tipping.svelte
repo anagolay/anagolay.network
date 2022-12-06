@@ -3,7 +3,7 @@
 	import SectionButton from '$src/components/SectionButton.svelte';
 </script>
 
-<section class="pt-12 md:pt-20" id="home_tipping">
+<section class="pt-12 md:pt-20 overflow-hidden" id="home_tipping">
 	<Marquee length={100}>
 		<div class="py-0 px-1 md:p-1 flex gap-1 md:gap-2 text-base md:text-lg" slot="text">
 			<div>NEW</div>
