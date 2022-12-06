@@ -4,12 +4,11 @@
 	import Architecture from '$src/sections/how-it-works/Architecture.svelte';
 	import SvelteSeo from 'svelte-seo';
 
-	import type { TrustItem, TechnologyItem, ArchitectureItem, WebLayerIcon } from '$src/types';
+	import type { PageData } from './$types';
 
-	export let trustItems: TrustItem[];
-	export let technologyItems: TechnologyItem[];
-	export let webLayerIcons: WebLayerIcon[];
-	export let architectureItems: ArchitectureItem[];
+	export let data: PageData;
+
+	const { trustItems, technologyItems, webLayerIcons, architectureItems } = data;
 </script>
 
 <SvelteSeo

@@ -3,11 +3,13 @@
 	import HowTippingWorks from '$src/sections/tipping/HowTippingWorks.svelte';
 	import Title from '$src/sections/tipping/Title.svelte';
 	import Waitlist from '$src/sections/tipping/Waitlist.svelte';
-	import type { FeatureData, TippingStep } from '$src/types';
 	import SvelteSeo from 'svelte-seo';
 
-	export let features: FeatureData[];
-	export let steps: TippingStep[];
+	import type { PageData } from './$types';
+
+	export let data: PageData;
+
+	const { features, steps } = data;
 </script>
 
 <SvelteSeo

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { whitePaperUrl } from '../../routes';
+	import { whitePaperUrl } from '$src/routesFile';
 	import Section from '$src/components/Section.svelte';
 	import SectionButton from '$src/components/SectionButton.svelte';
 	import TrustCard from '$src/components/TrustCard.svelte';

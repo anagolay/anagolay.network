@@ -1,11 +1,9 @@
-import type { RequestHandlerOutput } from '@sveltejs/kit';
-
-//import type { TrustItem, TechnologyItem, ArchitectureItem, WebLayerIcon } from '$src/types';
+import type { TrustItem, TechnologyItem, ArchitectureItem, WebLayerIcon } from '$src/types';
+// import type { PageLoad } from './$types';
 const lineSize = '[2px]';
 
-// export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
-export async function get(): Promise<RequestHandlerOutput> {
-	const trustItems = [
+export function load() {
+	const trustItems: TrustItem[] = [
 		{ icon: 'copyright', text: 'Statements & Claims', anchor: '#statements' },
 		{ img: { src: '/icon_proof.svg', alt: 'proof' }, text: 'Proofs', anchor: '#proofs' },
 		{
@@ -19,7 +17,7 @@ export async function get(): Promise<RequestHandlerOutput> {
 			anchor: '#storage',
 		},
 	];
-	const technologyItems = [
+	const technologyItems: TechnologyItem[] = [
 		{
 			id: 'statements',
 			title: 'Statements & Claims',
@@ -52,7 +50,6 @@ export async function get(): Promise<RequestHandlerOutput> {
 			image: {
 				width: 806,
 				height: 750,
-				// class: 'w-1/2 md:w-3/4 -mt-[20%] md:mt-0 lg:-mt-[10%]',
 				class: '-mt-20 w-5/6 md:-mt-10',
 				source: '/how_it_works_proofs.svg',
 				altText: 'Process proofs',
@@ -74,7 +71,6 @@ export async function get(): Promise<RequestHandlerOutput> {
 			image: {
 				width: 874,
 				height: 787,
-				// class: 'w-5/6 -mt-[10%] md:mt-[10%] lg:mt-0',
 				class: 'scale-110 w-full  ml-[10%]',
 				source: '/how_it_works_workflow.svg',
 				altText: 'Process workflow',
@@ -96,7 +92,6 @@ export async function get(): Promise<RequestHandlerOutput> {
 			image: {
 				width: 806,
 				height: 726,
-				// class: 'w-2/3 md:pb-20 xl:py-10',
 				class: 'w-3/4 lg:-mt-[15%]',
 				source: '/how_it_works_storage.svg',
 				altText: 'Storage',
@@ -106,7 +101,7 @@ export async function get(): Promise<RequestHandlerOutput> {
 		},
 	];
 
-	const webLayerIcons = [
+	const webLayerIcons: WebLayerIcon[] = [
 		{ title: 'Typescript', source: '/icon_typescript.svg' },
 		{ title: 'Svelte', source: '/icon_svelte.svg' },
 		{ title: 'Polka', source: '/icon_polka.svg' },
@@ -114,7 +109,7 @@ export async function get(): Promise<RequestHandlerOutput> {
 		{ title: 'Tailwind css', source: '/icon_tailwind.svg' },
 	];
 
-	const architectureItems = [
+	const architectureItems: ArchitectureItem[] = [
 		{
 			image: { source: '/icon_ipfs.svg', altText: 'IPFS icon' },
 			title: 'Storage Layer',
@@ -129,15 +124,10 @@ export async function get(): Promise<RequestHandlerOutput> {
 		},
 	];
 
-	const body = {
+	return {
 		trustItems,
 		technologyItems,
 		webLayerIcons,
 		architectureItems,
-	};
-
-	return {
-		status: 200,
-		body,
 	};
 }

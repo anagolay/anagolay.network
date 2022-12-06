@@ -10,7 +10,6 @@
 
 <a
 	class="basis-[45%] sm:basis-1/5 mt-4 flex flex-col pb-2 lg:pb-7 bg-spaceBlue-900 items-center text-center border border-spaceBlue-800 rounded-xl md:rounded-3xl bg-gradient-to-b from-spaceBlue-50/5 to-transparent"
-	sveltekit:prefetch
 	href={trustItem.anchor}
 	on:click|preventDefault={onClick}
 >

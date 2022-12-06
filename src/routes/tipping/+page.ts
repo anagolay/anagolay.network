@@ -1,8 +1,7 @@
-import type { RequestHandlerOutput } from '@sveltejs/kit';
+import type { FeatureData, TippingStep } from '$src/types';
 
-// export const get: RequestHandler = async (): Promise<RequestHandlerOutput> => {
-export async function get(): Promise<RequestHandlerOutput> {
-	const features = [
+export function load() {
+	const features: FeatureData[] = [
 		{ feature: 'Verified Creators Only', img: { src: '/icon_proof.svg', alt: 'verified' } },
 		{ feature: 'Across plattforms', img: { src: '/icon_interconnectivity.svg', alt: 'interconnectivity' } },
 		{
@@ -11,7 +10,7 @@ export async function get(): Promise<RequestHandlerOutput> {
 		},
 		{ feature: 'No Custodial Wallet', img: { src: '/icon_wallet.svg', alt: 'wallet' } },
 	];
-	const steps = [
+	const steps: TippingStep[] = [
 		{
 			number: 1,
 			title: 'Verify & connect your channels: domains and online identities.',
@@ -53,13 +52,8 @@ export async function get(): Promise<RequestHandlerOutput> {
 		},
 	];
 
-	const body = {
+	return {
 		features,
 		steps,
-	};
-
-	return {
-		status: 200,
-		body,
 	};
 }
