@@ -30,8 +30,8 @@
 	});
 </script>
 
-<Section>
-	<div class="w-80 max-w-full sm:w-full mx-auto pt-28 md:pt-40">
+<Section id="home_roadmap">
+	<div class="w-80 max-w-full sm:w-full mx-auto pt-20 md:pt-28">
 		<div class="flex justify-between items-center w-full text-xs md:text-base pb-16">
 			<button
 				class="flex items-center text-left w-1/3 opacity-60 cursor-pointer hover:opacity-100"

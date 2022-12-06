@@ -3,7 +3,7 @@
 	import LottiePlayer from '$src/components/LottiePlayer.svelte';
 </script>
 
-<Section class="overflow-hidden" backgroundClasses={['stars', 'stars2', 'stars3']}>
+<Section id="idiyanale_header" class="overflow-hidden" backgroundClasses={['stars', 'stars2', 'stars3']}>
 	<div
 		class="relative w-full max-w-full flex flex-col text-center md:text-left md:flex-row py-8 md:pt-24 pb-12 md:pb-32"
 	>

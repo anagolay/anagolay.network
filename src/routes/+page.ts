@@ -47,21 +47,21 @@ export function load() {
 			alt: 'Secure process',
 			text: 'The power of Anagolay is in creating application-agnostic processes (or Workflows) that everyone can trust.',
 			linkText: 'Anagolay workflows',
-			link: '/how-it-works/#workflow',
+			link: '/how-it-works/#how_it_works_workflow',
 		},
 		{
 			src: '/trust_world.svg',
 			alt: 'World Validation',
 			text: 'Anagolay Workflow and its building blocks — Operations can be run anywhere in any environment (even on Mars!) and always produce the same results (Proofs) for the same (or similar) sets of data.',
 			linkText: 'Anagolay proofs',
-			link: '/how-it-works/#proofs',
+			link: '/how-it-works/#how_it_works_proofs',
 		},
 		{
 			src: '/trust_print.svg',
 			alt: 'Proofs',
 			text: 'Anagolay Proofs, combined with cryptographic signatures, verify the rightfulness of a claim and generate Verifiable Statements.',
 			linkText: 'Anagolay statements',
-			link: '/how-it-works/#statements',
+			link: '/how-it-works/#how_it_works_statements',
 		},
 	];
 

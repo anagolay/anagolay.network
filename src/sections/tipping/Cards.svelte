@@ -6,7 +6,7 @@
 	export let features: FeatureData[];
 </script>
 
-<Section class="py-20">
+<Section class="py-20" id="tipping_comunity_revolution">
 	<div class="flex w-full justify-center">
 		<div
 			class="basis-5/6 flex justify-center text-center text-xl md:text-2xl xl:text-4xl max-w-3xl py-8 md:py-16 xl:py-8"
