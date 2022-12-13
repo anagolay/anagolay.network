@@ -84,4 +84,5 @@ export const media: MediaIcon[] = [
 		url: 'https://matrix.to/#/#anagolay-general:matrix.org',
 		image: '/matrix.svg',
 	},
+	{ name: 'Mastodon', url: 'https://mastodon.social/@anagolay', image: '/mastodon.svg' },
 ];
