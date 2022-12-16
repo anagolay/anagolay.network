@@ -45,6 +45,7 @@
 					<div
 						class="avatar {member.opacity} duration-700 hover:opacity-100"
 						on:click={() => selectMember(member.name)}
+						on:keydown
 					>
 						<div class="mask mask-circle mask-[10px] duration-700 w-full cursor-pointer">
 							<img class="rounded-[100%]" width="137" height="137" src={member.img} alt={member.name} />

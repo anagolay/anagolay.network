@@ -25,7 +25,6 @@
 </script>
 
 <nav
-	data-sveltekit-prefetch
 	class="sticky top-0 z-20 py-2 items-center justify-center bg-spaceBlue-900 text-sm md:text-base text-white h-16 md:h-20 md:justify-between border-b border-spaceBlue-50/50"
 >
 	<div class="md:container">
