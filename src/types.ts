@@ -88,6 +88,12 @@ interface Phase {
 	cardStyling?: string;
 }
 
+export enum status {
+	done = 'done',
+	doing = 'doing',
+	pending = 'pending',
+}
+
 export interface RoadmapItem {
 	title: string;
 	year: number;
