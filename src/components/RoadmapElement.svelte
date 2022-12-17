@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { RoadmapItem } from '$src/types';
-	import { status } from '$src/routes/+page';
+	import { status } from '$src/types';
 
 	export let roadMapItem: RoadmapItem;
 

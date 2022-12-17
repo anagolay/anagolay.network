@@ -1,11 +1,6 @@
 import type { FeatureData, TrustProcessItem, UseCase, TeamMember, RoadmapItem } from '$src/types';
+import { status } from '$src/types';
 // import type { PageLoad } from './$types';
-
-export enum status {
-	done = 'done',
-	doing = 'doing',
-	pending = 'pending',
-}
 
 export function load() {
 	const beastFeatures: FeatureData[] = [
