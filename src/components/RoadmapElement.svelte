@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { RoadmapItem } from '$src/types';
-	import { status } from '$src/types';
+	import { STATUS } from '$src/types';
 
 	export let roadMapItem: RoadmapItem;
 
@@ -14,19 +14,19 @@
 	const instanceStatuses = roadMapItem.instances.map((i) => {
 		//this function sets classes for each instance card.
 		i.cardStyling = `${
-			i.status === status.doing
+			i.status === STATUS.doing
 				? 'bg-gradient-to-l from-neonGreen-400/10 to-transparent border border-neonGreen-400/60 shadow-sm shadow-neonGreen-400/60'
 				: 'bg-gradient-to-b from-spaceBlue-50/5 to-transparent shadow-card border border-spaceBlue-50/20 shadow-transparent'
-		} ${i.status === status.pending ? 'opacity-50' : 'bg-opacity-80'}`;
+		} ${i.status === STATUS.pending ? 'opacity-50' : 'bg-opacity-80'}`;
 		return i.status;
 	});
 
 	// this sentence sets the blur and opacity of each point in timeline.
-	if (instanceStatuses.includes(status.doing)) {
+	if (instanceStatuses.includes(STATUS.doing)) {
 		pointBlur = 'blur-[2px]';
 		pointOpacity = 'opacity-90';
 		titleShadow = 'shadow-neonGreen-400';
-	} else if (instanceStatuses.includes(status.pending)) {
+	} else if (instanceStatuses.includes(STATUS.pending)) {
 		pointBlur = 'blur-[5px]';
 		pointOpacity = 'opacity-75';
 		titleOpacity = 'opacity-30';

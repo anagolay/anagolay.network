@@ -88,7 +88,7 @@ interface Phase {
 	cardStyling?: string;
 }
 
-export enum status {
+export enum STATUS {
 	done = 'done',
 	doing = 'doing',
 	pending = 'pending',
