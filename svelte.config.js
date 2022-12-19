@@ -9,10 +9,12 @@ const config = {
 		adapter: adapter({
 			precompress: true,
 		}),
+		prerender: {
+			concurrency: 4,
+		},
 		serviceWorker: {
 			register: false,
 		},
-		trailingSlash: 'always',
 	},
 };
 
