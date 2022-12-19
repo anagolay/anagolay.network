@@ -1,5 +1,5 @@
 import type { FeatureData, TrustProcessItem, UseCase, TeamMember, RoadmapItem } from '$src/types';
-import { status } from '$src/types';
+import { STATUS } from '$src/types';
 // import type { PageLoad } from './$types';
 
 export function load() {
@@ -137,16 +137,16 @@ export function load() {
 			title: 'Q1',
 			year: 2021,
 			instances: [
-				{ goal: 'Concept Design ready', status: status.done },
-				{ goal: 'Key Technologies Validation', status: status.done },
+				{ goal: 'Concept Design ready', status: STATUS.done },
+				{ goal: 'Key Technologies Validation', status: STATUS.done },
 			],
 		},
 		{
 			title: 'Q2',
 			year: 2021,
 			instances: [
-				{ goal: 'Protocol Design', status: status.done },
-				{ goal: 'Anagolay Chain Prototype', status: status.done },
+				{ goal: 'Protocol Design', status: STATUS.done },
+				{ goal: 'Anagolay Chain Prototype', status: STATUS.done },
 			],
 		},
 		{
@@ -155,9 +155,9 @@ export function load() {
 			instances: [
 				{
 					goal: 'Initial Version of Anagolay Chain Implementation',
-					status: status.done,
+					status: STATUS.done,
 				},
-				{ goal: 'Initial Documentation Version', status: status.done },
+				{ goal: 'Initial Documentation Version', status: STATUS.done },
 			],
 		},
 		{
@@ -168,11 +168,11 @@ export function load() {
 					goal: 'Self-hosted service for rehosting git repositories on IPFS',
 					description:
 						'An important milestone for Anagolay, as building the provable process for proof generation must always execute the same code.\nDetails and results are [presented here](https://dev.to/woss/part-1-rehosting-git-repositories-on-ipfs-23bf)',
-					status: status.done,
+					status: STATUS.done,
 				},
 				{
 					goal: 'Anagolay Publishing Service (1st iteration)',
-					status: status.done,
+					status: STATUS.done,
 				},
 			],
 		},
@@ -182,13 +182,13 @@ export function load() {
 			instances: [
 				{
 					goal: 'Idiyanale Phase 1/2 (Web3 Foundation Grant)',
-					status: status.done,
+					status: STATUS.done,
 				},
 				{
 					goal: 'Most common (generic) Operations & Workflows implemented',
 					description:
 						'Most common (generic) Operations that will be used in almost any Workflow. This includes features from QRCode generation, Multimedia extraction, calculation of Cryptographic hashes, and a multitude of perceptual and Locally sensitive hashes.',
-					status: status.done,
+					status: STATUS.done,
 				},
 			],
 		},
@@ -196,16 +196,16 @@ export function load() {
 			title: 'Q2',
 			year: 2022,
 			instances: [
-				{ goal: ' Anagolay rebrand and new website', status: status.done },
+				{ goal: ' Anagolay rebrand and new website', status: STATUS.done },
 				{
 					goal: 'Idiyanale Phase 2/2 (Web3 Foundation Grant)',
-					status: status.done,
+					status: STATUS.done,
 				},
 				{
 					goal: 'PoE & Statement of Ownership and Copyright',
 					description:
 						'Improve and re-design the workflows specific for Proofs-of-Exitance & Statement of Ownership and Copyright. Where blockchain is not the central technology, but a facilitator of transparency & freedom for the build architecture.',
-					status: status.done,
+					status: STATUS.done,
 				},
 			],
 		},
@@ -215,17 +215,17 @@ export function load() {
 			instances: [
 				{
 					goal: 'Domain Verification & Macula  PoC',
-					status: status.done,
+					status: STATUS.done,
 				},
 				{
 					goal: 'Anagolay Workflow Builder',
-					status: status.done,
+					status: STATUS.done,
 				},
 				{
 					goal: 'Anagolay SDK',
 					description:
 						'While building SDK we will focus on the features for our JS/TS SDK, because the Anagolay interaction will come mostly from the Web Browser, Smart phones and Desktop environments. Our goal is to design SDK as intuitive and developer-friendly as possible.',
-					status: status.done,
+					status: STATUS.done,
 				},
 			],
 		},
@@ -233,11 +233,11 @@ export function load() {
 			title: 'Q4',
 			year: 2022,
 			instances: [
-				{ goal: 'Idiyanale Mainnet Ready', status: status.doing },
-				{ goal: 'IDI Token Launch', status: status.doing },
+				{ goal: 'Idiyanale Mainnet Ready', status: STATUS.doing },
+				{ goal: 'IDI Token Launch', status: STATUS.doing },
 				{
 					goal: 'Promote for Use Cases and Get Apps Running on Idiyanale',
-					status: status.doing,
+					status: STATUS.doing,
 				},
 			],
 		},
@@ -249,13 +249,13 @@ export function load() {
 					goal: 'Distributed-build system for Artefacts',
 					description:
 						"Each Operation and Workflow produce the built artifacts for WASM and rust language targets. These artifacts must not be tampered with before they are stored on the chain and they must not be built on the developers' machines. If they were, then the developers can act as bad actors and try to inject the code in the middle of the process and try to fool any other user who will use that Operation or Workflow. This is going to be a new application and will come together with the incentive layer on-chain.",
-					status: status.pending,
+					status: STATUS.pending,
 				},
 				{
 					goal: 'Innovation on the permanent storage for Anagolay purpose',
 					description:
 						'this may include the on-chain incentive to have the IPFS nodes running (either cluster or not) and storing the off-chain Anagolay data; Operation, Workflow and any other artefacts that are needed to have the Statements working.',
-					status: status.pending,
+					status: STATUS.pending,
 				},
 			],
 		},
@@ -267,9 +267,9 @@ export function load() {
 					goal: 'Extensive testing and code improvements to fit low-energy devices',
 					description:
 						'Extensive testing and code improvements to fit low-energy devices like smartphones and Raspberry Pi (with an idea that the Anagolay can be run anywhere, even on Mars). Low energy devices are quite powerful and they can be used to be part of the Anagolay validator set, effectively validating the chain and its transactions. We develop our solution with a mindset, that every drop of energy matters.',
-					status: status.pending,
+					status: STATUS.pending,
 				},
-				{ goal: 'Extended set of common Workflows and Operations ', status: status.pending },
+				{ goal: 'Extended set of common Workflows and Operations ', status: STATUS.pending },
 			],
 		},
 	];
