@@ -38,6 +38,7 @@ export interface MediaIcon {
 	name: string;
 	url: string;
 	image: string;
+	rel?: string;
 }
 
 // interface added for 'Features' section data in main page
