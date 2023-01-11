@@ -13,12 +13,12 @@
 
 <SvelteSeo
 	title="Anagolay Network - How does it work?"
-	description="P2P Network to verify authorship & ownership, store & deliver proofs."
+	description="Verify authorship & ownership with transparant workflows, store & deliver proofs."
 	keywords="anagolay, blockchain, workflow, transparent, process, substrate, web3"
 	twitter={{
 		site: '@AnagolayNet',
 		title: 'Anagolay Network - How does it work?',
-		description: 'P2P Network to verify authorship & ownership, store & deliver proofs.',
+		description: 'Verify authorship & ownership with transparant workflows, store & deliver proofs.',
 		image:
 			'https://ipfs.anagolay.network/ipfs/QmTEVPpvQLbvLFB1tu1KyCz22osvt5YGQUGZLJtUiotaPY?filename=twitter_card_how_it_works.png',
 		imageAlt: 'Blue background with Anagolay brand logo',

@@ -14,12 +14,13 @@
 
 <SvelteSeo
 	title="Anagolay Network - Use Cases"
-	description="Essential infrastructure for the emerging ownership economy to work."
+	description="Claim and prove ownership. Manage & monetize communities across existing distribution channels. Protect, share and license creative works p2p. Simple, transparent, secure, and fair."
 	keywords="anagolay, workflow, transparent, process, ownership economy, rights management, copyright, content creators"
 	twitter={{
 		site: '@AnagolayNet',
 		title: 'Anagolay Network - Use Cases',
-		description: 'Essential infrastructure for the emerging ownership economy to work.',
+		description:
+			'Claim and prove ownership. Manage & monetize communities across existing distribution channels. Protect, share and license creative works p2p. Simple, transparent, secure, and fair.',
 		image:
 			'https://ipfs.anagolay.network/ipfs/QmUj35FFkSH8rrQCmZAEG9W2D4TVJrqi4T7xSc7DgXckiv?filename=twitter_card_use_cases.png',
 		imageAlt: 'Blue background with Anagolay brand logo',
