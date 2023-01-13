@@ -18,13 +18,13 @@
 
 <SvelteSeo
 	title="Anagolay Network - Process-based Interplanetary P2P Framework"
-	description="P2P Network to verify authorship, protect and manage copyright & ownership. Statements of Rights (Copyright, Licenses, and Ownership), Restrictions, and Proofs created with Anagolay Workflows empower users to store, claim, sell, and rent creative works as digital assets with the correct transfer of Rights and usage of Licenses."
+	description="Process-based interplanetary P2P framework built for storing & transferring Intellectual Property rights (Copyright, Licenses, Ownerships) as verifiable records"
 	keywords="anagolay, blockchain, workflow, transparent process, substrate, copyright statements, ownership statements, web3 rights management"
 	twitter={{
 		site: '@AnagolayNet',
 		title: 'Anagolay Network - Process-based Interplanetary P2P Framework',
 		description:
-			'P2P Network to verify authorship, protect and manage copyright & ownership. Statements of Rights (Copyright, Licenses, and Ownership), Restrictions, and Proofs created with Anagolay Workflows empower users to store, claim, sell, and rent creative works as digital assets with the correct transfer of Rights and usage of Licenses.',
+			'Process-based interplanetary P2P framework built for storing & transferring Intellectual Property rights (Copyright, Licenses, Ownerships) as verifiable records',
 		image:
 			'https://ipfs.anagolay.network/ipfs/QmZTpn19dZ5GJijKVn3aGg4HtwWTe9hx4sxqxdRXUjTrzt?filename=twitter_card_home.png',
 		imageAlt: 'White background with Anagolay brand logo',

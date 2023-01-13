@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+sitemap: https://anagolay.network/sitemap.xml
