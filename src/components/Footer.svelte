@@ -44,7 +44,7 @@
 							class="flex justify-center items-center shadow-button h-12 w-12 rounded-full bg-spaceBlue-800 text-white active:shadow-pressed"
 							aria-label="social-media-{item.name}"
 							target="_blank"
-							rel="noopener noreferrer"
+							rel={item.rel || 'noopener noreferrer'}
 						>
 							<img
 								class="max-h-5 max-w-[20px]"

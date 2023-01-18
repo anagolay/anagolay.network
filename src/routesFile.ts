@@ -77,11 +77,20 @@ export const menuOptions: MenuOption[] = [
 ];
 
 export const media: MediaIcon[] = [
-	{ name: 'Discord', url: 'https://discordapp.com/invite/WHe4EuY', image: '/discord.svg' },
-	{ name: 'Twitter', url: 'https://twitter.com/AnagolayNet', image: '/twitter.svg' },
+	{
+		name: 'Discord',
+		url: 'https://discordapp.com/invite/WHe4EuY',
+		image: '/discord.svg',
+	},
+	{
+		name: 'Twitter',
+		url: 'https://twitter.com/AnagolayNet',
+		image: '/twitter.svg',
+	},
 	{
 		name: 'Matrix',
 		url: 'https://matrix.to/#/#anagolay-general:matrix.org',
 		image: '/matrix.svg',
 	},
+	{ name: 'Mastodon', url: 'https://mastodon.social/@anagolay', image: '/mastodon.svg', rel: 'me' },
 ];
