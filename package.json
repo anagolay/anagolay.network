@@ -14,8 +14,8 @@
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "pnpm lint:eslint && pnpm lint:prettier",
-		"lint:eslint": "eslint --ignore-path .gitignore .",
-		"lint:prettier": "prettier --ignore-path .gitignore --check .",
+		"lint:eslint": "eslint --ignore-path .eslintignore .",
+		"lint:prettier": "prettier --ignore-path .prettierignore --check .",
 		"pretty-quick": "pretty-quick --staged",
 		"format": "prettier --ignore-path .gitignore --write ."
 	},

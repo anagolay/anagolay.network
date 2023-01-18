@@ -13,14 +13,13 @@
 
 <SvelteSeo
 	title="Idiyanale Network - Pioneer MainNet for Anagolay Framework"
-	description="A playground for developers to try and test both new and existing features of Anagolay framework in an unrefined, unpredictable but realistic on-chain environment. Workflows & Operations stored on Idiyanale can be used to verify authorship, protect and manage copyright & ownership."
-	keywords="idiyanale, anagolay, blockchain, workflow, transparent process, substrate,
-	copyright statements, ownership statements, web3 rights management, pioneer network"
+	description="Playground for developers to test both new and existing features of Anagolay framework in an unrefined, unpredictable, but realistic on-chain environment"
+	keywords="idiyanale, anagolay, blockchain, workflow, transparent process, substrate, copyright statements, ownership statements, web3 rights management, pioneer network"
 	twitter={{
 		site: '@IdiyanaleNet',
 		title: 'Idiyanale Network - Pioneer MainNet for Anagolay Framework',
 		description:
-			'A playground for developers to try and test both new and existing features of Anagolay framework in an unrefined, unpredictable but realistic on-chain environment. Workflows & Operations stored on Idiyanale can be used to verify authorship, protect and manage copyright & ownership.',
+			'Playground for developers to test both new and existing features of Anagolay framework in an unrefined, unpredictable, but realistic on-chain environment',
 		image:
 			'https://ipfs.anagolay.network/ipfs/QmWJxT7s4BxZUm5XGfs2NdUk2GJJpyWDN7HzVGNGqvby1M?filename=idiyanale_twittercard.png',
 		imageAlt: 'Blue background with Idiyanale white brand logo',
