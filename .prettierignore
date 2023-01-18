@@ -6,3 +6,6 @@
 .env
 .env.*
 !.env.example
+.pnpm-store
+*.log
+pnpm-lock.yaml
