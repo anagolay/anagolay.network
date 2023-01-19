@@ -233,11 +233,11 @@ export function load() {
 			title: 'Q4',
 			year: 2022,
 			instances: [
-				{ goal: 'Idiyanale Mainnet Ready', status: STATUS.doing },
-				{ goal: 'IDI Token Launch', status: STATUS.doing },
+				{ goal: 'Multi-token community contributions for verified creators.', status: STATUS.done },
+				{ goal: 'Macula Image & Hosting (IPFS layer)', status: STATUS.done },
 				{
-					goal: 'Promote for Use Cases and Get Apps Running on Idiyanale',
-					status: STATUS.doing,
+					goal: 'Verifications Pallet: domains',
+					status: STATUS.done,
 				},
 			],
 		},
@@ -246,16 +246,16 @@ export function load() {
 			year: 2023,
 			instances: [
 				{
-					goal: 'Distributed-build system for Artefacts',
-					description:
-						"Each Operation and Workflow produce the built artifacts for WASM and rust language targets. These artifacts must not be tampered with before they are stored on the chain and they must not be built on the developers' machines. If they were, then the developers can act as bad actors and try to inject the code in the middle of the process and try to fool any other user who will use that Operation or Workflow. This is going to be a new application and will come together with the incentive layer on-chain.",
-					status: STATUS.pending,
+					goal: 'Tipping Pallet ',
+					status: STATUS.doing,
 				},
 				{
-					goal: 'Innovation on the permanent storage for Anagolay purpose',
-					description:
-						'this may include the on-chain incentive to have the IPFS nodes running (either cluster or not) and storing the off-chain Anagolay data; Operation, Workflow and any other artefacts that are needed to have the Statements working.',
-					status: STATUS.pending,
+					goal: 'Anagolay App & Extension (MVP)',
+					status: STATUS.doing,
+				},
+				{
+					goal: '1st Private Round',
+					status: STATUS.doing,
 				},
 			],
 		},
@@ -264,12 +264,59 @@ export function load() {
 			year: 2023,
 			instances: [
 				{
-					goal: 'Extensive testing and code improvements to fit low-energy devices',
-					description:
-						'Extensive testing and code improvements to fit low-energy devices like smartphones and Raspberry Pi (with an idea that the Anagolay can be run anywhere, even on Mars). Low energy devices are quite powerful and they can be used to be part of the Anagolay validator set, effectively validating the chain and its transactions. We develop our solution with a mindset, that every drop of energy matters.',
+					goal: 'Idiyanale genesis block, IDI Token launch',
 					status: STATUS.pending,
 				},
-				{ goal: 'Extended set of common Workflows and Operations ', status: STATUS.pending },
+				{
+					goal: 'Anagolay App: creators’ dashboard',
+					status: STATUS.pending,
+				},
+				{
+					goal: 'Partner integrations',
+					status: STATUS.pending,
+				},
+			],
+		},
+		{
+			title: 'Q3',
+			year: 2023,
+			instances: [
+				{
+					goal: 'Additional verification strategies',
+					status: STATUS.pending,
+				},
+				{
+					goal: 'User Acquisition & Growth',
+					status: STATUS.pending,
+				},
+			],
+		},
+		{
+			title: 'Q4',
+			year: 2023,
+			instances: [
+				{
+					goal: 'New workflows & integrations: audio',
+					status: STATUS.pending,
+				},
+				{
+					goal: 'Enabling tips in ERC20',
+					status: STATUS.pending,
+				},
+			],
+		},
+		{
+			title: 'Q1',
+			year: 2024,
+			instances: [
+				{
+					goal: 'P2P Licensing Marketplace Beta ',
+					status: STATUS.pending,
+				},
+				{
+					goal: 'Enabling tips in fiat',
+					status: STATUS.pending,
+				},
 			],
 		},
 	];
