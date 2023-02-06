@@ -6,6 +6,7 @@
 
 	// RoadmapItem component is split in two in order to let the line pass through
 	import RoadmapElement from '$src/components/RoadmapElement.svelte';
+	import SectionTitle from '$src/components/SectionTitle.svelte';
 	export let roadMapItems: RoadmapItem[];
 
 	let roadMap: HTMLDivElement;
@@ -40,7 +41,7 @@
 				<span class="material-icons mr-2 text-sm  md:text-base">west</span>
 				<p class="hover:underline">Completed</p>
 			</button>
-			<h2 class="w-1/3 text-center text-xl md:text-3xl pb-8 sm:pb-0 text-neonGreen-400">Roadmap</h2>
+			<SectionTitle class="w-1/3 pb-8 sm:pb-0">Roadmap</SectionTitle>
 			<button
 				class="flex items-center justify-end w-1/3 opacity-60 cursor-pointer hover:opacity-100"
 				on:click={() => scrollTo(roadmapWidth)}

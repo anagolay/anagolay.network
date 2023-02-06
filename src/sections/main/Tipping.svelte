@@ -1,6 +1,7 @@
 <script>
 	import Marquee from '$src/components/Marquee.svelte';
 	import SectionButton from '$src/components/SectionButton.svelte';
+	import SectionTitle from '$src/components/SectionTitle.svelte';
 </script>
 
 <section class="pt-12 md:pt-20 overflow-hidden" id="home_tipping">
@@ -16,13 +17,12 @@
 				<div
 					class="w-full md:w-1/2 py-8 flex flex-col items-center md:items-start text-center md:text-left justify-center text-lg md:text-2xl"
 				>
-					<div
-						class="text-2xl md:text-4xl font-medium flex flex-wrap gap-2 justify-center md:justify-start md:pt-4"
-					>
-						<p>Introducing now:</p>
-						<p class="textGradient">Tipping</p>
-					</div>
-
+					<SectionTitle class="md:pt-4 font-medium">
+						<div class="flex flex-wrap gap-2 justify-center md:justify-start">
+							<p>Introducing now:</p>
+							<p class="textGradient">Tipping</p>
+						</div>
+					</SectionTitle>
 					<!-- image for small screens -->
 					<div class="flex md:hidden w-1/2 items-center justify-center relative">
 						<div

@@ -1,4 +1,4 @@
-const plugin = require('tailwindcss/plugin');
+// const plugin = require('tailwindcss/plugin');
 
 module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
@@ -20,6 +20,7 @@ module.exports = {
 			montserrat: ['montserrat', 'serif'],
 			dmsans: ['DM Sans'], // Ensure fonts with spaces have " "surrounding it.
 			mono: ['Roboto Mono'],
+			firaMono: ['Fira Mono'],
 		},
 		extend: {
 			backgroundImage: {
@@ -47,6 +48,7 @@ module.exports = {
 					'0px 4px 4px rgba(20, 31, 69, 0.5), inset 0px -3px 5px rgba(244, 251, 255, 0.2), inset 4px 5px 10px #141f45',
 				around:
 					'7px 0 7px var(--tw-shadow-color), -7px 0 7px var(--tw-shadow-color), 0 7px 7px var(--tw-shadow-color), 0 -7px 7px var(--tw-shadow-color);',
+				phrase: 'inset 0px 0px 100px 10px (--tw-shadow-color);',
 			},
 			keyframes: {
 				marquee: {
@@ -71,10 +73,12 @@ module.exports = {
 			},
 			borderRadius: {
 				'4xl': '2rem',
+				cardLg: '20px',
 			},
 			colors: {
 				transparent: 'transparent',
 				//current: 'currentColor',
+				darkSpaceBlue: '#00111B',
 				spaceBlue: {
 					50: '#F4FBFF',
 					// '100': '#B6E3FC',
@@ -85,7 +89,7 @@ module.exports = {
 					600: '#0772AB',
 					700: '#054F77',
 					800: '#093954',
-					900: '#052233',
+					900: '#00111B',
 				},
 				neonGreen: {
 					// '50': '#F3FFE5',
@@ -93,7 +97,7 @@ module.exports = {
 					// '200': '#C6FF80',
 					// '300': '#AFFF4D',
 					400: '#8CFF00',
-					// '500': '#7EE600',
+					500: '#7EE600',
 					// '600': '#62B300',
 					// '700': '#468000',
 					// '800': '#2A4D00',
@@ -104,7 +108,7 @@ module.exports = {
 					// '100': '#C3EFEF',
 					// '200': '#9BE4E4',
 					300: '#83DDDD',
-					// '400': '#4BCECE',
+					400: '#4BCECE',
 					// '500': '#31B4B4',
 					600: '#268C8C',
 					// '700': '#1B6464',

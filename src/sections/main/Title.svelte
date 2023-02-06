@@ -32,18 +32,17 @@
 					data="animation_second.svg"
 				/>
 			</div>
-			<div
-				class="rounded-[100%] bg-anagolayBlack bg-light from-aquaTeal-300/50 to-transparent h-28 md:h-64 -mt-20 md:-mt-48 -mx-[10%] md:-mx-[50%]"
-			/>
 		</div>
 	</div>
 </Section>
 
 <Section class="relative bg-spaceBlue-900" id="no_central_authority">
-	<div class="text-lg md:text-4xl pb-32 md:pb-52 text-center pt-16 md:pt-32 px-4">
-		<p class="text-neonGreen-400 line-through font-medium mb-2">
-			<span class="text-spaceBlue-50/50">Central authority <br />Resource heavy consensus mechanism</span>
+	<div
+		class="text-lg md:text-2xl py-8 md:py-16 mb-16 md:mb-36 text-center md:mt-16 px-4 shadow-phrase shadow-aquaTeal-300/20 rounded-cardLg font-firaMono"
+	>
+		<p class="line-through font-medium mb-2">
+			<span class="text-spaceBlue-50">Central authority <br />Resource heavy consensus mechanism</span>
 		</p>
-		<p class="font-bold">Trust the process</p>
+		<p class="font-bold text-neonGreen-400">Trust the process</p>
 	</div>
 </Section>
