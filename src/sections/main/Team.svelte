@@ -3,7 +3,6 @@
 	import LinkButton from '$src/components/LinkButton.svelte';
 	import Section from '$src/components/Section.svelte';
 	import SectionTitle from '$src/components/SectionTitle.svelte';
-
 	import type { TeamMember } from '$src/types';
 
 	let siteIcons = [
@@ -39,7 +38,7 @@
 <Section class="pt-12" id="home_team">
 	<BaseCard class="w-full h-min-[20rem] text-center p-5 md:mx-auto md:py-6">
 		<div class="w-80 max-w-full mx-auto sm:w-full md:w-fit flex flex-col items-center">
-			<SectionTitle class="font-medium my-9 md:my-8">Meet the team</SectionTitle>
+			<SectionTitle class="my-9 md:my-8">Meet the team</SectionTitle>
 			<div class="py-3 w-5/6 mx-auto grid gap-4 grid-cols-3 md:grid-cols-6">
 				{#each teamMembers as member}
 					<div
@@ -60,11 +59,9 @@
 			</div>
 			<div class="flex md:mt-5 gap-2 md:gap-4">
 				{#each selected.links as link, i}
-					<a href={link} title={icons[i].domain}>
-						<LinkButton class="w-10 h-10 sm:w-16 sm:h-16 rounded-full">
-							<img height="20" width="20" class="h-3 sm:h-5" src={icons[i].src} alt={icons[i].domain} />
-						</LinkButton>
-					</a>
+					<LinkButton url={link} class="w-10 h-10 sm:w-16 sm:h-16 rounded-full">
+						<img height="20" width="20" class="h-3 sm:h-5" src={icons[i].src} alt={icons[i].domain} />
+					</LinkButton>
 				{/each}
 			</div>
 		</div>

@@ -4,7 +4,9 @@
 </script>
 
 <Section id="home_header" class="overflow-hidden" backgroundClasses={['stars', 'stars2', 'stars3']}>
-	<div class="relative pt-8 pb-10 md:py-32 flex flex-col items-center md:items-start md:flex-row animate-">
+	<div
+		class="relative pt-20 pb-10 md:pt-48 md:pb-32 flex flex-col items-center md:items-start md:flex-row animate-"
+	>
 		<div class="w-80 max-w-full md:w-3/5 ">
 			<div class="relative lg:w-4/5">
 				<h1 class="md:mb-0 text-center font-extrabold text-3xl md:text-5xl md:text-left">

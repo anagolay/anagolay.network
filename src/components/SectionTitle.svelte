@@ -3,6 +3,6 @@
 	export { extraClass as class };
 </script>
 
-<h2 class="{extraClass} text-spaceBlue-50 text-center text-2xl md:text-4xl ">
+<h2 class="{extraClass} text-spaceBlue-50 text-center text-2xl md:text-4xl font-bold ">
 	<slot />
 </h2>

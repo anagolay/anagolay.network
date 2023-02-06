@@ -1,8 +1,8 @@
 <script lang="ts">
 	import type { UseCase } from 'src/types';
-	import SectionButton from '$src/components/SectionButton.svelte';
 	import UseCaseCard from '$src/components/UseCaseCard.svelte';
 	import Section from '$src/components/Section.svelte';
+	import LinkButton from '$src/components/LinkButton.svelte';
 
 	export let useCases: UseCase[];
 </script>
@@ -19,7 +19,11 @@
 					<UseCaseCard data={item} {i} />
 				{/each}
 			</div>
-			<SectionButton url="https://kelp.digital/" class="mt-8 md:mt-12">Kelp Digital use case</SectionButton>
+			<div class="mt-8 md:mt-12">
+				<LinkButton url="https://kelp.digital/" class="w-60 md:w-80 rounded-lg text-base">
+					<p class="py-5">Kelp Digital use case</p>
+				</LinkButton>
+			</div>
 		</div>
 	</div>
 </Section>

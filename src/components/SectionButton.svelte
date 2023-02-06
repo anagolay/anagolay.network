@@ -1,9 +1,18 @@
 <script lang="ts">
 	let extraClasses = '';
+	export let sizeClasses = 'w-60 sm:w-80 py-5 md:py-6 text-sm md:text-base';
 	export { extraClasses as class };
 	export let url: string;
 
-	let anchor: HTMLAnchorElement;
+	let bgClass = 'bg-gradient-to-r from-neonGreen-400 to-aquaTeal-300';
+	let backgroundClass = bgClass;
+
+	function onMouseOver() {
+		backgroundClass = 'bg-spaceBlue-50';
+	}
+	function onMouseLeave() {
+		backgroundClass = bgClass;
+	}
 
 	function handleClick() {
 		let target: HTMLElement;
@@ -26,8 +35,10 @@
 
 <a
 	href={url}
-	class="{extraClasses} w-3/4 sm:w-1/2 md:w-1/4 py-5 flex items-center justify-center min-w-fit px-12 shadow-button active:shadow-pressed rounded-xl bg-gradient-to-r from-neonGreen-400 to-aquaTeal-300 hover:from-neonGreen-500 hover:to-aquaTeal-400 md:py-6 text-spaceBlue-900 text-sm md:text-base"
-	bind:this={anchor}
+	class="{extraClasses} {sizeClasses} {backgroundClass} flex active:scale-95 items-center justify-center  font-bold rounded-xl text-spaceBlue-900 "
+	on:mouseover={onMouseOver}
+	on:mouseleave={onMouseLeave}
+	on:focus
 	on:click|preventDefault={handleClick}
 >
 	<slot />

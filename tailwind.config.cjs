@@ -48,7 +48,8 @@ module.exports = {
 					'0px 4px 4px rgba(20, 31, 69, 0.5), inset 0px -3px 5px rgba(244, 251, 255, 0.2), inset 4px 5px 10px #141f45',
 				around:
 					'7px 0 7px var(--tw-shadow-color), -7px 0 7px var(--tw-shadow-color), 0 7px 7px var(--tw-shadow-color), 0 -7px 7px var(--tw-shadow-color);',
-				phrase: 'inset 0px 0px 100px 10px (--tw-shadow-color);',
+				phrase: 'inset 0px 0px 100px 10px var(--tw-shadow-color);',
+				navBar: '0px 0px 10px var(--tw-shadow-color)',
 			},
 			keyframes: {
 				marquee: {
@@ -77,8 +78,7 @@ module.exports = {
 			},
 			colors: {
 				transparent: 'transparent',
-				//current: 'currentColor',
-				darkSpaceBlue: '#00111B',
+				darkSpaceBlue: '#000A16',
 				spaceBlue: {
 					50: '#F4FBFF',
 					// '100': '#B6E3FC',
@@ -89,7 +89,7 @@ module.exports = {
 					600: '#0772AB',
 					700: '#054F77',
 					800: '#093954',
-					900: '#00111B',
+					900: '#000C1B',
 				},
 				neonGreen: {
 					// '50': '#F3FFE5',

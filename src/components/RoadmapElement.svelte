@@ -14,9 +14,7 @@
 	const instanceStatuses = roadMapItem.instances.map((i) => {
 		//this function sets classes for each instance card.
 		i.cardStyling = `${
-			i.status === STATUS.doing
-				? 'bg-gradient-to-l from-neonGreen-400/10 to-transparent border border-neonGreen-400/60 shadow-sm shadow-neonGreen-400/60'
-				: 'bg-gradient-to-b from-spaceBlue-50/5 to-transparent shadow-card border border-spaceBlue-50/20 shadow-transparent'
+			i.status === STATUS.doing ? 'bg-gradient-to-b from-aquaTeal-300 to-neonGreen-400 p-[1px]' : ''
 		} ${i.status === STATUS.pending ? 'opacity-50' : 'bg-opacity-80'}`;
 		return i.status;
 	});
@@ -45,10 +43,12 @@
 		class="mb-4 -mt-1 relative w-8 h-8 bg-sphere from-neonGreen-400 to-spaceBlue-700 rounded-full -rotate-[25deg] {pointBlur} {pointOpacity}"
 	/>
 	{#each roadMapItem.instances as instance}
-		<div
-			class="w-56 p-7 h-fit italic {instance.cardStyling} mb-2 rounded-xl mx-auto text-spaceBlue-50 font-light"
-		>
-			{instance.goal}
+		<div class="{instance.cardStyling} my-2 rounded-lg mx-auto">
+			<div class="bg-spaceBlue-900 rounded-lg">
+				<div class="w-56 p-7 h-fit italic bg-spaceBlue-50/5 rounded-lg text-spaceBlue-50 font-light">
+					{instance.goal}
+				</div>
+			</div>
 		</div>
 	{/each}
 </div>

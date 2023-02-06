@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { menuOptions, media } from '$src/routesFile';
+	import IconContainer from './IconContainer.svelte';
 	import Section from './Section.svelte';
 </script>
 
@@ -38,21 +39,17 @@
 			>
 				<div class="flex w-full justify-center mb-5">Join the community</div>
 				<div class="flex flex-grow items-center justify-between mb-4">
-					{#each media as item}
+					{#each media as { url, name, rel, image }}
 						<a
-							href={item.url}
-							class="flex justify-center items-center shadow-button h-12 w-12 rounded-full bg-spaceBlue-800 text-white active:shadow-pressed"
-							aria-label="social-media-{item.name}"
+							href={url}
+							class="active:scale-95"
+							aria-label="social-media-{name}"
 							target="_blank"
-							rel={item.rel || 'noopener noreferrer'}
+							rel={rel || 'noopener noreferrer'}
 						>
-							<img
-								class="max-h-5 max-w-[20px]"
-								width="20"
-								height="16"
-								src={item.image}
-								alt="{item.name} logo"
-							/>
+							<IconContainer class="flex justify-center items-center h-12 w-12 rounded-full">
+								<img class="max-h-5 max-w-[20px]" width="20" height="16" src={image} alt="{name} logo" />
+							</IconContainer>
 						</a>
 					{/each}
 				</div>
