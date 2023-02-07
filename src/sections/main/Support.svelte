@@ -7,10 +7,10 @@
 <div class="relative ">
 	<div class="absolute h-full w-full">
 		<div
-			class="absolute w-1/2 pt-[30%] -left-1/4 bottom-0 translate-y-1/4 bg-light from-neonGreen-400/50 via-neonGreen-400/50 to-transparent rounded-[100%] animate-pulse"
+			class="absolute w-1/2 pt-[30%] -left-1/4 bottom-16 sm:bottom-0 translate-y-1/4 bg-light from-neonGreen-400/50 via-neonGreen-400/50 to-transparent rounded-[100%] animate-pulse"
 		/>
 		<div
-			class="absolute w-1/2 pt-[50%] -right-1/4 top-0 -translate-y-1/4 bg-light from-aquaTeal-300/50 via-aquaTeal-300/50 to-transparent rounded-[100%] animate-pulse"
+			class="absolute w-1/2 pt-[50%] -right-1/4 top-16 sm:top-0 -translate-y-1/4 bg-light from-aquaTeal-300/50 via-aquaTeal-300/50 to-transparent rounded-[100%] animate-pulse"
 		/>
 	</div>
 

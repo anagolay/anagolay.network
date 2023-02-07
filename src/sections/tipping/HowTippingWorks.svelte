@@ -1,12 +1,13 @@
 <script lang="ts">
 	import type { TippingStep } from '$src/types';
 	import Section from '$src/components/Section.svelte';
+	import SectionTitle from '$src/components/SectionTitle.svelte';
 
 	export let steps: TippingStep[];
 </script>
 
 <Section class="pb-20 md:pb-0" id="tipping_how_it_works">
-	<h2 class="text-2xl md:text-4xl pb-18 md:py-20 text-neonGreen-400 text-center">How it works</h2>
+	<SectionTitle class="pb-18 md:py-20">How it works</SectionTitle>
 	{#each steps as step, i}
 		<div class="flex flex-col lg:flex-row pt-16 md:pt-0 md:pb-20" class:lg:flex-row-reverse={i % 2 === 1}>
 			<div

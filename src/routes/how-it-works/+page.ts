@@ -1,9 +1,9 @@
-import type { TrustItem, TechnologyItem, ArchitectureItem, WebLayerIcon } from '$src/types';
+import type { FeatureData, TechnologyItem, ArchitectureItem, WebLayerIcon } from '$src/types';
 // import type { PageLoad } from './$types';
 const lineSize = '[2px]';
 
 export function load() {
-	const trustItems: TrustItem[] = [
+	const trustItems: FeatureData[] = [
 		{ icon: 'copyright', text: 'Statements & Claims', anchor: '#how_it_works_statements' },
 		{ img: { src: '/icon_proof.svg', alt: 'proof' }, text: 'Proofs', anchor: '#how_it_works_proofs' },
 		{

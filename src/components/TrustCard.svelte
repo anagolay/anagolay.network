@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
 	import type { TrustItem } from '$src/types';
 	export let trustItem: TrustItem;
 
@@ -38,4 +38,4 @@
 		<p class="w-11/12 sm:w-5/6">{trustItem.text}</p>
 		<b><span class="material-icons text-neonGreen-400 text-[100%] mt-auto font-bold">south</span></b>
 	</div>
-</a>
+</a> -->

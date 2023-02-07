@@ -1,4 +1,5 @@
 <script>
+	import IconContainer from '$src/components/IconContainer.svelte';
 	import LinkButton from '$src/components/LinkButton.svelte';
 	import Marquee from '$src/components/Marquee.svelte';
 	import SectionTitle from '$src/components/SectionTitle.svelte';
@@ -39,8 +40,10 @@
 						or content creator.
 					</div>
 					<div class="pb-8 pt-2 md:pt-4 md:pb-12">Verify your channels and start receiving tips!</div>
-					<LinkButton url="/tipping/" class="w-60 md:w-80 rounded-lg text-base">
-						<p class="py-5">Learn More</p>
+					<LinkButton url="/tipping/">
+						<IconContainer class="w-60 md:w-80 rounded-lg text-base">
+							<p class="py-5">Learn More</p>
+						</IconContainer>
 					</LinkButton>
 				</div>
 				<div class="hidden md:flex w-1/2 items-center justify-center relative">

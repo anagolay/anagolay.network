@@ -1,8 +1,6 @@
 <script>
-	import IconContainer from './IconContainer.svelte';
-
-	let extraClass = '';
 	export let url = '';
+	let extraClass = '';
 	export { extraClass as class };
 
 	function handleClick() {
@@ -24,8 +22,6 @@
 	}
 </script>
 
-<a href={url} on:click|preventDefault={handleClick} class="active:scale-95">
-	<IconContainer class={extraClass}>
-		<slot />
-	</IconContainer>
+<a class="active:scale-95 {extraClass}" href={url} on:click|preventDefault={handleClick}>
+	<slot />
 </a>

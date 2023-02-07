@@ -1,5 +1,6 @@
 <script lang="ts">
 	import BaseCard from '$src/components/BaseCard.svelte';
+	import IconContainer from '$src/components/IconContainer.svelte';
 	import LinkButton from '$src/components/LinkButton.svelte';
 	import Section from '$src/components/Section.svelte';
 	import SectionTitle from '$src/components/SectionTitle.svelte';
@@ -59,8 +60,10 @@
 			</div>
 			<div class="flex md:mt-5 gap-2 md:gap-4">
 				{#each selected.links as link, i}
-					<LinkButton url={link} class="w-10 h-10 sm:w-16 sm:h-16 rounded-full">
-						<img height="20" width="20" class="h-3 sm:h-5" src={icons[i].src} alt={icons[i].domain} />
+					<LinkButton url={link}>
+						<IconContainer class="w-10 h-10 sm:w-16 sm:h-16 rounded-full">
+							<img height="20" width="20" class="h-3 sm:h-5" src={icons[i].src} alt={icons[i].domain} />
+						</IconContainer>
 					</LinkButton>
 				{/each}
 			</div>

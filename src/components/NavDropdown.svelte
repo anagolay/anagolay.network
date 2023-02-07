@@ -13,11 +13,11 @@
 	let visible = 'hidden';
 	let menuContent: HTMLUListElement;
 
-	$: color = data.options
-		.map((option) => option.url.replaceAll('/', ''))
-		.includes($page.route.id.replaceAll('/', ''))
-		? 'text-neonGreen-400'
-		: 'text-spaceBlue-50';
+	$: color =
+		$page.route &&
+		data.options.map((option) => option.url.replaceAll('/', '')).includes($page.route.id.replaceAll('/', ''))
+			? 'text-neonGreen-400'
+			: 'text-spaceBlue-50';
 
 	$: height = show ? accordionHeightClass : 'h-6';
 </script>
@@ -55,9 +55,9 @@
 			<span class="material-icons"> expand_more </span>
 		{/if}
 	</button>
-	<div class="bg-darkSpaceBlue">
+	<div class="flex flex-col">
 		{#each data.options as link}
-			<NavLink class="py-1" option={link} onClick={onSelect} />
+			<NavLink class="py-2" option={link} onClick={onSelect} />
 		{/each}
 	</div>
 </div>

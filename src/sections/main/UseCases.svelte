@@ -3,6 +3,7 @@
 	import UseCaseCard from '$src/components/UseCaseCard.svelte';
 	import Section from '$src/components/Section.svelte';
 	import LinkButton from '$src/components/LinkButton.svelte';
+	import IconContainer from '$src/components/IconContainer.svelte';
 
 	export let useCases: UseCase[];
 </script>
@@ -20,8 +21,10 @@
 				{/each}
 			</div>
 			<div class="mt-8 md:mt-12">
-				<LinkButton url="https://kelp.digital/" class="w-60 md:w-80 rounded-lg text-base">
-					<p class="py-5">Kelp Digital use case</p>
+				<LinkButton url="https://kelp.digital/">
+					<IconContainer class="w-60 md:w-80 rounded-lg text-base">
+						<p class="py-5">Kelp Digital use case</p>
+					</IconContainer>
 				</LinkButton>
 			</div>
 		</div>

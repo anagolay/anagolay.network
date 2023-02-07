@@ -5,7 +5,7 @@
 
 <Section id="idiyanale_header" class="overflow-hidden" backgroundClasses={['stars', 'stars2', 'stars3']}>
 	<div
-		class="relative w-full max-w-full flex flex-col text-center md:text-left md:flex-row py-8 md:pt-24 pb-12 md:pb-32"
+		class="relative w-full max-w-full flex flex-col text-center md:text-left md:flex-row pt-24 md:pt-40 pb-12 md:pb-32"
 	>
 		<div class="basis-1/2 flex flex-col items-center md:items-start lg:pt-12">
 			<h1 class="text-3xl md:text-5xl font-extrabold">
@@ -30,18 +30,4 @@
 			</div>
 		</div>
 	</div>
-
-	<!--<div class="md:basis-1/2 flex items-end md:items-center 2xl:h-5/6 xl:items-end">
-			<div class="w-full -mr-[50%] flex justify-center">
-				<div class="w-1/2 -mt-12 mb-12">
-					<LottiePlayer class="-m-10" src="https://assets6.lottiefiles.com/packages/lf20_qvb0cgyf.json" />
-				</div>
-			</div>
-			<div class="w-full -ml-[50%] flex justify-center">
-				<div class="w-3/4 md:w-full">
-					<div class="h-40 bg-anagolayBlack bg-light from-aquaTeal-300/30 to-transparent" />
-				</div>
-			</div>
-		</div>
-	</div> -->
 </Section>

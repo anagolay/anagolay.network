@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
 	import type { FeatureData } from '$src/types';
 
 	export let item: FeatureData;
@@ -28,4 +28,4 @@
 	<p class="w-5/6 text-center text-base lg:text-lg">
 		{item.feature}
 	</p>
-</div>
+</div> -->

@@ -4,8 +4,10 @@
 	import SectionButton from '$src/components/SectionButton.svelte';
 	import TrustCard from '$src/components/TrustCard.svelte';
 
-	import type { TrustItem } from '$src/types';
-	export let trustItems: TrustItem[];
+	import type { FeatureData } from '$src/types';
+	import LinkButton from '$src/components/LinkButton.svelte';
+	import FeatureCard from '$src/components/FeatureCard.svelte';
+	export let trustItems: FeatureData[];
 </script>
 
 <Section
@@ -13,7 +15,7 @@
 	class="overflow-hidden pb-20"
 	backgroundClasses={['stars', 'stars2', 'stars3']}
 >
-	<div class="relative w-full max-w-full flex flex-col text-center md:text-left md:flex-row pt-8 md:pt-16">
+	<div class="relative w-full max-w-full flex flex-col text-center md:text-left md:flex-row pt-20 md:pt-32">
 		<div class="basis-1/2 flex flex-col items-center md:items-start lg:pt-20">
 			<h1 class="text-3xl md:text-5xl font-extrabold">
 				<p class="leading-normal">How does it work?</p>
@@ -42,8 +44,17 @@
 </Section>
 <Section id="how_it_works_trust_items">
 	<div class="relative flex flex-wrap gap-4 justify-evenly pt-24 md:pb-20">
-		{#each trustItems as trustItem}
-			<TrustCard {trustItem} />
+		{#each trustItems as data}
+			<LinkButton
+				class="basis-[45%] sm:basis-1/5 mt-4 flex flex-col pb-2 lg:pb-7 text-center"
+				url={data.anchor}
+			>
+				<FeatureCard {data} iconClasses="w-12 h-12 lg:w-24 lg:h-24" iconSize="text-3xl lg:text-5xl">
+					<span slot="arrow" class="material-icons text-neonGreen-400 text-[100%] font-bold mt-4 -mb-4">
+						south
+					</span>
+				</FeatureCard>
+			</LinkButton>
 		{/each}
 	</div>
 </Section>

@@ -5,33 +5,33 @@ import { STATUS } from '$src/types';
 export function load() {
 	const beastFeatures: FeatureData[] = [
 		{
-			feature: 'Each stored proof on the Anagolay chain can be verified',
+			text: 'Each stored proof on the Anagolay chain can be verified',
 			icon: 'verified_user',
 		},
 		{
-			feature: 'Each Workflow executes 100% the same code on each run',
+			text: 'Each Workflow executes 100% the same code on each run',
 			icon: 'code',
 		},
 		{
-			feature: 'Stored proofs are contextual and well structured',
+			text: 'Stored proofs are contextual and well structured',
 			icon: 'folder',
 		},
-		{ feature: 'Created Statements are legally valid', icon: 'copyright' },
+		{ text: 'Created Statements are legally valid', icon: 'copyright' },
 		{
-			feature: 'Developed with a mindset that every drop of energy matters',
+			text: 'Developed with a mindset that every drop of energy matters',
 			icon: 'bolt',
 		},
 		{
-			feature: 'Can work on Mars or any other isolated environment',
+			text: 'Can work on Mars or any other isolated environment',
 			icon: 'rocket_launch',
 		},
-		{ feature: 'Community verified source code', icon: 'handshake' },
+		{ text: 'Community verified source code', icon: 'handshake' },
 		{
-			feature: 'Privacy by default, users’ data is not stored on-chain',
+			text: 'Privacy by default, users’ data is not stored on-chain',
 			icon: 'private_connectivity',
 		},
 		{
-			feature: 'All stored data structures are content addressable',
+			text: 'All stored data structures are content addressable',
 			img: { src: '/icon_decentralized.svg', alt: 'decentralized network' },
 		},
 	];
