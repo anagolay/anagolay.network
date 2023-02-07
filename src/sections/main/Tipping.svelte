@@ -21,11 +21,9 @@
 				<div
 					class="w-full md:w-1/2 py-8 flex flex-col items-center md:items-start text-center md:text-left justify-center text-lg md:text-2xl"
 				>
+					<p class="font-firaMono text-lg md:text-2xl ">/Introducing now</p>
 					<SectionTitle class="md:pt-4">
-						<div class="flex flex-wrap gap-2 justify-center md:justify-start">
-							<p>Introducing now:</p>
-							<p class="textGradient">Tipping</p>
-						</div>
+						<p class="textGradient">Community Contributions</p>
 					</SectionTitle>
 					<!-- image for small screens -->
 					<div class="flex md:hidden w-1/2 items-center justify-center relative">
@@ -36,10 +34,10 @@
 					</div>
 
 					<div class="py-4 md:py-6">
-						A decentralized solution to monetize the support from your community as an open-source developer
-						or content creator.
+						Make supporting creativity easier than ever. Now any verified online identity can be used to send
+						and receive funds: as community contributions to support a verified creator.
 					</div>
-					<div class="pb-8 pt-2 md:pt-4 md:pb-12">Verify your channels and start receiving tips!</div>
+					<div class="pb-8 pt-2 md:pt-4 md:pb-12">Verify your (sub)domains and start receiving tips!</div>
 					<LinkButton url="/tipping/">
 						<IconContainer class="w-60 md:w-80 rounded-lg text-base">
 							<p class="py-5">Learn More</p>

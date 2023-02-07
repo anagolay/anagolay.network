@@ -37,7 +37,7 @@
 		<div class="text-sm md:text-base">
 			<div class="overflow-x-scroll scroll-smooth" bind:this={roadMap} bind:clientWidth={windowWidth}>
 				<div class="w-fit">
-					<div class="w-full h-[.2rem] bg-gradient-to-r from-spaceBlue-700 to-neonGreen-400 mt-28 -mb-28" />
+					<div class="w-full h-[.2rem] bg-gradient-to-r from-aquaTeal-300 to-neonGreen-400 mt-28 -mb-28" />
 					<div class="w-fit pb-6" bind:clientWidth={roadmapWidth}>
 						<div class="grid w-full text-center grid-flow-col auto-cols-fit">
 							{#each roadMapItems as roadMapItem}

@@ -13,8 +13,7 @@
 	<div class="text-center mb-12 md:mb-16 mx-auto">
 		<SectionTitle class="mb-6 md:mb-8">Trust the process</SectionTitle>
 		<p class="md:px-0 md:mx-auto text-base md:text-xl xl:text-2xl max-w-5xl">
-			Instead of relying on a central authority, or resource-heavy consensus mechanism to establish the rules
-			of the game (trust)
+			Bring transparency and traceability to Verification Processes and Copyright Claims.
 		</p>
 	</div>
 	<div class="w-80 max-w-full mx-auto md:w-full ">

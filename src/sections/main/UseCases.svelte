@@ -11,7 +11,7 @@
 <Section class="overflow-hidden" id="home_use_cases" backgroundClasses={['stars', 'stars2', 'stars3']}>
 	<div class="relative w-80 max-w-full mx-auto md:w-full py-24">
 		<div class="mt-0 w-full flex flex-col items-center">
-			<h2 class="w-5/6 mt-8 text-lg md:mb-12 md:text-2xl text-center">
+			<h2 class="mt-8 text-lg md:mb-12 md:text-2xl text-center">
 				Copyright and Ownership <i>Verifiable</i> Statements created and stored on Anagolay can be applied to solve
 				a number of issues including, but not limited to:
 			</h2>

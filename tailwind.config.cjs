@@ -79,6 +79,7 @@ module.exports = {
 			colors: {
 				transparent: 'transparent',
 				darkSpaceBlue: '#000A16',
+				pending: '#172231',
 				spaceBlue: {
 					50: '#F4FBFF',
 					// '100': '#B6E3FC',
