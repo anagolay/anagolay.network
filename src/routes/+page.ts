@@ -65,19 +65,19 @@ export function load() {
 			src: '/case_code.svg',
 			alt: 'Source code',
 			title: 'Source code availability & trustworthiness',
-			text: 'Maintaining open-source libraries and solving versioning open-source infrastructure,  data integrity, and support for distributed, non-linear Workflows.',
+			text: 'Highly available storage for source code built with the new ContentVersioning approach gives assurance and trustworthiness by design to developers and users alike.',
 		},
 		{
 			src: '/case_ip.svg',
 			alt: 'Ip management',
 			title: 'IP management in the Web3',
-			text: 'While creating & storing records of Rights, Restrictions, and Proofs Anagolay allows asset creators to establish how digital assets are used and owned.',
+			text: 'While creating & storing records of Rights, Restrictions, and Proofs Anagolay allows asset creators to establish how digital assets are used and owned.',
 		},
 		{
 			src: '/case_p2p.svg',
 			alt: 'Digital art',
 			title: 'Digital Art P2P Licensing',
-			text: 'Highly available storage for source code built with the new Content Versioning approach. Assurance and trustworthiness by design to developers and users alike.',
+			text: 'A meaningful and straightforward way to monetize & buy digital art. From verified creators, with customized licensing options. Not just ‘as a collectible’.',
 		},
 	];
 

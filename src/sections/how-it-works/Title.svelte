@@ -2,7 +2,6 @@
 	import { whitePaperUrl } from '$src/routesFile';
 	import Section from '$src/components/Section.svelte';
 	import SectionButton from '$src/components/SectionButton.svelte';
-	import TrustCard from '$src/components/TrustCard.svelte';
 
 	import type { FeatureData } from '$src/types';
 	import LinkButton from '$src/components/LinkButton.svelte';

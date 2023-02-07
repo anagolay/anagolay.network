@@ -45,7 +45,7 @@
 			<BoxItem {boxItem} />
 		{/each}
 	</div>
-	<div class="w-full flex justify-center pt-4 md:pt-12">
+	<div class="w-full flex justify-center pt-12">
 		{#if caseItem.button}
 			<LinkButton url={caseItem.button.url}>
 				<IconContainer class="w-60 md:w-80 rounded-lg text-base">

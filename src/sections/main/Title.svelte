@@ -43,7 +43,7 @@
 </Section>
 
 <Section class="relative bg-spaceBlue-900 pb-20" id="no_central_authority">
-	<PhraseContainer>
+	<PhraseContainer class="mb-16">
 		<p class="line-through font-medium mb-2">
 			<span class="text-spaceBlue-50">Central authority <br />Resource heavy consensus mechanism</span>
 		</p>

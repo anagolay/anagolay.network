@@ -13,7 +13,7 @@
 	<Ellipse class="h-6 w-6 rotate-[225deg] mb-8" />
 	<div class="flex flex-col items-center">
 		<div class="w-5/6">
-			<p class="text-neonGreen-400 text-center">KELP DIGITAL</p>
+			<p class="text-neonGreen-400 text-center font-firaMono text-lg md:text-2xl">KELP DIGITAL</p>
 			<div class="text-center pt-4 md:pt-8 pb-12">
 				<SectionTitle class="mb-12">
 					The first Hybrid Dapp on Anagolay had a successful pilot implemented in 2021.

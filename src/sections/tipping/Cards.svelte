@@ -1,5 +1,4 @@
 <script lang="ts">
-	import DescriptionCard from '$src/components/DescriptionCard.svelte';
 	import FeatureCard from '$src/components/FeatureCard.svelte';
 	import Section from '$src/components/Section.svelte';
 	import type { FeatureData } from '$src/types';

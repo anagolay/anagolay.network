@@ -17,8 +17,8 @@
 <svelte:window on:scroll={setVisibility} />
 
 <button
-	class="{visible} transition-opacity duration-500 flex justify-center items-center fixed bottom-5 right-8 h-12 w-12 rounded-full bg-white/25 bg-gradient-to-br from-spaceBlue-800/70 to-transparent shadow-md shadow-black/25 active:shadow-pressed backdrop-blur-md z-50"
+	class="{visible} shadow-navBar shadow-black/50 text-white bg-darkSpaceBlue border-b md:border border-spaceBlue-700 transition-opacity duration-500 flex justify-center items-center fixed bottom-5 right-8 h-12 w-12 rounded-full z-50 active:scale-95"
 	on:click={scrollToTop}
 >
-	<span class="material-icons text-neonGreen-400"> keyboard_arrow_up </span>
+	<span class="material-icons text-spaceBlue-50 hover:text-neonGreen-400"> keyboard_arrow_up </span>
 </button>

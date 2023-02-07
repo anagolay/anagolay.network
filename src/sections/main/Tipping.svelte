@@ -37,7 +37,9 @@
 						Make supporting creativity easier than ever. Now any verified online identity can be used to send
 						and receive funds: as community contributions to support a verified creator.
 					</div>
-					<div class="pb-8 pt-2 md:pt-4 md:pb-12">Verify your (sub)domains and start receiving tips!</div>
+					<div class="pb-8 pt-2 md:pt-4 md:pb-12 font-bold">
+						Verify your (sub)domains and start receiving tips!
+					</div>
 					<LinkButton url="/tipping/">
 						<IconContainer class="w-60 md:w-80 rounded-lg text-base">
 							<p class="py-5">Learn More</p>

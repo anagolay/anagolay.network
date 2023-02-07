@@ -33,6 +33,7 @@
 		</div>
 	</div>
 </Section>
+
 <Section class="pt-20 md:pt-16" id="ownership">
 	<PhraseContainer>
 		<p class="w-5/6 md:w-3/4 mx-auto">

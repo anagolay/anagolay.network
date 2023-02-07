@@ -1,5 +1,6 @@
 <script lang="ts">
 	import BaseCard from '$src/components/BaseCard.svelte';
+	import IconContainer from '$src/components/IconContainer.svelte';
 	import Section from '$src/components/Section.svelte';
 	import SectionTitle from '$src/components/SectionTitle.svelte';
 
@@ -25,7 +26,7 @@
 	class="mt-20 pt-20 bg-gradient-to-b from-spaceBlue-50/5 via-spaceBlue-50/5 to-transparent pb-40"
 >
 	<div class="lg:w-5/6 mx-auto">
-		<div class="relative text-center py-8 md:py-16">
+		<div class="relative text-center pb-8 md:py-16">
 			<SectionTitle>Architecture</SectionTitle>
 		</div>
 
@@ -74,12 +75,17 @@
 				>
 					{#each item.description as word, i}
 						<div
-							class="w-fit min-w-[50%] xl:min-w-[8rem] h-fit sm:py-1 md:py-2 my-1 px-2 md:px-4 text-center {item
-								.wordContainer[
+							class=" {item.wordContainer[
 								i
-							]} bg-gradient-to-b cursor-default hover:bg-spaceBlue-50 hover:text-spaceBlue-900 rounded-full border border-spaceBlue-50/30 hover:border-spaceBlue-50"
+							]} w-fit min-w-[50%] xl:min-w-[8rem] h-fit text-center my-1 bg-gradient-to-b from-aquaTeal-300 to-neonGreen-400 cursor-default rounded-full border border-spaceBlue-50/30 hover:border-spaceBlue-50"
 						>
-							{word}
+							<div class="whitespace-nowrap bg-spaceBlue-900 rounded-full">
+								<div
+									class="whitespace-nowrap bg-spaceBlue-50/10 sm:py-1 md:py-2 px-2 md:px-4 rounded-full hover:bg-spaceBlue-50 hover:text-spaceBlue-900 hover:border-spaceBlue-50"
+								>
+									{word}
+								</div>
+							</div>
 						</div>
 					{/each}
 				</div>

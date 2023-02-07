@@ -11,8 +11,8 @@
 <Section id="home_main_features" class="relative bg-spaceBlue-900">
 	<div class="text-center mb-40">
 		<SectionTitle class="mb-12">
-			<p class="md:mb-4">Anagolay is a</p>
-			<p>different kind of beast</p>
+			<p class="md:mb-4">Essential infrastructure for digital</p>
+			<p>creative market 3.0</p>
 		</SectionTitle>
 		<div class="flex flex-wrap gap-4 justify-evenly">
 			{#each beastFeatures as data}

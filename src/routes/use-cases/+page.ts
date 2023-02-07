@@ -4,18 +4,15 @@ export function load() {
 	// :PageLoad
 	const descriptionItems: FeatureData[] = [
 		{
-			feature:
-				'Generates, validates and stores verifiable records of Rights (Copyright, Licenses, and Ownership), Restrictions, and Proofs of any digital content.',
+			text: 'Generates, validates and stores verifiable records of Rights (Copyright, Licenses, and Ownership), Restrictions, and Proofs of any digital content.',
 			icon: 'copyright',
 		},
 		{
-			feature:
-				'Enables creation of workflows (processes) to establish the uniqueness of an asset outside of a given centralized platform. ',
+			text: 'Enables creation of workflows (processes) to establish the uniqueness of an asset outside of a given centralized platform. ',
 			img: { src: '/icon_workflow.svg', alt: 'decentralized network' },
 		},
 		{
-			feature:
-				'Allows for transparent and efficient management of the bundle of rights attached to an asset - ensuring their correct attribution and (potentially) monetization.',
+			text: 'Allows for transparent and efficient management of the bundle of rights attached to an asset - ensuring their correct attribution and (potentially) monetization.',
 			icon: 'verified_user',
 		},
 	];
