@@ -1,6 +1,5 @@
 <script lang="ts">
 	import BaseCard from '$src/components/BaseCard.svelte';
-	import IconContainer from '$src/components/IconContainer.svelte';
 	import Section from '$src/components/Section.svelte';
 	import SectionTitle from '$src/components/SectionTitle.svelte';
 

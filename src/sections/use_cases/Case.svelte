@@ -5,7 +5,6 @@
 	import LinkButton from '$src/components/LinkButton.svelte';
 
 	import Section from '$src/components/Section.svelte';
-	import SectionButton from '$src/components/SectionButton.svelte';
 	import type { TechnologyItem } from '$src/types';
 	export let caseItem: TechnologyItem;
 	export let i: number;

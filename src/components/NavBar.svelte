@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import { discover, idiyanale, howItWorks, useCases, deck } from '$src/routesFile';
 	import Hamburguer from './Hamburguer.svelte';
 	import NavDropdown from './NavDropdown.svelte';
@@ -7,12 +6,9 @@
 
 	let toggleMenu = false;
 	let menuTransition = '';
+	let bgColor = 'bg-spaceBlue-900';
 
-	let showOnPx = 20;
-	let initialStyles = 'border-spaceBlue-900';
-	let scrollStyles =
-		'shadow-navBar shadow-black/50 text-white bg-spaceBlue-900 border-spaceBlue-700 md:rounded-cardLg md:-mx-8 md:px-8';
-	let navBarstyles = initialStyles;
+	let scrollY: number;
 
 	//toggleSideBar will open sidebar if it is closed or close it if opened.
 	function toggleSideBar(): void {
@@ -30,17 +26,21 @@
 		menuTransition = '';
 	}
 
-	function setStyles() {
-		navBarstyles = window.scrollY > showOnPx ? scrollStyles : initialStyles;
-	}
-	onMount(() => setStyles());
+	$: bgColor = scrollY ? 'bg-navBarBg' : 'bg-spaceBlue-900';
 </script>
 
-<svelte:window on:scroll={setStyles} />
+<svelte:window bind:scrollY />
 
 <nav class="fixed w-full top-0 md:top-4 z-20">
 	<div class="md:container">
-		<div class="relative text-sm md:text-base bg-spaceBlue-900 border-b md:border {navBarstyles} ">
+		<div
+			class="relative text-sm md:text-base shadow-navBar shadow-black/50 transition-colors duration-300  md:rounded-cardLg md:-mx-8 md:px-8"
+			class:shadow-navBar={scrollY > 0}
+			class:text-white={scrollY > 0}
+			class:bg-navBarBg={scrollY > 0}
+			class:border-spaceBlue-700={scrollY > 0}
+			class:bg-spaceBlue-900={scrollY === 0}
+		>
 			<div class="flex w-full h-16 md:h-20 justify-center items-center md:justify-between">
 				<button
 					class="absolute top-3 p-2 left-3 md:hidden cursor-pointer"
@@ -62,8 +62,8 @@
 				</div>
 
 				<div
-					class="z-10 flex flex-col absolute top-16 bottom-0 bg-spaceBlue-900 md:bg-transparent h-screen bg-opacity-100 pt-4
-			  text-center right-full font-firaMono transition-transform duration-300 w-full 
+					class="z-10 flex flex-col absolute top-16 bottom-0 {bgColor} md:bg-transparent h-screen bg-opacity-100 pt-4
+			  text-center right-full font-firaMono transition-all duration-300 w-full 
 				border-t border-spaceBlue-700
 				{menuTransition}
 				md:border-0 md:pt-0
@@ -75,8 +75,8 @@
 						<NavLink class="my-3 md:my-0" option={idiyanale} onClick={closeSideBar} />
 						<NavLink class="my-3 md:my-0" option={howItWorks} onClick={closeSideBar} />
 
-						<NavDropdown data={useCases} accordionHeightClass="h-28" onSelect={closeSideBar} />
-						<NavDropdown data={discover} accordionHeightClass="h-44" onSelect={closeSideBar} />
+						<NavDropdown data={useCases} {bgColor} accordionHeightClass="h-28" onSelect={closeSideBar} />
+						<NavDropdown data={discover} {bgColor} accordionHeightClass="h-44" onSelect={closeSideBar} />
 
 						<NavLink class="my-3 md:my-0" option={deck} onClick={closeSideBar} />
 					</div>

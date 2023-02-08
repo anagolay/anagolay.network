@@ -8,8 +8,6 @@
 	let titleOpacity = 'opacity-70';
 	let titleShadow = 'shadow-spaceBlue-50';
 	let yearOpacity = '';
-	let pointBlur = '';
-	let pointOpacity = '';
 	let pointBgColor = 'bg-spaceBlue-50';
 
 	const instanceStatuses = roadMapItem.instances.map((i) => {

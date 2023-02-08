@@ -71,7 +71,7 @@ module.exports = {
 			},
 			colors: {
 				transparent: 'transparent',
-				darkSpaceBlue: '#000A16',
+				navBarBg: 'rgb(18 32 50)',
 				pending: '#172231',
 				spaceBlue: {
 					50: '#F4FBFF',

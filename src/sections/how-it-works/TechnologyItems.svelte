@@ -2,7 +2,6 @@
 	import GlowingLight from '$src/components/GlowingLight.svelte';
 
 	import Section from '$src/components/Section.svelte';
-	import SectionTitle from '$src/components/SectionTitle.svelte';
 
 	import type { TechnologyItem } from '$src/types';
 	export let technologyItems: TechnologyItem[];

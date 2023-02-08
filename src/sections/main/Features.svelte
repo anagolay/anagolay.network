@@ -17,7 +17,7 @@
 		<div class="flex flex-wrap gap-4 justify-evenly">
 			{#each beastFeatures as data}
 				<FadeinCard
-					class="max-w-xs sm:max-w-full sm:basis-[45%] lg:basis-[30%] pt-6 transition-opacity delay-100 duration-700"
+					class="max-w-xs w-full sm:basis-[45%] lg:basis-[30%] pt-6 transition-opacity delay-100 duration-700"
 				>
 					<FeatureCard {data} />
 				</FadeinCard>
