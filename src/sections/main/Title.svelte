@@ -14,7 +14,7 @@
 					<p class="md:leading-[4rem]">Manage your content on your terms.</p>
 				</h1>
 				<h2 class="w-full text-center md:text-left my-6 md:mb-20 text-base md:text-lg lg:text-xl md:my-12">
-					Across platforms. Web3 Framework for Original Creators to claim and verify ownership of public
+					Across platforms. Web3 Framework for Original Creators to claim and verify ownership of online
 					identities and multimedia content and license creative works P2P.
 				</h2>
 				<SectionButton
