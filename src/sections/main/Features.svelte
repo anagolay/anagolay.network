@@ -11,13 +11,12 @@
 <Section id="home_main_features" class="relative bg-spaceBlue-900">
 	<div class="text-center mb-40">
 		<SectionTitle class="mb-12">
-			<p class="md:mb-4">Essential infrastructure for digital</p>
-			<p>creative market 3.0</p>
+			<p class="md:mb-4 max-w-xl mx-auto">Essential infrastructure for digital creative market 3.0</p>
 		</SectionTitle>
 		<div class="flex flex-wrap gap-4 justify-evenly">
 			{#each beastFeatures as data}
 				<FadeinCard
-					class="max-w-xs w-full sm:basis-[45%] lg:basis-[30%] pt-6 transition-opacity delay-100 duration-700"
+					class="w-80 sm:w-full mx-2 sm:mx-0 sm:basis-[45%] lg:basis-[30%] pt-6 transition-opacity delay-100 duration-700"
 				>
 					<FeatureCard {data} />
 				</FadeinCard>
