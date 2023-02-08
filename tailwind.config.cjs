@@ -33,13 +33,6 @@ module.exports = {
 				stars:
 					'radial-gradient(2px 2px at 20px 30px, #eeeeee, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 40px 70px, #ffffff, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 50px 160px, #dddddd, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 90px 40px, #ffffff, rgba(0, 0, 0, 0)),radial-gradient(1px 1px at 130px 80px, #ffffff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 160px 120px, #dddddd, rgba(0, 0, 0, 0)),  radial-gradient(3px 3px at 100px 130px, #eeeeee, rgba(0, 0, 0, 0));',
 			},
-			// textShadow: {
-			//     sm: '0 1px 2px var(--tw-shadow-color)',
-			//     DEFAULT: '0 2px 4px var(--tw-shadow-color)',
-			//     lg: '0 8px 16px var(--tw-shadow-color)',
-			//     around:
-			//         '1px 0 3px var(--tw-shadow-color), -1px 0 3px var(--tw-shadow-color), 0 1px 3px var(--tw-shadow-color), 0 -1px 3px var(--tw-shadow-color);',
-			// },
 			boxShadow: {
 				button: '0px 4px 4px rgba(20, 31, 69, 0.5), inset 0px 2px 4px rgba(244, 251, 255, 0.5)',
 				card: 'inset 0px 7px 12px -7px (--tw-shadow-color);',
@@ -49,7 +42,7 @@ module.exports = {
 				around:
 					'7px 0 7px var(--tw-shadow-color), -7px 0 7px var(--tw-shadow-color), 0 7px 7px var(--tw-shadow-color), 0 -7px 7px var(--tw-shadow-color);',
 				phrase: 'inset 0px 0px 100px 10px var(--tw-shadow-color);',
-				navBar: '0px 0px 10px var(--tw-shadow-color)',
+				navBar: '0 0 2px rgba(0,0,0,.8),0 4px 12px rgba(0,0,0,.36),inset 0 0 0 .5px hsla(0,0%,93%,.36)',
 			},
 			keyframes: {
 				marquee: {

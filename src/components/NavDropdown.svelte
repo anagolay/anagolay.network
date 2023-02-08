@@ -32,11 +32,11 @@
 			<span class="material-icons">keyboard_arrow_down</span>
 		</button>
 		<ul
-			class="absolute px-2 dropdown-content min-w-[10rem] lg:min-w-[13rem] {visible} bg-darkSpaceBlue border border-spaceBlue-700 rounded-lg text-base z-50 py-2 list-none text-left shadow-lg pt-1 m-0 bg-clip-padding"
+			class="absolute px-2 dropdown-content min-w-[10rem] lg:min-w-[13rem] {visible} bg-spaceBlue-900 border border-spaceBlue-700 rounded-lg text-base z-50 py-2 list-none text-left shadow-lg pt-1 m-0 bg-clip-padding"
 			bind:this={menuContent}
 		>
 			{#each data.options as option}
-				<li class="hover:bg-blue-800/50 p-2 rounded-sm">
+				<li class="p-2 rounded-sm">
 					<NavLink class="whitespace-nowrap active:bg-transparent" {option} />
 				</li>
 			{/each}

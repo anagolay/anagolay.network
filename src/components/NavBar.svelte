@@ -27,7 +27,7 @@
 <nav class="fixed w-full top-0 md:top-4 z-20">
 	<div class="md:container">
 		<div
-			class="relative text-sm md:text-base shadow-navBar shadow-black/50 text-white bg-darkSpaceBlue border-b md:border border-spaceBlue-700 md:rounded-cardLg md:-mx-8 md:px-8"
+			class="relative text-sm md:text-base shadow-navBar shadow-black/50 text-white bg-spaceBlue-900 border-b md:border border-spaceBlue-700 md:rounded-cardLg md:-mx-8 md:px-8"
 		>
 			<div class="flex w-full h-16 md:h-20 justify-center items-center md:justify-between">
 				<button
@@ -37,7 +37,7 @@
 				>
 					<Hamburguer open={toggleMenu} />
 				</button>
-				<div class="h-8 my-1 lg:h-12 ">
+				<div class="h-8 my-1 lg:h-10 ">
 					<a href="/" on:click={closeSideBar}>
 						<img
 							class="object-contain h-full w-fit"
@@ -50,7 +50,7 @@
 				</div>
 
 				<div
-					class="z-10 flex flex-col absolute top-16 bottom-0 bg-darkSpaceBlue md:bg-transparent h-screen bg-opacity-100 pt-4
+					class="z-10 flex flex-col absolute top-16 bottom-0 bg-spaceBlue-900 md:bg-transparent h-screen bg-opacity-100 pt-4
 			  text-center right-full font-firaMono transition-transform duration-300 w-full 
 				border-t border-spaceBlue-700
 				{menuTransition}
