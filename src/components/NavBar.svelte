@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import { discover, idiyanale, howItWorks, useCases, deck } from '$src/routesFile';
 	import Hamburguer from './Hamburguer.svelte';
 	import NavDropdown from './NavDropdown.svelte';
@@ -6,6 +7,12 @@
 
 	let toggleMenu = false;
 	let menuTransition = '';
+
+	let showOnPx = 20;
+	let initialStyles = 'border-spaceBlue-900';
+	let scrollStyles =
+		'shadow-navBar shadow-black/50 text-white bg-spaceBlue-900 border-spaceBlue-700 md:rounded-cardLg md:-mx-8 md:px-8';
+	let navBarstyles = initialStyles;
 
 	//toggleSideBar will open sidebar if it is closed or close it if opened.
 	function toggleSideBar(): void {
@@ -22,13 +29,18 @@
 		toggleMenu = false;
 		menuTransition = '';
 	}
+
+	function setStyles() {
+		navBarstyles = window.scrollY > showOnPx ? scrollStyles : initialStyles;
+	}
+	onMount(() => setStyles());
 </script>
+
+<svelte:window on:scroll={setStyles} />
 
 <nav class="fixed w-full top-0 md:top-4 z-20">
 	<div class="md:container">
-		<div
-			class="relative text-sm md:text-base shadow-navBar shadow-black/50 text-white bg-spaceBlue-900 border-b md:border border-spaceBlue-700 md:rounded-cardLg md:-mx-8 md:px-8"
-		>
+		<div class="relative text-sm md:text-base bg-spaceBlue-900 border-b md:border {navBarstyles} ">
 			<div class="flex w-full h-16 md:h-20 justify-center items-center md:justify-between">
 				<button
 					class="absolute top-3 p-2 left-3 md:hidden cursor-pointer"

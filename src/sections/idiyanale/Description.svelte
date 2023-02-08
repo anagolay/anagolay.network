@@ -15,7 +15,11 @@
 		<div class="flex flex-col md:flex-row w-full gap-4 md:gap-8 justify-center items-stretch pt-12">
 			{#each cardsContent as item}
 				<div class="md:basis-[30%] mb-6">
-					<FeatureCard data={item} iconClasses="w-16 h-16 lg:w-24 lg:h-24" iconSize="text-3xl lg:text-5xl" />
+					<FeatureCard
+						data={item}
+						iconClasses="w-12 h-12 lg:w-16 lg:h-16 -translate-y-4"
+						iconSize="text-xl lg:text-3xl"
+					/>
 				</div>
 			{/each}
 		</div>

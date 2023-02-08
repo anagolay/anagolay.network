@@ -3,7 +3,7 @@
 	import BaseCard from './BaseCard.svelte';
 	import CardIcon from './CardIcon.svelte';
 	export let data: FeatureData;
-	export let iconClasses = 'w-24 h-24';
+	export let iconClasses = 'w-24 h-24 -translate-y-6';
 	export let iconSize = 'text-5xl';
 </script>
 

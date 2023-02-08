@@ -48,7 +48,11 @@
 				class="basis-[45%] sm:basis-1/5 mt-4 flex flex-col pb-2 lg:pb-7 text-center"
 				url={data.anchor}
 			>
-				<FeatureCard {data} iconClasses="w-12 h-12 lg:w-24 lg:h-24" iconSize="text-3xl lg:text-5xl">
+				<FeatureCard
+					{data}
+					iconClasses="w-12 h-12 lg:w-16 lg:h-16 -translate-y-4"
+					iconSize="text-xl lg:text-3xl"
+				>
 					<span slot="arrow" class="material-icons text-neonGreen-400 text-[100%] font-bold mt-4 -mb-4">
 						south
 					</span>

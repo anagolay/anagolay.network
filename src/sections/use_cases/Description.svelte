@@ -10,7 +10,11 @@
 	<div class="flex flex-col md:flex-row w-full pt-40 pb-12  md:pb-20 justify-between">
 		{#each descriptionItems as data}
 			<div class="md:basis-[30%] mb-12 md:mb-6">
-				<FeatureCard {data} iconClasses="w-16 h-16 lg:w-24 lg:h-24" iconSize="text-3xl lg:text-5xl" />
+				<FeatureCard
+					{data}
+					iconClasses="w-12 h-12 lg:w-16 lg:h-16 -translate-y-4"
+					iconSize="text-xl lg:text-3xl"
+				/>
 			</div>
 		{/each}
 	</div>
