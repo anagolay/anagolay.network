@@ -8,7 +8,7 @@
 	let menuTransition = '';
 	let bgColor = 'bg-spaceBlue-900';
 
-	let scrollY: number;
+	let scrollY = 0;
 
 	//toggleSideBar will open sidebar if it is closed or close it if opened.
 	function toggleSideBar(): void {
@@ -34,12 +34,9 @@
 <nav class="fixed w-full top-0 md:top-4 z-20">
 	<div class="md:container">
 		<div
-			class="relative text-sm md:text-base shadow-navBar shadow-black/50 transition-colors duration-300  md:rounded-cardLg md:-mx-8 md:px-8"
+			class="relative text-sm md:text-base {bgColor} shadow-black/50 transition-colors duration-300  md:rounded-cardLg md:-mx-8 md:px-8"
 			class:shadow-navBar={scrollY > 0}
 			class:text-white={scrollY > 0}
-			class:bg-navBarBg={scrollY > 0}
-			class:border-spaceBlue-700={scrollY > 0}
-			class:bg-spaceBlue-900={scrollY === 0}
 		>
 			<div class="flex w-full h-16 md:h-20 justify-center items-center md:justify-between">
 				<button
