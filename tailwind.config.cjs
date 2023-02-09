@@ -17,9 +17,7 @@ module.exports = {
 			sans: ['Graphik', 'sans-serif'],
 			serif: ['Merriweather', 'serif'],
 			nunito: ['nunito', 'sans-serif'],
-			montserrat: ['montserrat', 'serif'],
 			dmsans: ['DM Sans'], // Ensure fonts with spaces have " "surrounding it.
-			mono: ['Roboto Mono'],
 			firaMono: ['Fira Mono'],
 		},
 		extend: {

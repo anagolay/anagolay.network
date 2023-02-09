@@ -1,5 +1,4 @@
 <script lang="ts">
-	import PhraseContainer from '$src/components/PhraseContainer.svelte';
 	import Section from '$src/components/Section.svelte';
 	import SectionButton from '$src/components/SectionButton.svelte';
 </script>
@@ -35,9 +34,9 @@
 </Section>
 
 <Section class="pt-20 md:pt-8" id="ownership">
-	<!-- <PhraseContainer> -->
-	<p class="w-5/6 md:w-3/4 mx-auto   text-lg md:text-2xl py-8 md:py-16 text-center">
+	<div
+		class="basis-5/6 flex justify-center text-center text-xl md:text-2xl xl:text-4xl max-w-3xl py-8 md:py-16 xl:py-8 mx-auto"
+	>
 		We build the essential infrastructure for the emerging ownership economy to work
-	</p>
-	<!-- </PhraseContainer> -->
+	</div>
 </Section>

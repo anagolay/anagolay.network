@@ -5,7 +5,7 @@
 </script>
 
 <Section id="footer">
-	<div class="font-montserrat">
+	<div class="font-dmsans">
 		<hr class="mb-6 opacity-50 md:-mx-4 color-white" />
 		<div class="flex flex-col md:flex-row items-center md:items-start text-center md:mx-auto text-base">
 			<div class="w-36 md:w-[unset] md:my-0 md:-mr-8">
