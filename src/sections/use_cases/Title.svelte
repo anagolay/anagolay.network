@@ -4,7 +4,7 @@
 </script>
 
 <Section id="use_cases_header" class="overflow-hidden" backgroundClasses={['stars', 'stars2', 'stars3']}>
-	<div class="relative w-full max-w-full flex flex-col text-center md:text-left md:flex-row pt-8 md:pt-24">
+	<div class="relative w-full max-w-full flex flex-col text-center md:text-left md:flex-row pt-20 md:pt-36">
 		<div class="basis-1/2 flex flex-col items-center md:items-start lg:pt-12">
 			<h1 class="text-3xl md:text-5xl font-extrabold">
 				<p class="leading-normal">Use Cases & Applications</p>
@@ -18,7 +18,7 @@
 			>
 		</div>
 		<div class="basis-1/2">
-			<div class="relative w-3/4 mx-auto md:mr-0 md:w-11/12 lg:-my-24">
+			<div class="relative w-3/4 mx-auto md:mr-0 md:w-11/12 lg:-my-16">
 				<object
 					class="object-contain"
 					title="main animation"
@@ -32,12 +32,11 @@
 		</div>
 	</div>
 </Section>
-<Section id="ownership">
-	<div class="flex w-full justify-center">
-		<div
-			class="basis-5/6 flex justify-center text-center text-xl md:text-2xl xl:text-4xl max-w-3xl py-8 md:py-16 xl:py-8"
-		>
-			We build the essential infrastructure for the emerging ownership economy to work
-		</div>
+
+<Section class="pt-20 md:pt-8" id="ownership">
+	<div
+		class="basis-5/6 flex justify-center text-center text-xl md:text-2xl xl:text-4xl max-w-3xl py-8 md:py-16 xl:py-8 mx-auto"
+	>
+		We build the essential infrastructure for the emerging ownership economy to work
 	</div>
 </Section>

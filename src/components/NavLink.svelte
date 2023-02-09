@@ -37,7 +37,7 @@
 	on:click|preventDefault={handleClick}
 	bind:this={anchor}
 >
-	<p class="p-2">
+	<p>
 		{option.text}
 	</p>
 </a>

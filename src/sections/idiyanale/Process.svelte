@@ -34,9 +34,11 @@
 			data="/idiyanale_animation.svg"
 		/>
 
-		<div class="flex flex-col md:flex-row w-full gap-4 lg:gap-8 py-12">
+		<div class="flex flex-col md:flex-row w-full gap-4 lg:gap-8 py-12 items-stretch">
 			{#each processCards as cardText}
-				<BoxItem class="basis-1/3 my-0" boxItem={cardText} />
+				<div class="basis-1/3">
+					<BoxItem boxItem={cardText} />
+				</div>
 			{/each}
 		</div>
 	</div>

@@ -1,5 +1,7 @@
 <script lang="ts">
+	import BaseCard from '$src/components/BaseCard.svelte';
 	import Section from '$src/components/Section.svelte';
+	import SectionTitle from '$src/components/SectionTitle.svelte';
 
 	import type { ArchitectureItem, WebLayerIcon } from '$src/types';
 
@@ -15,19 +17,19 @@
 		}
 	}
 	const containerClass =
-		'w-[25rem] px-2 max-w-full md:w-full flex bg-gradient-to-b from-spaceBlue-50/10 to-transparent md:py-6 lg:py-8 rounded-md md:rounded-3xl h-20 md:h-[unset] mx-auto border border-spaceBlue-600/20 mb-4 md:mb-8';
+		'w-[25rem] px-2 max-w-full md:w-full flex md:py-6 lg:py-8 rounded-md md:rounded-3xl h-20 md:h-[unset] mx-auto mb-4 md:mb-8';
 </script>
 
 <Section
 	id="how_it_works_architecture"
-	class="mt-20 pt-20 bg-gradient-to-b from-spaceBlue-50/10 to-transparent shadow-cardTop shadow-aquaTeal-300 pb-40"
+	class="mt-20 pt-20 bg-gradient-to-b from-spaceBlue-50/5 via-spaceBlue-50/5 to-transparent pb-40"
 >
 	<div class="lg:w-5/6 mx-auto">
-		<div class="relative text-center py-8 md:py-16">
-			<h3 class="text-2xl md:text-4xl text-neonGreen-400">Architecture</h3>
+		<div class="relative text-center pb-8 md:py-16">
+			<SectionTitle>Architecture</SectionTitle>
 		</div>
 
-		<div class={containerClass}>
+		<BaseCard class={containerClass}>
 			<div
 				class="w-28 min-w-[7rem] md:w-48 lg:w-56 flex justify-end text-right items-center text-neonGreen-400"
 			>
@@ -48,10 +50,10 @@
 					/>
 				{/each}
 			</div>
-		</div>
+		</BaseCard>
 
 		{#each architectureItems as item}
-			<div class={containerClass}>
+			<BaseCard class={containerClass}>
 				<div class="w-28 min-w-[7rem] md:w-48 lg:w-56 flex justify-end items-center text-neonGreen-400">
 					<div class="flex flex-col items-end text-right">
 						<p class="text-[.56rem] md:text-base font-bold "><i>{item.title}</i></p>
@@ -72,16 +74,21 @@
 				>
 					{#each item.description as word, i}
 						<div
-							class="w-fit min-w-[50%] xl:min-w-[8rem] h-fit sm:py-1 md:py-2 my-1 px-2 md:px-4 text-center {item
-								.wordContainer[
+							class=" {item.wordContainer[
 								i
-							]} bg-gradient-to-b from-spaceBlue-50/20 to-transparent hover:cursor-default hover:bg-light hover:from-neonGreen-400/20 rounded-full border border-spaceBlue-50/30 hover:border-neonGreen-400/50"
+							]} w-fit min-w-[50%] xl:min-w-[8rem] h-fit text-center my-1 bg-gradient-to-b from-aquaTeal-300 to-neonGreen-400 cursor-default rounded-full border border-spaceBlue-50/30 hover:border-spaceBlue-50"
 						>
-							{word}
+							<div class="whitespace-nowrap bg-spaceBlue-900 rounded-full">
+								<div
+									class="whitespace-nowrap bg-spaceBlue-50/10 sm:py-1 md:py-2 px-2 md:px-4 rounded-full hover:bg-spaceBlue-50 hover:text-spaceBlue-900 hover:border-spaceBlue-50"
+								>
+									{word}
+								</div>
+							</div>
 						</div>
 					{/each}
 				</div>
-			</div>
+			</BaseCard>
 		{/each}
 	</div>
 </Section>

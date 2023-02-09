@@ -2,13 +2,13 @@ import type { FeatureData, TippingStep } from '$src/types';
 
 export function load() {
 	const features: FeatureData[] = [
-		{ feature: 'Verified Creators Only', img: { src: '/icon_proof.svg', alt: 'verified' } },
-		{ feature: 'Across plattforms', img: { src: '/icon_interconnectivity.svg', alt: 'interconnectivity' } },
+		{ text: 'Verified Creators Only', img: { src: '/icon_proof.svg', alt: 'verified' } },
+		{ text: 'Across plattforms', img: { src: '/icon_interconnectivity.svg', alt: 'interconnectivity' } },
 		{
-			feature: 'Decentralized',
+			text: 'Decentralized',
 			img: { src: '/icon_decentralization.svg', alt: 'decentralization' },
 		},
-		{ feature: 'No Custodial Wallet', img: { src: '/icon_wallet.svg', alt: 'wallet' } },
+		{ text: 'No Custodial Wallet', img: { src: '/icon_wallet.svg', alt: 'wallet' } },
 	];
 	const steps: TippingStep[] = [
 		{

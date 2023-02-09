@@ -17,14 +17,14 @@
 </script>
 
 <SvelteSeo
-	title="Anagolay Network - Process-based Interplanetary P2P Framework"
-	description="Process-based interplanetary P2P framework built for storing & transferring Intellectual Property rights (Copyright, Licenses, Ownerships) as verifiable records"
-	keywords="anagolay, blockchain, workflow, transparent process, substrate, copyright statements, ownership statements, web3 rights management"
+	title="Anagolay Network - Manage your content on your terms"
+	description="Web3 Framework for Original Creators to claim and verify ownership of online identities and multimedia content and license creative works P2P"
+	keywords="anagolay, workflow, multimedia content, transparent process, copyright statements, ownership, web3 rights management, online identeties "
 	twitter={{
 		site: '@AnagolayNet',
-		title: 'Anagolay Network - Process-based Interplanetary P2P Framework',
+		title: 'Anagolay Network - Manage your content on your terms',
 		description:
-			'Process-based interplanetary P2P framework built for storing & transferring Intellectual Property rights (Copyright, Licenses, Ownerships) as verifiable records',
+			'Web3 Framework for Original Creators to claim and verify ownership of online identities and multimedia content and license creative works P2P',
 		image:
 			'https://ipfs.anagolay.network/ipfs/QmZTpn19dZ5GJijKVn3aGg4HtwWTe9hx4sxqxdRXUjTrzt?filename=twitter_card_home.png',
 		imageAlt: 'White background with Anagolay brand logo',

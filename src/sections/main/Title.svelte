@@ -1,18 +1,21 @@
 <script lang="ts">
+	import PhraseContainer from '$src/components/PhraseContainer.svelte';
 	import Section from '$src/components/Section.svelte';
 	import SectionButton from '$src/components/SectionButton.svelte';
 </script>
 
-<Section id="home_header" class="overflow-hidden" backgroundClasses={['stars', 'stars2', 'stars3']}>
-	<div class="relative pt-8 pb-10 md:py-32 flex flex-col items-center md:items-start md:flex-row animate-">
+<Section id="home_header" class="overflow-hidden md:pb-8" backgroundClasses={['stars', 'stars2', 'stars3']}>
+	<div
+		class="relative pt-20 pb-10 md:pt-48 md:pb-32 flex flex-col items-center md:items-start md:flex-row animate-"
+	>
 		<div class="w-80 max-w-full md:w-3/5 ">
 			<div class="relative lg:w-4/5">
 				<h1 class="md:mb-0 text-center font-extrabold text-3xl md:text-5xl md:text-left">
-					<p class="md:leading-[4rem]">Process-based Interplanetary P2P Framework</p>
+					<p class="md:leading-[4rem]">Manage your content on your terms.</p>
 				</h1>
 				<h2 class="w-full text-center md:text-left my-6 md:mb-20 text-base md:text-lg lg:text-xl md:my-12">
-					Transparent verifiable processes for creation & validation of proofs and stating of rights. Built
-					with Substrate.
+					Across platforms. Web3 Framework for Original Creators to claim and verify ownership of online
+					identities and multimedia content and license creative works P2P.
 				</h2>
 				<SectionButton
 					url="https://discordapp.com/invite/WHe4EuY"
@@ -39,11 +42,11 @@
 	</div>
 </Section>
 
-<Section class="relative bg-spaceBlue-900" id="no_central_authority">
-	<div class="text-lg md:text-4xl pb-32 md:pb-52 text-center pt-16 md:pt-32 px-4">
-		<p class="text-neonGreen-400 line-through font-medium mb-2">
-			<span class="text-spaceBlue-50/50">Central authority <br />Resource heavy consensus mechanism</span>
+<Section class="relative bg-spaceBlue-900 pb-40" id="no_central_authority">
+	<PhraseContainer>
+		<p class="line-through font-medium mb-2">
+			<span class="text-spaceBlue-50">Central authority <br />Resource heavy consensus mechanism</span>
 		</p>
-		<p class="font-bold">Trust the process</p>
-	</div>
+		<p class="font-bold text-neonGreen-400">Trust the process</p>
+	</PhraseContainer>
 </Section>

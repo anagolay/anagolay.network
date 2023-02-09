@@ -8,7 +8,7 @@
 
 <NavBar />
 
-<main class="bg-spaceBlue-900 flex flex-col text-spaceBlue-50 font-dmsans">
+<main class="bg-spaceBlue-900 flex flex-col text-spaceBlue-50 font-dmsans overflow-x-hidden">
 	<slot />
 	<Footer />
 	<TopButton />

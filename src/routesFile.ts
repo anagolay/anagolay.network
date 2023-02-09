@@ -4,7 +4,7 @@ export const whitePaperUrl = 'https://bit.ly/Anagolay_WhitePaper_wip';
 
 export const idiyanale: LinkData = { text: 'Idiyanale', url: '/idiyanale/', external: false };
 export const howItWorks: LinkData = { text: 'How it works', url: '/how-it-works/', external: false };
-// export const useCases: LinkData = { text: 'Use cases', url: '/use-cases/', external: false };
+
 export const useCases: MenuOption = {
 	title: 'Use Cases',
 	options: [
@@ -34,7 +34,7 @@ export const discover: MenuOption = {
 			url: 'https://www.notion.so/Anagolay-FAQ-530c3d1de6784e7eb0c842c7b9bedfa9',
 			external: true,
 		},
-		{ text: 'Blog', url: 'https://blog.anagolay.network/', external: true },
+		{ text: 'Blog', url: 'https://anagolay.dev/blog/', external: true },
 		{
 			text: 'Careers',
 			url: 'https://www.notion.so/Kelp-Anagolay-Careers-c27cebdedf29461abda591bc23bad3f6',
@@ -53,11 +53,7 @@ export const menuOptions: MenuOption[] = [
 				text: 'White Paper',
 				url: whitePaperUrl,
 			},
-			// {
-			// 	text: 'Wiki',
-			// 	url: 'https://anagolay.dev/',
-			// },
-			{ text: 'Blog', url: 'https://blog.anagolay.network' },
+			{ text: 'Blog', url: 'https://anagolay.dev/blog/' },
 			{ text: 'FAQ', url: 'https://www.notion.so/Anagolay-FAQ-530c3d1de6784e7eb0c842c7b9bedfa9' },
 			{
 				text: 'Careers',

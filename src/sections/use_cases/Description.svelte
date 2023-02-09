@@ -1,5 +1,5 @@
 <script lang="ts">
-	import DescriptionCard from '$src/components/DescriptionCard.svelte';
+	import FeatureCard from '$src/components/FeatureCard.svelte';
 	import Section from '$src/components/Section.svelte';
 	import type { FeatureData } from '$src/types';
 
@@ -7,9 +7,15 @@
 </script>
 
 <Section id="use_cases_features">
-	<div class="flex flex-col md:flex-row w-full py-12 justify-between">
-		{#each descriptionItems as item}
-			<DescriptionCard {item} />
+	<div class="flex flex-col md:flex-row w-full pt-40 md:pt-12 pb-12  md:pb-20 justify-between">
+		{#each descriptionItems as data}
+			<div class="md:basis-[30%] mb-12 md:mb-6  text-center">
+				<FeatureCard
+					{data}
+					iconClasses="w-12 h-12 lg:w-16 lg:h-16 -translate-y-4"
+					iconSize="text-xl lg:text-3xl"
+				/>
+			</div>
 		{/each}
 	</div>
 </Section>

@@ -43,12 +43,13 @@ export interface MediaIcon {
 
 // interface added for 'Features' section data in main page
 export interface FeatureData {
-	feature: string;
+	text: string;
 	icon?: string;
 	img?: {
 		src: string;
 		alt: string;
 	};
+	anchor?: string;
 }
 
 // interface added for 'Trust the Process' section data in main page
@@ -103,17 +104,6 @@ export interface RoadmapItem {
 	titleStyling?: string;
 	yearOpacity?: string;
 	instances: Phase[];
-}
-
-// interface added for Trust Items cards in in 'How-it-works' page
-export interface TrustItem {
-	icon?: string;
-	img?: {
-		src: string;
-		alt: string;
-	};
-	text: string;
-	anchor: string;
 }
 
 // interface added for technology description sections data in 'How-it-works' page

@@ -6,6 +6,7 @@
 	export let data: MenuOption;
 	export let accordionHeightClass = '';
 	export let onSelect: () => void = undefined;
+	export let bgColor = 'bg-navBarBg';
 	const id = 'dropdown-' + data.title.toLowerCase();
 
 	let show = false;
@@ -13,11 +14,13 @@
 	let visible = 'hidden';
 	let menuContent: HTMLUListElement;
 
-	$: color = data.options
-		.map((option) => option.url.replaceAll('/', ''))
-		.includes($page.route.id.replaceAll('/', ''))
-		? 'text-neonGreen-400'
-		: 'text-spaceBlue-50';
+	$: color =
+		$page.route &&
+		data.options
+			.map((option) => option.url && option.url.replaceAll('/', ''))
+			.includes($page.route.id.replaceAll('/', ''))
+			? 'text-neonGreen-400'
+			: 'text-spaceBlue-50';
 
 	$: height = show ? accordionHeightClass : 'h-6';
 </script>
@@ -32,11 +35,11 @@
 			<span class="material-icons">keyboard_arrow_down</span>
 		</button>
 		<ul
-			class="absolute dropdown-content {visible} bg-spaceBlue-900 text-base z-50 py-2 list-none text-left rounded-lg shadow-lg pt-1 m-0 bg-clip-padding border-none"
+			class="absolute px-2 dropdown-content min-w-[10rem] lg:min-w-[13rem] {visible} {bgColor} border border-spaceBlue-700 rounded-lg text-base z-50 py-2 list-none text-left shadow-lg pt-1 m-0 bg-clip-padding"
 			bind:this={menuContent}
 		>
 			{#each data.options as option}
-				<li class="hover:bg-blue-800/50 m-1 rounded-sm">
+				<li class="p-2 rounded-sm">
 					<NavLink class="whitespace-nowrap active:bg-transparent" {option} />
 				</li>
 			{/each}
@@ -55,9 +58,9 @@
 			<span class="material-icons"> expand_more </span>
 		{/if}
 	</button>
-	<div class="bg-spaceBlue-900">
+	<div class="flex flex-col">
 		{#each data.options as link}
-			<NavLink class="py-1" option={link} onClick={onSelect} />
+			<NavLink class="py-2" option={link} onClick={onSelect} />
 		{/each}
 	</div>
 </div>
