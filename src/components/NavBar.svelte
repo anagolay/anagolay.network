@@ -8,7 +8,7 @@
 	let menuTransition = '';
 	let bgColor = 'bg-spaceBlue-900';
 
-	let scrollY = 0;
+	let scrollY: number;
 
 	//toggleSideBar will open sidebar if it is closed or close it if opened.
 	function toggleSideBar(): void {

@@ -4,7 +4,7 @@ export const whitePaperUrl = 'https://bit.ly/Anagolay_WhitePaper_wip';
 
 export const idiyanale: LinkData = { text: 'Idiyanale', url: '/idiyanale/', external: false };
 export const howItWorks: LinkData = { text: 'How it works', url: '/how-it-works/', external: false };
-// export const useCases: LinkData = { text: 'Use cases', url: '/use-cases/', external: false };
+
 export const useCases: MenuOption = {
 	title: 'Use Cases',
 	options: [
@@ -53,10 +53,6 @@ export const menuOptions: MenuOption[] = [
 				text: 'White Paper',
 				url: whitePaperUrl,
 			},
-			// {
-			// 	text: 'Wiki',
-			// 	url: 'https://anagolay.dev/',
-			// },
 			{ text: 'Blog', url: 'https://anagolay.dev/blog/' },
 			{ text: 'FAQ', url: 'https://www.notion.so/Anagolay-FAQ-530c3d1de6784e7eb0c842c7b9bedfa9' },
 			{

@@ -7,7 +7,7 @@
 	export let technologyItems: TechnologyItem[];
 	const flexClassArray: string[] = [];
 
-	$: technologyItems.map((value, index) => {
+	technologyItems.map((value, index) => {
 		flexClassArray.push(index % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row');
 	});
 </script>

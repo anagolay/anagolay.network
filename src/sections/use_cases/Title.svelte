@@ -18,7 +18,7 @@
 			>
 		</div>
 		<div class="basis-1/2">
-			<div class="relative w-3/4 mx-auto md:mr-0 md:w-11/12 lg:-my-24">
+			<div class="relative w-3/4 mx-auto md:mr-0 md:w-11/12 lg:-my-16">
 				<object
 					class="object-contain"
 					title="main animation"
