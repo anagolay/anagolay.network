@@ -41,8 +41,9 @@
 		</div>
 	</div>
 </Section>
+
 <Section id="how_it_works_trust_items">
-	<div class="relative flex flex-wrap gap-4 justify-evenly pt-24 md:pb-20">
+	<div class="relative flex flex-wrap gap-4 justify-evenly pt-24 md:pt-36 md:pb-20">
 		{#each trustItems as data}
 			<LinkButton
 				class="basis-[45%] sm:basis-1/5 mt-4 flex flex-col pb-2 lg:pb-7 text-center"

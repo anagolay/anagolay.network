@@ -4,7 +4,7 @@
 	import SectionButton from '$src/components/SectionButton.svelte';
 </script>
 
-<Section id="home_header" class="overflow-hidden" backgroundClasses={['stars', 'stars2', 'stars3']}>
+<Section id="home_header" class="overflow-hidden md:pb-8" backgroundClasses={['stars', 'stars2', 'stars3']}>
 	<div
 		class="relative pt-20 pb-10 md:pt-48 md:pb-32 flex flex-col items-center md:items-start md:flex-row animate-"
 	>
@@ -42,8 +42,8 @@
 	</div>
 </Section>
 
-<Section class="relative bg-spaceBlue-900 pb-20" id="no_central_authority">
-	<PhraseContainer class="mb-16">
+<Section class="relative bg-spaceBlue-900 pb-40" id="no_central_authority">
+	<PhraseContainer>
 		<p class="line-through font-medium mb-2">
 			<span class="text-spaceBlue-50">Central authority <br />Resource heavy consensus mechanism</span>
 		</p>
