@@ -16,7 +16,9 @@
 
 	$: color =
 		$page.route &&
-		data.options.map((option) => option.url.replaceAll('/', '')).includes($page.route.id.replaceAll('/', ''))
+		data.options
+			.map((option) => option.url && option.url.replaceAll('/', ''))
+			.includes($page.route.id.replaceAll('/', ''))
 			? 'text-neonGreen-400'
 			: 'text-spaceBlue-50';
 
