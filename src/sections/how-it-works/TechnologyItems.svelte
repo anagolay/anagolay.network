@@ -7,7 +7,7 @@
 	export let technologyItems: TechnologyItem[];
 	const flexClassArray: string[] = [];
 
-	$: technologyItems.map((value, index) => {
+	technologyItems.map((value, index) => {
 		flexClassArray.push(index % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row');
 	});
 </script>
@@ -31,7 +31,7 @@
 					</p>
 				</div>
 				<div class="flex flex-col {flexClassArray[i]}">
-					<div class="w-5/6 mx-auto md:w-1/2 md:-mb-[50%]">
+					<div class="w-5/6 mx-auto md:w-1/2 md:-mb-[50%] h-fit">
 						<div class="lg:w-5/6 lg:mx-auto">
 							<GlowingLight class=" from-neonGreen-400/40">
 								<img
@@ -44,7 +44,7 @@
 						</div>
 					</div>
 					<div
-						class="md:w-1/2 md:mt-0 pt-4 md:pt-16 xl:pt-32 flex flex-col items-center lg:items-start text-sm md:text-base 2xl:text-xl"
+						class="md:w-1/2 md:mt-0 pt-4 md:pt-16 xl:pt-24 flex flex-col items-center lg:items-start text-sm md:text-base 2xl:text-xl"
 					>
 						<div class="lg:w-5/6 mx-auto">
 							{#each item.contentLines as line}

@@ -1,12 +1,12 @@
 <script lang="ts">
 	export let length: number;
 	export let direction = 'left';
+	let extraClass = '';
+	export { extraClass as class };
 	let array = Array(length);
 </script>
 
-<div
-	class="w-full overflow-hidden bg-gradient-to-b from-neonGreen-400/30 via-transparent to-neonGreen-400/30 border-t border-b border-neonGreen-400"
->
+<div class="{extraClass} w-full overflow-hidden">
 	<div
 		class="flex w-fit"
 		class:animate-marqueeOne={direction === 'left'}

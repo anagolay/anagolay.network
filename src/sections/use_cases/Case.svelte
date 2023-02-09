@@ -1,9 +1,10 @@
 <script lang="ts">
 	import BoxItem from '$src/components/BoxItem.svelte';
 	import GlowingLight from '$src/components/GlowingLight.svelte';
+	import IconContainer from '$src/components/IconContainer.svelte';
+	import LinkButton from '$src/components/LinkButton.svelte';
 
 	import Section from '$src/components/Section.svelte';
-	import SectionButton from '$src/components/SectionButton.svelte';
 	import type { TechnologyItem } from '$src/types';
 	export let caseItem: TechnologyItem;
 	export let i: number;
@@ -38,14 +39,18 @@
 			</div>
 		</div>
 	</div>
-	<div class="md:grid md:grid-cols-2 md:gap-x-8">
+	<div class="flex flex-col gap-4 md:grid md:grid-cols-2 md:gap-8">
 		{#each caseItem.boxItems as boxItem}
 			<BoxItem {boxItem} />
 		{/each}
 	</div>
-	<div class="w-full flex justify-center pt-4 md:pt-12">
+	<div class="w-full flex justify-center pt-12">
 		{#if caseItem.button}
-			<SectionButton class="w-80" url={caseItem.button.url}>{caseItem.button.text}</SectionButton>
+			<LinkButton url={caseItem.button.url}>
+				<IconContainer class="w-60 md:w-80 rounded-lg text-base">
+					<p class="py-5">{caseItem.button.text}</p>
+				</IconContainer>
+			</LinkButton>
 		{/if}
 	</div>
 </Section>

@@ -5,34 +5,34 @@ import { STATUS } from '$src/types';
 export function load() {
 	const beastFeatures: FeatureData[] = [
 		{
-			feature: 'Each stored proof on the Anagolay chain can be verified',
+			text: 'Claim and Verify your (sub)domain ownership',
 			icon: 'verified_user',
 		},
 		{
-			feature: 'Each Workflow executes 100% the same code on each run',
-			icon: 'code',
+			text: 'Receive tips directly to any verified Public ID',
+			icon: 'generating_tokens',
 		},
 		{
-			feature: 'Stored proofs are contextual and well structured',
-			icon: 'folder',
+			text: 'Create legally valid Digital Copyright Statements',
+			icon: 'copyright',
 		},
-		{ feature: 'Created Statements are legally valid', icon: 'copyright' },
+		{ text: 'Unify community: manage subscriptions across platforms', icon: 'subscriptions' },
 		{
-			feature: 'Developed with a mindset that every drop of energy matters',
-			icon: 'bolt',
-		},
-		{
-			feature: 'Can work on Mars or any other isolated environment',
-			icon: 'rocket_launch',
-		},
-		{ feature: 'Community verified source code', icon: 'handshake' },
-		{
-			feature: 'Privacy by default, users’ data is not stored on-chain',
-			icon: 'private_connectivity',
+			text: 'Set terms for your content (licensing options)',
+			icon: 'text_snippet',
 		},
 		{
-			feature: 'All stored data structures are content addressable',
-			img: { src: '/icon_decentralized.svg', alt: 'decentralized network' },
+			text: 'Streamline content publishing & sell where you share',
+			icon: 'screen_share',
+		},
+		{ text: 'Community verified source code', icon: 'memory' },
+		{
+			text: 'Turn your “dead weight” content into a passive income',
+			icon: 'monetization_on',
+		},
+		{
+			text: 'Support Original Creators and license multimedia content peer-2-peer',
+			icon: 'stars',
 		},
 	];
 
@@ -47,7 +47,7 @@ export function load() {
 		{
 			src: '/trust_world.svg',
 			alt: 'World Validation',
-			text: 'Anagolay Workflow and its building blocks — Operations can be run anywhere in any environment (even on Mars!) and always produce the same results (Proofs) for the same (or similar) sets of data.',
+			text: 'Anagolay Workflow and its building blocks — operations can be run anywhere in any environment (even on Mars!) and always produce the same results (Proofs) for the same (or similar) sets of data.',
 			linkText: 'Anagolay proofs',
 			link: '/how-it-works/#how_it_works_proofs',
 		},
@@ -71,7 +71,7 @@ export function load() {
 			src: '/case_ip.svg',
 			alt: 'Ip management',
 			title: 'IP management in the Web3',
-			text: 'While creating & storing records of Rights, Restrictions, and Proofs Anagolay allows asset creators to establish how digital assets are used and owned.',
+			text: 'While creating & storing records of Rights, Restrictions, and Proofs Anagolay allows asset creators to establish how digital assets are used and owned.',
 		},
 		{
 			src: '/case_p2p.svg',

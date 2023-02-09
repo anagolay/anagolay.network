@@ -1,7 +1,9 @@
 <script lang="ts">
-	import MediaButton from '$src/components/MediaButton.svelte';
+	import BaseCard from '$src/components/BaseCard.svelte';
+	import IconContainer from '$src/components/IconContainer.svelte';
+	import LinkButton from '$src/components/LinkButton.svelte';
 	import Section from '$src/components/Section.svelte';
-
+	import SectionTitle from '$src/components/SectionTitle.svelte';
 	import type { TeamMember } from '$src/types';
 
 	let siteIcons = [
@@ -35,11 +37,9 @@
 </script>
 
 <Section class="pt-12" id="home_team">
-	<div
-		class="w-full h-min-[20rem] text-center p-5 bg-gradient-to-b from-spaceBlue-50/10 to-transparent rounded-lg md:rounded-3xl md:mx-auto md:py-6 shadow-card shadow-aquaTeal-300"
-	>
+	<BaseCard class="w-full h-min-[20rem] text-center p-5 md:mx-auto md:py-6">
 		<div class="w-80 max-w-full mx-auto sm:w-full md:w-fit flex flex-col items-center">
-			<h2 class="font-medium text-2xl md:text-4xl my-9 md:my-8">Meet the team</h2>
+			<SectionTitle class="my-9 md:my-8">Meet the team</SectionTitle>
 			<div class="py-3 w-5/6 mx-auto grid gap-4 grid-cols-3 md:grid-cols-6">
 				{#each teamMembers as member}
 					<div
@@ -58,16 +58,15 @@
 			<div class="sm:w-5/6 sm:mx-auto h-64 sm:h-48 md:h-36 lg:h-28 text-sm md:text-base 2xl:text-lg">
 				{selected.bio}
 			</div>
-			<div class="flex md:mt-5">
+			<div class="flex md:mt-5 gap-2 md:gap-4">
 				{#each selected.links as link, i}
-					<MediaButton
-						class="w-10 h-10 sm:w-16 sm:h-16"
-						title={icons[i].domain}
-						url={link}
-						src={icons[i].src}
-					/>
+					<LinkButton url={link}>
+						<IconContainer class="w-10 h-10 sm:w-16 sm:h-16 rounded-full">
+							<img height="20" width="20" class="h-3 sm:h-5" src={icons[i].src} alt={icons[i].domain} />
+						</IconContainer>
+					</LinkButton>
 				{/each}
 			</div>
 		</div>
-	</div>
+	</BaseCard>
 </Section>

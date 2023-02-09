@@ -1,4 +1,4 @@
-const plugin = require('tailwindcss/plugin');
+// const plugin = require('tailwindcss/plugin');
 
 module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
@@ -17,9 +17,8 @@ module.exports = {
 			sans: ['Graphik', 'sans-serif'],
 			serif: ['Merriweather', 'serif'],
 			nunito: ['nunito', 'sans-serif'],
-			montserrat: ['montserrat', 'serif'],
 			dmsans: ['DM Sans'], // Ensure fonts with spaces have " "surrounding it.
-			mono: ['Roboto Mono'],
+			firaMono: ['Fira Mono'],
 		},
 		extend: {
 			backgroundImage: {
@@ -32,13 +31,6 @@ module.exports = {
 				stars:
 					'radial-gradient(2px 2px at 20px 30px, #eeeeee, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 40px 70px, #ffffff, rgba(0, 0, 0, 0)), radial-gradient(3px 3px at 50px 160px, #dddddd, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 90px 40px, #ffffff, rgba(0, 0, 0, 0)),radial-gradient(1px 1px at 130px 80px, #ffffff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 160px 120px, #dddddd, rgba(0, 0, 0, 0)),  radial-gradient(3px 3px at 100px 130px, #eeeeee, rgba(0, 0, 0, 0));',
 			},
-			// textShadow: {
-			//     sm: '0 1px 2px var(--tw-shadow-color)',
-			//     DEFAULT: '0 2px 4px var(--tw-shadow-color)',
-			//     lg: '0 8px 16px var(--tw-shadow-color)',
-			//     around:
-			//         '1px 0 3px var(--tw-shadow-color), -1px 0 3px var(--tw-shadow-color), 0 1px 3px var(--tw-shadow-color), 0 -1px 3px var(--tw-shadow-color);',
-			// },
 			boxShadow: {
 				button: '0px 4px 4px rgba(20, 31, 69, 0.5), inset 0px 2px 4px rgba(244, 251, 255, 0.5)',
 				card: 'inset 0px 7px 12px -7px (--tw-shadow-color);',
@@ -47,6 +39,8 @@ module.exports = {
 					'0px 4px 4px rgba(20, 31, 69, 0.5), inset 0px -3px 5px rgba(244, 251, 255, 0.2), inset 4px 5px 10px #141f45',
 				around:
 					'7px 0 7px var(--tw-shadow-color), -7px 0 7px var(--tw-shadow-color), 0 7px 7px var(--tw-shadow-color), 0 -7px 7px var(--tw-shadow-color);',
+				phrase: 'inset 0px 0px 100px 10px var(--tw-shadow-color);',
+				navBar: '0 0 2px rgba(0,0,0,.8),0 4px 12px rgba(0,0,0,.36),inset 0 0 0 .5px hsla(0,0%,93%,.36)',
 			},
 			keyframes: {
 				marquee: {
@@ -71,10 +65,12 @@ module.exports = {
 			},
 			borderRadius: {
 				'4xl': '2rem',
+				cardLg: '20px',
 			},
 			colors: {
 				transparent: 'transparent',
-				//current: 'currentColor',
+				navBarBg: 'rgb(18 32 50)',
+				pending: '#172231',
 				spaceBlue: {
 					50: '#F4FBFF',
 					// '100': '#B6E3FC',
@@ -85,7 +81,7 @@ module.exports = {
 					600: '#0772AB',
 					700: '#054F77',
 					800: '#093954',
-					900: '#052233',
+					900: '#000C1B',
 				},
 				neonGreen: {
 					// '50': '#F3FFE5',
@@ -93,7 +89,7 @@ module.exports = {
 					// '200': '#C6FF80',
 					// '300': '#AFFF4D',
 					400: '#8CFF00',
-					// '500': '#7EE600',
+					500: '#7EE600',
 					// '600': '#62B300',
 					// '700': '#468000',
 					// '800': '#2A4D00',
@@ -104,7 +100,7 @@ module.exports = {
 					// '100': '#C3EFEF',
 					// '200': '#9BE4E4',
 					300: '#83DDDD',
-					// '400': '#4BCECE',
+					400: '#4BCECE',
 					// '500': '#31B4B4',
 					600: '#268C8C',
 					// '700': '#1B6464',

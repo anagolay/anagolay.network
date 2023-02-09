@@ -26,8 +26,6 @@
 	}}
 />
 
-<div>
-	<TitleSection />
-	<Description {cardsContent} />
-	<Process {processCards} />
-</div>
+<TitleSection />
+<Description {cardsContent} />
+<Process {processCards} />

@@ -3,18 +3,15 @@ import type { FeatureData } from '$src/types';
 export function load() {
 	const cardsContent: FeatureData[] = [
 		{
-			feature:
-				'It’s a novel approach, yet it has tremendous potential as it brings the best of both: the web3 tech stack and content-addressability.',
+			text: 'It’s a novel approach, yet it has tremendous potential as it brings the best of both: the web3 tech stack and content-addressability.',
 			icon: 'lightbulb',
 		},
 		{
-			feature:
-				'Once the core features of the framework are well-tested and approved by the community, Anagolay Inherits the role of the main net from Idiyanale.',
+			text: 'Once the core features of the framework are well-tested and approved by the community, Anagolay Inherits the role of the main net from Idiyanale.',
 			img: { src: '/icon_proof.svg', alt: 'verified' },
 		},
 		{
-			feature:
-				' Idiyanale gives all the relevant data & value to Anagolay as a kick-start capital, it will be in Anagolay genesis block.',
+			text: ' Idiyanale gives all the relevant data & value to Anagolay as a kick-start capital, it will be in Anagolay genesis block.',
 			icon: 'rocket_launch',
 		},
 	];
