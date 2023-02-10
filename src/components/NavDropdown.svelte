@@ -13,10 +13,9 @@
 	let height = 'h-6';
 	let visible = 'hidden';
 	let menuContent: HTMLUListElement = null;
-	let color = '';
-
-	$: color =
+	let color =
 		$page.route &&
+		$page.route.id &&
 		data.options
 			.map((option) => option.url && option.url.replaceAll('/', ''))
 			.includes($page.route.id.replaceAll('/', ''))
