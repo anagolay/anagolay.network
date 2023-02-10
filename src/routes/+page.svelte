@@ -26,18 +26,18 @@
 		description:
 			'Web3 Framework for Original Creators to claim and verify ownership of online identities and multimedia content and license creative works P2P',
 		image:
-			'https://ipfs.anagolay.network/ipfs/QmZTpn19dZ5GJijKVn3aGg4HtwWTe9hx4sxqxdRXUjTrzt?filename=twitter_card_home.png',
-		imageAlt: 'White background with Anagolay brand logo',
+			// 'https://ipfs.anagolay.network/ipfs/QmZTpn19dZ5GJijKVn3aGg4HtwWTe9hx4sxqxdRXUjTrzt?filename=twitter_card_home.png',
+			// imageAlt: 'White background with Anagolay brand logo',
+			'/twitterCard_main.png',
+		imageAlt: 'Blue and green background with Anagolay brand logo',
 	}}
 />
 
-<div>
-	<TitleSection />
-	<FeaturesSection {beastFeatures} />
-	<TrustProcess {trustProcessItems} />
-	<Tipping />
-	<UseCases {useCases} />
-	<TeamSection {teamMembers} />
-	<Support />
-	<Roadmap {roadMapItems} />
-</div>
+<TitleSection />
+<FeaturesSection {beastFeatures} />
+<TrustProcess {trustProcessItems} />
+<Tipping />
+<UseCases {useCases} />
+<TeamSection {teamMembers} />
+<Support />
+<Roadmap {roadMapItems} />
