@@ -1,6 +1,6 @@
 <script lang="ts">
 	let showOnPx = 200;
-	let scrollY: number;
+	let scrollY = 0;
 
 	function scrollToTop(): void {
 		window.scrollTo({ top: 0, behavior: 'smooth' });

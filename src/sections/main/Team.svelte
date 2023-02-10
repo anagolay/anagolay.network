@@ -38,12 +38,14 @@
 
 <Section class="pt-12" id="home_team">
 	<BaseCard class="w-full h-min-[20rem] text-center p-5 md:mx-auto md:py-6">
-		<div class="w-80 max-w-full mx-auto sm:w-full md:w-fit flex flex-col items-center">
+		<div class="w-80 max-w-full mx-auto sm:w-full md:w-fit flex flex-col items-center ">
 			<SectionTitle class="my-9 md:my-8">Meet the team</SectionTitle>
-			<div class="py-3 w-5/6 mx-auto grid gap-4 grid-cols-3 md:grid-cols-6">
+			<div
+				class="py-3 mx-auto flex gap-4 md:gap-8 max-w-2xl xl:max-w-full xl:gap-4 flex-wrap justify-center xl:flex-nowrap"
+			>
 				{#each teamMembers as member}
 					<div
-						class="avatar {member.opacity} duration-700 hover:opacity-100"
+						class="w-20 sm:w-32 avatar {member.opacity} duration-700 hover:opacity-100"
 						on:click={() => selectMember(member.name)}
 						on:keydown
 					>

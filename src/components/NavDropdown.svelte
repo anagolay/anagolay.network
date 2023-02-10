@@ -12,7 +12,8 @@
 	let show = false;
 	let height = 'h-6';
 	let visible = 'hidden';
-	let menuContent: HTMLUListElement;
+	let menuContent: HTMLUListElement = null;
+	let color = '';
 
 	$: color =
 		$page.route &&

@@ -9,9 +9,9 @@
 	import SectionTitle from '$src/components/SectionTitle.svelte';
 	export let roadMapItems: RoadmapItem[];
 
-	let roadMap: HTMLDivElement;
-	let roadmapWidth: number;
-	let windowWidth: number;
+	let roadMap: HTMLDivElement = null;
+	let roadmapWidth = 0;
+	let windowWidth = 0;
 
 	function scrollTo(left: number) {
 		roadMap.scrollLeft = left;

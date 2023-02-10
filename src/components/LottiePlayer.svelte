@@ -3,7 +3,7 @@
 	import { onMount } from 'svelte';
 	export let src: string;
 
-	let element: HTMLDivElement;
+	let element: HTMLDivElement = null;
 
 	onMount(() => {
 		lottie.loadAnimation({
