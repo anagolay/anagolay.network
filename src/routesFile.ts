@@ -9,12 +9,12 @@ export const idiyanale: MenuOption = {
 	title: 'Idiyanale',
 	options: [
 		{
-			text: 'MainNet',
+			text: 'Pioneer MainNet',
 			url: '/idiyanale/mainnet/',
 			external: false,
 		},
 		{
-			text: 'Phases',
+			text: 'Launch Phases',
 			url: '/idiyanale/phases/',
 			external: false,
 		},

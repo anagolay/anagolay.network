@@ -16,6 +16,11 @@
 			content:
 				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem culpa fugit optio mollitia enim. Molestias maxime non sequi nesciunt cumque exercitationem cupiditate, porro, iure molestiae quae tempore eligendi? Maiores, aut!',
 		},
+		{
+			title: 'Option 1',
+			content:
+				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem culpa fugit optio mollitia enim. Molestias maxime non sequi nesciunt cumque exercitationem cupiditate, porro, iure molestiae quae tempore eligendi? Maiores, aut!',
+		},
 	]}
 >
 	<p slot="phasenumber">Phase 1</p>

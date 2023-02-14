@@ -1,7 +1,6 @@
 <script>
 	import BaseCard from '$src/components/BaseCard.svelte';
 	import BorderBox from '$src/components/BorderBox.svelte';
-	import BoxItem from '$src/components/BoxItem.svelte';
 	import Section from '$src/components/Section.svelte';
 	export let cardsData = [];
 	export let id = '';
@@ -40,10 +39,6 @@
 					</div>
 				</BaseCard>
 			{/each}
-			<BoxItem
-				class="flex flex-col justify-start w-80 max-w-full md:w-[45%] lg:w-[30%] h-full px-6 py-4 text-center font-bold"
-				boxItem="Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sint quibusdam voluptatem temporibus est consequuntur, cupiditate quae vel necessitatibus labore."
-			/>
 		</div>
 	</div>
 </Section>
