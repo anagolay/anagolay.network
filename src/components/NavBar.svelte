@@ -69,7 +69,7 @@
 					<div
 						class="flex items-center flex-col md:flex-row md:gap-4 lg:gap-8 w-full md:w-fit justify-evenly md:text-sm lg:text-base"
 					>
-						<NavLink class="my-3 md:my-0" option={idiyanale} onClick={closeSideBar} />
+						<NavDropdown data={idiyanale} {bgColor} accordionHeightClass="h-28" onSelect={closeSideBar} />
 						<NavLink class="my-3 md:my-0" option={howItWorks} onClick={closeSideBar} />
 
 						<NavDropdown data={useCases} {bgColor} accordionHeightClass="h-28" onSelect={closeSideBar} />

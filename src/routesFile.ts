@@ -2,15 +2,31 @@ import type { MenuOption, MediaIcon, LinkData } from '$src/types';
 
 export const whitePaperUrl = 'https://bit.ly/Anagolay_WhitePaper_wip';
 
-export const idiyanale: LinkData = { text: 'Idiyanale', url: '/idiyanale/', external: false };
+// export const idiyanale: LinkData = { text: 'Idiyanale', url: '/idiyanale/', external: false };
 export const howItWorks: LinkData = { text: 'How it works', url: '/how-it-works/', external: false };
+
+export const idiyanale: MenuOption = {
+	title: 'Idiyanale',
+	options: [
+		{
+			text: 'MainNet',
+			url: '/idiyanale/mainnet/',
+			external: false,
+		},
+		{
+			text: 'Phases',
+			url: '/idiyanale/phases/',
+			external: false,
+		},
+	],
+};
 
 export const useCases: MenuOption = {
 	title: 'Use Cases',
 	options: [
 		{
 			text: 'Use Cases & Applications',
-			url: '/use-cases/',
+			url: '/use-cases',
 			external: false,
 		},
 		{
