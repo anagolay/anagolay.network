@@ -4,8 +4,8 @@
 
 	let borderClass = 'bg-gradient-to-b from-aquaTeal-300 to-neonGreen-400';
 	let bgClass = borderClass;
-	let content;
-	let icons;
+	let content = null;
+	let icons = null;
 
 	function onHover() {
 		bgClass = 'bg-transparent';

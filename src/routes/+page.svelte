@@ -28,16 +28,16 @@
 		image:
 			'https://ipfs.anagolay.network/ipfs/QmZTpn19dZ5GJijKVn3aGg4HtwWTe9hx4sxqxdRXUjTrzt?filename=twitter_card_home.png',
 		imageAlt: 'White background with Anagolay brand logo',
+		// image: 'https://files.kelp.digital/kelp-digital-assets/anagolay-network/twitter-cards/homepage.png',
+		// imageAlt: 'Blue and green background with Anagolay brand logo',
 	}}
 />
 
-<div>
-	<TitleSection />
-	<FeaturesSection {beastFeatures} />
-	<TrustProcess {trustProcessItems} />
-	<Tipping />
-	<UseCases {useCases} />
-	<TeamSection {teamMembers} />
-	<Support />
-	<Roadmap {roadMapItems} />
-</div>
+<TitleSection />
+<FeaturesSection {beastFeatures} />
+<TrustProcess {trustProcessItems} />
+<Tipping />
+<UseCases {useCases} />
+<TeamSection {teamMembers} />
+<Support />
+<Roadmap {roadMapItems} />

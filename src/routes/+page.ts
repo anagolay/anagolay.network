@@ -114,20 +114,29 @@ export function load() {
 			links: ['https://www.linkedin.com/in/carla-pezzo/'],
 			opacity: 'opacity-40',
 		},
-		{
-			name: 'Leila Iruzun',
-			title: 'Business Operations',
-			img: '/team_leila.png',
-			bio: 'Leila’s background is in management and finance. Before joining Kelp, she has worked as a business consultant for several projects. Her research subject is digital art, NFTs, and digital copyright. MSc Management and Business Economics. Massachusetts Institute of Technology: Digital Transformation Program. Leila flies kites, enjoys origami, and is currently learning Chinese.',
-			links: ['https://www.linkedin.com/in/leilairuzun/'],
-			opacity: 'opacity-40',
-		},
+
 		{
 			name: 'Elena Tairova',
 			title: 'Founder',
 			img: '/team_elena.png',
 			bio: 'Elena is the CEO of Kelp Digital OÜ and Founder of Anagolay. With 9+ years of experience in digital strategy, media, & policy, since 2017 she has been working with DLT projects. MS Economics & Management. Global Media Industries, Data Regulation & Policy at LSE. EMBA at Quantic School of Business & Technology. To clear up her mind, Elena enjoys painting, windsurfing, and jogging.',
 			links: ['https://www.linkedin.com/in/elena-tairova/'],
+			opacity: 'opacity-40',
+		},
+		{
+			name: 'George Schwindt',
+			title: 'Product Advisor',
+			img: '/team_george.png',
+			bio: 'Managing Director for 26F Music Publishing. Former Drummer of Flogging Molly. With 20+ years in Global Music Publishing & Licensing, Artist Marketing & Partnership Management George joined us to help artists navigate the changing environment and seize new opportunities.',
+			links: ['https://www.linkedin.com/in/geschwindt'],
+			opacity: 'opacity-40',
+		},
+		{
+			name: 'Denis Pisarev',
+			title: 'Technical Advisor',
+			img: '/team_denis.png',
+			bio: 'Parity Technologies’ Lead DevOps Engineer. With 10+ YoE in quality assurance, software testing & development and, previously, project management. Denis is meticulous about the quality of code and product released.',
+			links: ['https://www.linkedin.com/in/pisarevden/'],
 			opacity: 'opacity-40',
 		},
 	];

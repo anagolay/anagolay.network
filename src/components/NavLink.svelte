@@ -8,7 +8,7 @@
 	let extraClass = '';
 	export { extraClass as class };
 
-	let anchor: HTMLAnchorElement;
+	let anchor: HTMLAnchorElement = null;
 
 	let color = 'text-spaceBlue-50';
 

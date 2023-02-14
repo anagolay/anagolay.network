@@ -6,9 +6,9 @@
 	export let preClass = 'opacity-0';
 	export let postClass = 'opacity-100';
 
-	let card: HTMLDivElement;
+	let card: HTMLDivElement = null;
 	let scrollTop = 0;
-	let offsetTop: number;
+	let offsetTop = 0;
 	let changingClass = preClass;
 
 	let cumulativeOffset = function (element) {

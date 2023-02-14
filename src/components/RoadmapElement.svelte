@@ -2,7 +2,7 @@
 	import type { RoadmapItem } from '$src/types';
 	import { STATUS } from '$src/types';
 
-	export let roadMapItem: RoadmapItem;
+	export let roadMapItem: RoadmapItem = null;
 
 	// default classes
 	let titleOpacity = 'opacity-70';
