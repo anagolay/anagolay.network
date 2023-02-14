@@ -70,6 +70,7 @@ module.exports = {
 			colors: {
 				transparent: 'transparent',
 				navBarBg: 'rgb(18 32 50)',
+				phaseBg: '#021520',
 				pending: '#172231',
 				spaceBlue: {
 					50: '#F4FBFF',
