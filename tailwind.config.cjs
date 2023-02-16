@@ -63,6 +63,9 @@ module.exports = {
 				glow: 'glowing ease-in-out 2s infinite alternate',
 				pulse: 'pulsating 1s linear infinite alternate',
 			},
+			listStyleType: {
+				circle: 'circle',
+			},
 			borderRadius: {
 				'4xl': '2rem',
 				cardLg: '20px',

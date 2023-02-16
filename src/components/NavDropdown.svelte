@@ -50,8 +50,8 @@
 <div
 	class="flex px-4 flex-col md:hidden my-4 transition-all duration-500 rounded-lg overflow-hidden {height}"
 >
-	<button class="flex justify-center {color}" on:click={() => (show = !show)}>
-		<p class="mb-2">{data.title}</p>
+	<button class="flex justify-center items-center {color} mb-2" on:click={() => (show = !show)}>
+		<p class="">{data.title}</p>
 		{#if show}
 			<span class="material-icons"> expand_less </span>
 		{:else}
