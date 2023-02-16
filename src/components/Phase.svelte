@@ -4,9 +4,10 @@
 	import Section from '$src/components/Section.svelte';
 	export let id = '';
 	export let bgClass = '';
+	export let mdPy = 'md:py-24';
 </script>
 
-<Section class="py-16 md:py-24 {bgClass}" {id}>
+<Section class="py-16 {mdPy} {bgClass}" {id}>
 	<div class="flex flex-col items-center text-base md:text-lg w-full">
 		<BorderBox class="rounded-cardLg max-w-full w-80 sm:w-fit">
 			<div

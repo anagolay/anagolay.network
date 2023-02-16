@@ -130,9 +130,11 @@
 			<ul slot="content" class="list-disc text-left pl-6">
 				<li>
 					Users will continue to have the same functionality as in the previous phase. Collators and crowdloan
-					contributors cannot stake or receive rewards until the next phase. Collators will be able to perform
-					actions necessary for block production. This phase is opened to a select set of collators who have
-					enough IDI tokens to meet the minimum bond.
+					contributors cannot stake or receive rewards until the next phase.
+				</li>
+				<li>
+					Collators will be able to perform actions necessary for block production. This phase is opened to a
+					select set of collators who have enough IDI tokens to meet the minimum bond.
 				</li>
 			</ul>
 		</PhaseCard>
@@ -176,8 +178,8 @@
 					The Anagolay team will continue to manage via Sudo to ensure we are upgrading correctly and with the
 					minimum downtime
 				</li>
-			</ul></PhaseCard
-		>
+			</ul>
+		</PhaseCard>
 		<PhaseCard>
 			<p slot="title">Stakeholder Impact</p>
 			<ul slot="content" class="list-disc text-left pl-6">
@@ -195,7 +197,7 @@
 	</div>
 </Phase>
 
-<Phase id="phase-4" bgClass="bg-spaceBlue-900">
+<Phase id="phase-4" mdPy="md:py-48" bgClass="bg-spaceBlue-900">
 	<p slot="phasenumber">Phase 4</p>
 	<p slot="phasequarter">Q3 2023</p>
 	<p slot="title">Governance</p>
@@ -232,9 +234,9 @@
 	</div>
 </Phase>
 
-<Phase id="phase-5" bgClass="bg-gradient-to-b from-phaseBg via-spaceBlue-900 to-phaseBg ">
+<Phase id="phase-5" bgClass="bg-gradient-to-b from-phaseBg via-spaceBlue-900 to-phaseBg">
 	<p slot="phasenumber">Phase 5</p>
-	<p slot="phasequarter">May 2023</p>
+	<p slot="phasequarter">Q3 2023</p>
 	<p slot="title">Full Feature Launch</p>
 	<p slot="description">
 		Any end user with IDI tokens can use tipping and verification functionality, staking, wallet transfers,

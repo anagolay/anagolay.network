@@ -1,10 +1,11 @@
 <script lang="ts">
+	import PhraseContainer from '$src/components/PhraseContainer.svelte';
 	import Section from '$src/components/Section.svelte';
 </script>
 
 <Section id="phase_header" class="overflow-hidden" backgroundClasses={['stars', 'stars2', 'stars3']}>
 	<div
-		class="relative w-full max-w-full flex flex-col text-center md:text-left md:flex-row md:items-center pt-24 md:pt-40 pb-12 md:pb-32"
+		class="relative w-full max-w-full flex flex-col text-center md:text-left md:flex-row md:items-center pt-24 pb-12  md:py-40"
 	>
 		<div class="basis-1/2 flex flex-col items-center md:items-start lg:pt-12 lg:pr-4">
 			<h1 class="text-3xl lg:text-5xl font-extrabold">
@@ -44,11 +45,15 @@
 </Section>
 <Section />
 <Section class="py-12 md:py-20" id="phase_phrase">
-	<div class="w-5/6 text-center text-xl md:text-2xl xl:text-4xl mx-auto">
-		When Idiyanale secures a parachain slot on Kusama with community support via Crowdloan, Phase 1 will
-		commence.
-	</div>
-	<div class="w-5/6 text-center text-base md:text-lg py-12 mx-auto font-bold">
-		The dates below are subject to change depending on launch conditions
-	</div>
+	<PhraseContainer>
+		<div class="py-8">
+			<div class="w-5/6 text-center text-lg md:text-2xl mx-auto">
+				Idiyanale will transition to Phase 1 when a parachain slot on Kusama is secured with community
+				support.
+			</div>
+			<div class="w-5/6 text-center text-sm md:text-lg pt-16 mx-auto">
+				The dates below are best-effort targets and are subject to change depending on launch conditions
+			</div>
+		</div>
+	</PhraseContainer>
 </Section>
