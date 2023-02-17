@@ -63,6 +63,9 @@ module.exports = {
 				glow: 'glowing ease-in-out 2s infinite alternate',
 				pulse: 'pulsating 1s linear infinite alternate',
 			},
+			listStyleType: {
+				circle: 'circle',
+			},
 			borderRadius: {
 				'4xl': '2rem',
 				cardLg: '20px',
@@ -70,6 +73,7 @@ module.exports = {
 			colors: {
 				transparent: 'transparent',
 				navBarBg: 'rgb(18 32 50)',
+				phaseBg: '#021520',
 				pending: '#172231',
 				spaceBlue: {
 					50: '#F4FBFF',

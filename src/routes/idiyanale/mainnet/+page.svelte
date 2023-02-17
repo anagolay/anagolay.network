@@ -1,7 +1,7 @@
 <script lang="ts">
-	import TitleSection from '$src/sections/idiyanale/Title.svelte';
-	import Description from '$src/sections/idiyanale/Description.svelte';
-	import Process from '$src/sections/idiyanale/Process.svelte';
+	import TitleSection from '$src/sections/idiyanale/mainnet/Title.svelte';
+	import Description from '$src/sections/idiyanale/mainnet/Description.svelte';
+	import Process from '$src/sections/idiyanale/mainnet/Process.svelte';
 	import SvelteSeo from 'svelte-seo';
 
 	import type { PageData } from './$types';

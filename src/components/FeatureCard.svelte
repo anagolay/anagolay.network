@@ -7,7 +7,7 @@
 	export let iconSize = 'text-5xl';
 </script>
 
-<BaseCard class="flex flex-col relative w-full">
+<BaseCard class="flex flex-col relative w-full h-full">
 	<div class="flex flex-col items-center">
 		<CardIcon class={iconClasses}>
 			{#if data.icon}
