@@ -46,12 +46,12 @@
 <Section />
 <Section class="py-12 md:py-20" id="phase_phrase">
 	<PhraseContainer>
-		<div class="py-8">
-			<div class="w-5/6 text-center text-lg md:text-2xl mx-auto">
+		<div class="flex flex-col md:w-5/6 text-center mx-auto py-8 gap-12 md:py-8 2xl:gap-16">
+			<div class="text-lg md:text-2xl">
 				Idiyanale will transition to Phase 1 when a parachain slot on Kusama is secured with community
 				support.
 			</div>
-			<div class="w-5/6 text-center text-sm md:text-lg pt-16 mx-auto">
+			<div class="text-sm md:text-lg">
 				The dates below are best-effort targets and are subject to change depending on launch conditions
 			</div>
 		</div>

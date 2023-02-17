@@ -13,7 +13,9 @@
 	let height = 'h-6';
 	let visible = 'hidden';
 	let menuContent: HTMLUListElement = null;
-	let color =
+	let color = 'text-spaceBlue-50';
+
+	$: color =
 		$page.route &&
 		$page.route.id &&
 		data.options

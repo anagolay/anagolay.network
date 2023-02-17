@@ -63,8 +63,7 @@
 			  text-center right-full font-firaMono transition-all duration-300 w-full 
 				border-t border-spaceBlue-700
 				{menuTransition}
-				md:border-0 md:pt-0
-            md:flex-row md:mx-0 md:relative md:top-auto md:h-full md:py-2 md:right-auto md:left-auto md:w-fit md:translate-x-0 "
+				md:border-0 md:pt-0 md:transition-none md:flex-row md:mx-0 md:relative md:top-auto md:h-full md:right-auto md:left-auto md:w-fit md:translate-x-0 "
 				>
 					<div
 						class="flex items-center flex-col md:flex-row md:gap-4 lg:gap-8 w-full md:w-fit justify-evenly md:text-sm lg:text-base"

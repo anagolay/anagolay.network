@@ -234,7 +234,7 @@
 	</div>
 </Phase>
 
-<Phase id="phase-5" bgClass="bg-gradient-to-b from-phaseBg via-spaceBlue-900 to-phaseBg">
+<Phase id="phase-5" mdPy="md:py-40" bgClass="bg-gradient-to-b from-phaseBg via-spaceBlue-900 to-phaseBg">
 	<p slot="phasenumber">Phase 5</p>
 	<p slot="phasequarter">Q3 2023</p>
 	<p slot="title">Full Feature Launch</p>
@@ -280,7 +280,7 @@
 	</div>
 </Phase>
 
-<Phase id="phase-6" bgClass="bg-spaceBlue-900">
+<Phase id="phase-6" mdPy="md:py-48" bgClass="bg-spaceBlue-900">
 	<p slot="phasenumber">Phase 6</p>
 	<p slot="phasequarter">TBD</p>
 	<p slot="title">Governance</p>
