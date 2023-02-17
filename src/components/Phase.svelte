@@ -1,5 +1,4 @@
 <script>
-	import BaseCard from '$src/components/BaseCard.svelte';
 	import BorderBox from '$src/components/BorderBox.svelte';
 	import Section from '$src/components/Section.svelte';
 	export let id = '';
