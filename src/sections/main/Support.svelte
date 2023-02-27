@@ -19,35 +19,50 @@
 			<SectionTitle class="pb-8">Supported by</SectionTitle>
 
 			<div class="relative rounded-cardLg bg-spaceBlue-900/70">
-				<BaseCard class=" px-2 w-full md:max-w-full flex py-6 lg:py-8  mb-4 md:mb-8">
-					<div class="w-full mx-auto flex flex-wrap justify-evenly items-center md:py-4 sm:px-4">
+				<BaseCard class="px-2 w-full md:max-w-full flex flex-col py-6 lg:py-8 mb-4 md:mb-8">
+					<div
+						class="w-full max-w-md md:max-w-full mx-auto grid grid-cols-2 gap-4 md:gap-[unset] md:flex md:justify-evenly p-4 md:px-8"
+					>
 						<img
 							height="100"
-							class="opacity-50 w-full py-2 max-w-[30%] md:max-w-[17%]"
+							class="opacity-50 w-full my-auto md:w-1/6"
 							src="/logo_web3.svg"
 							alt="Web 3 logo"
 						/>
 						<img
 							height="100"
-							class="opacity-50 w-full py-2 max-w-[30%] md:max-w-[17%]"
+							class="opacity-50 w-full my-auto md:w-1/6"
 							src="/logo_media_motor.svg"
 							alt="Media Motor logo"
 						/>
 						<img
 							height="100"
-							class="opacity-50 w-full py-2 max-w-[30%] md:max-w-[17%]"
+							class="opacity-50 w-full my-auto md:w-1/6"
 							src="/logo_europe.svg"
 							alt="Europe logo"
 						/>
 						<img
 							height="100"
-							class="opacity-50 w-full py-2 max-w-[30%] md:max-w-[17%]"
+							class="opacity-50 w-full my-auto md:w-1/6"
+							src="mayhemnodes_logo.svg"
+							alt="Mayhem Nodes logo"
+						/>
+					</div>
+					<div class="text-center pt-4">
+						<p class="font-bold text-lg md:text-2xl">Partners</p>
+					</div>
+					<div
+						class="w-full max-w-md md:max-w-full mx-auto grid grid-cols-2 md:flex md:justify-center gap-8 p-4 md:px-8"
+					>
+						<img
+							height="100"
+							class="opacity-50 w-full my-auto md:w-1/6"
 							src="/logo_kelp.svg"
 							alt="Kelp logo"
 						/>
 						<img
 							height="100"
-							class="opacity-50 w-full py-2 max-w-[30%] md:max-w-[17%]"
+							class="opacity-50 w-full my-auto  md:w-1/6"
 							src="/logo_sbp.svg"
 							alt="SBP logo"
 						/>
