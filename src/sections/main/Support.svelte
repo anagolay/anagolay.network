@@ -43,9 +43,9 @@
 						/>
 						<img
 							height="100"
-							class="opacity-50 w-full my-auto md:w-1/6"
-							src="mayhemnodes_logo.svg"
-							alt="Mayhem Nodes logo"
+							class="opacity-50 w-full my-auto  md:w-1/6"
+							src="/logo_sbp.svg"
+							alt="SBP logo"
 						/>
 					</div>
 					<div class="text-center pt-4">
@@ -62,9 +62,9 @@
 						/>
 						<img
 							height="100"
-							class="opacity-50 w-full my-auto  md:w-1/6"
-							src="/logo_sbp.svg"
-							alt="SBP logo"
+							class="opacity-50 w-full my-auto md:w-1/6"
+							src="mayhemnodes_logo.svg"
+							alt="Mayhem Nodes logo"
 						/>
 					</div>
 				</BaseCard>
