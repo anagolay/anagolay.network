@@ -21,7 +21,7 @@
 		description:
 			'Learn how Anagolay Workflows empower users to prove ownership, sell, and rent creative works with the correct transfer of Rights and usage of Licenses',
 		image:
-			'https://ipfs.anagolay.network/ipfs/QmTEVPpvQLbvLFB1tu1KyCz22osvt5YGQUGZLJtUiotaPY?filename=twitter_card_how_it_works.png',
+			'https://files.kelp.digital/kelp-digital-assets/anagolay-network/twitter-cards/Anagolay_TwCard_HDIW.png',
 		imageAlt: 'Blue background with Anagolay brand logo',
 	}}
 />

@@ -22,7 +22,7 @@
 		description:
 			'Claim and prove ownership. Manage & monetize communities across existing channels. Protect and license creative works p2p. Simple, transparent, secure, and fair',
 		image:
-			'https://ipfs.anagolay.network/ipfs/QmUj35FFkSH8rrQCmZAEG9W2D4TVJrqi4T7xSc7DgXckiv?filename=twitter_card_use_cases.png',
+			'https://files.kelp.digital/kelp-digital-assets/anagolay-network/twitter-cards/Anagolay_TwCard_usecases.png',
 		imageAlt: 'Blue background with Anagolay brand logo',
 	}}
 />

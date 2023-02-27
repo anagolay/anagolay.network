@@ -25,11 +25,11 @@
 		title: 'Anagolay Network - Manage your content on your terms',
 		description:
 			'Web3 Framework for Original Creators to claim and verify ownership of online identities and multimedia content and license creative works P2P',
-		image:
-			'https://ipfs.anagolay.network/ipfs/QmZTpn19dZ5GJijKVn3aGg4HtwWTe9hx4sxqxdRXUjTrzt?filename=twitter_card_home.png',
-		imageAlt: 'White background with Anagolay brand logo',
-		// image: 'https://files.kelp.digital/kelp-digital-assets/anagolay-network/twitter-cards/homepage.png',
-		// imageAlt: 'Blue and green background with Anagolay brand logo',
+		// image:
+		// 	'https://ipfs.anagolay.network/ipfs/QmZTpn19dZ5GJijKVn3aGg4HtwWTe9hx4sxqxdRXUjTrzt?filename=twitter_card_home.png',
+		// imageAlt: 'White background with Anagolay brand logo',
+		image: 'https://files.kelp.digital/kelp-digital-assets/anagolay-network/twitter-cards/homepage.png',
+		imageAlt: 'Blue and green background with Anagolay brand logo',
 	}}
 />
 

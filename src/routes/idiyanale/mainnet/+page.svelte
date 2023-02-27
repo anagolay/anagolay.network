@@ -21,7 +21,7 @@
 		description:
 			'Playground for developers to test both new and existing features of Anagolay framework in an unrefined, unpredictable, but realistic on-chain environment',
 		image:
-			'https://ipfs.anagolay.network/ipfs/QmWJxT7s4BxZUm5XGfs2NdUk2GJJpyWDN7HzVGNGqvby1M?filename=idiyanale_twittercard.png',
+			'https://files.kelp.digital/kelp-digital-assets/anagolay-network/twitter-cards/Anagolay_TwCard_idiyanale.png',
 		imageAlt: 'Blue background with Idiyanale white brand logo',
 	}}
 />

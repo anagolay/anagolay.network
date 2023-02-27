@@ -22,7 +22,7 @@
 		description:
 			'Verify your online identities: a domain, Twitter handler, Youtube. Start accepting tips from the community across all your channels in tokens of your choice',
 		image:
-			'https://ipfs.anagolay.network/ipfs/QmQKFRhaZd2Ac3ZW1PCz2qfCQoeNq4XTcoRAfbiWoG9USG?filename=twitter_card_tipping.png',
+			'https://files.kelp.digital/kelp-digital-assets/anagolay-network/twitter-cards/Anagolay_TwCard_tipping.png',
 		imageAlt: 'Blue starry background with Anagolay brand logo and tokens in a green coincase',
 	}}
 />
