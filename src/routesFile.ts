@@ -26,7 +26,7 @@ export const useCases: MenuOption = {
 	options: [
 		{
 			text: 'Use Cases & Applications',
-			url: '/use-cases',
+			url: '/use-cases/',
 			external: false,
 		},
 		{
