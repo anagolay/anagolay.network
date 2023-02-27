@@ -12,7 +12,8 @@
 		site: '@IdiyanaleNet',
 		title: 'Idiyanale Network Launch',
 		description: 'Essential infrastructure for the digital creative market 3.0.',
-		image: 'https://files.kelp.digital/kelp-digital-assets/anagolay-network/twitter-cards/homepage.png',
+		image:
+			'https://files.kelp.digital/kelp-digital-assets/anagolay-network/twitter-cards/Anagolay_TwCard_launchphases.png',
 		imageAlt: 'Blue and green background with Anagolay green brand logo',
 	}}
 />
