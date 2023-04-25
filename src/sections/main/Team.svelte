@@ -57,7 +57,7 @@
 			</div>
 			<h3 class="font-light text-base md:text-3xl mt-8 mb-1 md:mb-2">{selected.title}</h3>
 			<p class="text-neonGreen-400 text-base md:text-2xl mb-4 md:mb-6"><i>{selected.name}</i></p>
-			<div class="sm:w-5/6 sm:mx-auto h-64 sm:h-48 md:h-36 lg:h-28 text-sm md:text-base 2xl:text-lg">
+			<div class="sm:w-5/6 sm:mx-auto h-56 sm:h-48 md:h-36 lg:h-20 text-sm md:text-base 2xl:text-lg">
 				{selected.bio}
 			</div>
 			<div class="flex md:mt-5 gap-2 md:gap-4">
