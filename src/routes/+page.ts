@@ -91,14 +91,6 @@ export function load() {
 			opacity: 'opacity-100',
 		},
 		{
-			name: 'Adriano Dalpane',
-			title: 'Senior Engineer',
-			img: '/team_adriano.png',
-			bio: 'Adriano Dalpane is a senior engineer with 11 years of experience and a vast portfolio ranging from Monte Carlo Tree Search AI for a game to a Bayesian classifier that performs match-making on a marketplace platform. For the last 2 years Adriano has been working with Rust and Substrate and now drives Anagolay implementation. On weekends he spends playing guitar, hiking, or cycling.',
-			links: ['https://www.linkedin.com/in/adriano-dalpane/', 'https://github.com/digitalillusion'],
-			opacity: 'opacity-40',
-		},
-		{
 			name: 'Leonardo Monay',
 			title: 'Front-End Engineer',
 			img: '/team_leonardo.png',
@@ -256,15 +248,15 @@ export function load() {
 			instances: [
 				{
 					goal: 'Tipping Pallet ',
-					status: STATUS.doing,
+					status: STATUS.done,
 				},
 				{
 					goal: 'Anagolay App & Extension (MVP)',
-					status: STATUS.doing,
+					status: STATUS.done,
 				},
 				{
-					goal: '1st Private Round',
-					status: STATUS.doing,
+					goal: 'Substrate Builders M1 completed',
+					status: STATUS.done,
 				},
 			],
 		},
@@ -274,15 +266,15 @@ export function load() {
 			instances: [
 				{
 					goal: 'Idiyanale genesis block, IDI Token launch',
-					status: STATUS.pending,
+					status: STATUS.doing,
 				},
 				{
-					goal: 'Anagolay App: creators’ dashboard',
-					status: STATUS.pending,
+					goal: 'Additional verification strategies',
+					status: STATUS.doing,
 				},
 				{
-					goal: 'Partner integrations',
-					status: STATUS.pending,
+					goal: '1st Private Round',
+					status: STATUS.doing,
 				},
 			],
 		},
@@ -291,7 +283,11 @@ export function load() {
 			year: 2023,
 			instances: [
 				{
-					goal: 'Additional verification strategies',
+					goal: 'Anagolay App: creators’ dashboard',
+					status: STATUS.pending,
+				},
+				{
+					goal: 'Partner integrations',
 					status: STATUS.pending,
 				},
 				{
