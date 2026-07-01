@@ -2,7 +2,6 @@
 
 ---
 
-Anagolay website - <https://anagolay.network>
 
 ## Get started
 
